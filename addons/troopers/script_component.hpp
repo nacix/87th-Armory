@@ -1,5 +1,5 @@
-#define COMPONENT main
-#define COMPONENT_BEAUTIFIED Main
+#define COMPONENT troopers
+#define COMPONENT_BEAUTIFIED Troopers
 
 #include "\x\87th\addons\main\script_mod.hpp"
 

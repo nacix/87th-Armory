@@ -31,13 +31,13 @@ class CfgVehicles {
 		{
 			"camo1"
 		};
-        hiddenSelectionsTextures[] = {QPATHTOF("data\accessories\87th_Backpack_co.paa")};
+        hiddenSelectionsTextures[] = {"x\87th\addons\troopers\data\accessories\87th_Backpack_co.paa"};
 	};
     class 87th_Medic_Backpack: 87th_Backpack
 	{
 		displayName="87th Medic Backpack";
 		maximumLoad = 400;
-        hiddenSelectionsTextures[] = {QPATHTOF("data\accessories\87th_Medic_Backpack_co.paa")};
+        hiddenSelectionsTextures[] = {"x\87th\addons\troopers\data\accessories\87th_Medic_Backpack_co.paa"};
 	};
 	class 87th_RTO_Backpack: 87th_Backpack
 	{
@@ -50,8 +50,8 @@ class CfgVehicles {
 			"camo1"
 		};
         hiddenSelectionsTextures[] = {
-            QPATHTOF("data\accessories\RTO_Screen_co.paa"),
-            QPATHTOF("data\accessories\87th_Backpack_co.paa")
+            "x\87th\addons\troopers\data\accessories\RTO_Screen_co.paa",
+            "x\87th\addons\troopers\data\accessories\87th_Backpack_co.paa"
         };
 		tf_dialog="JLTS_clone_rto_radio_dialog";
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
@@ -63,13 +63,13 @@ class CfgVehicles {
 	class 87th_Clone_DC15A: JLTS_Clone_P2_DC15A
 	{
 		displayName="Clone Trooper (DC-15A)";
-		editorPreview="x\data\ui\editorPreviews\87th_Clone_DC15A.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_Clone_DC15A.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_Troopers";
 		uniformClass="87th_Trooper_Uniform";
 		hiddenSelectionsTextures[] = {
-            QPATHTOF("data\armor\87th_Chest_co.paa"),
-            QPATHTOF("data\armor\87th_Legs_co.paa")
+            "x\87th\addons\troopers\data\armor\87th_Chest_co.paa",
+            "x\87th\addons\troopers\data\armor\87th_Legs_co.paa"
         };
 		linkedItems[]=
 		{
@@ -155,13 +155,13 @@ class CfgVehicles {
 	class 87th_Clone_DC15S: JLTS_Clone_P2_DC15S
 	{
 		displayName="Clone Trooper (DC-15S)";
-		editorPreview="x\data\ui\editorPreviews\87th_Clone_DC15S.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_Clone_DC15S.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_Troopers";
 		uniformClass="87th_Trooper_Uniform";
 		hiddenSelectionsTextures[] = {
-            QPATHTOF("data\armor\87th_Chest_co.paa"),
-            QPATHTOF("data\armor\87th_Legs_co.paa")
+            "x\87th\addons\troopers\data\armor\87th_Chest_co.paa",
+            "x\87th\addons\troopers\data\armor\87th_Legs_co.paa"
         };
 		linkedItems[]=
 		{
@@ -246,13 +246,13 @@ class CfgVehicles {
 	};
 	class 87th_Clone_DC15AUGL: JLTS_Clone_P2_DC15AUGL {
 		displayName="Clone Trooper (DC-15A UGL)";
-		editorPreview="x\data\ui\editorPreviews\87th_Clone_DC15AUGL.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_Clone_DC15AUGL.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_Troopers";
 		uniformClass="87th_Trooper_Uniform";
 		hiddenSelectionsTextures[] = {
-            QPATHTOF("data\armor\87th_Chest_co.paa"),
-            QPATHTOF("data\armor\87th_Legs_co.paa")
+            "x\87th\addons\troopers\data\armor\87th_Chest_co.paa",
+            "x\87th\addons\troopers\data\armor\87th_Legs_co.paa"
         };
 		linkedItems[]=
 		{
@@ -347,13 +347,13 @@ class CfgVehicles {
 	};
 	class 87th_Clone_DP23: JLTS_Clone_P2_DP23 {
 		displayName="Clone Trooper (DP-23)";
-		editorPreview="x\data\ui\editorPreviews\87th_Clone_DP23.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_Clone_DP23.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_Troopers";
 		uniformClass="87th_Trooper_Uniform";
 		hiddenSelectionsTextures[] = {
-            QPATHTOF("data\armor\87th_Chest_co.paa"),
-            QPATHTOF("data\armor\87th_Legs_co.paa")
+            "x\87th\addons\troopers\data\armor\87th_Chest_co.paa",
+            "x\87th\addons\troopers\data\armor\87th_Legs_co.paa"
         };
 		linkedItems[]=
 		{
@@ -376,17 +376,17 @@ class CfgVehicles {
 	};
 	class 87th_Clone_AT: JLTS_Clone_P2_AT {
 		displayName="Clone AT Trooper";
-		editorPreview="x\data\ui\editorPreviews\87th_Clone_AT.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_Clone_AT.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_Troopers";
 		uniformClass="87th_Trooper_Uniform";
 		hiddenSelectionsTextures[] = {
-            QPATHTOF("data\armor\87th_Chest_co.paa"),
-            QPATHTOF("data\armor\87th_Legs_co.paa")
+            "x\87th\addons\troopers\data\armor\87th_Chest_co.paa",
+            "x\87th\addons\troopers\data\armor\87th_Legs_co.paa"
         };
 		linkedItems[]=
 		{
-			"87th_Trooper_Helmet",,
+			"87th_Trooper_Helmet",
 			"JLTS_NVG_droid_chip_2",
 			"JLTS_CloneVestAirborne",
 			"ItemMap",
@@ -396,7 +396,7 @@ class CfgVehicles {
 		};
 		respawnLinkedItems[]=
 		{
-			"87th_Trooper_Helmet",,
+			"87th_Trooper_Helmet",
 			"JLTS_NVG_droid_chip_2",
 			"JLTS_CloneVestAirborne",
 			"ItemMap",
@@ -479,13 +479,13 @@ class CfgVehicles {
 	};
 	class 87th_Clone_Captain: JLTS_Clone_P2_captain {
 		displayName="Clone Captain";
-		editorPreview="x\data\ui\editorPreviews\87th_Clone_Captain.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_Clone_Captain.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_Troopers";
 		uniformClass="87th_Trooper_Uniform";
 		hiddenSelectionsTextures[] = {
-            QPATHTOF("data\armor\87th_Chest_co.paa"),
-            QPATHTOF("data\armor\87th_Legs_co.paa")
+            "x\87th\addons\troopers\data\armor\87th_Chest_co.paa",
+            "x\87th\addons\troopers\data\armor\87th_Legs_co.paa"
         };
 		linkedItems[]=
 		{
@@ -574,13 +574,13 @@ class CfgVehicles {
 	};
 	class 87th_Clone_Commander: JLTS_Clone_P2_commander {
 		displayName="Clone Commander";
-		editorPreview="x\data\ui\editorPreviews\87th_Clone_Commander.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_Clone_Commander.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_Troopers";
 		uniformClass="87th_Trooper_Uniform";
 		hiddenSelectionsTextures[] = {
-            QPATHTOF("data\armor\87th_Chest_co.paa"),
-            QPATHTOF("data\armor\87th_Legs_co.paa")
+            "x\87th\addons\troopers\data\armor\87th_Chest_co.paa",
+            "x\87th\addons\troopers\data\armor\87th_Legs_co.paa"
         };
 		linkedItems[]=
 		{
@@ -671,13 +671,13 @@ class CfgVehicles {
 	class 87th_Clone_Corporal: JLTS_Clone_P2_corporal
 	{
 		displayName="Clone Corporal";
-		editorPreview="x\data\ui\editorPreviews\87th_Clone_Corporal.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_Clone_Corporal.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_Troopers";
 		uniformClass="87th_Trooper_Uniform";
 		hiddenSelectionsTextures[] = {
-            QPATHTOF("data\armor\87th_Chest_co.paa"),
-            QPATHTOF("data\armor\87th_Legs_co.paa")
+            "x\87th\addons\troopers\data\armor\87th_Chest_co.paa",
+            "x\87th\addons\troopers\data\armor\87th_Legs_co.paa"
         };
 		linkedItems[]=
 		{
@@ -783,13 +783,13 @@ class CfgVehicles {
 	class 87th_Clone_Jumper: JLTS_Clone_P2_jump
 	{
 		displayName="Clone Jet Trooper";
-		editorPreview="x\data\ui\editorPreviews\87th_Clone_Jumper.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_Clone_Jumper.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_Troopers";
 		uniformClass="87th_Trooper_Uniform";
 		hiddenSelectionsTextures[] = {
-            QPATHTOF("data\armor\87th_Chest_co.paa"),
-            QPATHTOF("data\armor\87th_Legs_co.paa")
+            "x\87th\addons\troopers\data\armor\87th_Chest_co.paa",
+            "x\87th\addons\troopers\data\armor\87th_Legs_co.paa"
         };
 		linkedItems[]=
 		{
@@ -877,13 +877,13 @@ class CfgVehicles {
 	}; 
 	class 87th_Clone_Lieutenant: JLTS_Clone_P2_lieutenant {
 		displayName="Clone Lieutenant";
-		editorPreview="x\data\ui\editorPreviews\87th_Clone_Lieutenant.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_Clone_Lieutenant.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_Troopers";
 		uniformClass="87th_Trooper_Uniform";
 		hiddenSelectionsTextures[] = {
-            QPATHTOF("data\armor\87th_Chest_co.paa"),
-            QPATHTOF("data\armor\87th_Legs_co.paa")
+            "x\87th\addons\troopers\data\armor\87th_Chest_co.paa",
+            "x\87th\addons\troopers\data\armor\87th_Legs_co.paa"
         };
 		linkedItems[]=
 		{
@@ -972,13 +972,13 @@ class CfgVehicles {
 	};
 	class 87th_Clone_Major: JLTS_Clone_P2_major {
 		displayName="Clone Major";
-		editorPreview="x\data\ui\editorPreviews\87th_Clone_Major.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_Clone_Major.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_Troopers";
 		uniformClass="87th_Trooper_Uniform";
 		hiddenSelectionsTextures[] = {
-            QPATHTOF("data\armor\87th_Chest_co.paa"),
-            QPATHTOF("data\armor\87th_Legs_co.paa")
+            "x\87th\addons\troopers\data\armor\87th_Chest_co.paa",
+            "x\87th\addons\troopers\data\armor\87th_Legs_co.paa"
         };
 		linkedItems[]=
 		{
@@ -1067,13 +1067,13 @@ class CfgVehicles {
 	};
 	class 87th_Clone_Marksman: JLTS_Clone_P2_marksman {
 		displayName="Clone Marksman";
-		editorPreview="x\data\ui\editorPreviews\87th_Clone_Marksman.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_Clone_Marksman.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_Troopers";
 		uniformClass="87th_Trooper_Uniform";
 		hiddenSelectionsTextures[] = {
-            QPATHTOF("data\armor\87th_Chest_co.paa"),
-            QPATHTOF("data\armor\87th_Legs_co.paa")
+            "x\87th\addons\troopers\data\armor\87th_Chest_co.paa",
+            "x\87th\addons\troopers\data\armor\87th_Legs_co.paa"
         };
 		linkedItems[]=
 		{
@@ -1114,18 +1114,18 @@ class CfgVehicles {
 	};
 	class 87th_Clone_Medic: JLTS_Clone_P2_medic {
 		displayName="Clone Medic";
-		editorPreview="x\data\ui\editorPreviews\87th_Clone_Medic.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_Clone_Medic.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_Troopers";
 		uniformClass="87th_Trooper_Uniform";
 		hiddenSelectionsTextures[] = {
-            QPATHTOF("data\armor\87th_Chest_co.paa"),
-            QPATHTOF("data\armor\87th_Legs_co.paa")
+            "x\87th\addons\troopers\data\armor\87th_Chest_co.paa",
+            "x\87th\addons\troopers\data\armor\87th_Legs_co.paa"
         };
 		backpack="87th_Medic_Backpack";
 		linkedItems[]=
 		{
-			"87th_Trooper_Helmet",,
+			"87th_Trooper_Helmet",
 			"JLTS_NVG_droid_chip_2",
 			"JLTS_CloneVestSuspender",
 			"ItemMap",
@@ -1135,7 +1135,7 @@ class CfgVehicles {
 		};
 		respawnLinkedItems[]=
 		{
-			"87th_Trooper_Helmet",,
+			"87th_Trooper_Helmet",
 			"JLTS_NVG_droid_chip_2",
 			"JLTS_CloneVestSuspender",
 			"ItemMap",
@@ -1212,18 +1212,18 @@ class CfgVehicles {
 	};
 	class 87th_Clone_EOD: JLTS_Clone_P2_eod {
 		displayName="Clone EOD";
-		editorPreview="x\data\ui\editorPreviews\87th_Clone_EOD.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_Clone_EOD.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_Troopers";
 		uniformClass="87th_Trooper_Uniform";
 		hiddenSelectionsTextures[] = {
-            QPATHTOF("data\armor\87th_Chest_co.paa"),
-            QPATHTOF("data\armor\87th_Legs_co.paa")
+            "x\87th\addons\troopers\data\armor\87th_Chest_co.paa",
+            "x\87th\addons\troopers\data\armor\87th_Legs_co.paa"
         };
 		backpack="87th_Backpack";
 		linkedItems[]=
 		{
-			"87th_Trooper_Helmet",,
+			"87th_Trooper_Helmet",
 			"JLTS_NVG_droid_chip_2",
 			"JLTS_CloneVestSuspender",
 			"ItemMap",
@@ -1233,7 +1233,7 @@ class CfgVehicles {
 		};
 		respawnLinkedItems[]=
 		{
-			"87th_Trooper_Helmet",,
+			"87th_Trooper_Helmet",
 			"JLTS_NVG_droid_chip_2",
 			"JLTS_CloneVestSuspender",
 			"ItemMap",
@@ -1312,15 +1312,15 @@ class CfgVehicles {
 	};
 	class 87th_Clone_RTO: JLTS_Clone_P2_RTO {
 		displayName="Clone RTO";
-		editorPreview="x\data\ui\editorPreviews\87th_Clone_RTO.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_Clone_RTO.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_Troopers";
 		uniformClass="87th_Trooper_Uniform";
 		hiddenSelectionsTextures[] = {
-            QPATHTOF("data\armor\87th_Chest_co.paa"),
-            QPATHTOF("data\armor\87th_Legs_co.paa")
+            "x\87th\addons\troopers\data\armor\87th_Chest_co.paa",
+            "x\87th\addons\troopers\data\armor\87th_Legs_co.paa"
         };
-		backpack="87th_RTO_Backpack"
+		backpack="87th_RTO_Backpack";
 		linkedItems[]=
 		{
 			"87th_Trooper_Helmet",
@@ -1333,7 +1333,7 @@ class CfgVehicles {
 		};
 		respawnLinkedItems[]=
 		{
-			"87th_Trooper_Helmet",,
+			"87th_Trooper_Helmet",
 			"JLTS_NVG_droid_chip_2",
 			"JLTS_CloneVestSuspender",
 			"ItemMap",
@@ -1408,13 +1408,13 @@ class CfgVehicles {
 	};
 	class 87th_Clone_Sergeant: JLTS_Clone_P2_sergeant {
 		displayName="Clone Sergeant";
-		editorPreview="x\data\ui\editorPreviews\87th_Clone_Sergeant.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_Clone_Sergeant.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_Troopers";
 		uniformClass="87th_Trooper_Uniform";
 		hiddenSelectionsTextures[] = {
-            QPATHTOF("data\armor\87th_Chest_co.paa"),
-            QPATHTOF("data\armor\87th_Legs_co.paa")
+            "x\87th\addons\troopers\data\armor\87th_Chest_co.paa",
+            "x\87th\addons\troopers\data\armor\87th_Legs_co.paa"
         };
 		linkedItems[]=
 		{
@@ -1503,13 +1503,13 @@ class CfgVehicles {
 	};
 	class 87th_Clone_SergeantMajor: JLTS_Clone_P2_sergeantmajor {
 		displayName="Clone Sergeant-Major";
-		editorPreview="x\data\ui\editorPreviews\87th_Clone_SergeantMajor.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_Clone_SergeantMajor.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_Troopers";
 		uniformClass="87th_Trooper_Uniform";
 		hiddenSelectionsTextures[] = {
-            QPATHTOF("data\armor\87th_Chest_co.paa"),
-            QPATHTOF("data\armor\87th_Legs_co.paa")
+            "x\87th\addons\troopers\data\armor\87th_Chest_co.paa",
+            "x\87th\addons\troopers\data\armor\87th_Legs_co.paa"
         };
 		linkedItems[]=
 		{
@@ -1598,13 +1598,13 @@ class CfgVehicles {
 	};
 	class 87th_Clone_AR: JLTS_Clone_P2_AR {
 		displayName="Clone Heavy Trooper";
-		editorPreview="x\data\ui\editorPreviews\87th_Clone_AR.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_Clone_AR.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_Troopers";
 		uniformClass="87th_Trooper_Uniform";
 		hiddenSelectionsTextures[] = {
-            QPATHTOF("data\armor\87th_Chest_co.paa"),
-            QPATHTOF("data\armor\87th_Legs_co.paa")
+            "x\87th\addons\troopers\data\armor\87th_Chest_co.paa",
+            "x\87th\addons\troopers\data\armor\87th_Legs_co.paa"
         };
 		backpack="87th_Backpack";
 		linkedItems[]=
@@ -1688,13 +1688,13 @@ class CfgVehicles {
 	};
 	class 87th_Clone_Sharpshooter: JLTS_Clone_P2_marksman {
 		displayName="Clone Sharpshooter";
-		editorPreview="x\data\ui\editorPreviews\87th_Clone_Sharpshooter.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_Clone_Sharpshooter.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_Troopers";
 		uniformClass="87th_Trooper_Uniform";
 		hiddenSelectionsTextures[] = {
-            QPATHTOF("data\armor\87th_Chest_co.paa"),
-            QPATHTOF("data\armor\87th_Legs_co.paa")
+            "x\87th\addons\troopers\data\armor\87th_Chest_co.paa",
+            "x\87th\addons\troopers\data\armor\87th_Legs_co.paa"
         };
 		linkedItems[]=
 		{
@@ -1795,7 +1795,7 @@ class CfgVehicles {
 	};
 	class 87th_ARF_DC15S: 87th_Clone_DC15S {
 		displayName="ARF Trooper (DC-15S)";
-		editorPreview="x\data\ui\editorPreviews\87th_ARF_DC15S.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_ARF_DC15S.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_ARF";
 		linkedItems[]=
@@ -1836,7 +1836,7 @@ class CfgVehicles {
 	};
 	class 87th_ARF_Sniper: 87th_Clone_Sharpshooter {
 		displayName="ARF Sniper";
-		editorPreview="x\data\ui\editorPreviews\87th_ARF_Sniper.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_ARF_Sniper.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_ARF";
 		linkedItems[]=
@@ -1861,7 +1861,7 @@ class CfgVehicles {
 	};
 	class 87th_ARF_Spotter: 87th_Clone_Marksman {
 		displayName="ARF Spotter";
-		editorPreview="x\data\ui\editorPreviews\87th_ARF_Spotter.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_ARF_Spotter.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_ARF";
 		linkedItems[]=
@@ -1886,7 +1886,7 @@ class CfgVehicles {
 	};
 	class 87th_ARF_JTAC: 87th_Clone_RTO {
 		displayName="ARF JTAC";
-		editorPreview="x\data\ui\editorPreviews\87th_ARF_JTAC.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_ARF_JTAC.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_ARF";
 		linkedItems[]=
@@ -1911,7 +1911,7 @@ class CfgVehicles {
 	};
 	class 87th_ARF_CLS: 87th_Clone_Medic {
 		displayName="ARF Medic";
-		editorPreview="x\data\ui\editorPreviews\87th_ARF_CLS.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_ARF_CLS.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_ARF";
 		linkedItems[]=
@@ -1956,7 +1956,7 @@ class CfgVehicles {
 	};
 	class 87th_ARF_NCO: 87th_Clone_Sergeant {
 		displayName="ARF Sergeant";
-		editorPreview="x\data\ui\editorPreviews\87th_ARF_NCO.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_ARF_NCO.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_ARF";
 		linkedItems[]=
@@ -1997,7 +1997,7 @@ class CfgVehicles {
 	};
 	class 87th_ARF_Lieutenant: 87th_Clone_Lieutenant {
 		displayName="ARF Lieutenant";
-		editorPreview="x\data\ui\editorPreviews\87th_ARF_Lieutenant.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_ARF_Lieutenant.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_ARF";
 		linkedItems[]=
@@ -2022,7 +2022,7 @@ class CfgVehicles {
 	};
 	class 87th_ARF_Captain: 87th_Clone_Captain {
 		displayName="ARF Captain";
-		editorPreview="x\data\ui\editorPreviews\87th_ARF_Captain.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_ARF_Captain.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_ARF";
 		linkedItems[]=
@@ -2047,7 +2047,7 @@ class CfgVehicles {
 	};
 	class 87th_ARF_Major: 87th_Clone_Commander {
 		displayName="ARF Major";
-		editorPreview="x\data\ui\editorPreviews\87th_ARF_Major.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_ARF_Major.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_ARF";
 		linkedItems[]=
@@ -2072,7 +2072,7 @@ class CfgVehicles {
 	};
 	class 87th_BARC_DC15S: 87th_Clone_DC15S {
 		displayName="BARC Trooper (DC-15S)";
-		editorPreview="x\data\ui\editorPreviews\87th_BARC_DC15S.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_BARC_DC15S.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_BARC";
 		linkedItems[]=
@@ -2115,7 +2115,7 @@ class CfgVehicles {
 	};
 	class 87th_BARC_Sniper: 87th_Clone_Sharpshooter {
 		displayName="BARC Sniper";
-		editorPreview="x\data\ui\editorPreviews\87th_BARC_Sniper.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_BARC_Sniper.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_BARC";
 		linkedItems[]=
@@ -2142,7 +2142,7 @@ class CfgVehicles {
 	};
 	class 87th_BARC_Spotter: 87th_Clone_Marksman {
 		displayName="BARC Spotter";
-		editorPreview="x\data\ui\editorPreviews\87th_BARC_Spotter.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_BARC_Spotter.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_BARC";
 		linkedItems[]=
@@ -2169,7 +2169,7 @@ class CfgVehicles {
 	};
 	class 87th_BARC_JTAC: 87th_Clone_RTO {
 		displayName="BARC JTAC";
-		editorPreview="x\data\ui\editorPreviews\87th_BARC_JTAC.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_BARC_JTAC.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_BARC";
 		linkedItems[]=
@@ -2212,7 +2212,7 @@ class CfgVehicles {
 	};
 	class 87th_BARC_CLS: 87th_Clone_Medic {
 		displayName="BARC Medic";
-		editorPreview="x\data\ui\editorPreviews\87th_BARC_CLS.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_BARC_CLS.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_BARC";
 		linkedItems[]=
@@ -2243,7 +2243,7 @@ class CfgVehicles {
 	};
 	class 87th_BARC_NCO: 87th_Clone_Sergeant {
 		displayName="BARC Sergeant";
-		editorPreview="x\data\ui\editorPreviews\87th_BARC_NCO.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_BARC_NCO.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_BARC";
 		linkedItems[]=
@@ -2286,7 +2286,7 @@ class CfgVehicles {
 	};
 	class 87th_BARC_Lieutenant: 87th_Clone_Lieutenant {
 		displayName="BARC Lieutenant";
-		editorPreview="x\data\ui\editorPreviews\87th_BARC_Lieutenant.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_BARC_Lieutenant.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_BARC";
 		linkedItems[]=
@@ -2313,7 +2313,7 @@ class CfgVehicles {
 	};
 	class 87th_BARC_Captain: 87th_Clone_Captain {
 		displayName="BARC Captain";
-		editorPreview="x\data\ui\editorPreviews\87th_BARC_Captain.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_BARC_Captain.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_BARC";
 		linkedItems[]=
@@ -2340,7 +2340,7 @@ class CfgVehicles {
 	};
 	class 87th_BARC_Major: 87th_Clone_Commander {
 		displayName="BARC Major";
-		editorPreview="x\data\ui\editorPreviews\87th_BARC_Major.jpg";
+		editorPreview="x\87th\addons\troopers\data\ui\editorPreviews\87th_BARC_Major.jpg";
 		faction = "87th_Legion";
 		editorSubcategory = "87th_BARC";
 		linkedItems[]=
@@ -2364,5 +2364,10 @@ class CfgVehicles {
 			"ItemCompass",
 			"ItemWatch"
 		};
+	};
+};
+class Extended_Init_EventHandlers {
+	class 87th_Clone_DC15S {
+		init = "[_this select 0, ""CT""] execVM ""87th_troopers_fnc_setIdentity.sqf""";
 	};
 };

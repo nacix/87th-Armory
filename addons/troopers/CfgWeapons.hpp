@@ -26,7 +26,7 @@ class CfgWeapons {
 		{
 			"camo1"
 		};
-        hiddenSelectionsTextures[] = {QPATHTOF("data\armor\87th_Trooper_Helmet_co.paa")};
+        hiddenSelectionsTextures[] = {"x\87th\addons\troopers\data\armor\87th_Trooper_Helmet_co.paa"};
 		model="\MRC\JLTS\characters\CloneArmor\CloneHelmetP2.p3d";
 		subItems[]={};
 		ace_hearing_lowerVolume=0.60000002;
@@ -61,7 +61,7 @@ class CfgWeapons {
 		{
 			"camo1"
 		};
-		hiddenSelectionsTextures[] = {QPATHTOF("data\armor\87th_Raven_Helmet_co.paa")};
+		hiddenSelectionsTextures[] = {"x\87th\addons\troopers\data\armor\87th_Raven_Helmet_co.paa"};
 		model="\MRC\JLTS\characters\CloneArmor\CloneHelmetP2.p3d";
 		subItems[]={};
 		ace_hearing_lowerVolume=0.60000002;
@@ -96,7 +96,7 @@ class CfgWeapons {
 		{
 			"camo1"
 		};
-		hiddenSelectionsTextures[] = {QPATHTOF("data\armor\87th_Tasty_Helmet_co.paa")};
+		hiddenSelectionsTextures[] = {"x\87th\addons\troopers\data\armor\87th_Tasty_Helmet_co.paa"};
 		model="\MRC\JLTS\characters\CloneArmor\CloneHelmetP2.p3d";
 		subItems[]={};
 		ace_hearing_lowerVolume=0.60000002;
@@ -135,8 +135,8 @@ class CfgWeapons {
 			"Camo1"
 		};
 		hiddenSelectionsTextures[] = {
-			QPATHTOF("data\armor\87th_ARF_Helmet_co.paa"),
-			QPATHTOF("data\armor\87th_ARF_Helmet_co.paa")
+			"x\87th\addons\troopers\data\armor\87th_ARF_Helmet_co.paa",
+			"x\87th\addons\troopers\data\armor\87th_ARF_Helmet_co.paa"
 		};
 		hiddenSelectionsMaterials[]=
 		{
@@ -173,7 +173,7 @@ class CfgWeapons {
 		{
 			"camo1"
 		};
-		hiddenSelectionsTextures[] = {QPATHTOF("data\armor\87th_BARC_Helmet_co.paa")};
+		hiddenSelectionsTextures[] = {"x\87th\addons\troopers\data\armor\87th_BARC_Helmet_co.paa"};
 		model="\MRC\JLTS\characters\CloneArmor2\CloneHelmetBARC.p3d";
 		subItems[]={};
 		ace_hearing_lowerVolume=0.60000002;
@@ -217,11 +217,11 @@ class CfgWeapons {
 			"Camo5"
 		};
 		hiddenSelectionsTextures[] = {
-			QPATHTOF("data\armor\87th_Pilot_Helmet_co.paa"),
-			QPATHTOF("data\armor\87th_Pilot_Helmet_co.paa"),
+			"x\87th\addons\troopers\data\armor\87th_Pilot_Helmet_co.paa",
+			"x\87th\addons\troopers\data\armor\87th_Pilot_Helmet_co.paa",
 			"",
 			"3AS\3AS_Characters\Clones\Headgear\Textures\PilotP2\Phase_2_Pilot_Tubes_co.paa",
-			QPATHTOF("data\armor\87th_Pilot_Helmet_co.paa"),
+			"x\87th\addons\troopers\data\armor\87th_Pilot_Helmet_co.paa",
 			""
 		};
 		class ItemInfo: HeadgearItem
@@ -259,7 +259,7 @@ class CfgWeapons {
 		{
 			"camo1"
 		};
-		hiddenSelectionsTextures[] = {QPATHTOF("data\armor\87th_Commander_Helmet_co.paa")};
+		hiddenSelectionsTextures[] = {"x\87th\addons\troopers\data\armor\87th_Commander_Helmet_co.paa"};
 		model="\MRC\JLTS\characters\CloneArmor\CloneHelmetP2.p3d";
 		subItems[]={};
 		ace_hearing_lowerVolume=0.60000002;
@@ -295,7 +295,7 @@ class CfgWeapons {
 		{
 			"camo1"
 		};
-		hiddenSelectionsTextures[] = {QPATHTOF("data\accessories\87th_NVG_co.paa")};
+		hiddenSelectionsTextures[] = {"x\87th\addons\troopers\data\accessories\87th_NVG_co.paa"};
 		picture="\MRC\JLTS\characters\CloneArmor\data\ui\Clone_nvg_ui_ca.paa";
 		visionMode[]=
 		{
@@ -327,7 +327,7 @@ class CfgWeapons {
 		{
 			"camo1"
 		};
-		hiddenSelectionsTextures[] = {QPATHTOF("data\accessories\87th_Officer_Attachments_co.paa")};
+		hiddenSelectionsTextures[] = {"x\87th\addons\troopers\data\accessories\87th_Officer_Attachments_co.paa"};
 		class ItemInfo: VestItem
 		{
 			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";

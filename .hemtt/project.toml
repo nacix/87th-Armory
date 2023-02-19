@@ -1,3 +1,24 @@
 name = "87th Legion Aux Mod"
 prefix = "87th"
 mainprefix = "x"
+
+[version]
+git_hash = 0
+
+[files]
+include = [
+    "*.dll",
+    "*.so",
+    "*.paa",
+    "mod.cpp",
+    "README.md",
+]
+
+[asc]
+enabled = true
+exclude = [
+    "/xeh_prep.sqf",
+]
+
+[hemtt.config]
+preset = "Hemtt"
