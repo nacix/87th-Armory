@@ -1,0 +1,10 @@
+#define MAINPREFIX x
+#define PREFIX 87th
+
+#define REQUIRED_VERSION 2.10
+
+#ifdef COMPONENT_BEAUTIFIED
+    #define COMPONENT_NAME QUOTE(87th Legion - COMPONENT_BEAUTIFIED)
+#else
+    #define COMPONENT_NAME QUOTE(87th Legion - COMPONENT)
+#endif

@@ -1,0 +1,1 @@
+#include "\x\87th\addons\main\script_component.hpp"
