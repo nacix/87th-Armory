@@ -158,8 +158,8 @@ class CfgAmmo
 			distance = 1;
 		};
 	};
-	class 87th_SmokeShellPurple: SmokeShell
+	class 87th_SmokeShellPurple_ammo: SmokeShell
 	{
-		smokeColor[] = {0.62, 0.35, 0.98};
+		smokeColor[] = {0.62, 0.35, 0.98, 1.00};
 	};
 };
