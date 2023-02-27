@@ -19,7 +19,7 @@ class CfgWeapons {
 		displayName = "87th Trooper Helmet";
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {QPATHTOF(data\helmets\ct\87th_Trooper_Helmet_co.paa)};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\helmets\ct\87th_Trooper_Helmet_co.paa)};
 		model = "\MRC\JLTS\characters\CloneArmor\CloneHelmetP2.p3d";
 		subItems[] = {};
 		ace_hearing_lowerVolume = 0.60000002;
