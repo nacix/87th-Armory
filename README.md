@@ -1,1 +1,1 @@
-# 87th-Legion-Aux-Mod
+# 87th Legion Armory
