@@ -1,5 +1,5 @@
-name = "87th Legion Aux Mod"
-prefix = "87th"
+name = "87th Legion Armory"
+prefix = "ax87"
 mainprefix = "x"
 
 [version]
@@ -13,12 +13,3 @@ include = [
     "mod.cpp",
     "README.md",
 ]
-
-[asc]
-enabled = true
-exclude = [
-    "/xeh_prep.sqf",
-]
-
-[hemtt.config]
-preset = "Hemtt"

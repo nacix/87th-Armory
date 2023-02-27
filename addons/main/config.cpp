@@ -1,21 +1,24 @@
 #include "script_component.hpp"
 
-class CfgPatches {
-    class ADDON {
+class CfgPatches 
+{
+    class ADDON 
+    {
         name = COMPONENT_NAME;
 		requiredVersion = REQUIRED_VERSION;
         units[] = {};
         weapons[] = {};
         requiredAddons[] = {"cba_main"};
-		authors[] = {"Stim_1087", "Anorexican"};
-		author = "87th Legion";
-		url = "http://xkcd.com";
+		author = CSTRING(AuxTeam);
+		authors[] = {"Anorexican"};
+		url = ECSTRING(main,URL);
     };
 };
-
-class CfgMods {
-    class PREFIX {
-        name = "87th Legion Aux Mod";
+class CfgMods 
+{
+    class PREFIX 
+    {
+        name = "87th Legion Armory";
         picture = "";
         hidePicture = "true";
         hideName = "true";

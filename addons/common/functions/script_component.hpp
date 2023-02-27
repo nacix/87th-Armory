@@ -1,0 +1,1 @@
+#include "\x\ax87\addons\common\script_component.hpp"
