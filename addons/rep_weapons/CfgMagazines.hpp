@@ -30,12 +30,12 @@ class CfgMagazines
 		type = "2*  256";
 		mass = 40;
 	};
-	class 87th_SmokeShellPurple_mag: SmokeShell
+	class 87th_SmokeShellPurple: SmokeShell
 	{
 		author = "Anorexican";
-		ammo = "87th_SmokeShellPurple";
+		ammo = "87th_SmokeShellPurple_ammo";
 		descriptionShort = "Fuze: Impact";
 		displayName = "Impact Smoke Grenade (Purple)";
-		displayNameShort = "Purple Impact Smoke";
+		displayNameShort = "Purple Smoke";
 	};
 };
