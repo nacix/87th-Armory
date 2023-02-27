@@ -16,6 +16,8 @@ class CfgWeapons
 	class 3AS_DC15C_F;
 	class 3AS_DC15L_F;
 	class JLTS_DC15X;
+	class GrenadeLauncher;
+	class ThrowMuzzle;
 
 	class Launcher_Base_F: Launcher
 	{
@@ -300,5 +302,13 @@ class CfgWeapons
 		muzzles[] = {"this"};
 		magazines[] = {};
 		JLTS_isFried = 1;
+	};
+	class Throw: GrenadeLauncher
+	{
+		muzzles[] += {"87th_SmokeShellPurple_Throw"};
+		class 87th_SmokeShellPurple_Throw: ThrowMuzzle
+		{
+			magazines[] = {"87th_SmokeShellPurple_mag"};
+		};
 	};
 };

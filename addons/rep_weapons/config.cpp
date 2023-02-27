@@ -34,12 +34,14 @@ class CfgPatches
 			"87th_3AS_DC15C_F",
 			"87th_3AS_DC15L_F",
 			"87th_JLTS_DC15X",
-			"87th_RPS6X"
+			"87th_RPS6X",
+			"87th_SmokeShellPurple_Throw"
 		};
 		magazines[]=
 		{
 			"87th_MK40X_AT_Guided",
-			"87th_MK42X_HE_Guided"
+			"87th_MK42X_HE_Guided",
+			"87th_SmokeShellPurple_mag"
 		};
 		ammo[]=
 		{
@@ -47,7 +49,8 @@ class CfgPatches
 			"ammo_Penetrator_Base",
 			"87th_ammo_Penetrator",
 			"87th_M_MK40X_AT",
-			"87th_M_MK42X_HE"
+			"87th_M_MK42X_HE",
+			"87th_SmokeShellPurple"
 		};
     };
 };

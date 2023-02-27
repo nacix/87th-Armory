@@ -1,6 +1,7 @@
 class CA_LauncherMagazine;
 class CfgMagazines 
 {
+	class SmokeShell;
 	class 87th_MK40X_AT_Guided: CA_LauncherMagazine
 	{
 		author = "Anorexican";
@@ -28,5 +29,13 @@ class CfgMagazines
 		ammo = "87th_M_MK42X_HE";
 		type = "2*  256";
 		mass = 40;
+	};
+	class 87th_SmokeShellPurple_mag: SmokeShell
+	{
+		author = "Anorexican";
+		ammo = "87th_SmokeShellPurple";
+		descriptionShort = "Fuze: Impact";
+		displayName = "Impact Smoke Grenade (Purple)";
+		displayNameShort = "Purple Impact Smoke";
 	};
 };

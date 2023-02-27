@@ -1,7 +1,10 @@
-class CfgAmmo {
+class CfgAmmo 
+{
 	class ShellBase;
+	class SmokeShell;
 	class ammo_Penetrator_Base: ShellBase {};
-	class MissileBase {
+	class MissileBase 
+	{
 		class Components;
 	};
 	class 87th_ammo_Penetrator: ammo_Penetrator_Base 
@@ -154,5 +157,9 @@ class CfgAmmo {
 			frequency = 20;
 			distance = 1;
 		};
+	};
+	class 87th_SmokeShellPurple: SmokeShell
+	{
+		smokeColor[] = {0.62, 0.35, 0.98};
 	};
 };
