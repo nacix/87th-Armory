@@ -308,7 +308,7 @@ class CfgWeapons
 		muzzles[] += {"87th_SmokeShellPurple_Throw"};
 		class 87th_SmokeShellPurple_Throw: ThrowMuzzle
 		{
-			magazines[] = {"87th_SmokeShellPurple_mag"};
+			magazines[] = {"87th_SmokeShellPurple"};
 		};
 	};
 };
