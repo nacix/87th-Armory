@@ -296,7 +296,7 @@ class CfgWeapons
 	{
 		baseWeapon = "87th_RPS6X_fried";
 		displayName = "[87th] RPS-6X (Fried)";
-		descriptionShort = "* SACLOS systems have been fried by an ion or EMP blast *<br />You can perform repairs using a Weapon Repair Kit";
+		descriptionShort = "SACLOS systems have been fried by an EMP or ion blast!<br />You can perform repairs using a Weapon Repair Kit";
 		scope = 1;
 		picture = "\MRC\JLTS\weapons\RPS6\data\ui\RPS6_fried_ui_ca.paa";
 		muzzles[] = {"this"};
