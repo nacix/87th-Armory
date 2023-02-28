@@ -15,3 +15,9 @@ class Extended_PostInit_EventHandlers {
         init = QUOTE(call COMPILE_FILE(XEH_postInit); call FUNC(init));
     };
 };
+
+class Extended_FiredBIS_Eventhandlers {
+	class Throw {
+		ax87_grenade_thrown = QUOTE(_this call FUNC(adjustGrenadePhysics));
+	};
+};
