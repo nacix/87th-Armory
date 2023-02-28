@@ -305,8 +305,7 @@ class CfgWeapons
 	};
 	class Throw: GrenadeLauncher
 	{
-		muzzles[]+= 
-		{
+		muzzles[] += {
 			"87th_SmokeShellPurple_Throw",
 			"87th_SmokeShellViolet_Throw",
 			"87th_SmokeShellMidnight_Throw"
