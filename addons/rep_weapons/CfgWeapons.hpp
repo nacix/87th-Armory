@@ -305,10 +305,14 @@ class CfgWeapons
 	};
 	class Throw: GrenadeLauncher
 	{
-		muzzles[] += {"87th_SmokeShellPurple_Throw"};
+		muzzles[] += {"87th_SmokeShellPurple_Throw", "87th_SmokeShellViolet_Throw"};
 		class 87th_SmokeShellPurple_Throw: ThrowMuzzle
 		{
 			magazines[] = {"87th_SmokeShellPurple"};
+		};
+		class 87th_SmokeShellViolet_Throw: ThrowMuzzle
+		{
+			magazines[] = {"87th_SmokeShellViolet"};
 		};
 	};
 };

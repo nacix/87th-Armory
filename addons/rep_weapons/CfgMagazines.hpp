@@ -38,4 +38,10 @@ class CfgMagazines
 		displayName = "Impact Smoke Grenade (Purple)";
 		displayNameShort = "Purple Smoke";
 	};
+	class 87th_SmokeShellViolet: 87th_SmokeShellPurple
+	{
+		ammo = "87th_SmokeShellViolet_ammo";
+		displayName = "Impact Smoke Grenade (Violet)";
+		displayNameShort = "Violet Smoke";
+	};
 };

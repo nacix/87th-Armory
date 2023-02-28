@@ -40,7 +40,8 @@ class CfgPatches
 		{
 			"87th_MK40X_AT_Guided",
 			"87th_MK42X_HE_Guided",
-			"87th_SmokeShellPurple"
+			"87th_SmokeShellPurple",
+			"87th_SmokeShellViolet"
 		};
 		ammo[]=
 		{
@@ -49,7 +50,8 @@ class CfgPatches
 			"87th_ammo_Penetrator",
 			"87th_M_MK40X_AT",
 			"87th_M_MK42X_HE",
-			"87th_SmokeShellPurple_ammo"
+			"87th_SmokeShellPurple_ammo",
+			"87th_SmokeShellViolet_ammo"
 		};
     };
 };
