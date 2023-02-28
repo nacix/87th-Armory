@@ -8,7 +8,7 @@ class CfgVehicles {
 		author = "Stim";
 		scope = 2;
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_backpack_ui_ca.paa";
-		displayName = "87th Trooper Backpack";
+		displayName = "[87th] Trooper Backpack";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneBackpack.p3d";
 		maximumLoad = 200;
 		hiddenSelections[] = {"camo1"};
@@ -16,14 +16,14 @@ class CfgVehicles {
 	};
     class 87th_Medic_Backpack: 87th_Backpack 
 	{
-		displayName = "87th Medic Backpack";
+		displayName = "[87th] Medic Backpack";
 		maximumLoad = 400;
         hiddenSelectionsTextures[] = {QPATHTOF(data\other\87th_Medic_Backpack_co.paa)};
 	};
 	class 87th_RTO_Backpack: 87th_Backpack 
 	{
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_backpack_ui_ca.paa";
-		displayName = "87th RTO Backpack";
+		displayName = "[87th] RTO Backpack";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneBackpackRTO.p3d";
 		hiddenSelections[] =
 		{
@@ -46,7 +46,7 @@ class CfgVehicles {
 	{
 		author = "Stim";
 		scope = 2;
-		displayName = "87th Katarn Backpack";
+		displayName = "[87th] Katarn Backpack";
 		hiddenSelectionsTextures[] = {QPATHTOF(data\other\87th_Katarn_Backpack_co.paa)};
 	};
 	class 87th_Clone_Base: B_Soldier_F 

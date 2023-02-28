@@ -154,7 +154,7 @@ class CfgWeapons
 		author = "Anorexican";
 		_generalMacro = "launch_RPG32_F";
 		scope = 2;
-		displayName = "RPS-6X Launcher (Wire-Guided)";
+		displayName = "[87th] RPS-6X Launcher (SACLOS)";
 		model = "\MRC\JLTS\weapons\RPS6\rps6.p3d";
 		picture = "\MRC\JLTS\weapons\RPS6\data\ui\rps6_ui_ca.paa";
 		uiPicture = "MRC\JLTS\weapons\RPS6\data\ui\rps6_ui_ca.paa";
@@ -295,8 +295,8 @@ class CfgWeapons
 	class 87th_RPS6X_fried: 87th_RPS6X
 	{
 		baseWeapon = "87th_RPS6X_fried";
-		displayName = "$STR_JLTS_names_RPS6Fried";
-		descriptionShort = "$STR_JLTS_descs_BlasterFried";
+		displayName = "[87th] RPS-6X (Fried)";
+		descriptionShort = "* SACLOS systems have been fried by an ion or EMP blast *<br />You can perform repairs using a Weapon Repair Kit";
 		scope = 1;
 		picture = "\MRC\JLTS\weapons\RPS6\data\ui\RPS6_fried_ui_ca.paa";
 		muzzles[] = {"this"};

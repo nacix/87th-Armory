@@ -3,7 +3,7 @@ class CfgVehicles
 	class 3as_LAAT_Mk2;
 	class 87th_LAAT: 3as_LAAT_Mk2 
 	{
-		displayname="LAAT/I Mk.2";
+		displayname="[87th] LAAT/I Mk.2";
 		faction="87th_Legion";
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_LAAT.jpg);
 		editorSubcategory="87th_Air";

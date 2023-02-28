@@ -16,7 +16,7 @@ class CfgWeapons {
 	class 87th_Trooper_Helmet: H_HelmetO_ViperSP_hex_F
 	{
 		author = "Stim";
-		displayName = "87th Trooper Helmet";
+		displayname = "[87th] Trooper Helmet";
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\helmets\ct\87th_Trooper_Helmet_co.paa)};
@@ -45,7 +45,7 @@ class CfgWeapons {
 	class 87th_Captain_Helmet: H_HelmetO_ViperSP_hex_F
 	{
 		author = "Stim";
-		displayName = "87th Captain Helmet";
+		displayname = "[87th] Captain Helmet";
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\helmets\ct\87th_Captain_Helmet_co.paa)};
@@ -77,7 +77,7 @@ class CfgWeapons {
 	class 87th_ARC_Helmet: H_HelmetO_ViperSP_hex_F
 	{
 		author = "Stim";
-		displayName = "87th ARC Helmet";
+		displayname = "[87th] ARC Helmet";
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\helmets\ct\87th_ARC_Helmet_co.paa)};
@@ -106,7 +106,7 @@ class CfgWeapons {
 	class 87th_Airborne_Helmet: H_HelmetO_ViperSP_hex_F
 	{
 		author = "Stim";
-		displayName = "87th Airborne Helmet";
+		displayname = "[87th] Airborne Helmet";
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\helmets\87th_Airborne_Helmet_co.paa)};
@@ -137,7 +137,7 @@ class CfgWeapons {
 		author = "Stim";
 		weaponPoolAvailable = 1;
 		scope = 2;
-		displayName = "87th ARF Helmet";
+		displayname = "[87th] ARF Helmet";
 		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
 		model = "JLTS_AE\SEA_Helmet_ARF.p3d";
 		hiddenSelections[]= 
@@ -178,7 +178,7 @@ class CfgWeapons {
 	class 87th_BARC_Helmet: JLTS_CloneHelmetP2
 	{
 		author = "Stim";
-		displayName = "87th BARC Helmet";
+		displayname = "[87th] BARC Helmet";
 		picture = "\MRC\JLTS\characters\CloneArmor2\data\ui\CloneHelmetBARC_ui_ca.paa";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\helmets\87th_BARC_Helmet_co.paa)};
@@ -207,7 +207,7 @@ class CfgWeapons {
 	class 87th_Katarn_Helmet: 3AS_Katarn_Helmet_Base
 	{
 		author = "Stim";
-		displayName = "87th Katarn Helmet";
+		displayname = "[87th] Katarn Helmet";
 		picture = "\3AS\3AS_Characters\Commando\data\Helmet_ca.paa";
 		hiddenSelectionsTextures[]= 
 		{
@@ -220,7 +220,7 @@ class CfgWeapons {
 		author = "Stim";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "87th Pilot Helmet";
+		displayname = "[87th] Pilot Helmet";
 		picture = "3AS\3AS_Characters\Clones\Headgear\ui\p2pilot_ui_ca.paa";
 		model = "\3AS\3AS_Characters\Clones\Headgear\3AS_Clone_Pilot_P2.p3d";
 		hiddenSelections[]= 
@@ -270,7 +270,7 @@ class CfgWeapons {
 	class 87th_Commander_Helmet: H_HelmetO_ViperSP_hex_F
 	{
 		author = "Stim";
-		displayName = "87th Commander Helmet";
+		displayname = "[87th] Commander Helmet";
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\helmets\ct\87th_Commander_Helmet_co.paa)};
@@ -299,7 +299,7 @@ class CfgWeapons {
 	class 87th_NVG: NVGoggles
 	{
 		author = "Stim";
-		displayName = "87th NVG";
+		displayname = "[87th] NVG";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneNVG_off.p3d";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\other\87th_NVG_co.paa)};
@@ -324,7 +324,7 @@ class CfgWeapons {
 	{
 		author = "Stim";
 		scope = 2;
-		displayName = "87th Officer Accessories";
+		displayname = "[87th] Officer Accessories";
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
 		hiddenSelections[] = {"camo1"};
@@ -360,7 +360,7 @@ class CfgWeapons {
 	};
 	class 87th_Commander_Accessories: 87th_Officer_Accessories
 	{
-		displayName = "87th Commander Accessories";
+		displayname = "[87th] Commander Accessories";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestCommander.p3d";
 		class ItemInfo: VestItem
 		{
@@ -393,7 +393,7 @@ class CfgWeapons {
 	};
 	class 87th_Lieutenant_Accessories: 87th_Officer_Accessories
 	{
-		displayName = "87th Lieutenant Accessories";
+		displayname = "[87th] Lieutenant Accessories";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestLieutenant.p3d";
 		class ItemInfo: VestItem
 		{
@@ -420,7 +420,7 @@ class CfgWeapons {
 	};
 	class 87th_Kama: 87th_Officer_Accessories
 	{
-		displayName = "87th Kama";
+		displayname = "[87th] Kama";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestKama.p3d";
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestKama_ui_ca.paa";
 		class ItemInfo: VestItem
@@ -447,7 +447,7 @@ class CfgWeapons {
 	{
 		author = "Stim";
 		scope = 2;
-		displayName = "87th Katarn Demolitions Pack";
+		displayname = "[87th] Katarn Demolitions Pack";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\vests\87th_Katarn_Demo_co.paa)};
 	};
@@ -455,7 +455,7 @@ class CfgWeapons {
 	{
 		author = "Stim";
 		scope = 2;
-		displayName = "87th Katarn Technician Pack";
+		displayname = "[87th] Katarn Technician Pack";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\vests\87th_Katarn_Tech_co.paa)};
 	};
@@ -463,7 +463,7 @@ class CfgWeapons {
 	{
 		author = "Stim";
 		scope = 2;
-		displayName = "87th Trooper Armor";
+		displayname = "[87th] Trooper Armor";
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		class ItemInfo: UniformItem
@@ -479,7 +479,7 @@ class CfgWeapons {
 		author = "Stim";
 		scope = 2;
 		tas_is_commando = 1;
-		displayName = "87th Katarn Armor";
+		displayname = "[87th] Katarn Armor";
 		picture = "\3AS\3AS_Characters\Commando\data\Armor_ca.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		class ItemInfo: ItemInfo
