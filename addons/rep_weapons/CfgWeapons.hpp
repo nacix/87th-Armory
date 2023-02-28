@@ -191,7 +191,7 @@ class CfgWeapons
 		};
 		class OpticsModes
 		{
-			class optic
+			class Optic
 			{
 				opticsID = 1;
 				useModelOptics = 1;
