@@ -33,21 +33,22 @@ class CfgMagazines
 	class 87th_SmokeShellPurple: SmokeShell
 	{
 		author = "Anorexican";
-		ammo = "87th_SmokeShellPurple_ammo";
 		descriptionShort = "Fuze: Impact";
 		displayName = "[87th] Impact Smoke (Purple)";
 		displayNameShort = "Purple Smoke";
+		ammo = "87th_SmokeShellPurple_ammo";
+		initSpeed=18;
 	};
 	class 87th_SmokeShellViolet: 87th_SmokeShellPurple
 	{
-		ammo = "87th_SmokeShellViolet_ammo";
 		displayName = "[87th] Impact Smoke (Violet)";
 		displayNameShort = "Violet Smoke";
+		ammo = "87th_SmokeShellViolet_ammo";
 	};
 	class 87th_SmokeShellMidnight: 87th_SmokeShellPurple
 	{
-		ammo = "87th_SmokeShellMidnight_ammo";
 		displayName = "[87th] Impact Smoke (Midnight)";
 		displayNameShort = "Midnight Smoke";
+		ammo = "87th_SmokeShellMidnight_ammo";
 	};
 };
