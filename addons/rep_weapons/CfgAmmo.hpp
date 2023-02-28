@@ -160,10 +160,14 @@ class CfgAmmo
 	};
 	class 87th_SmokeShellPurple_ammo: SmokeShell
 	{
-		smokeColor[] = {0.29, 0, 0.51, 1.00};
+		smokeColor[] = {0.29, 0.00, 0.51, 1.00};
 	};
 	class 87th_SmokeShellViolet_ammo: 87th_SmokeShellPurple_ammo
 	{
 		smokeColor[] = {0.62, 0.35, 0.98, 1.00};
+	};
+	class 87th_SmokeShellMidnight_ammo: 87th_SmokeShellPurple_ammo
+	{
+		smokeColor[] = {0.10, 0.00, 0.17, 1.00};
 	};
 };
