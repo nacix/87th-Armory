@@ -16,8 +16,8 @@ class Extended_PostInit_EventHandlers {
     };
 };
 
-class Extended_FiredBIS_Eventhandlers {
-	class Throw {
-		ax87_grenade_thrown = QUOTE(_this call FUNC(adjustGrenadePhysics));
+class Extended_FiredBIS_EventHandlers {
+	class All {
+		server_87th_fired_eh = QUOTE(_this call FUNC(adjustGrenadePhysics));
 	};
 };
