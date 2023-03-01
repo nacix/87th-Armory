@@ -37,7 +37,6 @@ class CfgMagazines
 		displayName = "[87th] Impact Smoke (Purple)";
 		displayNameShort = "Purple Smoke";
 		ammo = "87th_SmokeShellPurple_ammo";
-		initSpeed=18;
 	};
 	class 87th_SmokeShellViolet: 87th_SmokeShellPurple
 	{
