@@ -19,12 +19,15 @@ class CfgPatches
 			"3AS_Weapons",
 			"3AS_Weapons_RPS6",
 			"JLTS_core",
+			"JLTS_weapons_Core",
 			"JLTS_weapons_DC15X",
-			"JLTS_weapons_RPS6"
+			"JLTS_weapons_RPS6",
+			"JLTS_weapons_DC17SA"
         };
         units[] = {};
 		weapons[]=
 		{
+			"87th_acc_pointer_Purple",
 			"87th_3AS_DC15A_F",
 			"87th_3AS_DC15LE_F",
 			"87th_3AS_DC15S_F",
@@ -34,7 +37,8 @@ class CfgPatches
 			"87th_3AS_DC15C_F",
 			"87th_3AS_DC15L_F",
 			"87th_JLTS_DC15X",
-			"87th_RPS6X"
+			"87th_RPS6X",
+			"87th_DC17SA"
 		};
 		magazines[]=
 		{
@@ -58,6 +62,7 @@ class CfgPatches
     };
 };
 
+#include "CfgEventHandlers.hpp"
 #include "CfgAmmo.hpp"
 #include "CfgMagazines.hpp"
 #include "CfgWeapons.hpp"
