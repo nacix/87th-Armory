@@ -8,20 +8,41 @@ class PointerSlot;
 class UnderBarrelSlot;
 class CfgWeapons 
 {
+	class acc_pointer_IR;
+	class GrenadeLauncher;
+	class InventoryFlashLightItem_Base_F;
 	class Launcher;
+	class Launcher_Base_F: Launcher { class WeaponSlotsInfo; };
 	class 3AS_DC15A_F;
 	class 3AS_DC15S_F;
 	class 3AS_DC15A_GL;
 	class 3AS_DC15C_GL;
 	class 3AS_DC15C_F;
-	class 3AS_DC15L_F;
-	class JLTS_DC15X;
-	class GrenadeLauncher;
-	class ThrowMuzzle;
+	class JLTS_DC17SA;
 
-	class Launcher_Base_F: Launcher
+	class 87th_acc_pointer_Purple: acc_pointer_IR
 	{
-		class WeaponSlotsInfo;
+		author = "Anorexican";
+		scope = 2;
+		displayName = "[87th] Visible Laser (Purple)";
+		model = "\MRC\JLTS\weapons\DC17SA\DC17SA_flash.p3d";
+		picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_flash_ui_ca.paa";
+		class ItemInfo: InventoryFlashLightItem_Base_F
+		{
+			mass = 6;
+			class Pointer
+			{
+				irLaserPos = "flash dir";
+				irLaserEnd = "flash";
+				beamColor[] = {2000, 0, 3000000};
+				dotColor[] = {100, 0, 3000};
+				dotSize = 0.05;
+				beamThickness = 0.05;
+				beamMaxLength = 9999;
+				isIR = 0;
+			};
+			class Flashlight {};
+		};
 	};
 	class 87th_3AS_DC15A_F: 3AS_DC15A_F
 	{
@@ -143,6 +164,52 @@ class CfgWeapons
 			{
 				slot = "CowsSlot";
 				item = "jlts_dc15x_scope";
+			};
+		};
+	};
+
+	class 87th_DC17SA: JLTS_DC17SA
+	{
+		scope = 2;
+		displayName = "[87th] DC-17SA";
+		author = "Anorexican";
+		JLTS_hasElectronics = 1;
+		JLTS_hasEMPProtection = 1;
+		JLTS_friedItem = "";
+		JLTS_repairTime = 20;
+		JLTS_canHaveShield = 0;
+		JLTS_shieldedWeapon = "";
+		baseWeapon = "87th_DC17SA";
+		class WeaponSlotsInfo
+		{
+			mass=20;
+			class CowsSlot {};
+			class PointerSlot: PointerSlot
+			{
+				linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
+				compatibleItems[]=
+				{
+					"87th_acc_pointer_Purple"
+				};
+			};
+			class MuzzleSlot: MuzzleSlot
+			{
+				linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+				compatibleItems[] = {};
+				iconPosition[] = {0.23999999,0.34999999};
+				iconScale = 0.2;
+			};
+			class UnderBarrelSlot: UnderBarrelSlot
+			{
+				compatibleItems[] = {};
+			};
+		};
+		class LinkedItems
+		{
+			class LinkedItemsPointer
+			{
+				slot = "PointerSlot";
+				item = "87th_acc_pointer_Purple";
 			};
 		};
 	};
@@ -310,6 +377,7 @@ class CfgWeapons
 			"87th_SmokeShellViolet_Throw",
 			"87th_SmokeShellMidnight_Throw"
 		};
+		class ThrowMuzzle;
 		class 87th_SmokeShellPurple_Throw: ThrowMuzzle
 		{
 			magazines[] = {"87th_SmokeShellPurple"};
