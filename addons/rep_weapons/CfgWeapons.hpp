@@ -315,7 +315,8 @@ class CfgWeapons
 					"begin1",
 					1
 				};
-				soundSetShot[] = {
+				soundSetShot[]= 
+				{
 					"Launcher_RPG7_Shot_SoundSet",
 					"Launcher_RPG7_Tail_SoundSet"
 				};
