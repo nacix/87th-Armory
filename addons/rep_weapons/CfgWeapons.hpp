@@ -17,6 +17,7 @@ class CfgWeapons
 	class 3AS_DC15S_F;
 	class 3AS_DC15A_GL;
 	class 3AS_DC15C_GL;
+	class 3AS_DC15L_F;
 	class 3AS_DC15C_F;
 	class JLTS_DC17SA;
 
