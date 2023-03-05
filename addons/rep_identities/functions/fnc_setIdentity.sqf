@@ -56,4 +56,4 @@ _name = _designation + _number;
 
 [_unit, _selectedFace] remoteExec ["setFace", 0, _unit];
 [_unit, [_name, _designation, _number]] remoteExec ["setName", 0, _unit];
-[_unit, _rank] remoteExec ["setRank", 0, _unit];
+_unit setRank _rank;
