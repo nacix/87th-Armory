@@ -45,7 +45,7 @@ if (rank _unit == "PRIVATE") then {
         case "CLT": {_rank = "LIEUTENANT"};
         case "CPT": {_rank = "CAPTAIN"};
         case "CMJ": {_rank = "MAJOR"}; // Maybe we should separate these
-        case "CMDR": {_rank = "COLONEL"};
+        case "CC": {_rank = "COLONEL"};
         default {_rank = "PRIVATE"};
     };
 };
