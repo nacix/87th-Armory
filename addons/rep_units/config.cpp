@@ -49,6 +49,7 @@ class CfgPatches
 			"87th_BARC_Spotter",
 			"87th_BARC_Sniper",
 			"87th_BARC_DC15S",
+			"87th_ATRT_Driver",
 			"87th_ARF_Major",
 			"87th_ARF_Captain",
 			"87th_ARF_Lieutenant",

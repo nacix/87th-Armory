@@ -2107,6 +2107,31 @@ class CfgVehicles {
 		};
 	};
 
+	class 87th_ATRT_Driver: 87th_ARF_DC15S
+	{
+		displayName = "ATRT Driver";
+		Engineer = 1;
+		canDeactivateMines = 0;
+		linkedItems[]=
+		{
+			"87th_ATRT_Helmet",
+			"JLTS_CloneVestHolster",
+			"ItemMap",
+			"JLTS_clone_comlink",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"87th_ATRT_Helmet",
+			"JLTS_CloneVestHolster",
+			"ItemMap",
+			"JLTS_clone_comlink",
+			"ItemCompass",
+			"ItemWatch"
+		};
+	};
+
 	class 87th_ARF_Major: 87th_Clone_Commander 
 	{
 		displayName = "ARF Major";
