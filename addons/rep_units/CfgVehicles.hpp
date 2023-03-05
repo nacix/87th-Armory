@@ -1890,22 +1890,8 @@ class CfgVehicles {
 			"ItemCompass",
 			"ItemWatch"
 		};
-		weapons[]=
-		{
-			"87th_3AS_DC15S_F",
-			"JLTS_DC17SA",
-			"SWLB_clone_binocular",
-			"Throw",
-			"Put"
-		};
-		respawnWeapons[]=
-		{
-			"87th_3AS_DC15S_F",
-			"JLTS_DC17SA",
-			"SWLB_clone_binocular",
-			"Throw",
-			"Put"
-		};
+		weapons[] += { "SWLB_clone_binocular" };
+		respawnWeapons[] += { "SWLB_clone_binocular" };
 	};
 	class 87th_ARF_Sniper: 87th_Clone_Sharpshooter 
 	{
@@ -2035,22 +2021,8 @@ class CfgVehicles {
 			"ItemCompass",
 			"ItemWatch"
 		};
-		weapons[]=
-		{
-			"87th_3AS_DC15S_F",
-			"JLTS_DC17SA",
-			"SWLB_clone_binocular",
-			"Throw",
-			"Put"
-		};
-		respawnWeapons[]=
-		{
-			"87th_3AS_DC15S_F",
-			"JLTS_DC17SA",
-			"SWLB_clone_binocular",
-			"Throw",
-			"Put"
-		};
+		weapons[] += { "SWLB_clone_binocular" };
+		respawnWeapons[] += { "SWLB_clone_binocular" };
 		class EventHandlers
 		{
 			init="[_this select 0, ""JLTS_GAR_medic""] call BIS_fnc_setUnitInsignia;";
@@ -2080,22 +2052,6 @@ class CfgVehicles {
 			"JLTS_clone_comlink",
 			"ItemCompass",
 			"ItemWatch"
-		};
-		weapons[]=
-		{
-			"87th_3AS_DC15S_F",
-			"JLTS_DC17SA",
-			"SWLB_clone_binocular",
-			"Throw",
-			"Put"
-		};
-		respawnWeapons[]=
-		{
-			"87th_3AS_DC15S_F",
-			"JLTS_DC17SA",
-			"SWLB_clone_binocular",
-			"Throw",
-			"Put"
 		};
 	};
 	class 87th_ARF_Lieutenant: 87th_Clone_Lieutenant 
@@ -2166,7 +2122,6 @@ class CfgVehicles {
 			"ItemCompass",
 			"ItemWatch"
 		};
-		backpack="JLTS_Clone_jumppack_mc";
 		respawnLinkedItems[]=
 		{
 			"87th_ARF_Helmet",
@@ -2280,22 +2235,6 @@ class CfgVehicles {
 			"ItemCompass",
 			"ItemWatch"
 		};
-		weapons[]=
-		{
-			"87th_3AS_DC15S_F",
-			"JLTS_DC17SA",
-			"SWLB_clone_binocular",
-			"Throw",
-			"Put"
-		};
-		respawnWeapons[]=
-		{
-			"87th_3AS_DC15S_F",
-			"JLTS_DC17SA",
-			"SWLB_clone_binocular",
-			"Throw",
-			"Put"
-		};
 	};
 	class 87th_BARC_CLS: 87th_ARF_CLS 
 	{
@@ -2322,10 +2261,6 @@ class CfgVehicles {
 			"ItemCompass",
 			"ItemWatch"
 		};
-		class EventHandlers
-		{
-			init="[_this select 0, ""JLTS_GAR_medic""] call BIS_fnc_setUnitInsignia;";
-		};
 	};
 	class 87th_BARC_NCO: 87th_ARF_NCO 
 	{
@@ -2351,22 +2286,6 @@ class CfgVehicles {
 			"JLTS_clone_comlink",
 			"ItemCompass",
 			"ItemWatch"
-		};
-		weapons[]=
-		{
-			"87th_3AS_DC15S_F",
-			"JLTS_DC17SA",
-			"SWLB_clone_binocular",
-			"Throw",
-			"Put"
-		};
-		respawnWeapons[]=
-		{
-			"87th_3AS_DC15S_F",
-			"JLTS_DC17SA",
-			"SWLB_clone_binocular",
-			"Throw",
-			"Put"
 		};
 	};
 	class 87th_BARC_Lieutenant: 87th_ARF_Lieutenant 
@@ -3216,12 +3135,14 @@ class CfgVehicles {
 		weapons[]=
 		{
 			"3AS_DC17M_F",
+			"SWLB_clone_binocular",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"3AS_DC17M_F",
+			"SWLB_clone_binocular",
 			"Throw",
 			"Put"
 		};
@@ -3309,12 +3230,14 @@ class CfgVehicles {
 		weapons[]=
 		{
 			"3AS_DC17M_F",
+			"SWLB_clone_binocular",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"3AS_DC17M_F",
+			"SWLB_clone_binocular",
 			"Throw",
 			"Put"
 		};
@@ -3395,12 +3318,14 @@ class CfgVehicles {
 		weapons[]=
 		{
 			"3AS_DC17M_F",
+			"SWLB_clone_binocular",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"3AS_DC17M_F",
+			"SWLB_clone_binocular",
 			"Throw",
 			"Put"
 		};
@@ -3504,12 +3429,14 @@ class CfgVehicles {
 		weapons[]=
 		{
 			"3AS_DC17M_F",
+			"SWLB_clone_binocular",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"3AS_DC17M_F",
+			"SWLB_clone_binocular",
 			"Throw",
 			"Put"
 		};
@@ -3562,6 +3489,7 @@ class CfgVehicles {
 			"3AS_ThermalDetonator"
 		};
 	};
+
 	class 87th_Clone_Pilot: 87th_Clone_EOD 
 	{
 		displayName = "Clone Pilot";
