@@ -22,8 +22,9 @@
 
 params ["_unit", "_skillTable"];
 
-_skillTable = _skillTable get (typeOf _unit);
 if (!isServer || isPlayer _unit) exitWith {};
+
+_skillTable = _skillTable get (typeOf _unit);
 {
-	[_unit, [_x, _skillTable select _forEachIndex]] remoteExec ["setSkill", 0, _unit];
+	_unit setSkill [_x, _skillTable select _forEachIndex];
 } forEach SKILLTYPES;
