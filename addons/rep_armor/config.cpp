@@ -20,7 +20,9 @@ class CfgPatches
 			"3AS_Characters_Commando",
 			"JLTS_core",
 			"JLTS_characters_CloneArmor",
-			"JLTS_characters_CloneLegions"
+			"JLTS_characters_CloneArmor2",
+			"JLTS_characters_CloneLegions",
+			"SEA_JLTS_ExtendedArsenal"
         };
         units[]=
 		{
@@ -34,6 +36,7 @@ class CfgPatches
 			"87th_ARC_Helmet",
 			"87th_Airborne_Helmet",
             "87th_ARF_Helmet",
+			"87th_ATRT_Helmet",
 			"87th_BARC_Helmet",
 			"87th_Katarn_Helmet",
 			"87th_P2_Pilot_helmet",
