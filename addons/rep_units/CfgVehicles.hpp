@@ -1890,8 +1890,22 @@ class CfgVehicles {
 			"ItemCompass",
 			"ItemWatch"
 		};
-		weapons[] += { "SWLB_clone_binocular" };
-		respawnWeapons[] += { "SWLB_clone_binocular" };
+		weapons[]=
+		{
+			"87th_3AS_DC15S_F",
+			"JLTS_DC17SA",
+			"SWLB_clone_binocular",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"87th_3AS_DC15S_F",
+			"JLTS_DC17SA",
+			"SWLB_clone_binocular",
+			"Throw",
+			"Put"
+		};
 	};
 	class 87th_ARF_Sniper: 87th_Clone_Sharpshooter 
 	{
@@ -2021,11 +2035,21 @@ class CfgVehicles {
 			"ItemCompass",
 			"ItemWatch"
 		};
-		weapons[] += { "SWLB_clone_binocular" };
-		respawnWeapons[] += { "SWLB_clone_binocular" };
-		class EventHandlers
+		weapons[]=
 		{
-			init="[_this select 0, ""JLTS_GAR_medic""] call BIS_fnc_setUnitInsignia;";
+			"87th_3AS_DC15S_F",
+			"JLTS_DC17SA",
+			"SWLB_clone_binocular",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"87th_3AS_DC15S_F",
+			"JLTS_DC17SA",
+			"SWLB_clone_binocular",
+			"Throw",
+			"Put"
 		};
 	};
 	class 87th_ARF_NCO: 87th_Clone_Sergeant 
