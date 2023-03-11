@@ -13,6 +13,7 @@ class CfgWeapons
 	class InventoryOpticsItem_Base_F;
 	class Launcher;
 	class Launcher_Base_F: Launcher { class WeaponSlotsInfo; };
+	class GrenadeLauncher;
 	class acc_pointer_IR;
 	class 3AS_ATRT_Weapon_F;
 	class 3AS_DC15A_F;
@@ -51,50 +52,28 @@ class CfgWeapons
 			class Flashlight {};
 		};
 	};
-	class 87th_3AS_DC15A_F: 3AS_DC15A_F
+	*/
+	class Throw: GrenadeLauncher
 	{
-		scope = 1;
-		class LinkedItems
+		muzzles[] += {
+			"87th_SmokeShellPurple_Throw",
+			"87th_SmokeShellViolet_Throw",
+			"87th_SmokeShellMidnight_Throw"
+		};
+		class ThrowMuzzle;
+		class 87th_SmokeShellPurple_Throw: ThrowMuzzle
 		{
-			class LinkedItemsOptic
-			{
-				slot = "CowsSlot";
-				item = "3as_optic_lescope_dc15a";
-			};
+			magazines[] = {"87th_SmokeShellPurple"};
+		};
+		class 87th_SmokeShellViolet_Throw: ThrowMuzzle
+		{
+			magazines[] = {"87th_SmokeShellViolet"};
+		};
+		class 87th_SmokeShellMidnight_Throw: ThrowMuzzle
+		{
+			magazines[] = {"87th_SmokeShellMidnight"};
 		};
 	};
-	class 87th_3AS_DC15LE_F: 3AS_DC15A_F
-	{
-		scope = 1;
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "CowsSlot";
-				item = "3as_optic_lescope_dc15a";
-			};
-			class LinkedItemsMuzzle
-			{
-				slot = "MuzzleSlot";
-				item = "3as_muzzle_le_dc15a";
-			};
-		};
-	};
-	class 87th_3AS_DC15LE_GL: 3AS_DC15A_GL
-	{
-		scope = 1;
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "CowsSlot";
-				item = "3as_optic_lescope_dc15a";
-			};
-			class LinkedItemsMuzzle
-			{
-				slot = "MuzzleSlot";
-				item = "3as_muzzle_le_dc15a";
-			};
 
 	class 87th_ATRT_Weapon: 3AS_ATRT_Weapon_F
 	{
@@ -105,11 +84,11 @@ class CfgWeapons
 			{
 				linkProxy="\A3\data_f\proxies\weapon_slots\TOP";
 				compatibleItems[]=
-			{
+				{
 					"87th_optic_ATRT"
+				};
 			};
 		};
-	};
 		/*
 		class LinkedItems
 		{
@@ -442,15 +421,15 @@ class CfgWeapons
 		class LinkedItems
 		{
 			class LinkedItemsOptic
-	{
+			{
 				slot = "CowsSlot";
 				item = "3as_optic_scope_westarm5";
-		};
+			};
 		};
 	};
 
 	class 87th_JLTS_DC15X : JLTS_DC15X
-		{
+	{
 		scope = 1;
 		class LinkedItems
 		{
@@ -458,11 +437,11 @@ class CfgWeapons
 			{
 				slot = "CowsSlot";
 				item = "jlts_dc15x_scope";
-		};
+			};
 		};
 	};
 	class 87th_k_773_rifle: k_773_rifle
-		{
+	{
 		scope = 1;
 		class LinkedItems
 		{
@@ -470,9 +449,9 @@ class CfgWeapons
 			{
 				slot = "CowsSlot";
 				item = "k_773_scope2";
-		};
+			};
 			class LinkedItemsMuzzle
-		{
+			{
 				slot = "MuzzleSlot";
 				item = "k_773_snds";
 			};
