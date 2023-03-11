@@ -9,7 +9,7 @@ class CfgGroups
 			name = "87th Legion";
 			class 87th_Clones
 			{
-				name = "Clone Troopers";
+				name = "Infantry Detachments";
 				class 87th_CT_InfSquad
 				{
 					faction = "87th_Legion";
@@ -433,7 +433,7 @@ class CfgGroups
 			};
 			class 87th_AB
 			{
-				name = "Airborne Troopers";
+				name = "Airborne Detachments";
 				class 87th_AB_WepSquad
 				{
 					faction = "87th_Legion";
@@ -995,9 +995,83 @@ class CfgGroups
 					};
 				};
 			};
+			class 87th_ARC
+			{
+				name = "ARC Detachments";
+				class 87th_ARC_WepTeam
+				{
+					faction = "87th_Legion";
+					icon = "\MRC\JLTS\Core_mod\data\markers\gar_recon.paa";
+					name = "Weapons Team";
+					side = 1;
+					class Unit0
+					{
+						position[] = {0,0,0};
+						rank = "LIEUTENANT";
+						side = 1;
+						vehicle = "87th_ARC_Lieutenant";
+					};
+					class Unit1
+					{
+						position[] = {5,-5,0};
+						rank = "SERGEANT";
+						side = 1;
+						vehicle = "87th_ARC_JTAC";
+					};
+					class Unit2
+					{
+						position[] = {-5,-5,0};
+						rank = "SERGEANT";
+						side = 1;
+						vehicle = "87th_ARC_AT";
+					};
+					class Unit3
+					{
+						position[] = {10,-10,0};
+						rank = "SERGEANT";
+						side = 1;
+						vehicle = "87th_ARC_EOD";
+					};
+					class Unit4
+					{
+						position[] = {-10,-10,0};
+						rank = "SERGEANT";
+						side = 1;
+						vehicle = "87th_ARC_Medic";
+					};
+				};
+				class 87th_ARC_SSTeam
+				{
+					faction = "87th_Legion";
+					icon = "\MRC\JLTS\Core_mod\data\markers\gar_recon.paa";
+					name = "Support Team";
+					side = 1;
+					class Unit0
+					{
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 1;
+						vehicle = "87th_ARC_JTAC";
+					};
+					class Unit1
+					{
+						position[] = {5,-5,0};
+						rank = "SERGEANT";
+						side = 1;
+						vehicle = "87th_ARC_AT";
+					};
+					class Unit2
+					{
+						position[] = {-5,-5,0};
+						rank = "SERGEANT";
+						side = 1;
+						vehicle = "87th_ARC_Sniper";
+					};
+				};
+			};
 			class 87th_ARF
 			{
-				name = "ARF Troopers";
+				name = "ARF Detachments";
 				class 87th_ARF_RecTeam
 				{
 					faction = "87th_Legion";
@@ -1064,7 +1138,7 @@ class CfgGroups
 			};
 			class 87th_BARC
 			{
-				name = "BARC Troopers";
+				name = "BARC Detachments";
 				class 87th_BARC_RecTeam
 				{
 					faction = "87th_Legion";
@@ -1131,12 +1205,12 @@ class CfgGroups
 			};
 			class 87th_RC
 			{
-				name = "Clone Commandos";
+				name = "Commando Detachments";
 				class 87th_RC_Fireteam
 				{
 					faction = "87th_Legion";
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_inf.paa";
-					name = "SOBDE Squad";
+					name = "Strike Team";
 					side = 1;
 					class Unit0
 					{
