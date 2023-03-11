@@ -15,7 +15,7 @@
 
 if (!isServer) exitWith {};
 
-// FACE PROFILES BASED ON UNIT RANK
+// FACE PROFILES BASED ON UNIT ROLE TAG
 GVAR(faceProfileMap) = createHashMapFromArray [
     ["CT", [
 		"lsd_gar_cloneA_head", 0.8,
@@ -72,21 +72,35 @@ private _vcomSkillTable = [
 	["87th_RC_NCO", _eliteSkills],
 	["87th_RC_DC17M", _eliteSkills],
 
-	// SPECIAL FORCES
-	["87th_BARC_Major", _scoutSkills],
-	["87th_BARC_Captain", _scoutSkills],
-	["87th_BARC_Lieutenant", _scoutSkills],
+	// ARC TROOPERS
+	["87th_ARC_Lieutenant", _eliteSkills],
+	["87th_ARC_Sniper", _eliteSkills],
+	["87th_ARC_JTAC", _sniperSkills],
+	["87th_ARC_Medic", _sniperSkills],
+	["87th_ARC_EOD", _sniperSkills],
+	["87th_ARC_AT", _sniperSkills],
+	["87th_ARC_GL", _sniperSkills],
+	["87th_ARC_Westar", _sniperSkills],
+	["87th_ARC_DC15S", _sniperSkills],
+
+	// BARC TROOPERS
+	["87th_BARC_Major", _sniperSkills],
+	["87th_BARC_Captain", _sniperSkills],
+	["87th_BARC_Lieutenant", _sniperSkills],
 	["87th_BARC_NCO", _scoutSkills],
 	["87th_BARC_CLS", _scoutSkills],
 	["87th_BARC_JTAC", _scoutSkills],
 	["87th_BARC_Spotter", _scoutSkills],
 	["87th_BARC_Sniper", _sniperSkills],
 	["87th_BARC_DC15S", _scoutSkills],
-	["87th_ARF_Major", _scoutSkills],
-	["87th_ARF_Captain", _scoutSkills],
-	["87th_ARF_Lieutenant", _scoutSkills],
+
+	// ARF TROOPERS
+	["87th_ARF_Major", _sniperSkills],
+	["87th_ARF_Captain", _sniperSkills],
+	["87th_ARF_Lieutenant", _sniperSkills],
 	["87th_ARF_NCO", _scoutSkills],
 	["87th_ARF_CLS", _scoutSkills],
+	["87th_ARF_EOD", _scoutSkills],
 	["87th_ARF_AT", _scoutSkills],
 	["87th_ARF_JTAC", _scoutSkills],
 	["87th_ARF_Spotter", _scoutSkills],
@@ -95,19 +109,20 @@ private _vcomSkillTable = [
 	["87th_ATRT_Driver", _scoutSkills],
 
 	// AIRBORNE TROOPERS
-	["87th_AB_Officer", _leadSkills],
-	["87th_AB_NCO", _leadSkills],
+	["87th_AB_Officer", _scoutSkills],
+	["87th_AB_NCO", _scoutSkills],
 	["87th_AB_CLS", _leadSkills],
 	["87th_AB_AR", _leadSkills],
+	["87th_AB_EOD", _leadSkills],
 	["87th_AB_AT", _leadSkills],
 	["87th_AB_DC15LE_UGL", _leadSkills],
 	["87th_AB_DC15C", _leadSkills],
 	["87th_AB_DC15LE", _leadSkills],
 	// PARADROPPERS
-	["87th_AB_NCO_A", _leadSkills],
-	["87th_AB_NCO_B", _leadSkills],
-	["87th_AB_NCO_C", _leadSkills],
-	["87th_AB_NCO_D", _leadSkills],
+	["87th_AB_NCO_A", _scoutSkills],
+	["87th_AB_NCO_B", _scoutSkills],
+	["87th_AB_NCO_C", _scoutSkills],
+	["87th_AB_NCO_D", _scoutSkills],
 
 	// CLONE TROOPERS
 	["87th_Clone_Pilot", _basicSkills],
