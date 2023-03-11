@@ -6,9 +6,7 @@
  * Args are taken directly from the "Fired" weapon EventHandler.
  *
  * Arguments:
- * 0: Group leader <OBJECT>
- * 1: Starting altitude <NUMBER>
- * 2: Parachute pull height <NUMBER> (Optional -> default=50)
+ * Called by BI's "Fired" weapon EventHandler.
  *
  * Return Value:
  * NONE
@@ -25,5 +23,5 @@ if (!(isServer) || _weapon != "Throw" || !("87th" in _muzzle)) exitWith {};
 
 [{(position _this) select 2 < 0.2}, {
 	_velocity = velocity _this;
-	_this setVelocity (_velocity apply {_x * 0.35});
+	_this setVelocity (_velocity apply { _x * 0.20 });
 }, _projectile, 120] call CBA_fnc_waitUntilAndExecute;
