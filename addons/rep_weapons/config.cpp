@@ -44,6 +44,8 @@ class CfgPatches
 			"87th_JLTS_DC15X",
 			"87th_k_773_rifle",
 			"87th_ATRT_Weapon",
+			//"87th_DC17SA",
+			"87th_RPS6X"
 		};
 		magazines[]=
 		{

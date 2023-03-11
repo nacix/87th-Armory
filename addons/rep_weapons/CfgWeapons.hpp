@@ -191,6 +191,7 @@ class CfgWeapons
 			"OFP2_ManSkeleton",
 			"\MRC\JLTS\weapons\RPS6\anims\RPS6_handanim.rtm"
 		};
+		recoil = "recoil_single_law";
 		reloadAction = "ReloadRPG";
 		reloadMagazineSound[] = 
 		{
