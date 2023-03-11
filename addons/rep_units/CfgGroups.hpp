@@ -6,7 +6,7 @@ class CfgGroups
 		side = 1;
 		class 87th_Legion
 		{
-			name = "87th Legion";
+			name = "[87th] Republic Forces";
 			class 87th_Clones
 			{
 				name = "Infantry Detachments";
