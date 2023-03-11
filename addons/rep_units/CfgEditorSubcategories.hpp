@@ -1,8 +1,12 @@
 class CfgEditorSubcategories 
 {
-	class 87th_Troopers
-	{ 
-		displayName = "Clone Troopers";
+	class 87th_AB
+	{
+		displayName = "Airborne Troopers";
+	};
+	class 87th_ARC
+	{
+		displayName = "ARC Troopers";
 	};
 	class 87th_ARF
 	{ 
@@ -16,12 +20,12 @@ class CfgEditorSubcategories
 	{
 		displayName = "Clone Commandos";
 	};
-	class 87th_Air
-	{
-		displayName = "Air Forces";
+	class 87th_Troopers
+	{ 
+		displayName = "Clone Troopers";
 	};
-	class 87th_AB
+	class 87th_Vehicles
 	{
-		displayName = "Airborne Troopers";
+		displayName = "Vehicles";
 	};
 };
