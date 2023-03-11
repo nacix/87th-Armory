@@ -18,6 +18,7 @@ class CfgPatches
 			"3AS_Main",
 			"3AS_Weapons",
 			"3AS_Weapons_RPS6",
+			"3AS_ATRT",
 			"JLTS_core",
 			"JLTS_weapons_Core",
 			"JLTS_weapons_DC15X",
@@ -37,8 +38,7 @@ class CfgPatches
 			"87th_3AS_DC15C_F",
 			"87th_3AS_DC15L_F",
 			"87th_JLTS_DC15X",
-			"87th_RPS6X",
-			"87th_DC17SA"
+			"87th_ATRT_Weapon",
 		};
 		magazines[]=
 		{

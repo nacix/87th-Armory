@@ -8,11 +8,12 @@ class PointerSlot;
 class UnderBarrelSlot;
 class CfgWeapons 
 {
-	class acc_pointer_IR;
-	class GrenadeLauncher;
+	class ItemCore;
 	class InventoryFlashLightItem_Base_F;
+	class InventoryOpticsItem_Base_F;
 	class Launcher;
 	class Launcher_Base_F: Launcher { class WeaponSlotsInfo; };
+	class 3AS_ATRT_Weapon_F;
 	class 3AS_DC15A_F;
 	class 3AS_DC15S_F;
 	class 3AS_DC15A_GL;
@@ -89,86 +90,39 @@ class CfgWeapons
 				slot = "MuzzleSlot";
 				item = "3as_muzzle_le_dc15a";
 			};
+
+	class 87th_ATRT_Weapon: 3AS_ATRT_Weapon_F
+	{
+		displayName="[87th] AT-RT Weapon";
+		class WeaponSlotsInfo
+		{
+			class CowsSlot
+			{
+				linkProxy="\A3\data_f\proxies\weapon_slots\TOP";
+				compatibleItems[]=
+			{
+					"87th_optic_ATRT"
+			};
 		};
 	};
-	class 87th_3AS_DC15S_F: 3AS_DC15S_F
-	{
-		scope = 1;
+		/*
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
 				slot = "CowsSlot";
-				item = "3as_optic_holo_dc15s";
+				item = "87th_optic_ATRT";
+			};
+			class LinkedItemsPointer
+			{
+				slot = "PointerSlot";
+				item = "";
 			};
 		};
-	};
-	class 87th_3AS_DC15A_GL: 3AS_DC15A_GL
-	{
-		scope = 1;
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "CowsSlot";
-				item = "3as_optic_lescope_dc15a";
-			};
-		};
-	};
-	class 87th_3AS_DC15C_GL: 3AS_DC15C_GL
-	{
-		scope = 1;
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "CowsSlot";
-				item = "3as_optic_reflex_dc15c";
-			};
-		};
-	};
-	class 87th_3AS_DC15C_F: 3AS_DC15C_F
-	{
-		scope = 1;
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "CowsSlot";
-				item = "3as_optic_acog_dc15c";
-			};
-		};
-	};
-	class 87th_3AS_DC15L_F: 3AS_DC15L_F
-	{
-		scope = 1;
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "CowsSlot";
-				item = "3as_optic_dc15l";
-			};
-			class LinkedItemsUnder
-			{
-				slot = "UnderBarrelSlot";
-				item = "3as_bipod_dc15l_f";
-			};
-		};
-	};
-	class 87th_JLTS_DC15X : JLTS_DC15X
-	{
-		scope = 1;
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "CowsSlot";
-				item = "jlts_dc15x_scope";
-			};
-		};
+		*/
 	};
 
+	/*
 	class 87th_DC17SA: JLTS_DC17SA
 	{
 		scope = 2;
@@ -214,6 +168,7 @@ class CfgWeapons
 			};
 		};
 	};
+	*/
 	class 87th_RPS6X: Launcher_Base_F
 	{
 		JLTS_hasElectronics = 1;
