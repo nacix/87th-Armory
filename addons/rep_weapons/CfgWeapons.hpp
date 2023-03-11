@@ -13,6 +13,7 @@ class CfgWeapons
 	class InventoryOpticsItem_Base_F;
 	class Launcher;
 	class Launcher_Base_F: Launcher { class WeaponSlotsInfo; };
+	class acc_pointer_IR;
 	class 3AS_ATRT_Weapon_F;
 	class 3AS_DC15A_F;
 	class 3AS_DC15S_F;
@@ -20,8 +21,12 @@ class CfgWeapons
 	class 3AS_DC15C_GL;
 	class 3AS_DC15L_F;
 	class 3AS_DC15C_F;
+	class 3AS_WestarM5_F;
+	class k_773_rifle;
+	class JLTS_DC15X;
 	class JLTS_DC17SA;
 
+	/*
 	class 87th_acc_pointer_Purple: acc_pointer_IR
 	{
 		author = "Anorexican";
@@ -194,7 +199,6 @@ class CfgWeapons
 			1, 
 			20
 		};
-		recoil = "recoil_single_law";
 		maxZeroing = 600;
 		modelOptics = "A3\Weapons_F_Tank\acc\reticle_Vorona.p3d";
 		weaponInfoType = "RscOpticsRangeFinderVorona";
@@ -276,7 +280,6 @@ class CfgWeapons
 					"Launcher_RPG7_Tail_SoundSet"
 				};
 			};
-			recoil = "recoil_single_law";
 			aiRateOfFire = 5;
 			aiRateOfFireDistance = 500;
 			aiRateOfFireDispersion = 2;
@@ -293,13 +296,6 @@ class CfgWeapons
 			0.446684,
 			1,
 			20
-		};
-		reloadMagazineSound[]=
-		{
-			"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\reload_RPG32",
-			0.25118864,
-			1,
-			10
 		};
 		canLock = 0;
 		weaponLockDelay = 3;
@@ -327,25 +323,158 @@ class CfgWeapons
 		magazines[] = {};
 		JLTS_isFried = 1;
 	};
-	class Throw: GrenadeLauncher
+
+	class 87th_3AS_DC15A_F: 3AS_DC15A_F
 	{
-		muzzles[] += {
-			"87th_SmokeShellPurple_Throw",
-			"87th_SmokeShellViolet_Throw",
-			"87th_SmokeShellMidnight_Throw"
-		};
-		class ThrowMuzzle;
-		class 87th_SmokeShellPurple_Throw: ThrowMuzzle
+		scope = 1;
+		class LinkedItems
 		{
-			magazines[] = {"87th_SmokeShellPurple"};
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "3as_optic_lescope_dc15a";
+			};
 		};
-		class 87th_SmokeShellViolet_Throw: ThrowMuzzle
+	};
+	class 87th_3AS_DC15LE_F: 3AS_DC15A_F
+	{
+		scope = 1;
+		class LinkedItems
 		{
-			magazines[] = {"87th_SmokeShellViolet"};
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "3as_optic_lescope_dc15a";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot = "MuzzleSlot";
+				item = "3as_muzzle_le_dc15a";
+			};
 		};
-		class 87th_SmokeShellMidnight_Throw: ThrowMuzzle
+	};
+	class 87th_3AS_DC15LE_GL: 3AS_DC15A_GL
+	{
+		scope = 1;
+		class LinkedItems
 		{
-			magazines[] = {"87th_SmokeShellMidnight"};
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "3as_optic_lescope_dc15a";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot = "MuzzleSlot";
+				item = "3as_muzzle_le_dc15a";
+			};
+		};
+	};
+	class 87th_3AS_DC15S_F: 3AS_DC15S_F
+	{
+		scope = 1;
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "3as_optic_holo_dc15s";
+			};
+		};
+	};
+	class 87th_3AS_DC15A_GL: 3AS_DC15A_GL
+	{
+		scope = 1;
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "3as_optic_lescope_dc15a";
+			};
+		};
+	};
+	class 87th_3AS_DC15C_GL: 3AS_DC15C_GL
+	{
+		scope = 1;
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "3as_optic_reflex_dc15c";
+			};
+		};
+	};
+	class 87th_3AS_DC15C_F: 3AS_DC15C_F
+	{
+		scope = 1;
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "3as_optic_acog_dc15c";
+			};
+		};
+	};
+	class 87th_3AS_DC15L_F: 3AS_DC15L_F
+	{
+		scope = 1;
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "3as_optic_dc15l";
+			};
+			class LinkedItemsUnder
+			{
+				slot = "UnderBarrelSlot";
+				item = "3as_bipod_dc15l_f";
+			};
+		};
+	};
+	class 87th_3AS_WestarM5_F: 3AS_WestarM5_F
+	{
+		scope = 1;
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+	{
+				slot = "CowsSlot";
+				item = "3as_optic_scope_westarm5";
+		};
+		};
+	};
+
+	class 87th_JLTS_DC15X : JLTS_DC15X
+		{
+		scope = 1;
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "jlts_dc15x_scope";
+		};
+		};
+	};
+	class 87th_k_773_rifle: k_773_rifle
+		{
+		scope = 1;
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "k_773_scope2";
+		};
+			class LinkedItemsMuzzle
+		{
+				slot = "MuzzleSlot";
+				item = "k_773_snds";
+			};
 		};
 	};
 };

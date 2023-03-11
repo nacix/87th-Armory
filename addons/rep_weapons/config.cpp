@@ -23,6 +23,7 @@ class CfgPatches
 			"JLTS_weapons_Core",
 			"JLTS_weapons_DC15X",
 			"JLTS_weapons_RPS6",
+			"JLTS_weapons_DC17SA",
 			"442_weapons",
 			"442_weapons_explosives",
 			"442_weapons_773"
@@ -39,7 +40,9 @@ class CfgPatches
 			"87th_3AS_DC15C_GL",
 			"87th_3AS_DC15C_F",
 			"87th_3AS_DC15L_F",
+			"87th_3AS_WestarM5_F",
 			"87th_JLTS_DC15X",
+			"87th_k_773_rifle",
 			"87th_ATRT_Weapon",
 		};
 		magazines[]=
