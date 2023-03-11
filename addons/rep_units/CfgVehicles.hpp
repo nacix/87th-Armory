@@ -2001,6 +2001,15 @@ class CfgVehicles {
 			"ItemCompass",
 			"ItemWatch"
 		};
+		headgearList[]=
+		{
+			"87th_ARF_Helmet", 0.6,
+			"87th_ARF_Helmet_P2", 0.4
+		};
+		class EventHandlers
+		{
+			init = "if (local (_this select 0)) then {[(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+		};
 	};
 	class 87th_ARF_EOD: 87th_Clone_EOD
 	{
@@ -2040,6 +2049,15 @@ class CfgVehicles {
 			"SWLB_clone_binocular",
 			"Throw",
 			"Put"
+		};
+		headgearList[]=
+		{
+			"87th_ARF_Helmet", 0.3,
+			"87th_ARF_Helmet_P2", 0.7
+		};
+		class EventHandlers
+		{
+			init = "if (local (_this select 0)) then {[(_this select 0), [], []] call BIS_fnc_unitHeadgear}; [_this select 0, ""JLTS_GAR_EOD""] call BIS_fnc_setUnitInsignia;";
 		};
 	};
 	class 87th_ARF_CLS: 87th_Clone_Medic 
@@ -2107,6 +2125,15 @@ class CfgVehicles {
 			"ItemCompass",
 			"ItemWatch"
 		};
+		headgearList[]=
+		{
+			"87th_ARF_Helmet", 0.7,
+			"87th_ARF_Helmet_P2", 0.3
+		};
+		class EventHandlers
+		{
+			init = "if (local (_this select 0)) then {[(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+		};
 	};
 	class 87th_ARF_Lieutenant: 87th_Clone_Lieutenant 
 	{
@@ -2131,6 +2158,15 @@ class CfgVehicles {
 			"JLTS_clone_comlink",
 			"ItemCompass",
 			"ItemWatch"
+		};
+		headgearList[]=
+		{
+			"87th_ARF_Helmet", 0.7,
+			"87th_ARF_Helmet_P2", 0.3
+		};
+		class EventHandlers
+		{
+			init = "if (local (_this select 0)) then {[(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
 		};
 	};
 	class 87th_ARF_Captain: 87th_Clone_Captain 
@@ -2157,6 +2193,15 @@ class CfgVehicles {
 			"ItemCompass",
 			"ItemWatch"
 		};
+		headgearList[]=
+		{
+			"87th_ARF_Helmet", 0.6,
+			"87th_ARF_Helmet_P2", 0.4
+		};
+		class EventHandlers
+		{
+			init = "if (local (_this select 0)) then {[(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+		};
 	};
 	class 87th_ARF_Major: 87th_Clone_Commander 
 	{
@@ -2181,11 +2226,21 @@ class CfgVehicles {
 			"ItemCompass",
 			"ItemWatch"
 		};
+		headgearList[]=
+		{
+			"87th_ARF_Helmet", 0.6,
+			"87th_ARF_Helmet_P2", 0.4
+		};
+		class EventHandlers
+		{
+			init = "if (local (_this select 0)) then {[(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+		};
 	};
 
 	class 87th_ATRT_Driver: 87th_ARF_DC15S
 	{
 		displayName = "AT-RT Driver";
+		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_ATRT_Driver.jpg);
 		Engineer = 1;
 		canDeactivateMines = 0;
 		linkedItems[]=

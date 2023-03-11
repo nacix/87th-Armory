@@ -15,7 +15,8 @@ class CfgWeapons {
 	class JLTS_CloneVestKama;
 	class JLTS_CloneVestLieutenant;
 	class JLTS_CloneVestOfficer;
-	class SEA_Helmet_ARF_Base;
+	class ls_gar_phase1Arf_helmet;
+	class ls_gar_phase2Arf_helmet;
 
 	class 87th_Trooper_Helmet: JLTS_CloneHelmetP2
 	{
@@ -39,16 +40,43 @@ class CfgWeapons {
 		displayname = "[87th] Airborne Helmet";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\87th_Airborne_Helmet_co.paa) };
 	};
-	class 87th_ARF_Helmet: SEA_Helmet_ARF_Base
+	class 87th_ARF_Helmet: ls_gar_phase1Arf_helmet
 	{
 		author = "Stim";
 		displayname = "[87th] ARF Helmet";
-		hiddenSelectionsTextures[]= 
+		picture="3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
+		hiddenSelectionsTextures[]=
 		{
 			QPATHTOF(data\helmets\arf\87th_ARF_Helmet_co.paa),
-			QPATHTOF(data\helmets\arf\87th_ARF_Plates_co.paa),
-			QPATHTOF(data\helmets\arf\87th_ARF_Visor_co.paa)
+			"",
+			QPATHTOF(data\helmets\arf\ARF_Visor_co.paa)
 		};
+		hiddenSelectionsMaterials[]=
+		{
+			QPATHTOF(data\helmets\arf\ARFHelmet.rvmat),
+			"",
+			"ls_armor_bluefor\helmet\gar\arf\data\visor.rvmat"
+		};
+		subItems[] = {};
+	};
+	class 87th_ARF_Helmet_P2: ls_gar_phase2Arf_helmet
+	{
+		author = "Stim";
+		displayname = "[87th] ARF Helmet (P2)";
+		picture="3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\helmets\arf\87th_ARF_Helmet_co.paa),
+			"ls_armor_bluefor\helmet\gar\arf\data\camo2_co.paa",
+			QPATHTOF(data\helmets\arf\ARF_Visor_co.paa)
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			QPATHTOF(data\helmets\arf\ARFHelmet.rvmat),
+			"ls_armor_bluefor\helmet\gar\arf\data\camo2.rvmat",
+			"ls_armor_bluefor\helmet\gar\arf\data\visor.rvmat"
+		};
+		subItems[] = {};
 	};
 	class 87th_ATRT_Helmet: 3as_ATRT_Helmet
 	{
