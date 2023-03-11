@@ -67,6 +67,17 @@ class CfgVehicles {
 			QPATHTOF(data\uniforms\ct\87th_Legs_co.paa)
 		};
 	};
+	class 87th_Medic_Base: 87th_Clone_Base 
+	{
+		author = "Anorexican";
+		displayName = "CloneMedicBase";
+		uniformClass = "87th_Medic_Uniform";
+		hiddenSelectionsTextures[] =
+		{
+			QPATHTOF(data\uniforms\ct\87th_Medic_Chest_co.paa),
+			QPATHTOF(data\uniforms\ct\87th_Legs_co.paa)
+		};
+	};
 	class 87th_Commando_Base: B_Soldier_F 
 	{
 		author = "Anorexican";

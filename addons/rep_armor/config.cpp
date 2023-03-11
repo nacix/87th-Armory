@@ -27,6 +27,7 @@ class CfgPatches
         units[]=
 		{
            "87th_Clone_Base",
+		   "87th_Medic_Base",
 		   "87th_Commando_Base"
 		};
 		weapons[]=
@@ -43,6 +44,7 @@ class CfgPatches
 			"87th_Commander_Helmet",
 			"87th_NVG",
 			"87th_Trooper_Uniform",
+			"87th_Medic_Uniform",
 			"87th_Katarn_Uniform",
 			"87th_Katarn_Backpack"
 		};

@@ -1174,10 +1174,10 @@ class CfgVehicles {
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_Clone_Medic.jpg);
 		faction = "87th_Legion";
 		editorSubcategory = "87th_Troopers";
-		uniformClass = "87th_Trooper_Uniform";
+		uniformClass = "87th_Medic_Uniform";
 		hiddenSelectionsTextures[]= 
 		{
-            QPATHTOEF(rep_armor, data\armor\87th_Chest_co.paa),
+            QPATHTOEF(rep_armor, data\armor\87th_Medic_Chest_co.paa),
         	QPATHTOEF(rep_armor, data\armor\87th_Legs_co.paa)
         };
 		backpack = "87th_Medic_Backpack";
@@ -1262,10 +1262,6 @@ class CfgVehicles {
 			"JLTS_stun_mag_long",
 			"HandGrenade",
 			"HandGrenade"
-		};
-		class EventHandlers
-		{
-			init="[_this select 0, ""JLTS_GAR_medic""] call BIS_fnc_setUnitInsignia;";
 		};
 	};
 	class 87th_Clone_EOD: JLTS_Clone_P2_eod 

@@ -168,6 +168,15 @@ class CfgWeapons {
 			mass = 40;
 		};
 	};
+	class 87th_Medic_Uniform: 87th_Trooper_Uniform
+	{
+		displayname = "[87th] Medic Armor";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass = "87th_Medic_Base";
+			containerClass = "Supply200";
+		};
+	};
 	class 87th_Katarn_Armor: Uniform_Base
 	{
 		author = "Stim";
