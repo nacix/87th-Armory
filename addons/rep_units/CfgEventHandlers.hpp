@@ -66,24 +66,76 @@ class Extended_InitPost_EventHandlers {
 	class 87th_Clone_SergeantMajor {
 		initServer = QUOTE([ARR_3(_this select 0, 'SNCO', 'CSM')] call FUNC(initUnit));
 	};
+
 	class 87th_ARF_DC15S {
-		initServer = QUOTE([ARR_2(_this select 0, 'SPC')] call FUNC(initUnit));
+		initServer = QUOTE([ARR_3(_this select 0, 'SPC', 'VCT')] call FUNC(initUnit));
+	};
+	class 87th_ARF_Sniper {
+		initServer = QUOTE([ARR_3(_this select 0, 'SPC', 'VCT')] call FUNC(initUnit));
 	};
 	class 87th_ARF_Spotter {
 		initServer = QUOTE([ARR_3(_this select 0, 'SPC', 'CP')] call FUNC(initUnit));
 	};
+	class 87th_ARF_JTAC {
+		initServer = QUOTE([ARR_3(_this select 0, 'SPC', 'VCT')] call FUNC(initUnit));
+	};
+	class 87th_ARF_AT {
+		initServer = QUOTE([ARR_3(_this select 0, 'SPC', 'VCT')] call FUNC(initUnit));
+	};
+	class 87th_ARF_CLS {
+		initServer = QUOTE([ARR_3(_this select 0, 'SPC', 'VCT')] call FUNC(initUnit));
+	};
 	class 87th_ARF_Major {
 		initServer = QUOTE([ARR_3(_this select 0, 'CMDR', 'CMJ')] call FUNC(initUnit));
 	};
+
 	class 87th_AB_DC15C {
-		initServer = QUOTE([ARR_2(_this select 0, 'SPC')] call FUNC(initUnit));
+		initServer = QUOTE([ARR_3(_this select 0, 'SPC', 'SCT')] call FUNC(initUnit));
 	};
 	class 87th_AB_DC15LE {
-		initServer = QUOTE([ARR_2(_this select 0, 'SPC')] call FUNC(initUnit));
+		initServer = QUOTE([ARR_3(_this select 0, 'SPC', 'SCT')] call FUNC(initUnit));
 	};
 	class 87th_AB_DC15LE_UGL {
-		initServer = QUOTE([ARR_2(_this select 0, 'SPC')] call FUNC(initUnit));
+		initServer = QUOTE([ARR_3(_this select 0, 'SPC', 'SCT')] call FUNC(initUnit));
 	};
+	class 87th_AB_AT {
+		initServer = QUOTE([ARR_3(_this select 0, 'SPC', 'SCT')] call FUNC(initUnit));
+	};
+	class 87th_AB_AR {
+		initServer = QUOTE([ARR_3(_this select 0, 'SPC', 'SCT')] call FUNC(initUnit));
+	};
+	class 87th_AB_CLS {
+		initServer = QUOTE([ARR_3(_this select 0, 'SPC', 'SCT')] call FUNC(initUnit));
+	};
+
+	class 87th_ARC_DC15S {
+		initServer = QUOTE([ARR_3(_this select 0, 'SPC', 'CS')] call FUNC(initUnit));
+	};
+	class 87th_ARC_Westar {
+		initServer = QUOTE([ARR_3(_this select 0, 'SPC', 'CS')] call FUNC(initUnit));
+	};
+	class 87th_ARC_GL {
+		initServer = QUOTE([ARR_3(_this select 0, 'SPC', 'CS')] call FUNC(initUnit));
+	};
+	class 87th_ARC_AT {
+		initServer = QUOTE([ARR_3(_this select 0, 'SPC', 'CS')] call FUNC(initUnit));
+	};
+	class 87th_ARC_EOD {
+		initServer = QUOTE([ARR_3(_this select 0, 'SPC', 'CS')] call FUNC(initUnit));
+	};
+	class 87th_ARC_Medic {
+		initServer = QUOTE([ARR_3(_this select 0, 'SPC', 'CS')] call FUNC(initUnit));
+	};
+	class 87th_ARC_JTAC {
+		initServer = QUOTE([ARR_3(_this select 0, 'SPC', 'CS')] call FUNC(initUnit));
+	};
+	class 87th_ARC_Sniper {
+		initServer = QUOTE([ARR_3(_this select 0, 'SPC', 'CS')] call FUNC(initUnit));
+	};
+	class 87th_ARC_Lieutenant {
+		initServer = QUOTE([ARR_3(_this select 0, 'SCO', 'CLT')] call FUNC(initUnit));
+	};
+
 	class 87th_RC_DC17M {
 		initServer = QUOTE([ARR_3(_this select 0, 'SPC', 'RC')] call FUNC(initUnit));
 	};
