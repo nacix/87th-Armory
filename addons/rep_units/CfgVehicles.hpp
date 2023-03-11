@@ -7,6 +7,7 @@ class CfgVehicles {
 	class B_Medic_F;
 	class B_Soldier_exp_F;
 	class B_soldier_AR_F;
+
 	class JLTS_Clone_P2_DC15S;
 	class JLTS_Clone_P2_DC15AUGL;
 	class JLTS_Clone_P2_DP23;
@@ -100,8 +101,8 @@ class CfgVehicles {
 		uniformClass = "87th_Trooper_Uniform";
 		hiddenSelectionsTextures[]= 
 		{
-            QPATHTOF(data\armor\87th_Chest_co.paa),
-            QPATHTOF(data\armor\87th_Legs_co.paa)
+            QPATHTOEF(rep_armor, data\armor\87th_Chest_co.paa),
+            QPATHTOEF(rep_armor, data\armor\87th_Legs_co.paa)
         };
 		linkedItems[]=
 		{
@@ -193,8 +194,8 @@ class CfgVehicles {
 		uniformClass = "87th_Trooper_Uniform";
 		hiddenSelectionsTextures[]= 
 		{
-            QPATHTOF(data\armor\87th_Chest_co.paa),
-            QPATHTOF(data\armor\87th_Legs_co.paa)
+			QPATHTOEF(rep_armor, data\armor\87th_Chest_co.paa),
+        	QPATHTOEF(rep_armor, data\armor\87th_Legs_co.paa)
         };
 		linkedItems[]=
 		{
@@ -286,8 +287,8 @@ class CfgVehicles {
 		uniformClass = "87th_Trooper_Uniform";
 		hiddenSelectionsTextures[]= 
 		{
-            QPATHTOF(data\armor\87th_Chest_co.paa),
-            QPATHTOF(data\armor\87th_Legs_co.paa)
+            QPATHTOEF(rep_armor, data\armor\87th_Chest_co.paa),
+        	QPATHTOEF(rep_armor, data\armor\87th_Legs_co.paa)
         };
 		linkedItems[]=
 		{
@@ -389,8 +390,8 @@ class CfgVehicles {
 		uniformClass = "87th_Trooper_Uniform";
 		hiddenSelectionsTextures[]= 
 		{
-            QPATHTOF(data\armor\87th_Chest_co.paa),
-            QPATHTOF(data\armor\87th_Legs_co.paa)
+            QPATHTOEF(rep_armor, data\armor\87th_Chest_co.paa),
+        	QPATHTOEF(rep_armor, data\armor\87th_Legs_co.paa)
         };
 		linkedItems[]=
 		{
@@ -420,8 +421,8 @@ class CfgVehicles {
 		uniformClass = "87th_Trooper_Uniform";
 		hiddenSelectionsTextures[]= 
 		{
-            QPATHTOF(data\armor\87th_Chest_co.paa),
-            QPATHTOF(data\armor\87th_Legs_co.paa)
+            QPATHTOEF(rep_armor, data\armor\87th_Chest_co.paa),
+        	QPATHTOEF(rep_armor, data\armor\87th_Legs_co.paa)
         };
 		linkedItems[]=
 		{
@@ -529,8 +530,8 @@ class CfgVehicles {
 		uniformClass = "87th_Trooper_Uniform";
 		hiddenSelectionsTextures[]= 
 		{
-            QPATHTOF(data\armor\87th_Chest_co.paa),
-            QPATHTOF(data\armor\87th_Legs_co.paa)
+            QPATHTOEF(rep_armor, data\armor\87th_Chest_co.paa),
+        	QPATHTOEF(rep_armor, data\armor\87th_Legs_co.paa)
         };
 		linkedItems[]=
 		{
@@ -626,8 +627,8 @@ class CfgVehicles {
 		uniformClass = "87th_Trooper_Uniform";
 		hiddenSelectionsTextures[]= 
 		{
-            QPATHTOF(data\armor\87th_Chest_co.paa),
-            QPATHTOF(data\armor\87th_Legs_co.paa)
+            QPATHTOEF(rep_armor, data\armor\87th_Chest_co.paa),
+        	QPATHTOEF(rep_armor, data\armor\87th_Legs_co.paa)
         };
 		linkedItems[]=
 		{
@@ -724,8 +725,8 @@ class CfgVehicles {
 		uniformClass="87th_Trooper_Uniform";
 		hiddenSelectionsTextures[]= 
 		{
-            QPATHTOF(data\armor\87th_Chest_co.paa),
-            QPATHTOF(data\armor\87th_Legs_co.paa)
+            QPATHTOEF(rep_armor, data\armor\87th_Chest_co.paa),
+        	QPATHTOEF(rep_armor, data\armor\87th_Legs_co.paa)
         };
 		linkedItems[]=
 		{
@@ -837,8 +838,8 @@ class CfgVehicles {
 		uniformClass = "87th_Trooper_Uniform";
 		hiddenSelectionsTextures[]= 
 		{
-            QPATHTOF(data\armor\87th_Chest_co.paa),
-            QPATHTOF(data\armor\87th_Legs_co.paa)
+            QPATHTOEF(rep_armor, data\armor\87th_Chest_co.paa),
+        	QPATHTOEF(rep_armor, data\armor\87th_Legs_co.paa)
         };
 		linkedItems[]=
 		{
@@ -933,8 +934,8 @@ class CfgVehicles {
 		uniformClass = "87th_Trooper_Uniform";
 		hiddenSelectionsTextures[]= 
 		{
-            QPATHTOF(data\armor\87th_Chest_co.paa),
-            QPATHTOF(data\armor\87th_Legs_co.paa)
+            QPATHTOEF(rep_armor, data\armor\87th_Chest_co.paa),
+        	QPATHTOEF(rep_armor, data\armor\87th_Legs_co.paa)
         };
 		linkedItems[]=
 		{
@@ -1030,8 +1031,8 @@ class CfgVehicles {
 		uniformClass = "87th_Trooper_Uniform";
 		hiddenSelectionsTextures[]= 
 		{
-            QPATHTOF(data\armor\87th_Chest_co.paa),
-            QPATHTOF(data\armor\87th_Legs_co.paa)
+            QPATHTOEF(rep_armor, data\armor\87th_Chest_co.paa),
+        	QPATHTOEF(rep_armor, data\armor\87th_Legs_co.paa)
         };
 		linkedItems[]=
 		{
@@ -1127,8 +1128,8 @@ class CfgVehicles {
 		uniformClass="87th_Trooper_Uniform";
 		hiddenSelectionsTextures[]= 
 		{
-            QPATHTOF(data\armor\87th_Chest_co.paa),
-            QPATHTOF(data\armor\87th_Legs_co.paa)
+            QPATHTOEF(rep_armor, data\armor\87th_Chest_co.paa),
+        	QPATHTOEF(rep_armor, data\armor\87th_Legs_co.paa)
         };
 		linkedItems[]=
 		{
@@ -1176,8 +1177,8 @@ class CfgVehicles {
 		uniformClass = "87th_Trooper_Uniform";
 		hiddenSelectionsTextures[]= 
 		{
-            QPATHTOF(data\armor\87th_Chest_co.paa),
-            QPATHTOF(data\armor\87th_Legs_co.paa)
+            QPATHTOEF(rep_armor, data\armor\87th_Chest_co.paa),
+        	QPATHTOEF(rep_armor, data\armor\87th_Legs_co.paa)
         };
 		backpack = "87th_Medic_Backpack";
 		linkedItems[]=
@@ -1269,7 +1270,7 @@ class CfgVehicles {
 	};
 	class 87th_Clone_EOD: JLTS_Clone_P2_eod 
 	{
-		displayName = "Clone EOD";
+		displayName = "Clone EOD Trooper";
 		Engineer = 2;
 		canDeactivateMines = 1;
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_Clone_EOD.jpg);
@@ -1278,8 +1279,8 @@ class CfgVehicles {
 		uniformClass = "87th_Trooper_Uniform";
 		hiddenSelectionsTextures[]= 
 		{
-            QPATHTOF(data\armor\87th_Chest_co.paa),
-            QPATHTOF(data\armor\87th_Legs_co.paa)
+            QPATHTOEF(rep_armor, data\armor\87th_Chest_co.paa),
+        	QPATHTOEF(rep_armor, data\armor\87th_Legs_co.paa)
         };
 		backpack = "87th_Backpack";
 		linkedItems[]=
@@ -1380,8 +1381,8 @@ class CfgVehicles {
 		uniformClass = "87th_Trooper_Uniform";
 		hiddenSelectionsTextures[]= 
 		{
-            QPATHTOF(data\armor\87th_Chest_co.paa),
-            QPATHTOF(data\armor\87th_Legs_co.paa)
+            QPATHTOEF(rep_armor, data\armor\87th_Chest_co.paa),
+        	QPATHTOEF(rep_armor, data\armor\87th_Legs_co.paa)
         };
 		backpack="87th_RTO_Backpack";
 		linkedItems[]=
@@ -1478,8 +1479,8 @@ class CfgVehicles {
 		uniformClass = "87th_Trooper_Uniform";
 		hiddenSelectionsTextures[]= 
 		{
-            QPATHTOF(data\armor\87th_Chest_co.paa),
-            QPATHTOF(data\armor\87th_Legs_co.paa)
+            QPATHTOEF(rep_armor, data\armor\87th_Chest_co.paa),
+        	QPATHTOEF(rep_armor, data\armor\87th_Legs_co.paa)
         };
 		linkedItems[]=
 		{
@@ -1575,8 +1576,8 @@ class CfgVehicles {
 		uniformClass = "87th_Trooper_Uniform";
 		hiddenSelectionsTextures[]= 
 		{
-            QPATHTOF(data\armor\87th_Chest_co.paa),
-            QPATHTOF(data\armor\87th_Legs_co.paa)
+            QPATHTOEF(rep_armor, data\armor\87th_Chest_co.paa),
+        	QPATHTOEF(rep_armor, data\armor\87th_Legs_co.paa)
         };
 		linkedItems[]=
 		{
@@ -1672,8 +1673,8 @@ class CfgVehicles {
 		uniformClass = "87th_Trooper_Uniform";
 		hiddenSelectionsTextures[]= 
 		{
-            QPATHTOF(data\armor\87th_Chest_co.paa),
-            QPATHTOF(data\armor\87th_Legs_co.paa)
+            QPATHTOEF(rep_armor, data\armor\87th_Chest_co.paa),
+        	QPATHTOEF(rep_armor, data\armor\87th_Legs_co.paa)
         };
 		backpack = "87th_Backpack";
 		linkedItems[]=
@@ -1764,8 +1765,8 @@ class CfgVehicles {
 		uniformClass="87th_Trooper_Uniform";
 		hiddenSelectionsTextures[]= 
 		{
-            QPATHTOF(data\armor\87th_Chest_co.paa),
-            QPATHTOF(data\armor\87th_Legs_co.paa)
+            QPATHTOEF(rep_armor, data\armor\87th_Chest_co.paa),
+        	QPATHTOEF(rep_armor, data\armor\87th_Legs_co.paa)
         };
 		linkedItems[]=
 		{
@@ -1869,7 +1870,6 @@ class CfgVehicles {
 	{
 		displayName = "ARF Trooper (DC-15S)";
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_ARF_DC15S.jpg);
-		faction = "87th_Legion";
 		editorSubcategory = "87th_ARF";
 		linkedItems[]=
 		{
@@ -1911,7 +1911,6 @@ class CfgVehicles {
 	{
 		displayName = "ARF Sniper";
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_ARF_Sniper.jpg);
-		faction = "87th_Legion";
 		editorSubcategory = "87th_ARF";
 		linkedItems[]=
 		{
@@ -1937,7 +1936,6 @@ class CfgVehicles {
 	{
 		displayName = "ARF Spotter";
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_ARF_Spotter.jpg);
-		faction = "87th_Legion";
 		editorSubcategory = "87th_ARF";
 		linkedItems[]=
 		{
@@ -1963,7 +1961,6 @@ class CfgVehicles {
 	{
 		displayName = "ARF JTAC";
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_ARF_JTAC.jpg);
-		faction = "87th_Legion";
 		editorSubcategory = "87th_ARF";
 		linkedItems[]=
 		{
@@ -1989,7 +1986,6 @@ class CfgVehicles {
 	{
 		displayName = "ARF AT Trooper";
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_ARF_AT.jpg);
-		faction = "87th_Legion";
 		editorSubcategory = "87th_ARF";
 		linkedItems[]=
 		{
@@ -2010,11 +2006,50 @@ class CfgVehicles {
 			"ItemWatch"
 		};
 	};
+	class 87th_ARF_EOD: 87th_Clone_EOD
+	{
+		displayName = "ARF EOD Trooper";
+		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_ARF_EOD.jpg);
+		editorSubcategory = "87th_ARF";
+		linkedItems[]=
+		{
+			"87th_ARF_Helmet",
+			"JLTS_CloneVestHolster",
+			"ItemMap",
+			"JLTS_clone_comlink",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"87th_ARF_Helmet",
+			"JLTS_CloneVestHolster",
+			"ItemMap",
+			"JLTS_clone_comlink",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"87th_3AS_DC15S_F",
+			"JLTS_DC17SA",
+			"SWLB_clone_binocular",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"87th_3AS_DC15S_F",
+			"JLTS_DC17SA",
+			"SWLB_clone_binocular",
+			"Throw",
+			"Put"
+		};
+	};
 	class 87th_ARF_CLS: 87th_Clone_Medic 
 	{
 		displayName = "ARF Medic";
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_ARF_CLS.jpg);
-		faction = "87th_Legion";
 		editorSubcategory = "87th_ARF";
 		linkedItems[]=
 		{
@@ -2056,7 +2091,6 @@ class CfgVehicles {
 	{
 		displayName = "ARF Sergeant";
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_ARF_NCO.jpg);
-		faction = "87th_Legion";
 		editorSubcategory = "87th_ARF";
 		linkedItems[]=
 		{
@@ -2082,7 +2116,6 @@ class CfgVehicles {
 	{
 		displayName = "ARF Lieutenant";
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_ARF_Lieutenant.jpg);
-		faction = "87th_Legion";
 		editorSubcategory = "87th_ARF";
 		linkedItems[]=
 		{
@@ -2108,7 +2141,6 @@ class CfgVehicles {
 	{
 		displayName = "ARF Captain";
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_ARF_Captain.jpg);
-		faction = "87th_Legion";
 		editorSubcategory = "87th_ARF";
 		linkedItems[]=
 		{
@@ -2130,37 +2162,10 @@ class CfgVehicles {
 			"ItemWatch"
 		};
 	};
-
-	class 87th_ATRT_Driver: 87th_ARF_DC15S
-	{
-		displayName = "ATRT Driver";
-		Engineer = 1;
-		canDeactivateMines = 0;
-		linkedItems[]=
-		{
-			"87th_ATRT_Helmet",
-			"JLTS_CloneVestHolster",
-			"ItemMap",
-			"JLTS_clone_comlink",
-			"ItemCompass",
-			"ItemWatch"
-		};
-		respawnLinkedItems[]=
-		{
-			"87th_ATRT_Helmet",
-			"JLTS_CloneVestHolster",
-			"ItemMap",
-			"JLTS_clone_comlink",
-			"ItemCompass",
-			"ItemWatch"
-		};
-	};
-
 	class 87th_ARF_Major: 87th_Clone_Commander 
 	{
 		displayName = "ARF Major";
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_ARF_Major.jpg);
-		faction = "87th_Legion";
 		editorSubcategory = "87th_ARF";
 		linkedItems[]=
 		{
@@ -2181,6 +2186,32 @@ class CfgVehicles {
 			"ItemWatch"
 		};
 	};
+
+	class 87th_ATRT_Driver: 87th_ARF_DC15S
+	{
+		displayName = "AT-RT Driver";
+		Engineer = 1;
+		canDeactivateMines = 0;
+		linkedItems[]=
+		{
+			"87th_ATRT_Helmet",
+			"JLTS_CloneVestReconNCO",
+			"ItemMap",
+			"JLTS_clone_comlink",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"87th_ATRT_Helmet",
+			"JLTS_CloneVestReconNCO",
+			"ItemMap",
+			"JLTS_clone_comlink",
+			"ItemCompass",
+			"ItemWatch"
+		};
+	};
+
 	class 87th_BARC_DC15S: 87th_ARF_DC15S 
 	{
 		displayName = "BARC Trooper (DC-15S)";
@@ -2285,7 +2316,7 @@ class CfgVehicles {
 			"ItemWatch"
 		};
 	};
-	class 87th_BARC_CLS: 87th_ARF_CLS 
+	class 87th_BARC_CLS: 87th_ARF_CLS
 	{
 		displayName = "BARC Medic";
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_BARC_CLS.jpg);
@@ -2416,11 +2447,10 @@ class CfgVehicles {
 		};
 	};
 
-	class 87th_AB_DC15LE: 87th_Clone_DC15A 
+	class 87th_AB_DC15C: 87th_Clone_DC15S 
 	{
-		displayName = "Airborne Trooper (DC-15LE)";
-		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_AB_DC15LE.jpg);
-		faction = "87th_Legion";
+		displayName = "Airborne Trooper (DC-15C)";
+		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_AB_DC15C.jpg);
 		editorSubcategory = "87th_AB";
 		linkedItems[]=
 		{
@@ -2443,7 +2473,7 @@ class CfgVehicles {
 		};
 		weapons[]=
 		{
-			"87th_3AS_DC15LE_F",
+			"87th_3AS_DC15C_F",
 			"JLTS_DC17SA",
 			"SWLB_clone_binocular",
 			"Throw",
@@ -2451,7 +2481,7 @@ class CfgVehicles {
 		};
 		respawnWeapons[]=
 		{
-			"87th_3AS_DC15LE_F",
+			"87th_3AS_DC15C_F",
 			"JLTS_DC17SA",
 			"SWLB_clone_binocular",
 			"Throw",
@@ -2459,16 +2489,16 @@ class CfgVehicles {
 		};
 		magazines[]=
 		{
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
 			"JLTS_DC17SA_mag",
 			"JLTS_DC17SA_mag",
 			"JLTS_DC17SA_mag",
@@ -2483,16 +2513,16 @@ class CfgVehicles {
 		};
 		respawnMagazines[]=
 		{
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
 			"JLTS_DC17SA_mag",
 			"JLTS_DC17SA_mag",
 			"JLTS_DC17SA_mag",
@@ -2506,11 +2536,10 @@ class CfgVehicles {
 			"HandGrenade"
 		};
 	};
-	class 87th_AB_DC15C: 87th_Clone_DC15S 
+	class 87th_AB_DC15LE: 87th_Clone_DC15A 
 	{
-		displayName = "Airborne Trooper (DC-15C)";
-		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_AB_DC15C.jpg);
-		faction = "87th_Legion";
+		displayName = "Airborne Trooper (DC-15LE)";
+		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_AB_DC15LE.jpg);
 		editorSubcategory = "87th_AB";
 		linkedItems[]=
 		{
@@ -2533,7 +2562,7 @@ class CfgVehicles {
 		};
 		weapons[]=
 		{
-			"87th_3AS_DC15C_F",
+			"87th_3AS_DC15LE_F",
 			"JLTS_DC17SA",
 			"SWLB_clone_binocular",
 			"Throw",
@@ -2541,7 +2570,7 @@ class CfgVehicles {
 		};
 		respawnWeapons[]=
 		{
-			"87th_3AS_DC15C_F",
+			"87th_3AS_DC15LE_F",
 			"JLTS_DC17SA",
 			"SWLB_clone_binocular",
 			"Throw",
@@ -2549,16 +2578,16 @@ class CfgVehicles {
 		};
 		magazines[]=
 		{
-			"3AS_40Rnd_EC40_Mag",
-			"3AS_40Rnd_EC40_Mag",
-			"3AS_40Rnd_EC40_Mag",
-			"3AS_40Rnd_EC40_Mag",
-			"3AS_40Rnd_EC40_Mag",
-			"3AS_40Rnd_EC40_Mag",
-			"3AS_40Rnd_EC40_Mag",
-			"3AS_40Rnd_EC40_Mag",
-			"3AS_40Rnd_EC40_Mag",
-			"3AS_40Rnd_EC40_Mag",
+			"3AS_45Rnd_EC50_Mag",
+			"3AS_45Rnd_EC50_Mag",
+			"3AS_45Rnd_EC50_Mag",
+			"3AS_45Rnd_EC50_Mag",
+			"3AS_45Rnd_EC50_Mag",
+			"3AS_45Rnd_EC50_Mag",
+			"3AS_45Rnd_EC50_Mag",
+			"3AS_45Rnd_EC50_Mag",
+			"3AS_45Rnd_EC50_Mag",
+			"3AS_45Rnd_EC50_Mag",
 			"JLTS_DC17SA_mag",
 			"JLTS_DC17SA_mag",
 			"JLTS_DC17SA_mag",
@@ -2573,16 +2602,16 @@ class CfgVehicles {
 		};
 		respawnMagazines[]=
 		{
-			"3AS_40Rnd_EC40_Mag",
-			"3AS_40Rnd_EC40_Mag",
-			"3AS_40Rnd_EC40_Mag",
-			"3AS_40Rnd_EC40_Mag",
-			"3AS_40Rnd_EC40_Mag",
-			"3AS_40Rnd_EC40_Mag",
-			"3AS_40Rnd_EC40_Mag",
-			"3AS_40Rnd_EC40_Mag",
-			"3AS_40Rnd_EC40_Mag",
-			"3AS_40Rnd_EC40_Mag",
+			"3AS_45Rnd_EC50_Mag",
+			"3AS_45Rnd_EC50_Mag",
+			"3AS_45Rnd_EC50_Mag",
+			"3AS_45Rnd_EC50_Mag",
+			"3AS_45Rnd_EC50_Mag",
+			"3AS_45Rnd_EC50_Mag",
+			"3AS_45Rnd_EC50_Mag",
+			"3AS_45Rnd_EC50_Mag",
+			"3AS_45Rnd_EC50_Mag",
+			"3AS_45Rnd_EC50_Mag",
 			"JLTS_DC17SA_mag",
 			"JLTS_DC17SA_mag",
 			"JLTS_DC17SA_mag",
@@ -2600,7 +2629,6 @@ class CfgVehicles {
 	{
 		displayName = "Airborne Grenadier (DC-15LE)";
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_AB_DC15LE_UGL.jpg);
-		faction = "87th_Legion";
 		editorSubcategory = "87th_AB";
 		linkedItems[]=
 		{
@@ -2696,7 +2724,6 @@ class CfgVehicles {
 	{
 		displayName = "Airborne AT Trooper";
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_AB_AT.jpg);
-		faction = "87th_Legion";
 		editorSubcategory = "87th_AB";
 		linkedItems[]=
 		{
@@ -2790,11 +2817,98 @@ class CfgVehicles {
 			"HandGrenade"
 		};
 	};
+	class 87th_AB_EOD: 87th_Clone_EOD
+	{
+		displayName = "Airborne EOD Trooper";
+		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_AB_EOD.jpg);
+		editorSubcategory = "87th_AB";
+		linkedItems[]=
+		{
+			"87th_Airborne_Helmet",
+			"JLTS_CloneVestAirborne",
+			"ItemMap",
+			"JLTS_clone_comlink",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"87th_Airborne_Helmet",
+			"JLTS_CloneVestAirborne",
+			"ItemMap",
+			"JLTS_clone_comlink",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"87th_3AS_DC15C_F",
+			"JLTS_DC17SA",
+			"SWLB_clone_binocular",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"87th_3AS_DC15C_F",
+			"JLTS_DC17SA",
+			"SWLB_clone_binocular",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"JLTS_stun_mag_long",
+			"JLTS_stun_mag_long",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		respawnMagazines[]=
+		{
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"3AS_40Rnd_EC40_Mag",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"JLTS_stun_mag_long",
+			"JLTS_stun_mag_long",
+			"HandGrenade",
+			"HandGrenade"
+		};
+	};
 	class 87th_AB_AR: 87th_Clone_AR 
 	{
 		displayName = "Airborne Heavy Trooper";
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_AB_AR.jpg);
-		faction = "87th_Legion";
 		editorSubcategory = "87th_AB";
 		linkedItems[]=
 		{
@@ -2864,7 +2978,6 @@ class CfgVehicles {
 	{
 		displayName = "Airborne Medic";
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_AB_CLS.jpg);
-		faction = "87th_Legion";
 		editorSubcategory = "87th_AB";
 		linkedItems[]=
 		{
@@ -2942,7 +3055,6 @@ class CfgVehicles {
 	{
 		displayName = "Airborne NCO";
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_AB_NCO.jpg);
-		faction = "87th_Legion";
 		editorSubcategory = "87th_AB";
 		linkedItems[]=
 		{
@@ -3053,7 +3165,6 @@ class CfgVehicles {
 	{
 		displayName = "Airborne Officer";
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_AB_Officer.jpg);
-		faction = "87th_Legion";
 		editorSubcategory = "87th_AB";
 		linkedItems[]=
 		{
@@ -3147,6 +3258,664 @@ class CfgVehicles {
 	class 87th_AB_NCO_C: 87th_AB_NCO { scope = 1; };
 	class 87th_AB_NCO_D: 87th_AB_NCO { scope = 1; };
 
+	class 87th_ARC_DC15S: 87th_ARF_DC15S
+	{
+		displayName = "ARC Trooper (DC-15S)";
+		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_ARC_DC15S.jpg);
+		editorSubcategory = "87th_ARC";
+		linkedItems[]=
+		{
+			"87th_ARC_Helmet",
+			"JLTS_CloneNVGRange",
+			"JLTS_CloneVestARC",
+			"ItemMap",
+			"JLTS_clone_comlink",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		backpack = "87th_Backpack";
+		respawnLinkedItems[]=
+		{
+			"87th_ARC_Helmet",
+			"JLTS_CloneNVGRange",
+			"JLTS_CloneVestARC",
+			"ItemMap",
+			"JLTS_clone_comlink",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		class EventHandlers
+		{
+			init="[_this select 0, ""JLTS_GAR""] call BIS_fnc_setUnitInsignia;";
+		};
+	};
+	class 87th_ARC_Westar: 87th_ARC_DC15S
+	{
+		displayName = "ARC Trooper (Westar-M5)";
+		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_ARC_Westar.jpg);
+		weapons[]=
+		{
+			"87th_3AS_WestarM5_F",
+			"JLTS_DC17SA",
+			"SWLB_clone_binocular",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"87th_3AS_WestarM5_F",
+			"JLTS_DC17SA",
+			"SWLB_clone_binocular",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		respawnMagazines[]=
+		{
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"HandGrenade",
+			"HandGrenade"
+		};
+	};
+	class 87th_ARC_GL: 87th_ARC_Westar
+	{
+		displayName = "ARC Trooper (Westar-M5 GL)";
+		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_ARC_GL.jpg);
+		weapons[]=
+		{
+			"3AS_WestarM5_GL",
+			"JLTS_DC17SA",
+			"SWLB_clone_binocular",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"3AS_WestarM5_GL",
+			"JLTS_DC17SA",
+			"SWLB_clone_binocular",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_6Rnd_HE_Grenade_shell",
+			"3AS_6Rnd_HE_Grenade_shell",
+			"3AS_6Rnd_HE_Grenade_shell",
+			"3AS_6Rnd_HE_Grenade_shell",
+			"3AS_6Rnd_HE_Grenade_shell",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		respawnMagazines[]=
+		{
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_6Rnd_HE_Grenade_shell",
+			"3AS_6Rnd_HE_Grenade_shell",
+			"3AS_6Rnd_HE_Grenade_shell",
+			"3AS_6Rnd_HE_Grenade_shell",
+			"3AS_6Rnd_HE_Grenade_shell",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"HandGrenade",
+			"HandGrenade"
+		};
+	};
+	class 87th_ARC_AT: 87th_ARC_Westar
+	{
+		displayName = "ARC AT Trooper";
+		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_ARC_AT.jpg);
+		weapons[]=
+		{
+			"87th_3AS_WestarM5_F",
+			"87th_RPS6X",
+			"JLTS_DC17SA",
+			"SWLB_clone_binocular",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"87th_3AS_WestarM5_F",
+			"87th_RPS6X",
+			"JLTS_DC17SA",
+			"SWLB_clone_binocular",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"87th_MK40X_AT_Guided",
+			"87th_MK40X_AT_Guided",
+			"87th_MK40X_AT_Guided",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		respawnMagazines[]=
+		{
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"87th_MK40X_AT_Guided",
+			"87th_MK40X_AT_Guided",
+			"87th_MK40X_AT_Guided",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"HandGrenade",
+			"HandGrenade"
+		};
+	};
+	class 87th_ARC_EOD: 87th_Clone_EOD
+	{
+		displayName = "ARC EOD Trooper";
+		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_ARC_EOD.jpg);
+		editorSubcategory = "87th_ARC";
+		linkedItems[]=
+		{
+			"87th_ARC_Helmet",
+			"JLTS_CloneNVGRange",
+			"JLTS_CloneVestARC",
+			"ItemMap",
+			"JLTS_clone_comlink",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"87th_ARC_Helmet",
+			"JLTS_CloneNVGRange",
+			"JLTS_CloneVestARC",
+			"ItemMap",
+			"JLTS_clone_comlink",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"87th_3AS_WestarM5_F",
+			"JLTS_DC17SA",
+			"SWLB_clone_binocular",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"87th_3AS_WestarM5_F",
+			"JLTS_DC17SA",
+			"SWLB_clone_binocular",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		respawnMagazines[]=
+		{
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"HandGrenade",
+			"HandGrenade"
+		};
+	};
+	class 87th_ARC_Medic: 87th_ARF_CLS
+	{
+		displayName = "ARC Medic";
+		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_ARC_Medic.jpg);
+		editorSubcategory = "87th_ARC";
+		linkedItems[]=
+		{
+			"87th_ARC_Helmet",
+			"JLTS_CloneNVGRange",
+			"JLTS_CloneVestARC",
+			"ItemMap",
+			"JLTS_clone_comlink",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"87th_ARC_Helmet",
+			"JLTS_CloneNVGRange",
+			"JLTS_CloneVestARC",
+			"ItemMap",
+			"JLTS_clone_comlink",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"87th_3AS_WestarM5_F",
+			"JLTS_DC17SA",
+			"SWLB_clone_binocular",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"87th_3AS_WestarM5_F",
+			"JLTS_DC17SA",
+			"SWLB_clone_binocular",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		respawnMagazines[]=
+		{
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"HandGrenade",
+			"HandGrenade"
+		};
+	};
+	class 87th_ARC_JTAC: 87th_ARF_JTAC
+	{
+		displayName = "ARC JTAC";
+		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_ARC_JTAC.jpg);
+		editorSubcategory = "87th_ARC";
+		linkedItems[]=
+		{
+			"87th_ARC_Helmet",
+			"JLTS_CloneNVGRange",
+			"JLTS_CloneVestARC",
+			"ItemMap",
+			"JLTS_clone_comlink",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"87th_ARC_Helmet",
+			"JLTS_CloneNVGRange",
+			"JLTS_CloneVestARC",
+			"ItemMap",
+			"JLTS_clone_comlink",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"87th_3AS_WestarM5_F",
+			"JLTS_DC17SA",
+			"SWLB_clone_binocular",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"87th_3AS_WestarM5_F",
+			"JLTS_DC17SA",
+			"SWLB_clone_binocular",
+			"Throw",
+			"Put"
+		};
+		backpack = "87th_RTO_Backpack";
+		magazines[]=
+		{
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		respawnMagazines[]=
+		{
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		class EventHandlers
+		{
+			init="[_this select 0, ""JLTS_GAR""] call BIS_fnc_setUnitInsignia;";
+		};
+	};
+	class 87th_ARC_Sniper: 87th_ARF_Sniper
+	{
+		displayName = "ARC Sniper";
+		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_ARC_Sniper.jpg);
+		editorSubcategory = "87th_ARC";
+		linkedItems[]=
+		{
+			"87th_ARC_Helmet",
+			"87th_NVG",
+			"JLTS_CloneVestARC",
+			"ItemMap",
+			"JLTS_clone_comlink",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		backpack = "87th_Backpack";
+		respawnLinkedItems[]=
+		{
+			"87th_ARC_Helmet",
+			"87th_NVG",
+			"JLTS_CloneVestARC",
+			"ItemMap",
+			"JLTS_clone_comlink",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"87th_k_773_rifle",
+			"JLTS_DC17SA",
+			"SWLB_clone_binocular",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"87th_k_773_rifle",
+			"JLTS_DC17SA",
+			"SWLB_clone_binocular",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"442_408_10rnd_blue_mag",
+			"442_408_10rnd_blue_mag",
+			"442_408_10rnd_blue_mag",
+			"442_408_10rnd_blue_mag",
+			"442_408_10rnd_blue_mag",
+			"442_408_10rnd_blue_mag",
+			"442_408_10rnd_blue_mag",
+			"442_408_10rnd_blue_mag",
+			"442_408_10rnd_blue_mag",
+			"442_408_10rnd_blue_mag",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		respawnMagazines[]=
+		{
+			"442_408_10rnd_blue_mag",
+			"442_408_10rnd_blue_mag",
+			"442_408_10rnd_blue_mag",
+			"442_408_10rnd_blue_mag",
+			"442_408_10rnd_blue_mag",
+			"442_408_10rnd_blue_mag",
+			"442_408_10rnd_blue_mag",
+			"442_408_10rnd_blue_mag",
+			"442_408_10rnd_blue_mag",
+			"442_408_10rnd_blue_mag",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		class EventHandlers
+		{
+			init="[_this select 0, ""JLTS_GAR""] call BIS_fnc_setUnitInsignia;";
+		};
+	};
+	class 87th_ARC_Lieutenant: 87th_ARF_Lieutenant
+	{
+		displayName = "ARC Lieutenant";
+		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_ARC_Lieutenant.jpg);
+		editorSubcategory = "87th_ARC";
+		linkedItems[]=
+		{
+			"87th_ARC_Helmet",
+			"JLTS_CloneNVGCC",
+			"JLTS_CloneVestARC",
+			"ItemMap",
+			"JLTS_clone_comlink",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		backpack = "87th_Backpack";
+		respawnLinkedItems[]=
+		{
+			"87th_ARC_Helmet",
+			"JLTS_CloneNVGCC",
+			"JLTS_CloneVestARC",
+			"ItemMap",
+			"JLTS_clone_comlink",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"3AS_WestarM5_GL",
+			"JLTS_DC17SA",
+			"SWLB_clone_binocular",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"3AS_WestarM5_GL",
+			"JLTS_DC17SA",
+			"SWLB_clone_binocular",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		respawnMagazines[]=
+		{
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"3AS_60Rnd_EC50_Mag",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"JLTS_DC17SA_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		class EventHandlers
+		{
+			init="[_this select 0, ""JLTS_GAR""] call BIS_fnc_setUnitInsignia;";
+		};
+	};
+
 	class 87th_RC_DC17M: 87th_Clone_DC15A 
 	{
 		displayName = "Clone Commando (DC-17M)";
@@ -3161,7 +3930,7 @@ class CfgVehicles {
 		};
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\armor\87th_Katarn_Armor_co.paa),
+			QPATHTOEF(rep_armor, data\armor\87th_Katarn_Armor_co.paa),
 			"\3AS\3AS_Characters\Commando\data\Katarn_Undersuit_CO.paa"
 		};
 		backpack = "87th_Katarn_Backpack";
@@ -3254,7 +4023,7 @@ class CfgVehicles {
 		};
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\armor\87th_Katarn_Armor_co.paa),
+			QPATHTOEF(rep_armor, data\armor\87th_Katarn_Armor_co.paa),
 			"\3AS\3AS_Characters\Commando\data\Katarn_Undersuit_CO.paa"
 		};
 		backpack = "87th_Katarn_Backpack";
@@ -3342,7 +4111,7 @@ class CfgVehicles {
 		};
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\armor\87th_Katarn_Armor_co.paa),
+			QPATHTOEF(rep_armor, data\armor\87th_Katarn_Armor_co.paa),
 			"\3AS\3AS_Characters\Commando\data\Katarn_Undersuit_CO.paa"
 		};
 		backpack = "87th_Katarn_Backpack";
@@ -3453,7 +4222,7 @@ class CfgVehicles {
 		};
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\armor\87th_Katarn_Armor_co.paa),
+			QPATHTOEF(rep_armor, data\armor\87th_Katarn_Armor_co.paa),
 			"\3AS\3AS_Characters\Commando\data\Katarn_Undersuit_CO.paa"
 		};
 		backpack = "87th_Katarn_Backpack";
@@ -3545,7 +4314,7 @@ class CfgVehicles {
 		Engineer = 1;
 		canDeactivateMines = 0;
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_Clone_Pilot.jpg);
-		editorSubcategory = "87th_Air";
+		editorSubcategory = "87th_Troopers";
 		backpack = "JLTS_Clone_RTO_pack";
 		linkedItems[]=
 		{
