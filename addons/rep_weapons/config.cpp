@@ -23,7 +23,9 @@ class CfgPatches
 			"JLTS_weapons_Core",
 			"JLTS_weapons_DC15X",
 			"JLTS_weapons_RPS6",
-			"JLTS_weapons_DC17SA"
+			"442_weapons",
+			"442_weapons_explosives",
+			"442_weapons_773"
         };
         units[] = {};
 		weapons[]=

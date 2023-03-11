@@ -161,6 +161,7 @@ class CfgAmmo
 	class 87th_SmokeShellPurple_ammo: SmokeShell
 	{
 		explosionTime = -1;
+		model = "kobra\442_weapons\explosive\basic_smoke.p3d";
 		smokeColor[] = {0.29, 0.00, 0.51, 1.00};
 	};
 	class 87th_SmokeShellViolet_ammo: 87th_SmokeShellPurple_ammo

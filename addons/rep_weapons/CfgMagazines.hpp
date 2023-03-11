@@ -36,6 +36,7 @@ class CfgMagazines
 		descriptionShort = "Fuze: Impact";
 		displayName = "[87th] Impact Smoke (Purple)";
 		displayNameShort = "Purple Smoke";
+		model = "kobra\442_weapons\explosive\basic_smoke.p3d";
 		ammo = "87th_SmokeShellPurple_ammo";
 	};
 	class 87th_SmokeShellViolet: 87th_SmokeShellPurple
