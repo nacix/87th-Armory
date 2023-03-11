@@ -163,6 +163,7 @@ class CfgWeapons {
 		{
 			uniformModel = "-";
 			uniformClass = "87th_Clone_Base";
+			uniformType = "Neopren";
 			containerClass = "Supply150";
 			mass = 40;
 		};
@@ -179,6 +180,7 @@ class CfgWeapons {
 		{
 			uniformModel = "-";
 			uniformClass = "87th_Commando_Base";
+			uniformType = "Neopren";
 			containerClass = "Supply150";
 			mass = 40;
 		};
