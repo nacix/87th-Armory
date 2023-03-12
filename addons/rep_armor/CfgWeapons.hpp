@@ -171,12 +171,14 @@ class CfgWeapons {
 	class 87th_Katarn_Vest_Demo: 3AS_Katarn_Vest_Demo_Base
 	{
 		author = "Stim";
+		scope = 2;
 		displayname = "[87th] Katarn Demolitions Pack";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\vests\87th_Katarn_Demo_co.paa) };
 	};
 	class 87th_Katarn_Vest_Tech: 3AS_Katarn_Vest_Tech_Base
 	{
 		author = "Stim";
+		scope = 2;
 		displayname = "[87th] Katarn Technician Pack";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\vests\87th_Katarn_Tech_co.paa) };
 	};
