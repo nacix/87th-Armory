@@ -76,7 +76,6 @@ class CfgWeapons {
 			"ls_armor_bluefor\helmet\gar\arf\data\camo2.rvmat",
 			"ls_armor_bluefor\helmet\gar\arf\data\visor.rvmat"
 		};
-		};
 		hiddenSelectionsMaterials[]=
 		{
 			QPATHTOF(data\helmets\arf\ARFHelmet.rvmat),
