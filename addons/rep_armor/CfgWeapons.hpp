@@ -179,6 +179,7 @@ class CfgWeapons {
 		author = "Stim";
 		scope = 2;
 		displayname = "[87th] Katarn Demolitions Pack";
+		picture = "\3AS\3AS_Characters\Commando\data\Armor_ca.paa";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\vests\87th_Katarn_Demo_co.paa) };
 	};
 	class 87th_Katarn_Vest_Tech: 3AS_Katarn_Vest_Tech_Base
@@ -186,6 +187,7 @@ class CfgWeapons {
 		author = "Stim";
 		scope = 2;
 		displayname = "[87th] Katarn Technician Pack";
+		picture = "\3AS\3AS_Characters\Commando\data\Armor_ca.paa";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\vests\87th_Katarn_Tech_co.paa) };
 	};
 	class 87th_Trooper_Uniform: Uniform_Base
