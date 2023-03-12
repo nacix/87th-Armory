@@ -1,12 +1,14 @@
 class CfgVehicles 
 {
+	class 3AS_ATRT;
 	class 3as_LAAT_Mk2;
 	class 87th_LAAT: 3as_LAAT_Mk2 
 	{
-		displayname="LAAT/I Mk.2";
+		author="Anorexican";
+		displayname="[87th] LAAT/I Mk.2";
 		faction="87th_Legion";
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_LAAT.jpg);
-		editorSubcategory="87th_Air";
+		editorSubcategory="87th_Vehicles";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -25,5 +27,41 @@ class CfgVehicles
 		};
 		crew="87th_Clone_Pilot";
 		typicalcargo[] = {"87th_Clone_Pilot"};
+	};
+	class 87th_ATRT: 3AS_ATRT
+	{
+		author="Anorexican";
+		displayName="[87th] AT-RT";
+		genericNames="87th_Names_ATRT";
+		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_ATRT.jpg);
+		faction = "87th_Legion";
+		editorSubcategory = "87th_Vehicles";
+		uniformClass="87th_ATRT_Uniform";
+		nakedUniform="87th_ATRT_Uniform";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\atrt\87th_ATRT_co.paa)
+		};
+		weapons[]=
+		{
+			"87th_ATRT_Weapon"
+		};
+		magazines[]=
+		{
+			"3AS_9999Rnd_ATRT_Mag"
+		};
+		linkedItems[]=
+		{
+			"Integrated_NVG_TI_1_F",
+			"ItemMap",
+			"ItemCompass",
+			"ItemGPS",
+			"ItemWatch",
+			"ItemRadio"
+		};
 	};
 };

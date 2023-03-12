@@ -2,35 +2,31 @@ class CfgVehicles {
 	class B_Soldier_F;
 	class B_Kitbag_rgr;
 	class 3AS_Katarn_Backpack_Base;
+	class JLTS_Clone_backpack;
 
-	class 87th_Backpack: B_Kitbag_rgr 
+	class 87th_Backpack: JLTS_Clone_backpack 
 	{
 		author = "Stim";
-		scope = 2;
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_backpack_ui_ca.paa";
-		displayName = "87th Trooper Backpack";
-		model = "\MRC\JLTS\characters\CloneArmor\CloneBackpack.p3d";
+		displayName = "[87th] Trooper Backpack";
 		maximumLoad = 200;
-		hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {QPATHTOF(data\other\87th_Backpack_co.paa)};
+        hiddenSelectionsTextures[] = { QPATHTOF(data\other\87th_Backpack_co.paa) };
 	};
     class 87th_Medic_Backpack: 87th_Backpack 
 	{
-		displayName = "87th Medic Backpack";
+		displayName = "[87th] Medic Backpack";
 		maximumLoad = 400;
-        hiddenSelectionsTextures[] = {QPATHTOF(data\other\87th_Medic_Backpack_co.paa)};
+        hiddenSelectionsTextures[] = { QPATHTOF(data\other\87th_Medic_Backpack_co.paa) };
 	};
-	class 87th_RTO_Backpack: 87th_Backpack 
+	class 87th_RTO_Backpack: 87th_Backpack
 	{
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_backpack_ui_ca.paa";
-		displayName = "87th RTO Backpack";
+		displayName = "[87th] RTO Backpack";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneBackpackRTO.p3d";
-		hiddenSelections[] =
+		hiddenSelections[]=
 		{
 			"camo",
 			"camo1"
 		};
-        hiddenSelectionsTextures[] = 
+        hiddenSelectionsTextures[]= 
 		{
         	QPATHTOF(data\other\RTO_Screen_co.paa),
         	QPATHTOF(data\other\87th_Backpack_co.paa)
@@ -46,8 +42,8 @@ class CfgVehicles {
 	{
 		author = "Stim";
 		scope = 2;
-		displayName = "87th Katarn Backpack";
-		hiddenSelectionsTextures[] = {QPATHTOF(data\other\87th_Katarn_Backpack_co.paa)};
+		displayName = "[87th] Katarn Backpack";
+		hiddenSelectionsTextures[] = { QPATHTOF(data\other\87th_Katarn_Backpack_co.paa) };
 	};
 	class 87th_Clone_Base: B_Soldier_F 
 	{
@@ -68,6 +64,17 @@ class CfgVehicles {
 		hiddenSelectionsTextures[] =
 		{
 			QPATHTOF(data\uniforms\ct\87th_Chest_co.paa),
+			QPATHTOF(data\uniforms\ct\87th_Legs_co.paa)
+		};
+	};
+	class 87th_Medic_Base: 87th_Clone_Base 
+	{
+		author = "Anorexican";
+		displayName = "CloneMedicBase";
+		uniformClass = "87th_Medic_Uniform";
+		hiddenSelectionsTextures[] =
+		{
+			QPATHTOF(data\uniforms\ct\87th_Medic_Chest_co.paa),
 			QPATHTOF(data\uniforms\ct\87th_Legs_co.paa)
 		};
 	};

@@ -1,0 +1,1 @@
+#include "\x\ax87\addons\rep_weapons\script_component.hpp"

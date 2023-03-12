@@ -1,11 +1,12 @@
 class CA_LauncherMagazine;
 class CfgMagazines 
 {
+	class SmokeShell;
 	class 87th_MK40X_AT_Guided: CA_LauncherMagazine
 	{
 		author = "Anorexican";
 		scope = 2;
-		displayName = "MK40X AT Missile";
+		displayName = "[87th] MK40X AT Missile";
 		model = "\A3\weapons_f\launchers\RPG32\pg32v_rocket_item.p3d";
 		picture = "\A3\Weapons_F\launchers\RPG32\data\UI\gear_rpg32_rocket_ca.paa";
 		initSpeed = 140;
@@ -19,7 +20,7 @@ class CfgMagazines
 	{
 		author = "Anorexican";
 		scope = 2;
-		displayName = "MK42X HE Missile";
+		displayName = "[87th] MK42X HE Missile";
 		model = "\A3\weapons_f\launchers\RPG32\pg32v_rocket_item.p3d";
 		picture = "\A3\Weapons_F\launchers\RPG32\data\UI\gear_rpg32_rocket_ca.paa";
 		initSpeed = 140;
@@ -28,5 +29,26 @@ class CfgMagazines
 		ammo = "87th_M_MK42X_HE";
 		type = "2*  256";
 		mass = 40;
+	};
+	class 87th_SmokeShellPurple: SmokeShell
+	{
+		author = "Anorexican";
+		descriptionShort = "Fuze: Impact";
+		displayName = "[87th] Impact Smoke (Purple)";
+		displayNameShort = "Purple Smoke";
+		model = "kobra\442_weapons\explosive\basic_smoke.p3d";
+		ammo = "87th_SmokeShellPurple_ammo";
+	};
+	class 87th_SmokeShellViolet: 87th_SmokeShellPurple
+	{
+		displayName = "[87th] Impact Smoke (Violet)";
+		displayNameShort = "Violet Smoke";
+		ammo = "87th_SmokeShellViolet_ammo";
+	};
+	class 87th_SmokeShellMidnight: 87th_SmokeShellPurple
+	{
+		displayName = "[87th] Impact Smoke (Midnight)";
+		displayNameShort = "Midnight Smoke";
+		ammo = "87th_SmokeShellMidnight_ammo";
 	};
 };

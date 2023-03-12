@@ -45,7 +45,7 @@ if (rank _unit == "PRIVATE") then {
         case "CLT": {_rank = "LIEUTENANT"};
         case "CPT": {_rank = "CAPTAIN"};
         case "CMJ": {_rank = "MAJOR"}; // Maybe we should separate these
-        case "CMDR": {_rank = "COLONEL"};
+        case "CC": {_rank = "COLONEL"};
         default {_rank = "PRIVATE"};
     };
 };
@@ -56,4 +56,4 @@ _name = _designation + _number;
 
 [_unit, _selectedFace] remoteExec ["setFace", 0, _unit];
 [_unit, [_name, _designation, _number]] remoteExec ["setName", 0, _unit];
-[_unit, _rank] remoteExec ["setRank", 0, _unit];
+_unit setRank _rank;

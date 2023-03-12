@@ -19,12 +19,12 @@
  * Public: No
 */
 
-params ["_unit", "_altitude", ["_pullHeight", 50]];
+params ["_unit", "_altitude", ["_pullHeight", 60]];
 {
 	if (isPlayer _x) then { continue };
-	[_x, _altitude, position _x, "ASL"] call BIS_fnc_setHeight;
+	[_x, _altitude] call BIS_fnc_setHeight;
 	// _this select 0  -> _unit | _this select 1 -> _pullHeight
-	[{(getPosASL (_this select 0)) select 2 <= (_this select 1)}, {
+	[{(position (_this select 0)) select 2 <= (_this select 1)}, {
 		_target = _this select 0;
 		private _chuteType = "lsd_gar_hawkbatSteerable_parachute";
 		if (rank _target != "PRIVATE") then { _chuteType = "ls_misc_hawkbatSteerable_parachute" };

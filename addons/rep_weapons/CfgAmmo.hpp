@@ -1,7 +1,10 @@
-class CfgAmmo {
+class CfgAmmo 
+{
 	class ShellBase;
+	class SmokeShell;
 	class ammo_Penetrator_Base: ShellBase {};
-	class MissileBase {
+	class MissileBase 
+	{
 		class Components;
 	};
 	class 87th_ammo_Penetrator: ammo_Penetrator_Base 
@@ -154,5 +157,19 @@ class CfgAmmo {
 			frequency = 20;
 			distance = 1;
 		};
+	};
+	class 87th_SmokeShellPurple_ammo: SmokeShell
+	{
+		explosionTime = -1;
+		model = "kobra\442_weapons\explosive\basic_smoke.p3d";
+		smokeColor[] = {0.29, 0.00, 0.51, 1.00};
+	};
+	class 87th_SmokeShellViolet_ammo: 87th_SmokeShellPurple_ammo
+	{
+		smokeColor[] = {0.62, 0.35, 0.98, 1.00};
+	};
+	class 87th_SmokeShellMidnight_ammo: 87th_SmokeShellPurple_ammo
+	{
+		smokeColor[] = {0.10, 0.00, 0.17, 1.00};
 	};
 };
