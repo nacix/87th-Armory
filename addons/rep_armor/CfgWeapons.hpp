@@ -76,6 +76,13 @@ class CfgWeapons {
 			"ls_armor_bluefor\helmet\gar\arf\data\camo2.rvmat",
 			"ls_armor_bluefor\helmet\gar\arf\data\visor.rvmat"
 		};
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			QPATHTOF(data\helmets\arf\ARFHelmet.rvmat),
+			"ls_armor_bluefor\helmet\gar\arf\data\camo2.rvmat",
+			"ls_armor_bluefor\helmet\gar\arf\data\visor.rvmat"
+		};
 		subItems[] = {};
 	};
 	class 87th_ATRT_Helmet: 3as_ATRT_Helmet
