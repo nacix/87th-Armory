@@ -144,7 +144,23 @@ private _vcomSkillTable = [
 	["87th_Clone_DP23", _basicSkills],
 	["87th_Clone_DC15AUGL", _basicSkills],
 	["87th_Clone_DC15S", _basicSkills],
-	["87th_Clone_DC15A", _basicSkills]
+	["87th_Clone_DC15A", _basicSkills],
+
+	// CLONE TROOPERS (P1)
+	["87th_Clone_P1_Sharpshooter", _sniperSkills],
+	["87th_Clone_P1_AR", _basicSkills],
+	["87th_Clone_P1_Sergeant", _leadSkills],
+	["87th_Clone_P1_RTO", _basicSkills],
+	["87th_Clone_P1_EOD", _basicSkills],
+	["87th_Clone_P1_Medic", _basicSkills],
+	["87th_Clone_P1_Lieutenant", _leadSkills],
+	["87th_Clone_P1_Corporal", _leadSkills],
+	["87th_Clone_P1_Commander", _leadSkills],
+	["87th_Clone_P1_Captain", _leadSkills],
+	["87th_Clone_P1_AT", _basicSkills],
+	["87th_Clone_P1_DC15AUGL", _basicSkills],
+	["87th_Clone_P1_DC15S", _basicSkills],
+	["87th_Clone_P1_DC15A", _basicSkills]
 ];
 
 [_vcomSkillTable] call EFUNC(common,updateVCOM); // ENABLES SUPPORT FOR VCOM_AI 3.0
