@@ -2641,12 +2641,14 @@ class CfgVehicles {
 	class 87th_ARF_DC15S: 87th_Clone_DC15S 
 	{
 		displayName = "ARF Trooper (DC-15S)";
+		icon = "JLTS_iconManRecon";
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_ARF_DC15S.jpg);
 		editorSubcategory = "87th_ARF";
 		linkedItems[]=
 		{
 			"87th_ARF_Helmet",
 			"JLTS_CloneVestHolster",
+			"JLTS_NVG_droid_chip_2",
 			"ItemMap",
 			"JLTS_clone_comlink",
 			"ItemCompass",
@@ -2657,6 +2659,7 @@ class CfgVehicles {
 		{
 			"87th_ARF_Helmet",
 			"JLTS_CloneVestHolster",
+			"JLTS_NVG_droid_chip_2",
 			"ItemMap",
 			"JLTS_clone_comlink",
 			"ItemCompass",
@@ -2688,6 +2691,7 @@ class CfgVehicles {
 		{
 			"87th_ARF_Helmet",
 			"JLTS_CloneVestHolster",
+			"JLTS_NVG_droid_chip_2",
 			"ItemMap",
 			"JLTS_clone_comlink",
 			"ItemCompass",
@@ -2698,6 +2702,7 @@ class CfgVehicles {
 		{
 			"87th_ARF_Helmet",
 			"JLTS_CloneVestHolster",
+			"JLTS_NVG_droid_chip_2",
 			"ItemMap",
 			"JLTS_clone_comlink",
 			"ItemCompass",
@@ -2713,6 +2718,7 @@ class CfgVehicles {
 		{
 			"87th_ARF_Helmet",
 			"JLTS_CloneVestHolster",
+			"JLTS_NVG_droid_chip_2",
 			"ItemMap",
 			"JLTS_clone_comlink",
 			"ItemCompass",
@@ -2723,6 +2729,7 @@ class CfgVehicles {
 		{
 			"87th_ARF_Helmet",
 			"JLTS_CloneVestHolster",
+			"JLTS_NVG_droid_chip_2",
 			"ItemMap",
 			"JLTS_clone_comlink",
 			"ItemCompass",
@@ -2732,12 +2739,14 @@ class CfgVehicles {
 	class 87th_ARF_JTAC: 87th_Clone_RTO 
 	{
 		displayName = "ARF JTAC";
+		icon = "JLTS_iconManRecon";
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_ARF_JTAC.jpg);
 		editorSubcategory = "87th_ARF";
 		linkedItems[]=
 		{
 			"87th_ARF_Helmet",
 			"JLTS_CloneVestHolster",
+			"JLTS_NVG_droid_chip_2",
 			"ItemMap",
 			"JLTS_clone_comlink",
 			"ItemCompass",
@@ -2748,6 +2757,7 @@ class CfgVehicles {
 		{
 			"87th_ARF_Helmet",
 			"JLTS_CloneVestHolster",
+			"JLTS_NVG_droid_chip_2",
 			"ItemMap",
 			"JLTS_clone_comlink",
 			"ItemCompass",
@@ -2763,6 +2773,7 @@ class CfgVehicles {
 		{
 			"87th_ARF_Helmet",
 			"JLTS_CloneVestHolster",
+			"JLTS_NVG_droid_chip_2",
 			"ItemMap",
 			"JLTS_clone_comlink",
 			"ItemCompass",
@@ -2772,6 +2783,7 @@ class CfgVehicles {
 		{
 			"87th_ARF_Helmet",
 			"JLTS_CloneVestHolster",
+			"JLTS_NVG_droid_chip_2",
 			"ItemMap",
 			"JLTS_clone_comlink",
 			"ItemCompass",
@@ -2796,6 +2808,7 @@ class CfgVehicles {
 		{
 			"87th_ARF_Helmet",
 			"JLTS_CloneVestHolster",
+			"JLTS_NVG_droid_chip_2",
 			"ItemMap",
 			"JLTS_clone_comlink",
 			"ItemCompass",
@@ -2805,6 +2818,7 @@ class CfgVehicles {
 		{
 			"87th_ARF_Helmet",
 			"JLTS_CloneVestHolster",
+			"JLTS_NVG_droid_chip_2",
 			"ItemMap",
 			"JLTS_clone_comlink",
 			"ItemCompass",
@@ -2845,6 +2859,7 @@ class CfgVehicles {
 		{
 			"87th_ARF_Helmet",
 			"JLTS_CloneVestHolster",
+			"JLTS_NVG_droid_chip_2",
 			"ItemMap",
 			"JLTS_clone_comlink",
 			"ItemCompass",
@@ -2855,6 +2870,7 @@ class CfgVehicles {
 		{
 			"87th_ARF_Helmet",
 			"JLTS_CloneVestHolster",
+			"JLTS_NVG_droid_chip_2",
 			"ItemMap",
 			"JLTS_clone_comlink",
 			"ItemCompass",
@@ -2886,6 +2902,7 @@ class CfgVehicles {
 		{
 			"87th_ARF_Helmet",
 			"JLTS_CloneVestReconOfficer",
+			"JLTS_NVG_droid_chip_2",
 			"ItemMap",
 			"JLTS_clone_comlink",
 			"ItemCompass",
@@ -2896,6 +2913,7 @@ class CfgVehicles {
 		{
 			"87th_ARF_Helmet",
 			"JLTS_CloneVestReconOfficer",
+			"JLTS_NVG_droid_chip_2",
 			"ItemMap",
 			"JLTS_clone_comlink",
 			"ItemCompass",
@@ -2920,6 +2938,7 @@ class CfgVehicles {
 		{
 			"87th_ARF_Helmet",
 			"87th_Lieutenant_Accessories",
+			"JLTS_NVG_droid_chip_2",
 			"ItemMap",
 			"JLTS_clone_comlink",
 			"ItemCompass",
@@ -2930,6 +2949,7 @@ class CfgVehicles {
 		{
 			"87th_ARF_Helmet",
 			"87th_Lieutenant_Accessories",
+			"JLTS_NVG_droid_chip_2",
 			"ItemMap",
 			"JLTS_clone_comlink",
 			"ItemCompass",
@@ -2954,6 +2974,7 @@ class CfgVehicles {
 		{
 			"87th_ARF_Helmet",
 			"87th_Officer_Accessories",
+			"JLTS_NVG_droid_chip_2",
 			"ItemMap",
 			"JLTS_clone_comlink",
 			"ItemCompass",
@@ -2964,6 +2985,7 @@ class CfgVehicles {
 		{
 			"87th_ARF_Helmet",
 			"87th_Officer_Accessories",
+			"JLTS_NVG_droid_chip_2",
 			"ItemMap",
 			"JLTS_clone_comlink",
 			"ItemCompass",
@@ -2988,6 +3010,7 @@ class CfgVehicles {
 		{
 			"87th_ARF_Helmet",
 			"87th_Commander_Accessories",
+			"JLTS_NVG_droid_chip_2",
 			"ItemMap",
 			"JLTS_clone_comlink",
 			"ItemCompass",
@@ -2997,6 +3020,7 @@ class CfgVehicles {
 		{
 			"87th_ARF_Helmet",
 			"87th_Commander_Accessories",
+			"JLTS_NVG_droid_chip_2",
 			"ItemMap",
 			"JLTS_clone_comlink",
 			"ItemCompass",
@@ -4088,6 +4112,7 @@ class CfgVehicles {
 	class 87th_ARC_DC15S: 87th_ARF_DC15S
 	{
 		displayName = "ARC Trooper (DC-15S)";
+		icon = "JLTS_iconManReconAdvanced";
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_ARC_DC15S.jpg);
 		editorSubcategory = "87th_ARC";
 		linkedItems[]=
@@ -4119,6 +4144,7 @@ class CfgVehicles {
 	class 87th_ARC_Westar: 87th_ARC_DC15S
 	{
 		displayName = "ARC Trooper (Westar-M5)";
+		icon = "JLTS_iconManReconAdvanced";
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_ARC_Westar.jpg);
 		weapons[]=
 		{
@@ -4180,6 +4206,7 @@ class CfgVehicles {
 	class 87th_ARC_GL: 87th_ARC_Westar
 	{
 		displayName = "ARC Trooper (Westar-M5 GL)";
+		icon = "JLTS_iconManHeavy";
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_ARC_GL.jpg);
 		weapons[]=
 		{
@@ -4251,6 +4278,7 @@ class CfgVehicles {
 	class 87th_ARC_AT: 87th_ARC_Westar
 	{
 		displayName = "ARC AT Trooper";
+		icon = "iconManAT";
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_ARC_AT.jpg);
 		weapons[]=
 		{
@@ -4484,6 +4512,7 @@ class CfgVehicles {
 	class 87th_ARC_JTAC: 87th_ARF_JTAC
 	{
 		displayName = "ARC JTAC";
+		icon = "JLTS_iconManReconAdvanced";
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_ARC_JTAC.jpg);
 		editorSubcategory = "87th_ARC";
 		linkedItems[]=
@@ -4746,6 +4775,7 @@ class CfgVehicles {
 	class 87th_RC_DC17M: 87th_Clone_DC15A 
 	{
 		displayName = "Clone Commando (DC-17M)";
+		icon = "JLTS_iconManReconAdvanced";
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_RC_DC17M.jpg);
 		editorSubcategory = "87th_RC";
 		uniformClass = "87th_Katarn_Armor";
