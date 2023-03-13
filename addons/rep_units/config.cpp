@@ -88,7 +88,21 @@ class CfgPatches
 			"87th_Clone_DP23",
 			"87th_Clone_DC15AUGL",
 			"87th_Clone_DC15S",
-			"87th_Clone_DC15A"
+			"87th_Clone_DC15A",
+			"87th_Clone_P1_Sharpshooter",
+			"87th_Clone_P1_AR",
+			"87th_Clone_P1_Sergeant",
+			"87th_Clone_P1_RTO",
+			"87th_Clone_P1_EOD",
+			"87th_Clone_P1_Medic",
+			"87th_Clone_P1_Lieutenant",
+			"87th_Clone_P1_Corporal",
+			"87th_Clone_P1_Commander",
+			"87th_Clone_P1_Captain",
+			"87th_Clone_P1_AT",
+			"87th_Clone_P1_DC15AUGL",
+			"87th_Clone_P1_DC15S",
+			"87th_Clone_P1_DC15A"
 		};
     };
 };

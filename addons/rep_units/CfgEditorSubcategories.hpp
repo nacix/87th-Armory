@@ -24,6 +24,10 @@ class CfgEditorSubcategories
 	{ 
 		displayName = "Clone Troopers";
 	};
+	class 87th_P1_Troopers
+	{
+		displayName = "Clone Troopers (P1)";
+	};
 	class 87th_Vehicles
 	{
 		displayName = "Vehicles";
