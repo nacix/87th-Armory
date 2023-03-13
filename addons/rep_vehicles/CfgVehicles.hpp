@@ -33,6 +33,7 @@ class CfgVehicles
 		author="Anorexican";
 		displayName="[87th] AT-RT";
 		genericNames="87th_Names_ATRT";
+		icon = "JLTS_iconManMarshalCMDR";
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_ATRT.jpg);
 		faction = "87th_Legion";
 		editorSubcategory = "87th_Vehicles";
