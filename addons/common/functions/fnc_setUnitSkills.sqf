@@ -22,9 +22,8 @@
 
 params ["_unit", "_skillTable"];
 
-if (!isServer || isPlayer _unit) exitWith {};
+if (!isServer || isPlayer _unit || count _skillTable <= 0) exitWith {};
 
-_skillTable = _skillTable get (typeOf _unit);
 {
 	_unit setSkill [_x, _skillTable select _forEachIndex];
 } forEach SKILLTYPES;

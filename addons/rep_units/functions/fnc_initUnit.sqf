@@ -29,5 +29,7 @@ switch (typeOf _unit) do {
 	case "87th_AB_NCO_D": { [_unit, 1000, 70] call EFUNC(common,paradrop) };
 };
 
+_unitSkills = (GVAR(skillTable)) getOrDefault [typeOf _unit, []];
+
 [_unit, _faceProfile, _designation] call EFUNC(rep_identities,setIdentity);
-[_unit, GVAR(skillTable)] call EFUNC(common,setUnitSkills);
+[_unit, _unitSkills] call EFUNC(common,setUnitSkills);
