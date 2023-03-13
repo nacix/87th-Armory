@@ -67,9 +67,18 @@ class CfgVehicles {
 			QPATHTOF(data\uniforms\ct\87th_Legs_co.paa)
 		};
 	};
+	class 87th_Clone_P1_Base: 87th_Clone_Base
+	{
+		displayName = "CloneMedicBase";
+		uniformClass = "87th_Medic_Uniform";
+		hiddenSelectionsTextures[] =
+		{
+			QPATHTOF(data\uniforms\ct\87th_P1_Chest_co.paa),
+			QPATHTOF(data\uniforms\ct\87th_P1_Legs_co.paa)
+		};
+	};
 	class 87th_Medic_Base: 87th_Clone_Base 
 	{
-		author = "Anorexican";
 		displayName = "CloneMedicBase";
 		uniformClass = "87th_Medic_Uniform";
 		hiddenSelectionsTextures[] =

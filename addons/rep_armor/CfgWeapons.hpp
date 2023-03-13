@@ -4,6 +4,7 @@ class CfgWeapons {
 	class Uniform_Base;
 	class UniformItem;
 	class 3as_ATRT_Helmet;
+	class 3as_P1_Base;
 	class 3as_P2_Pilot_helmet;
 	class 3AS_Katarn_Helmet_Base;
 	class 3AS_Katarn_Vest_Demo_Base;
@@ -120,11 +121,12 @@ class CfgWeapons {
 			""
 		};
 	};
-	class 87th_Commander_Helmet: 87th_Trooper_Helmet
+	class 87th_P1_Trooper_Helmet: 3as_P1_Base
 	{
 		author = "Stim";
-		displayname = "[87th] Commander Helmet";
-		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\ct\87th_Commander_Helmet_co.paa) };
+		displayname = "[87th] Phase 1 Trooper Helmet";
+		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\ct\87th_P1_Trooper_Helmet_co.paa) };
+		subItems[] = {};
 	};
 	class 87th_NVG: NVGoggles
 	{
@@ -213,6 +215,15 @@ class CfgWeapons {
 		{
 			uniformClass = "87th_Medic_Base";
 			containerClass = "Supply200";
+		};
+	};
+	class 87th_P1_Trooper_Uniform: 87th_Trooper_Uniform
+	{
+		displayname = "[87th] Phase 1 Trooper Armor";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass = "87th_Clone_P1_Base";
+			containerClass = "Supply150";
 		};
 	};
 	class 87th_Katarn_Armor: Uniform_Base
