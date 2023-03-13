@@ -25,21 +25,21 @@ class CfgWeapons {
 		displayname = "[87th] Trooper Helmet";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\ct\87th_Trooper_Helmet_co.paa) };
 	};
-	class 87th_Captain_Helmet: 87th_Trooper_Helmet
-	{
-		displayname = "[87th] Captain Helmet";
-		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\ct\87th_Captain_Helmet_co.paa) };
-	};
 	class 87th_ARC_Helmet: 87th_Trooper_Helmet
 	{
 		displayname = "[87th] ARC Helmet";
 		hiddenSelectionsTextures[] = {QPATHTOF(data\helmets\ct\87th_ARC_Helmet_co.paa)};
 	};
-	class 87th_Airborne_Helmet: JLTS_CloneHelmetAB
+	class 87th_Captain_Helmet: 87th_Trooper_Helmet
+	{
+		displayname = "[87th] Captain Helmet";
+		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\ct\87th_Captain_Helmet_co.paa) };
+	};
+	class 87th_Commander_Helmet: 87th_Trooper_Helmet
 	{
 		author = "Stim";
-		displayname = "[87th] Airborne Helmet";
-		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\87th_Airborne_Helmet_co.paa) };
+		displayname = "[87th] Commander Helmet";
+		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\ct\87th_Commander_Helmet_co.paa) };
 	};
 	class 87th_ARF_Helmet: ls_gar_phase1Arf_helmet
 	{
@@ -77,12 +77,6 @@ class CfgWeapons {
 			"ls_armor_bluefor\helmet\gar\arf\data\camo2.rvmat",
 			"ls_armor_bluefor\helmet\gar\arf\data\visor.rvmat"
 		};
-		hiddenSelectionsMaterials[]=
-		{
-			QPATHTOF(data\helmets\arf\ARFHelmet.rvmat),
-			"ls_armor_bluefor\helmet\gar\arf\data\camo2.rvmat",
-			"ls_armor_bluefor\helmet\gar\arf\data\visor.rvmat"
-		};
 		subItems[] = {};
 	};
 	class 87th_ATRT_Helmet: 3as_ATRT_Helmet
@@ -97,15 +91,11 @@ class CfgWeapons {
 		displayname = "[87th] BARC Helmet";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\87th_BARC_Helmet_co.paa) };
 	};
-	class 87th_Katarn_Helmet: 3AS_Katarn_Helmet_Base
+	class 87th_Airborne_Helmet: JLTS_CloneHelmetAB
 	{
 		author = "Stim";
-		displayname = "[87th] Katarn Helmet";
-		hiddenSelectionsTextures[]= 
-		{
-			QPATHTOF(data\helmets\87th_Katarn_Helmet_co.paa),
-			QPATHTOF(data\helmets\87th_Katarn_Helmet_co.paa)
-		};
+		displayname = "[87th] Airborne Helmet";
+		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\87th_Airborne_Helmet_co.paa) };
 	};
 	class 87th_P2_Pilot_helmet: 3as_P2_Pilot_helmet
 	{
@@ -128,6 +118,18 @@ class CfgWeapons {
 		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\ct\87th_P1_Trooper_Helmet_co.paa) };
 		subItems[] = {};
 	};
+	class 87th_Katarn_Helmet: 3AS_Katarn_Helmet_Base
+	{
+		scope = 2;
+		author = "Stim";
+		displayname = "[87th] Katarn Helmet";
+		hiddenSelectionsTextures[]= 
+		{
+			QPATHTOF(data\helmets\87th_Katarn_Helmet_co.paa),
+			QPATHTOF(data\helmets\87th_Katarn_Helmet_co.paa)
+		};
+	};
+
 	class 87th_NVG: NVGoggles
 	{
 		author = "Stim";
@@ -152,6 +154,13 @@ class CfgWeapons {
 			hiddenSelections[] = {"camo1"};
 		};
 	};
+
+	class 87th_Lieutenant_Accessories: JLTS_CloneVestLieutenant
+	{
+		author = "Stim";
+		displayname = "[87th] Lieutenant Accessories";
+		hiddenSelectionsTextures[] = { QPATHTOF(data\vests\87th_Officer_Attachments_co.paa) };
+	};
 	class 87th_Officer_Accessories: JLTS_CloneVestOfficer
 	{
 		author = "Stim";
@@ -162,12 +171,6 @@ class CfgWeapons {
 	{
 		author = "Stim";
 		displayname = "[87th] Commander Accessories";
-		hiddenSelectionsTextures[] = { QPATHTOF(data\vests\87th_Officer_Attachments_co.paa) };
-	};
-	class 87th_Lieutenant_Accessories: JLTS_CloneVestLieutenant
-	{
-		author = "Stim";
-		displayname = "[87th] Lieutenant Accessories";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\vests\87th_Officer_Attachments_co.paa) };
 	};
 	class 87th_Kama: JLTS_CloneVestKama
@@ -192,6 +195,7 @@ class CfgWeapons {
 		picture = "\3AS\3AS_Characters\Commando\data\Armor_ca.paa";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\vests\87th_Katarn_Tech_co.paa) };
 	};
+
 	class 87th_Trooper_Uniform: Uniform_Base
 	{
 		author = "Stim";
