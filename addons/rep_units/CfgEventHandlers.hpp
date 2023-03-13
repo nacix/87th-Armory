@@ -46,7 +46,7 @@ class Extended_InitPost_EventHandlers {
 		initServer = QUOTE([ARR_3(_this select 0, 'SCO', 'CPT')] call FUNC(initUnit));
 	};
 	class 87th_Clone_Commander {
-		initServer = QUOTE([ARR_3(_this select 0, 'CMDR', 'CMDR')] call FUNC(initUnit));
+		initServer = QUOTE([ARR_3(_this select 0, 'CMDR', 'CC')] call FUNC(initUnit));
 	};
 	class 87th_Clone_Corporal {
 		initServer = QUOTE([ARR_3(_this select 0, 'NCO', 'CP')] call FUNC(initUnit));
