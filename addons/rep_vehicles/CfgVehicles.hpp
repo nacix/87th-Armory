@@ -64,5 +64,6 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
+		class EventHandlers {};
 	};
 };
