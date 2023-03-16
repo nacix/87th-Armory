@@ -21,12 +21,13 @@ if (!isServer) exitWith {};
 
 params ["_unit", ["_walker", objNull]];
 
-if (!(_unit isKindOf "87th_ATRT") && {typeOf _unit isNotEqualTo "C_man_1"} && {isNull _walker}) exitWith {};
+if (_unit isKindOf "3AS_ATRT_Base") then { _walker = _unit; _unit = GETVAR(_unit,atrt_rider,objNull) } else { _walker = GETVAR(_unit,atrt_walker,objNull) };
 
-if (isNull _walker) then {
-	if (_unit isKindOf "87th_ATRT") then { _walker = _unit; _unit = GETVAR(_unit,rider,objNull) } else { _walker = GETVAR(_unit,walker,objNull) };
-	if (isNull _walker) exitWith {};
-};
+SETVAR(_walker,atrt_rider,objNull);
+SETVAR(_unit,atrt_walker,objNull);
+
+["featureCamera", GETVAR(_unit,atrt_featCamEH,-1)] call CBA_fnc_removePlayerEventHandler;
+["ace_unconscious", GETVAR(_unit,atrt_unconEH,-1)] call CBA_fnc_removeEventHandler;
 
 [_unit, ""] remoteExec ["switchMove", 0];
 detach _unit;
@@ -35,12 +36,10 @@ objNull remoteControl driver _walker;
 player remoteControl _unit;
 
 if (cameraOn isNotEqualTo (vehicle _unit)) then {(vehicle _unit) switchCamera cameraView};
-SETVAR(_walker,rider,objNull);
-SETVAR(_unit,_walker,objNull);
 
-private _riderShield = GETVAR(_walker,riderShield,objNull);
-if (!isNull _riderShield) then { deleteVehicle _riderShield; SETVAR(_walker,riderShield,objNull) };
-
-_walker allowDamage true;
+private _riderShield = GETVAR(_walker,atrt_riderShield,objNull);
+if (!isNull _riderShield) then { deleteVehicle _riderShield; SETVAR(_walker,atrt_riderShield,objNull) };
 
 inGameUISetEventHandler ["Action", ""];
+
+if (!alive _walker) then { _walker call FUNC(destroyATRT) };
