@@ -21,21 +21,23 @@
 
 params ["_walker", "_rider", "_actionID", "_args"];
 
-// Terminate if AT-RT is manned, rider is not player, or rider is AT-RT. (3AS_ATRT_Base)
-if (!isPlayer _rider || {!isNull GETVAR(_walker,rider,objNull)} || {_rider isKindOf "3AS_ATRT"}) exitWith {};
+// Terminate if AT-RT is manned, rider is not player, or rider is AT-RT.
+if (!isPlayer _rider || {!isNull GETVAR(_walker,atrt_rider,objNull)} || {_rider isKindOf "3AS_ATRT"}) exitWith {};
 
 if (hasInterface && isPlayer _rider && local _rider) then {
-	["featureCamera", {
+	private _featCamEH = ["featureCamera", {
 		params ["_unit", "_newCamera"];
 
 		if (_newCamera isNotEqualTo "classic") then {
-			_unit call FUNC(exitATRT);
-			["featureCamera", _thisId] call CBA_fnc_removeEventHandler;
+			systemChat str (driver _unit);
+			systemChat str (typeOf _unit);
+			(driver _unit) call FUNC(exitATRT);
+			["featureCamera", _thisId] call CBA_fnc_removePlayerEventHandler;
 		};
-
 	}] call CBA_fnc_addPlayerEventHandler;
+	SETVAR(_rider,atrt_featCamEH,_featCamEH);
 
-	["ace_unconscious", {
+	private _unconEH = ["ace_unconscious", {
 		params ["_unit", "_state"];
 		_thisArgs params ["_rider", "_walker"];
 
@@ -44,27 +46,26 @@ if (hasInterface && isPlayer _rider && local _rider) then {
 			["ace_unconscious", _thisId] call CBA_fnc_removeEventHandler;
 		};
 	}, [_rider, _walker]] call CBA_fnc_addEventHandlerArgs;
+	SETVAR(_rider,atrt_unconEH,_unconEH);
 };
 
-SETVAR(_walker,rider,_rider);
-_walker allowDamage false;
+SETVAR(_walker,atrt_rider,_rider);
 
 [_rider, "driver_Quadbike"] remoteExec ["switchMove", 0];
 _rider attachTo [_walker, [0,0,0], "seat"];
 
 private _shield = "3AS_ATRT_Collision" createVehicle position _walker;
 _shield attachTo [_walker, [0.0, 0.3, -2.3], "seat"];
-SETVAR(_walker,riderShield,_shield);
+SETVAR(_walker,atrt_riderShield,_shield);
 
 objNull remoteControl driver _rider;
 _rider remoteControl _walker;
 
-if (cameraOn isNotEqualTo (vehicle _walker)) then {
-	(vehicle _walker) switchCamera cameraview;
-	_walker enableStamina false;
-	_walker forceWalk false;
-};
+if (cameraOn isNotEqualTo (vehicle _walker)) then { (vehicle _walker) switchCamera cameraview };
 
-SETVAR(player,walker,_walker);
+_walker enableStamina false;
+_walker forceWalk false;
+
+SETVAR(player,atrt_walker,_walker);
 
 inGameUISetEventHandler ["Action", "if ((_this select 3) isEqualTo 'BackFromUAV') then { true }"];
