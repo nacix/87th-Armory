@@ -30,7 +30,7 @@ class CfgVehicles
 	};
 	class 87th_ATRT: 3AS_ATRT
 	{
-		author="Anorexican";
+		author="Anorexican & 3AS";
 		displayName="[87th] AT-RT";
 		genericNames="87th_Names_ATRT";
 		icon = "JLTS_iconManMarshalCMDR";
