@@ -6,7 +6,7 @@ class CfgPatches
     {
 		name = COMPONENT_NAME;
 		requiredVersion = REQUIRED_VERSION;
-		author = CSTRING(AuxTeam);
+		author = ECSTRING(Common,AuxTeam);
 		authors[] = {"Anorexican"};
 		url = ECSTRING(main,URL);
         requiredAddons[]=
