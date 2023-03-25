@@ -79,12 +79,14 @@ class CfgWeapons {
 		};
 		subItems[] = {};
 	};
+	/*
 	class 87th_ATRT_Helmet: 3as_ATRT_Helmet
 	{
 		author = "Stim";
 		displayname = "[87th] ATRT Helmet";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\87th_ATRT_Helmet_co.paa) };
 	};
+	*/
 	class 87th_BARC_Helmet: JLTS_CloneHelmetBARC
 	{
 		author = "Stim";

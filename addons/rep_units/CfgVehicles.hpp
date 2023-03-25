@@ -3037,6 +3037,7 @@ class CfgVehicles {
 		};
 	};
 
+	/*
 	class 87th_ATRT_Driver: 87th_ARF_DC15S
 	{
 		displayName = "AT-RT Driver";
@@ -3062,6 +3063,7 @@ class CfgVehicles {
 			"ItemWatch"
 		};
 	};
+	*/
 
 	class 87th_BARC_DC15S: 87th_ARF_DC15S 
 	{
