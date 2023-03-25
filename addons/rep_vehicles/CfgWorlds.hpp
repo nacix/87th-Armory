@@ -45,6 +45,9 @@ class CfgWorlds
 				N33 = "Trench";
 				N34 = "Marshall";
 				N35 = "Theodore";
+				N36 = "Hussein";
+				N37 = "Biren";
+				N38 = "Obama";
 			};
 		};
 	};
