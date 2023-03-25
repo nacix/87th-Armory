@@ -24,4 +24,4 @@ if (!(isServer) || _weapon != "Throw" || !("87th" in _muzzle)) exitWith {};
 [{(position _this) select 2 < 0.2}, {
 	_velocity = velocity _this;
 	_this setVelocity (_velocity apply { _x * 0.20 });
-}, _projectile, 120] call CBA_fnc_waitUntilAndExecute;
+}, _projectile, 20] call CBA_fnc_waitUntilAndExecute;
