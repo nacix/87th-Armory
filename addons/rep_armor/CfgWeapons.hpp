@@ -6,6 +6,7 @@ class CfgWeapons {
 	class 3as_ATRT_Helmet;
 	class 3as_P1_Base;
 	class 3as_P2_Pilot_helmet;
+	class 3as_P1_Pilot_helmet;
 	class 3AS_Katarn_Helmet_Base;
 	class 3AS_Katarn_Vest_Demo_Base;
 	class 3AS_Katarn_Vest_Tech_Base;
@@ -119,6 +120,11 @@ class CfgWeapons {
 		displayname = "[87th] Phase 1 Trooper Helmet";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\ct\87th_P1_Trooper_Helmet_co.paa) };
 		subItems[] = {};
+	};
+	class 87th_P1_Pilot_Helmet: 3as_P1_Pilot_helmet
+	{
+		displayName = "[87th] Phase 1 Pilot Helmet";
+		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\87th_P1_Pilot_Helmet_co.paa) };
 	};
 	class 87th_Katarn_Helmet: 3AS_Katarn_Helmet_Base
 	{

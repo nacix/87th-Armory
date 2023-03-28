@@ -45,6 +45,7 @@ class CfgPatches
 			"87th_BARC_Helmet",
 			"87th_Katarn_Helmet",
 			"87th_P2_Pilot_helmet",
+			"87th_P1_Pilot_Helmet",
 			"87th_Commander_Helmet",
 			"87th_NVG",
 			"87th_Trooper_Uniform",
