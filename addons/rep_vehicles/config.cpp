@@ -24,6 +24,7 @@ class CfgPatches
         units[]=
 		{
 			"87th_LAAT",
+			"87th_P1_LAAT",
 			"87th_ATRT"
 		};
 		weapons[]=

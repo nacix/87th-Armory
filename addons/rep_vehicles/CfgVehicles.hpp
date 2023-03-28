@@ -2,21 +2,14 @@ class CfgVehicles
 {
 	class 3AS_ATRT;
 	class 3as_LAAT_Mk2;
+	
 	class 87th_LAAT: 3as_LAAT_Mk2 
 	{
-		author="Anorexican";
-		displayname="[87th] LAAT/I Mk.2";
-		faction="87th_Legion";
+		author = "Anorexican";
+		displayName = "[87th] LAAT/I Mk.2";
+		faction = "87th_Legion";
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_LAAT.jpg);
-		editorSubcategory="87th_Vehicles";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo1",
-			"camo2",
-			"camo3",
-			"camo4"
-		};
+		editorSubcategory = "87th_Vehicles";
 		hiddenSelectionsTextures[]=
 		{
 			QPATHTOF(data\laat\87th_LAAT_Hull_co.paa),
@@ -25,9 +18,16 @@ class CfgVehicles
 			QPATHTOF(data\laat\87th_LAAT_Weapon_Details_co.paa),
 			"3AS\3as_Laat\LAATI\data\Interior_CO.paa"
 		};
-		crew="87th_Clone_Pilot";
-		typicalcargo[] = {"87th_Clone_Pilot"};
+		crew = "87th_Clone_Pilot";
+		typicalCargo[] = {"87th_Clone_Pilot"};
 	};
+	class 87th_P1_LAAT: 87th_LAAT
+	{
+		displayName = "[87th] LAAT/I Mk.2 (P1)";
+		crew = "87th_Clone_P1_Pilot";
+		typicalCargo[] = {"87th_Clone_P1_Pilot"};
+	};
+
 	class 87th_ATRT: 3AS_ATRT
 	{
 		author="Anorexican";
