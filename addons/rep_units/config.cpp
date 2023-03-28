@@ -21,6 +21,7 @@ class CfgPatches
         };
         units[]=
 		{
+			"87th_Clone_P1_Pilot",
 			"87th_Clone_Pilot",
 			"87th_RC_Sniper",
 			"87th_RC_Demo",

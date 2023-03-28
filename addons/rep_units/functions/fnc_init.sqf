@@ -146,6 +146,7 @@ private _vcomSkillTable = [
 	["87th_Clone_DC15A", _basicSkills],
 
 	// CLONE TROOPERS (P1)
+	["87th_Clone_P1_Pilot", _basicSkills],
 	["87th_Clone_P1_Sharpshooter", _sniperSkills],
 	["87th_Clone_P1_AR", _basicSkills],
 	["87th_Clone_P1_Sergeant", _leadSkills],

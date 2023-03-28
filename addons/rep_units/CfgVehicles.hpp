@@ -5237,4 +5237,32 @@ class CfgVehicles {
 		};
 		class EventHandlers {};
 	};
+	class 87th_Clone_P1_Pilot: 87th_Clone_Pilot
+	{
+		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_Clone_P1_Pilot.jpg);
+		editorSubcategory = "87th_P1_Troopers";
+		uniformClass = "87th_P1_Trooper_Uniform";
+		
+		hiddenSelectionsTextures[]=
+		{
+            QPATHTOEF(rep_armor, data\uniforms\ct\87th_P1_Chest_co.paa),
+            QPATHTOEF(rep_armor, data\uniforms\ct\87th_P1_Legs_co.paa)
+        };
+		linkedItems[]=
+		{
+			"87th_P1_Pilot_Helmet",
+			"ItemMap",
+			"JLTS_clone_comlink",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"87th_P1_Pilot_Helmet",
+			"ItemMap",
+			"JLTS_clone_comlink",
+			"ItemCompass",
+			"ItemWatch"
+		};
+	};
 };
