@@ -23,8 +23,14 @@ class CfgPatches
         };
         units[]=
 		{
-			"87th_LAAT",
-			"87th_P1_LAAT",
+			CLASS(LAAT),
+			CLASS(LAAT_Lights),
+			CLASS(LAAT_Mk1),
+			CLASS(LAAT_Mk1_Lights),
+			CLASS(P1_LAAT),
+			CLASS(P1_LAAT_Lights),
+			CLASS(P1_LAAT_Mk1),
+			CLASS(P1_LAAT_Mk1_Lights),
 			"87th_ATRT"
 		};
 		weapons[]=
