@@ -1,32 +1,42 @@
 class CfgVehicles 
 {
-	class 3AS_ATRT;
-	class 3as_LAAT_Mk2;
+	#define LAAT_NEW(name_raw,classname,inheritance) \
+		class AUXCLASS(classname)##: inheritance \
+		{ \
+			author = "Anorexican"; \
+			displayName = NAME_PRETTY(LAAT/I ##name_raw); \
+			faction = FACTION_REP; \
+			editorPreview = QPATHTOF(data\ui\editorPreviews\##TAG##_LAAT.jpg); \
+			editorSubcategory = QUOTE(TAG##_Vehicles); \
+			hiddenSelectionsTextures[]= \
+			{ \
+				QPATHTOF(data\laat\##TAG##_LAAT_Hull_co.paa), \
+				QPATHTOF(data\laat\##TAG##_LAAT_Wings_co.paa), \
+				"3AS\3as_Laat\LAATI\data\Weapons_CO.paa", \
+				QPATHTOF(data\laat\##TAG##_LAAT_Weapon_Details_co.paa), \
+				"3AS\3as_Laat\LAATI\data\Interior_CO.paa" \
+			}; \
+			crew = QUOTE(TAG##_Clone_Pilot); \
+			typicalCargo[] = {QUOTE(TAG##_Clone_Pilot)}; \
+		}; \
+		class TAG##_P1_##classname##: TAG##_##classname \
+		{ \
+			editorSubcategory = QUOTE(TAG##_P1_Vehicles); \
+			crew = QUOTE(TAG##_Clone_P1_Pilot); \
+			typicalCargo[] = {QUOTE(TAG##_Clone_P1_Pilot)}; \
+		}; \
 	
-	class 87th_LAAT: 3as_LAAT_Mk2 
-	{
-		author = "Anorexican";
-		displayName = "[87th] LAAT/I Mk.2";
-		faction = "87th_Legion";
-		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_LAAT.jpg);
-		editorSubcategory = "87th_Vehicles";
-		hiddenSelectionsTextures[]=
-		{
-			QPATHTOF(data\laat\87th_LAAT_Hull_co.paa),
-			QPATHTOF(data\laat\87th_LAAT_Wings_co.paa),
-			"3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
-			QPATHTOF(data\laat\87th_LAAT_Weapon_Details_co.paa),
-			"3AS\3as_Laat\LAATI\data\Interior_CO.paa"
-		};
-		crew = "87th_Clone_Pilot";
-		typicalCargo[] = {"87th_Clone_Pilot"};
-	};
-	class 87th_P1_LAAT: 87th_LAAT
-	{
-		displayName = "[87th] LAAT/I Mk.2 (P1)";
-		crew = "87th_Clone_P1_Pilot";
-		typicalCargo[] = {"87th_Clone_P1_Pilot"};
-	};
+	class 3AS_ATRT;
+	class 3as_LAAT_Mk1;
+	class 3as_LAAT_Mk1Lights;
+	class 3as_LAAT_Mk2;
+	class 3as_LAAT_Mk2Lights;
+
+	LAAT_NEW(Mk.2, LAAT, 3as_LAAT_Mk2)
+	LAAT_NEW(Mk.2 (Lights), LAAT_Lights, 3as_LAAT_Mk2Lights)
+
+	LAAT_NEW(Mk.1, LAAT_Mk1, 3as_LAAT_Mk1)
+	LAAT_NEW(Mk.1 (Lights), LAAT_Mk1_Lights, 3as_LAAT_Mk1Lights)
 
 	class 87th_ATRT: 3AS_ATRT
 	{

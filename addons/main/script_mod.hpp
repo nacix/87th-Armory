@@ -1,6 +1,11 @@
 #define MAINPREFIX x
 #define PREFIX ax87
 
+#define TAG 87th
+#define TAG_BR [##TAG##]
+
+#define FACTION_REP QUOTE(87th_Legion)
+
 #define VERSION     MAJOR.MINOR
 #define VERSION_STR MAJOR.MINOR.PATCHLVL
 #define VERSION_AR  MAJOR,MINOR,PATCHLVL

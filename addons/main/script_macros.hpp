@@ -50,4 +50,9 @@
 
 #define PREP_MODULE(folder) [] call compile preprocessFileLineNumbers QPATHTOF(folder\__PREP__.sqf)
 
+#define NAME_PRETTY(name_raw) QUOTE(TAG_BR ##name_raw##)
+
+#define AUXCLASS(classname) TAG##_##classname
+#define CLASS(classname) QUOTE(AUXCLASS(classname))
+
 #define SKILLTYPES ["aimingAccuracy", "aimingShake", "spotDistance", "spotTime", "courage", "commanding", "aimingSpeed", "general", "endurance", "reloadSpeed"]
