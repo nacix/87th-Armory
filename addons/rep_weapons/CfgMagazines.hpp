@@ -1,7 +1,47 @@
 class CA_LauncherMagazine;
+class JLTS_stun_mag_long;
 class CfgMagazines 
 {
 	class SmokeShell;
+	class 3AS_45Rnd_EC50_Mag;
+	class 3AS_300Rnd_EC60_Mag;
+
+	class 87th_30Rnd_EC50_Mag: 3AS_45Rnd_EC50_Mag
+	{
+		author = "Anorexican";
+		count = 30;
+		displayName = "[87th] 30rd EC50 Magazine";
+		descriptionShort = "30rd EC50 Cartridge<br />Used in: DP-23";
+	};
+	class 87th_35Rnd_EC50_Mag: 3AS_45Rnd_EC50_Mag
+	{
+		author = "Anorexican";
+		count = 35;
+		displayName = "[87th] 35rd EC50 Magazine";
+		descriptionShort = "35rd EC50 Cartridge<br />Used in: DC-15C";
+	};
+	class 87th_20Rnd_EC60_Mag: 3AS_300Rnd_EC60_Mag
+	{
+		author = "Anorexican";
+		count = 20;
+		displayName = "[87th] 20rd EC60 Magazine";
+		descriptionShort = "20rd EC60 Cartridge<br />Used in: DW-32S";
+	};
+
+	class 87th_Stun_Mag_Long: JLTS_stun_mag_long
+	{
+		author = "Anorexican";
+		displayName = "[87th] Stun Battery (15s)";
+		ammo = "87th_ammo_stun";
+		initSpeed = 120;
+	};
+	class 87th_Stun_Mag_Super: 87th_Stun_Mag_Long
+	{
+		displayName = "[87th] Stun Battery (15s)";
+		ammo = "87th_ammo_stun_super";
+		initSpeed = 500;
+	};
+
 	class 87th_MK40X_AT_Guided: CA_LauncherMagazine
 	{
 		author = "Anorexican";
