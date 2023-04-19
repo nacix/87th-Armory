@@ -4,3 +4,4 @@ PREP(clientInit);
 PREP(handleOneHanding);
 PREP(canOneHand);
 PREP(setHandPos);
+PREP(disableOneHanding);
