@@ -5,7 +5,7 @@
  * Detects whether or not the player should be one-handing their secondary weapon.
  *
  * Arguments:
- * NONE
+ * 0: The unit <OBJECT>
  *
  * Return Value:
  * NONE
@@ -22,34 +22,54 @@
 
 if (isServer && !hasInterface) exitWith {}; // Only run on clients
 
-private _unit = player;
+params ["_unit"];
 
-SETVAR(_unit,usingOneHand,false);
-SETVAR(_unit,canOneHand,true);
-SETVAR(_unit,outOfBody,false);
+TRACE_1("handleOneHanding",_unit);
 
-_unit addEventHandler ["AnimChanged", {
+if (!GETGVAR(enabled,true)) exitWith {};
+
+SETVAR(_unit,GVAR(isUnitWalking),isWalking _unit);
+SETVAR(_unit,GVAR(usingOneHand),false);
+
+SETVAR(_unit,GVAR(weaponAllowed),true);
+SETVAR(_unit,GVAR(outOfBody),("" isNotEqualTo ([] call CBA_fnc_getActiveFeatureCamera)));
+
+// SETVAR(player,GVAR(isUnitWalking),!(handgunWeapon player in GETGVAR(weaponBlacklist)));
+// SETVAR(player,GVAR(weaponAllowed),(handgunWeapon player in GETGVAR(weaponBlacklist)));
+
+private _animChangedEH = _unit addEventHandler ["AnimChanged", {
 	params ["_unit", "_anim"];
 	[_unit, [_unit, _anim] call FUNC(canOneHand), false, true] call FUNC(setHandPos);
 }];
+SETVAR(_unit,GVAR(animChangedEH),_animChangedEH);
+LOG_2("Initialized EventHandler 'animChanged' for unit [%1] (ID: [%2])", _unit, _animChangedEH);
 
-["weapon", {
+private _weaponEH = ["weapon", {
 	params ["_unit", "_weaponNew", "_weaponOld"];
 	TRACE_3("weapon",_unit,_weaponNew,_weaponOld);
 
 	_unit removeEventHandler ["GestureDone", GETVAR(_unit,gestureDoneEH,-1)];
+	SETVAR(_unit,GVAR(gestureDoneEH),-1);
 	LOG_1("Removed EventHandler 'gestureDone' for unit [%1] (timed out)", _unit);
 
 	if (_weaponNew isEqualTo "") exitWith { LOG_2("weaponChangeEH terminated on unit [%1]: [%2] is empty",_unit,_weaponNew) };
 	
 	private _setOneHanded = nil;
 	switch (handGunWeapon _unit) do {
-		case (_weaponNew): {_setOneHanded = true};
+		case (_weaponNew): { 
+			if (!("shield" in (toLower _weaponNew))) then {
+				_setOneHanded = true;
+				if (!GETVAR(_unit,GVAR(weaponAllowed),true)) then { SETVAR(_unit,GVAR(isUnitWalking),true); SETVAR(_unit,GVAR(weaponAllowed),true) };
+			} else {
+				_setOneHanded = false;
+				SETVAR(_unit,GVAR(isUnitWalking),false);
+				SETVAR(_unit,GVAR(weaponAllowed),false);
+			};
+		};
 		case (_weaponOld): {_setOneHanded = false};
 	};
 	if (isNil "_setOneHanded") exitWith { LOG_3("weaponChangeEH terminated on unit [%1]: Neither [%2] (new) or [%3] (old) are sidearms", _unit, _weaponNew, _weaponOld) };
 	
-	LOG_1("Initializing EventHandler 'gestureDone' for unit [%1]", _unit);
 	private _gestureDoneEH = [_unit, "GestureDone", {
 		params ["_unit", "_gesture"];
 		
@@ -59,7 +79,7 @@ _unit addEventHandler ["AnimChanged", {
 			private _animState = animationState _unit;
 			TRACE_2("gestureDoneEH",_unit,_animState);
 
-			if (_thisArgs select 0) then { SETVAR(_unit,usingOneHand,false) };
+			if (_thisArgs select 0) then { SETVAR(_unit,GVAR(usingOneHand),false) };
 
 			_unit removeEventHandler ["GestureDone", _thisID];
 			if ((_thisArgs select 0) && "sras" in _animState && "wpst" in _animState && "perc" in _animState && ("mstp" in _animState || "mwlk" in _animState || "mtac" in _animState || "aadj" in _animState)) then { 
@@ -71,26 +91,30 @@ _unit addEventHandler ["AnimChanged", {
 			};
 		};
 	}, [_setOneHanded]] call CBA_fnc_addBISEventHandler;
-	
 	SETVAR(_unit,gestureDoneEH,_gestureDoneEH);
+	LOG_2("Initialized EventHandler 'gestureDone' for unit [%1] (ID: [%2])", _unit, _reloadedEH);
 }] call CBA_fnc_addPlayerEventHandler;
+SETVAR(_unit,GVAR(weaponEH),_weaponEH);
+LOG_2("Initialized EventHandler 'weapon' for unit [%1] (ID: [%2])", _unit, _weaponEH);
 
-_unit addEventHandler ["Reloaded", {
+private _reloadedEH = _unit addEventHandler ["Reloaded", {
 	params ["_unit", "_weapon", "_magazine"];
-	if (_weapon isEqualTo handgunWeapon _unit && GETVAR(_unit,usingOneHand,false)) then {
+	if (_weapon isEqualTo handgunWeapon _unit && GETVAR(_unit,GVAR(usingOneHand),false)) then {
 		TRACE_3("reloaded",_unit,_weapon,_magazine);
-		SETVAR(_unit,usingOneHand,false);
-		[{(weaponState player select 6) == 0}, {SETVAR(player,justReloaded,true); [player, true] call FUNC(setHandPos)}, [], 15] call CBA_fnc_waitUntilAndExecute;
+		SETVAR(_unit,GVAR(usingOneHand),false);
+		[{ (weaponState player select 6) == 0 }, { SETVAR(player,justReloaded,true); [player, true] call FUNC(setHandPos) }, [], 15] call CBA_fnc_waitUntilAndExecute;
 		LOG_1("Unit [%1] reloaded their sidearm",_unit);
 	};
 }];
+SETVAR(_unit,GVAR(reloadedEH),_reloadedEH);
+LOG_2("Initialized EventHandler 'reloaded' for unit [%1] (ID: [%2])", _unit, _reloadedEH);
 
-["featureCamera", {
+private _featureCameraEH = ["featureCamera", {
 	params ["_unit", "_camera"];
 	TRACE_2("featureCamera",_unit,_camera);
 
 	private _inPlayerCamera = (_camera isEqualTo "");
-	SETVAR(_unit,outOfBody,!_inPlayerCamera);
+	SETVAR(_unit,GVAR(outOfBody),!_inPlayerCamera);
 	LOG_2("Is unit [%1] in their own body? [%2]",_unit,!_inPlayerCamera);
 	
 	if (currentWeapon _unit isEqualTo handgunWeapon _unit) then {
@@ -98,30 +122,38 @@ _unit addEventHandler ["Reloaded", {
 		LOG_1("Unit [%1] has changed cameras with their sidearm equipped",_unit);
 	};
 }] call CBA_fnc_addPlayerEventHandler;
+SETVAR(_unit,GVAR(featureCameraEH),_featureCameraEH);
+LOG_2("Initialized EventHandler 'featureCamera' for unit [%1] (ID: [%2])", _unit, _featureCameraEH);
 
-addUserActionEventHandler ["WalkRunToggle", "Activate", {
+private _walkRunToggleEH = addUserActionEventHandler ["WalkRunToggle", "Activate", {
    	params ["_action", "_unit", "_activated"];
 	TRACE_3("WalkRunToggle",_action,_unit,_activated);
 
+	if (GETVAR(player,GVAR(allowOneHandWalking),false)) exitWith { LOG_1("WalkRunToggleEH terminated on unit [%1] because they allow one-handed walking",_unit) };
+	
 	if (vehicle _unit != _unit) exitWith { LOG_2("WalkRunToggleEH terminated on unit [%1] because they are inside a vehicle [%2]",_unit,vehicle _unit) };
 
-	SETVAR(_unit,canOneHand,isWalking _unit);
-	[_unit, isWalking _unit] call FUNC(setHandPos);
+	SETVAR(_unit,GVAR(isUnitWalking),isWalking _unit);
+	[_unit, !(isWalking _unit)] call FUNC(setHandPos);
 	LOG_2("Is unit [%1] walking? [%2]",_unit,isWalking _unit);
 }];
+SETVAR(_unit,GVAR(walkRunToggleEH),_walkRunToggleEH);
+LOG_2("Initialized EventHandler 'WalkRunToggle' for unit [%1] (ID: [%2])", _unit, _walkRunToggleEH);
 
-_unit addEventHandler ["GestureChanged", {
+private _gestureChangedEH = _unit addEventHandler ["GestureChanged", {
 	params ["_unit", "_gesture"];
 
-	if (_gesture isNotEqualTo "ax87_pistol" && _gesture isNotEqualTo "ax87_switch_pistol" && GETVAR(_unit,usingOneHand,false)) then {
-		SETVAR(_unit,usingOneHand,false);
+	if (_gesture isNotEqualTo "ax87_pistol" && _gesture isNotEqualTo "ax87_switch_pistol" && GETVAR(_unit,GVAR(usingOneHand),false)) then {
+		SETVAR(_unit,GVAR(usingOneHand),false);
 
 		LOG_2("Unit [%1] changed gesture to [%2]",_unit,_gesture);
 
 		if ("aidl" in _gesture) exitWith { LOG_1("gestureState idled on unit [%1]. Calling setHandPos...",_unit); [_unit, true, false, false, true] call FUNC(setHandPos) };
 
-		if ([_unit, animationState _unit] call FUNC(canOneHand)) exitWith { [{ gestureState player isEqualTo "" || gestureState player isEqualTo "<none>" }, { if ( !GETVAR(player,usingOneHand,false) ) then { [player, true] call FUNC(setHandPos) } }, [], 30] call CBA_fnc_waitUntilAndExecute };
+		if ([_unit, animationState _unit] call FUNC(canOneHand)) exitWith { [{ gestureState player isEqualTo "" || gestureState player isEqualTo "<none>" }, { if ( !GETVAR(player,GVAR(usingOneHand),false) ) then { [player, true] call FUNC(setHandPos) } }, [], 30] call CBA_fnc_waitUntilAndExecute };
 
-		[{"aidl" in gestureState player}, { if (currentWeapon player isEqualTo handgunWeapon player && !GETVAR(player,usingOneHand,false)) then { [_unit, true] call FUNC(setHandPos) } }, [], 30] call CBA_fnc_waitUntilAndExecute;
+		[{"aidl" in gestureState player}, { if (currentWeapon player isEqualTo handgunWeapon player && !GETVAR(player,GVAR(usingOneHand),false)) then { [_unit, true] call FUNC(setHandPos) } }, [], 30] call CBA_fnc_waitUntilAndExecute;
 	};
 }];
+SETVAR(_unit,GVAR(gestureChangedEH),_gestureChangedEH);
+LOG_2("Initialized EventHandler 'gestureChanged' for unit [%1] (ID: [%2])", _unit, _gestureChangedEH);

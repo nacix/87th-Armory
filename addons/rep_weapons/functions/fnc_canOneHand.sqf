@@ -22,6 +22,6 @@ if (isServer && !hasInterface) exitWith {}; // Only run on clients
 params ["_unit", "_anim"];
 TRACE_2("canOneHand",_unit,_anim);
 
-if (GETVAR(_unit,justReloaded,false) && {("mrun" in _anim || "mtac" in _anim || "mstp" in _anim || "aadj" in _anim)}) exitWith { LOG_1("Unit [%1] has finished reloading",_unit); SETVAR(_unit,justReloaded,false); true };
+if (GETVAR(_unit,GVAR(justReloaded),false) && {("mrun" in _anim || "mtac" in _anim || "mstp" in _anim || "aadj" in _anim)}) exitWith { LOG_1("Unit [%1] has finished reloading",_unit); SETVAR(_unit,GVAR(justReloaded),false); true };
 
 !("ainv" in _anim || "wrfl" in _anim || "wlnr" in _anim || "wnon" in _anim || "slow" in _anim || (("sras" in _anim) && ("mrun" in _anim || "mwlk" in _anim)) || "meva" in _anim || ("ppne" in _anim && !("perc" in _anim || "pknl" in _anim)) || "prone" in _anim)

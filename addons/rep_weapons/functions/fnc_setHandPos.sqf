@@ -25,13 +25,13 @@ if (isServer && !hasInterface) exitWith {}; // Only run on clients
 params ["_unit", "_tryOneHand", ["_resetActions", false], ["_skipAnimCheck", false], ["_forceAction", false]];
 TRACE_5("setHandPos",_unit,_tryOneHand,_resetActions,_skipAnimCheck,_forceAction);
 
-if ((weaponState _unit select 6) != 0 || (!GETVAR(_unit,wantsOneHand,true) && !GETVAR(_unit,usingOneHand,false)) || isNil "_tryOneHand") exitWith { LOG_1("setHandPos cancelled for unit [%1]",_unit) };
+if ((weaponState _unit select 6) != 0 || isNil "_tryOneHand" || (!GETGVAR(enabled,true) && !GETVAR(_unit,GVAR(usingOneHand),false))) exitWith { LOG_1("setHandPos failed for unit [%1]",_unit) };
 
 if (_tryOneHand) then {
-	if (!GETVAR(_unit,outOfBody,false) && !GETVAR(_unit,usingOneHand,false) && {(_forceAction || {((GETVAR(_unit,wantsOneHand,true) && GETVAR(_unit,canOneHand,true)) && ((([_unit, animationState _unit] call FUNC(canOneHand)) || _skipAnimCheck) && {currentWeapon _unit isEqualTo handgunWeapon _unit}))})}) then {
-		SETVAR(_unit,usingOneHand,true);
+	if (!GETVAR(_unit,GVAR(outOfBody),false) && !GETVAR(_unit,GVAR(usingOneHand),false) && {(_forceAction || {((GETGVAR(enabled,true) && !GETVAR(_unit,GVAR(isUnitWalking),false)) && ((([_unit, animationState _unit] call FUNC(canOneHand)) || _skipAnimCheck) && {currentWeapon _unit isEqualTo handgunWeapon _unit}))})}) then {
+		SETVAR(_unit,GVAR(usingOneHand),true);
 
-		if (GETVAR(_unit,justReloaded,false)) then { SETVAR(_unit,justReloaded,false); LOG_1("Unit [%1] has finished reloading",_unit) };
+		if (GETVAR(_unit,GVAR(justReloaded),false)) then { SETVAR(_unit,GVAR(justReloaded),false); LOG_1("Unit [%1] has finished reloading",_unit) };
 		
 		if (_resetActions) then {
 			_unit switchAction "ax87_switch_pistol";
@@ -43,9 +43,14 @@ if (_tryOneHand) then {
 		};
 	};
 } else {
-	if (_forceAction || GETVAR(_unit,usingOneHand,false)) then {
-		SETVAR(_unit,usingOneHand,false);
+	if (_forceAction || GETVAR(_unit,GVAR(usingOneHand),false)) then {
+		SETVAR(_unit,GVAR(usingOneHand),false);
 		if (_resetActions) then { _unit switchAction "ax87_switch_pistol" } else { _unit playActionNow "ax87_switch_pistol" };
 		LOG_1("Unit [%1] is no longer one-handing",_unit);
+		
+		if (!GETGVAR(enabled,true)) then {
+			LOG_1("Terminating all one-handing eventHandlers for unit [%1]",_unit);
+			_unit call FUNC(disableOneHanding);
+		};
 	};
 };
