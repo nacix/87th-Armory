@@ -14456,8 +14456,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			};
 			actions="PistolProneActions";
 			duty=-1;
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\pne\stp\ras\pst\AmovPpneMstpSrasWpstDnon";
-			visibleSize=0.100123;
+			file="a3\anims_f\data\anim\sdr\mov\pne\stp\ras\pst\amovppnemstpsraswpstdnon.rtm";
+			visibleSize=0.15000001;
 			onLandBeg=1;
 			onLandEnd=1;
 			collisionShape="A3\anims_f\Data\Geom\Sdr\Ppne.p3d";
@@ -14465,21 +14465,14 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			leaningFactorEnd=0;
 			InterpolationSpeed=2.5;
 			soundOverride="crawl";
+			soundEdge[]={0.2,0.69999999};
 			aimprecision=1.25;
 			ConnectTo[]=
 			{
-				"AmovPpneMstpSrasWpstDnon_turnL",
-				0.02,
-				"AmovPpneMstpSrasWpstDnon_turnR",
-				0.02,
 				"AmovPpneMstpSrasWpstDnon",
 				0.02,
 				"PistolMagazineReloadProne",
 				0.1,
-				"AmovPpneMstpSrasWpstDnon_AmovPercMstpSrasWpstDnon",
-				0.02,
-				"AmovPpneMstpSrasWpstDnon_AmovPknlMstpSrasWpstDnon",
-				0.02,
 				"AmovPpneMstpSrasWpstDnon_AmovPpneMstpSrasWrflDnon",
 				0.02,
 				"AmovPpneMstpSrasWpstDnon_AwopPpneMstpSoptWbinDnon",
@@ -14491,8 +14484,6 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AmovPpneMstpSrasWpstDnon_AmovPpneMevaSlowWpstDr",
 				0.02,
 				"AwopPpneMstpSgthWpstDnon_Part1",
-				0.1,
-				"AidlPpneMstpSrasWpstDnon_AI",
 				0.1,
 				"AmovPpneMstpSrasWpstDnon_healed",
 				0.02,
@@ -14530,7 +14521,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AmovPpneMstpSrasWpstDnon_AmovPercMsprSlowWpstDf",
 				0.0099999998,
 				"Unconscious",
-				0.0099999998,
+				0.02,
 				"AmovPpneMstpSrasWpstDnon_relax",
 				0.1,
 				"AmovPpneMstpSrasWpstDnon_AadjPpneMstpSrasWpstDup",
@@ -14562,6 +14553,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"Campaign_Base",
 				0.5
 			};
+			idle="idleDefault";
 		};
 	};
 };
