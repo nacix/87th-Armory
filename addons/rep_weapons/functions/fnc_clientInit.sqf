@@ -2,11 +2,10 @@
 /*
  * Author: Anorexican
  *
- * Overrides BI's native grenade physics to reduce jank and overbounce.
- * Args are taken directly from the "Fired" weapon EventHandler.
+ * Initializes clientside variables and calls handlers for weapon scripts at postInit.
  *
  * Arguments:
- * Called by BI's "Fired" weapon EventHandler.
+ * NONE
  *
  * Return Value:
  * NONE
@@ -20,5 +19,11 @@
 if (isServer && !hasInterface) exitWith {}; // Only run on clients
 
 LOG_1("clientInit: [%1]", player);
-call FUNC(handleMuzzleSwitch);
-call FUNC(handleOneHanding);
+
+[] call FUNC(handleMuzzleSwitch);
+
+/*
+if (GETVAR(_unit,GVAR(enabled),true)) then {
+	player call FUNC(handleOneHanding);
+};
+*/
