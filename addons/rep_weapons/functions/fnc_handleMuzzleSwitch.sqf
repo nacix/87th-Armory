@@ -24,8 +24,8 @@ private _muzzleChangeHandler = ["muzzle", {
 	params ["_unit", "_weapon", "_muzzle"];
 
 	switch _weapon do {
-		case "87th_DP23": { _unit removePrimaryWeaponItem "3as_optic_holo_dc15s" };
-		case "Blaster": { _unit addPrimaryWeaponItem "3as_optic_holo_dc15s" };
+		case "87th_DP23": { _unit removePrimaryWeaponItem "87th_Optic_Holo" };
+		case "Blaster": { _unit addPrimaryWeaponItem "87th_Optic_Holo" };
 	};
 }] call CBA_fnc_addPlayerEventHandler;
 
