@@ -52,13 +52,17 @@ class CfgPatches
 			"87th_3AS_WestarM5_F",
 			"87th_JLTS_DC15X",
 			"87th_k_773_rifle",
+			"87th_Optic_Holo",
 			"87th_Optic_VK38X",
 			"87th_ATRT_Weapon",
 			"87th_DC15A",
+			"87th_DC15A_GL",
 			"87th_DC15C",
+			"87th_DC15C_GL",
 			"87th_DC15L",
 			"87th_DC15S",
 			"87th_DC17SA",
+			"87th_DC17SA_Shield",
 			"87th_DC15X",
 			"87th_DP23",
 			"87th_DW32S",
@@ -67,7 +71,8 @@ class CfgPatches
 			"87th_Optic_FP",
 			"87th_RPS6X",
 			"87th_Valken38X",
-			"87th_WestarM5"
+			"87th_WestarM5",
+			"87th_WestarM5_GL"
 		};
 		magazines[]=
 		{

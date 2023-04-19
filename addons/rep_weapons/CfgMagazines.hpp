@@ -3,9 +3,34 @@ class JLTS_stun_mag_long;
 class CfgMagazines 
 {
 	class SmokeShell;
-	class 3AS_45Rnd_EC50_Mag;
+	class 3AS_100Rnd_EC40_Mag;
 	class 3AS_300Rnd_EC60_Mag;
+	class 3AS_45Rnd_EC50_Mag;
+	class 3AS_60Rnd_EC30_Mag;
 
+	class 87th_20Rnd_EC30_Mag: 3AS_60Rnd_EC30_Mag
+	{
+		author = "Anorexican";
+		count = 20;
+		mass = 3;
+		displayName = "[87th] 20rd EC30 Magazine";
+		descriptionShort = "20rd EC30 Cartridge<br />Used in: DC-17SA";
+	};
+	class 87th_45Rnd_EC40_Mag: 3AS_100Rnd_EC40_Mag
+	{
+		author = "Anorexican";
+		count = 60;
+		mass = 8;
+		displayName = "[87th] 45rd EC40 Magazine";
+		descriptionShort = "45rd EC40 Cartridge<br />Used in: DC-15A";
+	};
+	class 87th_60Rnd_EC40_Mag: 87th_45Rnd_EC40_Mag
+	{
+		count = 60;
+		mass = 8.5;
+		displayName = "[87th] 60rd EC40 Magazine";
+		descriptionShort = "60rd EC40 Cartridge<br />Used in: Westar-M5";
+	};
 	class 87th_30Rnd_EC50_Mag: 3AS_45Rnd_EC50_Mag
 	{
 		author = "Anorexican";
@@ -13,17 +38,18 @@ class CfgMagazines
 		displayName = "[87th] 30rd EC50 Magazine";
 		descriptionShort = "30rd EC50 Cartridge<br />Used in: DP-23";
 	};
-	class 87th_35Rnd_EC50_Mag: 3AS_45Rnd_EC50_Mag
+	class 87th_40Rnd_EC50_Mag: 3AS_45Rnd_EC50_Mag
 	{
 		author = "Anorexican";
-		count = 35;
-		displayName = "[87th] 35rd EC50 Magazine";
-		descriptionShort = "35rd EC50 Cartridge<br />Used in: DC-15C";
+		count = 40;
+		displayName = "[87th] 40rd EC50 Magazine";
+		descriptionShort = "40rd EC50 Cartridge<br />Used in: DC-15C";
 	};
 	class 87th_20Rnd_EC60_Mag: 3AS_300Rnd_EC60_Mag
 	{
 		author = "Anorexican";
 		count = 20;
+		mass = 8;
 		displayName = "[87th] 20rd EC60 Magazine";
 		descriptionShort = "20rd EC60 Cartridge<br />Used in: DW-32S";
 	};

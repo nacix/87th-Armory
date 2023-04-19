@@ -36,6 +36,7 @@ class CfgWeapons
 	class 3AS_DC15C_GL;
 	class 3AS_DC15L_F;
 	class 3AS_DC15C_F;
+	class 3AS_optic_holo_DC15S;
 	class 3AS_Optic_VK38X;
 	class 3AS_Valken38X_F;
 	class 3AS_WestarM5_F;
@@ -175,6 +176,13 @@ class CfgWeapons
 		author = "Anorexican";
 		displayName = "[87th] DC-Series Flashlight";
 	};
+
+	class 87th_Optic_Holo: 3AS_optic_holo_DC15S
+	{
+		author = "Anorexican";
+		displayName = "[87th] Holosight";
+		scope = 1;
+	};
 	
 	class Throw: GrenadeLauncher
 	{
@@ -307,7 +315,14 @@ class CfgWeapons
 		author = "Anorexican";
 		baseWeapon = "87th_DC17SA";
 		hiddenSelectionsTextures[] = {QPATHTOF(data\dc17sa\87th_DC17SA_co.paa)};
-		magazines[] = { "3AS_16Rnd_EC20_Mag" };
+		magazines[] = { "87th_20Rnd_EC30_Mag" };
+		reloadMagazineSound[]=
+		{
+			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
+			1,
+			1,
+			30
+		};
 
 		JLTS_hasElectronics = 0;
 		JLTS_hasEMPProtection = 1;
@@ -472,6 +487,13 @@ class CfgWeapons
 				};
 			};
 		};
+		opticsZoomMin=0.2;
+		opticsZoomMax=1.25;
+		opticsZoomInit=0.5;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass=45;
+		};
 	};
 
 	class 87th_DC15C: 3AS_DC15C_F
@@ -480,11 +502,19 @@ class CfgWeapons
 		displayName = "[87th] DC-15C Battle Rifle";
 		magazines[]=
 		{
-			"87th_35Rnd_EC50_Mag"
+			"87th_40Rnd_EC50_Mag"
 		};
-		class FullAuto: Mode_FullAuto
+		modes[]=
 		{
-			reloadTime=0.18;
+			"Burst",
+			"Single"
+		};
+		recoil = "recoil_trg21";
+		recoilProne = "assaultRifleBase";
+		class Burst: Mode_Burst
+		{
+			burst=2;
+			reloadTime=0.135;
 			dispersion=0.001;
 			minRange=0;
 			minRangeProbab=0.89999998;
@@ -550,47 +580,91 @@ class CfgWeapons
 				};
 			};
 		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass=60;
+		};
+	};
+	class 87th_DC15C_GL: 87th_DC15C
+	{
+		displayName = "[87th] DC-15C Battle Rifle (UGL)";
+		model="3AS\3AS_Weapons\DC15C\3AS_DC15C_GL.p3d";
+		weaponInfoType="RscWeaponZeroing";
+		modelOptics="3AS\3AS_Weapons\Data\A3_2d_optic.p3d";
+		muzzles[]=
+		{
+			"this",
+			"3AS_15CGL"
+		};
+		handAnim[]=
+		{
+			"OFP2_ManSkeleton",
+			"\A3\Weapons_F_Exp\Machineguns\LMG_03\Data\Anim\LIM.rtm"
+		};
+		class OpticsModes
+		{
+			class Ironsights
+			{
+				opticsID=1;
+				useModelOptics=0;
+				opticsFlare="true";
+				opticsPPEffects[]=
+				{
+					"OpticsCHAbera5",
+					"OpticsBlur5"
+				};
+				opticsDisablePeripherialVision=0.67000002;
+				opticsZoomMin=0.375;
+				opticsZoomMax=1.1;
+				opticsZoomInit=0.75;
+				memoryPointCamera="eye";
+				visionMode[]={};
+				distanceZoomMin=100;
+				distanceZoomMax=100;
+			};
+			class Scope: Ironsights
+			{
+				opticsID=2;
+				useModelOptics=1;
+				opticsPPEffects[]=
+				{
+					"OpticsCHAbera5",
+					"OpticsBlur5"
+				};
+				opticsDisablePeripherialVision=0.67000002;
+				opticsZoomMin=0.122173;
+				opticsZoomMax=0.122173;
+				opticsZoomInit=0.122173;
+				memoryPointCamera="opticView";
+				visionMode[]=
+				{
+					"Normal",
+					"NVG",
+					"TI"
+				};
+				opticsFlare="true";
+				distanceZoomMin=100;
+				distanceZoomMax=100;
+				cameraDir="";
+			};
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass=75;
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[]=
+				{
+					"3AS_optic_reflex_DC15C"
+				};
+			};
+		};
 	};
 
 	class 87th_DC15A: 3AS_DC15A_F
 	{
 		author = "Anorexican";
 		displayName = "[87th] DC-15A Assault Rifle";
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			class MuzzleSlot: MuzzleSlot
-			{
-				linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
-				compatibleItems[]=
-				{
-					"3AS_Muzzle_LE_DC15A"
-				};
-				iconPosition[]={0,0.44999999};
-				iconScale=0.2;
-			};
-			class CowsSlot: CowsSlot
-			{
-				linkProxy="\A3\data_f\proxies\weapon_slots\TOP";
-				compatibleItems[]=
-				{
-					"3AS_Optic_Red_DC15A"
-				};
-			};
-			class PointerSlot: PointerSlot
-			{
-				linkProxy="\A3\data_f\proxies\weapon_slots\SIDE";
-				compatibleItems[]=
-				{
-					"acc_flashlight",
-					"acc_pointer_IR"
-				};
-			};
-			class UnderBarrelSlot: UnderBarrelSlot
-			{
-				linkProxy="\A3\data_f_mark\proxies\weapon_slots\UNDERBARREL";
-				compatibleItems[]={};
-			};
-		};
 		modes[]=
 		{
 			"Single",
@@ -664,15 +738,95 @@ class CfgWeapons
 				};
 			};
 		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass=95;
+			class MuzzleSlot: MuzzleSlot
+			{
+				linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
+				compatibleItems[]=
+				{
+					"3AS_Muzzle_LE_DC15A"
+				};
+				iconPosition[]={0,0.44999999};
+				iconScale=0.2;
+			};
+			class CowsSlot: CowsSlot
+			{
+				linkProxy="\A3\data_f\proxies\weapon_slots\TOP";
+				compatibleItems[]=
+				{
+					"3AS_Optic_Red_DC15A"
+				};
+			};
+			class PointerSlot: PointerSlot
+			{
+				linkProxy="\A3\data_f\proxies\weapon_slots\SIDE";
+				compatibleItems[]=
+				{
+					"acc_flashlight",
+					"acc_pointer_IR"
+				};
+			};
+			class UnderBarrelSlot: UnderBarrelSlot
+			{
+				linkProxy="\A3\data_f_mark\proxies\weapon_slots\UNDERBARREL";
+				compatibleItems[]={};
+			};
+		};
+	};
+	class 87th_DC15A_GL: 87th_DC15A
+	{
+		displayName = "[87th] DC-15A Assault Rifle (UGL)";
+		model="3AS\3AS_Weapons\DC15A\3AS_DC15A_GL.p3d";
+		weaponInfoType="RscWeaponZeroing";
+		modelOptics="3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
+		muzzles[]=
+		{
+			"this",
+			"3AS_GL_F"
+		};
+		class OpticsModes
+		{
+			class Ironsights
+			{
+				opticsID=1;
+				useModelOptics=0;
+				opticsFlare="true";
+				opticsPPEffects[]=
+				{
+					"OpticsCHAbera5",
+					"OpticsBlur5"
+				};
+				opticsDisablePeripherialVision=0.67000002;
+				opticsZoomMin=0.25;
+				opticsZoomMax=1.1;
+				opticsZoomInit=0.75;
+				memoryPointCamera="eye";
+				visionMode[]={};
+				distanceZoomMin=100;
+				distanceZoomMax=100;
+			};
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass=110;
+		};
 	};
 
 	class 87th_DC15L: 3AS_DC15L_F
 	{
 		author = "Anorexican";
 		displayName = "[87th] DC-15L Repeating Blaster";
+		modes[]=
+		{
+			"FullAuto",
+			"FullAutoSlow"
+		};
 		class FullAuto: Mode_FullAuto
 		{
 			reloadTime=0.1325;
+			textureType = "fastAuto";
 			dispersion=0.00106;
 			minRange=0;
 			minRangeProbab=0.89999998;
@@ -704,8 +858,14 @@ class CfgWeapons
 				};
 			};
 		};
+		class FullAutoSlow: FullAuto
+		{
+			reloadTime=0.18;
+			textureType = "fullAuto";
+		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
+			mass=120;
 			class CowsSlot: CowsSlot
 			{
 				linkProxy="\A3\data_f\proxies\weapon_slots\TOP";
@@ -735,7 +895,9 @@ class CfgWeapons
 	{
 		author = "Anorexican";
 		displayName = "[87th] Westar M-5 Assault Rifle";
-		recoil="recoil_trg21";
+		magazines[] = {"87th_60Rnd_EC40_Mag"};
+		recoil = "recoil_trg21";
+		recoilProne = "assaultRifleBase";
 		class FullAuto: Mode_FullAuto
 		{
 			reloadTime=0.145;
@@ -749,6 +911,10 @@ class CfgWeapons
 			aiRateOfFire=1e-006;
 			recoil="recoil_auto_trg";
 			recoilProne="recoil_auto_prone_trg";
+			sounds[]=
+			{
+				"StandardSound"
+			};
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType
 			{
@@ -779,8 +945,6 @@ class CfgWeapons
 				"StandardSound"
 			};
 			reloadTime=0.085;
-			recoil="recoil_single_trg";
-			recoilProne="recoil_single_prone_trg";
 			dispersion=0.001;
 			minRange=0;
 			minRangeProbab=0.89999998;
@@ -815,8 +979,6 @@ class CfgWeapons
 				"StandardSound"
 			};
 			reloadTime=0.12;
-			recoil="recoil_single_trg";
-			recoilProne="recoil_single_prone_trg";
 			dispersion=0.001;
 			minRange=2;
 			minRangeProbab=0.5;
@@ -844,6 +1006,80 @@ class CfgWeapons
 				};
 			};
 		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass=75;
+		};
+	};
+	class 87th_WestarM5_GL: 87th_WestarM5
+	{
+		displayName="[87th] Westar M-5 Assault Rifle (UGL)";
+		model="3AS\3AS_Weapons\WestarM5\3AS_Westar_M5_GL.p3d";
+		weaponInfoType="RscWeaponZeroing";
+		modelOptics="3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
+		muzzles[]=
+		{
+			"this",
+			"3AS_WestarM5_GL_F"
+		};
+		class OpticsModes
+		{
+			class Ironsights
+			{
+				opticsID=1;
+				useModelOptics=0;
+				opticsFlare="true";
+				opticsPPEffects[]=
+				{
+					"OpticsCHAbera5",
+					"OpticsBlur5"
+				};
+				opticsDisablePeripherialVision=0.67000002;
+				opticsZoomMin=0.375;
+				opticsZoomMax=1.1;
+				opticsZoomInit=0.75;
+				memoryPointCamera="eye";
+				visionMode[]={};
+				distanceZoomMin=100;
+				distanceZoomMax=100;
+			};
+			class Scope: Ironsights
+			{
+				opticsID=2;
+				useModelOptics=1;
+				opticsPPEffects[]=
+				{
+					"OpticsCHAbera5",
+					"OpticsBlur5"
+				};
+				opticsDisablePeripherialVision=0.67000002;
+				opticsZoomMin=0.122173;
+				opticsZoomMax=0.122173;
+				opticsZoomInit=0.122173;
+				memoryPointCamera="opticView";
+				visionMode[]=
+				{
+					"Normal",
+					"NVG",
+					"TI"
+				};
+				opticsFlare="true";
+				distanceZoomMin=100;
+				distanceZoomMax=100;
+				cameraDir="";
+			};
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[]=
+				{
+					""
+				};
+			};
+			mass=80;
+		};
 	};
 
 	class 87th_DP23: JLTS_DP23
@@ -854,6 +1090,13 @@ class CfgWeapons
 		{
 			"this",
 			"Blaster"
+		};
+		reloadMagazineSound[]=
+		{
+			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
+			1,
+			1,
+			30
 		};
 		class Single: Mode_SemiAuto
 		{
@@ -968,10 +1211,11 @@ class CfgWeapons
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
+			mass = 55;
 			class CowsSlot: CowsSlot
 			{
 				linkProxy="\A3\data_f\proxies\weapon_slots\TOP";
-				compatibleItems[] = { "3AS_optic_holo_DC15S" };
+				compatibleItems[] = { "87th_Optic_Holo" };
 			};
 			class PointerSlot
 			{
@@ -1058,7 +1302,7 @@ class CfgWeapons
 		class Single: Mode_SemiAuto
 		{
 			reloadTime=0.6;
-			dispersion=0.0006;
+			dispersion=0.00045;
 			minRange=2;
 			minRangeProbab=0.30000001;
 			midRange=150;
@@ -1091,6 +1335,7 @@ class CfgWeapons
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
+			mass = 65;
 			class CowsSlot: CowsSlot
 			{
 				linkProxy="\A3\data_f\proxies\weapon_slots\TOP";
@@ -1124,6 +1369,13 @@ class CfgWeapons
 		author = "Anorexican";
 		displayName = "[87th] 773 ""Firepuncher"" Precision Rifle";
 		magazines[] = { "3AS_10Rnd_EC80_Mag" };
+		reloadMagazineSound[]=
+		{
+			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
+			1,
+			1,
+			30
+		};
 		muzzles[]=
 		{
 			"this",
@@ -1234,6 +1486,7 @@ class CfgWeapons
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo 
 		{
+			mass = 65;
 			class CowsSlot: CowsSlot
 			{
 				compatibleItems[]=
@@ -1361,6 +1614,13 @@ class CfgWeapons
 		recoil="recoil_mx";
 		recoilProne="assaultRifleBase";
 		magazines[] = { "87th_20Rnd_EC60_Mag" };
+		reloadMagazineSound[]=
+		{
+			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
+			1,
+			1,
+			30
+		};
 		class Single: Mode_SemiAuto
 		{
 			sounds[]=
@@ -1401,6 +1661,10 @@ class CfgWeapons
 		};
 		weaponInfoType="RscWeaponZeroing";
 		modelOptics="\A3\Weapons_f\acc\reticle_nvs_F";
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 65;
+		};
 	};
 
 	class 87th_DC15X: LFP_DC15X
@@ -1409,6 +1673,13 @@ class CfgWeapons
 		displayName = "[87th] DC-15X Benchrest Rifle";
 		recoil="3AS_recoil_DC15C";
 		magazines[] = { "3AS_10Rnd_EC80_Mag" };
+		reloadMagazineSound[]=
+		{
+			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
+			1,
+			1,
+			30
+		};
 		class Single: Mode_SemiAuto
 		{
 			sounds[]=
@@ -1485,6 +1756,7 @@ class CfgWeapons
 		};
 		class WeaponSlotsInfo
 		{
+			mass = 125;
 			class PointerSlot: PointerSlot
 			{
 				displayName="Pointer Slot";
