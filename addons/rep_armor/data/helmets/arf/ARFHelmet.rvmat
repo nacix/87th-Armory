@@ -4,8 +4,8 @@ ambient[] = {0.5,0.5,0.5,1};
 diffuse[] = {0.7,0.7,0.7,1};
 forcedDiffuse[] = {0,0,0,0};
 emmisive[] = {0,0,0,1};
-specular[] = {0.7,0.7,0.7,0.1};
-specularPower = 25;
+specular[] = {0.275,0.275,0.275,0.1};
+specularPower = 55;
 PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
@@ -34,7 +34,7 @@ class Stage2
 };
 class Stage3
 {
-	texture = "x\ax87\addons\rep_armor\data\helmets\arf\87th_ARF_Helmet_mc.paa";
+	texture = "#(argb,8,8,3)color(0,0,0,0)";
 	uvSource = "tex";
 	class uvTransform
 	{
