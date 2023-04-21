@@ -58,7 +58,7 @@ class Stage4
 };
 class Stage5
 {
-	texture = "x\ax87\addons\rep_armor\data\helmets\arf\87th_ARF_Helmet_smdi.paa";
+	texture = "x\ax87\addons\rep_armor\data\helmets\arf\tasty\87th_ARF_Helmet_Tasty_smdi.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
