@@ -33,6 +33,13 @@ class CfgVehicles {
 		hiddenSelectionsTextures[] = { QPATHTOF(data\other\87th_Belt_Bag_Medic_co.paa) };
 	};
 
+	class 87th_EOD_Backpack: 87th_Backpack 
+	{
+		displayName = "[87th] EOD Backpack";
+		maximumLoad = 425;
+        hiddenSelectionsTextures[] = { QPATHTOF(data\other\87th_EOD_Backpack_co.paa) };
+	};
+
 	class 87th_RTO_Backpack: 87th_Backpack
 	{
 		displayName = "[87th] RTO Backpack";
