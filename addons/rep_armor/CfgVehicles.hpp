@@ -2,6 +2,7 @@ class CfgVehicles {
 	class B_Soldier_F;
 	class B_Kitbag_rgr;
 	class 3AS_Katarn_Backpack_Base;
+	class JLTS_Clone_belt_bag;
 	class JLTS_Clone_backpack;
 
 	class 87th_Backpack: JLTS_Clone_backpack 
@@ -17,6 +18,21 @@ class CfgVehicles {
 		maximumLoad = 400;
         hiddenSelectionsTextures[] = { QPATHTOF(data\other\87th_Medic_Backpack_co.paa) };
 	};
+
+	class 87th_Belt_Bag: JLTS_Clone_belt_bag
+	{
+		author = "Anorexican";
+		displayName = "[87th] Belt Bag";
+		maximumLoad = 250;
+	};
+	class 87th_Belt_Bag_Medic: 87th_Belt_Bag
+	{
+		author = "Anorexican";
+		displayName = "[87th] Belt Bag (Medic)";
+		maximumLoad = 450;
+		hiddenSelectionsTextures[] = { QPATHTOF(data\other\87th_Belt_Bag_Medic_co.paa) };
+	};
+
 	class 87th_RTO_Backpack: 87th_Backpack
 	{
 		displayName = "[87th] RTO Backpack";
