@@ -152,4 +152,65 @@ class CfgVehicles {
 			"\3AS\3AS_Characters\Commando\data\Katarn_Undersuit_CO.paa"
 		};
 	};
+
+	class 87th_ARF_Base: 87th_Clone_Base
+	{
+		displayName = "ARFBase";
+		uniformClass = "87th_ARF_Uniform";
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\uniforms\arf\87th_ARF_Chest_co.paa),
+			QPATHTOF(data\uniforms\arf\87th_ARF_Legs_co.paa)
+		};
+	};
+	class 87th_ARF_Base_Desert: 87th_Clone_Base
+	{
+		displayName = "ARFBaseDesert";
+		uniformClass = "87th_ARF_Uniform_Desert";
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\uniforms\arf\87th_ARF_Chest_Desert_co.paa),
+			QPATHTOF(data\uniforms\arf\87th_ARF_Legs_Desert_co.paa)
+		};
+	};
+	class 87th_ARF_Base_Sarid: 87th_Clone_Base
+	{
+		displayName = "ARFBaseSarid";
+		uniformClass = "87th_ARF_Uniform_Sarid";
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\uniforms\arf\87th_ARF_Chest_Sarid_co.paa),
+			QPATHTOF(data\uniforms\arf\87th_ARF_Legs_Sarid_co.paa)
+		};
+	};
+	class 87th_ARF_Base_Woodland: 87th_Clone_Base
+	{
+		displayName = "ARFBaseWoodland";
+		uniformClass = "87th_ARF_Uniform_Woodland";
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\uniforms\arf\87th_ARF_Chest_Woodland_co.paa),
+			QPATHTOF(data\uniforms\arf\87th_ARF_Legs_Woodland_co.paa)
+		};
+	};
+	class 87th_ARF_Base_Winter: 87th_Clone_Base
+	{
+		displayName = "ARFBaseWinter";
+		uniformClass = "87th_ARF_Uniform_Winter";
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\uniforms\arf\87th_ARF_Chest_Winter_co.paa),
+			QPATHTOF(data\uniforms\arf\87th_ARF_Legs_Winter_co.paa)
+		};
+	};
+	class 87th_ARF_Base_Urban: 87th_Clone_Base
+	{
+		displayName = "ARFBaseUrban";
+		uniformClass = "87th_ARF_Uniform_Urban";
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\uniforms\arf\87th_ARF_Chest_Urban_co.paa),
+			QPATHTOF(data\uniforms\arf\87th_ARF_Legs_Urban_co.paa)
+		};
+	};
 };
