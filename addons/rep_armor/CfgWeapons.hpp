@@ -15,6 +15,7 @@ class CfgWeapons {
 	class JLTS_CloneHelmetAB;
 	class JLTS_CloneHelmetBARC;
 	class JLTS_CloneHelmetP2;
+	class JLTS_CloneVestAirborne;
 	class JLTS_CloneVestCommander;
 	class JLTS_CloneVestKama;
 	class JLTS_CloneVestLieutenant;
@@ -444,6 +445,14 @@ class CfgWeapons {
 			hiddenSelections[] = {"camo1"};
 		};
 	};
+
+
+	class 87th_Medic_Vest: JLTS_CloneVestAirborne
+    {
+        author = "Stim";
+        displayname = "[87th] Medic Accessories";
+        hiddenSelectionsTextures[] = { "", QPATHTOF(data\vests\87th_Medic_Vest_co.paa) };
+    };
 
 	class 87th_Lieutenant_Accessories: JLTS_CloneVestLieutenant
 	{
