@@ -16,6 +16,9 @@ class CfgWeapons {
 	class JLTS_CloneHelmetBARC;
 	class JLTS_CloneHelmetP2;
 	class JLTS_CloneVestAirborne;
+	class JLTS_CloneVestRecon;
+	class JLTS_CloneVestReconNCO;
+	class JLTS_CloneVestReconOfficer;
 	class JLTS_CloneVestCommander;
 	class JLTS_CloneVestKama;
 	class JLTS_CloneVestLieutenant;
@@ -468,6 +471,29 @@ class CfgWeapons {
         hiddenSelectionsTextures[] = { "", QPATHTOF(data\vests\87th_Medic_Vest_co.paa) };
     };
 
+	class 87th_Recon_Accessories: JLTS_CloneVestRecon
+	{
+		author = "Stim & Anorexican";
+		displayname = "[87th] Recon Accessories";
+		hiddenSelectionsTextures[] = { QPATHTOF(data\vests\87th_Recon_Attachments_co.paa) };
+	};
+	class 87th_Recon_NCO_Accessories: JLTS_CloneVestReconNCO
+	{
+		author = "Stim & Anorexican";
+		displayname = "[87th] Recon NCO Accessories";
+		hiddenSelectionsTextures[] = { QPATHTOF(data\vests\87th_Recon_Attachments_co.paa) };
+	};
+	class 87th_Recon_Officer_Accessories: JLTS_CloneVestReconOfficer
+	{
+		author = "Stim & Anorexican";
+		displayname = "[87th] Recon Officer Accessories";
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\vests\87th_Recon_Officer_Attachments_co.paa),
+			QPATHTOF(data\vests\87th_Recon_Attachments_co.paa)
+		};
+	};
+
 	class 87th_Lieutenant_Accessories: JLTS_CloneVestLieutenant
 	{
 		author = "Stim";
@@ -492,6 +518,7 @@ class CfgWeapons {
 		displayname = "[87th] Kama";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\vests\87th_Officer_Attachments_co.paa) };
 	};
+
 	class 87th_Katarn_Vest_Demo: 3AS_Katarn_Vest_Demo_Base
 	{
 		author = "Stim";
