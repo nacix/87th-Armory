@@ -22,6 +22,7 @@ class CfgWeapons {
 	class JLTS_CloneVestOfficer;
 	class ls_gar_phase1Arf_helmet;
 	class ls_gar_phase2Arf_helmet;
+	class ls_sob_phase2SpecOp_helmet;
 
 	class 87th_Trooper_Helmet: JLTS_CloneHelmetP2
 	{
@@ -83,9 +84,22 @@ class CfgWeapons {
 			};
 		};
 	};
-	class 87th_ARF_Helmet: ls_gar_phase1Arf_helmet
+
+	class 87th_RTO_Helmet: ls_sob_phase2SpecOp_helmet
 	{
 		author = "Stim";
+		displayname = "[87th] RTO Helmet";
+		hiddenSelectionsTextures[] = 
+		{ 
+			QPATHTOF(data\helmets\rto\87th_RTO_Helmet_co.paa),
+			QPATHTOF(data\helmets\rto\RTO_Visor_co.paa)
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			QPATHTOF(data\helmets\rto\87th_RTO.rvmat),
+			QPATHTOF(data\helmets\rto\RTO_Visor.rvmat)
+		};
+	};
 
 	class 87th_ARF_Helmet: ls_gar_phase1Arf_helmet
 	{

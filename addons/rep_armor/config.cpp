@@ -75,6 +75,7 @@ class CfgPatches
 			"87th_P1_Pilot_Helmet",
 			"87th_Commander_Helmet",
 			"87th_Engineer_Helmet",
+			"87th_RTO_Helmet",
 			"87th_NVG",
 			"87th_Trooper_Uniform",
 			"87th_P1_Trooper_Uniform",
