@@ -31,12 +31,34 @@ class CfgVehicles
 	class 3as_LAAT_Mk1Lights;
 	class 3as_LAAT_Mk2;
 	class 3as_LAAT_Mk2Lights;
+	class ls_ground_barc;
 
 	LAAT_NEW(Mk.2, LAAT, 3as_LAAT_Mk2)
 	LAAT_NEW(Mk.2 (Lights), LAAT_Lights, 3as_LAAT_Mk2Lights)
 
 	LAAT_NEW(Mk.1, LAAT_Mk1, 3as_LAAT_Mk1)
 	LAAT_NEW(Mk.1 (Lights), LAAT_Mk1_Lights, 3as_LAAT_Mk1Lights)
+
+	class 87th_BARC: ls_ground_barc
+	{
+		author = "Anorexican & Stim";
+		displayName = "[87th] BARC Speeder";
+		editorSubcategory = "87th_Vehicles";
+		faction = "87th_Legion";
+		crew = "87th_ARF_DC15S";
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\barc\87th_BARC_Body_co.paa),
+			QPATHTOF(data\barc\87th_BARC_Weapons_co.paa),
+			QPATHTOF(data\barc\87th_BARC_Screen_co.paa)
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			QPATHTOF(data\barc\87th_BARC_Body.rvmat),
+			QPATHTOF(data\barc\87th_BARC_Weapons.rvmat),
+			QPATHTOF(data\barc\87th_BARC_Screen.rvmat)
+		};
+	};
 
 	class 87th_ATRT: 3AS_ATRT
 	{

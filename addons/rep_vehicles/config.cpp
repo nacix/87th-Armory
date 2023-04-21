@@ -15,11 +15,12 @@ class CfgPatches
 			"A3_anims_F",
 			"A3_weapons_F",
 			"A3_characters_F",
-			"JLTS_core",
-			"JLTS_characters_CloneArmor",
 			"3AS_Main",
 			"3AS_LAAT",
-			"3AS_ATRT"
+			"3AS_ATRT",
+			"JLTS_core",
+			"JLTS_characters_CloneArmor",
+			"ls_vehicles_ground"
         };
         units[]=
 		{
@@ -31,7 +32,8 @@ class CfgPatches
 			CLASS(P1_LAAT_Lights),
 			CLASS(P1_LAAT_Mk1),
 			CLASS(P1_LAAT_Mk1_Lights),
-			"87th_ATRT"
+			"87th_ATRT",
+			"87th_BARC"
 		};
 		weapons[]=
 		{
