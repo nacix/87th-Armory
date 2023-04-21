@@ -32,6 +32,11 @@ class CfgWeapons {
 		displayname = "[87th] ARC Helmet";
 		hiddenSelectionsTextures[] = {QPATHTOF(data\helmets\ct\87th_ARC_Helmet_co.paa)};
 	};
+	class 87th_Stryder_Helmet: 87th_Trooper_Helmet
+	{
+		displayname = "[87th] Stryder's Helmet";
+		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\ct\87th_Stryder_Helmet_co.paa) };
+	};
 	class 87th_Captain_Helmet: 87th_Trooper_Helmet
 	{
 		displayname = "[87th] Captain Helmet";
