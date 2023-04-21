@@ -42,6 +42,7 @@ class CfgPatches
 			"87th_Trooper_Helmet",
 			"87th_P1_Trooper_Helmet",
 			"87th_Captain_Helmet",
+			"87th_Stryder_Helmet",
 			"87th_ARC_Helmet",
 			"87th_Airborne_Helmet",
             "87th_ARF_Helmet",
