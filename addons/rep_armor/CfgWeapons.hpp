@@ -16,6 +16,7 @@ class CfgWeapons {
 	class JLTS_CloneHelmetBARC;
 	class JLTS_CloneHelmetP2;
 	class JLTS_CloneVestAirborne;
+	class JLTS_CloneVestARC;
 	class JLTS_CloneVestRecon;
 	class JLTS_CloneVestReconNCO;
 	class JLTS_CloneVestReconOfficer;
@@ -461,6 +462,13 @@ class CfgWeapons {
 			mass = 20;
 			hiddenSelections[] = {"camo1"};
 		};
+	};
+
+	class 87th_ARC_Vest: JLTS_CloneVestARC
+	{
+		author = "Stim";
+		displayname = "[87th] ARC Vest";
+		hiddenSelectionsTextures[] = { QPATHTOF(data\vests\87th_ARC_Vest_co.paa) };
 	};
 
 	class 87th_Medic_Vest: JLTS_CloneVestAirborne
