@@ -4,6 +4,7 @@ class CfgWeapons {
 	class Uniform_Base;
 	class UniformItem;
 	class 3as_ATRT_Helmet;
+	class 3as_Engineer_Helmet;
 	class 3as_P1_Base;
 	class 3as_P2_Pilot_helmet;
 	class 3as_P1_Pilot_helmet;
@@ -47,6 +48,39 @@ class CfgWeapons {
 		author = "Stim";
 		displayname = "[87th] Commander Helmet";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\ct\87th_Commander_Helmet_co.paa) };
+	};
+
+	class 87th_Engineer_Helmet: 3as_Engineer_Helmet
+	{
+		author="Stim";
+		displayName="[87th] Engineer Helmet";
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\helmets\engi\87th_Engineer_Helmet_ca.paa)
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			QPATHTOF(data\helmets\engi\87th_Engineer_Helmet.rvmat)
+		};
+		class ItemInfo: HeadgearItem
+		{
+			mass=30;
+			uniformModel="\3AS\3AS_Characters\Clones\Headgear\3AS_Clone_Engineer.p3d";
+			modelSides[]={3,1};
+			hiddenSelections[]=
+			{
+				"camo"
+			};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName="HitHead";
+					armor=6;
+					passThrough=0.5;
+				};
+			};
+		};
 	};
 	class 87th_ARF_Helmet: ls_gar_phase1Arf_helmet
 	{
