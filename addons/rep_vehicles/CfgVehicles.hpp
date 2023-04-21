@@ -12,9 +12,9 @@ class CfgVehicles
 			{ \
 				QPATHTOF(data\laat\##TAG##_LAAT_Hull_co.paa), \
 				QPATHTOF(data\laat\##TAG##_LAAT_Wings_co.paa), \
-				"3AS\3as_Laat\LAATI\data\Weapons_CO.paa", \
+				QPATHTOF(data\laat\##TAG##_LAAT_Weapons_co.paa), \
 				QPATHTOF(data\laat\##TAG##_LAAT_Weapon_Details_co.paa), \
-				"3AS\3as_Laat\LAATI\data\Interior_CO.paa" \
+				QPATHTOF(data\laat\##TAG##_LAAT_Interior_co.paa) \
 			}; \
 			crew = QUOTE(TAG##_Clone_Pilot); \
 			typicalCargo[] = {QUOTE(TAG##_Clone_Pilot)}; \
