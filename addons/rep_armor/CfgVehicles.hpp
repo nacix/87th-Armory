@@ -105,7 +105,7 @@ class CfgVehicles {
 			"camo2",
 			"insignia"
 		};
-		hiddenSelectionsTextures[] =
+		hiddenSelectionsTextures[]=
 		{
 			QPATHTOF(data\uniforms\ct\87th_Chest_co.paa),
 			QPATHTOF(data\uniforms\ct\87th_Legs_co.paa)
@@ -115,7 +115,7 @@ class CfgVehicles {
 	{
 		displayName = "CloneMedicBase";
 		uniformClass = "87th_Medic_Uniform";
-		hiddenSelectionsTextures[] =
+		hiddenSelectionsTextures[]=
 		{
 			QPATHTOF(data\uniforms\ct\87th_P1_Chest_co.paa),
 			QPATHTOF(data\uniforms\ct\87th_P1_Legs_co.paa)
@@ -141,12 +141,12 @@ class CfgVehicles {
 		faction = "87th_Legion";
 		uniformClass = "87th_Katarn_Armor";
 		model = "\3AS\3AS_Characters\Commando\3AS_Katarn_Armor.p3d";
-		hiddenSelections[] =
+		hiddenSelections[]=
 		{
 			"Camo",
 			"Camo1"
 		};
-		hiddenSelectionsTextures[] =
+		hiddenSelectionsTextures[]=
 		{
 			QPATHTOF(data\uniforms\87th_Katarn_Armor_co.paa),
 			"\3AS\3AS_Characters\Commando\data\Katarn_Undersuit_CO.paa"
