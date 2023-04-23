@@ -15,7 +15,7 @@ class CfgVehicles {
     class 87th_Medic_Backpack: 87th_Backpack 
 	{
 		displayName = "[87th] Medic Backpack";
-		maximumLoad = 400;
+		maximumLoad = 450;
         hiddenSelectionsTextures[] = { QPATHTOF(data\other\87th_Medic_Backpack_co.paa) };
 	};
 
