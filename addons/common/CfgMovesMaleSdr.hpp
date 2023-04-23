@@ -39,6 +39,17 @@ class CfgMovesMaleSdr: CfgMovesBasic
 	class AmovPknlMstpSlowWpstDnon_turnL;
 	class AmovPknlMstpSlowWpstDnon_turnR;
 
+	class StandBase;
+
+	class SprintBaseDf;
+	class SprintBaseDfl;
+	class SprintBaseDfr;
+	class SprintCivilBaseDf;
+	class SprintCivilBaseDfl;
+	class SprintCivilBaseDfr;
+
+	class AidlPpneMstpSrasWpstDnon_G0S;
+
 	class BlendAnims
 	{
 		AX87_combat_arms[]=
@@ -146,88 +157,6 @@ class CfgMovesMaleSdr: CfgMovesBasic
 
 	class States
 	{
-		class SprintBaseDf: StandBase
-		{
-			stamina=-1;
-			canPullTrigger=0;
-			aimPrecision=7;
-			turnSpeed=2;
-			actions="RifleStandEvasiveActionsF";
-			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\spr\non\non\AmovPercMsprSnonWnonDf";
-			speed=1.666;
-			soundOverride="sprint";
-			duty=0.5;
-			showWeaponAim=0;
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Perc_Mrun_Slow_Wrfl.p3d";
-			leaningFactorBeg=0;
-			leaningFactorEnd=0;
-			limitGunMovement=0.2;
-			static=1;
-			relSpeedMin=0.69999999;
-			relSpeedMax=1.1;
-			visibleSize=1.00012;
-			aiming="aimingCivil";
-			aimingBody="aimingUpCivil";
-			headBobStrength=0.231343;
-			interpolationSpeed=2.5;
-			rightHandIKCurve[]={1};
-			leftHandIKCurve[]={1};
-			ConnectTo[]=
-			{
-				"AmovPercMsprSlowWrflDf_AmovPpneMstpSrasWrflDnon",
-				0.02
-			};
-			InterpolateTo[]=
-			{
-				"AmovPercMsprSlowWrflDf_AmovPpneMstpSrasWrflDnon",
-				0.02,
-				"Unconscious",
-				0.1
-			};
-			disableWeaponsLong=1;
-		};
-		class SprintBaseDfl: SprintBaseDf
-		{
-			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\spr\non\non\AmovPercMsprSnonWnonDfl";
-			speed=1.4152499;
-			ConnectTo[]={};
-			InterpolateTo[]=
-			{
-				"Unconscious",
-				0.1
-			};
-		};
-		class SprintBaseDfr: SprintBaseDf
-		{
-			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\spr\non\non\AmovPercMsprSnonWnonDfr";
-			speed=1.4152499;
-			ConnectTo[]={};
-			InterpolateTo[]=
-			{
-				"Unconscious",
-				0.1
-			};
-		};
-		class SprintCivilBaseDf: SprintBaseDf
-		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\Erc\spr\non\non\AmovPercMsprSnonWnonDf";
-			speed=1.37143;
-			ConnectTo[]={};
-			InterpolateTo[]=
-			{
-				"Unconscious",
-				0.1
-			};
-		};
-		class SprintCivilBaseDfl: SprintCivilBaseDf
-		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\Erc\spr\non\non\AmovPercMsprSnonWnonDfl";
-		};
-		class SprintCivilBaseDfr: SprintCivilBaseDf
-		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\Erc\spr\non\non\AmovPercMsprSnonWnonDfr";
-		};
-		
 		class AmovPercMstpSrasWpstDnon: StandBase
 		{
 			variantsPlayer[]=
@@ -2359,7 +2288,6 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			soundEnabled=1;
 			soundEdge[]={0.0099999998};
 		};
-		/*
 		class AmovPknlMstpSlowWpstDnon: AmovPknlMstpSrasWpstDnon
 		{
 			duty=-0.80000001;
@@ -2445,7 +2373,6 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			};
 			camShakeFire=1;
 		};
-		*/
 		class AidlPknlMstpSlowWpstDnon_G0S: AmovPknlMstpSlowWpstDnon
 		{
 			variantsPlayer[]={};
@@ -2509,7 +2436,6 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		{
 			file="\A3\anims_f\Data\Anim\Sdr\idl\knl\stp\low\pst\AidlPknlMstpSlowWpstDnon_G03";
 		};
-		/*
 		class AmovPknlMstpSlowWpstDnon_turnL: AidlPknlMstpSlowWpstDnon_G0S
 		{
 			duty=-0.60000002;
@@ -2540,7 +2466,6 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				0.02
 			};
 		};
-		*/
 		class AmovPknlMwlkSlowWpstDf: AidlPknlMstpSlowWpstDnon_G0S
 		{
 			aimPrecision=2;
@@ -5648,172 +5573,6 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				0.02
 			};
 		};
-		class AmovPincMstpSrasWpstDnon_turnL: AmovPincMstpSrasWpstDnon
-		{
-			file="\A3\anims_f\Data\Anim\Sdr\mov\pne\stp\ras\pst\AmovPpneMstpSrasWpstDnon_AIturn90L";
-			speed=0.5;
-			ConnectTo[]=
-			{
-				"AmovPincMstpSrasWpstDnon",
-				0.02
-			};
-			InterpolateTo[]=
-			{
-				"AmovPincMstpSrasWpstDnon",
-				0.02,
-				"Unconscious",
-				0.1
-			};
-		};
-		class AmovPincMstpSrasWpstDnon_turnR: AmovPincMstpSrasWpstDnon
-		{
-			file="\A3\anims_f\Data\Anim\Sdr\mov\pne\stp\ras\pst\AmovPpneMstpSrasWpstDnon_AIturn90R";
-			speed=0.5;
-			ConnectTo[]=
-			{
-				"AmovPincMstpSrasWpstDnon",
-				0.02
-			};
-			InterpolateTo[]=
-			{
-				"AmovPincMstpSrasWpstDnon",
-				0.02,
-				"Unconscious",
-				0.1
-			};
-		};
-		class AmovPincMrunSlowWpstDf: AmovPincMstpSrasWpstDnon
-		{
-			visibleSize=0.150123;
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\pne\run\low\pst\AmovPpneMrunSlowWpstDf";
-			speed=1;
-			static=1;
-			relSpeedMin=0.5;
-			relSpeedMax=1.1;
-			ConnectTo[]={};
-			InterpolateTo[]=
-			{
-				"AmovPincMstpSrasWpstDnon",
-				0.02,
-				"AmovPincMrunSlowWpstDl",
-				0.025,
-				"AmovPincMrunSlowWpstDfr",
-				0.025,
-				"Unconscious",
-				0.1
-			};
-		};
-		class AmovPincMrunSlowWpstDfl: AmovPincMrunSlowWpstDf
-		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\pne\run\low\pst\AmovPpneMrunSlowWpstDfl";
-			speed=0.93000001;
-			InterpolateTo[]=
-			{
-				"AmovPincMstpSrasWpstDnon",
-				0.02,
-				"AmovPincMrunSlowWpstDl",
-				0.025,
-				"AmovPincMrunSlowWpstDb",
-				0.025,
-				"Unconscious",
-				0.1
-			};
-		};
-		class AmovPincMrunSlowWpstDl: AmovPincMrunSlowWpstDf
-		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\pne\run\low\pst\AmovPpneMrunSlowWpstDl";
-			speed=1.4;
-			soundEnabled=1;
-			InterpolateTo[]=
-			{
-				"AmovPincMstpSrasWpstDnon",
-				0.02,
-				"AmovPincMrunSlowWpstDf",
-				0.025,
-				"AmovPincMrunSlowWpstDfl",
-				0.025,
-				"Unconscious",
-				0.1
-			};
-		};
-		class AmovPincMrunSlowWpstDbl: AmovPincMrunSlowWpstDf
-		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\pne\run\low\pst\AmovPpneMrunSlowWpstDbl";
-			InterpolateTo[]=
-			{
-				"AmovPincMstpSrasWpstDnon",
-				0.02,
-				"AmovPincMrunSlowWpstDb",
-				0.025,
-				"AmovPincMrunSlowWpstDbr",
-				0.025,
-				"Unconscious",
-				0.1
-			};
-		};
-		class AmovPincMrunSlowWpstDb: AmovPincMrunSlowWpstDf
-		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\pne\run\low\pst\AmovPpneMrunSlowWpstDb";
-			speed=0.73000002;
-			InterpolateTo[]=
-			{
-				"AmovPincMstpSrasWpstDnon",
-				0.02,
-				"AmovPincMrunSlowWpstDfl",
-				0.025,
-				"AmovPincMrunSlowWpstDbl",
-				0.025,
-				"Unconscious",
-				0.1
-			};
-		};
-		class AmovPincMrunSlowWpstDbr: AmovPincMrunSlowWpstDf
-		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\pne\run\low\pst\AmovPpneMrunSlowWpstDbr";
-			speed=1.05;
-			InterpolateTo[]=
-			{
-				"AmovPincMstpSrasWpstDnon",
-				0.02,
-				"AmovPincMrunSlowWpstDbl",
-				0.025,
-				"AmovPincMrunSlowWpstDr",
-				0.025,
-				"Unconscious",
-				0.1
-			};
-		};
-		class AmovPincMrunSlowWpstDr: AmovPincMrunSlowWpstDf
-		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\pne\run\low\pst\AmovPpneMrunSlowWpstDr";
-			speed=1.25;
-			InterpolateTo[]=
-			{
-				"AmovPincMstpSrasWpstDnon",
-				0.02,
-				"AmovPincMrunSlowWpstDbr",
-				0.025,
-				"AmovPincMrunSlowWpstDfr",
-				0.025,
-				"Unconscious",
-				0.1
-			};
-		};
-		class AmovPincMrunSlowWpstDfr: AmovPincMrunSlowWpstDf
-		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\pne\run\low\pst\AmovPpneMrunSlowWpstDfr";
-			InterpolateTo[]=
-			{
-				"AmovPincMstpSrasWpstDnon",
-				0.02,
-				"AmovPincMrunSlowWpstDf",
-				0.025,
-				"AmovPincMrunSlowWpstDr",
-				0.025,
-				"Unconscious",
-				0.1
-			};
-		};
 		class AmovPknlMstpSrasWpstDnon_AmovPknlMstpSlowWpstDnon: TransAnimBase
 		{
 			file="\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AmovPknlMstpSlowWpstDnon";
@@ -5859,7 +5618,6 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				0.02
 			};
 		};
-		/*
 		class AmovPknlMstpSrasWpstDnon_AmovPknlMstpSnonWnonDnon: TransAnimBase
 		{
 			file="\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AmovPknlMstpSnonWnonDnon";
@@ -5904,7 +5662,6 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				0.1
 			};
 		};
-		*/
 		class AmovPknlMstpSnonWnonDnon_AmovPknlMstpSrasWpstDnon: AmovPknlMstpSrasWpstDnon_AmovPknlMstpSnonWnonDnon
 		{
 			file="\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\non\non\AmovPknlMstpSnonWnonDnon_AmovPknlMstpSrasWpstDnon";
@@ -14442,118 +14199,6 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AfdsPknlMstpSlowWpstDnon",
 				0.02
 			};
-		};
-		class AmovPpneMstpSrasWpstDnon: AmovPercMstpSrasWpstDnon
-		{
-			variantsPlayer[]=
-			{
-				"AidlPpneMstpSrasWpstDnon_G01_player",
-				0.333,
-				"AidlPpneMstpSrasWpstDnon_G02_player",
-				0.333,
-				"AidlPpneMstpSrasWpstDnon_G03_player",
-				0.33399999
-			};
-			actions="PistolProneActions";
-			duty=-1;
-			file="a3\anims_f\data\anim\sdr\mov\pne\stp\ras\pst\amovppnemstpsraswpstdnon.rtm";
-			visibleSize=0.15000001;
-			onLandBeg=1;
-			onLandEnd=1;
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Ppne.p3d";
-			leaningFactorBeg=0;
-			leaningFactorEnd=0;
-			InterpolationSpeed=2.5;
-			soundOverride="crawl";
-			soundEdge[]={0.2,0.69999999};
-			aimprecision=1.25;
-			ConnectTo[]=
-			{
-				"AmovPpneMstpSrasWpstDnon",
-				0.02,
-				"PistolMagazineReloadProne",
-				0.1,
-				"AmovPpneMstpSrasWpstDnon_AmovPpneMstpSrasWrflDnon",
-				0.02,
-				"AmovPpneMstpSrasWpstDnon_AwopPpneMstpSoptWbinDnon",
-				0.02,
-				"AmovPpneMstpSrasWpstDnon_AmovPpneMstpSnonWnonDnon",
-				0.02,
-				"AmovPpneMstpSrasWpstDnon_AmovPpneMevaSlowWpstDl",
-				0.02,
-				"AmovPpneMstpSrasWpstDnon_AmovPpneMevaSlowWpstDr",
-				0.02,
-				"AwopPpneMstpSgthWpstDnon_Part1",
-				0.1,
-				"AmovPpneMstpSrasWpstDnon_healed",
-				0.02,
-				"AmovPpneMstpSnonWpstDnon_injured",
-				0.1
-			};
-			InterpolateTo[]=
-			{
-				"AmovPpneMstpSrasWpstDnon_turnL",
-				0.02,
-				"AmovPpneMstpSrasWpstDnon_turnR",
-				0.02,
-				"AidlPpneMstpSrasWpstDnon_AI",
-				0.1,
-				"AinvPpneMstpSlayWpstDnon_medicIn",
-				0.02,
-				"AinvPpneMstpSlayWpstDnon_medicOtherIn",
-				0.02,
-				"AmovPpneMrunSlowWpstDf",
-				0.02,
-				"AmovPpneMrunSlowWpstDfl",
-				0.02,
-				"AmovPpneMrunSlowWpstDl",
-				0.02,
-				"AmovPpneMrunSlowWpstDbl",
-				0.02,
-				"AmovPpneMrunSlowWpstDb",
-				0.02,
-				"AmovPpneMrunSlowWpstDbr",
-				0.02,
-				"AmovPpneMrunSlowWpstDr",
-				0.02,
-				"AmovPpneMrunSlowWpstDfr",
-				0.02,
-				"AmovPpneMstpSrasWpstDnon_AmovPercMsprSlowWpstDf",
-				0.0099999998,
-				"Unconscious",
-				0.02,
-				"AmovPpneMstpSrasWpstDnon_relax",
-				0.1,
-				"AmovPpneMstpSrasWpstDnon_AadjPpneMstpSrasWpstDup",
-				0.0099999998,
-				"AmovPpneMstpSrasWpstDnon_AadjPpneMstpSrasWpstDdown",
-				0.0099999998,
-				"AmovPpneMstpSrasWpstDnon_AadjPpneMstpSrasWpstDleft",
-				0.0099999998,
-				"AmovPpneMstpSrasWpstDnon_AadjPpneMstpSrasWpstDright",
-				0.0099999998,
-				"AmovPpneMstpSrasWpstDnon_AmovPercMstpSrasWpstDnon",
-				0.02,
-				"AmovPpneMstpSrasWpstDnon_AmovPknlMstpSrasWpstDnon",
-				0.02,
-				"PistolReloadProne",
-				0.02,
-				"PistolHeavy02ReloadProne",
-				0.02,
-				"PistolReloadProneFlaregun",
-				0.02,
-				"AmovPpneMstpSrasWpstDnon_AinvPpneMstpSrasWpstDnon",
-				0.02,
-				"AmovPpneMstpSrasWpstDnon_AinvPpneMstpSrasWpstDnon_Putdown",
-				0.02,
-				"AwopPpneMstpSgthWpstDnon_Fast_Start",
-				0.02,
-				"AfalPpneMstpSrasWpstDnon",
-				0.025,
-				"Campaign_Base",
-				0.5
-			};
-			idle="idleDefault";
 		};
 	};
 };
