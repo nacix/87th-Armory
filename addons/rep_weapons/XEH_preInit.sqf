@@ -20,15 +20,15 @@ ADDON = true;
 	
 		if (_this) then {
 			if (GETVAR(player,GVAR(featureCameraEH),-1) == -1) then {
+				LOG_1("Client [%1]: Reinitializing one-handing handler and attempting handPos update",player);
 				player call FUNC(handleOneHanding);
 				[player, true] call FUNC(setHandPos);
-				LOG_1("Client [%1]: Reinitializing one-handing handler and attempting handPos update",player);
 			};
 		} else {
 			LOG_1("Client [%1]: Disabling all one-handing functionality",player);
 			if (currentWeapon player isEqualTo handgunWeapon player && GETVAR(player,GVAR(usingOneHand),false)) then {
-				[_unit, false] call FUNC(setHandPos);
-				LOG_1("Unit [%1]: Preparing to disable one-handing",_unit);
+				LOG_1("Unit [%1]: Preparing to disable one-handing...",player);
+				[player, false] call FUNC(setHandPos);
 			};
 		};
 	},
@@ -47,14 +47,14 @@ ADDON = true;
 		if ((!GETGVAR(enabled,true) && !GETVAR(player,GVAR(usingOneHand),true)) || vehicle player isNotEqualTo player) exitWith {};
 
 		if (_this) then {
+			LOG_2("Client [%1]: Calling handPos with value [%2] (allowOneHandWalking enabled)",player,true);
 			SETVAR(player,GVAR(isUnitWalking),false);
 			[player, true] call FUNC(setHandPos);
 		} else {
+			LOG_2("Client [%1]: Calling handPos with value [%2] (allowOneHandWalking disabled)",player,!(isWalking player));
 			SETVAR(player,GVAR(isUnitWalking),isWalking player);
-			[player, isWalking player] call FUNC(setHandPos);
-			LOG_1("Client [%1]: Disabling all one-handing functionality",player);
+			[player, !(isWalking player)] call FUNC(setHandPos);
 		};
-		LOG_1("Client [%1]: Attempting handPos update",player);
 	},
 	false
 ] call CBA_fnc_addSetting;
@@ -80,17 +80,11 @@ ADDON = true;
 	0,
 	{
 		LOG_2("Setting 'ax87_rep_weapons_tagList' set to [%1] on client [%2]",_this,player);
-		if (count _this < 1) exitWith { SETPRVAR(GVAR(tagList),[]) };
+		if ((trim _this) isEqualTo "") exitWith { GVAR(tagList) = [""] };
 
-		private _tagArray = _this;
+		private _tagArray = ([trim _this, ","] call CBA_fnc_split) apply { trim _x };
 
-		if (count _this > 1) then {
-			_tagArray = ([trim _this, ","] call CBA_fnc_split) apply { trim _x };
-		} else {
-			_tagArray = trim _tagArray;
-		};
-
-		SETPRVAR(GVAR(tagList),_tagArray);
+		GVAR(tagList) = _tagArray;
 	},
 	false
 ] call CBA_fnc_addSetting;
