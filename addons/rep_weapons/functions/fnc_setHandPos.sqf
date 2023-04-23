@@ -25,10 +25,10 @@ if (isServer && !hasInterface) exitWith {}; // Only run on clients
 params ["_unit", "_tryOneHand", ["_resetActions", false], ["_skipAnimCheck", false], ["_forceAction", false]];
 TRACE_5("setHandPos",_unit,_tryOneHand,_resetActions,_skipAnimCheck,_forceAction);
 
-if ((weaponState _unit select 6) != 0 || isNil "_tryOneHand" || (!GETGVAR(enabled,true) && !GETVAR(_unit,GVAR(usingOneHand),false))) exitWith { LOG_1("setHandPos failed for unit [%1]",_unit) };
+if ((weaponState _unit select 6) != 0 || isNil "_tryOneHand" || (!GETGVAR(enabled,true) && !GETVAR(_unit,GVAR(usingOneHand),false))) exitWith { LOG_1("setHandPos cancelled for unit [%1]",_unit) };
 
 if (_tryOneHand) then {
-	if (!GETVAR(_unit,GVAR(outOfBody),false) && !GETVAR(_unit,GVAR(usingOneHand),false) && {(_forceAction || {((GETGVAR(enabled,true) && !GETVAR(_unit,GVAR(isUnitWalking),false)) && ((([_unit, animationState _unit] call FUNC(canOneHand)) || _skipAnimCheck) && {currentWeapon _unit isEqualTo handgunWeapon _unit}))})}) then {
+	if (GETVAR(_unit,GVAR(weaponAllowed),true) && !GETVAR(_unit,GVAR(outOfBody),false) && !GETVAR(_unit,GVAR(usingOneHand),false) && {(_forceAction || {((GETGVAR(enabled,true) && !GETVAR(_unit,GVAR(isUnitWalking),false)) && (((_skipAnimCheck || {[_unit, animationState _unit] call FUNC(canOneHand)})) && {currentWeapon _unit isEqualTo handgunWeapon _unit}))})}) then {
 		SETVAR(_unit,GVAR(usingOneHand),true);
 
 		if (GETVAR(_unit,GVAR(justReloaded),false)) then { SETVAR(_unit,GVAR(justReloaded),false); LOG_1("Unit [%1] has finished reloading",_unit) };
