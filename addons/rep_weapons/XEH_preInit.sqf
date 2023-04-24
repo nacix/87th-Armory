@@ -64,10 +64,27 @@ ADDON = true;
 	"CHECKBOX",
 	["Whitelist Mode", "Replaces default mode (blacklist) with a whitelist system. This means any tag NOT listed below will not support one-handing."],
 	["87th Legion - Sidearms", "[3] - Tag Settings"],
-	false,
+	true,
 	0,
 	{
 		LOG_2("Setting 'ax87_rep_weapons_useTagWhitelist' set to [%1] on client [%2]",_this,player);
+		private _weapon = currentWeapon player;
+		private _wepAddonTag = toLower (_weapon select [0, _weapon find "_"]);
+		/*
+		if (_wepAddonTag in GVAR(tagList)) then {
+			if (_this) then {
+				SETVAR(player,GVAR(weaponAllowed),true);
+				if (!GETVAR(player,GVAR(usingOneHand),false)) then {
+					[player, true] call FUNC(setHandPos);
+				};
+			} else {
+				SETVAR(player,GVAR(weaponAllowed),false);
+				if (GETVAR(player,GVAR(usingOneHand),false)) then {
+					[player, false] call FUNC(setHandPos);
+				};
+			};
+		};
+		*/
 	},
 	false
 ] call CBA_fnc_addSetting;
@@ -82,7 +99,7 @@ ADDON = true;
 		LOG_2("Setting 'ax87_rep_weapons_tagList' set to [%1] on client [%2]",_this,player);
 		if ((trim _this) isEqualTo "") exitWith { GVAR(tagList) = [""] };
 
-		private _tagArray = ([trim _this, ","] call CBA_fnc_split) apply { trim _x };
+		private _tagArray = ([trim toLower _this, ","] call CBA_fnc_split) apply { trim _x };
 
 		GVAR(tagList) = _tagArray;
 	},
@@ -94,10 +111,26 @@ ADDON = true;
 	"CHECKBOX",
 	["Whitelist Mode", "Replaces default mode (blacklist) with a whitelist system. This means any weapon NOT listed below will not support one-handing."],
 	["87th Legion - Sidearms", "[4] - Weapon Settings"],
-	false,
+	true,
 	0,
 	{
 		LOG_2("Setting 'ax87_rep_weapons_useWeaponWhitelist' set to [%1] on client [%2]",_this,player);
+		private _weapon = currentWeapon player;
+		/*
+		if (_weapon in GVAR(weaponList)) then {
+			if (_this) then {
+				SETVAR(player,GVAR(weaponAllowed),true);
+				if (!GETVAR(player,GVAR(usingOneHand),false)) then {
+					[player, true] call FUNC(setHandPos);
+				};
+			} else {
+				SETVAR(player,GVAR(weaponAllowed),false);
+				if (GETVAR(player,GVAR(usingOneHand),false)) then {
+					[player, false] call FUNC(setHandPos);
+				};
+			};
+		};
+		*/
 	},
 	false
 ] call CBA_fnc_addSetting;
@@ -110,17 +143,12 @@ ADDON = true;
 	0,
 	{
 		LOG_2("Setting 'ax87_rep_weapons_weaponList' set to [%1] on client [%2]",_this,player);
-		if (count _this < 1) exitWith { SETPRVAR(GVAR(weaponList),[]) };
 
-		private _weaponArray = _this;
+		if ((trim _this) isEqualTo "") exitWith { GVAR(weaponList) = [""] };
 
-		if (count _this > 1) then {
-			_weaponArray = ([trim _this, ","] call CBA_fnc_split) apply { trim _x };
-		} else {
-			_weaponArray = [trim _weaponArray];
-		};
-		
-		SETPRVAR(GVAR(weaponList),_weaponArray);
+		private _weaponArray = ([trim toLower _this, ","] call CBA_fnc_split) apply { trim _x };
+
+		GVAR(weaponList) = _weaponArray;
 	},
 	false
 ] call CBA_fnc_addSetting;
