@@ -315,7 +315,7 @@ class CfgWeapons
 		author = "Anorexican";
 		baseWeapon = "87th_DC17SA";
 		hiddenSelectionsTextures[] = {QPATHTOF(data\dc17sa\87th_DC17SA_co.paa)};
-		magazines[] = { "87th_20Rnd_EC30_Mag" };
+		magazines[] = { "87th_21Rnd_EC30_Mag" };
 		reloadMagazineSound[]=
 		{
 			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
@@ -323,18 +323,16 @@ class CfgWeapons
 			1,
 			30
 		};
-
-		JLTS_hasElectronics = 0;
-		JLTS_hasEMPProtection = 1;
-		JLTS_friedItem = "";
-		JLTS_repairTime = 20;
-		JLTS_canHaveShield = 0;
-		JLTS_shieldedWeapon = "";
-
+		recoil = "recoil_pistol_signal";
 		muzzles[]=
 		{
 			"this",
 			"Stun"
+		};
+		modes[]=
+		{
+			"Single",
+			"Burst"
 		};
 		class Stun: 87th_Muzzle_Stun
 		{
@@ -349,6 +347,16 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
+			reloadTime=0.12;
+			dispersion=0.0029;
+			minRange=5;
+			minRangeProbab=0.30000001;
+			midRange=25;
+			midRangeProbab=0.60000002;
+			maxRange=50;
+			maxRangeProbab=0.1;
+			aiRateOfFire=2;
+			aiRateOfFireDistance=25;
 			sounds[]=
 			{
 				"StandardSound"
@@ -376,9 +384,11 @@ class CfgWeapons
 					1
 				};
 			};
-			recoil="recoil_pistol_light";
-			recoilProne="recoil_prone_pistol_light";
-			reloadTime=0.12;
+		};
+		class Burst: Mode_Burst
+		{
+			burst=3;
+			reloadTime=0.08;
 			dispersion=0.0029;
 			minRange=5;
 			minRangeProbab=0.30000001;
@@ -388,6 +398,39 @@ class CfgWeapons
 			maxRangeProbab=0.1;
 			aiRateOfFire=2;
 			aiRateOfFireDistance=25;
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect="";
+				closure1[]={};
+				closure2[]={};
+				soundClosure[]={};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				weaponSoundEffect="";
+				begin1[]=
+				{
+					QPATHTOF(data\sounds\dc17sa.wss),
+					6.5,
+					0.925,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			JLTS_hasElectronics = 0;
+			JLTS_hasEMPProtection = 1;
+			JLTS_friedItem = "";
+			JLTS_repairTime = 20;
+			JLTS_canHaveShield = 0;
+			JLTS_shieldedWeapon = "";
 		};
 
 		class WeaponSlotsInfo: WeaponSlotsInfo
