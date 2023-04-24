@@ -502,7 +502,7 @@ class CfgWeapons
 		displayName = "[87th] DC-15C Battle Rifle";
 		magazines[]=
 		{
-			"87th_40Rnd_EC50_Mag"
+			"87th_36Rnd_EC50_Mag"
 		};
 		modes[]=
 		{
@@ -516,6 +516,7 @@ class CfgWeapons
 			burst=2;
 			reloadTime=0.135;
 			dispersion=0.001;
+			textureType = "dual";
 			minRange=0;
 			minRangeProbab=0.89999998;
 			midRange=15;
@@ -665,6 +666,10 @@ class CfgWeapons
 	{
 		author = "Anorexican";
 		displayName = "[87th] DC-15A Assault Rifle";
+		magazines[]=
+		{
+			"87th_45Rnd_EC40_Mag"
+		};
 		modes[]=
 		{
 			"Single",

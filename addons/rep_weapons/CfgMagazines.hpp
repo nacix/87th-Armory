@@ -8,13 +8,13 @@ class CfgMagazines
 	class 3AS_45Rnd_EC50_Mag;
 	class 3AS_60Rnd_EC30_Mag;
 
-	class 87th_20Rnd_EC30_Mag: 3AS_60Rnd_EC30_Mag
+	class 87th_21Rnd_EC30_Mag: 3AS_60Rnd_EC30_Mag
 	{
 		author = "Anorexican";
-		count = 20;
+		count = 21;
 		mass = 3;
-		displayName = "[87th] 20rd EC30 Magazine";
-		descriptionShort = "20rd EC30 Cartridge<br />Used in: DC-17SA";
+		displayName = "[87th] 21rd EC30 Magazine";
+		descriptionShort = "21rd EC30 Cartridge<br />Used in: DC-17SA";
 	};
 	class 87th_45Rnd_EC40_Mag: 3AS_100Rnd_EC40_Mag
 	{
@@ -38,12 +38,12 @@ class CfgMagazines
 		displayName = "[87th] 30rd EC50 Magazine";
 		descriptionShort = "30rd EC50 Cartridge<br />Used in: DP-23";
 	};
-	class 87th_40Rnd_EC50_Mag: 3AS_45Rnd_EC50_Mag
+	class 87th_36Rnd_EC50_Mag: 3AS_45Rnd_EC50_Mag
 	{
 		author = "Anorexican";
-		count = 40;
-		displayName = "[87th] 40rd EC50 Magazine";
-		descriptionShort = "40rd EC50 Cartridge<br />Used in: DC-15C";
+		count = 36;
+		displayName = "[87th] 36rd EC50 Magazine";
+		descriptionShort = "36rd EC50 Cartridge<br />Used in: DC-15C";
 	};
 	class 87th_20Rnd_EC60_Mag: 3AS_300Rnd_EC60_Mag
 	{
