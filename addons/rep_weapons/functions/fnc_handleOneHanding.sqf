@@ -45,30 +45,35 @@ private _weaponEH = ["weapon", {
 	SETVAR(_unit,GVAR(gestureDoneEH),-1);
 	LOG_1("Removed EventHandler 'gestureDone' for unit [%1] (timed out)", _unit);
 
-	if (_weaponNew isEqualTo "") exitWith { LOG_2("weaponChangeEH terminated on unit [%1]: [%2] is empty",_unit,_weaponNew) };
-	
+	if (_weaponNew isEqualTo "") exitWith { LOG_2("weaponChangeEH terminated on unit [%1]: new weapon [%2] is empty",_unit,_weaponNew) };
+
+	private _sidearm = toLower handgunWeapon _unit;
+	private _weaponNew = toLower _weaponNew;
+	private _weaponOld = toLower _weaponOld;
+
 	private _setOneHanded = nil;
-	switch (handGunWeapon _unit) do {
-		case (_weaponNew): { 
-			_setOneHanded = true;
-			if (GETVAR(_unit,GVAR(outOfBody),false)) then { SETVAR(_unit,GVAR(usingOneHand),false) } else { SETVAR(_unit,GVAR(usingOneHand),true) };
+	switch (_sidearm) do {
+		case (_weaponNew): {
+			private _tagList = GETGVAR(tagList,[]);
+			private _tagWhitelist = GETGVAR(useTagWhitelist,false);
+			private _wepAddonTag = toLower (_weaponNew select [0, _weaponNew find "_"]);
+
+			private _weaponList = GETGVAR(weaponList,[]);
+			private _wepWhitelist = GETGVAR(useWeaponWhitelist,false);
+			
+			TRACE_7("weaponWhitelistCheck",_unit,_weaponNew,_wepAddonTag,_tagWhitelist,_tagList,_wepWhitelist,_weaponList);
+			if (((_tagWhitelist && !(_wepAddonTag in _tagList)) || (!_tagWhitelist && _wepAddonTag in _tagList) || (!_wepWhitelist && _weaponNew in _weaponList)) && !(_wepWhitelist && _weaponNew in _weaponList)) then {
+				LOG_4("Client [%1] (%2): Weapon [%3] with tag [%4] is disabled in CBA white/blacklist settings. Disabling one-handing...",name _unit,_unit,_weaponNew,_wepAddonTag);
+				SETVAR(_unit,GVAR(weaponAllowed),false);
+			} else {
+				SETVAR(_unit,GVAR(weaponAllowed),true);
+				_setOneHanded = true;
+				// if (GETVAR(_unit,GVAR(outOfBody),false)) then { SETVAR(_unit,GVAR(usingOneHand),false) } else { SETVAR(_unit,GVAR(usingOneHand),true) };
+			};
 		};
-		case (_weaponOld): {_setOneHanded = false};
+		case (_weaponOld): { _setOneHanded = false };
 	};
 	if (isNil "_setOneHanded") exitWith { LOG_3("weaponChangeEH terminated on unit [%1]: Neither [%2] (new) or [%3] (old) are sidearms",_unit,_weaponNew,_weaponOld) };
-
-	private _tagList = GETGVAR(tagList,[]);
-	private _weaponList = GETGVAR(weaponList,[]);
-	if (_weaponNew isEqualTo handgunWeapon _unit) then {
-		private _weaponTag = toLower (_weaponNew select [0, _weaponNew find "_"]);
-		if (((GETGVAR(useTagWhitelist,false) && !(_weaponTag in _tagList)) || {(!GETGVAR(useTagWhiteList,false) && _weaponTag in _tagList)}) || ((GETGVAR(useWeaponWhitelist,false) && !(_weaponNew in _weaponList)) || (GETGVAR(useWeaponWhitelist,false) && _weaponNew in _weaponList))) then {
-			if (GETVAR(_unit,GVAR(usingOneHand),false)) then { _setOneHanded = false };
-			SETVAR(_unit,GVAR(weaponAllowed),false);
-			LOG_2("Unit [%1] is not allowed to one-hand weapon [%2] (disallowed by CBA white/blacklist settings)",_unit,_weaponNew);
-		} else {
-			SETVAR(_unit,GVAR(weaponAllowed),true);
-		};
-	};
 	
 	private _gestureDoneEH = [_unit, "GestureDone", {
 		params ["_unit", "_gesture"];
@@ -82,17 +87,12 @@ private _weaponEH = ["weapon", {
 			if (_thisArgs select 0) then { SETVAR(_unit,GVAR(usingOneHand),false) };
 
 			_unit removeEventHandler ["GestureDone", _thisID];
-			if ((_thisArgs select 0) && "sras" in _animState && "wpst" in _animState && "perc" in _animState && ("mstp" in _animState || "mwlk" in _animState || "mtac" in _animState || "aadj" in _animState)) then { 
-				[_unit, true, true, false, true] call FUNC(setHandPos);
-				LOG_1("Removed EventHandler gestureDone for unit [%1] (forcing one-handing)", _unit);
-			} else {
-				[_unit, _thisArgs select 0, true] call FUNC(setHandPos);
-				LOG_1("Removed EventHandler gestureDone for unit [%1] (switching handpos)", _unit);
-			};
+			[_unit, _thisArgs select 0, true] call FUNC(setHandPos);
+			LOG_1("Removed EventHandler gestureDone for unit [%1] (switching handpos)", _unit);
 		};
 	}, [_setOneHanded]] call CBA_fnc_addBISEventHandler;
 	SETVAR(_unit,gestureDoneEH,_gestureDoneEH);
-	LOG_2("Initialized EventHandler 'gestureDone' for unit [%1] (ID: [%2])", _unit, _reloadedEH);
+	LOG_2("Initialized EventHandler 'gestureDone' for unit [%1] (ID: [%2])", _unit, _gestureDoneEH);
 }] call CBA_fnc_addPlayerEventHandler;
 SETVAR(_unit,GVAR(weaponEH),_weaponEH);
 LOG_2("Initialized EventHandler 'weapon' for unit [%1] (ID: [%2])", _unit, _weaponEH);
