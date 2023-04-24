@@ -35,7 +35,7 @@ if (_tryOneHand) then {
 		
 		if (_resetActions) then {
 			_unit switchAction "ax87_switch_pistol";
-			[{player playActionNow "ax87_pistol"}, [], 0.5] call CBA_fnc_waitAndExecute;
+			[{player playActionNow "ax87_pistol"}, [], 0.625] call CBA_fnc_waitAndExecute;
 			LOG_1("Unit [%1] is now one-handing (reset=true)",_unit);
 		} else {
 			_unit playActionNow "ax87_pistol";
