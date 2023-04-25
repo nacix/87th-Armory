@@ -40,6 +40,8 @@ if (cameraOn isNotEqualTo (vehicle _unit)) then {(vehicle _unit) switchCamera ca
 private _riderShield = GETVAR(_walker,atrt_riderShield,objNull);
 if (!isNull _riderShield) then { deleteVehicle _riderShield; SETVAR(_walker,atrt_riderShield,objNull) };
 
+// Removes user actions from the walker
 inGameUISetEventHandler ["Action", ""];
 
+// Creates destruction effects if the walker is dead
 if (!alive _walker) then { _walker call FUNC(destroyATRT) };

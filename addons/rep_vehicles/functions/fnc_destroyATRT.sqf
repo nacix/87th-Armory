@@ -20,6 +20,7 @@ if (!isServer) exitWith {};
 
 params ["_walker"];
 
+// Create explosions at the walker's position
 private _explosions = ["ModuleMine_SLAMDirectionalMine_F", "ACE_ammoExplosionLarge"];
 {
 	private _payload = createVehicle [_x, position _walker, [], 0, "CAN_COLLIDE"];
@@ -29,6 +30,7 @@ private _explosions = ["ModuleMine_SLAMDirectionalMine_F", "ACE_ammoExplosionLar
 	_payload setDamage 1;
 } forEach _explosions;
 
+// Creates a directional explosion below the walker if it is on the ground. This causes the terrain below to be deformed.
 if ((getPosATL _walker) select 2 <= 1.15) then {
 	private _impactGround = createVehicle ["ModuleMine_SLAMDirectionalMine_F", position _walker, [], 0, "CAN_COLLIDE"];
 
