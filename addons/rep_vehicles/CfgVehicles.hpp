@@ -52,12 +52,6 @@ class CfgVehicles
 			QPATHTOF(data\barc\87th_BARC_Weapons_co.paa),
 			QPATHTOF(data\barc\87th_BARC_Screen_co.paa)
 		};
-		hiddenSelectionsMaterials[]=
-		{
-			QPATHTOF(data\barc\87th_BARC_Body.rvmat),
-			QPATHTOF(data\barc\87th_BARC_Weapons.rvmat),
-			QPATHTOF(data\barc\87th_BARC_Screen.rvmat)
-		};
 	};
 
 	class 87th_ATRT: 3AS_ATRT

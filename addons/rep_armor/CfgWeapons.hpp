@@ -472,11 +472,11 @@ class CfgWeapons {
 	};
 
 	class 87th_Medic_Vest: JLTS_CloneVestAirborne
-    {
-        author = "Stim";
-        displayname = "[87th] Medic Accessories";
-        hiddenSelectionsTextures[] = { "", QPATHTOF(data\vests\87th_Medic_Vest_co.paa) };
-    };
+	{
+		author = "Stim";
+		displayname = "[87th] Medic Accessories";
+		hiddenSelectionsTextures[] = { "", QPATHTOF(data\vests\87th_Medic_Vest_co.paa) };
+	};
 
 	class 87th_Recon_Accessories: JLTS_CloneVestRecon
 	{
