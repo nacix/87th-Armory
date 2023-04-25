@@ -2,11 +2,26 @@ class CfgAmmo
 {
 	class ShellBase;
 	class SmokeShell;
+	class JLTS_bullet_stun;
 	class ammo_Penetrator_Base: ShellBase {};
 	class MissileBase 
 	{
 		class Components;
 	};
+
+	class 87th_ammo_stun: JLTS_bullet_stun
+	{
+		JLTS_isStunAmmo=1;
+		typicalSpeed=120;
+		timetolive=8;
+		aiAmmoUsageFlags=0;
+	};
+	class 87th_ammo_stun_super: 87th_ammo_stun
+	{
+		typicalSpeed=500;
+		timetolive=8;
+	};
+	
 	class 87th_ammo_Penetrator: ammo_Penetrator_Base 
 	{
 		model = "\A3\weapons_f\empty";

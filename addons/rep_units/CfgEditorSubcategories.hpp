@@ -32,4 +32,8 @@ class CfgEditorSubcategories
 	{
 		displayName = "Vehicles";
 	};
+	class 87th_P1_Vehicles
+	{
+		displayName = "Vehicles (P1)";
+	};
 };

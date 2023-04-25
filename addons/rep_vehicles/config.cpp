@@ -6,7 +6,7 @@ class CfgPatches
     {
 		name = COMPONENT_NAME;
 		requiredVersion = REQUIRED_VERSION;
-		author = CSTRING(AuxTeam);
+		author = ECSTRING(Common,AuxTeam);
 		authors[] = {"Anorexican", "Stim_1087"};
 		url = ECSTRING(main,URL);
         requiredAddons[]=
@@ -15,16 +15,25 @@ class CfgPatches
 			"A3_anims_F",
 			"A3_weapons_F",
 			"A3_characters_F",
-			"JLTS_core",
-			"JLTS_characters_CloneArmor",
 			"3AS_Main",
 			"3AS_LAAT",
-			"3AS_ATRT"
+			"3AS_ATRT",
+			"JLTS_core",
+			"JLTS_characters_CloneArmor",
+			"ls_vehicles_ground"
         };
         units[]=
 		{
-			"87th_LAAT",
-			"87th_ATRT"
+			CLASS(LAAT),
+			CLASS(LAAT_Lights),
+			CLASS(LAAT_Mk1),
+			CLASS(LAAT_Mk1_Lights),
+			CLASS(P1_LAAT),
+			CLASS(P1_LAAT_Lights),
+			CLASS(P1_LAAT_Mk1),
+			CLASS(P1_LAAT_Mk1_Lights),
+			"87th_ATRT",
+			"87th_BARC"
 		};
 		weapons[]=
 		{

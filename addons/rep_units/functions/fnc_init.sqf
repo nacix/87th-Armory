@@ -106,7 +106,6 @@ private _vcomSkillTable = [
 	["87th_ARF_Spotter", _scoutSkills],
 	["87th_ARF_Sniper", _sniperSkills],
 	["87th_ARF_DC15S", _scoutSkills],
-	["87th_ATRT_Driver", _scoutSkills],
 
 	// AIRBORNE TROOPERS
 	["87th_AB_Officer", _scoutSkills],
@@ -147,6 +146,7 @@ private _vcomSkillTable = [
 	["87th_Clone_DC15A", _basicSkills],
 
 	// CLONE TROOPERS (P1)
+	["87th_Clone_P1_Pilot", _basicSkills],
 	["87th_Clone_P1_Sharpshooter", _sniperSkills],
 	["87th_Clone_P1_AR", _basicSkills],
 	["87th_Clone_P1_Sergeant", _leadSkills],

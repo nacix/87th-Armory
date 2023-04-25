@@ -6,7 +6,7 @@ class CfgPatches
     {
 		name = COMPONENT_NAME;
 		requiredVersion = REQUIRED_VERSION;
-		author = CSTRING(AuxTeam);
+		author = ECSTRING(Common,AuxTeam);
 		authors[] = {"Anorexican", "Stim_1087"};
 		url = ECSTRING(main,URL);
         requiredAddons[]=
@@ -21,6 +21,7 @@ class CfgPatches
         };
         units[]=
 		{
+			"87th_Clone_P1_Pilot",
 			"87th_Clone_Pilot",
 			"87th_RC_Sniper",
 			"87th_RC_Demo",
@@ -58,7 +59,6 @@ class CfgPatches
 			"87th_BARC_Spotter",
 			"87th_BARC_Sniper",
 			"87th_BARC_DC15S",
-			"87th_ATRT_Driver",
 			"87th_ARF_Major",
 			"87th_ARF_Captain",
 			"87th_ARF_Lieutenant",

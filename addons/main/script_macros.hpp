@@ -1,3 +1,7 @@
+#ifdef __A3_DEBUG__
+    #define DEBUG_MODE_FULL
+#endif
+
 #include "\x\cba\addons\main\script_macros_common.hpp"
 #include "\x\cba\addons\xeh\script_xeh.hpp"
 
@@ -36,10 +40,6 @@
 
 #define ARR_SELECT(ARRAY,INDEX,DEFAULT) (if (count ARRAY > INDEX) then {ARRAY select INDEX} else {DEFAULT})
 
-#ifdef __A3_DEBUG__
-    #define DEBUG_MODE_FULL
-#endif
-
 #ifdef DISABLE_COMPILE_CACHE
     #undef PREP
     #define PREP(fncName) DFUNC(fncName) = compile preprocessFileLineNumbers QPATHTOF(functions\DOUBLES(fnc,fncName).sqf)
@@ -50,4 +50,15 @@
 
 #define PREP_MODULE(folder) [] call compile preprocessFileLineNumbers QPATHTOF(folder\__PREP__.sqf)
 
+#define NAME_PRETTY(name_raw) QUOTE(TAG_BR ##name_raw##)
+
+#define AUXCLASS(classname) TAG##_##classname
+#define CLASS(classname) QUOTE(AUXCLASS(classname))
+
 #define SKILLTYPES ["aimingAccuracy", "aimingShake", "spotDistance", "spotTime", "courage", "commanding", "aimingSpeed", "general", "endurance", "reloadSpeed"]
+
+#define POINTER(unit, weapon) ((unit weaponAccessories weapon) select 1)
+
+#define INVISIBLE(pointer) ((configFile >> "CfgWeapons" >> pointer >> "ItemInfo" >> "Pointer" >> "isIR") call BIS_fnc_getCfgData isEqualTo 1)
+#define VISIBLE(pointer) ((configFile >> "CfgWeapons" >> pointer >> "ItemInfo" >> "Pointer" >> "isIR") call BIS_fnc_getCfgData isEqualTo 0)
+#define HASLASER(attachment) not isNil {(configFile >> "CfgWeapons" >> attachment >> "ItemInfo" >> "Pointer" >> "isIR") call BIS_fnc_getCfgData}

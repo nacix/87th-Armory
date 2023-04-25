@@ -2,6 +2,7 @@ class CfgVehicles {
 	class B_Soldier_F;
 	class B_Kitbag_rgr;
 	class 3AS_Katarn_Backpack_Base;
+	class JLTS_Clone_belt_bag;
 	class JLTS_Clone_backpack;
 
 	class 87th_Backpack: JLTS_Clone_backpack 
@@ -14,9 +15,31 @@ class CfgVehicles {
     class 87th_Medic_Backpack: 87th_Backpack 
 	{
 		displayName = "[87th] Medic Backpack";
-		maximumLoad = 400;
+		maximumLoad = 450;
         hiddenSelectionsTextures[] = { QPATHTOF(data\other\87th_Medic_Backpack_co.paa) };
 	};
+
+	class 87th_Belt_Bag: JLTS_Clone_belt_bag
+	{
+		author = "Anorexican";
+		displayName = "[87th] Belt Bag";
+		maximumLoad = 250;
+	};
+	class 87th_Belt_Bag_Medic: 87th_Belt_Bag
+	{
+		author = "Anorexican";
+		displayName = "[87th] Belt Bag (Medic)";
+		maximumLoad = 450;
+		hiddenSelectionsTextures[] = { QPATHTOF(data\other\87th_Belt_Bag_Medic_co.paa) };
+	};
+
+	class 87th_EOD_Backpack: 87th_Backpack 
+	{
+		displayName = "[87th] EOD Backpack";
+		maximumLoad = 425;
+        hiddenSelectionsTextures[] = { QPATHTOF(data\other\87th_EOD_Backpack_co.paa) };
+	};
+
 	class 87th_RTO_Backpack: 87th_Backpack
 	{
 		displayName = "[87th] RTO Backpack";
@@ -38,6 +61,27 @@ class CfgVehicles {
 		tf_range = 25000;
 		tf_subtype = "digital_lr";
 	};
+	class 87th_RTO_Backpack_Mini: 87th_Backpack
+	{
+		displayName = "[87th] Mini RTO Pack";
+		picture="\MRC\JLTS\characters\CloneArmor\data\ui\Clone_RTO_pack_ui_ca.paa";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneRTOPack.p3d";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+        hiddenSelectionsTextures[]= 
+		{
+        	QPATHTOF(data\other\87th_Mini_RTO_co.paa)
+        };
+		tf_dialog = "JLTS_clone_rto_radio_dialog";
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_hasLRradio = 1;
+		tf_range = 25000;
+		tf_subtype = "digital_lr";
+	};
+
 	class 87th_Katarn_Backpack: 3AS_Katarn_Backpack_Base 
 	{
 		author = "Stim";
@@ -61,7 +105,7 @@ class CfgVehicles {
 			"camo2",
 			"insignia"
 		};
-		hiddenSelectionsTextures[] =
+		hiddenSelectionsTextures[]=
 		{
 			QPATHTOF(data\uniforms\ct\87th_Chest_co.paa),
 			QPATHTOF(data\uniforms\ct\87th_Legs_co.paa)
@@ -71,7 +115,7 @@ class CfgVehicles {
 	{
 		displayName = "CloneMedicBase";
 		uniformClass = "87th_Medic_Uniform";
-		hiddenSelectionsTextures[] =
+		hiddenSelectionsTextures[]=
 		{
 			QPATHTOF(data\uniforms\ct\87th_P1_Chest_co.paa),
 			QPATHTOF(data\uniforms\ct\87th_P1_Legs_co.paa)
@@ -97,15 +141,76 @@ class CfgVehicles {
 		faction = "87th_Legion";
 		uniformClass = "87th_Katarn_Armor";
 		model = "\3AS\3AS_Characters\Commando\3AS_Katarn_Armor.p3d";
-		hiddenSelections[] =
+		hiddenSelections[]=
 		{
 			"Camo",
 			"Camo1"
 		};
-		hiddenSelectionsTextures[] =
+		hiddenSelectionsTextures[]=
 		{
 			QPATHTOF(data\uniforms\87th_Katarn_Armor_co.paa),
 			"\3AS\3AS_Characters\Commando\data\Katarn_Undersuit_CO.paa"
+		};
+	};
+
+	class 87th_ARF_Base: 87th_Clone_Base
+	{
+		displayName = "ARFBase";
+		uniformClass = "87th_ARF_Uniform";
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\uniforms\arf\87th_ARF_Chest_co.paa),
+			QPATHTOF(data\uniforms\arf\87th_ARF_Legs_co.paa)
+		};
+	};
+	class 87th_ARF_Base_Desert: 87th_Clone_Base
+	{
+		displayName = "ARFBaseDesert";
+		uniformClass = "87th_ARF_Uniform_Desert";
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\uniforms\arf\87th_ARF_Chest_Desert_co.paa),
+			QPATHTOF(data\uniforms\arf\87th_ARF_Legs_Desert_co.paa)
+		};
+	};
+	class 87th_ARF_Base_Sarid: 87th_Clone_Base
+	{
+		displayName = "ARFBaseSarid";
+		uniformClass = "87th_ARF_Uniform_Sarid";
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\uniforms\arf\87th_ARF_Chest_Sarid_co.paa),
+			QPATHTOF(data\uniforms\arf\87th_ARF_Legs_Sarid_co.paa)
+		};
+	};
+	class 87th_ARF_Base_Woodland: 87th_Clone_Base
+	{
+		displayName = "ARFBaseWoodland";
+		uniformClass = "87th_ARF_Uniform_Woodland";
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\uniforms\arf\87th_ARF_Chest_Woodland_co.paa),
+			QPATHTOF(data\uniforms\arf\87th_ARF_Legs_Woodland_co.paa)
+		};
+	};
+	class 87th_ARF_Base_Winter: 87th_Clone_Base
+	{
+		displayName = "ARFBaseWinter";
+		uniformClass = "87th_ARF_Uniform_Winter";
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\uniforms\arf\87th_ARF_Chest_Winter_co.paa),
+			QPATHTOF(data\uniforms\arf\87th_ARF_Legs_Winter_co.paa)
+		};
+	};
+	class 87th_ARF_Base_Urban: 87th_Clone_Base
+	{
+		displayName = "ARFBaseUrban";
+		uniformClass = "87th_ARF_Uniform_Urban";
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\uniforms\arf\87th_ARF_Chest_Urban_co.paa),
+			QPATHTOF(data\uniforms\arf\87th_ARF_Legs_Urban_co.paa)
 		};
 	};
 };

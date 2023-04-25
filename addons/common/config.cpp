@@ -6,7 +6,11 @@ class CfgPatches {
 		requiredVersion = REQUIRED_VERSION;
         units[] = {};
         weapons[] = {};
-        requiredAddons[] = {"cba_main"};
+        requiredAddons[]=
+        {
+            "cba_main",
+            "A3_Anims_F"
+        };
         author = CSTRING(AuxTeam);
 		authors[] = {"Anorexican"};
 		url = ECSTRING(main,URL);
@@ -14,3 +18,6 @@ class CfgPatches {
 };
 
 #include "CfgEventHandlers.hpp"
+#include "CfgMovesBasic.hpp"
+#include "CfgGesturesMale.hpp"
+#include "CfgMovesMaleSdr.hpp"
