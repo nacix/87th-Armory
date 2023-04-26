@@ -17,7 +17,7 @@
  * Public: No
 */
 
-if (!isServer) exitWith {};
+// if (!isServer) exitWith {};
 
 params ["_unit", ["_walker", objNull]];
 
@@ -27,7 +27,10 @@ SETVAR(_walker,atrt_rider,objNull);
 SETVAR(_unit,atrt_walker,objNull);
 
 ["featureCamera", GETVAR(_unit,atrt_featCamEH,-1)] call CBA_fnc_removePlayerEventHandler;
+SETVAR(_unit,atrt_featCamEH,-1);
+
 ["ace_unconscious", GETVAR(_unit,atrt_unconEH,-1)] call CBA_fnc_removeEventHandler;
+SETVAR(_unit,atrt_unconEH,-1);
 
 [_unit, ""] remoteExec ["switchMove", 0];
 detach _unit;
@@ -36,6 +39,11 @@ objNull remoteControl driver _walker;
 player remoteControl _unit;
 
 if (cameraOn isNotEqualTo (vehicle _unit)) then {(vehicle _unit) switchCamera cameraView};
+
+[{!isNull (findDisplay 46)}, {
+	findDisplay 46 displayRemoveEventHandler ["KeyDown", GETVAR(player,GVAR(weaponLoweredEH),-1)];
+	SETVAR(player,weaponLoweredEH,-1);
+}] call CBA_fnc_waitUntilAndExecute;
 
 private _riderShield = GETVAR(_walker,atrt_riderShield,objNull);
 if (!isNull _riderShield) then { deleteVehicle _riderShield; SETVAR(_walker,atrt_riderShield,objNull) };
