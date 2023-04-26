@@ -38,15 +38,26 @@ if (hasInterface && isPlayer _rider && local _rider) then {
 	SETVAR(_rider,atrt_featCamEH,_featCamEH);
 
 	private _unconEH = ["ace_unconscious", {
-		params ["_unit", "_state"];
+		params ["_unit", "_isUncon"];
 		_thisArgs params ["_rider", "_walker"];
 
-		if (_state && {_unit isEqualTo _rider}) then {
+		if (_isUncon && {_unit isEqualTo _rider}) then {
 			[_unit, _walker] call FUNC(exitATRT);
 			["ace_unconscious", _thisId] call CBA_fnc_removeEventHandler;
 		};
 	}, [_rider, _walker]] call CBA_fnc_addEventHandlerArgs;
 	SETVAR(_rider,atrt_unconEH,_unconEH);
+
+	[{!isNull (findDisplay 46)}, {
+		private _weaponLoweredEH = findDisplay 46 displayAddEventHandler ["KeyDown", {
+			params ["_display", "_key", "_shift", "_ctrl", "_alt"];
+			if (inputAction "toggleRaiseWeapon" > 0) then {
+				if (weaponLowered player) then { player action ["WeaponOnBack", player] };
+				true;
+			};
+		}];
+		SETVAR(player,GVAR(weaponLoweredEH),_weaponLoweredEH);
+	}] call CBA_fnc_waitUntilAndExecute;
 };
 
 SETVAR(_walker,atrt_rider,_rider);
