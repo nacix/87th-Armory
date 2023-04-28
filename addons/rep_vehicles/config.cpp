@@ -37,12 +37,26 @@ class CfgPatches
 		};
 		weapons[]=
 		{
-			"87th_ATRT_Uniform"
+			"87th_ATRT_Uniform",
+			"87th_LAAT_Cannon_HE",
+			"87th_LAAT_Cannon_AP"
+		};
+		magazines[]=
+		{
+			"87th_LAAT_Cannon_Mag_HE",
+			"87th_LAAT_Cannon_Mag_AP"
+		};
+		ammo[]=
+		{
+			"87th_LAAT_Cannon_Ammo_HE",
+			"87th_LAAT_Cannon_Ammo_AP"
 		};
     };
 };
 
 #include "CfgEventHandlers.hpp"
 #include "CfgVehicles.hpp"
+#include "CfgMagazines.hpp"
+#include "CfgAmmo.hpp"
 #include "CfgWeapons.hpp"
 #include "CfgWorlds.hpp"

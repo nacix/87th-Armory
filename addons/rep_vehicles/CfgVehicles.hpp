@@ -24,6 +24,90 @@ class CfgVehicles
 			bodyFrictionCoef = 2.0; \
 			cyclicAsideForceCoef = 3.2; \
 			cyclicForwardForceCoef = 2.35; \
+			weapons[]= \
+			{ \
+				"87th_LAAT_Cannon_HE", \
+				"87th_LAAT_Cannon_AP", \
+				"3as_LAAT_Missile_AGM", \
+				"3as_LAAT_Missile_AA", \
+				"CMFlareLauncher" \
+			}; \
+			magazines[]= \
+			{ \
+				"3as_PylonMissile_LAAT_8Rnd_Missile_AA", \
+				"3as_LAAT_8Rnd_Missile_AGM", \
+				"240Rnd_CMFlare_Chaff_Magazine", \
+				"240Rnd_CMFlare_Chaff_Magazine", \
+				"87th_LAAT_Cannon_Mag_HE", \
+				"87th_LAAT_Cannon_Mag_HE", \
+				"87th_LAAT_Cannon_Mag_AP", \
+				"87th_LAAT_Cannon_Mag_AP" \
+			}; \
+			class AnimationSources: AnimationSources \
+			{ \
+				class muzzle_rot_laser \
+				{ \
+					source="ammorandom"; \
+					weapon="87th_LAAT_Cannon_HE"; \
+				}; \
+				class muzzle_rot_laser_R \
+				{ \
+					source="ammorandom"; \
+					weapon="ParticleBeamCannon_R"; \
+				}; \
+				class Laser_L \
+				{ \
+					source="user"; \
+					animPeriod=0; \
+					initPhase=0; \
+				}; \
+				class Laser_R \
+				{ \
+					source="user"; \
+					animPeriod=0; \
+					initPhase=0; \
+				}; \
+				class ramp \
+				{ \
+					source="user"; \
+					animPeriod=2; \
+					initPhase=0; \
+				}; \
+				class Doors \
+				{ \
+					source="user"; \
+					animPeriod=1; \
+					initPhase=0; \
+				}; \
+				class Lamps \
+				{ \
+					source="user"; \
+					animPeriod=1; \
+					initPhase=0; \
+				}; \
+				class Turrets \
+				{ \
+					source="user"; \
+					animPeriod=1; \
+					initPhase=0; \
+				}; \
+				class HitGlass1 \
+				{ \
+					source="Hit"; \
+					hitpoint="HitGlass1"; \
+					raw=1; \
+				}; \
+				class HitGlass2 \
+				{ \
+					source="Hit"; \
+					hitpoint="HitGlass2"; \
+				}; \
+				class HitGlass3 \
+				{ \
+					source="Hit"; \
+					hitpoint="HitGlass3"; \
+				}; \
+			}; \
 			class pilotCamera \
 			{ \
 				class OpticsIn \
