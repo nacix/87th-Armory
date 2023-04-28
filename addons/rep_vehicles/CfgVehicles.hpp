@@ -18,13 +18,81 @@ class CfgVehicles
 			}; \
 			crew = QUOTE(TAG##_Clone_Pilot); \
 			typicalCargo[] = {QUOTE(TAG##_Clone_Pilot)}; \
+			acceleration = 400; \
+			liftForceCoef = 6.5; \
+			backRotorForceCoef = 3.0; \
+			bodyFrictionCoef = 2.0; \
+			cyclicAsideForceCoef = 3.2; \
+			cyclicForwardForceCoef = 2.35; \
+			class pilotCamera \
+			{ \
+				class OpticsIn \
+				{ \
+					class Wide \
+					{ \
+						opticsDisplayName="WFOV"; \
+						initAngleX=0; \
+						minAngleX=0; \
+						maxAngleX=0; \
+						initAngleY=0; \
+						minAngleY=0; \
+						maxAngleY=0; \
+						initFov="0.25/0.5"; \
+						minFov="0.25/0.5"; \
+						maxFov="0.25/0.5"; \
+						directionStabilized=1; \
+						visionMode[]= \
+						{ \
+							"Normal", \
+							"Ti", \
+							"NVG" \
+						}; \
+						thermalMode[]={0,1}; \
+						gunnerOpticsModel="\A3\Drones_F\weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d"; \
+						opticsPPEffects[]= \
+						{ \
+							"OpticsCHAbera2", \
+							"OpticsBlur2" \
+						}; \
+					}; \
+					class Medium: Wide \
+					{ \
+						opticsDisplayName="MFOV"; \
+						initFov="0.25/8"; \
+						minFov="0.25/8"; \
+						maxFov="0.25/8"; \
+						gunnerOpticsModel="\A3\Drones_F\weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d"; \
+					}; \
+					class Narrow: Wide \
+					{ \
+						opticsDisplayName="NFOV"; \
+						initFov="0.25/24"; \
+						minFov="0.25/24"; \
+						maxFov="0.25/24"; \
+						gunnerOpticsModel="\A3\Drones_F\weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d"; \
+					}; \
+					showMiniMapInOptics=1; \
+					showUAVViewInOptics=0; \
+					showSlingLoadManagerInOptics=0; \
+				}; \
+				minTurn=-150; \
+				maxTurn=150; \
+				initTurn=0; \
+				minElev=-20; \
+				maxElev=80; \
+				initElev=0; \
+				maxXRotSpeed=0.30000001; \
+				maxYRotSpeed=0.30000001; \
+				pilotOpticsShowCursor=1; \
+				controllable=1; \
+			}; \
 		}; \
 		class TAG##_P1_##classname##: TAG##_##classname \
 		{ \
 			editorSubcategory = QUOTE(TAG##_P1_Vehicles); \
 			crew = QUOTE(TAG##_Clone_P1_Pilot); \
 			typicalCargo[] = {QUOTE(TAG##_Clone_P1_Pilot)}; \
-		}; \
+		};
 	
 	class 3AS_ATRT;
 	class 3as_LAAT_Mk1;
