@@ -215,5 +215,42 @@ class XtdGearInfos
 			variant = "Trooper";
 			camo = "Urban";
 		};
+
+		class 87th_BARC_Helmet
+		{
+			model = "87th_BARC_Helmet";
+			variant = "Trooper";
+			camo = "None";
+		};
+		class 87th_BARC_Helmet_Desert
+		{
+			model = "87th_BARC_Helmet";
+			variant = "Trooper";
+			camo = "Desert";
+		};
+		class 87th_BARC_Helmet_Sarid
+		{
+			model = "87th_BARC_Helmet";
+			variant = "Trooper";
+			camo = "Sarid";
+		};
+		class 87th_BARC_Helmet_Woodland
+		{
+			model = "87th_BARC_Helmet";
+			variant = "Trooper";
+			camo = "Woodland";
+		};
+		class 87th_BARC_Helmet_Winter
+		{
+			model = "87th_BARC_Helmet";
+			variant = "Trooper";
+			camo = "Winter";
+		};
+		class 87th_BARC_Helmet_Urban
+		{
+			model = "87th_BARC_Helmet";
+			variant = "Trooper";
+			camo = "Urban";
+		};
 	};
 };
