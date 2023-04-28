@@ -55,5 +55,24 @@ class XtdGearModels
 				alwaysSelectable = 1;
 			};
 		};
+
+		class 87th_BARC_Helmet
+		{
+			label = "[87th] BARC Helmet";
+			author = "Anorexican";
+			options[] = {"variant", "camo"};
+			class variant
+			{
+				label = "Variant";
+				values[] = {"Trooper"};
+				alwaysSelectable = 1;
+			};
+			class camo
+			{
+				label = "Camo";
+				values[] = {"None", "Winter", "Desert", "Sarid", "Woodland", "Urban"};
+				alwaysSelectable = 1;
+			};
+		};
 	};
 };

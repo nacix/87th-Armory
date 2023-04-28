@@ -381,20 +381,38 @@ class CfgWeapons {
 		};
 	};
 
-	/*
-	class 87th_ATRT_Helmet: 3as_ATRT_Helmet
-	{
-		author = "Stim";
-		displayname = "[87th] ATRT Helmet";
-		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\87th_ATRT_Helmet_co.paa) };
-	};
-	*/
 	class 87th_BARC_Helmet: JLTS_CloneHelmetBARC
 	{
-		author = "Stim";
+		author = "Stim & Anorexican";
 		displayname = "[87th] BARC Helmet";
-		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\87th_BARC_Helmet_co.paa) };
+		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\barc\trooper\87th_BARC_Helmet_co.paa) };
 	};
+	class 87th_BARC_Helmet_Desert: 87th_BARC_Helmet
+	{
+		displayname = "[87th] BARC Helmet (Desert)";
+		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\barc\trooper\87th_BARC_Helmet_Desert_co.paa) };
+	};
+	class 87th_BARC_Helmet_Sarid: 87th_BARC_Helmet
+	{
+		displayname = "[87th] BARC Helmet (Sarid)";
+		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\barc\trooper\87th_BARC_Helmet_Sarid_co.paa) };
+	};
+	class 87th_BARC_Helmet_Woodland: 87th_BARC_Helmet
+	{
+		displayname = "[87th] BARC Helmet (Woodland)";
+		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\barc\trooper\87th_BARC_Helmet_Woodland_co.paa) };
+	};
+	class 87th_BARC_Helmet_Winter: 87th_BARC_Helmet
+	{
+		displayname = "[87th] BARC Helmet (Winter)";
+		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\barc\trooper\87th_BARC_Helmet_Winter_co.paa) };
+	};
+	class 87th_BARC_Helmet_Urban: 87th_BARC_Helmet
+	{
+		displayname = "[87th] BARC Helmet (Urban)";
+		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\barc\trooper\87th_BARC_Helmet_Urban_co.paa) };
+	};
+
 	class 87th_Airborne_Helmet: JLTS_CloneHelmetAB
 	{
 		author = "Stim";
