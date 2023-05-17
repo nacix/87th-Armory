@@ -24,7 +24,7 @@ class CfgVehicles
 			editorSubcategory = QUOTE(TAG##_P1_Vehicles); \
 			crew = QUOTE(TAG##_Clone_P1_Pilot); \
 			typicalCargo[] = {QUOTE(TAG##_Clone_P1_Pilot)}; \
-		}; \
+		};
 	
 	class 3AS_ATRT;
 	class 3as_LAAT_Mk1;
