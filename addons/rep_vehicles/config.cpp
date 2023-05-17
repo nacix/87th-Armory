@@ -39,17 +39,26 @@ class CfgPatches
 		{
 			"87th_ATRT_Uniform",
 			"87th_LAAT_Cannon_HE",
-			"87th_LAAT_Cannon_AP"
+			"87th_LAAT_Cannon_AP",
+			"87th_LAAT_Missile_HEDP",
+			"87th_LAAT_Missile_HE",
+			"87th_LAAT_Rocket_HE"
 		};
 		magazines[]=
 		{
 			"87th_LAAT_Cannon_Mag_HE",
-			"87th_LAAT_Cannon_Mag_AP"
+			"87th_LAAT_Cannon_Mag_AP",
+			"87th_LAAT_8Rnd_AGM_HEDP",
+			"87th_LAAT_24Rnd_AGM_HE_las",
+			"87th_LAAT_24Rnd_AGM_HE"
 		};
 		ammo[]=
 		{
 			"87th_LAAT_Cannon_Ammo_HE",
-			"87th_LAAT_Cannon_Ammo_AP"
+			"87th_LAAT_Cannon_Ammo_AP",
+			"87th_AGM_HEDP",
+			"87th_AGM_HE",
+			"87th_AGM_HE_las"
 		};
     };
 };

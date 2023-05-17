@@ -28,7 +28,9 @@ class CfgVehicles
 			{ \
 				"87th_LAAT_Cannon_HE", \
 				"87th_LAAT_Cannon_AP", \
-				"3as_LAAT_Missile_AGM", \
+				"87th_LAAT_Missile_HEDP", \
+				"87th_LAAT_Missile_HE", \
+				"87th_LAAT_Rocket_HE", \
 				"3as_LAAT_Missile_AA", \
 				"CMFlareLauncher" \
 			}; \
@@ -37,11 +39,17 @@ class CfgVehicles
 				"3as_PylonMissile_LAAT_8Rnd_Missile_AA", \
 				"3as_LAAT_8Rnd_Missile_AGM", \
 				"240Rnd_CMFlare_Chaff_Magazine", \
-				"240Rnd_CMFlare_Chaff_Magazine", \
+				"87th_LAAT_Cannon_Mag_HE", \
 				"87th_LAAT_Cannon_Mag_HE", \
 				"87th_LAAT_Cannon_Mag_HE", \
 				"87th_LAAT_Cannon_Mag_AP", \
-				"87th_LAAT_Cannon_Mag_AP" \
+				"87th_LAAT_Cannon_Mag_AP", \
+				"87th_LAAT_8Rnd_AGM_HEDP", \
+				"87th_LAAT_8Rnd_AGM_HEDP", \
+				"87th_LAAT_24Rnd_AGM_HE", \
+				"87th_LAAT_24Rnd_AGM_HE", \
+				"87th_LAAT_24Rnd_AGM_HE_las", \
+				"87th_LAAT_24Rnd_AGM_HE_las" \
 			}; \
 			class AnimationSources: AnimationSources \
 			{ \

@@ -2,6 +2,15 @@ class CfgWeapons
 {
 	class 3AS_ATRT_Uniform;
 	class CannonCore;
+	class RocketPods;
+	class missiles_DAGR: RocketPods
+	{
+		class HE;
+	};
+	class missiles_DAR: RocketPods
+	{
+		class HE;
+	};
 	class autocannon_Base_F: CannonCore
 	{
 		class player;
@@ -41,7 +50,7 @@ class CfgWeapons
 			{
 				reloadTime=0.24;
 				dispersion=0.0018;
-				magazineReloadTime=15;
+				magazineReloadTime=12.5;
 				sounds[]=
 				{
 					"StandardSound"
@@ -77,7 +86,7 @@ class CfgWeapons
 			{
 				"87th_LAAT_Cannon_Mag_AP"
 			};
-			magazineReloadTime=15;
+			magazineReloadTime=12.5;
 			class player: player
 			{
 				reloadTime=0.425;
@@ -107,6 +116,41 @@ class CfgWeapons
 					};
 				};
 			};
+		};
+	};
+	class 87th_LAAT_Missile_HEDP: weapon_AGM_65Launcher
+	{
+		displayName="Torrent Air-to-Ground Missile";
+		magazines[]=
+		{
+			"87th_LAAT_8Rnd_AGM_HEDP"
+		};
+		model="a3\weapons_f\empty.p3d";
+		class HE: HE
+		{
+			magazineReloadTime = 15;
+		};
+	};
+	class 87th_LAAT_Missile_HE: missiles_DAGR
+	{
+		displayName = "HE Missile";
+		magazines[]=
+		{
+			"87th_LAAT_24Rnd_AGM_HE_las"
+		};
+		model="a3\weapons_f\empty.p3d";
+	};
+	class 87th_LAAT_Rocket_HE: missiles_DAR
+	{
+		displayName = "HE Rocket";
+		magazines[]=
+		{
+			"87th_LAAT_24Rnd_AGM_HE"
+		};
+		model="a3\weapons_f\empty.p3d";
+		class HE: HE
+		{
+			magazineReloadTime = 10;
 		};
 	};
 
