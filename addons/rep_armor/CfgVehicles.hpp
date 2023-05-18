@@ -225,6 +225,7 @@ class CfgVehicles {
 		displayName = "[87th] Katarn Backpack";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\other\87th_Katarn_Backpack_co.paa) };
 	};
+
 	class 87th_Clone_Base: B_Soldier_F 
 	{
 		author = "Anorexican";
@@ -347,6 +348,28 @@ class CfgVehicles {
 		{
 			QPATHTOF(data\uniforms\arf\87th_ARF_Chest_Urban_co.paa),
 			QPATHTOF(data\uniforms\arf\87th_ARF_Legs_Urban_co.paa)
+		};
+	};
+	
+	class 87th_Commando_Base: B_Soldier_F 
+	{
+		author = "Anorexican";
+		scope = 1;
+		_generalMacro = "87th_Commando_Base";
+		displayName = "CloneCommandoBase";
+		side = 0;
+		faction = "87th_Legion";
+		uniformClass = "87th_Katarn_Armor";
+		model = "\3AS\3AS_Characters\Commando\3AS_Katarn_Armor.p3d";
+		hiddenSelections[]=
+		{
+			"Camo",
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\uniforms\87th_Katarn_Armor_co.paa),
+			"\3AS\3AS_Characters\Commando\data\Katarn_Undersuit_CO.paa"
 		};
 	};
 };
