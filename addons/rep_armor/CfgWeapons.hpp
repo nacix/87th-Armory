@@ -4,6 +4,7 @@ class CfgWeapons {
 	class NVGoggles;
 	class Uniform_Base;
 	class UniformItem;
+	class VestItem;
 	class 3as_ATRT_Helmet;
 	class 3as_Engineer_Helmet;
 	class 3as_P1_Base;
