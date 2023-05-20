@@ -1,6 +1,101 @@
 class CfgWeapons {
+	#define SET_ARMOR_VALS(baseArmor,pass,mult) \
+		armor = QUOTE(baseArmor*mult); \
+		passThrough = QUOTE(pass);
+
+	#define SET_ARMOR_HEAD(baseArmor,pass,headMult) \
+		class Head \
+		{ \
+			hitpointName = "HitHead"; \
+			SET_ARMOR_VALS(baseArmor,0.5,headMult) \
+		}; \
+		class Face \
+		{ \
+			hitpointName = "HitFace"; \
+			SET_ARMOR_VALS(baseArmor,0.5,headMult) \
+		}; \
+		class Neck \
+		{ \
+			hitpointName = "HitNeck"; \
+			SET_ARMOR_VALS(baseArmor,0.5,headMult) \
+		};
+	
+	#define SET_ARMOR_TORSO(baseArmor,pass,torsoMult) \
+		class Body \
+		{ \
+			hitpointName = "HitBody"; \
+			SET_ARMOR_VALS(baseArmor,pass*torsoMult,torsoMult) \
+		}; \
+		class Chest \
+		{ \
+			hitpointName = "HitChest"; \
+			SET_ARMOR_VALS(baseArmor,pass*torsoMult,torsoMult) \
+		}; \
+		class Diaphragm \
+		{ \
+			hitpointName = "HitDiaphragm"; \
+			SET_ARMOR_VALS(baseArmor,pass*torsoMult,torsoMult) \
+		}; \
+		class Abdomen \
+		{ \
+			hitpointName = "HitAbdomen"; \
+			SET_ARMOR_VALS(baseArmor,pass*torsoMult,torsoMult) \
+		}; \
+		class Pelvis \
+		{ \
+			hitpointName = "HitPelvis"; \
+			SET_ARMOR_VALS(baseArmor,pass*torsoMult,torsoMult) \
+		};
+
+	#define SET_ARMOR_ARMS(baseArmor,pass,armsMult) \
+		class Arms \
+		{ \
+			hitpointName = "HitArms"; \
+			SET_ARMOR_VALS(baseArmor,0.9,armsMult) \
+		}; \
+		class Hands \
+		{ \
+			hitpointName = "HitHands"; \
+			SET_ARMOR_VALS(baseArmor,0.9,armsMult) \
+		}; \
+		class LeftArm \
+		{ \
+			hitpointName = "HitLeftArm"; \
+			SET_ARMOR_VALS(baseArmor,0.9,armsMult) \
+		}; \
+		class RightArm \
+		{ \
+			hitpointName = "HitRightArm"; \
+			SET_ARMOR_VALS(baseArmor,0.9,armsMult) \
+		};
+
+	#define SET_ARMOR_LEGS(baseArmor,pass,legsMult) \
+		class Legs \
+		{ \
+			hitpointName = "HitLegs"; \
+			SET_ARMOR_VALS(baseArmor,0.9,legsMult) \
+		}; \
+		class LeftLeg \
+		{ \
+			hitpointName = "HitLeftLeg"; \
+			SET_ARMOR_VALS(baseArmor,0.9,legsMult) \
+		}; \
+		class RightLeg \
+		{ \
+			hitpointName = "HitRightLeg"; \
+			SET_ARMOR_VALS(baseArmor,0.9,legsMult) \
+		};
+
+	#define SET_ARMOR(baseArmor,pass,headMult,torsoMult,armsMult,legsMult) \
+		class HitpointsProtectionInfo \
+		{ \
+			SET_ARMOR_HEAD(baseArmor,pass,headMult) \
+			SET_ARMOR_TORSO(baseArmor,pass,torsoMult) \
+			SET_ARMOR_ARMS(baseArmor,pass,armsMult) \
+			SET_ARMOR_LEGS(baseArmor,pass,legsMult) \
+		};
+
 	class HeadgearItem;
-	class ItemInfo;
 	class NVGoggles;
 	class Uniform_Base;
 	class UniformItem;
