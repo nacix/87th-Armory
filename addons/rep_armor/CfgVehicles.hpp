@@ -236,6 +236,11 @@ class CfgVehicles {
 		faction = "87th_Legion";
 		uniformClass = "87th_Trooper_Uniform";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+		armor = 2;
+		armorStructural=4;
+		explosionShielding = 0.40;
+		minTotalDamageThreshold = 0.001;
+		impactDamageMultiplier = 0.5;
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -246,6 +251,50 @@ class CfgVehicles {
 		{
 			QPATHTOF(data\uniforms\ct\87th_Chest_co.paa),
 			QPATHTOF(data\uniforms\ct\87th_Legs_co.paa)
+		};
+		SET_ARMOR(11.5,0.8,7.25,0.01,0.25,0.4)
+		class Wounds
+		{
+			tex[]={};
+			mat[]=
+			{
+				"MRC\JLTS\Characters\CloneArmor\data\Clone_armor1.rvmat",
+				"MRC\JLTS\Characters\CloneArmor\data\Clone_armor1_injury.rvmat",
+				"MRC\JLTS\Characters\CloneArmor\data\Clone_armor1_injury.rvmat",
+				"MRC\JLTS\Characters\CloneArmor\data\Clone_armor2.rvmat",
+				"MRC\JLTS\Characters\CloneArmor\data\Clone_armor2_injury.rvmat",
+				"MRC\JLTS\Characters\CloneArmor\data\Clone_armor2_injury.rvmat",
+				"A3\Characters_F\Common\Data\basicbody.rvmat",
+				"A3\Characters_F\Common\Data\basicbody_injury.rvmat",
+				"A3\Characters_F\Common\Data\basicbody_injury.rvmat",
+				"a3\characters_f\heads\data\hl_white.rvmat",
+				"a3\characters_f\heads\data\hl_white_injury.rvmat",
+				"a3\characters_f\heads\data\hl_white_injury.rvmat",
+				"A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat",
+				"A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat",
+				"A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat",
+				"A3\Characters_F\Heads\Data\hl_white_02_bald_muscular.rvmat",
+				"A3\Characters_F\Heads\Data\hl_white_02_bald_muscular_injury.rvmat",
+				"A3\Characters_F\Heads\Data\hl_white_02_bald_muscular_injury.rvmat",
+				"A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat",
+				"A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat",
+				"A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat",
+				"A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat",
+				"A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat",
+				"A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat",
+				"A3\Characters_F\Heads\Data\hl_white_old.rvmat",
+				"A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat",
+				"A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat",
+				"A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat",
+				"A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat",
+				"A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat",
+				"A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular.rvmat",
+				"A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular_injury.rvmat",
+				"A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular_injury.rvmat",
+				"A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular.rvmat",
+				"A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular_injury.rvmat",
+				"A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular_injury.rvmat"
+			};
 		};
 	};
 	class 87th_Clone_P1_Base: 87th_Clone_Base
@@ -266,27 +315,6 @@ class CfgVehicles {
 		{
 			QPATHTOF(data\uniforms\ct\87th_Medic_Chest_co.paa),
 			QPATHTOF(data\uniforms\ct\87th_Legs_co.paa)
-		};
-	};
-	class 87th_Commando_Base: B_Soldier_F 
-	{
-		author = "Anorexican";
-		scope = 1;
-		_generalMacro = "87th_Commando_Base";
-		displayName = "CloneCommandoBase";
-		side = 0;
-		faction = "87th_Legion";
-		uniformClass = "87th_Katarn_Armor";
-		model = "\3AS\3AS_Characters\Commando\3AS_Katarn_Armor.p3d";
-		hiddenSelections[]=
-		{
-			"Camo",
-			"Camo1"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			QPATHTOF(data\uniforms\87th_Katarn_Armor_co.paa),
-			"\3AS\3AS_Characters\Commando\data\Katarn_Undersuit_CO.paa"
 		};
 	};
 
@@ -371,5 +399,6 @@ class CfgVehicles {
 			QPATHTOF(data\uniforms\87th_Katarn_Armor_co.paa),
 			"\3AS\3AS_Characters\Commando\data\Katarn_Undersuit_CO.paa"
 		};
+		SET_ARMOR(13.481,0.8,9,0.01,0.35,0.25)
 	};
 };
