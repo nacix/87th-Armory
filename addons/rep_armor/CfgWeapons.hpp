@@ -102,6 +102,101 @@ class CfgWeapons {
 			hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\ct\##TAG##_##className##_Helmet_co.paa) }; \
 		};
 
+	#define ADD_ARF_CAMO(className,rawName,header,camoType,isDark) \
+		class TAG##_##header##_##camoType##: TAG##_##header \
+		{ \
+			displayName = NAME_PRETTY(rawName ##(##camoType##)); \
+			hiddenSelectionsTextures[]= \
+			{ \
+				QPATHTOF(data\helmets\arf\##className##\##TAG##_##header##_##camoType##_co.paa), \
+				"", \
+				QPATHTOF(data\helmets\arf\ARF_Visor_co.paa) \
+			}; \
+			#if isDark \
+				hiddenSelectionsMaterials[]= \
+				{ \
+					QPATHTOF(data\helmets\arf\ARFHelmet##className##Dark.rvmat), \
+					"", \
+					"ls_armor_bluefor\helmet\gar\arf\data\visor.rvmat" \
+				}; \
+			#endif \
+		}; \
+		class TAG##_##header##_##camoType##_P2: TAG##_##header##_P2 \
+		{ \
+			displayname = NAME_PRETTY(rawName ##(##camoType## - P2)); \
+			hiddenSelectionsTextures[]= \
+			{ \
+				QPATHTOF(data\helmets\arf\##className##\##TAG##_##header##_##camoType##_co.paa), \
+				"ls_armor_bluefor\helmet\gar\arf\data\camo2_co.paa", \
+				QPATHTOF(data\helmets\arf\ARF_Visor_co.paa) \
+			}; \
+			#if isDark \
+				hiddenSelectionsMaterials[]= \
+				{ \
+					QPATHTOF(data\helmets\arf\ARFHelmet##className##Dark.rvmat), \
+					"ls_armor_bluefor\helmet\gar\arf\data\camo2.rvmat", \
+					"ls_armor_bluefor\helmet\gar\arf\data\visor.rvmat" \
+				}; \
+			#endif \
+		};
+	#define ADD_ARF_HELMET_CAMOS(className,rawName,header) \
+		ADD_ARF_CAMO(className, rawName, header, Desert, 0) \
+		ADD_ARF_CAMO(className, rawName, header, Sarid, 0) \
+		ADD_ARF_CAMO(className, rawName, header, Woodland, 1) \
+		ADD_ARF_CAMO(className, rawName, header, Winter, 0) \
+		ADD_ARF_CAMO(className, rawName, header, Urban, 1)
+	#define ADD_ARF_HELMET(className,rawName) \
+		class TAG##_ARF_Helmet_##className##: TAG##_ARF_Helmet \
+		{ \
+			displayName = NAME_PRETTY(rawName); \
+			hiddenSelectionsTextures[]= \
+			{ \
+				QPATHTOF(data\helmets\arf\##className##\##TAG##_ARF_Helmet_##className##_co.paa), \
+				"", \
+				QPATHTOF(data\helmets\arf\ARF_Visor_co.paa) \
+			}; \
+			hiddenSelectionsMaterials[]= \
+			{ \
+				QPATHTOF(data\helmets\arf\ARFHelmet##className##.rvmat), \
+				"", \
+				"ls_armor_bluefor\helmet\gar\arf\data\visor.rvmat" \
+			}; \
+		}; \
+		class TAG##_ARF_Helmet_##className##_P2: TAG##_ARF_Helmet_P2 \
+		{ \
+			displayName = NAME_PRETTY(rawName ##(P2)); \
+			hiddenSelectionsTextures[]= \
+			{ \
+				QPATHTOF(data\helmets\arf\##className##\##TAG##_ARF_Helmet_##className##_co.paa), \
+				"ls_armor_bluefor\helmet\gar\arf\data\camo2_co.paa", \
+				QPATHTOF(data\helmets\arf\ARF_Visor_co.paa) \
+			}; \
+			hiddenSelectionsMaterials[]= \
+			{ \
+				QPATHTOF(data\helmets\arf\ARFHelmet##className##.rvmat), \
+				"ls_armor_bluefor\helmet\gar\arf\data\camo2.rvmat", \
+				"ls_armor_bluefor\helmet\gar\arf\data\visor.rvmat" \
+			}; \
+		}; \
+		ADD_ARF_HELMET_CAMOS(className, rawName, ARF_Helmet_##className)
+
+	#define ADD_ARF_UNIFORM(camoType) \
+		class TAG##_ARF_Uniform_##camoType##: TAG##_ARF_Uniform \
+		{ \
+			displayName = NAME_PRETTY(ARF Armor (##camoType##)); \
+			class ItemInfo: ItemInfo \
+			{ \
+				uniformClass = QUOTE(TAG##_ARF_Base_##camoType##); \
+			}; \
+		};
+
+	#define ADD_BARC_HELMET_CAMO(camoType) \
+		class TAG##_BARC_Helmet_##camoType##: TAG##_BARC_Helmet \
+		{ \
+			displayName = NAME_PRETTY(BARC Helmet (##camoType##)); \
+			hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\barc\trooper\87th_BARC_Helmet_##camoType##_co.paa) }; \
+		};
+
 	class HeadgearItem;
 	class NVGoggles;
 	class Uniform_Base;
@@ -215,7 +310,6 @@ class CfgWeapons {
 			};
 		};
 	};
-
 	class 87th_RTO_Helmet: ls_sob_phase2SpecOp_helmet
 	{
 		author = "Stim";
@@ -245,7 +339,7 @@ class CfgWeapons {
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			QPATHTOF(data\helmets\arf\ARFHelmet.rvmat),
+			QPATHTOF(data\helmets\arf\ARFHelmetTrooper.rvmat),
 			"",
 			"ls_armor_bluefor\helmet\gar\arf\data\visor.rvmat"
 		};
@@ -264,249 +358,16 @@ class CfgWeapons {
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			QPATHTOF(data\helmets\arf\ARFHelmet.rvmat),
+			QPATHTOF(data\helmets\arf\ARFHelmetTrooper.rvmat),
 			"ls_armor_bluefor\helmet\gar\arf\data\camo2.rvmat",
 			"ls_armor_bluefor\helmet\gar\arf\data\visor.rvmat"
 		};
 		subItems[] = {};
 	};
 
-	class 87th_ARF_Helmet_Desert: 87th_ARF_Helmet
-	{
-		displayname = "[87th] ARF Helmet (Desert)";
-		hiddenSelectionsTextures[]=
-		{
-			QPATHTOF(data\helmets\arf\trooper\87th_ARF_Helmet_Desert_co.paa),
-			"",
-			QPATHTOF(data\helmets\arf\ARF_Visor_co.paa)
-		};
-	};
-	class 87th_ARF_Helmet_Sarid: 87th_ARF_Helmet
-	{
-		displayname = "[87th] ARF Helmet (Sarid)";
-		hiddenSelectionsTextures[]=
-		{
-			QPATHTOF(data\helmets\arf\trooper\87th_ARF_Helmet_Sarid_co.paa),
-			"",
-			QPATHTOF(data\helmets\arf\ARF_Visor_co.paa)
-		};
-	};
-	class 87th_ARF_Helmet_Woodland: 87th_ARF_Helmet
-	{
-		displayname = "[87th] ARF Helmet (Woodland)";
-		hiddenSelectionsTextures[]=
-		{
-			QPATHTOF(data\helmets\arf\trooper\87th_ARF_Helmet_Woodland_co.paa),
-			"",
-			QPATHTOF(data\helmets\arf\ARF_Visor_co.paa)
-		};
-	};
-	class 87th_ARF_Helmet_Winter: 87th_ARF_Helmet
-	{
-		displayname = "[87th] ARF Helmet (Winter)";
-		hiddenSelectionsTextures[]=
-		{
-			QPATHTOF(data\helmets\arf\trooper\87th_ARF_Helmet_Winter_co.paa),
-			"",
-			QPATHTOF(data\helmets\arf\ARF_Visor_co.paa)
-		};
-	};
-	class 87th_ARF_Helmet_Urban: 87th_ARF_Helmet
-	{
-		displayname = "[87th] ARF Helmet (Urban)";
-		hiddenSelectionsTextures[]=
-		{
-			QPATHTOF(data\helmets\arf\trooper\87th_ARF_Helmet_Urban_co.paa),
-			"",
-			QPATHTOF(data\helmets\arf\ARF_Visor_co.paa)
-		};
-	};
+	ADD_ARF_HELMET_CAMOS(Trooper, ARF Helmet, ARF_Helmet)
 
-	class 87th_ARF_Helmet_Desert_P2: 87th_ARF_Helmet
-	{
-		displayname = "[87th] ARF Helmet (Desert - P2)";
-		hiddenSelectionsTextures[]=
-		{
-			QPATHTOF(data\helmets\arf\trooper\87th_ARF_Helmet_Desert_co.paa),
-			"ls_armor_bluefor\helmet\gar\arf\data\camo2_co.paa",
-			QPATHTOF(data\helmets\arf\ARF_Visor_co.paa)
-		};
-	};
-	class 87th_ARF_Helmet_Sarid_P2: 87th_ARF_Helmet
-	{
-		displayname = "[87th] ARF Helmet (Sarid - P2)";
-		hiddenSelectionsTextures[]=
-		{
-			QPATHTOF(data\helmets\arf\trooper\87th_ARF_Helmet_Sarid_co.paa),
-			"ls_armor_bluefor\helmet\gar\arf\data\camo2_co.paa",
-			QPATHTOF(data\helmets\arf\ARF_Visor_co.paa)
-		};
-	};
-	class 87th_ARF_Helmet_Woodland_P2: 87th_ARF_Helmet
-	{
-		displayname = "[87th] ARF Helmet (Woodland - P2)";
-		hiddenSelectionsTextures[]=
-		{
-			QPATHTOF(data\helmets\arf\trooper\87th_ARF_Helmet_Woodland_co.paa),
-			"ls_armor_bluefor\helmet\gar\arf\data\camo2_co.paa",
-			QPATHTOF(data\helmets\arf\ARF_Visor_co.paa)
-		};
-	};
-	class 87th_ARF_Helmet_Winter_P2: 87th_ARF_Helmet
-	{
-		displayname = "[87th] ARF Helmet (Winter - P2)";
-		hiddenSelectionsTextures[]=
-		{
-			QPATHTOF(data\helmets\arf\trooper\87th_ARF_Helmet_Winter_co.paa),
-			"ls_armor_bluefor\helmet\gar\arf\data\camo2_co.paa",
-			QPATHTOF(data\helmets\arf\ARF_Visor_co.paa)
-		};
-	};
-	class 87th_ARF_Helmet_Urban_P2: 87th_ARF_Helmet
-	{
-		displayname = "[87th] ARF Helmet (Urban - P2)";
-		hiddenSelectionsTextures[]=
-		{
-			QPATHTOF(data\helmets\arf\trooper\87th_ARF_Helmet_Urban_co.paa),
-			"ls_armor_bluefor\helmet\gar\arf\data\camo2_co.paa",
-			QPATHTOF(data\helmets\arf\ARF_Visor_co.paa)
-		};
-	};
-
-	class 87th_ARF_Helmet_Tasty: 87th_ARF_Helmet
-	{
-		displayname = "[87th] Tasty's ARF Helmet";
-		hiddenSelectionsTextures[]=
-		{
-			QPATHTOF(data\helmets\arf\tasty\87th_ARF_Helmet_Tasty_co.paa),
-			"",
-			QPATHTOF(data\helmets\arf\ARF_Visor_co.paa)
-		};
-		hiddenSelectionsMaterials[]=
-		{
-			QPATHTOF(data\helmets\arf\tasty\ARFHelmetTasty.rvmat),
-			"",
-			"ls_armor_bluefor\helmet\gar\arf\data\visor.rvmat"
-		};
-	};
-	class 87th_ARF_Helmet_Tasty_P2: 87th_ARF_Helmet_P2
-	{
-		displayname = "[87th] Tasty's ARF Helmet (P2)";
-		hiddenSelectionsTextures[]=
-		{
-			QPATHTOF(data\helmets\arf\tasty\87th_ARF_Helmet_Tasty_co.paa),
-			"ls_armor_bluefor\helmet\gar\arf\data\camo2_co.paa",
-			QPATHTOF(data\helmets\arf\ARF_Visor_co.paa)
-		};
-		hiddenSelectionsMaterials[]=
-		{
-			QPATHTOF(data\helmets\arf\tasty\ARFHelmetTasty.rvmat),
-			"ls_armor_bluefor\helmet\gar\arf\data\camo2.rvmat",
-			"ls_armor_bluefor\helmet\gar\arf\data\visor.rvmat"
-		};
-	};
-
-	class 87th_ARF_Helmet_Tasty_Desert: 87th_ARF_Helmet_Tasty
-	{
-		displayname = "[87th] Tasty's ARF Helmet (Desert)";
-		hiddenSelectionsTextures[]=
-		{
-			QPATHTOF(data\helmets\arf\tasty\87th_ARF_Helmet_Tasty_Desert_co.paa),
-			"",
-			QPATHTOF(data\helmets\arf\ARF_Visor_co.paa)
-		};
-	};
-	class 87th_ARF_Helmet_Tasty_Sarid: 87th_ARF_Helmet_Tasty
-	{
-		displayname = "[87th] Tasty's ARF Helmet (Sarid)";
-		hiddenSelectionsTextures[]=
-		{
-			QPATHTOF(data\helmets\arf\tasty\87th_ARF_Helmet_Tasty_Sarid_co.paa),
-			"",
-			QPATHTOF(data\helmets\arf\ARF_Visor_co.paa)
-		};
-	};
-	class 87th_ARF_Helmet_Tasty_Woodland: 87th_ARF_Helmet_Tasty
-	{
-		displayname = "[87th] Tasty's ARF Helmet (Woodland)";
-		hiddenSelectionsTextures[]=
-		{
-			QPATHTOF(data\helmets\arf\tasty\87th_ARF_Helmet_Tasty_Woodland_co.paa),
-			"",
-			QPATHTOF(data\helmets\arf\ARF_Visor_co.paa)
-		};
-	};
-	class 87th_ARF_Helmet_Tasty_Winter: 87th_ARF_Helmet_Tasty
-	{
-		displayname = "[87th] Tasty's ARF Helmet (Winter)";
-		hiddenSelectionsTextures[]=
-		{
-			QPATHTOF(data\helmets\arf\tasty\87th_ARF_Helmet_Tasty_Winter_co.paa),
-			"",
-			QPATHTOF(data\helmets\arf\ARF_Visor_co.paa)
-		};
-	};
-	class 87th_ARF_Helmet_Tasty_Urban: 87th_ARF_Helmet_Tasty
-	{
-		displayname = "[87th] Tasty's ARF Helmet (Urban)";
-		hiddenSelectionsTextures[]=
-		{
-			QPATHTOF(data\helmets\arf\tasty\87th_ARF_Helmet_Tasty_Urban_co.paa),
-			"",
-			QPATHTOF(data\helmets\arf\ARF_Visor_co.paa)
-		};
-	};
-
-	class 87th_ARF_Helmet_Tasty_Desert_P2: 87th_ARF_Helmet_Tasty_P2
-	{
-		displayname = "[87th] Tasty's ARF Helmet (Desert - P2)";
-		hiddenSelectionsTextures[]=
-		{
-			QPATHTOF(data\helmets\arf\tasty\87th_ARF_Helmet_Tasty_Desert_co.paa),
-			"ls_armor_bluefor\helmet\gar\arf\data\camo2_co.paa",
-			QPATHTOF(data\helmets\arf\ARF_Visor_co.paa)
-		};
-	};
-	class 87th_ARF_Helmet_Tasty_Sarid_P2: 87th_ARF_Helmet_Tasty_P2
-	{
-		displayname = "[87th] Tasty's ARF Helmet (Sarid - P2)";
-		hiddenSelectionsTextures[]=
-		{
-			QPATHTOF(data\helmets\arf\tasty\87th_ARF_Helmet_Tasty_Sarid_co.paa),
-			"ls_armor_bluefor\helmet\gar\arf\data\camo2_co.paa",
-			QPATHTOF(data\helmets\arf\ARF_Visor_co.paa)
-		};
-	};
-	class 87th_ARF_Helmet_Tasty_Woodland_P2: 87th_ARF_Helmet_Tasty_P2
-	{
-		displayname = "[87th] Tasty's ARF Helmet (Woodland - P2)";
-		hiddenSelectionsTextures[]=
-		{
-			QPATHTOF(data\helmets\arf\tasty\87th_ARF_Helmet_Tasty_Woodland_co.paa),
-			"ls_armor_bluefor\helmet\gar\arf\data\camo2_co.paa",
-			QPATHTOF(data\helmets\arf\ARF_Visor_co.paa)
-		};
-	};
-	class 87th_ARF_Helmet_Tasty_Winter_P2: 87th_ARF_Helmet_Tasty_P2
-	{
-		displayname = "[87th] Tasty's ARF Helmet (Winter - P2)";
-		hiddenSelectionsTextures[]=
-		{
-			QPATHTOF(data\helmets\arf\tasty\87th_ARF_Helmet_Tasty_Winter_co.paa),
-			"ls_armor_bluefor\helmet\gar\arf\data\camo2_co.paa",
-			QPATHTOF(data\helmets\arf\ARF_Visor_co.paa)
-		};
-	};
-	class 87th_ARF_Helmet_Tasty_Urban_P2: 87th_ARF_Helmet_Tasty_P2
-	{
-		displayname = "[87th] Tasty's ARF Helmet (Urban - P2)";
-		hiddenSelectionsTextures[]=
-		{
-			QPATHTOF(data\helmets\arf\tasty\87th_ARF_Helmet_Tasty_Urban_co.paa),
-			"ls_armor_bluefor\helmet\gar\arf\data\camo2_co.paa",
-			QPATHTOF(data\helmets\arf\ARF_Visor_co.paa)
-		};
-	};
+	ADD_ARF_HELMET(Tasty, Tasty's ARF Helmet)
 
 	class 87th_BARC_Helmet: JLTS_CloneHelmetBARC
 	{
@@ -514,31 +375,12 @@ class CfgWeapons {
 		displayname = "[87th] BARC Helmet";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\barc\trooper\87th_BARC_Helmet_co.paa) };
 	};
-	class 87th_BARC_Helmet_Desert: 87th_BARC_Helmet
-	{
-		displayname = "[87th] BARC Helmet (Desert)";
-		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\barc\trooper\87th_BARC_Helmet_Desert_co.paa) };
-	};
-	class 87th_BARC_Helmet_Sarid: 87th_BARC_Helmet
-	{
-		displayname = "[87th] BARC Helmet (Sarid)";
-		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\barc\trooper\87th_BARC_Helmet_Sarid_co.paa) };
-	};
-	class 87th_BARC_Helmet_Woodland: 87th_BARC_Helmet
-	{
-		displayname = "[87th] BARC Helmet (Woodland)";
-		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\barc\trooper\87th_BARC_Helmet_Woodland_co.paa) };
-	};
-	class 87th_BARC_Helmet_Winter: 87th_BARC_Helmet
-	{
-		displayname = "[87th] BARC Helmet (Winter)";
-		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\barc\trooper\87th_BARC_Helmet_Winter_co.paa) };
-	};
-	class 87th_BARC_Helmet_Urban: 87th_BARC_Helmet
-	{
-		displayname = "[87th] BARC Helmet (Urban)";
-		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\barc\trooper\87th_BARC_Helmet_Urban_co.paa) };
-	};
+
+	ADD_BARC_HELMET_CAMO(Desert)
+	ADD_BARC_HELMET_CAMO(Sarid)
+	ADD_BARC_HELMET_CAMO(Woodland)
+	ADD_BARC_HELMET_CAMO(Urban)
+	ADD_BARC_HELMET_CAMO(Winter)
 
 	class 87th_Airborne_Helmet: JLTS_CloneHelmetAB
 	{
