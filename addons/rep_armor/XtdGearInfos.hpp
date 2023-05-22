@@ -10,19 +10,42 @@ class XtdGearInfos
 			mandible = "None";
 			camo = "None";
 		};
-		class 87th_ARF_Helmet_Desert
-		{
-			model = "87th_ARF_Helmet";
-			variant = "Trooper";
-			mandible = "None";
-			camo = "Desert";
+		#define XTD_ARF_HELMET_CAMO(className,variantName,camoType) \
+			class TAG##_ARF_##className##_##camoType \
+			{ \
+				model = QUOTE(TAG##_ARF_Helmet); \
+				variant = QUOTE(variantName); \
+				mandible = "None"; \
+				camo = QUOTE(camoType); \
+			}; \
+			class TAG##_ARF_##className##_##camoType##_P2 \
+			{ \
+				model = QUOTE(TAG##_ARF_Helmet); \
+				variant = QUOTE(variantName); \
+				mandible = "Attached"; \
+				camo = QUOTE(camoType); \
 		};
-		class 87th_ARF_Helmet_Sarid
-		{
-			model = "87th_ARF_Helmet";
-			variant = "Trooper";
-			mandible = "None";
-			camo = "Sarid";
+		#define XTD_ARF_HELMET(variantName,className) \
+			class TAG##_ARF_##className \
+			{ \
+				model = QUOTE(TAG##_ARF_Helmet); \
+				variant = QUOTE(variantName); \
+				mandible = "None"; \
+				camo = "None"; \
+			}; \
+			class TAG##_ARF_##className##_P2 \
+			{ \
+				model = QUOTE(TAG##_ARF_Helmet); \
+				variant = QUOTE(variantName); \
+				mandible = "Attached"; \
+				camo = "None"; \
+			}; \
+			XTD_ARF_HELMET_CAMO(className, variantName, Desert) \
+			XTD_ARF_HELMET_CAMO(className, variantName, Sarid) \
+			XTD_ARF_HELMET_CAMO(className, variantName, Woodland) \
+			XTD_ARF_HELMET_CAMO(className, variantName, Winter) \
+			XTD_ARF_HELMET_CAMO(className, variantName, Urban)
+
 		};
 		class 87th_ARF_Helmet_Woodland
 		{
