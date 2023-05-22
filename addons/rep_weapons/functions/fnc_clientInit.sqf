@@ -21,9 +21,3 @@ if (isServer && !hasInterface) exitWith {}; // Only run on clients
 LOG_1("clientInit: [%1]", player);
 
 [] call FUNC(handleMuzzleSwitch);
-
-/*
-if (GETVAR(_unit,GVAR(enabled),true)) then {
-	player call FUNC(handleOneHanding);
-};
-*/

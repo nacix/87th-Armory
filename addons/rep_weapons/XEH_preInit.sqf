@@ -19,12 +19,14 @@ ADDON = true;
 		LOG_2("Setting 'ax87_rep_weapons_enabled' (one-handing) set to [%1] on client [%2]",_this,player);
 	
 		if (_this) then {
+			// Make initial calls to one-handing scripts
 			if (GETVAR(player,GVAR(featureCameraEH),-1) == -1) then {
 				LOG_1("Client [%1]: Reinitializing one-handing handler and attempting handPos update",player);
 				player call FUNC(handleOneHanding);
 				[player, true] call FUNC(setHandPos);
 			};
 		} else {
+			// Make calls to terminate all one-handing scripts
 			LOG_1("Client [%1]: Disabling all one-handing functionality",player);
 			if (currentWeapon player isEqualTo handgunWeapon player && GETVAR(player,GVAR(usingOneHand),false)) then {
 				LOG_1("Unit [%1]: Preparing to disable one-handing...",player);
@@ -44,9 +46,11 @@ ADDON = true;
 	0,
 	{
 		LOG_2("Setting 'ax87_rep_weapons_allowOneHandWalking' set to [%1] on client [%2]",_this,player);
+
+		// Exit function if the player isn't currently one-handing
 		if ((!GETGVAR(enabled,true) && !GETVAR(player,GVAR(usingOneHand),true)) || vehicle player isNotEqualTo player) exitWith {};
 
-		if (_this) then {
+		if (_this) then { 
 			LOG_2("Client [%1]: Calling handPos with value [%2] (allowOneHandWalking enabled)",player,true);
 			SETVAR(player,GVAR(isUnitWalking),false);
 			[player, true] call FUNC(setHandPos);
@@ -97,10 +101,10 @@ ADDON = true;
 	0,
 	{
 		LOG_2("Setting 'ax87_rep_weapons_tagList' set to [%1] on client [%2]",_this,player);
-		if ((trim _this) isEqualTo "") exitWith { GVAR(tagList) = [""] };
+		if ((trim _this) isEqualTo "") exitWith { GVAR(tagList) = [""] }; // Exit function if tag array is empty
 
+		// Trim and format every element in the tag array and pass the results to a GVAR
 		private _tagArray = ([trim toLower _this, ","] call CBA_fnc_split) apply { trim _x };
-
 		GVAR(tagList) = _tagArray;
 	},
 	false
@@ -143,11 +147,10 @@ ADDON = true;
 	0,
 	{
 		LOG_2("Setting 'ax87_rep_weapons_weaponList' set to [%1] on client [%2]",_this,player);
+		if ((trim _this) isEqualTo "") exitWith { GVAR(weaponList) = [""] }; // Exit function if weapon array is empty
 
-		if ((trim _this) isEqualTo "") exitWith { GVAR(weaponList) = [""] };
-
+		// Trim and format every element in the weapon array and pass the results to a GVAR
 		private _weaponArray = ([trim toLower _this, ","] call CBA_fnc_split) apply { trim _x };
-
 		GVAR(weaponList) = _weaponArray;
 	},
 	false
