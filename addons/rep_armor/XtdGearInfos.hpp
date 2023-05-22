@@ -46,28 +46,25 @@ class XtdGearInfos
 			XTD_ARF_HELMET_CAMO(className, variantName, Winter) \
 			XTD_ARF_HELMET_CAMO(className, variantName, Urban)
 
+		#define XTD_ARF_UNIFORM_CAMO(className,variantName,camoType) \
+			class TAG##_ARF_##className##_##camoType \
+			{ \
+				model = QUOTE(TAG##_ARF_Uniform); \
+				variant = QUOTE(variantName); \
+				camo = QUOTE(camoType); \
 		};
-		class 87th_ARF_Helmet_Woodland
-		{
-			model = "87th_ARF_Helmet";
-			variant = "Trooper";
-			mandible = "None";
-			camo = "Woodland";
-		};
-		class 87th_ARF_Helmet_Winter
-		{
-			model = "87th_ARF_Helmet";
-			variant = "Trooper";
-			mandible = "None";
-			camo = "Winter";
-		};
-		class 87th_ARF_Helmet_Urban
-		{
-			model = "87th_ARF_Helmet";
-			variant = "Trooper";
-			mandible = "None";
-			camo = "Urban";
-		};
+		#define XTD_ARF_UNIFORM(variantName,className) \
+			class TAG##_ARF_##className \
+			{ \
+				model = QUOTE(TAG##_ARF_Uniform); \
+				variant = QUOTE(variantName); \
+				camo = "None"; \
+			}; \
+			XTD_ARF_UNIFORM_CAMO(className, variantName, Desert) \
+			XTD_ARF_UNIFORM_CAMO(className, variantName, Sarid) \
+			XTD_ARF_UNIFORM_CAMO(className, variantName, Woodland) \
+			XTD_ARF_UNIFORM_CAMO(className, variantName, Winter) \
+			XTD_ARF_UNIFORM_CAMO(className, variantName, Urban)
 
 		// Mandibled ARF Helmet Variants
 		class 87th_ARF_Helmet_P2
