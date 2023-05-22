@@ -465,7 +465,6 @@ class CfgWeapons {
 			SET_ARMOR(1.4,0.9,0,1,0.25,0.45)
 		};
 	};
-
 	class 87th_Medic_Vest: JLTS_CloneVestAirborne
 	{
 		author = "Stim";
@@ -604,6 +603,24 @@ class CfgWeapons {
 			containerClass = "Supply150";
 		};
 	};
+
+	class 87th_ARF_Uniform: 87th_Trooper_Uniform
+	{
+		author = "Stim & Anorexican";
+		displayName = "[87th] ARF Armor";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass = "87th_ARF_Base";
+			containerClass = "Supply200";
+		};
+	};
+	
+	ADD_ARF_UNIFORM(Desert)
+	ADD_ARF_UNIFORM(Sarid)
+	ADD_ARF_UNIFORM(Woodland)
+	ADD_ARF_UNIFORM(Winter)
+	ADD_ARF_UNIFORM(Urban)
+
 	class 87th_Katarn_Armor: Uniform_Base
 	{
 		author = "Stim";
@@ -619,57 +636,6 @@ class CfgWeapons {
 			uniformType = "Neopren";
 			containerClass = "Supply150";
 			mass = 40;
-		};
-	};
-
-	class 87th_ARF_Uniform: 87th_Trooper_Uniform
-	{
-		author = "Stim & Anorexican";
-		displayName = "[87th] ARF Armor";
-		class ItemInfo: ItemInfo
-		{
-			uniformClass = "87th_ARF_Base";
-			containerClass = "Supply200";
-		};
-	};
-	class 87th_ARF_Uniform_Desert: 87th_ARF_Uniform
-	{
-		displayName = "[87th] ARF Armor (Desert)";
-		class ItemInfo: ItemInfo
-		{
-			uniformClass = "87th_ARF_Base_Desert";
-		};
-	};
-	class 87th_ARF_Uniform_Sarid: 87th_ARF_Uniform
-	{
-		displayName = "[87th] ARF Armor (Sarid)";
-		class ItemInfo: ItemInfo
-		{
-			uniformClass = "87th_ARF_Base_Sarid";
-		};
-	};
-	class 87th_ARF_Uniform_Woodland: 87th_ARF_Uniform
-	{
-		displayName = "[87th] ARF Armor (Woodland)";
-		class ItemInfo: ItemInfo
-		{
-			uniformClass = "87th_ARF_Base_Woodland";
-		};
-	};
-	class 87th_ARF_Uniform_Winter: 87th_ARF_Uniform
-	{
-		displayName = "[87th] ARF Armor (Winter)";
-		class ItemInfo: ItemInfo
-		{
-			uniformClass = "87th_ARF_Base_Winter";
-		};
-	};
-	class 87th_ARF_Uniform_Urban: 87th_ARF_Uniform
-	{
-		displayName = "[87th] ARF Armor (Urban)";
-		class ItemInfo: ItemInfo
-		{
-			uniformClass = "87th_ARF_Base_Urban";
 		};
 	};
 };
