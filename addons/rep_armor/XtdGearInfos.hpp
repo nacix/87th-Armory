@@ -2,14 +2,14 @@ class XtdGearInfos
 {
 	class CfgWeapons
 	{
-		// Basic ARF Helmet Variants
-		class 87th_ARF_Helmet
-		{
-			model = "87th_ARF_Helmet";
-			variant = "Trooper";
-			mandible = "None";
-			camo = "None";
+		#define XTD_P2_HELMET(className,variantName,customName) \
+			class TAG##_##className##_Helmet \
+			{ \
+				model = QUOTE(TAG##_P2_Helmet); \
+				variant = QUOTE(variantName); \
+				custom = QUOTE(customName); \
 		};
+
 		#define XTD_ARF_HELMET_CAMO(className,variantName,camoType) \
 			class TAG##_ARF_##className##_##camoType \
 			{ \
