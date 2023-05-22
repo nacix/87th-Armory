@@ -66,49 +66,25 @@ class XtdGearInfos
 			XTD_ARF_UNIFORM_CAMO(className, variantName, Winter) \
 			XTD_ARF_UNIFORM_CAMO(className, variantName, Urban)
 
-		// Mandibled ARF Helmet Variants
-		class 87th_ARF_Helmet_P2
-		{
-			model = "87th_ARF_Helmet";
-			variant = "Trooper";
-			mandible = "Attached";
-			camo = "None";
+		#define XTD_BARC_HELMET_CAMO(className,variantName,camoType) \
+			class TAG##_BARC_##className##_##camoType \
+			{ \
+				model = QUOTE(TAG##_BARC_Helmet); \
+				variant = QUOTE(variantName); \
+				camo = QUOTE(camoType); \
 		};
-		class 87th_ARF_Helmet_Desert_P2
-		{
-			model = "87th_ARF_Helmet";
-			variant = "Trooper";
-			mandible = "Attached";
-			camo = "Desert";
-		};
-		class 87th_ARF_Helmet_Sarid_P2
-		{
-			model = "87th_ARF_Helmet";
-			variant = "Trooper";
-			mandible = "Attached";
-			camo = "Sarid";
-		};
-		class 87th_ARF_Helmet_Woodland_P2
-		{
-			model = "87th_ARF_Helmet";
-			variant = "Trooper";
-			mandible = "Attached";
-			camo = "Woodland";
-		};
-		class 87th_ARF_Helmet_Winter_P2
-		{
-			model = "87th_ARF_Helmet";
-			variant = "Trooper";
-			mandible = "Attached";
-			camo = "Winter";
-		};
-		class 87th_ARF_Helmet_Urban_P2
-		{
-			model = "87th_ARF_Helmet";
-			variant = "Trooper";
-			mandible = "Attached";
-			camo = "Urban";
-		};
+		#define XTD_BARC_HELMET(variantName,className) \
+			class TAG##_BARC_##className \
+			{ \
+				model = QUOTE(TAG##_BARC_Helmet); \
+				variant = QUOTE(variantName); \
+				camo = "None"; \
+			}; \
+			XTD_BARC_HELMET_CAMO(className, variantName, Desert) \
+			XTD_BARC_HELMET_CAMO(className, variantName, Sarid) \
+			XTD_BARC_HELMET_CAMO(className, variantName, Woodland) \
+			XTD_BARC_HELMET_CAMO(className, variantName, Winter) \
+			XTD_BARC_HELMET_CAMO(className, variantName, Urban)
 
 		// Basic ARF Helmet Variants (Tasty)
 		class 87th_ARF_Helmet_Tasty
