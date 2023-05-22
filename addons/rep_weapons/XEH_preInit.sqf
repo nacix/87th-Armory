@@ -13,7 +13,7 @@ ADDON = true;
 	"CHECKBOX",
 	["Enable", "Toggles whether or not one-handing should be possible"],
 	["87th Legion - Sidearms", "[1] - Global Settings"],
-	true,
+	false,
 	0,
 	{
 		LOG_2("Setting 'ax87_rep_weapons_enabled' (one-handing) set to [%1] on client [%2]",_this,player);
