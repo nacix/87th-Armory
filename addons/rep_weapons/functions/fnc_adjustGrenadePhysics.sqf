@@ -19,7 +19,7 @@
 
 params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
 
-if (!(isServer) || _weapon != "Throw" || !("87th" in _muzzle)) exitWith {};
+if (!(isServer) || _weapon isNotEqualTo "Throw" || !("87th" in _muzzle)) exitWith {};
 
 [{(position _this) select 2 < 0.2}, {
 	_velocity = velocity _this;
