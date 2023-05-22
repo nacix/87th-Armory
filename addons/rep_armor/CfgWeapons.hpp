@@ -430,14 +430,11 @@ class CfgWeapons {
 		};
 	};
 
-	class 87th_NVG: NVGoggles
+	class 87th_NVG_Base: NVGoggles
 	{
 		author = "Stim";
-		displayname = "[87th] NVG";
-		model = "\MRC\JLTS\characters\CloneArmor\CloneNVG_off.p3d";
+		scope = 0;
 		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] =  { QPATHTOF(data\other\87th_NVG_co.paa) };
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_nvg_ui_ca.paa";
 		visionMode[]= 
 		{
 			"Normal",
@@ -448,11 +445,57 @@ class CfgWeapons {
 		class ItemInfo
 		{
 			type = 616;
-			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneNVG_on.p3d";
-			modelOff = "\MRC\JLTS\characters\CloneArmor\CloneNVG_off.p3d";
 			mass = 20;
 			hiddenSelections[] = {"camo1"};
 		};
+	};
+	
+	class 87th_Rangefinder: 87th_NVG_Base
+	{
+		displayName = "[87th] Rangefinder";
+		scope = 2;
+		model = "\MRC\JLTS\characters\CloneArmor\CloneNVGRange_off.p3d";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_nvg_range_ui_ca.paa";
+		hiddenSelectionsTextures[] = { QPATHTOF(data\other\87th_Rangefinder_co.paa) };
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneNVGRange_on.p3d";
+			modelOff = "\MRC\JLTS\characters\CloneArmor\CloneNVGRange_off.p3d";
+		};
+	};
+
+	class 87th_Macrobinocular: 87th_NVG_Base
+	{
+		displayName = "[87th] Macrobinocular I";
+		scope = 2;
+		model = "\MRC\JLTS\characters\CloneArmor\CloneNVG_off.p3d";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_nvg_ui_ca.paa";
+		hiddenSelectionsTextures[] =  { QPATHTOF(data\other\87th_Macro_co.paa) };
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneNVG_on.p3d";
+			modelOff = "\MRC\JLTS\characters\CloneArmor\CloneNVG_off.p3d";
+		};
+	};
+	class 87th_Macrobinocular_Low: 87th_Macrobinocular
+	{
+		displayName = "[87th] Macrobinocular I (Specialist)";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneNVG_on.p3d";
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneNVG_on.p3d";
+			modelOff = "\MRC\JLTS\characters\CloneArmor\CloneNVG_on.p3d";
+		};
+	};
+	class 87th_Macrobinocular_Alt: 87th_Macrobinocular
+	{
+		displayName = "[87th] Macrobinocular II";
+		hiddenSelectionsTextures[] =  { QPATHTOF(data\other\87th_Macro_Alt_co.paa) };
+	};
+	class 87th_Macrobinocular_Alt_Low: 87th_Macrobinocular_Low
+	{
+		displayName = "[87th] Macrobinocular II (Specialist)";
+		hiddenSelectionsTextures[] =  { QPATHTOF(data\other\87th_Macro_Alt_co.paa) };
 	};
 
 	class 87th_ARC_Vest: JLTS_CloneVestARC
