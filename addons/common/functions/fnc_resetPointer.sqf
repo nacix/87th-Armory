@@ -24,4 +24,4 @@ params ["_unit"];
 if (!hasInterface || !local _unit) exitWith {}; // Only executes on player client
 
 _unit action ["IRLaserOff", _unit];
-[{ _this action ["IRLaserOn", _this] }, _unit] call CBA_fnc_execNextFrame;
+[{ _this action ["IRLaserOn", _this] }, _unit] call CBA_fnc_execNextFrame; // Run on next frame to ensure the laser had time to disable properly

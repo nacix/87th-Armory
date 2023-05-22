@@ -16,7 +16,7 @@
  * NONE
  *
  * Example:
- * call ax87_lasers_fnc_init;
+ * [] call ax87_common_fnc_init;
  *
  * Public: No
 */
