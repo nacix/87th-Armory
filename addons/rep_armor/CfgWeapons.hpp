@@ -379,8 +379,8 @@ class CfgWeapons {
 	ADD_BARC_HELMET_CAMO(Desert)
 	ADD_BARC_HELMET_CAMO(Sarid)
 	ADD_BARC_HELMET_CAMO(Woodland)
-	ADD_BARC_HELMET_CAMO(Urban)
 	ADD_BARC_HELMET_CAMO(Winter)
+	ADD_BARC_HELMET_CAMO(Urban)
 
 	class 87th_Airborne_Helmet: JLTS_CloneHelmetAB
 	{
