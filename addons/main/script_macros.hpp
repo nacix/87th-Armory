@@ -62,3 +62,161 @@
 #define INVISIBLE(pointer) ((configFile >> "CfgWeapons" >> pointer >> "ItemInfo" >> "Pointer" >> "isIR") call BIS_fnc_getCfgData isEqualTo 1)
 #define VISIBLE(pointer) ((configFile >> "CfgWeapons" >> pointer >> "ItemInfo" >> "Pointer" >> "isIR") call BIS_fnc_getCfgData isEqualTo 0)
 #define HASLASER(attachment) not isNil {(configFile >> "CfgWeapons" >> attachment >> "ItemInfo" >> "Pointer" >> "isIR") call BIS_fnc_getCfgData}
+
+#define MAG_1(mag) \
+    QUOTE(mag)
+
+#define MAG_2(mag) \
+    QUOTE(mag), \
+    QUOTE(mag)
+
+#define MAG_3(mag) \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag)
+
+#define MAG_4(mag) \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag)
+
+#define MAG_5(mag) \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag)
+
+#define MAG_6(mag) \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag)
+
+#define MAG_7(mag) \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag)
+
+#define MAG_8(mag) \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag)
+
+#define MAG_9(mag) \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag)
+
+#define MAG_10(mag) \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag)
+
+#define MAG_11(mag) \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag)
+
+#define MAG_12(mag) \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag)
+
+#define WEAPONS(primary,secondary) \
+    weapons[]= \
+    { \
+        QUOTE(primary), \
+        QUOTE(secondary), \
+        "Throw", \
+        "Put" \
+    }; \
+    respawnWeapons[]= \
+    { \
+        QUOTE(primary), \
+        QUOTE(secondary), \
+        "Throw", \
+        "Put" \
+    };
+
+#define WEAPONS_LN(primary,secondary,launcher) \
+    weapons[]= \
+    { \
+        QUOTE(primary), \
+        QUOTE(secondary), \
+        QUOTE(launcher), \
+        "Throw", \
+        "Put" \
+    }; \
+    respawnWeapons[]= \
+    { \
+        QUOTE(primary), \
+        QUOTE(secondary), \
+        QUOTE(launcher), \
+        "Throw", \
+        "Put" \
+    };
+
+#define EQUIPMENT(helmet,nvg,comms) \
+    linkedItems[]= \
+	{ \
+        QUOTE(helmet), \
+        QUOTE(nvg), \
+        QUOTE(comms), \
+        "ItemMap", \
+        "ItemCompass", \
+        "ItemWatch" \
+    }; \
+    respawnLinkedItems[]= \
+    { \
+        QUOTE(helmet), \
+        QUOTE(nvg), \
+        QUOTE(comms), \
+        "ItemMap", \
+        "ItemCompass", \
+        "ItemWatch" \
+    };
+
+#define PREVIEW(className) editorPreview = QPATHTOF(data\ui\editorPreviews\##className##.jpg);
