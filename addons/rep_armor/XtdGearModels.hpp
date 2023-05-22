@@ -9,7 +9,7 @@ class XtdGearModels
 			options[] = {"variant", "mandible", "camo"};
 			class variant
 			{
-				label = "Variant";
+				label = "Variants";
 				values[] = {"Trooper", "Tasty"};
 				alwaysSelectable = 1;
 			};
@@ -31,7 +31,7 @@ class XtdGearModels
 			};
 			class camo
 			{
-				label = "Camo";
+				label = "Camouflage";
 				values[] = {"None", "Winter", "Desert", "Sarid", "Woodland", "Urban"};
 				alwaysSelectable = 1;
 			};
@@ -44,13 +44,13 @@ class XtdGearModels
 			options[] = {"variant", "camo"};
 			class variant
 			{
-				label = "Variant";
+				label = "Variants";
 				values[] = {"Trooper"};
 				alwaysSelectable = 1;
 			};
 			class camo
 			{
-				label = "Camo";
+				label = "Camouflage";
 				values[] = {"None", "Winter", "Desert", "Sarid", "Woodland", "Urban"};
 				alwaysSelectable = 1;
 			};
@@ -63,13 +63,13 @@ class XtdGearModels
 			options[] = {"variant", "camo"};
 			class variant
 			{
-				label = "Variant";
+				label = "Variants";
 				values[] = {"Trooper"};
 				alwaysSelectable = 1;
 			};
 			class camo
 			{
-				label = "Camo";
+				label = "Camouflage";
 				values[] = {"None", "Winter", "Desert", "Sarid", "Woodland", "Urban"};
 				alwaysSelectable = 1;
 			};
