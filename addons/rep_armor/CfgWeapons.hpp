@@ -95,6 +95,13 @@ class CfgWeapons {
 			SET_ARMOR_LEGS(baseArmor,pass,legsMult) \
 		};
 
+	#define ADD_CT_HELMET(className,rawName) \
+		class TAG##_##className##_Helmet: TAG##_Trooper_Helmet \
+		{ \
+			displayName = NAME_PRETTY(rawName); \
+			hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\ct\##TAG##_##className##_Helmet_co.paa) }; \
+		};
+
 	class HeadgearItem;
 	class NVGoggles;
 	class Uniform_Base;
@@ -163,27 +170,18 @@ class CfgWeapons {
 		displayname = "[87th] Trooper Helmet";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\ct\87th_Trooper_Helmet_co.paa) };
 	};
-	class 87th_ARC_Helmet: 87th_Trooper_Helmet
-	{
-		displayname = "[87th] ARC Helmet";
-		hiddenSelectionsTextures[] = {QPATHTOF(data\helmets\ct\87th_ARC_Helmet_co.paa)};
-	};
-	class 87th_Stryder_Helmet: 87th_Trooper_Helmet
-	{
-		displayname = "[87th] Stryder's Helmet";
-		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\ct\87th_Stryder_Helmet_co.paa) };
-	};
-	class 87th_Captain_Helmet: 87th_Trooper_Helmet
-	{
-		displayname = "[87th] Captain Helmet";
-		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\ct\87th_Captain_Helmet_co.paa) };
-	};
-	class 87th_Commander_Helmet: 87th_Trooper_Helmet
-	{
-		author = "Stim";
-		displayname = "[87th] Commander Helmet";
-		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\ct\87th_Commander_Helmet_co.paa) };
-	};
+
+	// Variant CT Helmet Definitions
+	ADD_CT_HELMET(ARC, ARC Helmet)
+	ADD_CT_HELMET(Jet_Trooper, Jet Trooper Helmet)
+
+	// Custom CT Helmet Definitions
+	ADD_CT_HELMET(Stim, Stim's Helmet)
+	ADD_CT_HELMET(Raven, Raven's Helmet)
+	ADD_CT_HELMET(Stryder, Stryder's Helmet)
+	ADD_CT_HELMET(Alcatraz, Alcatraz' Helmet)
+	ADD_CT_HELMET(Cat, Cat's Helmet)
+	ADD_CT_HELMET(Noggy, Noggy's Helmet)
 
 	class 87th_Engineer_Helmet: 3as_Engineer_Helmet
 	{
