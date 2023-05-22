@@ -20,6 +20,35 @@ class XtdGearModels
 			BANNER_CAMO(Woodland) \
 			BANNER_CAMO(Urban)
 
+		class 87th_P2_Helmet
+		{
+			label = "[87th] Trooper Helmet";
+			author = "Anorexican";
+			options[] = {"variant", "custom"};
+			class variant
+			{
+				label = "Variants";
+				values[] = {"Trooper", "ARC", "Jet"};
+				alwaysSelectable = 1;
+				BANNER_GENERIC(Trooper)
+				BANNER_GENERIC(ARC)
+				BANNER_GENERIC(Jet)
+			};
+			class custom
+			{
+				label = "Customs";
+				values[] = {"None", "Stim", "Raven", "Stryder", "Alcatraz", "Cat", "Noggy"};
+				alwaysSelectable = 0;
+				BANNER_GENERIC(None)
+				BANNER_GENERIC(Stim)
+				BANNER_GENERIC(Raven)
+				BANNER_GENERIC(Stryder)
+				BANNER_GENERIC(Alcatraz)
+				BANNER_GENERIC(Cat)
+				BANNER_GENERIC(Noggy)
+			};
+		};
+
 		class 87th_ARF_Helmet
 		{
 			label = "[87th] ARF Helmet";
