@@ -2,6 +2,24 @@ class XtdGearModels
 {
 	class CfgWeapons 
 	{
+		#define BANNER_GENERIC(value) \
+			class value \
+			{ \
+				image = QPATHTOF(data\ui\xtd_banner.paa); \
+			};
+		#define BANNER_CAMO(camoType) \
+			class camoType \
+			{ \
+				image = QPATHTOF(data\ui\xtd_camo_##camoType##); \
+			};
+		#define CAMO_BANNERS \
+			BANNER_GENERIC(None) \
+			BANNER_CAMO(Winter) \
+			BANNER_CAMO(Desert) \
+			BANNER_CAMO(Sarid) \
+			BANNER_CAMO(Woodland) \
+			BANNER_CAMO(Urban)
+
 		class 87th_ARF_Helmet
 		{
 			label = "[87th] ARF Helmet";
@@ -12,6 +30,8 @@ class XtdGearModels
 				label = "Variants";
 				values[] = {"Trooper", "Tasty"};
 				alwaysSelectable = 1;
+				BANNER_GENERIC(Trooper)
+				BANNER_GENERIC(Tasty)
 			};
 			class mandible
 			{
@@ -23,10 +43,12 @@ class XtdGearModels
 				class None
 				{
 					actionLabel = "Detach Mandible";
+					image = QPATHTOF(data\ui\xtd_banner.paa);
 				};
 				class Attached
 				{
 					actionLabel = "Attach Mandible";
+					image = QPATHTOF(data\ui\xtd_banner.paa);
 				};
 			};
 			class camo
@@ -34,6 +56,7 @@ class XtdGearModels
 				label = "Camouflage";
 				values[] = {"None", "Winter", "Desert", "Sarid", "Woodland", "Urban"};
 				alwaysSelectable = 1;
+				CAMO_BANNERS
 			};
 		};
 
@@ -47,12 +70,14 @@ class XtdGearModels
 				label = "Variants";
 				values[] = {"Trooper"};
 				alwaysSelectable = 1;
+				BANNER_GENERIC(Trooper)
 			};
 			class camo
 			{
 				label = "Camouflage";
 				values[] = {"None", "Winter", "Desert", "Sarid", "Woodland", "Urban"};
 				alwaysSelectable = 1;
+				CAMO_BANNERS
 			};
 		};
 
@@ -66,12 +91,14 @@ class XtdGearModels
 				label = "Variants";
 				values[] = {"Trooper"};
 				alwaysSelectable = 1;
+				BANNER_GENERIC(Trooper)
 			};
 			class camo
 			{
 				label = "Camouflage";
 				values[] = {"None", "Winter", "Desert", "Sarid", "Woodland", "Urban"};
 				alwaysSelectable = 1;
+				CAMO_BANNERS
 			};
 		};
 	};
