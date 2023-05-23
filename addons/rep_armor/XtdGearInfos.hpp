@@ -91,10 +91,13 @@ class XtdGearInfos
 		XTD_P2_HELMET(ARC, ARC, None)
 
 		XTD_P2_HELMET(Alcatraz, Trooper, Alcatraz)
+		XTD_P2_HELMET(Byte, Trooper, Byte)
 		XTD_P2_HELMET(Cat, Trooper, Cat)
+		XTD_P2_HELMET(Domino, Trooper, Domino)
 		XTD_P2_HELMET(Noggy, Trooper, Noggy)
 		XTD_P2_HELMET(Raven, Trooper, Raven)
 		XTD_P2_HELMET(Stim, Trooper, Stim)
+
 		XTD_P2_HELMET(Stryder, ARC, Stryder)
 
 		XTD_ARF_HELMET(Trooper, Helmet)
