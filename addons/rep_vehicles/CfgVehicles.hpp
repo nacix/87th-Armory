@@ -59,10 +59,10 @@ class CfgVehicles
 		faction = "87th_Legion";
 		editorSubcategory="87th_Vehicles";
 		// editorPreview = "3AS\3AS_rtt\images\3AS_RTT.jpg";
-		crew = 87th_Clone_DC15S
+		crew = "87th_Clone_DC15S";
 		typicalCargo[]=
 		{
-			CREW_1(87th_Clone_DC15S)
+			CREW_1(##TAG##_Clone_DC15S)
 		};
 		RTT_TEXTURE(RTT)
 	};
