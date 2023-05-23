@@ -197,6 +197,21 @@ class CfgWeapons {
 			hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\barc\trooper\87th_BARC_Helmet_##camoType##_co.paa) }; \
 		};
 
+	#define ADD_PILOT_HELMET(className,rawName) \
+		class 87th_Pilot_Helmet_##className##: 87th_P2_Pilot_Helmet \
+		{ \
+			displayName = NAME_PRETTY(rawName); \
+			hiddenSelectionsTextures[]= \
+			{ \
+				QPATHTOF(data\helmets\pilot\87th_Pilot_Helmet_##className##_co.paa), \
+				QPATHTOF(data\helmets\pilot\87th_Pilot_Helmet_##className##_co.paa), \
+				"", \
+				"3AS\3AS_Characters\Clones\Headgear\Textures\PilotP2\Phase_2_Pilot_Tubes_co.paa", \
+				QPATHTOF(data\helmets\pilot\87th_Pilot_Helmet_##className##_co.paa), \
+				"" \
+			}; \
+		};
+
 	class HeadgearItem;
 	class NVGoggles;
 	class Uniform_Base;
@@ -277,6 +292,8 @@ class CfgWeapons {
 	ADD_CT_HELMET(Alcatraz, Alcatraz' Helmet)
 	ADD_CT_HELMET(Cat, Cat's Helmet)
 	ADD_CT_HELMET(Noggy, Noggy's Helmet)
+	ADD_CT_HELMET(Byte, Byte's Helmet)
+	ADD_CT_HELMET(Domino, Domino's Helmet)
 
 	class 87th_Engineer_Helmet: 3as_Engineer_Helmet
 	{
