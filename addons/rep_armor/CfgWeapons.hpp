@@ -411,18 +411,18 @@ class CfgWeapons {
 		displayname = "[87th] Pilot Helmet";
 		hiddenSelectionsTextures[]= 
 		{
-			QPATHTOF(data\helmets\87th_Pilot_Helmet_co.paa),
-			QPATHTOF(data\helmets\87th_Pilot_Helmet_co.paa),
+			QPATHTOF(data\helmets\pilot\87th_Pilot_Helmet_co.paa),
+			QPATHTOF(data\helmets\pilot\87th_Pilot_Helmet_co.paa),
 			"",
 			"3AS\3AS_Characters\Clones\Headgear\Textures\PilotP2\Phase_2_Pilot_Tubes_co.paa",
-			QPATHTOF(data\helmets\87th_Pilot_Helmet_co.paa),
+			QPATHTOF(data\helmets\pilot\87th_Pilot_Helmet_co.paa),
 			""
 		};
 	};
 	class 87th_P1_Pilot_Helmet: 3as_P1_Pilot_helmet
 	{
 		displayName = "[87th] Phase 1 Pilot Helmet";
-		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\87th_P1_Pilot_Helmet_co.paa) };
+		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\pilot\87th_P1_Pilot_Helmet_co.paa) };
 	};
 	class 87th_P1_Trooper_Helmet: 3as_P1_Base
 	{
