@@ -25,6 +25,18 @@ class CfgVehicles
 			crew = QUOTE(TAG##_Clone_P1_Pilot); \
 			typicalCargo[] = {QUOTE(TAG##_Clone_P1_Pilot)}; \
 		};
+
+	#define RTT_TEXTURE(texName) \
+		hiddenSelectionsTextures[]= \
+		{ \
+			QPATHTOF(data\rtt\##TAG##_##texName##_co.paa), \
+			"3as\3as_itt\data\glass_co.paa", \
+			"3as\3as_itt\data\itt_int_back_co.paa", \
+			"3as\3as_itt\data\itt_door_co.paa", \
+			"3as\3as_itt\data\itt_int_front_co.paa", \
+			"3as\3as_itt\data\itt_emiss_co.paa", \
+			"3as\3as_itt\data\itt_turret_co.paa" \
+		};
 	
 	class 3AS_ITT;
 	class 3AS_ATRT;
@@ -47,21 +59,12 @@ class CfgVehicles
 		faction = "87th_Legion";
 		editorSubcategory="87th_Vehicles";
 		// editorPreview = "3AS\3AS_rtt\images\3AS_RTT.jpg";
-		crew = "87th_Clone_DC15S";
+		crew = 87th_Clone_DC15S
 		typicalCargo[]=
 		{
-			"87th_Clone_DC15S"
+			CREW_1(87th_Clone_DC15S)
 		};
-		hiddenSelectionsTextures[]=
-		{
-			QPATHTOF(data\rtt\87th_RTT_co.paa),
-			"3as\3as_itt\data\glass_co.paa",
-			"3as\3as_itt\data\itt_int_back_co.paa",
-			"3as\3as_itt\data\itt_door_co.paa",
-			"3as\3as_itt\data\itt_int_front_co.paa",
-			"3as\3as_itt\data\itt_emiss_co.paa",
-			"3as\3as_itt\data\itt_turret_co.paa"
-		};
+		RTT_TEXTURE(RTT)
 	};
 	class 87th_RTT_Rep: 87th_RTT
 	{
@@ -70,18 +73,9 @@ class CfgVehicles
 		crew = "JLTS_Clone_P2_DC15S";
 		typicalCargo[]=
 		{
-			"JLTS_Clone_P2_DC15S"
+			CREW_1(JLTS_Clone_P2_DC15S)
 		};
-		hiddenSelectionsTextures[]=
-		{
-			QPATHTOF(data\rtt\87th_RTT_Rep_co.paa),
-			"3as\3as_itt\data\glass_co.paa",
-			"3as\3as_itt\data\itt_int_back_co.paa",
-			"3as\3as_itt\data\itt_door_co.paa",
-			"3as\3as_itt\data\itt_int_front_co.paa",
-			"3as\3as_itt\data\itt_emiss_co.paa",
-			"3as\3as_itt\data\itt_turret_co.paa"
-		};
+		RTT_TEXTURE(RTT_Rep)
 	};
 
 	class 87th_BARC: ls_ground_barc
