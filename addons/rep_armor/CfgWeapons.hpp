@@ -424,6 +424,9 @@ class CfgWeapons {
 		displayName = "[87th] Phase 1 Pilot Helmet";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\pilot\87th_P1_Pilot_Helmet_co.paa) };
 	};
+
+	ADD_PILOT_HELMET(Stim, Stim's Pilot Helmet)
+
 	class 87th_P1_Trooper_Helmet: 3as_P1_Base
 	{
 		author = "Stim";
