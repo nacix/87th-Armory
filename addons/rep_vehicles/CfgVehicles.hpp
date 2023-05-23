@@ -26,6 +26,7 @@ class CfgVehicles
 			typicalCargo[] = {QUOTE(TAG##_Clone_P1_Pilot)}; \
 		};
 	
+	class 3AS_ITT;
 	class 3AS_ATRT;
 	class 3as_LAAT_Mk1;
 	class 3as_LAAT_Mk1Lights;
@@ -38,6 +39,50 @@ class CfgVehicles
 
 	LAAT_NEW(Mk.1, LAAT_Mk1, 3as_LAAT_Mk1)
 	LAAT_NEW(Mk.1 (Lights), LAAT_Mk1_Lights, 3as_LAAT_Mk1Lights)
+
+	class 87th_RTT: 3AS_ITT
+	{
+		author = "Stim";
+		displayname = "[87th] RTT";
+		faction = "87th_Legion";
+		editorSubcategory="87th_Vehicles";
+		// editorPreview = "3AS\3AS_rtt\images\3AS_RTT.jpg";
+		crew = "87th_Clone_DC15S";
+		typicalCargo[]=
+		{
+			"87th_Clone_DC15S"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\rtt\87th_RTT_co.paa),
+			"3as\3as_itt\data\glass_co.paa",
+			"3as\3as_itt\data\itt_int_back_co.paa",
+			"3as\3as_itt\data\itt_door_co.paa",
+			"3as\3as_itt\data\itt_int_front_co.paa",
+			"3as\3as_itt\data\itt_emiss_co.paa",
+			"3as\3as_itt\data\itt_turret_co.paa"
+		};
+	};
+	class 87th_RTT_Rep: 87th_RTT
+	{
+		displayname = "[87th] RTT (GAR)";
+		// editorPreview = "3AS\3AS_rtt\images\3AS_RTT.jpg";
+		crew = "JLTS_Clone_P2_DC15S";
+		typicalCargo[]=
+		{
+			"JLTS_Clone_P2_DC15S"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\rtt\87th_RTT_Rep_co.paa),
+			"3as\3as_itt\data\glass_co.paa",
+			"3as\3as_itt\data\itt_int_back_co.paa",
+			"3as\3as_itt\data\itt_door_co.paa",
+			"3as\3as_itt\data\itt_int_front_co.paa",
+			"3as\3as_itt\data\itt_emiss_co.paa",
+			"3as\3as_itt\data\itt_turret_co.paa"
+		};
+	};
 
 	class 87th_BARC: ls_ground_barc
 	{

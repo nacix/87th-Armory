@@ -16,8 +16,9 @@ class CfgPatches
 			"A3_weapons_F",
 			"A3_characters_F",
 			"3AS_Main",
-			"3AS_LAAT",
 			"3AS_ATRT",
+			"3AS_LAAT",
+			"3AS_ITT",
 			"JLTS_core",
 			"JLTS_characters_CloneArmor",
 			"ls_vehicles_ground"
@@ -33,7 +34,9 @@ class CfgPatches
 			CLASS(P1_LAAT_Mk1),
 			CLASS(P1_LAAT_Mk1_Lights),
 			"87th_ATRT",
-			"87th_BARC"
+			"87th_BARC",
+			"87th_RTT",
+			"87th_RTT_Rep"
 		};
 		weapons[]=
 		{
