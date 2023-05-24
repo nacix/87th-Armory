@@ -219,68 +219,59 @@ class CfgWeapons {
 			}; \
 		};
 
+	// Defines inherited class with ItemInfo from given parent class
+	#define GET_INFO(className,parentClass) \
+		class className##: parentClass \
+		{ \
+			class ItemInfo; \
+		};
+		
+	// Defines inherited class with ItemInfo - always inherits from A3 Viper SP Helmet
+	#define GET_INFO_VSP(className) GET_INFO(className, H_HelmetO_ViperSP_hex_F)
+	// Defines inherited class with ItemInfo - always inherits from JLTS Officer Vest
+	#define GET_INFO_CVO(className) GET_INFO(className, JLTS_CloneVestOfficer)
+	// Defines inherited class with ItemInfo - always inherits from LS Blufor Helmet
+	#define GET_INFO_BFH(className) GET_INFO(className, ls_blueforHelmet_base)
+
 	class HeadgearItem;
 	class NVGoggles;
 	class Uniform_Base;
 	class UniformItem;
+	class H_HelmetO_ViperSP_hex_F;
 	class V_PlateCarrier1_rgr;
-	class 3as_ATRT_Helmet;
+
 	class 3as_Engineer_Helmet;
-	class 3as_P1_Base;
-	class 3as_P2_Pilot_helmet;
-	class 3as_P1_Pilot_helmet;
-	class 3AS_Katarn_Helmet_Base;
-	class 3AS_H_Katarn_Helmet: 3AS_Katarn_Helmet_Base
+	class 3as_P1_Pilot_helmet
 	{
 		class ItemInfo;
 	};
+	class 3AS_Katarn_Helmet_Base;
 	class 3AS_Katarn_Vest_Demo_Base;
 	class 3AS_Katarn_Vest_Tech_Base;
-	class JLTS_CloneHelmetAB;
-	class JLTS_CloneHelmetBARC;
-	class JLTS_CloneHelmetP2;
+	class ls_blueforHelmet_base;
 
-	class JLTS_CloneVestOfficer: V_PlateCarrier1_rgr
-	{
-		class ItemInfo;
-	};
-	class JLTS_CloneVestAirborne: JLTS_CloneVestOfficer
-	{
-		class ItemInfo;
-	};
-	class JLTS_CloneVestARC: JLTS_CloneVestOfficer
-	{
-		class ItemInfo;
-	};
-	class JLTS_CloneVestCommander: JLTS_CloneVestOfficer
-	{
-		class ItemInfo;
-	};
-	class JLTS_CloneVestKama: JLTS_CloneVestOfficer
-	{
-		class ItemInfo;
-	};
-	class JLTS_CloneVestLieutenant: JLTS_CloneVestOfficer
-	{
-		class ItemInfo;
-	};
-	class JLTS_CloneVestRecon: JLTS_CloneVestOfficer
-	{
-		class ItemInfo;
-	};
-	class JLTS_CloneVestReconNCO: JLTS_CloneVestOfficer
-	{
-		class ItemInfo;
-	};
-	class JLTS_CloneVestReconOfficer: JLTS_CloneVestOfficer
-	{
-		class ItemInfo;
-	};
+	GET_INFO_VSP(3as_P2_Pilot_helmet)
+	GET_INFO_VSP(JLTS_CloneHelmetAB)
+	GET_INFO_VSP(JLTS_CloneHelmetP2)
+	GET_INFO_VSP(3as_P1_Base)
 
-	class ls_gar_phase1Arf_helmet;
-	class ls_gar_phase2Arf_helmet;
-	class ls_sob_phase2SpecOp_helmet;
+	GET_INFO(3AS_H_Katarn_Helmet, 3AS_Katarn_Helmet_Base)
+	GET_INFO(JLTS_CloneHelmetBARC, JLTS_CloneHelmetP2)
 
+	GET_INFO(JLTS_CloneVestOfficer, V_PlateCarrier1_rgr)
+	GET_INFO_CVO(JLTS_CloneVestAirborne)
+	GET_INFO_CVO(JLTS_CloneVestARC)
+	GET_INFO_CVO(JLTS_CloneVestCommander)
+	GET_INFO_CVO(JLTS_CloneVestKama)
+	GET_INFO_CVO(JLTS_CloneVestLieutenant)
+	GET_INFO_CVO(JLTS_CloneVestRecon)
+	GET_INFO_CVO(JLTS_CloneVestReconNCO)
+	GET_INFO_CVO(JLTS_CloneVestReconOfficer)
+
+	GET_INFO_BFH(ls_gar_phase1Arf_helmet)
+	GET_INFO_BFH(ls_sob_phase2SpecOp_helmet)
+
+	GET_INFO(ls_gar_phase2Arf_helmet, ls_gar_phase1Arf_helmet)
 
 	#define SET_ARMOR_BASE SET_ARMOR(13.5,0.8,1,0,0,0)
 	#define DEF_ARMOR_BASE DEF_ARMOR(13.5,0.8,1,0,0,0)
