@@ -77,7 +77,7 @@ class CfgMagazines
 		picture = "\A3\Weapons_F\launchers\RPG32\data\UI\gear_rpg32_rocket_ca.paa";
 		initSpeed = 140;
 		descriptionShort = "Wire-Guided Tandem HEAT Missile<br />Damage: 180+600<br />Range: 3m<br />Used in: RPS-6X";
-		displaynameshort = "RPS-6X AT Missile";
+		displayNameShort = "RPS-6X AT Missile";
 		ammo = "87th_M_MK40X_AT";
 		type = "2*  256";
 		mass = 60;
@@ -91,7 +91,7 @@ class CfgMagazines
 		picture = "\A3\Weapons_F\launchers\RPG32\data\UI\gear_rpg32_rocket_ca.paa";
 		initSpeed = 140;
 		descriptionShort = "Wire-Guided HE Missile<br />Damage: 100<br />Radius: 10m<br />Used in: RPS-6X";
-		displaynameshort = "RPS-6X HE Missile";
+		displayNameShort = "RPS-6X HE Missile";
 		ammo = "87th_M_MK42X_HE";
 		type = "2*  256";
 		mass = 40;

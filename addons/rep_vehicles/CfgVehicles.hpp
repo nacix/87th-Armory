@@ -55,7 +55,7 @@ class CfgVehicles
 	class 87th_RTT: 3AS_ITT
 	{
 		author = "Stim";
-		displayname = "[87th] RTT";
+		displayName = "[87th] RTT";
 		faction = "87th_Legion";
 		editorSubcategory="87th_Vehicles";
 		// editorPreview = "3AS\3AS_rtt\images\3AS_RTT.jpg";
@@ -68,7 +68,7 @@ class CfgVehicles
 	};
 	class 87th_RTT_Rep: 87th_RTT
 	{
-		displayname = "[87th] RTT (GAR)";
+		displayName = "[87th] RTT (GAR)";
 		// editorPreview = "3AS\3AS_rtt\images\3AS_RTT.jpg";
 		crew = "JLTS_Clone_P2_DC15S";
 		typicalCargo[]=
