@@ -20,171 +20,53 @@ class CfgVehicles {
 	class JLTS_Clone_P2_sergeant;
 	class JLTS_Clone_P2_sergeantmajor;
 
-	class JLTS_Clone_P2_DC15A: B_Soldier_F 
-	{
-		identityTypes[]= 
-		{
-			"CloneTrooperENG",
-			"87th_face_clone",
-			"87th_Clone"
-		};
-	};
-	class JLTS_Clone_P2_lieutenant: B_Officer_F 
-	{
-		identityTypes[]= 
-		{
-			"CloneTrooperENG",
-			"87th_face_clone",
-			"87th_Clone"
-		};
-	};
-	class JLTS_Clone_P2_AT: B_Soldier_LAT_F 
-	{
-		identityTypes[]= 
-		{
-			"CloneTrooperENG",
-			"87th_face_clone",
-			"87th_Clone"
-		};
-	};
-	class JLTS_Clone_P2_corporal: B_Soldier_SL_F 
-	{
-		identityTypes[]= 
-		{
-			"CloneTrooperENG",
-			"87th_face_clone",
-			"87th_Clone"
-		};
-	};
-	class JLTS_Clone_P2_marksman: B_Soldier_M_F 
-	{
-		identityTypes[]= 
-		{
-			"CloneTrooperENG",
-			"87th_face_clone",
-			"87th_Clone"
-		};
-	};
-	class JLTS_Clone_P2_medic: B_Medic_F 
-	{
-		identityTypes[]= 
-		{
-			"CloneTrooperENG",
-			"87th_face_clone",
-			"87th_Clone"
-		};
-	};
-	class JLTS_Clone_P2_EOD: B_Soldier_exp_F 
-	{
-		identityTypes[]= 
-		{
-			"CloneTrooperENG",
-			"87th_face_clone",
-			"87th_Clone"
-		};
-	};
-	class JLTS_Clone_P2_AR: B_soldier_AR_F 
-	{
-		identityTypes[]= 
-		{
-			"CloneTrooperENG",
-			"87th_face_clone",
-			"87th_Clone"
-		};
+	#define JLTS_CLASS(className, parentClass) \
+	class className##: parentClass \
+	{ \
+		identityTypes[]=  \
+		{ \
+			"CloneTrooperENG", \
+			"87th_face_clone", \
+			"87th_Clone" \
+		}; \
 	};
 
-	class 87th_Clone_DC15A: JLTS_Clone_P2_DC15A 
+	#define P2_UNIFORM \
+		faction = "87th_Legion"; \
+		editorSubcategory = "87th_Troopers"; \
+		uniformClass = "87th_Trooper_Uniform"; \
+		hiddenSelectionsTextures[]= \
+		{ \
+            QPATHTOEF(rep_armor, data\armor\87th_Chest_co.paa), \
+            QPATHTOEF(rep_armor, data\armor\87th_Legs_co.paa) \
+        };
+
+	JLTS_CLASS(JLTS_Clone_P2_DC15A, B_Soldier_F)
+	JLTS_CLASS(JLTS_Clone_P2_lieutenant, B_Officer_F)
+	JLTS_CLASS(JLTS_Clone_P2_AT, B_Soldier_LAT_F)
+	JLTS_CLASS(JLTS_Clone_P2_corporal, B_Soldier_SL_F)
+	JLTS_CLASS(JLTS_Clone_P2_marksman, B_Soldier_M_F)
+	JLTS_CLASS(JLTS_Clone_P2_medic, B_Medic_F)
+	JLTS_CLASS(JLTS_Clone_P2_EOD, B_Soldier_exp_F)
+	JLTS_CLASS(JLTS_Clone_P2_AR, B_soldier_AR_F)
+
+	class 87th_Clone_DC15A: JLTS_Clone_P2_DC15A
 	{
 		displayName = "Clone Trooper (DC-15A)";
-		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_Clone_DC15A.jpg);
-		faction = "87th_Legion";
-		editorSubcategory = "87th_Troopers";
-		uniformClass = "87th_Trooper_Uniform";
-		hiddenSelectionsTextures[]= 
-		{
-            QPATHTOEF(rep_armor, data\armor\87th_Chest_co.paa),
-            QPATHTOEF(rep_armor, data\armor\87th_Legs_co.paa)
-        };
-		linkedItems[]=
-		{
-			"87th_Trooper_Helmet",
-			"JLTS_NVG_droid_chip_2",
-			"ItemMap",
-			"JLTS_clone_comlink",
-			"ItemCompass",
-			"ItemWatch"
-		};
-		respawnLinkedItems[]=
-		{
-			"87th_Trooper_Helmet",
-			"JLTS_NVG_droid_chip_2",
-			"ItemMap",
-			"JLTS_clone_comlink",
-			"ItemCompass",
-			"ItemWatch"
-		};
-		weapons[]=
-		{
-			"87th_3AS_DC15A_F",
-			"JLTS_DC17SA",
-			"Throw",
-			"Put"
-		};
-		respawnWeapons[]=
-		{
-			"87th_3AS_DC15A_F",
-			"JLTS_DC17SA",
-			"Throw",
-			"Put"
-		};
-		magazines[]=
-		{
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"JLTS_DC17SA_mag",
-			"JLTS_DC17SA_mag",
-			"JLTS_DC17SA_mag",
-			"SmokeShell",
-			"SmokeShellGreen",
-			"Chemlight_green",
-			"Chemlight_green",
-			"JLTS_stun_mag_long",
-			"JLTS_stun_mag_long",
-			"HandGrenade",
-			"HandGrenade"
-		};
-		respawnMagazines[]=
-		{
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"3AS_45Rnd_EC50_Mag",
-			"JLTS_DC17SA_mag",
-			"JLTS_DC17SA_mag",
-			"JLTS_DC17SA_mag",
-			"SmokeShell",
-			"SmokeShellGreen",
-			"Chemlight_green",
-			"Chemlight_green",
-			"JLTS_stun_mag_long",
-			"JLTS_stun_mag_long",
-			"HandGrenade",
-			"HandGrenade"
-		};
+		PREVIEW(87th_Clone_DC15A)
+		P2_UNIFORM
+		EQUIPMENT(87th_Trooper_Helmet, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
+		WEAPONS(87th_3AS_DC15A_F, JLTS_DC17SA)
+		#define MAGAZINES \
+			MAG_10(3AS_45Rnd_EC50_Mag), \
+			MAG_3(JLTS_DC17SA_mag), \
+			MAG_2(SmokeShellGreen), \
+			MAG_2(Chemlight_green), \
+			MAG_2(JLTS_stun_mag_long), \
+			MAG_2(HandGrenade), \
+			MAG_1(SmokeShell)
+		magazines[] = { MAGAZINES };
+		respawnMagazines[] = { MAGAZINES };
 	};
 	class 87th_Clone_DC15S: JLTS_Clone_P2_DC15S 
 	{

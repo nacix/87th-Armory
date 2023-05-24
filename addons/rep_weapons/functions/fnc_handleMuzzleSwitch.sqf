@@ -20,12 +20,14 @@ if (isServer && !hasInterface) exitWith {}; // Only run on clients
 
 private _unit = player;
 
+// Add EH to wait for muzzle switch events
 private _muzzleChangeHandler = ["muzzle", {
 	params ["_unit", "_weapon", "_muzzle"];
 
+	// Runs muzzle-specific code on supported weapons
 	switch _weapon do {
-		case "87th_DP23": { _unit removePrimaryWeaponItem "87th_Optic_Holo" };
-		case "Blaster": { _unit addPrimaryWeaponItem "87th_Optic_Holo" };
+		case "87th_DP23": { _unit removePrimaryWeaponItem "87th_Optic_Holo" }; // Sets the DP-23 optic to shotgun mode
+		case "Blaster": { _unit addPrimaryWeaponItem "87th_Optic_Holo" }; // Sets the DP-23 optic to blaster mode
 	};
 }] call CBA_fnc_addPlayerEventHandler;
 

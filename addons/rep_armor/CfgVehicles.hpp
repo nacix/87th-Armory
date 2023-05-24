@@ -217,6 +217,26 @@ class CfgVehicles {
 		tf_range = 25000;
 		tf_subtype = "digital_lr";
 	};
+	class 87th_RTO_Backpack_Recon: 87th_Backpack
+	{
+		displayName = "[87th] Recon RTO Pack";
+		picture="\MRC\JLTS\characters\CloneArmor\data\ui\Clone_RTO_pack_ui_ca.paa";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneRTOPack.p3d";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+        hiddenSelectionsTextures[]= 
+		{
+        	QPATHTOF(data\other\87th_Recon_RTO_co.paa)
+        };
+		tf_dialog = "JLTS_clone_rto_radio_dialog";
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_hasLRradio = 1;
+		tf_range = 25000;
+		tf_subtype = "digital_lr";
+	};
 
 	class 87th_Katarn_Backpack: 3AS_Katarn_Backpack_Base 
 	{
@@ -252,7 +272,7 @@ class CfgVehicles {
 			QPATHTOF(data\uniforms\ct\87th_Chest_co.paa),
 			QPATHTOF(data\uniforms\ct\87th_Legs_co.paa)
 		};
-		SET_ARMOR(11.5,0.8,7.25,0.01,0.25,0.4)
+		SET_ARMOR(11.5,0.625,12,0.01,0.25,0.4)
 		class Wounds
 		{
 			tex[]={};
@@ -399,6 +419,6 @@ class CfgVehicles {
 			QPATHTOF(data\uniforms\87th_Katarn_Armor_co.paa),
 			"\3AS\3AS_Characters\Commando\data\Katarn_Undersuit_CO.paa"
 		};
-		SET_ARMOR(13.481,0.8,9,0.01,0.35,0.25)
+		SET_ARMOR(13.481,0.1,15.5,0.01,0.35,0.25)
 	};
 };

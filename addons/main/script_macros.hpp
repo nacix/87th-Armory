@@ -62,3 +62,241 @@
 #define INVISIBLE(pointer) ((configFile >> "CfgWeapons" >> pointer >> "ItemInfo" >> "Pointer" >> "isIR") call BIS_fnc_getCfgData isEqualTo 1)
 #define VISIBLE(pointer) ((configFile >> "CfgWeapons" >> pointer >> "ItemInfo" >> "Pointer" >> "isIR") call BIS_fnc_getCfgData isEqualTo 0)
 #define HASLASER(attachment) not isNil {(configFile >> "CfgWeapons" >> attachment >> "ItemInfo" >> "Pointer" >> "isIR") call BIS_fnc_getCfgData}
+
+#define WEAPONS(primary,secondary) \
+    weapons[]= \
+    { \
+        QUOTE(primary), \
+        QUOTE(secondary), \
+        "Throw", \
+        "Put" \
+    }; \
+    respawnWeapons[]= \
+    { \
+        QUOTE(primary), \
+        QUOTE(secondary), \
+        "Throw", \
+        "Put" \
+    };
+
+#define WEAPONS_LN(primary,secondary,launcher) \
+    weapons[]= \
+    { \
+        QUOTE(primary), \
+        QUOTE(secondary), \
+        QUOTE(launcher), \
+        "Throw", \
+        "Put" \
+    }; \
+    respawnWeapons[]= \
+    { \
+        QUOTE(primary), \
+        QUOTE(secondary), \
+        QUOTE(launcher), \
+        "Throw", \
+        "Put" \
+    };
+
+#define EQUIPMENT(helmet,nvg,comms) \
+    linkedItems[]= \
+	{ \
+        QUOTE(helmet), \
+        QUOTE(nvg), \
+        QUOTE(comms), \
+        "ItemMap", \
+        "ItemCompass", \
+        "ItemWatch" \
+    }; \
+    respawnLinkedItems[]= \
+    { \
+        QUOTE(helmet), \
+        QUOTE(nvg), \
+        QUOTE(comms), \
+        "ItemMap", \
+        "ItemCompass", \
+        "ItemWatch" \
+    };
+
+#define PREVIEW(className) editorPreview = QPATHTOF(data\ui\editorPreviews\##className##.jpg);
+
+#define MAG_1(mag) \
+    QUOTE(mag)
+#define MAG_2(mag) \
+    QUOTE(mag), \
+    QUOTE(mag)
+#define MAG_3(mag) \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag)
+#define MAG_4(mag) \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag)
+#define MAG_5(mag) \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag)
+#define MAG_6(mag) \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag)
+#define MAG_7(mag) \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag)
+#define MAG_8(mag) \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag)
+#define MAG_9(mag) \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag)
+#define MAG_10(mag) \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag)
+#define MAG_11(mag) \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag)
+#define MAG_12(mag) \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag), \
+    QUOTE(mag)
+
+#define CREW_1(crewClass) \
+    QUOTE(crewClass)
+#define CREW_2(crewClass) \
+    QUOTE(crewClass), \
+    QUOTE(crewClass)
+#define CREW_3(crewClass) \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass)
+#define CREW_4(crewClass) \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass)
+#define CREW_5(crewClass) \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass)
+#define CREW_6(crewClass) \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass)
+#define CREW_7(crewClass) \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass)
+#define CREW_8(crewClass) \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass)
+#define CREW_9(crewClass) \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass)
+#define CREW_10(crewClass) \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass)
+#define CREW_11(crewClass) \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass)
+#define CREW_12(crewClass) \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass), \
+    QUOTE(crewClass)
