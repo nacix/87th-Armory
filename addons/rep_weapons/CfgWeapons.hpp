@@ -938,6 +938,37 @@ class CfgWeapons
 			};
 		};
 	};
+	class 87th_Optic_DC15L: 3AS_Optic_DC15L
+	{
+		author = "Anorexican";
+		displayName = "[87th] DC-15L Optic";
+		class ItemInfo: ItemInfo
+		{
+			class OpticsModes: OpticsModes
+			{
+				class 87th_DC15L_Optic: 3AS_DC15L_Optic
+				{
+					opticsZoomMin = "0.25/1.8";
+					opticsZoomMax = "0.25/1.8";
+					opticsZoomInit = "0.25/1.8";
+					discreteFOV[] = {};
+				};
+				class IronOnTopOfMyOptics: 87th_DC15L_Optic
+				{
+					opticsID=2;
+					useModelOptics=0;
+					opticsFlare=0;
+					opticsDisablePeripherialVision=0;
+					opticsZoomMin=0.375;
+					opticsZoomMax=1.1;
+					opticsZoomInit=0.75;
+					memoryPointCamera="eye";
+					visionMode[]={};
+					discretefov[]={};
+				};
+			};
+		};
+	};
 
 	class 87th_WestarM5: 3AS_WestarM5_F
 	{
