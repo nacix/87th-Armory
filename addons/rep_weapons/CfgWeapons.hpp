@@ -36,6 +36,17 @@ class CfgWeapons
 	class 3AS_DC15C_GL;
 	class 3AS_DC15L_F;
 	class 3AS_DC15C_F;
+	class 3AS_Optic_DC15L: ItemCore
+	{
+		class ItemInfo: InventoryOpticsItem_Base_F
+		{
+			class OpticsModes
+			{
+				class 3AS_DC15L_Optic;
+				class IronOnTopOfMyOptics;
+			};
+		};
+	};
 	class 3AS_optic_holo_DC15S;
 	class 3AS_Optic_VK38X;
 	class 3AS_Valken38X_F;
@@ -917,7 +928,10 @@ class CfgWeapons
 			class CowsSlot: CowsSlot
 			{
 				linkProxy="\A3\data_f\proxies\weapon_slots\TOP";
-				compatibleItems[] = {};
+				compatibleItems[]=
+				{
+					"87th_Optic_DC15L"
+				};
 			};
 			class PointerSlot: PointerSlot
 			{
