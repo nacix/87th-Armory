@@ -51,6 +51,37 @@ class XtdGearModels
 			};
 		};
 
+		class 87th_P2_Pilot_Helmet
+		{
+			label = "[87th] Pilot Helmet";
+			author = "Anorexican";
+			options[] = {"variant", "custom"};
+			class variant
+			{
+				label = "Variants";
+				values[] = {"P2", "P1"};
+				alwaysSelectable = 1;
+				class P2
+				{
+					label = "Phase II";
+					image = QPATHTOF(data\ui\xtd_banner.paa);
+				};
+				class P1
+				{
+					label = "Phase I";
+					image = QPATHTOF(data\ui\xtd_banner.paa);
+				};
+			};
+			class custom
+			{
+				label = "Customs";
+				values[] = {"None", "Stim"};
+				alwaysSelectable = 1;
+				BANNER_GENERIC(None)
+				BANNER_GENERIC(Stim)
+			};
+		};
+
 		class 87th_ARF_Helmet
 		{
 			label = "[87th] ARF Helmet";

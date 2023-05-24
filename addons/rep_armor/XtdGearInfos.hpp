@@ -10,6 +10,14 @@ class XtdGearInfos
 				custom = QUOTE(customName); \
 			};
 
+		#define XTD_PILOT_HELMET(customName,phase,className) \
+			class TAG##_##phase##_Pilot_##className \
+			{ \
+				model = QUOTE(TAG##_P2_Pilot_Helmet); \
+				variant = QUOTE(phase); \
+				custom = QUOTE(customName); \
+			};
+
 		#define XTD_ARF_HELMET_CAMO(className,variantName,camoType) \
 			class TAG##_ARF_##className##_##camoType \
 			{ \
@@ -86,10 +94,8 @@ class XtdGearInfos
 			XTD_BARC_HELMET_CAMO(className, variantName, Winter) \
 			XTD_BARC_HELMET_CAMO(className, variantName, Urban)
 
+		// P2 Trooper Helmets
 		XTD_P2_HELMET(Trooper, Trooper, None)
-		XTD_P2_HELMET(Jet_Trooper, Jet, None)
-		XTD_P2_HELMET(ARC, ARC, None)
-
 		XTD_P2_HELMET(Alcatraz, Trooper, Alcatraz)
 		XTD_P2_HELMET(Byte, Trooper, Byte)
 		XTD_P2_HELMET(Cat, Trooper, Cat)
@@ -98,13 +104,28 @@ class XtdGearInfos
 		XTD_P2_HELMET(Raven, Trooper, Raven)
 		XTD_P2_HELMET(Stim, Trooper, Stim)
 
+		// P2 ARC Trooper Helmets
+		XTD_P2_HELMET(ARC, ARC, None)
 		XTD_P2_HELMET(Stryder, ARC, Stryder)
 
+		// P2 Jet Trooper Helmets
+		XTD_P2_HELMET(Jet_Trooper, Jet, None)
+
+		// P2 Pilot Helmets
+		XTD_PILOT_HELMET(None, P2, Helmet)
+		XTD_PILOT_HELMET(Stim, P2, Helmet_Stim)
+
+		// P1 Pilot Helmets
+		XTD_PILOT_HELMET(None, P1, Helmet)
+
+		// ARF Helmets
 		XTD_ARF_HELMET(Trooper, Helmet)
 		XTD_ARF_HELMET(Tasty, Helmet_Tasty)
 
+		// ARF Uniforms
 		XTD_ARF_UNIFORM(Trooper, Uniform)
 
+		// BARC Helmets
 		XTD_BARC_HELMET(Trooper, Helmet)
 	};
 };
