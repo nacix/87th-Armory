@@ -22,7 +22,7 @@ class XtdGearModels
 
 		class 87th_P2_Helmet
 		{
-			label = "[87th] Trooper Helmet";
+			label = "[87th] P2 Helmet";
 			author = "Anorexican";
 			options[] = {"variant", "custom"};
 			class variant
