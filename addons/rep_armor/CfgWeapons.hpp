@@ -95,6 +95,13 @@ class CfgWeapons {
 			SET_ARMOR_LEGS(baseArmor,pass,legsMult) \
 		};
 
+	// Inherits ItemInfo from parent class and calls master setter for HitPoint armor
+	#define DEF_ARMOR(baseArmor,pass,headMult,torsoMult,armsMult,legsMult) \
+		class ItemInfo: ItemInfo \
+		{ \
+			SET_ARMOR(baseArmor,pass,headMult,torsoMult,armsMult,legsMult) \
+		};
+
 	#define ADD_CT_HELMET(className,rawName) \
 		class TAG##_##className##_Helmet: TAG##_Trooper_Helmet \
 		{ \
@@ -274,11 +281,15 @@ class CfgWeapons {
 	class ls_gar_phase2Arf_helmet;
 	class ls_sob_phase2SpecOp_helmet;
 
-	class 87th_Trooper_Helmet: JLTS_CloneHelmetP2
+
+	#define SET_ARMOR_BASE SET_ARMOR(13.5,0.8,1,0,0,0)
+	#define DEF_ARMOR_BASE DEF_ARMOR(13.5,0.8,1,0,0,0)
+
 	{
 		author = "Stim";
 		displayname = "[87th] Trooper Helmet";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\ct\87th_Trooper_Helmet_co.paa) };
+		DEF_ARMOR_BASE
 	};
 
 	// Variant CT Helmet Definitions
@@ -316,13 +327,7 @@ class CfgWeapons {
 			{
 				"camo"
 			};
-			class HitpointsProtectionInfo
-			{
-				class Head
-				{
-					hitpointName="HitHead";
-					armor=6;
-					passThrough=0.5;
+			SET_ARMOR_BASE
 				};
 			};
 		};
@@ -341,6 +346,7 @@ class CfgWeapons {
 			QPATHTOF(data\helmets\rto\87th_RTO.rvmat),
 			QPATHTOF(data\helmets\rto\RTO_Visor.rvmat)
 		};
+		DEF_ARMOR_BASE
 	};
 
 	class 87th_ARF_Helmet: ls_gar_phase1Arf_helmet
@@ -361,6 +367,7 @@ class CfgWeapons {
 			"ls_armor_bluefor\helmet\gar\arf\data\visor.rvmat"
 		};
 		subItems[] = {};
+		DEF_ARMOR_BASE
 	};
 	class 87th_ARF_Helmet_P2: ls_gar_phase2Arf_helmet
 	{
@@ -380,6 +387,7 @@ class CfgWeapons {
 			"ls_armor_bluefor\helmet\gar\arf\data\visor.rvmat"
 		};
 		subItems[] = {};
+		DEF_ARMOR_BASE
 	};
 
 	ADD_ARF_HELMET_CAMOS(Trooper, ARF Helmet, ARF_Helmet)
@@ -391,6 +399,7 @@ class CfgWeapons {
 		author = "Stim & Anorexican";
 		displayname = "[87th] BARC Helmet";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\barc\trooper\87th_BARC_Helmet_co.paa) };
+		DEF_ARMOR_BASE
 	};
 
 	ADD_BARC_HELMET_CAMO(Desert)
@@ -404,6 +413,7 @@ class CfgWeapons {
 		author = "Stim";
 		displayname = "[87th] Airborne Helmet";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\87th_Airborne_Helmet_co.paa) };
+		DEF_ARMOR_BASE
 	};
 	class 87th_P2_Pilot_helmet: 3as_P2_Pilot_helmet
 	{
@@ -418,11 +428,13 @@ class CfgWeapons {
 			QPATHTOF(data\helmets\pilot\87th_Pilot_Helmet_co.paa),
 			""
 		};
+		DEF_ARMOR_BASE
 	};
 	class 87th_P1_Pilot_Helmet: 3as_P1_Pilot_helmet
 	{
 		displayName = "[87th] Phase 1 Pilot Helmet";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\pilot\87th_P1_Pilot_Helmet_co.paa) };
+		DEF_ARMOR_BASE
 	};
 
 	ADD_PILOT_HELMET(Stim, Stim's Pilot Helmet)
@@ -433,6 +445,7 @@ class CfgWeapons {
 		displayname = "[87th] Phase 1 Trooper Helmet";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\ct\87th_P1_Trooper_Helmet_co.paa) };
 		subItems[] = {};
+		DEF_ARMOR_BASE
 	};
 	class 87th_Katarn_Helmet: 3AS_H_Katarn_Helmet
 	{
@@ -444,10 +457,7 @@ class CfgWeapons {
 			QPATHTOF(data\helmets\87th_Katarn_Helmet_co.paa),
 			QPATHTOF(data\helmets\87th_Katarn_Helmet_co.paa)
 		};
-		class ItemInfo: ItemInfo
-		{
-			SET_ARMOR(17,0.8,1,0,0,0)
-		};
+		DEF_ARMOR(18,0.35,1,0,0,0)
 	};
 
 	class 87th_NVG_Base: NVGoggles
@@ -523,9 +533,7 @@ class CfgWeapons {
 		author = "Stim";
 		displayname = "[87th] ARC Vest";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\vests\87th_ARC_Vest_co.paa) };
-		class ItemInfo: ItemInfo
-		{
-			SET_ARMOR(1.4,0.9,0,1,0.25,0.45)
+		DEF_ARMOR(1.4,0.5,0,1,0.25,0.45)
 		};
 	};
 	class 87th_Medic_Vest: JLTS_CloneVestAirborne
@@ -533,10 +541,7 @@ class CfgWeapons {
 		author = "Stim";
 		displayname = "[87th] Medic Accessories";
 		hiddenSelectionsTextures[] = { "", QPATHTOF(data\vests\87th_Medic_Vest_co.paa) };
-		class ItemInfo: ItemInfo
-		{
-			SET_ARMOR(0.8,0.9,0,1,0.15,0.25)
-		};
+		DEF_ARMOR(0.8,0.5,0,1,0.15,0.25)
 	};
 
 	class 87th_Recon_Accessories: JLTS_CloneVestRecon
@@ -544,9 +549,7 @@ class CfgWeapons {
 		author = "Stim & Anorexican";
 		displayname = "[87th] Recon Accessories";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\vests\87th_Recon_Attachments_co.paa) };
-		class ItemInfo: ItemInfo
-		{
-			SET_ARMOR(0.8,0.9,0,1,0.15,0.25)
+		DEF_ARMOR(0.8,0.5,0,1,0.15,0.25)
 		};
 	};
 	class 87th_Recon_NCO_Accessories: JLTS_CloneVestReconNCO
@@ -554,9 +557,7 @@ class CfgWeapons {
 		author = "Stim & Anorexican";
 		displayname = "[87th] Recon NCO Accessories";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\vests\87th_Recon_Attachments_co.paa) };
-		class ItemInfo: ItemInfo
-		{
-			SET_ARMOR(1.15,0.9,0,1,0.15,0.45)
+		DEF_ARMOR(1.15,0.5,0,1,0.15,0.45)
 		};
 	};
 	class 87th_Recon_Officer_Accessories: JLTS_CloneVestReconOfficer
@@ -568,10 +569,7 @@ class CfgWeapons {
 			QPATHTOF(data\vests\87th_Recon_Officer_Attachments_co.paa),
 			QPATHTOF(data\vests\87th_Recon_Attachments_co.paa)
 		};
-		class ItemInfo: ItemInfo
-		{
-			SET_ARMOR(1.4,0.9,0,1,0.2,0.45)
-		};
+		DEF_ARMOR(1.4,0.5,0,1,0.2,0.45)
 	};
 
 	class 87th_Lieutenant_Accessories: JLTS_CloneVestLieutenant
@@ -579,9 +577,7 @@ class CfgWeapons {
 		author = "Stim";
 		displayname = "[87th] Lieutenant Accessories";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\vests\87th_Officer_Attachments_co.paa) };
-		class ItemInfo: ItemInfo
-		{
-			SET_ARMOR(1.4,0.9,0,1,0.2,0.45)
+		DEF_ARMOR(1.4,0.5,0,1,0.2,0.45)
 		};
 	};
 	class 87th_Officer_Accessories: JLTS_CloneVestOfficer
@@ -589,9 +585,7 @@ class CfgWeapons {
 		author = "Stim";
 		displayname = "[87th] Officer Accessories";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\vests\87th_Officer_Attachments_co.paa) };
-		class ItemInfo: ItemInfo
-		{
-			SET_ARMOR(1.4,0.9,0,1,0.2,0.45)
+		DEF_ARMOR(1.4,0.5,0,1,0.2,0.45)
 		};
 	};
 	class 87th_Commander_Accessories: JLTS_CloneVestCommander
@@ -599,9 +593,7 @@ class CfgWeapons {
 		author = "Stim";
 		displayname = "[87th] Commander Accessories";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\vests\87th_Officer_Attachments_co.paa) };
-		class ItemInfo: ItemInfo
-		{
-			SET_ARMOR(1.4,0.9,0,1,0.2,0.45)
+		DEF_ARMOR(1.4,0.5,0,1,0.2,0.45)
 		};
 	};
 	class 87th_Kama: JLTS_CloneVestKama
@@ -609,10 +601,7 @@ class CfgWeapons {
 		author = "Stim";
 		displayname = "[87th] Kama";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\vests\87th_Officer_Attachments_co.paa) };
-		class ItemInfo: ItemInfo
-		{
-			SET_ARMOR(1.15,0.9,0,1,0.15,0.45)
-		};
+		DEF_ARMOR(1.15,0.5,0,1,0.15,0.45)
 	};
 
 	class 87th_Katarn_Vest_Demo: 3AS_Katarn_Vest_Demo_Base
