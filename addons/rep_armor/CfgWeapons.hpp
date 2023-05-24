@@ -197,15 +197,24 @@ class CfgWeapons {
 			}; \
 		};
 
-	#define ADD_BARC_HELMET_CAMO(camoType) \
-		class TAG##_BARC_Helmet_##camoType##: TAG##_BARC_Helmet \
+	// Adds a camo variant for the given barc helmet
+	#define ADD_BARC_HELMET_CAMO(className,rawName,header,camoType) \
+		class TAG##_##header##_##camoType##: TAG##_##header \
 		{ \
 			displayName = NAME_PRETTY(BARC Helmet (##camoType##)); \
-			hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\barc\trooper\87th_BARC_Helmet_##camoType##_co.paa) }; \
+			hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\barc\##className##\##TAG##_##header##_##camoType##_co.paa) }; \
 		};
+	// Calls camo setter for all applicable ARF camo selections
+	#define ADD_BARC_HELMET_CAMOS(className,rawName,header) \
+		ADD_BARC_HELMET_CAMO(className, rawName, header, Desert) \
+		ADD_BARC_HELMET_CAMO(className, rawName, header, Sarid) \
+		ADD_BARC_HELMET_CAMO(className, rawName, header, Woodland) \
+		ADD_BARC_HELMET_CAMO(className, rawName, header, Winter) \
+		ADD_BARC_HELMET_CAMO(className, rawName, header, Urban)
 
-	#define ADD_PILOT_HELMET(className,rawName) \
-		class 87th_Pilot_Helmet_##className##: 87th_P2_Pilot_Helmet \
+	// Adds a P2 pilot helmet
+	#define ADD_PILOT_HELMET(className,phase,rawName) \
+		class TAG##_##phase##_Pilot_Helmet_##className##: 87th_P2_Pilot_Helmet \
 		{ \
 			displayName = NAME_PRETTY(rawName); \
 			hiddenSelectionsTextures[]= \
@@ -393,11 +402,8 @@ class CfgWeapons {
 		DEF_ARMOR_BASE
 	};
 
-	ADD_BARC_HELMET_CAMO(Desert)
-	ADD_BARC_HELMET_CAMO(Sarid)
-	ADD_BARC_HELMET_CAMO(Woodland)
-	ADD_BARC_HELMET_CAMO(Winter)
-	ADD_BARC_HELMET_CAMO(Urban)
+	// Add camo variants to base BARC helmet
+	ADD_BARC_HELMET_CAMOS(Trooper, BARC Helmet, BARC_Helmet)
 
 	class 87th_Airborne_Helmet: JLTS_CloneHelmetAB
 	{
@@ -451,7 +457,26 @@ class CfgWeapons {
 		DEF_ARMOR(18,0.35,1,0,0,0)
 	};
 
-	class 87th_NVG_Base: NVGoggles
+	// Variant CT Helmet Definitions
+	ADD_CT_HELMET(ARC, ARC Helmet)
+	ADD_CT_HELMET(Jet_Trooper, Jet Trooper Helmet)
+
+	// Custom CT Helmet Definitions
+	ADD_CT_HELMET(Stim, Stim's Helmet)
+	ADD_CT_HELMET(Raven, Raven's Helmet)
+	ADD_CT_HELMET(Stryder, Stryder's Helmet)
+	ADD_CT_HELMET(Alcatraz, Alcatraz' Helmet)
+	ADD_CT_HELMET(Cat, Cat's Helmet)
+	ADD_CT_HELMET(Noggy, Noggy's Helmet)
+	ADD_CT_HELMET(Byte, Byte's Helmet)
+	ADD_CT_HELMET(Domino, Domino's Helmet)
+
+	// Custom ARF Helmet Definitions
+	ADD_ARF_HELMET(Tasty, Tasty's ARF Helmet)
+
+	// Custom Pilot Helmet Definitions
+	ADD_PILOT_HELMET(Stim, P2, Stim's Pilot Helmet)
+
 	{
 		author = "Stim";
 		scope = 0;
