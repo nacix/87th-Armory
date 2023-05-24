@@ -21,9 +21,12 @@
 
 params ["_vcomSkillTable"];
 
+// Exit the function if it isn't running serverside
 if (!isServer) exitWith {};
 
+// Checks if VCOM AI is enabled on the server
 if (isClass(configFile >> "CfgPatches" >> "vcom_ai")) then {
+	// Waits until VCOM has initialized and passes our units' skill data to VCOM
 	[{!(isNil "VCM_SKILL_CLASSNAMES")}, {
 		_vcomSkillTable = _this;
 		VCM_CLASSNAMESPECIFIC = true;

@@ -22,6 +22,7 @@
 
 params ["_unit", "_faceProfile", ["_designation", "CT"]];
 
+// Call the paradrop script if our unit is the leader of a drop group
 switch (typeOf _unit) do {
 	case "87th_AB_NCO_A": { [_unit, 250] call EFUNC(common,paradrop) };
 	case "87th_AB_NCO_B": { [_unit, 500] call EFUNC(common,paradrop) };
@@ -29,7 +30,9 @@ switch (typeOf _unit) do {
 	case "87th_AB_NCO_D": { [_unit, 1000, 70] call EFUNC(common,paradrop) };
 };
 
+// Grabs our unit's skills from the skillTable (if available)
 _unitSkills = (GVAR(skillTable)) getOrDefault [typeOf _unit, []];
 
+// Call scripts to set our unit's identity and skillset
 [_unit, _faceProfile, _designation] call EFUNC(rep_identities,setIdentity);
 [_unit, _unitSkills] call EFUNC(common,setUnitSkills);

@@ -36,6 +36,17 @@ class CfgWeapons
 	class 3AS_DC15C_GL;
 	class 3AS_DC15L_F;
 	class 3AS_DC15C_F;
+	class 3AS_Optic_DC15L: ItemCore
+	{
+		class ItemInfo: InventoryOpticsItem_Base_F
+		{
+			class OpticsModes
+			{
+				class 3AS_DC15L_Optic;
+				class IronOnTopOfMyOptics;
+			};
+		};
+	};
 	class 3AS_optic_holo_DC15S;
 	class 3AS_Optic_VK38X;
 	class 3AS_Valken38X_F;
@@ -917,7 +928,10 @@ class CfgWeapons
 			class CowsSlot: CowsSlot
 			{
 				linkProxy="\A3\data_f\proxies\weapon_slots\TOP";
-				compatibleItems[] = {};
+				compatibleItems[]=
+				{
+					"87th_Optic_DC15L"
+				};
 			};
 			class PointerSlot: PointerSlot
 			{
@@ -934,6 +948,37 @@ class CfgWeapons
 				compatibleItems[]=
 				{
 					"3AS_Bipod_DC15L_f"
+				};
+			};
+		};
+	};
+	class 87th_Optic_DC15L: 3AS_Optic_DC15L
+	{
+		author = "Anorexican";
+		displayName = "[87th] DC-15L Optic";
+		class ItemInfo: ItemInfo
+		{
+			class OpticsModes: OpticsModes
+			{
+				class 87th_DC15L_Optic: 3AS_DC15L_Optic
+				{
+					opticsZoomMin = "0.25/1.8";
+					opticsZoomMax = "0.25/1.8";
+					opticsZoomInit = "0.25/1.8";
+					discreteFOV[] = {};
+				};
+				class IronOnTopOfMyOptics: 87th_DC15L_Optic
+				{
+					opticsID=2;
+					useModelOptics=0;
+					opticsFlare=0;
+					opticsDisablePeripherialVision=0;
+					opticsZoomMin=0.375;
+					opticsZoomMax=1.1;
+					opticsZoomInit=0.75;
+					memoryPointCamera="eye";
+					visionMode[]={};
+					discretefov[]={};
 				};
 			};
 		};

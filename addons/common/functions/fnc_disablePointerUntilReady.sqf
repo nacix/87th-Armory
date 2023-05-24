@@ -10,12 +10,13 @@
  *
  * Arguments:
  * 0: The unit <OBJECT>
+ * 1: The unit's weapon <STRING>
  *
  * Return Value:
  * NONE
  *
  * Example:
- * [player, currentWeapon player] call ax87_lasers_fnc_disablePointerUntilReady;
+ * [player, currentWeapon player] call ax87_common_fnc_disablePointerUntilReady;
  *
  * Public: No
 */
@@ -26,10 +27,12 @@ if (!hasInterface || !local _unit) exitWith {}; // Only executes on player clien
 
 _unit action ["IRLaserOff", _unit];
 
+// True if unit is playing a launcher animation or has a launcher equipped
 if ("Launcher" in ([_unit, false] call BIS_fnc_moveAction) && {_weapon isNotEqualTo secondaryWeapon _unit}) then {
-	private _disableLaserPFH = [{(_this select 0) action ["IRLaserOff", (_this select 0)]}, 0, _unit] call CBA_fnc_addPerFrameHandler; // PFH that blocks the player from enabling their laser until terminated.
+	// Blocks the player from enabling their laser until terminated
+	private _disableLaserPFH = [{(_this select 0) action ["IRLaserOff", (_this select 0)]}, 0, _unit] call CBA_fnc_addPerFrameHandler;
 
-	// Waits for the player to finish switching weapons, then re-enables laser usage. Automatically terminates the PFH after 8 seconds.
+	// Waits for the player to finish switching weapons, then re-enables laser usage. Automatically terminates the PFH after 8 seconds
 	[{currentWeapon (_this select 0) isEqualTo secondaryWeapon (_this select 0) || !("Launcher" in ([_this select 0, false] call BIS_fnc_moveAction))}, {
 		(_this select 2) call CBA_fnc_removePerFrameHandler;
 	}, [_unit, _weapon, _disableLaserPFH], 8, {(_this select 2) call CBA_fnc_removePerFrameHandler}] call CBA_fnc_waitUntilAndExecute;

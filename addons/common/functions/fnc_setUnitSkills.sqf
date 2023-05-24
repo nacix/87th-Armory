@@ -22,8 +22,10 @@
 
 params ["_unit", "_skillTable"];
 
+// Exit the function if our provided unit isn't valid
 if (!isServer || isPlayer _unit || count _skillTable <= 0) exitWith {};
 
+// Sets each of the unit's skills using their provided skillTable and our global array of skill categories
 {
 	_unit setSkill [_x, _skillTable select _forEachIndex];
 } forEach SKILLTYPES;
