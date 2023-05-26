@@ -1,10 +1,10 @@
 class CfgVehicles 
 {
-	#define LAAT_NEW(name_raw,classname,inheritance) \
-		class AUXCLASS(classname)##: inheritance \
+	#define LAAT_NEW(rawName,className,inheritance) \
+		class AUXCLASS(className)##: inheritance \
 		{ \
 			author = "Anorexican"; \
-			displayName = NAME_PRETTY(LAAT/I ##name_raw); \
+			displayName = NAME_PRETTY(LAAT/I ##rawName); \
 			faction = FACTION_REP; \
 			editorPreview = QPATHTOF(data\ui\editorPreviews\##TAG##_##className##.jpg); \
 			editorSubcategory = QUOTE(TAG##_Vehicles); \
@@ -19,7 +19,7 @@ class CfgVehicles
 			crew = QUOTE(TAG##_Clone_Pilot); \
 			typicalCargo[] = {QUOTE(TAG##_Clone_Pilot)}; \
 		}; \
-		class TAG##_P1_##classname##: TAG##_##classname \
+		class TAG##_P1_##className##: TAG##_##className \
 		{ \
 			editorSubcategory = QUOTE(TAG##_P1_Vehicles); \
 			crew = QUOTE(TAG##_Clone_P1_Pilot); \
