@@ -138,7 +138,7 @@ class CfgVehicles {
 	{
 		displayName = "Clone Captain";
 		TR_IDENTITY(87th_Clone_Captain)
-		EQUIPMENT(87th_Raven_Helmet, 87th_Officer_Accessories, 0, 87th_Macrobinocular, JLTS_clone_comlink)
+		EQUIPMENT(87th_Officer_Helmet, 87th_Officer_Accessories, 0, 87th_Macrobinocular, JLTS_clone_comlink)
 		WEAPONS(87th_DC15S_Reflex, 87th_DC17SA_Reflex, 0, SWLB_clone_binocular)
 		#define MAGAZINES \
 			MAG_10(3AS_60Rnd_EC30_mag), \
@@ -199,7 +199,7 @@ class CfgVehicles {
 	{
 		displayName = "Clone Major";
 		TR_IDENTITY(87th_Clone_Major)
-		EQUIPMENT(87th_Officer_Helmet, 87th_Officer_Accessories, 0, JLTS_CloneNVGCC, JLTS_clone_comlink)
+		EQUIPMENT(87th_Raven_Helmet, 87th_Officer_Accessories, 0, JLTS_CloneNVGCC, JLTS_clone_comlink)
 		WEAPONS(87th_DC15S_Reflex, 87th_DC17SA_Reflex, 0, SWLB_clone_binocular)
 		#define MAGAZINES \
 			MAG_10(3AS_60Rnd_EC30_mag), \
@@ -1044,7 +1044,7 @@ class CfgVehicles {
 		Engineer = 1;
 		canDeactivateMines = 0;
 		TR_IDENTITY(87th_Clone_Pilot)
-		EQUIPMENT(87th_P2_Pilot_Helmet, JLTS_CloneVestHolster, 87th_RTO_Backpack_Mini, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
+		EQUIPMENT(87th_P2_Pilot_Helmet, JLTS_CloneVestHolster, 87th_RTO_Backpack_Mini, 0, JLTS_clone_comlink)
 		WEAPONS(87th_DC15S_Reflex, 87th_DC17SA_Reflex, 0, 0)
 		items[]=
 		{
