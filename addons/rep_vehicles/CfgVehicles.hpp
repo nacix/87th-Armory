@@ -1,12 +1,12 @@
 class CfgVehicles 
 {
-	#define LAAT_NEW(name_raw,classname,inheritance) \
-		class AUXCLASS(classname)##: inheritance \
+	#define LAAT_NEW(rawName,className,inheritance) \
+		class AUXCLASS(className)##: inheritance \
 		{ \
 			author = "Anorexican"; \
-			displayName = NAME_PRETTY(LAAT/I ##name_raw); \
+			displayName = NAME_PRETTY(LAAT/I ##rawName); \
 			faction = FACTION_REP; \
-			editorPreview = QPATHTOF(data\ui\editorPreviews\##TAG##_LAAT.jpg); \
+			editorPreview = QPATHTOF(data\ui\editorPreviews\##TAG##_##className##.jpg); \
 			editorSubcategory = QUOTE(TAG##_Vehicles); \
 			hiddenSelectionsTextures[]= \
 			{ \
@@ -19,7 +19,7 @@ class CfgVehicles
 			crew = QUOTE(TAG##_Clone_Pilot); \
 			typicalCargo[] = {QUOTE(TAG##_Clone_Pilot)}; \
 		}; \
-		class TAG##_P1_##classname##: TAG##_##classname \
+		class TAG##_P1_##className##: TAG##_##className \
 		{ \
 			editorSubcategory = QUOTE(TAG##_P1_Vehicles); \
 			crew = QUOTE(TAG##_Clone_P1_Pilot); \
@@ -57,19 +57,29 @@ class CfgVehicles
 		author = "Stim";
 		displayName = "[87th] RTT";
 		faction = "87th_Legion";
-		editorSubcategory="87th_Vehicles";
-		// editorPreview = "3AS\3AS_rtt\images\3AS_RTT.jpg";
+		editorSubcategory = "87th_Vehicles";
+		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_RTT.jpg);
 		crew = "87th_Clone_DC15S";
 		typicalCargo[]=
 		{
-			CREW_1(##TAG##_Clone_DC15S)
+			CREW_3(87th_Clone_DC15S)
 		};
 		RTT_TEXTURE(RTT)
 	};
+	class 87th_P1_RTT: 87th_RTT
+	{
+		editorSubcategory = "87th_P1_Vehicles";
+		crew = "87th_Clone_P1_DC15S";
+		typicalCargo[]=
+		{
+			CREW_3(87th_Clone_P1_DC15S)
+		};
+	};
+
 	class 87th_RTT_Rep: 87th_RTT
 	{
 		displayName = "[87th] RTT (GAR)";
-		// editorPreview = "3AS\3AS_rtt\images\3AS_RTT.jpg";
+		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_RTT_Rep.jpg);
 		crew = "JLTS_Clone_P2_DC15S";
 		typicalCargo[]=
 		{
@@ -77,14 +87,24 @@ class CfgVehicles
 		};
 		RTT_TEXTURE(RTT_Rep)
 	};
+	class 87th_P1_RTT_Rep: 87th_RTT_Rep
+	{
+		editorSubcategory = "87th_P1_Vehicles";
+		crew = "3AS_Clone_P1";
+		typicalCargo[]=
+		{
+			CREW_3(3AS_Clone_P1)
+		};
+	};
 
 	class 87th_BARC: ls_ground_barc
 	{
 		author = "Anorexican & Stim";
 		displayName = "[87th] BARC Speeder";
+		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_BARC.jpg);
 		editorSubcategory = "87th_Vehicles";
 		faction = "87th_Legion";
-		crew = "87th_ARF_DC15S";
+		crew = "87th_BARC_DC15S";
 		hiddenSelectionsTextures[]=
 		{
 			QPATHTOF(data\barc\87th_BARC_Body_co.paa),

@@ -460,11 +460,11 @@ class CfgWeapons {
 	ADD_CT_HELMET(Stim, Stim's Helmet)
 	ADD_CT_HELMET(Raven, Raven's Helmet)
 	ADD_CT_HELMET(Stryder, Stryder's Helmet)
-	ADD_CT_HELMET(Alcatraz, Alcatraz' Helmet)
 	ADD_CT_HELMET(Cat, Cat's Helmet)
 	ADD_CT_HELMET(Noggy, Noggy's Helmet)
 	ADD_CT_HELMET(Byte, Byte's Helmet)
 	ADD_CT_HELMET(Domino, Domino's Helmet)
+	ADD_CT_HELMET(Officer, Officer Helmet)
 
 	// Custom ARF Helmet Definitions
 	ADD_ARF_HELMET(Tasty, Tasty's ARF Helmet)

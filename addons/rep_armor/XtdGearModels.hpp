@@ -37,17 +37,17 @@ class XtdGearModels
 			class custom
 			{
 				label = "Customs";
-				values[] = {"None", "Stim", "Raven", "Stryder", "Alcatraz", "Cat", "Noggy", "Byte", "Domino"};
+				values[] = {"None", "Stim", "Raven", "Stryder", "Cat", "Noggy", "Byte", "Domino", "Officer"};
 				alwaysSelectable = 1;
 				BANNER_GENERIC(None)
 				BANNER_GENERIC(Stim)
 				BANNER_GENERIC(Raven)
 				BANNER_GENERIC(Stryder)
-				BANNER_GENERIC(Alcatraz)
 				BANNER_GENERIC(Cat)
 				BANNER_GENERIC(Noggy)
 				BANNER_GENERIC(Byte)
 				BANNER_GENERIC(Domino)
+				BANNER_GENERIC(Officer)
 			};
 		};
 
