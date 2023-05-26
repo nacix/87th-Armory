@@ -20,6 +20,35 @@ class PointerSlot: SlotInfo
 
 class CfgWeapons 
 {
+	#define WEAPON_LINKED(className,parentName,opticName,muzzleName,accessoryName,underName) \
+		class ##TAG##_##className##: ##TAG##_##parentName \
+		{ \
+			scope = 1; \
+			class LinkedItems \
+			{ \
+				class LinkedItemsOptic \
+				{ \
+					slot = "CowsSlot"; \
+					item = QUOTE(opticName); \
+				}; \
+				class LinkedItemsMuzzle \
+				{ \
+					slot = "MuzzleSlot"; \
+					item = QUOTE(muzzleName); \
+				}; \
+				class LinkedItemsAcc \
+				{ \
+					slot = "PointerSlot"; \
+					item = QUOTE(accessoryName); \
+				}; \
+				class LinkedItemsUnder \
+				{ \
+					slot = "UnderBarrelSlot"; \
+					item = QUOTE(underName); \
+				}; \
+			}; \
+		};
+
 	class ItemCore;
 	class InventoryFlashLightItem_Base_F;
 	class InventoryOpticsItem_Base_F;
@@ -2026,157 +2055,20 @@ class CfgWeapons
 		JLTS_isFried = 1;
 	};
 
-	class 87th_3AS_DC15A_F: 3AS_DC15A_F
-	{
-		scope = 1;
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "CowsSlot";
-				item = "3as_optic_lescope_dc15a";
-			};
-		};
-	};
-	class 87th_3AS_DC15LE_F: 3AS_DC15A_F
-	{
-		scope = 1;
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "CowsSlot";
-				item = "3as_optic_lescope_dc15a";
-			};
-			class LinkedItemsMuzzle
-			{
-				slot = "MuzzleSlot";
-				item = "3as_muzzle_le_dc15a";
-			};
-		};
-	};
-	class 87th_3AS_DC15LE_GL: 3AS_DC15A_GL
-	{
-		scope = 1;
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "CowsSlot";
-				item = "3as_optic_lescope_dc15a";
-			};
-			class LinkedItemsMuzzle
-			{
-				slot = "MuzzleSlot";
-				item = "3as_muzzle_le_dc15a";
-			};
-		};
-	};
-	class 87th_3AS_DC15S_F: 3AS_DC15S_F
-	{
-		scope = 1;
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "CowsSlot";
-				item = "3as_optic_holo_dc15s";
-			};
-		};
-	};
-	class 87th_3AS_DC15A_GL: 3AS_DC15A_GL
-	{
-		scope = 1;
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "CowsSlot";
-				item = "3as_optic_lescope_dc15a";
-			};
-		};
-	};
-	class 87th_3AS_DC15C_GL: 3AS_DC15C_GL
-	{
-		scope = 1;
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "CowsSlot";
-				item = "3as_optic_reflex_dc15c";
-			};
-		};
-	};
-	class 87th_3AS_DC15C_F: 3AS_DC15C_F
-	{
-		scope = 1;
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "CowsSlot";
-				item = "3as_optic_acog_dc15c";
-			};
-		};
-	};
-	class 87th_3AS_DC15L_F: 3AS_DC15L_F
-	{
-		scope = 1;
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "CowsSlot";
-				item = "3as_optic_dc15l";
-			};
-			class LinkedItemsUnder
-			{
-				slot = "UnderBarrelSlot";
-				item = "3as_bipod_dc15l_f";
-			};
-		};
-	};
-	class 87th_3AS_WestarM5_F: 3AS_WestarM5_F
-	{
-		scope = 1;
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "CowsSlot";
-				item = "3as_optic_scope_westarm5";
-			};
-		};
-	};
+	// WEAPON_LINKED(className, parentName, opticName, muzzleName, accessoryName, underName)
+	// EXAMPLE:		(DC15S_Scoped, DC15S, 3as_optic_dc15s, 0, 0, 0)
 
-	class 87th_JLTS_DC15X : JLTS_DC15X
-	{
-		scope = 1;
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "CowsSlot";
-				item = "jlts_dc15x_scope";
-			};
-		};
-	};
-	class 87th_k_773_rifle: k_773_rifle
-	{
-		scope = 1;
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "CowsSlot";
-				item = "k_773_scope2";
-			};
-			class LinkedItemsMuzzle
-			{
-				slot = "MuzzleSlot";
-				item = "k_773_snds";
-			};
-		};
-	};
+	WEAPON_LINKED(DC15LE, DC15A, 3AS_Optic_LEScope_DC15A, 3AS_Muzzle_LE_DC15A, 0, 0)
+	WEAPON_LINKED(DC15LE_GL, DC15A_GL, 3AS_Optic_LEScope_DC15A, 3AS_Muzzle_LE_DC15A, 0, 0)
+	WEAPON_LINKED(DC15S_Reflex, DC15S, 3AS_Optic_Holo_DC15S, 0, 0, 0)
+	WEAPON_LINKED(DC15A_GL_Reflex, DC15A_GL, 3AS_Optic_Red_DC15A, 0, 0, 0)
+	WEAPON_LINKED(DC15C_GL_Reflex, DC15C_GL, 3AS_Optic_Reflex_DC15C, 0, 0, 0)
+	WEAPON_LINKED(DC15C_Scoped, DC15C, 3AS_Optic_ACOG_DC15C, 0, 0, 0)
+	WEAPON_LINKED(DC15L_AR, DC15L, 87th_Optic_DC15L, 0, 0, 3AS_Bipod_DC15L_F)
+	WEAPON_LINKED(WestarM5_Scoped, WestarM5, 3AS_Optic_Scope_WestarM5, 0, 0, 0)
+	WEAPON_LINKED(Firepuncher_Scoped, Firepuncher, 87th_Optic_FP, 0, 87th_acc_pointer_Long_Purple, 0)
+	WEAPON_LINKED(DC15X_Lased, DC15X, 0, 0, 87th_acc_pointer_Long_Purple, 0)
+	WEAPON_LINKED(Valken38X_Scoped, Valken38X, 87th_Optic_VK38X, 0, 0, 0)
+	WEAPON_LINKED(DC17SA_Reflex, DC17SA, 3AS_optic_holo_DC15S, 0, 87th_acc_pointer_Long_Purple, 0)
+	WEAPON_LINKED(DP23_Lased, DP23, 3AS_optic_holo_dc15S, 0, 87th_acc_pointer_Short_Purple, 0)
 };
