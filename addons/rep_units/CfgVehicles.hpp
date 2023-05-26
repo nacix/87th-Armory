@@ -346,7 +346,7 @@ class CfgVehicles {
 		icon = "JLTS_iconManHeavy";
 		P1_IDENTITY(87th_Clone_P1_DC15AUGL)
 		EQUIPMENT(87th_P1_Trooper_Helmet, JLTS_CloneVestHolster, 0, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
-		WEAPONS(87th_DC15A, 87th_DC17SA_Reflex, 0, 0)
+		WEAPONS(87th_DC15A_GL, 87th_DC17SA_Reflex, 0, 0)
 		#define MAGAZINES \
 			MAG_10(87th_45Rnd_EC40_Mag), \
 			MAG_4(3Rnd_HE_Grenade_shell), \
@@ -359,7 +359,7 @@ class CfgVehicles {
 		displayName = "Clone AT Trooper";
 		icon = "iconManAT";
 		P1_IDENTITY(87th_Clone_P1_AT)
-		EQUIPMENT(87th_P1_Trooper_Helmet, JLTS_CloneVestAirborne, 0, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
+		EQUIPMENT(87th_P1_Trooper_Helmet, JLTS_CloneVestAirborne, 87th_Backpack, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
 		WEAPONS(87th_DC15A, 87th_DC17SA_Reflex, 87th_RPS6X, SWLB_clone_binocular)
 		#define MAGAZINES \
 			MAG_10(87th_45Rnd_EC40_Mag), \
@@ -1060,7 +1060,7 @@ class CfgVehicles {
 	};
 	class 87th_Clone_P1_Pilot: 87th_Clone_Pilot
 	{
-		P1_IDENTITY(87th_Clone_Pilot)
+		P1_IDENTITY(87th_Clone_P1_Pilot)
 		EQUIPMENT(87th_P1_Pilot_Helmet, JLTS_CloneVestHolster, 87th_RTO_Backpack_Mini, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
 	};
 };
