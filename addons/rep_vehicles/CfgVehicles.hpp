@@ -84,7 +84,7 @@ class CfgVehicles
 		displayName = "[87th] BARC Speeder";
 		editorSubcategory = "87th_Vehicles";
 		faction = "87th_Legion";
-		crew = "87th_ARF_DC15S";
+		crew = "87th_BARC_DC15S";
 		hiddenSelectionsTextures[]=
 		{
 			QPATHTOF(data\barc\87th_BARC_Body_co.paa),
