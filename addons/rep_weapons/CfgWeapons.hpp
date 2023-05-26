@@ -49,6 +49,36 @@ class CfgWeapons
 			}; \
 		};
 
+	#define DC15LE_PREFAB(className, parentClass) \
+		class TAG##_##className##: TAG##_##parentClass \
+		{ \
+			scope = 1; \
+			class WeaponSlotsInfo: WeaponSlotsInfo \
+			{ \
+				class CowsSlot: CowsSlot \
+				{ \
+					linkProxy="\A3\data_f\proxies\weapon_slots\TOP"; \
+					compatibleItems[]= \
+					{ \
+						"3AS_Optic_LEScope_DC15A" \
+					}; \
+				}; \
+			}; \
+			class LinkedItems \
+			{ \
+				class LinkedItemsOptic \
+				{ \
+					slot = "CowsSlot"; \
+					item = "3AS_Optic_LEScope_DC15A"; \
+				}; \
+				class LinkedItemsMuzzle \
+				{ \
+					slot = "MuzzleSlot"; \
+					item = "3AS_Muzzle_LE_DC15A"; \
+				}; \
+			}; \
+		};
+
 	class ItemCore;
 	class InventoryFlashLightItem_Base_F;
 	class InventoryOpticsItem_Base_F;
@@ -2055,8 +2085,9 @@ class CfgWeapons
 		JLTS_isFried = 1;
 	};
 
-	// WEAPON_LINKED(className, parentName, opticName, muzzleName, accessoryName, underName)
-	// EXAMPLE:		(DC15S_Scoped, DC15S, 3as_optic_dc15s, 0, 0, 0)
+	// DC15LE_PREFAB(className, parentClass)
+	DC15LE_PREFAB(DC15LE, DC15A)
+	DC15LE_PREFAB(DC15LE_GL, DC15A_GL)
 
 	WEAPON_LINKED(DC15LE, DC15A, 3AS_Optic_LEScope_DC15A, 3AS_Muzzle_LE_DC15A, 0, 0)
 	WEAPON_LINKED(DC15LE_GL, DC15A_GL, 3AS_Optic_LEScope_DC15A, 3AS_Muzzle_LE_DC15A, 0, 0)
