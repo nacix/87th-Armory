@@ -20,7 +20,7 @@ class PointerSlot: SlotInfo
 
 class CfgWeapons 
 {
-	#define WEAPON_LINKED(className,parentName,opticName,muzzleName,accessoryName,underName) \
+	#define WEAPON_PREFAB(className,parentName,opticName,muzzleName,accessoryName,underName) \
 		class ##TAG##_##className##: ##TAG##_##parentName \
 		{ \
 			scope = 1; \
@@ -2089,17 +2089,16 @@ class CfgWeapons
 	DC15LE_PREFAB(DC15LE, DC15A)
 	DC15LE_PREFAB(DC15LE_GL, DC15A_GL)
 
-	WEAPON_LINKED(DC15LE, DC15A, 3AS_Optic_LEScope_DC15A, 3AS_Muzzle_LE_DC15A, 0, 0)
-	WEAPON_LINKED(DC15LE_GL, DC15A_GL, 3AS_Optic_LEScope_DC15A, 3AS_Muzzle_LE_DC15A, 0, 0)
-	WEAPON_LINKED(DC15S_Reflex, DC15S, 3AS_Optic_Holo_DC15S, 0, 0, 0)
-	WEAPON_LINKED(DC15A_GL_Reflex, DC15A_GL, 3AS_Optic_Red_DC15A, 0, 0, 0)
-	WEAPON_LINKED(DC15C_GL_Reflex, DC15C_GL, 3AS_Optic_Reflex_DC15C, 0, 0, 0)
-	WEAPON_LINKED(DC15C_Scoped, DC15C, 3AS_Optic_ACOG_DC15C, 0, 0, 0)
-	WEAPON_LINKED(DC15L_AR, DC15L, 87th_Optic_DC15L, 0, 0, 3AS_Bipod_DC15L_F)
-	WEAPON_LINKED(WestarM5_Scoped, WestarM5, 3AS_Optic_Scope_WestarM5, 0, 0, 0)
-	WEAPON_LINKED(Firepuncher_Scoped, Firepuncher, 87th_Optic_FP, 0, 87th_acc_pointer_Long_Purple, 0)
-	WEAPON_LINKED(DC15X_Lased, DC15X, 0, 0, 87th_acc_pointer_Long_Purple, 0)
-	WEAPON_LINKED(Valken38X_Scoped, Valken38X, 87th_Optic_VK38X, 0, 0, 0)
-	WEAPON_LINKED(DC17SA_Reflex, DC17SA, 3AS_optic_holo_DC15S, 0, 87th_acc_pointer_Long_Purple, 0)
-	WEAPON_LINKED(DP23_Lased, DP23, 3AS_optic_holo_dc15S, 0, 87th_acc_pointer_Short_Purple, 0)
+	// WEAPON_PREFAB(className, parentName, opticName, muzzleName, accessoryName, underName)
+	WEAPON_PREFAB(DC15S_Reflex, DC15S, 3AS_Optic_Holo_DC15S, 0, 0, 0)
+	WEAPON_PREFAB(DC15A_GL_Reflex, DC15A_GL, 3AS_Optic_Red_DC15A, 0, 0, 0)
+	WEAPON_PREFAB(DC15C_GL_Reflex, DC15C_GL, 3AS_Optic_Reflex_DC15C, 0, 0, 0)
+	WEAPON_PREFAB(DC15C_Scoped, DC15C, 3AS_Optic_ACOG_DC15C, 0, 0, 0)
+	WEAPON_PREFAB(DC15L_AR, DC15L, 87th_Optic_DC15L, 0, 0, 3AS_Bipod_DC15L_F)
+	WEAPON_PREFAB(WestarM5_Scoped, WestarM5, 3AS_Optic_Scope_WestarM5, 0, 0, 0)
+	WEAPON_PREFAB(Firepuncher_Scoped, Firepuncher, 87th_Optic_FP, 0, 87th_acc_pointer_Long_Purple, 0)
+	WEAPON_PREFAB(DC15X_Lased, DC15X, 0, 0, 87th_acc_pointer_Long_Purple, 0)
+	WEAPON_PREFAB(Valken38X_Scoped, Valken38X, 87th_Optic_VK38X, 0, 0, 0)
+	WEAPON_PREFAB(DC17SA_Reflex, DC17SA, 3AS_optic_holo_DC15S, 0, 87th_acc_pointer_Long_Purple, 0)
+	WEAPON_PREFAB(DP23_Lased, DP23, 3AS_optic_holo_dc15S, 0, 87th_acc_pointer_Short_Purple, 0)
 };
