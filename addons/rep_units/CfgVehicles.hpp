@@ -199,7 +199,7 @@ class CfgVehicles {
 	{
 		displayName = "Clone Major";
 		TR_IDENTITY(87th_Clone_Major)
-		EQUIPMENT(87th_Captain_Helmet, 87th_Officer_Accessories, 0, JLTS_CloneNVGCC, JLTS_clone_comlink)
+		EQUIPMENT(87th_Officer_Helmet, 87th_Officer_Accessories, 0, JLTS_CloneNVGCC, JLTS_clone_comlink)
 		WEAPONS(87th_DC15S_Reflex, 87th_DC17SA_Reflex, 0, SWLB_clone_binocular)
 		#define MAGAZINES \
 			MAG_10(3AS_60Rnd_EC30_mag), \
@@ -230,6 +230,10 @@ class CfgVehicles {
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
+		class EventHandlers
+		{
+			init="[_this select 0, ""JLTS_GAR_medic""] call BIS_fnc_setUnitInsignia;";
+		};
 	};
 	class 87th_Clone_EOD: JLTS_Clone_P2_eod 
 	{
@@ -237,7 +241,7 @@ class CfgVehicles {
 		Engineer = 2;
 		canDeactivateMines = 1;
 		TR_IDENTITY(87th_Clone_EOD)
-		EQUIPMENT(87th_Engineer_Helmet, JLTS_CloneVestSuspender, 87th_EOD_Backpack, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
+		EQUIPMENT(87th_Engineer_Helmet, JLTS_CloneVestSuspender, 87th_EOD_Backpack, 0, JLTS_clone_comlink)
 		WEAPONS(87th_DP23_Lased, 87th_DC17SA_Reflex, 0, 0)
 		#define MAGAZINES \
 			MAG_8(JLTS_DP23_Mag), \
@@ -254,7 +258,7 @@ class CfgVehicles {
 	{
 		displayName = "Clone RTO";
 		TR_IDENTITY(87th_Clone_RTO)
-		EQUIPMENT(87th_Trooper_Helmet, JLTS_CloneVestSuspender, 87th_RTO_Backpack, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
+		EQUIPMENT(87th_RTO_Helmet, JLTS_CloneVestSuspender, 87th_RTO_Backpack, 0, JLTS_clone_comlink)
 		WEAPONS(87th_DC15S_Reflex, 87th_DC17SA_Reflex, 0, SWLB_clone_binocular)
 		#define MAGAZINES \
 			MAG_10(3AS_60Rnd_EC30_mag), \
@@ -278,7 +282,7 @@ class CfgVehicles {
 	{
 		displayName = "Clone Sergeant-Major";
 		TR_IDENTITY(87th_Clone_SergeantMajor)
-		EQUIPMENT(87th_Trooper_Helmet, 87th_Recon_Vest_Officer, 0, 87th_Rangefinder, JLTS_clone_comlink)
+		EQUIPMENT(87th_Trooper_Helmet, 87th_Recon_Officer_Accessories, 0, 87th_Rangefinder, JLTS_clone_comlink)
 		WEAPONS(87th_DC15S_Reflex, 87th_DC17SA_Reflex, 0, SWLB_clone_binocular)
 		#define MAGAZINES \
 			MAG_10(3AS_60Rnd_EC30_mag), \
@@ -549,7 +553,12 @@ class CfgVehicles {
 		displayName = "ARF AT Trooper";
 		ARF_IDENTITY(87th_ARF_AT)
 		EQUIPMENT(87th_ARF_Helmet, 87th_Recon_Accessories, 87th_Belt_Bag, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
-		WEAPONS(87th_DC15S_Reflex, 87th_DC17SA_Reflex, 0, SWLB_clone_binocular)
+		WEAPONS(87th_DC15S_Reflex, 87th_DC17SA_Reflex, 87th_RPS6X, SWLB_clone_binocular)
+		#define MAGAZINES \
+			MAG_10(3AS_60Rnd_EC30_Mag), \
+			MAG_3(87th_MK40X_AT_Guided), \
+			MAGS_MISC
+		magazines[] = { MAGAZINES };
 		headgearList[]=
 		{
 			"87th_ARF_Helmet", 0.6,
@@ -585,10 +594,9 @@ class CfgVehicles {
 		displayName = "ARF Medic";
 		ARF_IDENTITY(87th_ARF_CLS)
 		EQUIPMENT(87th_ARF_Helmet, 87th_Medic_Vest, 87th_Belt_Bag_Medic, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
-		WEAPONS(87th_DC15S_Reflex, 87th_DC17SA_Reflex, 87th_RPS6X, SWLB_clone_binocular)
+		WEAPONS(87th_DC15S_Reflex, 87th_DC17SA_Reflex, 0, SWLB_clone_binocular)
 		#define MAGAZINES \
 			MAG_10(3AS_60Rnd_EC30_Mag), \
-			MAG_5(87th_MK40X_AT_Guided), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -711,7 +719,7 @@ class CfgVehicles {
 	{
 		displayName = "BARC Major";
 		BARC_IDENTITY(87th_BARC_Major)
-		EQUIPMENT(87th_BARC_Helmet, 87th_Commander_Accessories, 87th_Belt_Bag, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
+		EQUIPMENT(87th_BARC_Helmet, 87th_Commander_Accessories, 87th_Belt_Bag, 87th_Rangefinder, JLTS_clone_comlink)
 	};
 
 	class 87th_AB_DC15C: 87th_Clone_DC15S 
@@ -868,7 +876,7 @@ class CfgVehicles {
 		icon = "JLTS_iconManHeavy";
 		ARC_IDENTITY(87th_ARC_GL)
 		EQUIPMENT(87th_ARC_Helmet, 87th_ARC_Vest, 87th_Backpack, 87th_Rangefinder, JLTS_clone_comlink)
-		WEAPONS(87th_DC15S_Reflex, 87th_DC17SA_Reflex, 0, SWLB_clone_binocular)
+		WEAPONS(87th_WestarM5_GL, 87th_DC17SA_Reflex, 0, SWLB_clone_binocular)
 		#define MAGAZINES \
 			MAG_10(3AS_60Rnd_EC30_Mag), \
 			MAG_5(3Rnd_HE_Grenade_shell), \
