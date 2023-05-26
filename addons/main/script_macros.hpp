@@ -63,44 +63,31 @@
 #define VISIBLE(pointer) ((configFile >> "CfgWeapons" >> pointer >> "ItemInfo" >> "Pointer" >> "isIR") call BIS_fnc_getCfgData isEqualTo 0)
 #define HASLASER(attachment) not isNil {(configFile >> "CfgWeapons" >> attachment >> "ItemInfo" >> "Pointer" >> "isIR") call BIS_fnc_getCfgData}
 
-#define WEAPONS(primary,secondary) \
+#define WEAPONS(primaryWeapon,secondaryWeapon,launcherWeapon,binocularWeapon) \
     weapons[]= \
     { \
-        QUOTE(primary), \
-        QUOTE(secondary), \
+        QUOTE(primaryWeapon), \
+        QUOTE(secondaryWeapon), \
+        QUOTE(launcherWeapon), \
+        QUOTE(binocularWeapon), \
         "Throw", \
         "Put" \
     }; \
     respawnWeapons[]= \
     { \
-        QUOTE(primary), \
-        QUOTE(secondary), \
+        QUOTE(primaryWeapon), \
+        QUOTE(secondaryWeapon), \
+        QUOTE(launcherWeapon), \
+        QUOTE(binocularWeapon), \
         "Throw", \
         "Put" \
     };
 
-#define WEAPONS_LN(primary,secondary,launcher) \
-    weapons[]= \
-    { \
-        QUOTE(primary), \
-        QUOTE(secondary), \
-        QUOTE(launcher), \
-        "Throw", \
-        "Put" \
-    }; \
-    respawnWeapons[]= \
-    { \
-        QUOTE(primary), \
-        QUOTE(secondary), \
-        QUOTE(launcher), \
-        "Throw", \
-        "Put" \
-    };
-
-#define EQUIPMENT(helmet,nvg,comms) \
+#define EQUIPMENT(helmet,vest,back,nvg,comms) \
     linkedItems[]= \
 	{ \
         QUOTE(helmet), \
+        QUOTE(vest), \
         QUOTE(nvg), \
         QUOTE(comms), \
         "ItemMap", \
@@ -110,14 +97,22 @@
     respawnLinkedItems[]= \
     { \
         QUOTE(helmet), \
+        QUOTE(vest), \
         QUOTE(nvg), \
         QUOTE(comms), \
         "ItemMap", \
         "ItemCompass", \
         "ItemWatch" \
-    };
+    }; \
+    backpack = QUOTE(back);
 
 #define PREVIEW(className) editorPreview = QPATHTOF(data\ui\editorPreviews\##className##.jpg);
+
+#define IDENTITY(factionID,category,uniform,className) \
+    PREVIEW(className) \
+    faction = QUOTE(factionID); \
+    editorSubcategory = QUOTE(category); \
+    uniformClass = QUOTE(uniform);
 
 #define MAG_1(mag) \
     QUOTE(mag)
