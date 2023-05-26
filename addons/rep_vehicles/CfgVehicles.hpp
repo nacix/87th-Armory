@@ -57,15 +57,25 @@ class CfgVehicles
 		author = "Stim";
 		displayName = "[87th] RTT";
 		faction = "87th_Legion";
-		editorSubcategory="87th_Vehicles";
+		editorSubcategory = "87th_Vehicles";
 		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_RTT.jpg);
 		crew = "87th_Clone_DC15S";
 		typicalCargo[]=
 		{
-			CREW_1(##TAG##_Clone_DC15S)
+			CREW_3(87th_Clone_DC15S)
 		};
 		RTT_TEXTURE(RTT)
 	};
+	class 87th_P1_RTT: 87th_RTT
+	{
+		editorSubcategory = "87th_P1_Vehicles";
+		crew = "87th_Clone_P1_DC15S";
+		typicalCargo[]=
+		{
+			CREW_3(87th_Clone_P1_DC15S)
+		};
+	};
+
 	class 87th_RTT_Rep: 87th_RTT
 	{
 		displayName = "[87th] RTT (GAR)";
@@ -76,6 +86,15 @@ class CfgVehicles
 			CREW_1(JLTS_Clone_P2_DC15S)
 		};
 		RTT_TEXTURE(RTT_Rep)
+	};
+	class 87th_P1_RTT_Rep: 87th_RTT_Rep
+	{
+		editorSubcategory = "87th_P1_Vehicles";
+		crew = "3AS_Clone_P1";
+		typicalCargo[]=
+		{
+			CREW_3(3AS_Clone_P1)
+		};
 	};
 
 	class 87th_BARC: ls_ground_barc
