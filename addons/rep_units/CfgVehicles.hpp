@@ -31,15 +31,37 @@ class CfgVehicles {
 		}; \
 	};
 
-	#define P2_UNIFORM \
-		faction = "87th_Legion"; \
-		editorSubcategory = "87th_Troopers"; \
-		uniformClass = "87th_Trooper_Uniform"; \
-		hiddenSelectionsTextures[]= \
-		{ \
-            QPATHTOEF(rep_armor, data\armor\87th_Chest_co.paa), \
-            QPATHTOEF(rep_armor, data\armor\87th_Legs_co.paa) \
-        };
+	#define REP_IDENTITY(category, uniform, preview) \
+		IDENTITY(87th_Legion, category, uniform, preview)
+
+	#define TR_IDENTITY(preview) \
+		REP_IDENTITY(87th_Troopers, 87th_Trooper_Uniform, preview)
+
+	#define P1_IDENTITY(preview) \
+		REP_IDENTITY(87th_P1_Troopers, 87th_P1_Trooper_Uniform, preview)
+
+	#define ARF_IDENTITY(preview) \
+		REP_IDENTITY(87th_ARF, 87th_ARF_Uniform, preview)
+
+	#define BARC_IDENTITY(preview) \
+		REP_IDENTITY(87th_BARC, 87th_ARF_Uniform, preview)
+
+	#define AB_IDENTITY(preview) \
+		REP_IDENTITY(87th_AB, 87th_Trooper_Uniform, preview)
+
+	#define ARC_IDENTITY(preview) \
+		REP_IDENTITY(87th_ARC, 87th_Trooper_Uniform, preview)
+
+	#define RC_IDENTITY(preview) \
+		REP_IDENTITY(87th_RC, 87th_Katarn_Armor, preview)
+
+	#define MAGS_MISC \
+		MAG_3(87th_21Rnd_EC30_Mag), \
+		MAG_2(SmokeShellGreen), \
+		MAG_2(Chemlight_green), \
+		MAG_2(JLTS_stun_mag_long), \
+		MAG_2(HandGrenade), \
+		MAG_1(SmokeShell)
 
 	JLTS_CLASS(JLTS_Clone_P2_DC15A, B_Soldier_F)
 	JLTS_CLASS(JLTS_Clone_P2_lieutenant, B_Officer_F)
