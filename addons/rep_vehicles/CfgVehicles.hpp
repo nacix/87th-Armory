@@ -6,7 +6,7 @@ class CfgVehicles
 			author = "Anorexican"; \
 			displayName = NAME_PRETTY(LAAT/I ##name_raw); \
 			faction = FACTION_REP; \
-			editorPreview = QPATHTOF(data\ui\editorPreviews\##TAG##_LAAT.jpg); \
+			editorPreview = QPATHTOF(data\ui\editorPreviews\##TAG##_##className##.jpg); \
 			editorSubcategory = QUOTE(TAG##_Vehicles); \
 			hiddenSelectionsTextures[]= \
 			{ \
@@ -58,7 +58,7 @@ class CfgVehicles
 		displayName = "[87th] RTT";
 		faction = "87th_Legion";
 		editorSubcategory="87th_Vehicles";
-		// editorPreview = "3AS\3AS_rtt\images\3AS_RTT.jpg";
+		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_RTT.jpg);
 		crew = "87th_Clone_DC15S";
 		typicalCargo[]=
 		{
@@ -69,7 +69,7 @@ class CfgVehicles
 	class 87th_RTT_Rep: 87th_RTT
 	{
 		displayName = "[87th] RTT (GAR)";
-		// editorPreview = "3AS\3AS_rtt\images\3AS_RTT.jpg";
+		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_RTT_Rep.jpg);
 		crew = "JLTS_Clone_P2_DC15S";
 		typicalCargo[]=
 		{
@@ -82,6 +82,7 @@ class CfgVehicles
 	{
 		author = "Anorexican & Stim";
 		displayName = "[87th] BARC Speeder";
+		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_BARC.jpg);
 		editorSubcategory = "87th_Vehicles";
 		faction = "87th_Legion";
 		crew = "87th_BARC_DC15S";
