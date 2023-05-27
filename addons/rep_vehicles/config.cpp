@@ -33,14 +33,16 @@ class CfgPatches
 			CLASS(P1_LAAT_Lights),
 			CLASS(P1_LAAT_Mk1),
 			CLASS(P1_LAAT_Mk1_Lights),
-			"87th_ATRT",
-			"87th_BARC",
-			"87th_RTT",
-			"87th_RTT_Rep"
+			CLASS(ATRT),
+			CLASS(BARC),
+			CLASS(RTT),
+			CLASS(RTT_Rep),
+			CLASS(P1_RTT),
+			CLASS(P1_RTT_Rep)
 		};
 		weapons[]=
 		{
-			"87th_ATRT_Uniform"
+			CLASS(ATRT_Uniform)
 		};
     };
 };

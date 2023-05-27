@@ -20,9 +20,9 @@ class XtdGearModels
 			BANNER_CAMO(Woodland) \
 			BANNER_CAMO(Urban)
 
-		class 87th_P2_Helmet
+		NEW_CLASS(P2_Helmet)
 		{
-			label = "[87th] P2 Helmet";
+			label = TAG_NAME(P2 Helmet);
 			author = "Anorexican";
 			options[] = {"variant", "custom"};
 			class variant
@@ -51,9 +51,9 @@ class XtdGearModels
 			};
 		};
 
-		class 87th_P2_Pilot_Helmet
+		NEW_CLASS(P2_Pilot_Helmet)
 		{
-			label = "[87th] Pilot Helmet";
+			label = TAG_NAME(Pilot Helmet);
 			author = "Anorexican";
 			options[] = {"variant", "custom"};
 			class variant
@@ -82,9 +82,9 @@ class XtdGearModels
 			};
 		};
 
-		class 87th_ARF_Helmet
+		NEW_CLASS(ARF_Helmet)
 		{
-			label = "[87th] ARF Helmet";
+			label = TAG_NAME(ARF Helmet);
 			author = "Anorexican";
 			options[] = {"variant", "mandible", "camo"};
 			class variant
@@ -122,9 +122,9 @@ class XtdGearModels
 			};
 		};
 
-		class 87th_ARF_Uniform
+		NEW_CLASS(ARF_Uniform)
 		{
-			label = "[87th] ARF Armor";
+			label = TAG_NAME(ARF Armor);
 			author = "Anorexican";
 			options[] = {"variant", "camo"};
 			class variant
@@ -143,9 +143,9 @@ class XtdGearModels
 			};
 		};
 
-		class 87th_BARC_Helmet
+		NEW_CLASS(BARC_Helmet)
 		{
-			label = "[87th] BARC Helmet";
+			label = TAG_NAME(BARC Helmet);
 			author = "Anorexican";
 			options[] = {"variant", "camo"};
 			class variant

@@ -4,7 +4,9 @@
 #define TAG 87th
 #define TAG_BR [##TAG##]
 
-#define FACTION_REP QUOTE(87th_Legion)
+#define TITLE 87th Legion
+
+#define FACTION_REP CLASS(Legion)
 
 #define VERSION     MAJOR.MINOR
 #define VERSION_STR MAJOR.MINOR.PATCHLVL
@@ -14,7 +16,7 @@
 #define REQUIRED_CBA_VERSION {3,8,0}
 
 #ifdef COMPONENT_BEAUTIFIED
-    #define COMPONENT_NAME QUOTE(87th Legion - COMPONENT_BEAUTIFIED)
+    #define COMPONENT_NAME QUOTE(TITLE - COMPONENT_BEAUTIFIED)
 #else
-    #define COMPONENT_NAME QUOTE(87th Legion - COMPONENT)
+    #define COMPONENT_NAME QUOTE(TITLE - COMPONENT)
 #endif

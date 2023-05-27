@@ -26,8 +26,8 @@ private _muzzleChangeHandler = ["muzzle", {
 
 	// Runs muzzle-specific code on supported weapons
 	switch _weapon do {
-		case "87th_DP23": { _unit removePrimaryWeaponItem "87th_Optic_Holo" }; // Sets the DP-23 optic to shotgun mode
-		case "Blaster": { _unit addPrimaryWeaponItem "87th_Optic_Holo" }; // Sets the DP-23 optic to blaster mode
+		case CLASS(DP23): { _unit removePrimaryWeaponItem CLASS(Optic_Holo) }; // Sets the DP-23 optic to shotgun mode
+		case "Blaster": { _unit addPrimaryWeaponItem CLASS(Optic_Holo) }; // Sets the DP-23 optic to blaster mode
 	};
 }] call CBA_fnc_addPlayerEventHandler;
 
