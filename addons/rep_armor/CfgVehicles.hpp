@@ -4,123 +4,123 @@ class CfgVehicles {
 		passThrough = QUOTE(pass); \
 		explosionShielding = QUOTE(blastProc*mult); \
 		minimalHit = QUOTE(minHit); \
-		material=-1;
+		material = -1;
 
 	#define SET_ARMOR_HEAD(baseArmor,pass,blastProc,minHit,headMult) \
 		class HitFace \
 		{ \
 			SET_ARMOR_VALS(baseArmor,pass,blastProc,minHit,headMult) \
-			name="face_hub"; \
-			radius=0.08; \
+			name = "face_hub"; \
+			radius = 0.08; \
 		}; \
 		class HitNeck: HitFace \
 		{ \
 			SET_ARMOR_VALS(baseArmor,pass,blastProc,minHit,headMult) \
-			name="neck"; \
-			radius=0.1; \
+			name = "neck"; \
+			radius = 0.1; \
 		}; \
 		class HitHead: HitNeck \
 		{ \
 			SET_ARMOR_VALS(baseArmor,pass,blastProc,minHit,headMult) \
-			name="head"; \
-			radius=0.2; \
-			depends="HitFace max HitNeck"; \
+			name = "head"; \
+			radius = 0.2; \
+			depends = "HitFace max HitNeck"; \
 		};
 
 	#define SET_ARMOR_TORSO(baseArmor,pass,blastProc,minHit) \
 		class HitPelvis \
 		{ \
 			SET_ARMOR_VALS(baseArmor,pass,blastProc,minHit,1) \
-			name="pelvis"; \
-			radius=0.24; \
-			visual="injury_body"; \
+			name = "pelvis"; \
+			radius = 0.24; \
+			visual = "injury_body"; \
 		}; \
 		class HitAbdomen: HitPelvis \
 		{ \
 			SET_ARMOR_VALS(baseArmor,pass,blastProc,minHit,1) \
-			name="spine1"; \
-			radius=0.16; \
+			name = "spine1"; \
+			radius = 0.16; \
 		}; \
 		class HitDiaphragm: HitAbdomen \
 		{ \
 			SET_ARMOR_VALS(baseArmor,pass,blastProc,minHit,1) \
-			name="spine2"; \
-			radius=0.18; \
+			name = "spine2"; \
+			radius = 0.18; \
 		}; \
 		class HitChest: HitDiaphragm \
 		{ \
 			SET_ARMOR_VALS(baseArmor,pass,blastProc,minHit,1) \
-			name="spine3"; \
-			radius=0.18; \
+			name = "spine3"; \
+			radius = 0.18; \
 		}; \
 		class HitBody: HitChest \
 		{ \
-			armor=1000; \
-			material=-1; \
-			name="body"; \
-			passThrough=1; \
-			radius=0; \
-			explosionShielding=6; \
-			minimalHit=0.01; \
-			depends="HitPelvis max HitAbdomen max HitDiaphragm max HitChest"; \
+			armor = 1000; \
+			material = -1; \
+			name = "body"; \
+			passThrough = 1; \
+			radius = 0; \
+			explosionShielding = 6; \
+			minimalHit = 0.01; \
+			depends = "HitPelvis max HitAbdomen max HitDiaphragm max HitChest"; \
 		};
 
 	#define SET_ARMOR_LIMBS(baseArmor,pass,blastProc,minHit,limbMult) \
 		class HitArms \
 		{ \
 			SET_ARMOR_VALS(baseArmor,pass,blastProc,minHit,limbMult) \
-			name="arms"; \
-			radius=0.1; \
-			visual="injury_hands"; \
+			name = "arms"; \
+			radius = 0.1; \
+			visual = "injury_hands"; \
 		}; \
 		class HitHands: HitArms \
 		{ \
 			SET_ARMOR_VALS(baseArmor,pass,blastProc,minHit,limbMult) \
-			name="hands"; \
-			radius=0.1; \
-			visual="injury_hands"; \
-			depends="HitArms"; \
+			name = "hands"; \
+			radius = 0.1; \
+			visual = "injury_hands"; \
+			depends = "HitArms"; \
 		}; \
 		class HitLegs \
 		{ \
 			SET_ARMOR_VALS(baseArmor,pass,blastProc,minHit,limbMult) \
-			name="legs"; \
-			radius=0.14; \
-			visual="injury_legs"; \
+			name = "legs"; \
+			radius = 0.14; \
+			visual = "injury_legs"; \
 		}; \
 		class Incapacitated: HitLegs \
 		{ \
-			armor=1000; \
-			material=-1; \
-			name="body"; \
-			passThrough=1; \
-			radius=0; \
-			explosionShielding=3; \
-			visual=""; \
-			minimalHit=0; \
-			depends="(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2"; \
+			armor = 1000; \
+			material = -1; \
+			name = "body"; \
+			passThrough = 1; \
+			radius = 0; \
+			explosionShielding = 3; \
+			visual = ""; \
+			minimalHit = 0; \
+			depends = "(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2"; \
 		}; \
 		class HitLeftArm \
 		{ \
 			SET_ARMOR_VALS(baseArmor,pass,blastProc,minHit,limbMult) \
-			name="hand_l"; \
-			radius=0.08; \
-			visual="injury_hands"; \
+			name = "hand_l"; \
+			radius = 0.08; \
+			visual = "injury_hands"; \
 		}; \
 		class HitRightArm: HitLeftArm \
 		{ \
-			name="hand_r"; \
+			name = "hand_r"; \
 		}; \
 		class HitLeftLeg \
 		{ \
 			SET_ARMOR_VALS(baseArmor,pass,blastProc,minHit,limbMult) \
-			name="leg_l"; \
-			radius=0.1; \
-			visual="injury_legs"; \
+			name = "leg_l"; \
+			radius = 0.1; \
+			visual = "injury_legs"; \
 		}; \
 		class HitRightLeg: HitLeftLeg \
 		{ \
-			name="leg_r"; \
+			name = "leg_r"; \
 		};
 
 	#define SET_ARMOR(baseArmor,pass,blastProc,minHit,headMult,limbMult) \
@@ -200,7 +200,7 @@ class CfgVehicles {
 	NEW_CLASS(RTO_Backpack_Mini): TAG_CLASS(Backpack)
 	{
 		displayName = TAG_NAME(Mini RTO Pack);
-		picture="\MRC\JLTS\characters\CloneArmor\data\ui\Clone_RTO_pack_ui_ca.paa";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_RTO_pack_ui_ca.paa";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneRTOPack.p3d";
 		hiddenSelections[]=
 		{
@@ -220,7 +220,7 @@ class CfgVehicles {
 	NEW_CLASS(RTO_Backpack_Recon): TAG_CLASS(Backpack)
 	{
 		displayName = TAG_NAME(Recon RTO Pack);
-		picture="\MRC\JLTS\characters\CloneArmor\data\ui\Clone_RTO_pack_ui_ca.paa";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_RTO_pack_ui_ca.paa";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneRTOPack.p3d";
 		hiddenSelections[]=
 		{
@@ -257,7 +257,7 @@ class CfgVehicles {
 		uniformClass = CLASS(Trooper_Uniform);
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		armor = 2;
-		armorStructural=4;
+		armorStructural = 4;
 		explosionShielding = 0.40;
 		minTotalDamageThreshold = 0.001;
 		impactDamageMultiplier = 0.5;
@@ -275,7 +275,7 @@ class CfgVehicles {
 		SET_ARMOR(11.5,0.625,12,0.01,0.25,0.4)
 		class Wounds
 		{
-			tex[]={};
+			tex[] = {};
 			mat[]=
 			{
 				"MRC\JLTS\Characters\CloneArmor\data\Clone_armor1.rvmat",

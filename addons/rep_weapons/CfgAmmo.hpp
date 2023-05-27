@@ -11,15 +11,15 @@ class CfgAmmo
 
 	NEW_CLASS(ammo_stun): JLTS_bullet_stun
 	{
-		JLTS_isStunAmmo=1;
-		typicalSpeed=120;
-		timetolive=8;
-		aiAmmoUsageFlags=0;
+		JLTS_isStunAmmo = 1;
+		typicalSpeed = 120;
+		timetolive = 8;
+		aiAmmoUsageFlags = 0;
 	};
 	NEW_CLASS(ammo_stun_super): TAG_CLASS(ammo_stun)
 	{
-		typicalSpeed=500;
-		timetolive=8;
+		typicalSpeed = 500;
+		timetolive = 8;
 	};
 	
 	NEW_CLASS(ammo_Penetrator): ammo_Penetrator_Base 

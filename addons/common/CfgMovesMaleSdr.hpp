@@ -2,9 +2,9 @@ class CfgMovesBasic;
 
 class CfgMovesMaleSdr: CfgMovesBasic
 {
-	skeletonName="OFP2_ManSkeleton";
-	gestures="CfgGesturesMale";
-	extended="CfgExtendedAnimation";
+	skeletonName = "OFP2_ManSkeleton";
+	gestures = "CfgGesturesMale";
+	extended = "CfgExtendedAnimation";
 
 	class Default;
 	class TransAnimBase;
@@ -168,32 +168,32 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AidlPercMstpSrasWpstDnon_G03_player",
 				0.33399999
 			};
-			variantAfter[]={15,15,15};
-			actions="PistolStandActions";
-			duty=-0.40000001;
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\Erc\stp\ras\pst\AmovPercMstpSrasWpstDnon";
-			disableWeapons=0;
-			showHandGun=1;
-			speed=1e+010;
-			static=1;
-			relSpeedMin=0.5;
-			relSpeedMax=1.1;
-			aiming="aimingPistol";
-			aimingBody="aimingUpPistol";
-			soundEnabled=0;
-			enableBinocular=1;
-			leftHandIKBeg=1;
-			leftHandIKCurve[]={1};
-			leftHandIKEnd=1;
-			rightHandIKBeg=1;
-			rightHandIKCurve[]={1};
-			rightHandIKEnd=1;
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Perc_Wrfl.p3d";
-			weaponIK=2;
-			enableOptics=2;
-			headBobStrength=0.054726001;
-			interpolationSpeed=4;
-			canBlendStep=1;
+			variantAfter[] = {15,15,15};
+			actions = "PistolStandActions";
+			duty = -0.40000001;
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\stp\ras\pst\AmovPercMstpSrasWpstDnon";
+			disableWeapons = 0;
+			showHandGun = 1;
+			speed = 1e+010;
+			static = 1;
+			relSpeedMin = 0.5;
+			relSpeedMax = 1.1;
+			aiming = "aimingPistol";
+			aimingBody = "aimingUpPistol";
+			soundEnabled = 0;
+			enableBinocular = 1;
+			leftHandIKBeg = 1;
+			leftHandIKCurve[] = {1};
+			leftHandIKEnd = 1;
+			rightHandIKBeg = 1;
+			rightHandIKCurve[] = {1};
+			rightHandIKEnd = 1;
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Perc_Wrfl.p3d";
+			weaponIK = 2;
+			enableOptics = 2;
+			headBobStrength = 0.054726001;
+			interpolationSpeed = 4;
+			canBlendStep = 1;
 			ConnectTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -345,8 +345,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AidlPercMstpSrasWpstDnon_G0S: AmovPercMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			headBobStrength=0;
+			variantsPlayer[] = {};
+			headBobStrength = 0;
 			ConnectTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -380,8 +380,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AidlPercMstpSrasWpstDnon_G01: AidlPercMstpSrasWpstDnon_G0S
 		{
-			speed=-15;
-			file="\A3\anims_f\Data\Anim\Sdr\idl\erc\stp\ras\pst\AidlPercMstpSrasWpstDnon_G01";
+			speed = -15;
+			file = "\A3\anims_f\Data\Anim\Sdr\idl\erc\stp\ras\pst\AidlPercMstpSrasWpstDnon_G01";
 			ConnectTo[]=
 			{
 				"AidlPercMstpSrasWpstDnon_G0S",
@@ -399,38 +399,38 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AidlPercMstpSrasWpstDnon_G02: AidlPercMstpSrasWpstDnon_G01
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\idl\erc\stp\ras\pst\AidlPercMstpSrasWpstDnon_G02";
+			file = "\A3\anims_f\Data\Anim\Sdr\idl\erc\stp\ras\pst\AidlPercMstpSrasWpstDnon_G02";
 		};
 		class AidlPercMstpSrasWpstDnon_G03: AidlPercMstpSrasWpstDnon_G01
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\idl\erc\stp\ras\pst\AidlPercMstpSrasWpstDnon_G03";
+			file = "\A3\anims_f\Data\Anim\Sdr\idl\erc\stp\ras\pst\AidlPercMstpSrasWpstDnon_G03";
 		};
 		class AidlPercMstpSrasWpstDnon_G01_player: AidlPercMstpSrasWpstDnon_G01
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\idl\erc\stp\ras\pst\AidlPercMstpSrasWpstDnon_G01_player";
+			file = "\A3\anims_f\Data\Anim\Sdr\idl\erc\stp\ras\pst\AidlPercMstpSrasWpstDnon_G01_player";
 		};
 		class AidlPercMstpSrasWpstDnon_G02_player: AidlPercMstpSrasWpstDnon_G01
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\idl\erc\stp\ras\pst\AidlPercMstpSrasWpstDnon_G02_player";
+			file = "\A3\anims_f\Data\Anim\Sdr\idl\erc\stp\ras\pst\AidlPercMstpSrasWpstDnon_G02_player";
 		};
 		class AidlPercMstpSrasWpstDnon_G03_player: AidlPercMstpSrasWpstDnon_G01
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\idl\erc\stp\ras\pst\AidlPercMstpSrasWpstDnon_G03_player";
+			file = "\A3\anims_f\Data\Anim\Sdr\idl\erc\stp\ras\pst\AidlPercMstpSrasWpstDnon_G03_player";
 		};
 		class AovrPercMstpSrasWpstDf: AidlPercMstpSrasWpstDnon_G0S
 		{
-			stamina=0;
-			looped=0;
-			speed=0.347368;
-			file="\A3\anims_f\Data\Anim\Sdr\ovr\erc\stp\ras\pst\AovrPercMstpSrasWpstDf";
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Perc_Wovr.p3d";
-			static=1;
-			relSpeedMin=0.5;
-			relSpeedMax=1;
-			duty=1;
-			canBlendStep=0;
-			enableOptics=0;
-			headBobStrength=0.23;
+			stamina = 0;
+			looped = 0;
+			speed = 0.347368;
+			file = "\A3\anims_f\Data\Anim\Sdr\ovr\erc\stp\ras\pst\AovrPercMstpSrasWpstDf";
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Perc_Wovr.p3d";
+			static = 1;
+			relSpeedMin = 0.5;
+			relSpeedMax = 1;
+			duty = 1;
+			canBlendStep = 0;
+			enableOptics = 0;
+			headBobStrength = 0.23;
 			ConnectTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -444,7 +444,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSrasWpstDnon_falling: AmovPercMstpSrasWpstDnon
 		{
-			ConnectTo[]={};
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -459,17 +459,17 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSrasWpstDnon_AadjPercMstpSrasWpstDup: AmovPercMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\Erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AadjPercMstpSrasWpstDup";
-			speed=-0.2;
-			actions="PistolAdjustFStandActions";
-			limitgunmovement=1;
-			aimprecision=1;
-			looped=0;
-			adjstance="u";
-			soundOverride="adjust_short";
-			soundEnabled=1;
-			soundEdge[]={0.0099999998};
+			variantsPlayer[] = {};
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\Erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AadjPercMstpSrasWpstDup";
+			speed = -0.2;
+			actions = "PistolAdjustFStandActions";
+			limitgunmovement = 1;
+			aimprecision = 1;
+			looped = 0;
+			adjstance = "u";
+			soundOverride = "adjust_short";
+			soundEnabled = 1;
+			soundEdge[] = {0.0099999998};
 			ConnectTo[]=
 			{
 				"AadjPercMstpSrasWpstDup",
@@ -485,17 +485,17 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSrasWpstDnon_AadjPercMstpSrasWpstDdown: AmovPercMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\Erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AadjPercMstpSrasWpstDdown";
-			speed=-0.2;
-			actions="PistolAdjustBStandActions";
-			limitgunmovement=1;
-			aimprecision=1;
-			looped=0;
-			adjstance="d";
-			soundOverride="adjust_short";
-			soundEnabled=1;
-			soundEdge[]={0.0099999998};
+			variantsPlayer[] = {};
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\Erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AadjPercMstpSrasWpstDdown";
+			speed = -0.2;
+			actions = "PistolAdjustBStandActions";
+			limitgunmovement = 1;
+			aimprecision = 1;
+			looped = 0;
+			adjstance = "d";
+			soundOverride = "adjust_short";
+			soundEnabled = 1;
+			soundEdge[] = {0.0099999998};
 			ConnectTo[]=
 			{
 				"AadjPercMstpSrasWpstDdown",
@@ -511,17 +511,17 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSrasWpstDnon_AadjPercMstpSrasWpstDleft: AmovPercMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\Erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AadjPercMstpSrasWpstDleft";
-			speed=-0.30000001;
-			actions="PistolAdjustLStandActions";
-			limitgunmovement=1;
-			aimprecision=1;
-			looped=0;
-			adjstance="l";
-			soundEnabled=1;
-			soundOverride="adjust_stand_side";
-			soundEdge[]={0.0099999998};
+			variantsPlayer[] = {};
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\Erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AadjPercMstpSrasWpstDleft";
+			speed = -0.30000001;
+			actions = "PistolAdjustLStandActions";
+			limitgunmovement = 1;
+			aimprecision = 1;
+			looped = 0;
+			adjstance = "l";
+			soundEnabled = 1;
+			soundOverride = "adjust_stand_side";
+			soundEdge[] = {0.0099999998};
 			ConnectTo[]=
 			{
 				"AadjPercMstpSrasWpstDleft",
@@ -537,17 +537,17 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSrasWpstDnon_AadjPercMstpSrasWpstDright: AmovPercMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\Erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AadjPercMstpSrasWpstDright";
-			speed=-0.30000001;
-			actions="PistolAdjustRStandActions";
-			limitgunmovement=1;
-			aimprecision=1;
-			looped=0;
-			adjstance="r";
-			soundEnabled=1;
-			soundOverride="adjust_stand_side";
-			soundEdge[]={0.0099999998};
+			variantsPlayer[] = {};
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\Erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AadjPercMstpSrasWpstDright";
+			speed = -0.30000001;
+			actions = "PistolAdjustRStandActions";
+			limitgunmovement = 1;
+			aimprecision = 1;
+			looped = 0;
+			adjstance = "r";
+			soundEnabled = 1;
+			soundOverride = "adjust_stand_side";
+			soundEdge[] = {0.0099999998};
 			ConnectTo[]=
 			{
 				"AadjPercMstpSrasWpstDright",
@@ -563,12 +563,12 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMstpSrasWpstDup: AmovPercMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\Erc\stp\ras\pst\AadjPercMstpSrasWpstDup";
-			speed=0.037500001;
-			actions="PistolAdjustFStandActions";
-			aimPrecision=1;
-			adjstance="u";
+			variantsPlayer[] = {};
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\Erc\stp\ras\pst\AadjPercMstpSrasWpstDup";
+			speed = 0.037500001;
+			actions = "PistolAdjustFStandActions";
+			aimPrecision = 1;
+			adjstance = "u";
 			ConnectTo[]=
 			{
 				"AadjPercMstpSrasWpstDup_AadjPknlMstpSrasWpstDup",
@@ -654,27 +654,27 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMstpSrasWpstDup_AmovPercMstpSrasWpstDnon: AmovPercMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			variantsAI[]={};
-			canBlendStep=0;
-			looped=0;
-			minPlayTime=0.64999998;
-			interpolationrestart=1;
-			actions="PistolStandActions";
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\Erc\stp\ras\pst\AadjPercMstpSrasWpstDup_AmovPercMstpSrasWpstDnon";
-			speed=-0.2;
-			limitgunmovement=1;
-			adjstance="m";
-			soundEnabled=1;
-			soundOverride="adjust_short";
-			soundEdge[]={0.0099999998};
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			canBlendStep = 0;
+			looped = 0;
+			minPlayTime = 0.64999998;
+			interpolationrestart = 1;
+			actions = "PistolStandActions";
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\Erc\stp\ras\pst\AadjPercMstpSrasWpstDup_AmovPercMstpSrasWpstDnon";
+			speed = -0.2;
+			limitgunmovement = 1;
+			adjstance = "m";
+			soundEnabled = 1;
+			soundOverride = "adjust_short";
+			soundEdge[] = {0.0099999998};
 		};
 		class AadjPercMstpSrasWpstDdown: AadjPercMstpSrasWpstDup
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\Erc\stp\ras\pst\AadjPercMstpSrasWpstDdown";
-			speed=0.032432001;
-			actions="PistolAdjustBStandActions";
-			adjstance="d";
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\Erc\stp\ras\pst\AadjPercMstpSrasWpstDdown";
+			speed = 0.032432001;
+			actions = "PistolAdjustBStandActions";
+			adjstance = "d";
 			ConnectTo[]=
 			{
 				"AadjPercMstpSrasWpstDdown_AadjPknlMstpSrasWpstDdown",
@@ -764,28 +764,28 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMstpSrasWpstDDown_AmovPercMstpSrasWpstDnon: AmovPercMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			variantsAI[]={};
-			canBlendStep=0;
-			looped=0;
-			minPlayTime=0.64999998;
-			interpolationrestart=1;
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\Erc\stp\ras\pst\AadjPercMstpSrasWpstDdown_AmovPercMstpSrasWpstDnon";
-			speed=-0.2;
-			actions="PistolStandActions";
-			limitgunmovement=1;
-			adjstance="m";
-			soundEnabled=1;
-			soundOverride="adjust_short";
-			soundEdge[]={0.0099999998};
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			canBlendStep = 0;
+			looped = 0;
+			minPlayTime = 0.64999998;
+			interpolationrestart = 1;
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\Erc\stp\ras\pst\AadjPercMstpSrasWpstDdown_AmovPercMstpSrasWpstDnon";
+			speed = -0.2;
+			actions = "PistolStandActions";
+			limitgunmovement = 1;
+			adjstance = "m";
+			soundEnabled = 1;
+			soundOverride = "adjust_short";
+			soundEdge[] = {0.0099999998};
 		};
 		class AadjPercMstpSrasWpstDleft: AadjPercMstpSrasWpstDup
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\Erc\stp\ras\pst\AadjPercMstpSrasWpstDleft";
-			speed=0.037795;
-			actions="PistolAdjustLStandActions";
-			adjstance="l";
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Perc_Wrfl_AdjL.p3d";
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\Erc\stp\ras\pst\AadjPercMstpSrasWpstDleft";
+			speed = 0.037795;
+			actions = "PistolAdjustLStandActions";
+			adjstance = "l";
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Perc_Wrfl_AdjL.p3d";
 			ConnectTo[]=
 			{
 				"AadjPercMstpSrasWpstDleft_AadjPknlMstpSrasWpstDleft",
@@ -877,28 +877,28 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMstpSrasWpstDleft_AmovPercMstpSrasWpstDnon: AmovPercMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			variantsAI[]={};
-			canBlendStep=0;
-			looped=0;
-			minPlayTime=0.64999998;
-			interpolationrestart=1;
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\Erc\stp\ras\pst\AadjPercMstpSrasWpstdleft_AmovPercMstpSrasWpstDnon";
-			speed=-0.2;
-			actions="PistolStandActions";
-			limitgunmovement=1;
-			adjstance="m";
-			soundEnabled=1;
-			soundOverride="adjust_stand_side";
-			soundEdge[]={0.0099999998};
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			canBlendStep = 0;
+			looped = 0;
+			minPlayTime = 0.64999998;
+			interpolationrestart = 1;
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\Erc\stp\ras\pst\AadjPercMstpSrasWpstdleft_AmovPercMstpSrasWpstDnon";
+			speed = -0.2;
+			actions = "PistolStandActions";
+			limitgunmovement = 1;
+			adjstance = "m";
+			soundEnabled = 1;
+			soundOverride = "adjust_stand_side";
+			soundEdge[] = {0.0099999998};
 		};
 		class AadjPercMstpSrasWpstDright: AadjPercMstpSrasWpstDup
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\Erc\stp\ras\pst\AadjPercMstpSrasWpstDright";
-			speed=0.037795;
-			actions="PistolAdjustRStandActions";
-			adjstance="r";
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Perc_Wrfl_AdjR.p3d";
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\Erc\stp\ras\pst\AadjPercMstpSrasWpstDright";
+			speed = 0.037795;
+			actions = "PistolAdjustRStandActions";
+			adjstance = "r";
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Perc_Wrfl_AdjR.p3d";
 			ConnectTo[]=
 			{
 				"AadjPercMstpSrasWpstDright_AadjPknlMstpSrasWpstDright",
@@ -990,24 +990,24 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMstpSrasWpstDright_AmovPercMstpSrasWpstDnon: AmovPercMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			variantsAI[]={};
-			canBlendStep=0;
-			looped=0;
-			minPlayTime=0.64999998;
-			interpolationrestart=1;
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\Erc\stp\ras\pst\AadjPercMstpSrasWpstDright_AmovPercMstpSrasWpstDnon";
-			speed=-0.2;
-			actions="PistolStandActions";
-			limitgunmovement=1;
-			adjstance="m";
-			soundOverride="adjust_stand_side";
-			soundEnabled=1;
-			soundEdge[]={0.0099999998};
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			canBlendStep = 0;
+			looped = 0;
+			minPlayTime = 0.64999998;
+			interpolationrestart = 1;
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\Erc\stp\ras\pst\AadjPercMstpSrasWpstDright_AmovPercMstpSrasWpstDnon";
+			speed = -0.2;
+			actions = "PistolStandActions";
+			limitgunmovement = 1;
+			adjstance = "m";
+			soundOverride = "adjust_stand_side";
+			soundEnabled = 1;
+			soundEdge[] = {0.0099999998};
 		};
 		class AmovPercMstpSlowWpstDnon: AmovPercMstpSrasWpstDnon
 		{
-			duty=-0.60000002;
+			duty = -0.60000002;
 			variantsPlayer[]=
 			{
 				"AidlPercMstpSnonWnonDnon_G01",
@@ -1017,14 +1017,14 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AidlPercMstpSnonWnonDnon_G03",
 				0.33399999
 			};
-			actions="PistolLowStandActions";
+			actions = "PistolLowStandActions";
 			file = "\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\non\non\AmovPercMstpSnonWnonDnon";
-			showWeaponAim=0;
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Perc_Wnon.p3d";
-			headBobStrength=0.23;
-			disableWeaponsLong=1;
-			weaponLowered=1;
-			enableOptics=0;
+			showWeaponAim = 0;
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Perc_Wnon.p3d";
+			headBobStrength = 0.23;
+			disableWeaponsLong = 1;
+			weaponLowered = 1;
+			enableOptics = 0;
 			ConnectTo[]=
 			{
 				"AovrPercMstpSlowWpstDf",
@@ -1120,8 +1120,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AidlPercMstpSlowWpstDnon_G0S: AmovPercMstpSlowWpstDnon
 		{
-			variantsPlayer[]={};
-			headBobStrength=0;
+			variantsPlayer[] = {};
+			headBobStrength = 0;
 			ConnectTo[]=
 			{
 				"AmovPercMstpSlowWpstDnon",
@@ -1155,10 +1155,10 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSlowWpstDnon_turnL: AidlPercMstpSlowWpstDnon_G0S
 		{
-			duty=-0.40000001;
-			file="a3\anims_f\data\anim\sdr\mov\erc\stp\non\non\amovpercmstpsnonwnondnon_aiturn90r";
-			speed=0.5;
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Perc_Wnon.p3d";
+			duty = -0.40000001;
+			file = "a3\anims_f\data\anim\sdr\mov\erc\stp\non\non\amovpercmstpsnonwnondnon_aiturn90r";
+			speed = 0.5;
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Perc_Wnon.p3d";
 			ConnectTo[]=
 			{
 				"AmovPercMstpSnonWnonDnon",
@@ -1176,10 +1176,10 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSlowWpstDnon_turnR: AidlPercMstpSlowWpstDnon_G0S
 		{
-			duty=-0.40000001;
-			file="a3\anims_f\data\anim\sdr\mov\erc\stp\non\non\amovpercmstpsnonwnondnon_aiturn90l";
-			speed=0.5;
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Perc_Wnon.p3d";
+			duty = -0.40000001;
+			file = "a3\anims_f\data\anim\sdr\mov\erc\stp\non\non\amovpercmstpsnonwnondnon_aiturn90l";
+			speed = 0.5;
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Perc_Wnon.p3d";
 			ConnectTo[]=
 			{
 				"AmovPercMstpSnonWnonDnon",
@@ -1197,8 +1197,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AidlPercMstpSlowWpstDnon_G01: AidlPercMstpSlowWpstDnon_G0S
 		{
-			speed=-15;
-			file="\A3\anims_f\Data\Anim\Sdr\idl\erc\stp\low\pst\AidlPercMstpSlowWpstDnon_G01";
+			speed = -15;
+			file = "\A3\anims_f\Data\Anim\Sdr\idl\erc\stp\low\pst\AidlPercMstpSlowWpstDnon_G01";
 			ConnectTo[]=
 			{
 				"AidlPercMstpSlowWpstDnon_G0S",
@@ -1216,11 +1216,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AidlPercMstpSlowWpstDnon_G02: AidlPercMstpSlowWpstDnon_G01
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\idl\erc\stp\low\pst\AidlPercMstpSlowWpstDnon_G02";
+			file = "\A3\anims_f\Data\Anim\Sdr\idl\erc\stp\low\pst\AidlPercMstpSlowWpstDnon_G02";
 		};
 		class AidlPercMstpSlowWpstDnon_G03: AidlPercMstpSlowWpstDnon_G01
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\idl\erc\stp\low\pst\AidlPercMstpSlowWpstDnon_G03";
+			file = "\A3\anims_f\Data\Anim\Sdr\idl\erc\stp\low\pst\AidlPercMstpSlowWpstDnon_G03";
 		};
 		class AovrPercMstpSlowWpstDf: AovrPercMstpSrasWpstDf
 		{
@@ -1232,12 +1232,12 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSrasWpstDnon_AidlPercMstpSlowWpstDnon: AmovPercMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			speed=1.66667;
-			looped=0;
-			file="\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AmovPercMstpSlowWpstDnon";
-			interpolationRestart=2;
-			ConnectTo[]={};
+			variantsPlayer[] = {};
+			speed = 1.66667;
+			looped = 0;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AmovPercMstpSlowWpstDnon";
+			interpolationRestart = 2;
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AidlPercMstpSlowWpstDnon_AmovPercMstpSrasWpstDnon",
@@ -1248,8 +1248,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AidlPercMstpSlowWpstDnon_AmovPercMstpSrasWpstDnon: AmovPercMstpSrasWpstDnon_AidlPercMstpSlowWpstDnon
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\low\pst\AmovPercMstpSlowWpstDnon_AmovPercMstpSrasWpstDnon";
-			speed=1.7647099;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\low\pst\AmovPercMstpSlowWpstDnon_AmovPercMstpSrasWpstDnon";
+			speed = 1.7647099;
 			ConnectTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -1265,12 +1265,12 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSrasWpstDnon_turnL: AmovPercMstpSrasWpstDnon
 		{
-			duty=-0.2;
-			variantsPlayer[]={};
-			file="\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AIturn90L";
-			speed=1.3;
-			aimPrecision=3;
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Perc_Wrfl_turn.p3d";
+			duty = -0.2;
+			variantsPlayer[] = {};
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AIturn90L";
+			speed = 1.3;
+			aimPrecision = 3;
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Perc_Wrfl_turn.p3d";
 			ConnectTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -1286,12 +1286,12 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSrasWpstDnon_turnR: AmovPercMstpSrasWpstDnon
 		{
-			duty=-0.2;
-			variantsPlayer[]={};
-			file="\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AIturn90R";
-			speed=1.3;
-			aimPrecision=3;
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Perc_Wrfl_turn.p3d";
+			duty = -0.2;
+			variantsPlayer[] = {};
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AIturn90R";
+			speed = 1.3;
+			aimPrecision = 3;
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Perc_Wrfl_turn.p3d";
 			ConnectTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -1307,7 +1307,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMstpSrasWpstDnon: AmovPercMstpSrasWpstDnon
 		{
-			aimPrecision=0.5;
+			aimPrecision = 0.5;
 			variantsPlayer[]=
 			{
 				"AidlPknlMstpSrasWpstDnon_G01_player",
@@ -1317,11 +1317,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AidlPknlMstpSrasWpstDnon_G03_player",
 				0.33399999
 			};
-			actions="PistolKneelActions";
-			duty=-0.60000002;
-			visibleSize=0.30012199;
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon";
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Pknl_Wpst.p3d";
+			actions = "PistolKneelActions";
+			duty = -0.60000002;
+			visibleSize = 0.30012199;
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon";
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Pknl_Wpst.p3d";
 			ConnectTo[]=
 			{
 				"AidlPknlMstpSrasWpstDnon_AI",
@@ -1441,8 +1441,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AidlPknlMstpSrasWpstDnon_G0S: AmovPknlMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			headBobStrength=0;
+			variantsPlayer[] = {};
+			headBobStrength = 0;
 			ConnectTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -1476,8 +1476,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AidlPknlMstpSrasWpstDnon_G01: AidlPknlMstpSrasWpstDnon_G0S
 		{
-			speed=-15;
-			file="\A3\anims_f\Data\Anim\Sdr\idl\knl\stp\ras\pst\AidlPknlMstpSrasWpstDnon_G01";
+			speed = -15;
+			file = "\A3\anims_f\Data\Anim\Sdr\idl\knl\stp\ras\pst\AidlPknlMstpSrasWpstDnon_G01";
 			ConnectTo[]=
 			{
 				"AidlPknlMstpSrasWpstDnon_G0S",
@@ -1495,27 +1495,27 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AidlPknlMstpSrasWpstDnon_G02: AidlPknlMstpSrasWpstDnon_G01
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\idl\knl\stp\ras\pst\AidlPknlMstpSrasWpstDnon_G02";
+			file = "\A3\anims_f\Data\Anim\Sdr\idl\knl\stp\ras\pst\AidlPknlMstpSrasWpstDnon_G02";
 		};
 		class AidlPknlMstpSrasWpstDnon_G03: AidlPknlMstpSrasWpstDnon_G01
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\idl\knl\stp\ras\pst\AidlPknlMstpSrasWpstDnon_G03";
+			file = "\A3\anims_f\Data\Anim\Sdr\idl\knl\stp\ras\pst\AidlPknlMstpSrasWpstDnon_G03";
 		};
 		class AidlPknlMstpSrasWpstDnon_G01_player: AidlPknlMstpSrasWpstDnon_G01
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\idl\knl\stp\ras\pst\AidlPknlMstpSrasWpstDnon_G01_player";
+			file = "\A3\anims_f\Data\Anim\Sdr\idl\knl\stp\ras\pst\AidlPknlMstpSrasWpstDnon_G01_player";
 		};
 		class AidlPknlMstpSrasWpstDnon_G02_player: AidlPknlMstpSrasWpstDnon_G01
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\idl\knl\stp\ras\pst\AidlPknlMstpSrasWpstDnon_G02_player";
+			file = "\A3\anims_f\Data\Anim\Sdr\idl\knl\stp\ras\pst\AidlPknlMstpSrasWpstDnon_G02_player";
 		};
 		class AidlPknlMstpSrasWpstDnon_G03_player: AidlPknlMstpSrasWpstDnon_G01
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\idl\knl\stp\ras\pst\AidlPknlMstpSrasWpstDnon_G03_player";
+			file = "\A3\anims_f\Data\Anim\Sdr\idl\knl\stp\ras\pst\AidlPknlMstpSrasWpstDnon_G03_player";
 		};
 		class AmovPknlMstpSrasWpstDnon_relax: AmovPknlMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
+			variantsPlayer[] = {};
 			ConnectTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -1529,12 +1529,12 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPcrhMstpSrasWpstDnon_AadjPcrhMstpSrasWpstDup: AmovPknlMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\crh\stp\ras\pst\AmovPcrhMstpSrasWpstDnon_AadjPcrhMstpSrasWpstDup";
-			speed=2.6666701;
-			limitgunmovement=1;
-			aimprecision=1;
-			looped=0;
+			variantsPlayer[] = {};
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\crh\stp\ras\pst\AmovPcrhMstpSrasWpstDnon_AadjPcrhMstpSrasWpstDup";
+			speed = 2.6666701;
+			limitgunmovement = 1;
+			aimprecision = 1;
+			looped = 0;
 			ConnectTo[]=
 			{
 				"AadjPcrhMstpSrasWpstDup",
@@ -1550,12 +1550,12 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPcrhMstpSrasWpstDnon_AadjPcrhMstpSrasWpstDdown: AmovPknlMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\crh\stp\ras\pst\AmovPcrhMstpSrasWpstDnon_AadjPcrhMstpSrasWpstDdown";
-			speed=2.8800001;
-			limitgunmovement=1;
-			aimprecision=1;
-			looped=0;
+			variantsPlayer[] = {};
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\crh\stp\ras\pst\AmovPcrhMstpSrasWpstDnon_AadjPcrhMstpSrasWpstDdown";
+			speed = 2.8800001;
+			limitgunmovement = 1;
+			aimprecision = 1;
+			looped = 0;
 			ConnectTo[]=
 			{
 				"AadjPcrhMstpSrasWpstDdown",
@@ -1571,12 +1571,12 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPcrhMstpSrasWpstDnon_AadjPcrhMstpSrasWpstDleft: AmovPknlMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\crh\stp\ras\pst\AmovPcrhMstpSrasWpstDnon_AadjPcrhMstpSrasWpstDleft";
-			speed=2.25;
-			limitgunmovement=1;
-			aimprecision=1;
-			looped=0;
+			variantsPlayer[] = {};
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\crh\stp\ras\pst\AmovPcrhMstpSrasWpstDnon_AadjPcrhMstpSrasWpstDleft";
+			speed = 2.25;
+			limitgunmovement = 1;
+			aimprecision = 1;
+			looped = 0;
 			ConnectTo[]=
 			{
 				"AadjPcrhMstpSrasWpstDleft",
@@ -1592,12 +1592,12 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPcrhMstpSrasWpstDnon_AadjPcrhMstpSrasWpstDright: AmovPknlMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\crh\stp\ras\pst\AmovPcrhMstpSrasWpstDnon_AadjPcrhMstpSrasWpstDright";
-			speed=2.1818199;
-			limitgunmovement=1;
-			aimprecision=1;
-			looped=0;
+			variantsPlayer[] = {};
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\crh\stp\ras\pst\AmovPcrhMstpSrasWpstDnon_AadjPcrhMstpSrasWpstDright";
+			speed = 2.1818199;
+			limitgunmovement = 1;
+			aimprecision = 1;
+			looped = 0;
 			ConnectTo[]=
 			{
 				"AadjPcrhMstpSrasWpstDright",
@@ -1613,11 +1613,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPcrhMstpSrasWpstDup: AmovPknlMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\crh\stp\ras\pst\AadjPcrhMstpSrasWpstDup";
-			aimprecision=1;
-			speed=0.058823001;
-			ConnectTo[]={};
+			variantsPlayer[] = {};
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\crh\stp\ras\pst\AadjPcrhMstpSrasWpstDup";
+			aimprecision = 1;
+			speed = 0.058823001;
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AadjPcrhMstpSrasWpstDup_AmovPcrhMstpSrasWpstDnon",
@@ -1628,11 +1628,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPcrhMstpSrasWpstDup_AmovPcrhMstpSrasWpstDnon: AmovPknlMstpSrasWpstDnon
 		{
-			interpolationrestart=1;
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\crh\stp\ras\pst\AadjPcrhMstpSrasWpstDup_AmovPcrhMstpSrasWpstDnon";
-			speed=1.6381;
-			limitgunmovement=1;
-			looped=0;
+			interpolationrestart = 1;
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\crh\stp\ras\pst\AadjPcrhMstpSrasWpstDup_AmovPcrhMstpSrasWpstDnon";
+			speed = 1.6381;
+			limitgunmovement = 1;
+			looped = 0;
 			InterpolateTo[]=
 			{
 				"AmovPcrhMstpSrasWpstDnon_AadjPcrhMstpSrasWpstDup",
@@ -1643,8 +1643,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPcrhMstpSrasWpstDdown: AadjPcrhMstpSrasWpstDup
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\crh\stp\ras\pst\AadjPcrhMstpSrasWpstDdown";
-			speed=0.037500001;
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\crh\stp\ras\pst\AadjPcrhMstpSrasWpstDdown";
+			speed = 0.037500001;
 			InterpolateTo[]=
 			{
 				"AadjPcrhMstpSrasWpstDdown_AmovPcrhMstpSrasWpstDnon",
@@ -1655,11 +1655,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPcrhMstpSrasWpstDDown_AmovPcrhMstpSrasWpstDnon: AmovPknlMstpSrasWpstDnon
 		{
-			interpolationrestart=1;
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\crh\stp\ras\pst\AadjPcrhMstpSrasWpstDdown_AmovPcrhMstpSrasWpstDnon";
-			speed=2;
-			limitgunmovement=1;
-			looped=0;
+			interpolationrestart = 1;
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\crh\stp\ras\pst\AadjPcrhMstpSrasWpstDdown_AmovPcrhMstpSrasWpstDnon";
+			speed = 2;
+			limitgunmovement = 1;
+			looped = 0;
 			InterpolateTo[]=
 			{
 				"AmovPcrhMstpSrasWpstDnon_AadjPcrhMstpSrasWpstDdown",
@@ -1670,8 +1670,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPcrhMstpSrasWpstDleft: AadjPcrhMstpSrasWpstDup
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\crh\stp\ras\pst\AadjPcrhMstpSrasWpstDleft";
-			speed=0.035036001;
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\crh\stp\ras\pst\AadjPcrhMstpSrasWpstDleft";
+			speed = 0.035036001;
 			InterpolateTo[]=
 			{
 				"AadjPcrhMstpSrasWpstDleft_AmovPcrhMstpSrasWpstDnon",
@@ -1682,11 +1682,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPcrhMstpSrasWpstDleft_AmovPcrhMstpSrasWpstDnon: AmovPknlMstpSrasWpstDnon
 		{
-			interpolationrestart=1;
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\crh\stp\ras\pst\AadjPcrhMstpSrasWpstdleft_AmovPcrhMstpSrasWpstDnon";
-			speed=1.4;
-			limitgunmovement=1;
-			looped=0;
+			interpolationrestart = 1;
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\crh\stp\ras\pst\AadjPcrhMstpSrasWpstdleft_AmovPcrhMstpSrasWpstDnon";
+			speed = 1.4;
+			limitgunmovement = 1;
+			looped = 0;
 			InterpolateTo[]=
 			{
 				"AmovPcrhMstpSrasWpstDnon_AadjPcrhMstpSrasWpstDleft",
@@ -1697,8 +1697,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPcrhMstpSrasWpstDright: AadjPcrhMstpSrasWpstDup
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\crh\stp\ras\pst\AadjPcrhMstpSrasWpstDright";
-			speed=0.036641002;
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\crh\stp\ras\pst\AadjPcrhMstpSrasWpstDright";
+			speed = 0.036641002;
 			InterpolateTo[]=
 			{
 				"AadjPcrhMstpSrasWpstDright_AmovPcrhMstpSrasWpstDnon",
@@ -1709,11 +1709,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPcrhMstpSrasWpstDright_AmovPcrhMstpSrasWpstDnon: AmovPknlMstpSrasWpstDnon
 		{
-			interpolationrestart=1;
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\crh\stp\ras\pst\AadjPcrhMstpSrasWpstDright_AmovPcrhMstpSrasWpstDnon";
-			speed=2.1619101;
-			limitgunmovement=1;
-			looped=0;
+			interpolationrestart = 1;
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\crh\stp\ras\pst\AadjPcrhMstpSrasWpstDright_AmovPcrhMstpSrasWpstDnon";
+			speed = 2.1619101;
+			limitgunmovement = 1;
+			looped = 0;
 			InterpolateTo[]=
 			{
 				"AmovPcrhMstpSrasWpstDnon_AadjPcrhMstpSrasWpstDright",
@@ -1724,17 +1724,17 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMstpSrasWpstDnon_AadjPknlMstpSrasWpstDup: AmovPknlMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\Knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AadjPknlMstpSrasWpstDup";
-			speed=-0.2;
-			actions="PistolAdjustFKneelActions";
-			limitgunmovement=1;
-			aimprecision=0.5;
-			looped=0;
-			adjstance="u";
-			soundOverride="adjust_short";
-			soundEnabled=1;
-			soundEdge[]={0.0099999998};
+			variantsPlayer[] = {};
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\Knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AadjPknlMstpSrasWpstDup";
+			speed = -0.2;
+			actions = "PistolAdjustFKneelActions";
+			limitgunmovement = 1;
+			aimprecision = 0.5;
+			looped = 0;
+			adjstance = "u";
+			soundOverride = "adjust_short";
+			soundEnabled = 1;
+			soundEdge[] = {0.0099999998};
 			ConnectTo[]=
 			{
 				"AadjPknlMstpSrasWpstDup",
@@ -1750,17 +1750,17 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMstpSrasWpstDnon_AadjPknlMstpSrasWpstDdown: AmovPknlMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\Knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AadjPknlMstpSrasWpstDdown";
-			speed=-0.2;
-			limitgunmovement=1;
-			actions="PistolAdjustBKneelActions";
-			aimprecision=0.5;
-			looped=0;
-			adjstance="d";
-			soundOverride="adjust_short";
-			soundEnabled=1;
-			soundEdge[]={0.0099999998};
+			variantsPlayer[] = {};
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\Knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AadjPknlMstpSrasWpstDdown";
+			speed = -0.2;
+			limitgunmovement = 1;
+			actions = "PistolAdjustBKneelActions";
+			aimprecision = 0.5;
+			looped = 0;
+			adjstance = "d";
+			soundOverride = "adjust_short";
+			soundEnabled = 1;
+			soundEdge[] = {0.0099999998};
 			ConnectTo[]=
 			{
 				"AadjPknlMstpSrasWpstDdown",
@@ -1776,17 +1776,17 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMstpSrasWpstDnon_AadjPknlMstpSrasWpstDleft: AmovPknlMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\Knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AadjPknlMstpSrasWpstDleft";
-			speed=-0.30000001;
-			limitgunmovement=1;
-			actions="PistolAdjustLKneelActions";
-			aimprecision=0.5;
-			looped=0;
-			adjstance="l";
-			soundOverride="adjust_stand_side";
-			soundEnabled=1;
-			soundEdge[]={0.0099999998};
+			variantsPlayer[] = {};
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\Knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AadjPknlMstpSrasWpstDleft";
+			speed = -0.30000001;
+			limitgunmovement = 1;
+			actions = "PistolAdjustLKneelActions";
+			aimprecision = 0.5;
+			looped = 0;
+			adjstance = "l";
+			soundOverride = "adjust_stand_side";
+			soundEnabled = 1;
+			soundEdge[] = {0.0099999998};
 			ConnectTo[]=
 			{
 				"AadjPknlMstpSrasWpstDleft",
@@ -1802,17 +1802,17 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMstpSrasWpstDnon_AadjPknlMstpSrasWpstDright: AmovPknlMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\Knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AadjPknlMstpSrasWpstDright";
-			speed=-0.30000001;
-			limitgunmovement=1;
-			actions="PistolAdjustRKneelActions";
-			aimprecision=0.5;
-			looped=0;
-			adjstance="r";
-			soundOverride="adjust_stand_side";
-			soundEnabled=1;
-			soundEdge[]={0.0099999998};
+			variantsPlayer[] = {};
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\Knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AadjPknlMstpSrasWpstDright";
+			speed = -0.30000001;
+			limitgunmovement = 1;
+			actions = "PistolAdjustRKneelActions";
+			aimprecision = 0.5;
+			looped = 0;
+			adjstance = "r";
+			soundOverride = "adjust_stand_side";
+			soundEnabled = 1;
+			soundEdge[] = {0.0099999998};
 			ConnectTo[]=
 			{
 				"AadjPknlMstpSrasWpstDright",
@@ -1828,12 +1828,12 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMstpSrasWpstDup: AmovPknlMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\Knl\stp\ras\pst\AadjPknlMstpSrasWpstDup";
-			speed=0.058823001;
-			actions="PistolAdjustFKneelActions";
-			aimprecision=0.5;
-			adjstance="u";
+			variantsPlayer[] = {};
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\Knl\stp\ras\pst\AadjPknlMstpSrasWpstDup";
+			speed = 0.058823001;
+			actions = "PistolAdjustFKneelActions";
+			aimprecision = 0.5;
+			adjstance = "u";
 			ConnectTo[]=
 			{
 				"AadjPknlMstpSrasWpstDup_AadjPercMstpSrasWpstDup",
@@ -1927,27 +1927,27 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMstpSrasWpstDup_AmovPknlMstpSrasWpstDnon: AmovPknlMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			variantsAI[]={};
-			canBlendStep=0;
-			looped=0;
-			minPlayTime=0.64999998;
-			interpolationrestart=1;
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\Knl\stp\ras\pst\AadjPknlMstpSrasWpstDup_AmovPknlMstpSrasWpstDnon";
-			speed=-0.2;
-			actions="PistolKneelActions";
-			limitgunmovement=1;
-			adjstance="m";
-			soundOverride="adjust_short";
-			soundEnabled=1;
-			soundEdge[]={0.0099999998};
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			canBlendStep = 0;
+			looped = 0;
+			minPlayTime = 0.64999998;
+			interpolationrestart = 1;
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\Knl\stp\ras\pst\AadjPknlMstpSrasWpstDup_AmovPknlMstpSrasWpstDnon";
+			speed = -0.2;
+			actions = "PistolKneelActions";
+			limitgunmovement = 1;
+			adjstance = "m";
+			soundOverride = "adjust_short";
+			soundEnabled = 1;
+			soundEdge[] = {0.0099999998};
 		};
 		class AadjPknlMstpSrasWpstDdown: AadjPknlMstpSrasWpstDup
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\Knl\stp\ras\pst\AadjPknlMstpSrasWpstDdown";
-			speed=0.048485;
-			actions="PistolAdjustBKneelActions";
-			adjstance="d";
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\Knl\stp\ras\pst\AadjPknlMstpSrasWpstDdown";
+			speed = 0.048485;
+			actions = "PistolAdjustBKneelActions";
+			adjstance = "d";
 			ConnectTo[]=
 			{
 				"AadjPknlMstpSrasWpstDdown",
@@ -2043,28 +2043,28 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMstpSrasWpstDDown_AmovPknlMstpSrasWpstDnon: AmovPknlMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			variantsAI[]={};
-			canBlendStep=0;
-			looped=0;
-			minPlayTime=0.64999998;
-			interpolationrestart=1;
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\Knl\stp\ras\pst\AadjPknlMstpSrasWpstDdown_AmovPknlMstpSrasWpstDnon";
-			speed=-0.2;
-			actions="PistolKneelActions";
-			limitgunmovement=1;
-			adjstance="m";
-			soundOverride="adjust_short";
-			soundEnabled=1;
-			soundEdge[]={0.0099999998};
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			canBlendStep = 0;
+			looped = 0;
+			minPlayTime = 0.64999998;
+			interpolationrestart = 1;
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\Knl\stp\ras\pst\AadjPknlMstpSrasWpstDdown_AmovPknlMstpSrasWpstDnon";
+			speed = -0.2;
+			actions = "PistolKneelActions";
+			limitgunmovement = 1;
+			adjstance = "m";
+			soundOverride = "adjust_short";
+			soundEnabled = 1;
+			soundEdge[] = {0.0099999998};
 		};
 		class AadjPknlMstpSrasWpstDleft: AadjPknlMstpSrasWpstDup
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\Knl\stp\ras\pst\AadjPknlMstpSrasWpstDleft";
-			speed=0.045283001;
-			actions="PistolAdjustLKneelActions";
-			adjstance="l";
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Pknl_Wrfl_AdjL.p3d";
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\Knl\stp\ras\pst\AadjPknlMstpSrasWpstDleft";
+			speed = 0.045283001;
+			actions = "PistolAdjustLKneelActions";
+			adjstance = "l";
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Pknl_Wrfl_AdjL.p3d";
 			ConnectTo[]=
 			{
 				"AadjPknlMstpSrasWpstDleft_AadjPercMstpSrasWpstDleft",
@@ -2158,28 +2158,28 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMstpSrasWpstDleft_AmovPknlMstpSrasWpstDnon: AmovPknlMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			variantsAI[]={};
-			canBlendStep=0;
-			looped=0;
-			minPlayTime=0.64999998;
-			interpolationrestart=1;
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\Knl\stp\ras\pst\AadjPknlMstpSrasWpstdleft_AmovPknlMstpSrasWpstDnon";
-			speed=-0.40000001;
-			actions="PistolKneelActions";
-			limitgunmovement=1;
-			adjstance="m";
-			soundOverride="adjust_stand_side";
-			soundEnabled=1;
-			soundEdge[]={0.0099999998};
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			canBlendStep = 0;
+			looped = 0;
+			minPlayTime = 0.64999998;
+			interpolationrestart = 1;
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\Knl\stp\ras\pst\AadjPknlMstpSrasWpstdleft_AmovPknlMstpSrasWpstDnon";
+			speed = -0.40000001;
+			actions = "PistolKneelActions";
+			limitgunmovement = 1;
+			adjstance = "m";
+			soundOverride = "adjust_stand_side";
+			soundEnabled = 1;
+			soundEdge[] = {0.0099999998};
 		};
 		class AadjPknlMstpSrasWpstDright: AadjPknlMstpSrasWpstDup
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\Knl\stp\ras\pst\AadjPknlMstpSrasWpstDright";
-			speed=0.034042999;
-			actions="PistolAdjustRKneelActions";
-			adjstance="r";
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Pknl_Wrfl_AdjR.p3d";
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\Knl\stp\ras\pst\AadjPknlMstpSrasWpstDright";
+			speed = 0.034042999;
+			actions = "PistolAdjustRKneelActions";
+			adjstance = "r";
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Pknl_Wrfl_AdjR.p3d";
 			ConnectTo[]=
 			{
 				"AadjPknlMstpSrasWpstDright_AadjPercMstpSrasWpstDright",
@@ -2273,25 +2273,25 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMstpSrasWpstDright_AmovPknlMstpSrasWpstDnon: AmovPknlMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			variantsAI[]={};
-			canBlendStep=0;
-			looped=0;
-			minPlayTime=0.64999998;
-			interpolationrestart=1;
-			file="\A3\anims_f\Data\Anim\Sdr\Adj\Knl\stp\ras\pst\AadjPknlMstpSrasWpstDright_AmovPknlMstpSrasWpstDnon";
-			speed=-0.40000001;
-			actions="PistolKneelActions";
-			limitgunmovement=1;
-			adjstance="m";
-			soundOverride="adjust_stand_side";
-			soundEnabled=1;
-			soundEdge[]={0.0099999998};
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			canBlendStep = 0;
+			looped = 0;
+			minPlayTime = 0.64999998;
+			interpolationrestart = 1;
+			file = "\A3\anims_f\Data\Anim\Sdr\Adj\Knl\stp\ras\pst\AadjPknlMstpSrasWpstDright_AmovPknlMstpSrasWpstDnon";
+			speed = -0.40000001;
+			actions = "PistolKneelActions";
+			limitgunmovement = 1;
+			adjstance = "m";
+			soundOverride = "adjust_stand_side";
+			soundEnabled = 1;
+			soundEdge[] = {0.0099999998};
 		};
 		class AmovPknlMstpSlowWpstDnon: AmovPknlMstpSrasWpstDnon
 		{
-			duty=-0.80000001;
-			variantAfter[]={8,8,8};
+			duty = -0.80000001;
+			variantAfter[] = {8,8,8};
 			variantsPlayer[]=
 			{
 				"AidlPknlMstpSnonWnonDnon_G03",
@@ -2302,11 +2302,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				0.33399999
 			};
 			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\stp\non\non\AmovPknlMstpSnonWnonDnon";
-			disableWeaponsLong=1;
-			showWeaponAim=0;
-			actions="PistolLowKneelActions";
-			weaponLowered=1;
-			enableOptics=0;
+			disableWeaponsLong = 1;
+			showWeaponAim = 0;
+			actions = "PistolLowKneelActions";
+			weaponLowered = 1;
+			enableOptics = 0;
 			ConnectTo[]=
 			{
 				"AmovPknlMstpSlowWpstDnon_AmovPknlMstpSrasWpstDnon",
@@ -2371,13 +2371,13 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AmovPknlMstpSrasWpstDnon_AmovPknlMstpSrasWrflDnon",
 				0.02
 			};
-			camShakeFire=1;
+			camShakeFire = 1;
 		};
 		class AidlPknlMstpSlowWpstDnon_G0S: AmovPknlMstpSlowWpstDnon
 		{
-			variantsPlayer[]={};
-			headBobStrength=0;
-			variantAfter[]={30,30,30};
+			variantsPlayer[] = {};
+			headBobStrength = 0;
+			variantAfter[] = {30,30,30};
 			ConnectTo[]=
 			{
 				"AmovPknlMstpSlowWpstDnon",
@@ -2411,8 +2411,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AidlPknlMstpSlowWpstDnon_G01: AidlPknlMstpSlowWpstDnon_G0S
 		{
-			speed=-8;
-			file="\A3\anims_f\Data\Anim\Sdr\idl\knl\stp\low\pst\AidlPknlMstpSlowWpstDnon_G01";
+			speed = -8;
+			file = "\A3\anims_f\Data\Anim\Sdr\idl\knl\stp\low\pst\AidlPknlMstpSlowWpstDnon_G01";
 			ConnectTo[]=
 			{
 				"AidlPknlMstpSlowWpstDnon_G0S",
@@ -2430,19 +2430,19 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AidlPknlMstpSlowWpstDnon_G02: AidlPknlMstpSlowWpstDnon_G01
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\idl\knl\stp\low\pst\AidlPknlMstpSlowWpstDnon_G02";
+			file = "\A3\anims_f\Data\Anim\Sdr\idl\knl\stp\low\pst\AidlPknlMstpSlowWpstDnon_G02";
 		};
 		class AidlPknlMstpSlowWpstDnon_G03: AidlPknlMstpSlowWpstDnon_G01
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\idl\knl\stp\low\pst\AidlPknlMstpSlowWpstDnon_G03";
+			file = "\A3\anims_f\Data\Anim\Sdr\idl\knl\stp\low\pst\AidlPknlMstpSlowWpstDnon_G03";
 		};
 		class AmovPknlMstpSlowWpstDnon_turnL: AidlPknlMstpSlowWpstDnon_G0S
 		{
-			duty=-0.60000002;
-			variantsPlayer[]={};
-			file="a3\anims_f\data\anim\sdr\mov\knl\stp\non\non\amovpknlmstpsnonwnondnon_aiturn90l";
-			speed=1.2;
-			ConnectTo[]={};
+			duty = -0.60000002;
+			variantsPlayer[] = {};
+			file = "a3\anims_f\data\anim\sdr\mov\knl\stp\non\non\amovpknlmstpsnonwnondnon_aiturn90l";
+			speed = 1.2;
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSnonWnonDnon",
@@ -2453,11 +2453,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMstpSlowWpstDnon_turnR: AidlPknlMstpSlowWpstDnon_G0S
 		{
-			duty=-0.80000001;
-			variantsPlayer[]={};
-			file="a3\anims_f\data\anim\sdr\mov\knl\stp\non\non\amovpknlmstpsnonwnondnon_aiturn90l";
-			speed=1.2;
-			ConnectTo[]={};
+			duty = -0.80000001;
+			variantsPlayer[] = {};
+			file = "a3\anims_f\data\anim\sdr\mov\knl\stp\non\non\amovpknlmstpsnonwnondnon_aiturn90l";
+			speed = 1.2;
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSnonWnonDnon",
@@ -2468,17 +2468,17 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMwlkSlowWpstDf: AidlPknlMstpSlowWpstDnon_G0S
 		{
-			aimPrecision=2;
-			duty=0.1;
-			static=1;
-			relSpeedMin=0.80000001;
-			file="\A3\anims_f\Data\Anim\Sdr\mov\knl\wlk\low\pst\AmovPknlMwlkSlowWpstDf";
-			speed=0.44999999;
-			actions="PistolLowKneelActionsWlkF";
-			enableOptics=0;
-			soundEnabled=1;
-			soundEdge[]={0.15000001,0.40000001,0.64999998,0.89999998};
-			ConnectTo[]={};
+			aimPrecision = 2;
+			duty = 0.1;
+			static = 1;
+			relSpeedMin = 0.80000001;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\wlk\low\pst\AmovPknlMwlkSlowWpstDf";
+			speed = 0.44999999;
+			actions = "PistolLowKneelActionsWlkF";
+			enableOptics = 0;
+			soundEnabled = 1;
+			soundEdge[] = {0.15000001,0.40000001,0.64999998,0.89999998};
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSlowWpstDnon",
@@ -2501,8 +2501,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMwlkSlowWpstDfl: AmovPknlMwlkSlowWpstDf
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\mov\knl\wlk\low\pst\AmovPknlMwlkSlowWpstDfl";
-			actions="PistolLowKneelActionsWlkFl";
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\wlk\low\pst\AmovPknlMwlkSlowWpstDfl";
+			actions = "PistolLowKneelActionsWlkFl";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSlowWpstDnon",
@@ -2525,9 +2525,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMwlkSlowWpstDl: AmovPknlMwlkSlowWpstDf
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\mov\knl\wlk\low\pst\AmovPknlMwlkSlowWpstDl";
-			speed=0.29703;
-			actions="PistolLowKneelActionsWlkL";
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\wlk\low\pst\AmovPknlMwlkSlowWpstDl";
+			speed = 0.29703;
+			actions = "PistolLowKneelActionsWlkL";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSlowWpstDnon",
@@ -2550,9 +2550,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMwlkSlowWpstDbl: AmovPknlMwlkSlowWpstDf
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\mov\knl\wlk\low\pst\AmovPknlMwlkSlowWpstDbl";
-			speed=0.29703;
-			actions="PistolLowKneelActionsWlkBl";
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\wlk\low\pst\AmovPknlMwlkSlowWpstDbl";
+			speed = 0.29703;
+			actions = "PistolLowKneelActionsWlkBl";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSlowWpstDnon",
@@ -2575,9 +2575,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMwlkSlowWpstDb: AmovPknlMwlkSlowWpstDf
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\mov\knl\wlk\low\pst\AmovPknlMwlkSlowWpstDb";
-			speed=0.29703;
-			actions="PistolLowKneelActionsWlkB";
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\wlk\low\pst\AmovPknlMwlkSlowWpstDb";
+			speed = 0.29703;
+			actions = "PistolLowKneelActionsWlkB";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSlowWpstDnon",
@@ -2600,9 +2600,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMwlkSlowWpstDbr: AmovPknlMwlkSlowWpstDf
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\mov\knl\wlk\low\pst\AmovPknlMwlkSlowWpstDbr";
-			speed=0.29703;
-			actions="PistolLowKneelActionsWlkBr";
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\wlk\low\pst\AmovPknlMwlkSlowWpstDbr";
+			speed = 0.29703;
+			actions = "PistolLowKneelActionsWlkBr";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSlowWpstDnon",
@@ -2625,9 +2625,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMwlkSlowWpstDr: AmovPknlMwlkSlowWpstDf
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\mov\knl\wlk\low\pst\AmovPknlMwlkSlowWpstDr";
-			speed=0.30000001;
-			actions="PistolLowKneelActionsWlkR";
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\wlk\low\pst\AmovPknlMwlkSlowWpstDr";
+			speed = 0.30000001;
+			actions = "PistolLowKneelActionsWlkR";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSlowWpstDnon",
@@ -2650,8 +2650,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMwlkSlowWpstDfr: AmovPknlMwlkSlowWpstDf
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\mov\knl\wlk\low\pst\AmovPknlMwlkSlowWpstDfr";
-			actions="PistolLowKneelActionsWlkFr";
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\wlk\low\pst\AmovPknlMwlkSlowWpstDfr";
+			actions = "PistolLowKneelActionsWlkFr";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSlowWpstDnon",
@@ -2674,12 +2674,12 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMtacSlowWpstDf: AmovPknlMwlkSlowWpstDf
 		{
-			stamina=-0.1;
-			duty=0.2;
-			speed=0.75;
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\tac\low\pst\AmovPknlMtacSlowWpstDf";
-			headBobStrength=0.124378;
-			actions="PistolLowKneelActionsTacF";
+			stamina = -0.1;
+			duty = 0.2;
+			speed = 0.75;
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\tac\low\pst\AmovPknlMtacSlowWpstDf";
+			headBobStrength = 0.124378;
+			actions = "PistolLowKneelActionsTacF";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSlowWpstDnon",
@@ -2703,12 +2703,12 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AmovPercMtacSlowWpstDf",
 				0.02
 			};
-			aimPrecision=2;
+			aimPrecision = 2;
 		};
 		class AmovPknlMtacSlowWpstDfl: AmovPknlMtacSlowWpstDf
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\tac\low\pst\AmovPknlMtacSlowWpstDfl";
-			actions="PistolLowKneelActionsTacFL";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\tac\low\pst\AmovPknlMtacSlowWpstDfl";
+			actions = "PistolLowKneelActionsTacFL";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSlowWpstDnon",
@@ -2735,9 +2735,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMtacSlowWpstDl: AmovPknlMtacSlowWpstDf
 		{
-			speed=0.779221;
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\tac\low\pst\AmovPknlMtacSlowWpstDl";
-			actions="PistolLowKneelActionsTacL";
+			speed = 0.779221;
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\tac\low\pst\AmovPknlMtacSlowWpstDl";
+			actions = "PistolLowKneelActionsTacL";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSlowWpstDnon",
@@ -2760,9 +2760,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMtacSlowWpstDb: AmovPknlMtacSlowWpstDf
 		{
-			speed=0.81081098;
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\tac\low\pst\AmovPknlMtacSlowWpstDb";
-			actions="PistolLowKneelActionsTacB";
+			speed = 0.81081098;
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\tac\low\pst\AmovPknlMtacSlowWpstDb";
+			actions = "PistolLowKneelActionsTacB";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSlowWpstDnon",
@@ -2785,8 +2785,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMtacSlowWpstDbl: AmovPknlMtacSlowWpstDb
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\tac\low\pst\AmovPknlMtacSlowWpstDbl";
-			actions="PistolLowKneelActionsTacBL";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\tac\low\pst\AmovPknlMtacSlowWpstDbl";
+			actions = "PistolLowKneelActionsTacBL";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSlowWpstDnon",
@@ -2809,8 +2809,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMtacSlowWpstDbr: AmovPknlMtacSlowWpstDb
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\tac\low\pst\AmovPknlMtacSlowWpstDbr";
-			actions="PistolLowKneelActionsTacBR";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\tac\low\pst\AmovPknlMtacSlowWpstDbr";
+			actions = "PistolLowKneelActionsTacBR";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSlowWpstDnon",
@@ -2833,8 +2833,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMtacSlowWpstDr: AmovPknlMtacSlowWpstDf
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\tac\low\pst\AmovPknlMtacSlowWpstDr";
-			actions="PistolLowKneelActionsTacR";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\tac\low\pst\AmovPknlMtacSlowWpstDr";
+			actions = "PistolLowKneelActionsTacR";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSlowWpstDnon",
@@ -2857,8 +2857,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMtacSlowWpstDfr: AmovPknlMtacSlowWpstDf
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\tac\low\pst\AmovPknlMtacSlowWpstDfr";
-			actions="PistolLowKneelActionsTacFR";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\tac\low\pst\AmovPknlMtacSlowWpstDfr";
+			actions = "PistolLowKneelActionsTacFR";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSlowWpstDnon",
@@ -2885,21 +2885,21 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMrunSlowWpstDf: AmovPknlMwlkSlowWpstDf
 		{
-			stamina=-0.1;
-			aimPrecision=3;
+			stamina = -0.1;
+			aimPrecision = 3;
 			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\run\non\non\AmovPknlMrunSnonWnonDf";
-			duty=0.30000001;
-			soundEdge[]={0.25,0.5,0.75,1};
-			interpolationSpeed=2.5;
-			headBobStrength=0.054726001;
-			soundOverride="run";
-			showWeaponAim=0;
-			soundEnabled=1;
-			aiming="aimingCivil";
-			aimingBody="aimingUpCivil";
-			limitGunMovement=0.5;
+			duty = 0.30000001;
+			soundEdge[] = {0.25,0.5,0.75,1};
+			interpolationSpeed = 2.5;
+			headBobStrength = 0.054726001;
+			soundOverride = "run";
+			showWeaponAim = 0;
+			soundEnabled = 1;
+			aiming = "aimingCivil";
+			aimingBody = "aimingUpCivil";
+			limitGunMovement = 0.5;
 			speed = 0.666667;
-			actions="PistolLowKneelActionsRunF";
+			actions = "PistolLowKneelActionsRunF";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSlowWpstDnon",
@@ -2925,7 +2925,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPknlMrunSlowWpstDfl: AmovPknlMrunSlowWpstDf
 		{
 			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\run\non\non\AmovPknlMrunSnonWnonDfl";
-			actions="PistolLowKneelActionsRunFl";
+			actions = "PistolLowKneelActionsRunFl";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSlowWpstDnon",
@@ -2952,8 +2952,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		{
 			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\run\non\non\AmovPknlMrunSnonWnonDl";
 			speed = 0.625;
-			actions="PistolLowKneelActionsRunL";
-			soundEdge[]={0.30000001,0.80000001};
+			actions = "PistolLowKneelActionsRunL";
+			soundEdge[] = {0.30000001,0.80000001};
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSlowWpstDnon",
@@ -2980,7 +2980,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		{
 			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\run\non\non\AmovPknlMrunSnonWnonDbl";
 			speed = 0.545865;
-			actions="PistolLowKneelActionsRunBl";
+			actions = "PistolLowKneelActionsRunBl";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSlowWpstDnon",
@@ -3005,7 +3005,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		{
 			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\run\non\non\AmovPknlMrunSnonWnonDb";
 			speed = 0.545865;
-			actions="PistolLowKneelActionsRunB";
+			actions = "PistolLowKneelActionsRunB";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSlowWpstDnon",
@@ -3030,7 +3030,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		{
 			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\run\non\non\AmovPknlMrunSnonWnonDbr";
 			speed = 0.545865;
-			actions="PistolLowKneelActionsRunBr";
+			actions = "PistolLowKneelActionsRunBr";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSlowWpstDnon",
@@ -3055,7 +3055,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		{
 			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\run\non\non\AmovPknlMrunSnonWnonDr";
 			speed = 0.714286;
-			actions="PistolLowKneelActionsRunR";
+			actions = "PistolLowKneelActionsRunR";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSlowWpstDnon",
@@ -3079,7 +3079,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPknlMrunSlowWpstDfr: AmovPknlMrunSlowWpstDf
 		{
 			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\run\non\non\AmovPknlMrunSnonWnonDfr";
-			actions="PistolLowKneelActionsRunFr";
+			actions = "PistolLowKneelActionsRunFr";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSlowWpstDnon",
@@ -3102,11 +3102,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMstpSlowWpstDnon_gear_AmovPknlMstpSrasWpstDnon: AmovPknlMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			speed=2.3076899;
-			file="\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\low\pst\AmovPknlMstpSlowWpstDnon_AmovPknlMstpSrasWpstDnon";
-			looped=0;
-			canBlendStep=0;
+			variantsPlayer[] = {};
+			speed = 2.3076899;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\low\pst\AmovPknlMstpSlowWpstDnon_AmovPknlMstpSrasWpstDnon";
+			looped = 0;
+			canBlendStep = 0;
 			ConnectTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -3120,13 +3120,13 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMstpSrasWpstDnon_gear_AmovPknlMstpSrasWpstDnon: AmovPknlMstpSlowWpstDnon
 		{
-			variantsPlayer[]={};
-			leftHandIKCurve[]={0.61000001,0,0.81,1};
-			looped=0;
-			file="\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_gear_AmovPknlMstpSrasWpstDnon";
-			speed=1.5;
-			actions="PistolKneelActions";
-			canBlendStep=0;
+			variantsPlayer[] = {};
+			leftHandIKCurve[] = {0.61000001,0,0.81,1};
+			looped = 0;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_gear_AmovPknlMstpSrasWpstDnon";
+			speed = 1.5;
+			actions = "PistolKneelActions";
+			canBlendStep = 0;
 			ConnectTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -3146,12 +3146,12 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMstpSrasWpstDnon_AmovPknlMstpSrasWpstDnon_gear: AmovPknlMstpSlowWpstDnon
 		{
-			variantsPlayer[]={};
-			leftHandIKCurve[]={0.31,1,0.44999999,0};
-			looped=0;
-			file="\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AmovPknlMstpSrasWpstDnon_gear";
-			speed=2.8;
-			actions="PistolKneelActions_gear";
+			variantsPlayer[] = {};
+			leftHandIKCurve[] = {0.31,1,0.44999999,0};
+			looped = 0;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AmovPknlMstpSrasWpstDnon_gear";
+			speed = 2.8;
+			actions = "PistolKneelActions_gear";
 			ConnectTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon_gear",
@@ -3169,11 +3169,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMstpSrasWpstDnon_gear: AmovPknlMstpSlowWpstDnon
 		{
-			variantsPlayer[]={};
-			leftHandIKCurve[]={0};
-			file="\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_gear";
-			speed=10;
-			actions="PistolKneelActions_gear";
+			variantsPlayer[] = {};
+			leftHandIKCurve[] = {0};
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_gear";
+			speed = 10;
+			actions = "PistolKneelActions_gear";
 			ConnectTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon_gear_AmovPknlMstpSrasWpstDnon",
@@ -3195,8 +3195,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMstpSrasWpstDnon_explo: AmovPknlMstpSrasWpstDnon_gear
 		{
-			actions="PistolKneelActions_explo";
-			speed=-3;
+			actions = "PistolKneelActions_explo";
+			speed = -3;
 			InterpolateTo[]=
 			{
 				"Unconscious",
@@ -3205,12 +3205,12 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSrasWpstDnon_gear_AmovPercMstpSrasWpstDnon: AmovPknlMstpSrasWpstDnon_gear
 		{
-			leftHandIKCurve[]={0.61000001,0,0.81,1};
-			looped=0;
-			file="\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_gear_AmovPercMstpSrasWpstDnon";
-			speed=1.5;
-			actions="PistolStandActions_gear";
-			canBlendStep=0;
+			leftHandIKCurve[] = {0.61000001,0,0.81,1};
+			looped = 0;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_gear_AmovPercMstpSrasWpstDnon";
+			speed = 1.5;
+			actions = "PistolStandActions_gear";
+			canBlendStep = 0;
 			ConnectTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -3232,11 +3232,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSrasWpstDnon_AmovPercMstpSrasWpstDnon_gear: AmovPknlMstpSrasWpstDnon_gear
 		{
-			leftHandIKCurve[]={0.31,1,0.44999999,0};
-			looped=0;
-			file="\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AmovPercMstpSrasWpstDnon_gear";
-			speed=2.8;
-			actions="PistolStandActions_gear";
+			leftHandIKCurve[] = {0.31,1,0.44999999,0};
+			looped = 0;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AmovPercMstpSrasWpstDnon_gear";
+			speed = 2.8;
+			actions = "PistolStandActions_gear";
 			ConnectTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon_gear",
@@ -3258,8 +3258,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSrasWpstDnon_gear: AmovPknlMstpSrasWpstDnon_gear
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_gear";
-			actions="PistolStandActions_gear";
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_gear";
+			actions = "PistolStandActions_gear";
 			ConnectTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon_gear_AmovPercMstpSrasWpstDnon",
@@ -3283,9 +3283,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMstpSrasWpstDnon_AmovPknlMstpSlowWpstDnon_gear: AmovPknlMstpSrasWpstDnon_gear
 		{
-			speed=6;
-			file="\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AmovPknlMstpSlowWpstDnon";
-			looped=0;
+			speed = 6;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AmovPknlMstpSlowWpstDnon";
+			looped = 0;
 			ConnectTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon_gear",
@@ -3301,13 +3301,13 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMstpSrasWpstDnon_turnL: AmovPknlMstpSrasWpstDnon
 		{
-			duty=-0.40000001;
-			variantsPlayer[]={};
-			file="\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AIturn90L";
-			speed=1.3;
-			aimPrecision=4;
-			boundingSphere=4;
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Pknl_Wrfl_turn.p3d";
+			duty = -0.40000001;
+			variantsPlayer[] = {};
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AIturn90L";
+			speed = 1.3;
+			aimPrecision = 4;
+			boundingSphere = 4;
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Pknl_Wrfl_turn.p3d";
 			ConnectTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -3323,13 +3323,13 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMstpSrasWpstDnon_turnR: AmovPknlMstpSrasWpstDnon
 		{
-			duty=-0.40000001;
-			boundingSphere=8;
-			variantsPlayer[]={};
-			file="\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AIturn90R";
-			speed=1.3;
-			aimPrecision=4;
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Pknl_Wrfl_turn.p3d";
+			duty = -0.40000001;
+			boundingSphere = 8;
+			variantsPlayer[] = {};
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AIturn90R";
+			speed = 1.3;
+			aimPrecision = 4;
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Pknl_Wrfl_turn.p3d";
 			ConnectTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -3345,25 +3345,25 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMwlkSrasWpstDf: AmovPercMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			headBobStrength=0.02;
-			actions="PistolStandActionsWlkF";
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\Erc\Wlk\ras\pst\AmovPercMwlkSrasWpstDf";
-			soundEdge[]={0.25,0.5,0.75,1};
-			static=1;
-			relSpeedMin=0.80000001;
-			speed=0.46348301;
-			Walkcycles=2;
-			visibleSize=0.80012101;
-			duty=-0.30000001;
-			soundOverride="Walk";
-			leaningFactorBeg=0.75;
-			leaningFactorEnd=0.75;
-			soundEnabled=1;
-			aimPrecision=2;
-			interpolationSpeed=5.5;
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Pknl_Mrun_Slow_Wrfl.p3d";
-			ConnectTo[]={};
+			variantsPlayer[] = {};
+			headBobStrength = 0.02;
+			actions = "PistolStandActionsWlkF";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\Wlk\ras\pst\AmovPercMwlkSrasWpstDf";
+			soundEdge[] = {0.25,0.5,0.75,1};
+			static = 1;
+			relSpeedMin = 0.80000001;
+			speed = 0.46348301;
+			Walkcycles = 2;
+			visibleSize = 0.80012101;
+			duty = -0.30000001;
+			soundOverride = "Walk";
+			leaningFactorBeg = 0.75;
+			leaningFactorEnd = 0.75;
+			soundEnabled = 1;
+			aimPrecision = 2;
+			interpolationSpeed = 5.5;
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Pknl_Mrun_Slow_Wrfl.p3d";
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -3402,8 +3402,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMwlkSrasWpstDfl: AmovPercMwlkSrasWpstDf
 		{
-			actions="PistolStandActionsWlkFL";
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\Erc\Wlk\ras\pst\AmovPercMwlkSrasWpstDfl";
+			actions = "PistolStandActionsWlkFL";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\Wlk\ras\pst\AmovPercMwlkSrasWpstDfl";
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -3442,9 +3442,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMwlkSrasWpstDl: AmovPercMwlkSrasWpstDf
 		{
-			actions="PistolStandActionsWlkL";
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\Erc\Wlk\ras\pst\AmovPercMwlkSrasWpstDl";
-			speed=0.400049;
+			actions = "PistolStandActionsWlkL";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\Wlk\ras\pst\AmovPercMwlkSrasWpstDl";
+			speed = 0.400049;
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -3471,11 +3471,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMwlkSrasWpstDb: AmovPercMwlkSrasWpstDf
 		{
-			actions="PistolStandActionsWlkB";
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\Erc\Wlk\ras\pst\AmovPercMwlkSrasWpstDb";
-			speed=0.81642699;
-			soundEdge[]={0.5,1};
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Perc_Wrfl_Db.p3d";
+			actions = "PistolStandActionsWlkB";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\Wlk\ras\pst\AmovPercMwlkSrasWpstDb";
+			speed = 0.81642699;
+			soundEdge[] = {0.5,1};
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Perc_Wrfl_Db.p3d";
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -3502,8 +3502,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMwlkSrasWpstDbl: AmovPercMwlkSrasWpstDb
 		{
-			actions="PistolStandActionsWlkBL";
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\Erc\Wlk\ras\pst\AmovPercMwlkSrasWpstDbl";
+			actions = "PistolStandActionsWlkBL";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\Wlk\ras\pst\AmovPercMwlkSrasWpstDbl";
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -3530,9 +3530,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMwlkSrasWpstDbr: AmovPercMwlkSrasWpstDb
 		{
-			actions="PistolStandActionsWlkBR";
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\Erc\Wlk\ras\pst\AmovPercMwlkSrasWpstDbr";
-			limitGunMovement=1;
+			actions = "PistolStandActionsWlkBR";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\Wlk\ras\pst\AmovPercMwlkSrasWpstDbr";
+			limitGunMovement = 1;
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -3559,9 +3559,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMwlkSrasWpstDr: AmovPercMwlkSrasWpstDf
 		{
-			actions="PistolStandActionsWlkR";
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\Erc\Wlk\ras\pst\AmovPercMwlkSrasWpstDr";
-			speed=0.40634099;
+			actions = "PistolStandActionsWlkR";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\Wlk\ras\pst\AmovPercMwlkSrasWpstDr";
+			speed = 0.40634099;
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -3588,8 +3588,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMwlkSrasWpstDfr: AmovPercMwlkSrasWpstDf
 		{
-			actions="PistolStandActionsWlkFR";
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\Erc\Wlk\ras\pst\AmovPercMwlkSrasWpstDfr";
+			actions = "PistolStandActionsWlkFR";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\Wlk\ras\pst\AmovPercMwlkSrasWpstDfr";
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -3628,16 +3628,16 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMwlkSlowWpstDf: AmovPercMwlkSrasWpstDf
 		{
-			duty=-0.5;
-			actions="PistolLowStandActionsWlkF";
+			duty = -0.5;
+			actions = "PistolLowStandActionsWlkF";
 			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\Wlk\non\non\AmovPercMwlkSnonWnonDf";
 			speed = 0.35;
-			showWeaponAim=0;
-			disableWeapons=1;
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Perc_Wnon.p3d";
-			disableWeaponsLong=1;
-			weaponLowered=1;
-			enableOptics=0;
+			showWeaponAim = 0;
+			disableWeapons = 1;
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Perc_Wnon.p3d";
+			disableWeaponsLong = 1;
+			weaponLowered = 1;
+			enableOptics = 0;
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSlowWpstDnon",
@@ -3664,7 +3664,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMwlkSlowWpstDfl: AmovPercMwlkSlowWpstDf
 		{
-			actions="PistolLowStandActionsWlkFl";
+			actions = "PistolLowStandActionsWlkFl";
 			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\Wlk\non\non\AmovPercMwlkSnonWnonDfl";
 			InterpolateTo[]=
 			{
@@ -3692,9 +3692,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMwlkSlowWpstDl: AmovPercMwlkSlowWpstDf
 		{
-			actions="PistolLowStandActionsWlkL";
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\Erc\Wlk\non\non\AmovPercMwlkSnonWnonDl";
-			speed=0.47619;
+			actions = "PistolLowStandActionsWlkL";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\Wlk\non\non\AmovPercMwlkSnonWnonDl";
+			speed = 0.47619;
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSlowWpstDnon",
@@ -3719,9 +3719,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMwlkSlowWpstDbl: AmovPercMwlkSlowWpstDf
 		{
-			actions="PistolLowStandActionsWlkBl";
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\Erc\Wlk\non\non\AmovPercMwlkSnonWnonDbl";
-			speed=0.337079;
+			actions = "PistolLowStandActionsWlkBl";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\Wlk\non\non\AmovPercMwlkSnonWnonDbl";
+			speed = 0.337079;
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSlowWpstDnon",
@@ -3746,8 +3746,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMwlkSlowWpstDb: AmovPercMwlkSlowWpstDf
 		{
-			actions="PistolLowStandActionsWlkB";
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\Erc\Wlk\non\non\AmovPercMwlkSnonWnonDb";
+			actions = "PistolLowStandActionsWlkB";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\Wlk\non\non\AmovPercMwlkSnonWnonDb";
 			speed = 0.337079;
 			InterpolateTo[]=
 			{
@@ -3773,7 +3773,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMwlkSlowWpstDbr: AmovPercMwlkSlowWpstDf
 		{
-			actions="PistolLowStandActionsWlkBr";
+			actions = "PistolLowStandActionsWlkBr";
 			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\Wlk\non\non\AmovPercMwlkSnonWnonDbr";
 			speed = 0.337079;
 			InterpolateTo[]=
@@ -3800,7 +3800,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMwlkSlowWpstDr: AmovPercMwlkSlowWpstDf
 		{
-			actions="PistolLowStandActionsWlkR";
+			actions = "PistolLowStandActionsWlkR";
 			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\Wlk\non\non\AmovPercMwlkSnonWnonDr";
 			speed = 0.47619;
 			InterpolateTo[]=
@@ -3827,8 +3827,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMwlkSlowWpstDfr: AmovPercMwlkSlowWpstDf
 		{
-			actions="PistolLowStandActionsWlkFr";
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\Erc\Wlk\non\non\AmovPercMwlkSnonWnonDfr";
+			actions = "PistolLowStandActionsWlkFr";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\Wlk\non\non\AmovPercMwlkSnonWnonDfr";
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSlowWpstDnon",
@@ -3855,12 +3855,12 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSlowWpstDf: AmovPercMwlkSlowWpstDf
 		{
-			stamina=-0.1;
-			duty=0;
+			stamina = -0.1;
+			duty = 0;
 			speed = 1.2485;
 			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\run\non\non\AmovPercMrunSnonWnonDf";
-			headBobStrength=0.124378;
-			actions="PistolLowStandActionsTacF";
+			headBobStrength = 0.124378;
+			actions = "PistolLowStandActionsTacF";
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSlowWpstDnon",
@@ -3884,12 +3884,12 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AmovPknlMtacSlowWpstDf",
 				0.02
 			};
-			aimPrecision=2;
+			aimPrecision = 2;
 		};
 		class AmovPercMtacSlowWpstDfl: AmovPercMtacSlowWpstDf
 		{
 			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\run\non\non\AmovPercMrunSnonWnonDfl";
-			actions="PistolLowStandActionsTacFL";
+			actions = "PistolLowStandActionsTacFL";
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSlowWpstDnon",
@@ -3916,9 +3916,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSlowWpstDl: AmovPercMtacSlowWpstDf
 		{
-			speed=0.70946;
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\Erc\run\non\non\AmovPercMrunSnonWnonDl";
-			actions="PistolLowStandActionsTacL";
+			speed = 0.70946;
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\run\non\non\AmovPercMrunSnonWnonDl";
+			actions = "PistolLowStandActionsTacL";
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSlowWpstDnon",
@@ -3943,7 +3943,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		{
 			speed = 0.669421;
 			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\run\non\non\AmovPercMrunSnonWnonDb";
-			actions="PistolLowStandActionsTacB";
+			actions = "PistolLowStandActionsTacB";
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSlowWpstDnon",
@@ -3966,8 +3966,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSlowWpstDbl: AmovPercMtacSlowWpstDb
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\Erc\run\non\non\AmovPercMrunSnonWnonDbl";
-			actions="PistolLowStandActionsTacBL";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\run\non\non\AmovPercMrunSnonWnonDbl";
+			actions = "PistolLowStandActionsTacBL";
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSlowWpstDnon",
@@ -3990,8 +3990,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSlowWpstDbr: AmovPercMtacSlowWpstDb
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\Erc\run\non\non\AmovPercMrunSnonWnonDbr";
-			actions="PistolLowStandActionsTacBR";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\run\non\non\AmovPercMrunSnonWnonDbr";
+			actions = "PistolLowStandActionsTacBR";
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSlowWpstDnon",
@@ -4014,9 +4014,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSlowWpstDr: AmovPercMtacSlowWpstDf
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\Erc\run\non\non\AmovPercMrunSnonWnonDr";
-			actions="PistolLowStandActionsTacR";
-			speed=0.625;
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\run\non\non\AmovPercMrunSnonWnonDr";
+			actions = "PistolLowStandActionsTacR";
+			speed = 0.625;
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSlowWpstDnon",
@@ -4040,7 +4040,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPercMtacSlowWpstDfr: AmovPercMtacSlowWpstDf
 		{
 			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\run\non\non\AmovPercMrunSnonWnonDfr";
-			actions="PistolLowStandActionsTacFR";
+			actions = "PistolLowStandActionsTacFR";
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSlowWpstDnon",
@@ -4067,12 +4067,12 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSrasWpstDf: AmovPercMwlkSrasWpstDf
 		{
-			stamina=-0.1;
-			duty=0.2;
-			speed=0.85059202;
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\Erc\tac\ras\pst\AmovPercMtacSrasWpstDf";
-			headBobStrength=0.124378;
-			actions="PistolStandActionsTacF";
+			stamina = -0.1;
+			duty = 0.2;
+			speed = 0.85059202;
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\tac\ras\pst\AmovPercMtacSrasWpstDf";
+			headBobStrength = 0.124378;
+			actions = "PistolStandActionsTacF";
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -4098,13 +4098,13 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AmovPknlMtacSrasWpstDf",
 				0.02
 			};
-			aimPrecision=4;
-			soundOverride="Run";
+			aimPrecision = 4;
+			soundOverride = "Run";
 		};
 		class AmovPercMtacSrasWpstDfl: AmovPercMtacSrasWpstDf
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\Erc\tac\ras\pst\AmovPercMtacSrasWpstDfl";
-			actions="PistolStandActionsTacFL";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\tac\ras\pst\AmovPercMtacSrasWpstDfl";
+			actions = "PistolStandActionsTacFL";
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -4133,10 +4133,10 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSrasWpstDl: AmovPercMtacSrasWpstDf
 		{
-			speed=1.67255;
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\Erc\tac\ras\pst\AmovPercMtacSrasWpstDl";
-			actions="PistolStandActionsTacL";
-			soundEdge[]={0.30000001,0.80000001};
+			speed = 1.67255;
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\tac\ras\pst\AmovPercMtacSrasWpstDl";
+			actions = "PistolStandActionsTacL";
+			soundEdge[] = {0.30000001,0.80000001};
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -4161,10 +4161,10 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSrasWpstDb: AmovPercMtacSrasWpstDf
 		{
-			speed=0.81566602;
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\Erc\tac\ras\pst\AmovPercMtacSrasWpstDb";
-			actions="PistolStandActionsTacB";
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Perc_Wrfl_Db.p3d";
+			speed = 0.81566602;
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\tac\ras\pst\AmovPercMtacSrasWpstDb";
+			actions = "PistolStandActionsTacB";
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Perc_Wrfl_Db.p3d";
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -4189,8 +4189,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSrasWpstDbl: AmovPercMtacSrasWpstDb
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\Erc\tac\ras\pst\AmovPercMtacSrasWpstDbl";
-			actions="PistolStandActionsTacBL";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\tac\ras\pst\AmovPercMtacSrasWpstDbl";
+			actions = "PistolStandActionsTacBL";
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -4215,8 +4215,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSrasWpstDbr: AmovPercMtacSrasWpstDb
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\Erc\tac\ras\pst\AmovPercMtacSrasWpstDbr";
-			actions="PistolStandActionsTacBR";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\tac\ras\pst\AmovPercMtacSrasWpstDbr";
+			actions = "PistolStandActionsTacBR";
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -4241,10 +4241,10 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSrasWpstDr: AmovPercMtacSrasWpstDf
 		{
-			speed=1.45696;
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\Erc\tac\ras\pst\AmovPercMtacSrasWpstDr";
-			actions="PistolStandActionsTacR";
-			soundEdge[]={0.22,0.80000001};
+			speed = 1.45696;
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\tac\ras\pst\AmovPercMtacSrasWpstDr";
+			actions = "PistolStandActionsTacR";
+			soundEdge[] = {0.22,0.80000001};
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -4269,8 +4269,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSrasWpstDfr: AmovPercMtacSrasWpstDf
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\Erc\tac\ras\pst\AmovPercMtacSrasWpstDfr";
-			actions="PistolStandActionsTacFR";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\tac\ras\pst\AmovPercMtacSrasWpstDfr";
+			actions = "PistolStandActionsTacFR";
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -4299,32 +4299,32 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMrunSrasWpstDf: AmovPercMstpSrasWpstDnon
 		{
-			stamina=-0.1;
-			aimPrecision=4;
-			variantsPlayer[]={};
+			stamina = -0.1;
+			aimPrecision = 4;
+			variantsPlayer[] = {};
 			soundEdge[] = {0,0.428571,1};
-			actions="PistolStandActionsRunF";
-			visibleSize=0.90012097;
+			actions = "PistolStandActionsRunF";
+			visibleSize = 0.90012097;
 			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\run\non\non\AmovPercMrunSnonWnonDf";
 			speed = 1.2485;
-			duty=0.15000001;
-			soundOverride="run";
-			showWeaponAim=0;
-			leaningFactorBeg=0;
-			leaningFactorEnd=0;
-			soundEnabled=1;
-			aiming="aimingCivil";
-			aimingBody="aimingUpCivil";
-			static=1;
-			relSpeedMin=0.5;
-			relSpeedMax=1.1;
-			limitGunMovement=0.5;
-			Walkcycles=2;
-			interpolationSpeed=3.05;
-			headBobStrength=0.094526999;
-			disableWeaponsLong=1;
-			disableWeapons=1;
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Pknl_Mrun_Slow_Wrfl.p3d";
+			duty = 0.15000001;
+			soundOverride = "run";
+			showWeaponAim = 0;
+			leaningFactorBeg = 0;
+			leaningFactorEnd = 0;
+			soundEnabled = 1;
+			aiming = "aimingCivil";
+			aimingBody = "aimingUpCivil";
+			static = 1;
+			relSpeedMin = 0.5;
+			relSpeedMax = 1.1;
+			limitGunMovement = 0.5;
+			Walkcycles = 2;
+			interpolationSpeed = 3.05;
+			headBobStrength = 0.094526999;
+			disableWeaponsLong = 1;
+			disableWeapons = 1;
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Pknl_Mrun_Slow_Wrfl.p3d";
 			ConnectTo[]=
 			{
 				"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon",
@@ -4364,11 +4364,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMrunSlowWpstDf: AmovPercMrunSrasWpstDf
 		{
-			stamina=-0.1;
-			aimPrecision=3;
-			actions="PistolLowStandActionsRunF";
-			weaponLowered=1;
-			enableOptics=0;
+			stamina = -0.1;
+			aimPrecision = 3;
+			actions = "PistolLowStandActionsRunF";
+			weaponLowered = 1;
+			enableOptics = 0;
 			InterpolateTo[]=
 			{
 				"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon",
@@ -4399,7 +4399,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMrunSrasWpstDfl: AmovPercMrunSrasWpstDf
 		{
-			actions="PistolStandActionsRunFL";
+			actions = "PistolStandActionsRunFL";
 			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\run\non\non\AmovPercMrunSnonWnonDfl";
 			InterpolateTo[]=
 			{
@@ -4435,9 +4435,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMrunSlowWpstDfl: AmovPercMrunSrasWpstDfl
 		{
-			actions="PistolLowStandActionsRunFl";
-			weaponLowered=1;
-			enableOptics=0;
+			actions = "PistolLowStandActionsRunFl";
+			weaponLowered = 1;
+			enableOptics = 0;
 			InterpolateTo[]=
 			{
 				"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon",
@@ -4468,11 +4468,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMrunSrasWpstDl: AmovPercMrunSrasWpstDf
 		{
-			actions="PistolStandActionsRunL";
+			actions = "PistolStandActionsRunL";
 			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\run\non\non\AmovPercMrunSnonWnonDl";
 			speed = 0.70946;
-			soundEdge[]={0.5,1};
-			ConnectTo[]={};
+			soundEdge[] = {0.5,1};
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -4499,9 +4499,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMrunSlowWpstDl: AmovPercMrunSrasWpstDl
 		{
-			actions="PistolLowStandActionsRunL";
-			weaponLowered=1;
-			enableOptics=0;
+			actions = "PistolLowStandActionsRunL";
+			weaponLowered = 1;
+			enableOptics = 0;
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSlowWpstDnon",
@@ -4530,11 +4530,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMrunSrasWpstDb: AmovPercMrunSrasWpstDf
 		{
-			actions="PistolStandActionsRunB";
+			actions = "PistolStandActionsRunB";
 			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\run\non\non\AmovPercMrunSnonWnonDb";
 			speed = 0.75;
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Perc_Wrfl_Db.p3d";
-			ConnectTo[]={};
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Perc_Wrfl_Db.p3d";
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -4559,9 +4559,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMrunSlowWpstDb: AmovPercMrunSrasWpstDb
 		{
-			actions="PistolLowStandActionsRunB";
-			weaponLowered=1;
-			enableOptics=0;
+			actions = "PistolLowStandActionsRunB";
+			weaponLowered = 1;
+			enableOptics = 0;
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSlowWpstDnon",
@@ -4590,7 +4590,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMrunSrasWpstDbl: AmovPercMrunSrasWpstDb
 		{
-			actions="PistolStandActionsRunBL";
+			actions = "PistolStandActionsRunBL";
 			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\run\non\non\AmovPercMrunSnonWnonDbl";
 			InterpolateTo[]=
 			{
@@ -4616,9 +4616,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMrunSlowWpstDbl: AmovPercMrunSrasWpstDbl
 		{
-			actions="PistolLowStandActionsRunBl";
-			weaponLowered=1;
-			enableOptics=0;
+			actions = "PistolLowStandActionsRunBl";
+			weaponLowered = 1;
+			enableOptics = 0;
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSlowWpstDnon",
@@ -4647,7 +4647,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMrunSrasWpstDbr: AmovPercMrunSrasWpstDb
 		{
-			actions="PistolStandActionsRunBR";
+			actions = "PistolStandActionsRunBR";
 			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\run\non\non\AmovPercMrunSnonWnonDbr";
 			InterpolateTo[]=
 			{
@@ -4673,9 +4673,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMrunSlowWpstDbr: AmovPercMrunSrasWpstDbr
 		{
-			actions="PistolLowStandActionsRunBr";
-			weaponLowered=1;
-			enableOptics=0;
+			actions = "PistolLowStandActionsRunBr";
+			weaponLowered = 1;
+			enableOptics = 0;
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSlowWpstDnon",
@@ -4704,10 +4704,10 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMrunSrasWpstDr: AmovPercMrunSrasWpstDf
 		{
-			actions="PistolStandActionsRunR";
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\Erc\run\non\non\AmovPercMrunSnonWnonDr";
-			speed=0.68;
-			ConnectTo[]={};
+			actions = "PistolStandActionsRunR";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\run\non\non\AmovPercMrunSnonWnonDr";
+			speed = 0.68;
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -4734,9 +4734,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMrunSlowWpstDr: AmovPercMrunSrasWpstDr
 		{
-			actions="PistolLowStandActionsRunR";
-			weaponLowered=1;
-			enableOptics=0;
+			actions = "PistolLowStandActionsRunR";
+			weaponLowered = 1;
+			enableOptics = 0;
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSlowWpstDnon",
@@ -4765,7 +4765,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMrunSrasWpstDfr: AmovPercMrunSrasWpstDf
 		{
-			actions="PistolStandActionsRunFR";
+			actions = "PistolStandActionsRunFR";
 			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\run\non\non\AmovPercMrunSnonWnonDfr";
 			InterpolateTo[]=
 			{
@@ -4803,9 +4803,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMrunSlowWpstDfr: AmovPercMrunSrasWpstDfr
 		{
-			actions="PistolLowStandActionsRunFr";
-			weaponLowered=1;
-			enableOptics=0;
+			actions = "PistolLowStandActionsRunFr";
+			weaponLowered = 1;
+			enableOptics = 0;
 			InterpolateTo[]=
 			{
 				"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon",
@@ -4838,23 +4838,23 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMwlkSrasWpstDf: AmovPknlMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			visibleSize=0.46153799;
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\Wlk\ras\pst\AmovPknlMwlkSrasWpstDf";
-			soundEdge[]={0.25,0.5,0.75,1};
-			speed=0.40938899;
-			duty=0.15000001;
-			soundOverride="Walk";
-			leaningFactorBeg=0.75;
-			leaningFactorEnd=0.75;
-			soundEnabled=1;
-			aimPrecision=3;
-			actions="PistolKneelActionsWlkF";
-			Walkcycles=2;
-			interpolationSpeed=5.5;
-			headBobStrength=0.094526999;
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Pknl_Mrun_Slow_Wrfl.p3d";
-			ConnectTo[]={};
+			variantsPlayer[] = {};
+			visibleSize = 0.46153799;
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\Wlk\ras\pst\AmovPknlMwlkSrasWpstDf";
+			soundEdge[] = {0.25,0.5,0.75,1};
+			speed = 0.40938899;
+			duty = 0.15000001;
+			soundOverride = "Walk";
+			leaningFactorBeg = 0.75;
+			leaningFactorEnd = 0.75;
+			soundEnabled = 1;
+			aimPrecision = 3;
+			actions = "PistolKneelActionsWlkF";
+			Walkcycles = 2;
+			interpolationSpeed = 5.5;
+			headBobStrength = 0.094526999;
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Pknl_Mrun_Slow_Wrfl.p3d";
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -4885,8 +4885,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMwlkSrasWpstDfl: AmovPknlMwlkSrasWpstDf
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\Wlk\ras\pst\AmovPknlMwlkSrasWpstDfl";
-			actions="PistolKneelActionsWlkFL";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\Wlk\ras\pst\AmovPknlMwlkSrasWpstDfl";
+			actions = "PistolKneelActionsWlkFL";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -4915,9 +4915,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMwlkSrasWpstDl: AmovPknlMwlkSrasWpstDf
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\Wlk\ras\pst\AmovPknlMwlkSrasWpstDl";
-			speed=0.357366;
-			actions="PistolKneelActionsWlkL";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\Wlk\ras\pst\AmovPknlMwlkSrasWpstDl";
+			speed = 0.357366;
+			actions = "PistolKneelActionsWlkL";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -4946,11 +4946,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMwlkSrasWpstDb: AmovPknlMwlkSrasWpstDf
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\Wlk\ras\pst\AmovPknlMwlkSrasWpstDb";
-			speed=0.36780101;
-			actions="PistolKneelActionsWlkB";
-			headBobStrength=0.084577002;
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Pknl_Wrfl_Db.p3d";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\Wlk\ras\pst\AmovPknlMwlkSrasWpstDb";
+			speed = 0.36780101;
+			actions = "PistolKneelActionsWlkB";
+			headBobStrength = 0.084577002;
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Pknl_Wrfl_Db.p3d";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -4977,8 +4977,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMwlkSrasWpstDbl: AmovPknlMwlkSrasWpstDb
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\Wlk\ras\pst\AmovPknlMwlkSrasWpstDbl";
-			actions="PistolKneelActionsWlkBL";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\Wlk\ras\pst\AmovPknlMwlkSrasWpstDbl";
+			actions = "PistolKneelActionsWlkBL";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -5005,8 +5005,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMwlkSrasWpstDbr: AmovPknlMwlkSrasWpstDb
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\Wlk\ras\pst\AmovPknlMwlkSrasWpstDbr";
-			actions="PistolKneelActionsWlkBR";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\Wlk\ras\pst\AmovPknlMwlkSrasWpstDbr";
+			actions = "PistolKneelActionsWlkBR";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -5033,9 +5033,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMwlkSrasWpstDr: AmovPknlMwlkSrasWpstDf
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\Wlk\ras\pst\AmovPknlMwlkSrasWpstDr";
-			speed=0.34758401;
-			actions="PistolKneelActionsWlkBR";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\Wlk\ras\pst\AmovPknlMwlkSrasWpstDr";
+			speed = 0.34758401;
+			actions = "PistolKneelActionsWlkBR";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -5064,8 +5064,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMwlkSrasWpstDfr: AmovPknlMwlkSrasWpstDf
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\Wlk\ras\pst\AmovPknlMwlkSrasWpstDfr";
-			actions="PistolKneelActionsWlkFR";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\Wlk\ras\pst\AmovPknlMwlkSrasWpstDfr";
+			actions = "PistolKneelActionsWlkFR";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -5094,30 +5094,30 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMrunSrasWpstDf: AidlPknlMstpSrasWpstDnon_G0S
 		{
-			stamina=-0.1;
-			aimPrecision=5;
-			soundEdge[]={0.25,0.5,0.75,1};
-			visibleSize=0.60012197;
+			stamina = -0.1;
+			aimPrecision = 5;
+			soundEdge[] = {0.25,0.5,0.75,1};
+			visibleSize = 0.60012197;
 			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\run\non\non\AmovPknlMrunSnonWnonDf";
 			speed = 0.666667;
-			duty=0.30000001;
-			soundOverride="run";
-			showWeaponAim=0;
-			soundEnabled=1;
-			aiming="aimingCivil";
-			aimingBody="aimingUpCivil";
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Pknl_Mrun_Slow_Wrfl.p3d";
-			static=1;
-			relSpeedMin=0.5;
-			relSpeedMax=1.1;
-			limitGunMovement=0.5;
-			actions="PistolKneelActionsRunF";
-			Walkcycles=2;
-			interpolationSpeed=3.05;
-			headBobStrength=0.054726001;
-			disableWeaponsLong=1;
-			disableWeapons=1;
-			ConnectTo[]={};
+			duty = 0.30000001;
+			soundOverride = "run";
+			showWeaponAim = 0;
+			soundEnabled = 1;
+			aiming = "aimingCivil";
+			aimingBody = "aimingUpCivil";
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Pknl_Mrun_Slow_Wrfl.p3d";
+			static = 1;
+			relSpeedMin = 0.5;
+			relSpeedMax = 1.1;
+			limitGunMovement = 0.5;
+			actions = "PistolKneelActionsRunF";
+			Walkcycles = 2;
+			interpolationSpeed = 3.05;
+			headBobStrength = 0.054726001;
+			disableWeaponsLong = 1;
+			disableWeapons = 1;
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -5146,8 +5146,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMstpSlowWpstDnon_AmovPknlMrunSrasWpstDf: AmovPknlMrunSrasWpstDf
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\stp\low\pst\AmovPknlMstpSlowWpstDnon_AmovPknlMrunSlowWpstDf";
-			speed=1;
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\stp\low\pst\AmovPknlMstpSlowWpstDnon_AmovPknlMrunSlowWpstDf";
+			speed = 1;
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon_AmovPercMsprSrasWpstDf",
@@ -5159,7 +5159,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPknlMrunSrasWpstDfl: AmovPknlMrunSrasWpstDf
 		{
 			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\run\non\non\AmovPknlMrunSnonWnonDfl";
-			actions="PistolKneelActionsRunFL";
+			actions = "PistolKneelActionsRunFL";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -5190,8 +5190,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		{
 			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\run\non\non\AmovPknlMrunSnonWnonDl";
 			speed = 0.625;
-			actions="PistolKneelActionsRunL";
-			soundEdge[]={0.5,1};
+			actions = "PistolKneelActionsRunL";
+			soundEdge[] = {0.5,1};
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -5220,8 +5220,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		{
 			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\run\non\non\AmovPknlMrunSnonWnonDb";
 			speed = 0.666667;
-			actions="PistolKneelActionsRunB";
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Pknl_Wrfl_Db.p3d";
+			actions = "PistolKneelActionsRunB";
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Pknl_Wrfl_Db.p3d";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -5247,7 +5247,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPknlMrunSrasWpstDbl: AmovPknlMrunSrasWpstDb
 		{
 			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\run\non\non\AmovPknlMrunSnonWnonDbl";
-			actions="PistolKneelActionsRunBL";
+			actions = "PistolKneelActionsRunBL";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -5273,7 +5273,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPknlMrunSrasWpstDbr: AmovPknlMrunSrasWpstDb
 		{
 			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\run\non\non\AmovPknlMrunSnonWnonDbr";
-			actions="PistolKneelActionsRunBR";
+			actions = "PistolKneelActionsRunBR";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -5300,7 +5300,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		{
 			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\run\non\non\AmovPknlMrunSnonWnonDr";
 			speed = 0.714286;
-			actions="PistolKneelActionsRunR";
+			actions = "PistolKneelActionsRunR";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -5328,7 +5328,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPknlMrunSrasWpstDfr: AmovPknlMrunSrasWpstDf
 		{
 			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\run\non\non\AmovPknlMrunSnonWnonDfr";
-			actions="PistolKneelActionsRunFr";
+			actions = "PistolKneelActionsRunFr";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -5357,16 +5357,16 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMtacSrasWpstDf: AmovPknlMwlkSrasWpstDf
 		{
-			stamina=-0.1;
-			aimPrecision=5;
-			limitgunmovement=1;
-			speed=0.767223;
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\tac\ras\pst\AmovPknlMtacSrasWpstDf";
-			camShakeFire=1.15;
-			duty=0.40000001;
-			headBobStrength=0.164179;
-			soundoverride="walk";
-			actions="PistolKneelActionsTacF";
+			stamina = -0.1;
+			aimPrecision = 5;
+			limitgunmovement = 1;
+			speed = 0.767223;
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\tac\ras\pst\AmovPknlMtacSrasWpstDf";
+			camShakeFire = 1.15;
+			duty = 0.40000001;
+			headBobStrength = 0.164179;
+			soundoverride = "walk";
+			actions = "PistolKneelActionsTacF";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -5395,8 +5395,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMtacSrasWpstDfl: AmovPknlMtacSrasWpstDf
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\tac\ras\pst\AmovPknlMtacSrasWpstDfl";
-			actions="PistolKneelActionsTacFL";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\tac\ras\pst\AmovPknlMtacSrasWpstDfl";
+			actions = "PistolKneelActionsTacFL";
 			InterpolateTo[]=
 			{
 				"AmovPknlMtacSrasWpstDl",
@@ -5423,10 +5423,10 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMtacSrasWpstDl: AmovPknlMtacSrasWpstDf
 		{
-			speed=1.50659;
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\tac\ras\pst\AmovPknlMtacSrasWpstDl";
-			actions="PistolKneelActionsTacL";
-			soundEdge[]={0.5,1};
+			speed = 1.50659;
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\tac\ras\pst\AmovPknlMtacSrasWpstDl";
+			actions = "PistolKneelActionsTacL";
+			soundEdge[] = {0.5,1};
 			InterpolateTo[]=
 			{
 				"AmovPknlMtacSrasWpstDbl",
@@ -5449,10 +5449,10 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMtacSrasWpstDb: AmovPknlMtacSrasWpstDf
 		{
-			speed=0.65519702;
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\tac\ras\pst\AmovPknlMtacSrasWpstDb";
-			actions="PistolKneelActionsTacB";
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Pknl_Wrfl_Db.p3d";
+			speed = 0.65519702;
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\tac\ras\pst\AmovPknlMtacSrasWpstDb";
+			actions = "PistolKneelActionsTacB";
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Pknl_Wrfl_Db.p3d";
 			InterpolateTo[]=
 			{
 				"AmovPknlMtacSrasWpstDbl",
@@ -5475,8 +5475,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMtacSrasWpstDbl: AmovPknlMtacSrasWpstDb
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\tac\ras\pst\AmovPknlMtacSrasWpstDbl";
-			actions="PistolKneelActionsTacBL";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\tac\ras\pst\AmovPknlMtacSrasWpstDbl";
+			actions = "PistolKneelActionsTacBL";
 			InterpolateTo[]=
 			{
 				"AmovPknlMtacSrasWpstDl",
@@ -5499,8 +5499,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMtacSrasWpstDbr: AmovPknlMtacSrasWpstDb
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\tac\ras\pst\AmovPknlMtacSrasWpstDbr";
-			actions="PistolKneelActionsTacBR";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\tac\ras\pst\AmovPknlMtacSrasWpstDbr";
+			actions = "PistolKneelActionsTacBR";
 			InterpolateTo[]=
 			{
 				"AmovPknlMtacSrasWpstDb",
@@ -5523,10 +5523,10 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMtacSrasWpstDr: AmovPknlMtacSrasWpstDf
 		{
-			speed=1.3986;
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\tac\ras\pst\AmovPknlMtacSrasWpstDr";
-			actions="PistolKneelActionsTacR";
-			soundEdge[]={0.5,1};
+			speed = 1.3986;
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\tac\ras\pst\AmovPknlMtacSrasWpstDr";
+			actions = "PistolKneelActionsTacR";
+			soundEdge[] = {0.5,1};
 			InterpolateTo[]=
 			{
 				"AmovPknlMtacSrasWpstDbr",
@@ -5549,8 +5549,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMtacSrasWpstDfr: AmovPknlMtacSrasWpstDf
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\tac\ras\pst\AmovPknlMtacSrasWpstDfr";
-			actions="PistolKneelActionsTacFR";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\tac\ras\pst\AmovPknlMtacSrasWpstDfr";
+			actions = "PistolKneelActionsTacFR";
 			InterpolateTo[]=
 			{
 				"AmovPknlMtacSrasWpstDf",
@@ -5575,14 +5575,14 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMstpSrasWpstDnon_AmovPknlMstpSlowWpstDnon: TransAnimBase
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AmovPknlMstpSlowWpstDnon";
-			speed=1.03448;
-			showHandGun=1;
-			showWeaponAim=0;
-			disableWeapons=1;
-			actions="PistolLowKneelActions";
-			interpolationRestart=2;
-			visibleSize=0.30000001;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AmovPknlMstpSlowWpstDnon";
+			speed = 1.03448;
+			showHandGun = 1;
+			showWeaponAim = 0;
+			disableWeapons = 1;
+			actions = "PistolLowKneelActions";
+			interpolationRestart = 2;
+			visibleSize = 0.30000001;
 			ConnectTo[]=
 			{
 				"AmovPknlMstpSlowWpstDnon",
@@ -5598,11 +5598,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMstpSlowWpstDnon_AmovPknlMstpSrasWpstDnon: AmovPknlMstpSrasWpstDnon_AmovPknlMstpSlowWpstDnon
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\low\pst\AmovPknlMstpSlowWpstDnon_AmovPknlMstpSrasWpstDnon";
-			actions="PistolKneelActions";
-			showWeaponAim=1;
-			disableWeapons=0;
-			speed=2.3076899;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\low\pst\AmovPknlMstpSlowWpstDnon_AmovPknlMstpSrasWpstDnon";
+			actions = "PistolKneelActions";
+			showWeaponAim = 1;
+			disableWeapons = 0;
+			speed = 2.3076899;
 			ConnectTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -5620,16 +5620,16 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMstpSrasWpstDnon_AmovPknlMstpSnonWnonDnon: TransAnimBase
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AmovPknlMstpSnonWnonDnon";
-			actions="PistolKneelActions";
-			disableWeaponsLong=1;
-			showWeaponAim=0;
-			enableBinocular=1;
-			enableOptics=-1;
-			limitGunMovement=0.1;
-			showHandGun=1;
-			speed=0.96774203;
-			soundOverride="handgun_to_unarmed";
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AmovPknlMstpSnonWnonDnon";
+			actions = "PistolKneelActions";
+			disableWeaponsLong = 1;
+			showWeaponAim = 0;
+			enableBinocular = 1;
+			enableOptics = -1;
+			limitGunMovement = 0.1;
+			showHandGun = 1;
+			speed = 0.96774203;
+			soundOverride = "handgun_to_unarmed";
 			ConnectTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon_AmovPknlMstpSnonWnonDnon_end",
@@ -5645,10 +5645,10 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMstpSrasWpstDnon_AmovPknlMstpSnonWnonDnon_end: AmovPknlMstpSrasWpstDnon_AmovPknlMstpSnonWnonDnon
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AmovPknlMstpSnonWnonDnon_end";
-			showHandGun=0;
-			soundEnabled=0;
-			speed=1.30435;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AmovPknlMstpSnonWnonDnon_end";
+			showHandGun = 0;
+			soundEnabled = 0;
+			speed = 1.30435;
 			ConnectTo[]=
 			{
 				"AmovPknlMstpSnonWnonDnon",
@@ -5664,10 +5664,10 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMstpSnonWnonDnon_AmovPknlMstpSrasWpstDnon: AmovPknlMstpSrasWpstDnon_AmovPknlMstpSnonWnonDnon
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\non\non\AmovPknlMstpSnonWnonDnon_AmovPknlMstpSrasWpstDnon";
-			showHandGun=0;
-			speed=1.7647099;
-			soundOverride="unarmed_to_handgun";
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\non\non\AmovPknlMstpSnonWnonDnon_AmovPknlMstpSrasWpstDnon";
+			showHandGun = 0;
+			speed = 1.7647099;
+			soundOverride = "unarmed_to_handgun";
 			ConnectTo[]=
 			{
 				"AmovPknlMstpSnonWnonDnon_AmovPknlMstpSrasWpstDnon_end",
@@ -5683,9 +5683,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMstpSnonWnonDnon_AmovPknlMstpSrasWpstDnon_end: AmovPknlMstpSnonWnonDnon_AmovPknlMstpSrasWpstDnon
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\non\non\AmovPknlMstpSnonWnonDnon_AmovPknlMstpSrasWpstDnon_end";
-			showHandGun=1;
-			speed=1.07143;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\non\non\AmovPknlMstpSnonWnonDnon_AmovPknlMstpSrasWpstDnon_end";
+			showHandGun = 1;
+			speed = 1.07143;
 			ConnectTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -5701,15 +5701,15 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSlowWpstDnon_AmovPercMstpSrasWpstDnon: TransAnimBase
 		{
-			static=1;
-			file="\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\low\pst\AmovPercMstpSlowWpstDnon_AmovPercMstpSrasWpstDnon";
-			actions="PistolStandActions";
-			speed=2.7272699;
-			soundEnabled=1;
-			soundOverride="lift_handgun";
-			soundEdge[]={0.0099999998};
-			showHandGun=1;
-			interpolationRestart=2;
+			static = 1;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\low\pst\AmovPercMstpSlowWpstDnon_AmovPercMstpSrasWpstDnon";
+			actions = "PistolStandActions";
+			speed = 2.7272699;
+			soundEnabled = 1;
+			soundOverride = "lift_handgun";
+			soundEdge[] = {0.0099999998};
+			showHandGun = 1;
+			interpolationRestart = 2;
 			ConnectTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -5725,17 +5725,17 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSrasWpstDnon_AmovPercMstpSlowWpstDnon: TransAnimBase
 		{
-			static=1;
-			file="\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AmovPercMstpSlowWpstDnon";
-			actions="PistolLowStandActions";
-			soundEnabled=1;
-			soundOverride="low_handgun";
-			soundEdge[]={0.0099999998};
-			speed=1.30435;
-			showWeaponAim=0;
-			disableWeapons=1;
-			showHandGun=1;
-			interpolationRestart=2;
+			static = 1;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AmovPercMstpSlowWpstDnon";
+			actions = "PistolLowStandActions";
+			soundEnabled = 1;
+			soundOverride = "low_handgun";
+			soundEdge[] = {0.0099999998};
+			speed = 1.30435;
+			showWeaponAim = 0;
+			disableWeapons = 1;
+			showHandGun = 1;
+			interpolationRestart = 2;
 			ConnectTo[]=
 			{
 
@@ -5752,21 +5752,21 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSrasWpstDnon_AinvPercMstpSrasWpstDnon: AmovPercMstpSrasWpstDnon
 		{
-			static=1;
-			variantsPlayer[]={};
-			variantsAI[]={};
-			looped=0;
-			canBlendStep=0;
-			actions="PistolStandActions_inv";
-			enableOptics=0;
-			file="\A3\anims_f\Data\Anim\Sdr\inv\erc\stp\ras\pst\AinvPercMstpSrasWpstDnon_gin";
-			speed=1.8;
-			leaningFactorBeg=0;
-			leaningFactorEnd=0;
-			interpolationRestart=1;
-			HeadBobMode=5;
-			HeadBobStrength=-1;
-			leftHandIKCurve[]={0.1,1,0.30000001,0};
+			static = 1;
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			looped = 0;
+			canBlendStep = 0;
+			actions = "PistolStandActions_inv";
+			enableOptics = 0;
+			file = "\A3\anims_f\Data\Anim\Sdr\inv\erc\stp\ras\pst\AinvPercMstpSrasWpstDnon_gin";
+			speed = 1.8;
+			leaningFactorBeg = 0;
+			leaningFactorEnd = 0;
+			interpolationRestart = 1;
+			HeadBobMode = 5;
+			HeadBobStrength = -1;
+			leftHandIKCurve[] = {0.1,1,0.30000001,0};
 			ConnectTo[]=
 			{
 				"AinvPercMstpSrasWpstDnon",
@@ -5789,61 +5789,61 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AinvPercMstpSrasWpstDnon_G01",
 				1
 			};
-			variantAfter[]={7,7,7};
-			file="\A3\anims_f\Data\Anim\Sdr\inv\erc\stp\ras\pst\AinvPercMstpSrasWpstDnon_G";
-			speed=10;
-			looped=1;
-			leftHandIKBeg=0;
-			leftHandIKEnd=0;
-			leftHandIKCurve[]={0};
-			disableWeaponsLong=1;
-			canPullTrigger=0;
-			weaponLowered=1;
+			variantAfter[] = {7,7,7};
+			file = "\A3\anims_f\Data\Anim\Sdr\inv\erc\stp\ras\pst\AinvPercMstpSrasWpstDnon_G";
+			speed = 10;
+			looped = 1;
+			leftHandIKBeg = 0;
+			leftHandIKEnd = 0;
+			leftHandIKCurve[] = {0};
+			disableWeaponsLong = 1;
+			canPullTrigger = 0;
+			weaponLowered = 1;
 		};
 		class AinvPercMstpSrasWpstDnon_G01: AmovPercMstpSrasWpstDnon_AinvPercMstpSrasWpstDnon
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\inv\erc\stp\ras\pst\AinvPercMstpSrasWpstDnon_gloop";
-			speed=-6.9499998;
-			leftHandIKBeg=0;
-			leftHandIKEnd=0;
-			looped=1;
-			leftHandIKCurve[]={0};
+			file = "\A3\anims_f\Data\Anim\Sdr\inv\erc\stp\ras\pst\AinvPercMstpSrasWpstDnon_gloop";
+			speed = -6.9499998;
+			leftHandIKBeg = 0;
+			leftHandIKEnd = 0;
+			looped = 1;
+			leftHandIKCurve[] = {0};
 		};
 		class AinvPercMstpSrasWpstDnon_AmovPercMstpSrasWpstDnon: AmovPercMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			variantsAI[]={};
-			looped=0;
-			canBlendStep=0;
-			minPlayTime=0.44999999;
-			leaningFactorBeg=0;
-			leaningFactorEnd=0;
-			interpolationRestart=1;
-			enableOptics=0;
-			file="\A3\anims_f\Data\Anim\Sdr\inv\erc\stp\ras\pst\AinvPercMstpSrasWpstDnon_gout";
-			speed=1.25;
-			leftHandIKBeg=0;
-			HeadBobMode=5;
-			HeadBobStrength=-1;
-			leftHandIKCurve[]={0.80000001,0,1,1};
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			looped = 0;
+			canBlendStep = 0;
+			minPlayTime = 0.44999999;
+			leaningFactorBeg = 0;
+			leaningFactorEnd = 0;
+			interpolationRestart = 1;
+			enableOptics = 0;
+			file = "\A3\anims_f\Data\Anim\Sdr\inv\erc\stp\ras\pst\AinvPercMstpSrasWpstDnon_gout";
+			speed = 1.25;
+			leftHandIKBeg = 0;
+			HeadBobMode = 5;
+			HeadBobStrength = -1;
+			leftHandIKCurve[] = {0.80000001,0,1,1};
 		};
 		class AmovPknlMstpSrasWpstDnon_AinvPknlMstpSrasWpstDnon: AmovPknlMstpSrasWpstDnon
 		{
-			static=1;
-			variantsPlayer[]={};
-			variantsAI[]={};
-			looped=0;
-			canBlendStep=0;
-			actions="PistolKneelActions_inv";
-			enableOptics=0;
-			file="\A3\anims_f\Data\Anim\Sdr\inv\knl\stp\ras\pst\AinvPknlMstpSrasWpstDnon_gin";
-			speed=1.8;
-			leaningFactorBeg=0;
-			leaningFactorEnd=0;
-			interpolationRestart=1;
-			HeadBobMode=5;
-			HeadBobStrength=-1;
-			leftHandIKCurve[]={0.1,1,0.30000001,0};
+			static = 1;
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			looped = 0;
+			canBlendStep = 0;
+			actions = "PistolKneelActions_inv";
+			enableOptics = 0;
+			file = "\A3\anims_f\Data\Anim\Sdr\inv\knl\stp\ras\pst\AinvPknlMstpSrasWpstDnon_gin";
+			speed = 1.8;
+			leaningFactorBeg = 0;
+			leaningFactorEnd = 0;
+			interpolationRestart = 1;
+			HeadBobMode = 5;
+			HeadBobStrength = -1;
+			leftHandIKCurve[] = {0.1,1,0.30000001,0};
 			ConnectTo[]=
 			{
 				"AinvPknlMstpSrasWpstDnon",
@@ -5866,58 +5866,58 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AinvPknlMstpSrasWpstDnon_G01",
 				1
 			};
-			variantAfter[]={6,6,6};
-			file="\A3\anims_f\Data\Anim\Sdr\inv\knl\stp\ras\pst\AinvPknlMstpSrasWpstDnon_G";
-			speed=10;
-			looped=1;
-			leftHandIKBeg=0;
-			leftHandIKEnd=0;
-			leftHandIKCurve[]={0};
-			disableWeaponsLong=1;
-			canPullTrigger=0;
-			weaponLowered=1;
+			variantAfter[] = {6,6,6};
+			file = "\A3\anims_f\Data\Anim\Sdr\inv\knl\stp\ras\pst\AinvPknlMstpSrasWpstDnon_G";
+			speed = 10;
+			looped = 1;
+			leftHandIKBeg = 0;
+			leftHandIKEnd = 0;
+			leftHandIKCurve[] = {0};
+			disableWeaponsLong = 1;
+			canPullTrigger = 0;
+			weaponLowered = 1;
 		};
 		class AinvPknlMstpSrasWpstDnon_G01: AmovPknlMstpSrasWpstDnon_AinvPknlMstpSrasWpstDnon
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\inv\knl\stp\ras\pst\AinvPknlMstpSrasWpstDnon_gloop";
-			speed=-6;
-			leftHandIKBeg=0;
-			leftHandIKEnd=0;
-			looped=1;
-			leftHandIKCurve[]={0};
+			file = "\A3\anims_f\Data\Anim\Sdr\inv\knl\stp\ras\pst\AinvPknlMstpSrasWpstDnon_gloop";
+			speed = -6;
+			leftHandIKBeg = 0;
+			leftHandIKEnd = 0;
+			looped = 1;
+			leftHandIKCurve[] = {0};
 		};
 		class AinvPknlMstpSrasWpstDnon_AmovPknlMstpSrasWpstDnon: AmovPknlMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			variantsAI[]={};
-			looped=0;
-			canBlendStep=0;
-			minPlayTime=0.44999999;
-			leaningFactorBeg=0;
-			leaningFactorEnd=0;
-			interpolationRestart=1;
-			enableOptics=0;
-			file="\A3\anims_f\Data\Anim\Sdr\inv\knl\stp\ras\pst\AinvPknlMstpSrasWpstDnon_gout";
-			speed=1.25;
-			leftHandIKBeg=0;
-			HeadBobMode=5;
-			HeadBobStrength=-1;
-			leftHandIKCurve[]={0.80000001,0,1,1};
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			looped = 0;
+			canBlendStep = 0;
+			minPlayTime = 0.44999999;
+			leaningFactorBeg = 0;
+			leaningFactorEnd = 0;
+			interpolationRestart = 1;
+			enableOptics = 0;
+			file = "\A3\anims_f\Data\Anim\Sdr\inv\knl\stp\ras\pst\AinvPknlMstpSrasWpstDnon_gout";
+			speed = 1.25;
+			leftHandIKBeg = 0;
+			HeadBobMode = 5;
+			HeadBobStrength = -1;
+			leftHandIKCurve[] = {0.80000001,0,1,1};
 		};
 		class AmovPercMstpSrasWpstDnon_AinvPercMstpSrasWpstDnon_Putdown: AmovPercMstpSrasWpstDnon
 		{
-			static=1;
-			variantsPlayer[]={};
-			variantsAI[]={};
-			looped=0;
-			canBlendStep=0;
-			file="\A3\anims_f\Data\Anim\Sdr\inv\erc\stp\ras\pst\AinvPercMstpSrasWpstDnon_in";
-			speed=1.8;
-			leaningFactorBeg=0;
-			leaningFactorEnd=0;
-			interpolationRestart=1;
-			disableWeapons=1;
-			leftHandIKCurve[]={0,1,0.30000001,0};
+			static = 1;
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			looped = 0;
+			canBlendStep = 0;
+			file = "\A3\anims_f\Data\Anim\Sdr\inv\erc\stp\ras\pst\AinvPercMstpSrasWpstDnon_in";
+			speed = 1.8;
+			leaningFactorBeg = 0;
+			leaningFactorEnd = 0;
+			interpolationRestart = 1;
+			disableWeapons = 1;
+			leftHandIKCurve[] = {0,1,0.30000001,0};
 			ConnectTo[]=
 			{
 				"AinvPercMstpSrasWpstDnon_Putdown_AmovPercMstpSrasWpstDnon",
@@ -5931,35 +5931,35 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AinvPercMstpSrasWpstDnon_Putdown_AmovPercMstpSrasWpstDnon: AmovPercMstpSrasWpstDnon
 		{
-			static=1;
-			variantsPlayer[]={};
-			variantsAI[]={};
-			looped=0;
-			canBlendStep=0;
-			minPlayTime=0.44999999;
-			leaningFactorBeg=0;
-			leaningFactorEnd=0;
-			interpolationRestart=1;
-			file="\A3\anims_f\Data\Anim\Sdr\inv\erc\stp\ras\pst\AinvPercMstpSrasWpstDnon_out";
-			speed=0.73170698;
-			disableWeapons=1;
-			leftHandIKBeg=0;
-			leftHandIKCurve[]={0.80000001,0,1,1};
+			static = 1;
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			looped = 0;
+			canBlendStep = 0;
+			minPlayTime = 0.44999999;
+			leaningFactorBeg = 0;
+			leaningFactorEnd = 0;
+			interpolationRestart = 1;
+			file = "\A3\anims_f\Data\Anim\Sdr\inv\erc\stp\ras\pst\AinvPercMstpSrasWpstDnon_out";
+			speed = 0.73170698;
+			disableWeapons = 1;
+			leftHandIKBeg = 0;
+			leftHandIKCurve[] = {0.80000001,0,1,1};
 		};
 		class AmovPknlMstpSrasWpstDnon_AinvPknlMstpSrasWpstDnon_Putdown: AmovPknlMstpSrasWpstDnon
 		{
-			static=1;
-			variantsPlayer[]={};
-			variantsAI[]={};
-			looped=0;
-			canBlendStep=0;
-			file="\A3\anims_f\Data\Anim\Sdr\inv\knl\stp\ras\pst\AinvPknlMstpSrasWpstDnon_in";
-			speed=1.42857;
-			leaningFactorBeg=0;
-			leaningFactorEnd=0;
-			interpolationRestart=1;
-			disableWeapons=1;
-			leftHandIKCurve[]={0,1,0.30000001,0};
+			static = 1;
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			looped = 0;
+			canBlendStep = 0;
+			file = "\A3\anims_f\Data\Anim\Sdr\inv\knl\stp\ras\pst\AinvPknlMstpSrasWpstDnon_in";
+			speed = 1.42857;
+			leaningFactorBeg = 0;
+			leaningFactorEnd = 0;
+			interpolationRestart = 1;
+			disableWeapons = 1;
+			leftHandIKCurve[] = {0,1,0.30000001,0};
 			ConnectTo[]=
 			{
 				"AinvPknlMstpSrasWpstDnon_Putdown_AmovPknlMstpSrasWpstDnon",
@@ -5973,95 +5973,95 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AinvPknlMstpSrasWpstDnon_Putdown_AmovPknlMstpSrasWpstDnon: AmovPknlMstpSrasWpstDnon
 		{
-			static=1;
-			variantsPlayer[]={};
-			variantsAI[]={};
-			looped=0;
-			canBlendStep=0;
-			minPlayTime=0.44999999;
-			leaningFactorBeg=0;
-			leaningFactorEnd=0;
-			interpolationRestart=1;
-			file="\A3\anims_f\Data\Anim\Sdr\inv\knl\stp\ras\pst\AinvPknlMstpSrasWpstDnon_out";
-			speed=0.83333302;
-			leftHandIKBeg=0;
-			disableWeapons=1;
-			leftHandIKCurve[]={0.80000001,0,1,1};
+			static = 1;
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			looped = 0;
+			canBlendStep = 0;
+			minPlayTime = 0.44999999;
+			leaningFactorBeg = 0;
+			leaningFactorEnd = 0;
+			interpolationRestart = 1;
+			file = "\A3\anims_f\Data\Anim\Sdr\inv\knl\stp\ras\pst\AinvPknlMstpSrasWpstDnon_out";
+			speed = 0.83333302;
+			leftHandIKBeg = 0;
+			disableWeapons = 1;
+			leftHandIKCurve[] = {0.80000001,0,1,1};
 		};
 		class AmovPercMstpSrasWpstDnon_AmovPknlMstpSrasWpstDnon: AmovPknlMstpSrasWpstDnon
 		{
-			aimPrecision=2;
-			static=1;
-			variantsPlayer[]={};
-			variantsAI[]={};
-			looped=0;
-			minPlayTime=0.34999999;
-			file="\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AmovPknlMstpSrasWpstDnon";
-			speed=-0.34999999;
-			interpolationRestart=1;
-			duty=0.2;
-			headBobStrength=0;
-			reverse="AmovPknlMstpSrasWpstDnon_AmovPercMstpSrasWpstDnon";
-			soundOverride="adjust_stand_to_kneel";
-			soundEnabled=1;
-			soundEdge[]={0.0099999998};
+			aimPrecision = 2;
+			static = 1;
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			looped = 0;
+			minPlayTime = 0.34999999;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AmovPknlMstpSrasWpstDnon";
+			speed = -0.34999999;
+			interpolationRestart = 1;
+			duty = 0.2;
+			headBobStrength = 0;
+			reverse = "AmovPknlMstpSrasWpstDnon_AmovPercMstpSrasWpstDnon";
+			soundOverride = "adjust_stand_to_kneel";
+			soundEnabled = 1;
+			soundEdge[] = {0.0099999998};
 		};
 		class AmovPercMstpSlowWpstDnon_AmovPknlMstpSlowWpstDnon: AmovPknlMstpSlowWpstDnon
 		{
-			aimPrecision=2;
-			static=1;
-			variantsPlayer[]={};
-			variantsAI[]={};
-			looped=0;
-			minPlayTime=0.34999999;
-			file="\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\low\pst\AmovPercMstpSlowWpstDnon_AmovPknlMstpSlowWpstDnon";
-			speed=1.11111;
-			disableWeapons=1;
-			interpolationRestart=1;
-			reverse="AmovPknlMstpSlowWpstDnon_AmovPercMstpSlowWpstDnon";
+			aimPrecision = 2;
+			static = 1;
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			looped = 0;
+			minPlayTime = 0.34999999;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\low\pst\AmovPercMstpSlowWpstDnon_AmovPknlMstpSlowWpstDnon";
+			speed = 1.11111;
+			disableWeapons = 1;
+			interpolationRestart = 1;
+			reverse = "AmovPknlMstpSlowWpstDnon_AmovPercMstpSlowWpstDnon";
 		};
 		class AmovPknlMstpSrasWpstDnon_AmovPercMstpSrasWpstDnon: AmovPercMstpSrasWpstDnon
 		{
-			aimPrecision=2;
-			static=1;
-			variantsPlayer[]={};
-			variantsAI[]={};
-			looped=0;
-			minPlayTime=0.34999999;
-			file="\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AmovPercMstpSrasWpstDnon";
-			speed=-0.37;
-			interpolationRestart=1;
-			duty=0.40000001;
-			headBobStrength=0;
-			reverse="AmovPercMstpSrasWpstDnon_AmovPknlMstpSrasWpstDnon";
-			soundOverride="adjust_kneel_to_stand";
-			soundEnabled=1;
-			soundEdge[]={0.0099999998};
+			aimPrecision = 2;
+			static = 1;
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			looped = 0;
+			minPlayTime = 0.34999999;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AmovPercMstpSrasWpstDnon";
+			speed = -0.37;
+			interpolationRestart = 1;
+			duty = 0.40000001;
+			headBobStrength = 0;
+			reverse = "AmovPercMstpSrasWpstDnon_AmovPknlMstpSrasWpstDnon";
+			soundOverride = "adjust_kneel_to_stand";
+			soundEnabled = 1;
+			soundEdge[] = {0.0099999998};
 		};
 		class AmovPknlMstpSlowWpstDnon_AmovPercMstpSlowWpstDnon: AmovPercMstpSlowWpstDnon
 		{
-			static=1;
-			relSpeedMin=0.80000001;
-			variantsPlayer[]={};
-			variantsAI[]={};
-			looped=0;
-			minPlayTime=0.34999999;
-			file="\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\low\pst\AmovPknlMstpSlowWpstDnon_AmovPercMstpSlowWpstDnon";
-			speed=0.96774203;
-			disableWeapons=1;
-			reverse="AmovPercMstpSlowWpstDnon_AmovPknlMstpSlowWpstDnon";
+			static = 1;
+			relSpeedMin = 0.80000001;
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			looped = 0;
+			minPlayTime = 0.34999999;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\low\pst\AmovPknlMstpSlowWpstDnon_AmovPercMstpSlowWpstDnon";
+			speed = 0.96774203;
+			disableWeapons = 1;
+			reverse = "AmovPercMstpSlowWpstDnon_AmovPknlMstpSlowWpstDnon";
 		};
 		class AmovPknlMstpSrasWpstDnon_AmovPercMsprSrasWpstDf: TransAnimBase
 		{
-			aimPrecision=2;
-			actions="PistolKneelActions";
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AmovPercMsprSlowWpstDf";
-			speed=3.71;
-			showHandGun=1;
-			aiming="aimingPistol";
-			aimingBody="aimingUpPistol";
-			enableDirectControl=0;
-			soundOverride="standup";
+			aimPrecision = 2;
+			actions = "PistolKneelActions";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AmovPercMsprSlowWpstDf";
+			speed = 3.71;
+			showHandGun = 1;
+			aiming = "aimingPistol";
+			aimingBody = "aimingUpPistol";
+			enableDirectControl = 0;
+			soundOverride = "standup";
 			InterpolateTo[]=
 			{
 				"Unconscious",
@@ -6070,16 +6070,16 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSrasWrflDnon_AmovPercMstpSrasWpstDnon: TransAnimBase
 		{
-			duty=0.5;
-			actions="PistolStandActions";
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\erc\stp\ras\rfl\AmovPercMstpSrasWrflDnon_AmovPercMstpSrasWpstDnon";
-			speed=1.875;
-			disableWeapons=1;
-			interpolationRestart=2;
-			soundOverride="rifle_to_handgun";
-			leftHandIKCurve[]={0.759,1,0.92900002,0};
-			rightHandIKCurve[]={0.17,1,0.29800001,0};
-			weaponIK=1;
+			duty = 0.5;
+			actions = "PistolStandActions";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\erc\stp\ras\rfl\AmovPercMstpSrasWrflDnon_AmovPercMstpSrasWpstDnon";
+			speed = 1.875;
+			disableWeapons = 1;
+			interpolationRestart = 2;
+			soundOverride = "rifle_to_handgun";
+			leftHandIKCurve[] = {0.759,1,0.92900002,0};
+			rightHandIKCurve[] = {0.17,1,0.29800001,0};
+			weaponIK = 1;
 			ConnectTo[]=
 			{
 				"AmovPercMstpSrasWrflDnon_AmovPercMstpSrasWpstDnon_end",
@@ -6095,13 +6095,13 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSrasWrflDnon_AmovPercMstpSrasWpstDnon_end: AmovPercMstpSrasWrflDnon_AmovPercMstpSrasWpstDnon
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\erc\stp\ras\rfl\AmovPercMstpSrasWrflDnon_AmovPercMstpSrasWpstDnon_end";
-			speed=1.666;
-			soundEnabled=0;
-			showHandGun=1;
-			aiming="aimingPistol";
-			aimingBody="aimingUpPistol";
-			weaponIK=0;
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\erc\stp\ras\rfl\AmovPercMstpSrasWrflDnon_AmovPercMstpSrasWpstDnon_end";
+			speed = 1.666;
+			soundEnabled = 0;
+			showHandGun = 1;
+			aiming = "aimingPistol";
+			aimingBody = "aimingUpPistol";
+			weaponIK = 0;
 			ConnectTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -6117,11 +6117,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMstpSrasWrflDnon_AmovPknlMstpSrasWpstDnon: AmovPercMstpSrasWrflDnon_AmovPercMstpSrasWpstDnon
 		{
-			duty=1;
-			visibleSize=0.35012501;
-			actions="PistolKneelActions";
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\stp\ras\rfl\AmovPknlMstpSrasWrflDnon_AmovPknlMstpSrasWpstDnon";
-			soundOverride="rifle_to_handgun";
+			duty = 1;
+			visibleSize = 0.35012501;
+			actions = "PistolKneelActions";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\stp\ras\rfl\AmovPknlMstpSrasWrflDnon_AmovPknlMstpSrasWpstDnon";
+			soundOverride = "rifle_to_handgun";
 			ConnectTo[]=
 			{
 				"AmovPknlMstpSrasWrflDnon_AmovPknlMstpSrasWpstDnon_end",
@@ -6137,10 +6137,10 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMstpSrasWrflDnon_AmovPknlMstpSrasWpstDnon_end: AmovPercMstpSrasWrflDnon_AmovPercMstpSrasWpstDnon_end
 		{
-			duty=1;
-			actions="PistolKneelActions";
-			visibleSize=0.35012501;
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\stp\ras\rfl\AmovPknlMstpSrasWrflDnon_AmovPknlMstpSrasWpstDnon_end";
+			duty = 1;
+			actions = "PistolKneelActions";
+			visibleSize = 0.35012501;
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\stp\ras\rfl\AmovPknlMstpSrasWrflDnon_AmovPknlMstpSrasWpstDnon_end";
 			ConnectTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -6156,17 +6156,17 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSrasWpstDnon_AmovPercMstpSrasWrflDnon: TransAnimBase
 		{
-			duty=0.5;
-			actions="RifleStandActions";
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AmovPercMstpSrasWrflDnon";
-			speed=1.23288;
-			disableWeapons=1;
-			showHandGun=1;
-			aiming="aimingPistol";
-			aimingBody="aimingUpPistol";
-			interpolationRestart=2;
-			enableOptics=2;
-			soundOverride="handgun_to_rifle";
+			duty = 0.5;
+			actions = "RifleStandActions";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AmovPercMstpSrasWrflDnon";
+			speed = 1.23288;
+			disableWeapons = 1;
+			showHandGun = 1;
+			aiming = "aimingPistol";
+			aimingBody = "aimingUpPistol";
+			interpolationRestart = 2;
+			enableOptics = 2;
+			soundOverride = "handgun_to_rifle";
 			ConnectTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon_AmovPercMstpSrasWrflDnon_end",
@@ -6182,16 +6182,16 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSrasWpstDnon_AmovPercMstpSrasWrflDnon_end: AmovPercMstpSrasWpstDnon_AmovPercMstpSrasWrflDnon
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AmovPercMstpSrasWrflDnon_end";
-			speed=0.69767398;
-			showHandGun=0;
-			aiming="aimingDefault";
-			aimingBody="aimingUpDefault";
-			interpolationSpeed=20;
-			soundEnabled=0;
-			rightHandIKCurve[]={0.30000001,0,0.40000001,1};
-			leftHandIKCurve[]={0.40599999,0,0.49200001,1};
-			weaponIK=1;
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AmovPercMstpSrasWrflDnon_end";
+			speed = 0.69767398;
+			showHandGun = 0;
+			aiming = "aimingDefault";
+			aimingBody = "aimingUpDefault";
+			interpolationSpeed = 20;
+			soundEnabled = 0;
+			rightHandIKCurve[] = {0.30000001,0,0.40000001,1};
+			leftHandIKCurve[] = {0.40599999,0,0.49200001,1};
+			weaponIK = 1;
 			ConnectTo[]=
 			{
 				"AmovPercMstpSrasWrflDnon",
@@ -6207,11 +6207,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMstpSrasWpstDnon_AmovPknlMstpSrasWrflDnon: AmovPercMstpSrasWpstDnon_AmovPercMstpSrasWrflDnon
 		{
-			duty=1;
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AmovPknlMstpSrasWrflDnon";
-			visibleSize=0.35012501;
-			actions="RifleKneelActions";
-			soundOverride="handgun_to_rifle";
+			duty = 1;
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AmovPknlMstpSrasWrflDnon";
+			visibleSize = 0.35012501;
+			actions = "RifleKneelActions";
+			soundOverride = "handgun_to_rifle";
 			ConnectTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon_AmovPknlMstpSrasWrflDnon_end",
@@ -6227,11 +6227,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMstpSrasWpstDnon_AmovPknlMstpSrasWrflDnon_end: AmovPercMstpSrasWpstDnon_AmovPercMstpSrasWrflDnon_end
 		{
-			duty=1;
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AmovPknlMstpSrasWrflDnon_end";
-			visibleSize=0.35012501;
-			soundEnabled=0;
-			actions="RifleKneelActions";
+			duty = 1;
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AmovPknlMstpSrasWrflDnon_end";
+			visibleSize = 0.35012501;
+			soundEnabled = 0;
+			actions = "RifleKneelActions";
 			ConnectTo[]=
 			{
 				"AmovPknlMstpSrasWrflDnon",
@@ -6247,21 +6247,21 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSrasWlnrDnon_AmovPercMstpSrasWpstDnon: TransAnimBase
 		{
-			duty=0.5;
-			file="\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\ras\lnr\AmovPercMstpSrasWlnrDnon_AmovPercMstpSrasWpstDnon";
-			disableWeapons=1;
-			actions="PistolStandActions";
-			speed=0.90310001;
-			interpolationRestart=2;
-			rightHandIKEnd=0;
-			rightHandIKBeg=0;
-			leftHandIKEnd=0;
-			leftHandIKBeg=0;
-			soundOverride="launcher_to_handgun";
-			rightHandIKCurve[]={0.639,1,0.778,0};
-			leftHandIKCurve[]={0.81900001,1,0.917,0};
-			weaponIK=4;
-			enableOptics=2;
+			duty = 0.5;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\ras\lnr\AmovPercMstpSrasWlnrDnon_AmovPercMstpSrasWpstDnon";
+			disableWeapons = 1;
+			actions = "PistolStandActions";
+			speed = 0.90310001;
+			interpolationRestart = 2;
+			rightHandIKEnd = 0;
+			rightHandIKBeg = 0;
+			leftHandIKEnd = 0;
+			leftHandIKBeg = 0;
+			soundOverride = "launcher_to_handgun";
+			rightHandIKCurve[] = {0.639,1,0.778,0};
+			leftHandIKCurve[] = {0.81900001,1,0.917,0};
+			weaponIK = 4;
+			enableOptics = 2;
 			ConnectTo[]=
 			{
 				"AmovPercMstpSrasWlnrDnon_AmovPercMstpSrasWpstDnon_end",
@@ -6277,17 +6277,17 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSrasWlnrDnon_AmovPercMstpSrasWpstDnon_end: TransAnimBase
 		{
-			duty=0.5;
-			file="\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\ras\lnr\AmovPercMstpSrasWlnrDnon_AmovPercMstpSrasWpstDnon_end";
-			disableWeapons=1;
-			actions="PistolStandActions";
-			showHandGun=1;
-			speed=1.0813;
-			interpolationRestart=2;
-			leftHandIKBeg=0;
-			leftHandIKCurve[]={};
-			leftHandIKEnd=0;
-			enableOptics=2;
+			duty = 0.5;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\ras\lnr\AmovPercMstpSrasWlnrDnon_AmovPercMstpSrasWpstDnon_end";
+			disableWeapons = 1;
+			actions = "PistolStandActions";
+			showHandGun = 1;
+			speed = 1.0813;
+			interpolationRestart = 2;
+			leftHandIKBeg = 0;
+			leftHandIKCurve[] = {};
+			leftHandIKEnd = 0;
+			enableOptics = 2;
 			ConnectTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -6303,19 +6303,19 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSrasWpstDnon_AmovPercMstpSrasWlnrDnon: TransAnimBase
 		{
-			duty=0.5;
-			file="\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AmovPercMstpSrasWlnrDnon";
-			disableWeapons=1;
-			actions="LauncherStandActions";
-			showHandGun=1;
-			speed=1.4344;
-			interpolationRestart=2;
-			weaponIK=2;
-			leftHandIKEnd=0;
-			leftHandIKBeg=0;
-			leftHandIKCurve[]={};
-			enableOptics=2;
-			soundOverride="handgun_to_launcher";
+			duty = 0.5;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AmovPercMstpSrasWlnrDnon";
+			disableWeapons = 1;
+			actions = "LauncherStandActions";
+			showHandGun = 1;
+			speed = 1.4344;
+			interpolationRestart = 2;
+			weaponIK = 2;
+			leftHandIKEnd = 0;
+			leftHandIKBeg = 0;
+			leftHandIKCurve[] = {};
+			enableOptics = 2;
+			soundOverride = "handgun_to_launcher";
 			ConnectTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon_AmovPercMstpSrasWlnrDnon_end",
@@ -6331,21 +6331,21 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSrasWpstDnon_AmovPercMstpSrasWlnrDnon_end: TransAnimBase
 		{
-			duty=0.5;
-			file="\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AmovPercMstpSrasWlnrDnon_end";
-			disableWeapons=1;
-			soundEnabled=0;
-			actions="LauncherStandActions";
-			speed=0.43131;
-			interpolationRestart=2;
-			rightHandIKEnd=0;
-			rightHandIKBeg=0;
-			rightHandIKCurve[]={0.414,0,0.493,1};
-			leftHandIKCurve[]={0.132,0,0.257,1};
-			leftHandIKEnd=0;
-			leftHandIKBeg=0;
-			enableOptics=2;
-			weaponIK=4;
+			duty = 0.5;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AmovPercMstpSrasWlnrDnon_end";
+			disableWeapons = 1;
+			soundEnabled = 0;
+			actions = "LauncherStandActions";
+			speed = 0.43131;
+			interpolationRestart = 2;
+			rightHandIKEnd = 0;
+			rightHandIKBeg = 0;
+			rightHandIKCurve[] = {0.414,0,0.493,1};
+			leftHandIKCurve[] = {0.132,0,0.257,1};
+			leftHandIKEnd = 0;
+			leftHandIKBeg = 0;
+			enableOptics = 2;
+			weaponIK = 4;
 			ConnectTo[]=
 			{
 				"AmovPercMstpSrasWlnrDnon",
@@ -6361,11 +6361,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMstpSrasWpstDnon_AmovPknlMstpSrasWlnrDnon: AmovPercMstpSrasWpstDnon_AmovPercMstpSrasWlnrDnon
 		{
-			duty=1;
-			actions="LauncherKneelActions";
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AmovPknlMstpSrasWlnrDnon";
-			visibleSize=0.35012099;
-			soundOverride="handgun_to_launcher";
+			duty = 1;
+			actions = "LauncherKneelActions";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AmovPknlMstpSrasWlnrDnon";
+			visibleSize = 0.35012099;
+			soundOverride = "handgun_to_launcher";
 			ConnectTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon_AmovPknlMstpSrasWlnrDnon_end",
@@ -6381,11 +6381,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMstpSrasWpstDnon_AmovPknlMstpSrasWlnrDnon_end: AmovPercMstpSrasWpstDnon_AmovPercMstpSrasWlnrDnon_end
 		{
-			duty=1;
-			actions="LauncherKneelActions";
-			soundEnabled=0;
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AmovPknlMstpSrasWlnrDnon_end";
-			visibleSize=0.35012099;
+			duty = 1;
+			actions = "LauncherKneelActions";
+			soundEnabled = 0;
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AmovPknlMstpSrasWlnrDnon_end";
+			visibleSize = 0.35012099;
 			ConnectTo[]=
 			{
 				"AmovPknlMstpSrasWlnrDnon",
@@ -6401,17 +6401,17 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSrasWpstDnon_AmovPercMstpSnonWnonDnon: TransAnimBase
 		{
-			actions="CivilStandActions";
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AmovPercMstpSnonWnonDnon";
-			speed=1.03448;
-			disableWeapons=1;
-			showHandgun=1;
-			aiming="aimingPistol";
-			aimingBody="aimingUpPistol";
-			interpolationRestart=2;
-			InterpolationSpeed=2.5;
-			enableOptics=2;
-			soundOverride="handgun_to_unarmed";
+			actions = "CivilStandActions";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AmovPercMstpSnonWnonDnon";
+			speed = 1.03448;
+			disableWeapons = 1;
+			showHandgun = 1;
+			aiming = "aimingPistol";
+			aimingBody = "aimingUpPistol";
+			interpolationRestart = 2;
+			InterpolationSpeed = 2.5;
+			enableOptics = 2;
+			soundOverride = "handgun_to_unarmed";
 			ConnectTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon_AmovPercMstpSnonWnonDnon_end",
@@ -6427,12 +6427,12 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSrasWpstDnon_AmovPercMstpSnonWnonDnon_end: AmovPercMstpSrasWpstDnon_AmovPercMstpSnonWnonDnon
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AmovPercMstpSnonWnonDnon_end";
-			speed=1.25;
-			soundEnabled=0;
-			showHandGun=0;
-			aiming="aimingCivil";
-			aimingBody="aimingUpCivil";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AmovPercMstpSnonWnonDnon_end";
+			speed = 1.25;
+			soundEnabled = 0;
+			showHandGun = 0;
+			aiming = "aimingCivil";
+			aimingBody = "aimingUpCivil";
 			ConnectTo[]=
 			{
 				"AmovPercMstpSnonWnonDnon",
@@ -6450,11 +6450,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMstpSrasWlnrDnon_AmovPknlMstpSrasWpstDnon: AmovPercMstpSrasWlnrDnon_AmovPercMstpSrasWpstDnon
 		{
-			duty=1;
-			actions="PistolKneelActions";
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\stp\ras\lnr\AmovPknlMstpSrasWlnrDnon_AmovPknlMstpSrasWpstDnon";
-			visibleSize=0.35012099;
-			soundOverride="launcher_to_handgun";
+			duty = 1;
+			actions = "PistolKneelActions";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\stp\ras\lnr\AmovPknlMstpSrasWlnrDnon_AmovPknlMstpSrasWpstDnon";
+			visibleSize = 0.35012099;
+			soundOverride = "launcher_to_handgun";
 			ConnectTo[]=
 			{
 				"AmovPknlMstpSrasWlnrDnon_AmovPknlMstpSrasWpstDnon_end",
@@ -6470,10 +6470,10 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMstpSrasWlnrDnon_AmovPknlMstpSrasWpstDnon_end: AmovPercMstpSrasWlnrDnon_AmovPercMstpSrasWpstDnon_end
 		{
-			duty=1;
-			actions="PistolKneelActions";
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\knl\stp\ras\lnr\AmovPknlMstpSrasWlnrDnon_AmovPknlMstpSrasWpstDnon_end";
-			visibleSize=0.35012099;
+			duty = 1;
+			actions = "PistolKneelActions";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\stp\ras\lnr\AmovPknlMstpSrasWlnrDnon_AmovPknlMstpSrasWpstDnon_end";
+			visibleSize = 0.35012099;
 			ConnectTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -6489,17 +6489,17 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AwopPercMstpSoptWbinDnon_AmovPercMstpSrasWpstDnon: TransAnimBase_noIK
 		{
-			actions="PistolStandActions";
-			file="\A3\anims_f\Data\Anim\Sdr\wop\erc\stp\opt\bin\AwopPercMstpSoptWbinDnon_AmovPercMstpSrasWpstDnon";
-			speed=1.66667;
-			showItemInHand=1;
-			disableWeapons=1;
-			aiming="aimingPistol";
-			aimingBody="aimingUpPistol";
-			interpolationRestart=2;
-			canPullTrigger=0;
-			soundEdge[]={0.0099999998};
-			soundOverride="binoc_to_handgun";
+			actions = "PistolStandActions";
+			file = "\A3\anims_f\Data\Anim\Sdr\wop\erc\stp\opt\bin\AwopPercMstpSoptWbinDnon_AmovPercMstpSrasWpstDnon";
+			speed = 1.66667;
+			showItemInHand = 1;
+			disableWeapons = 1;
+			aiming = "aimingPistol";
+			aimingBody = "aimingUpPistol";
+			interpolationRestart = 2;
+			canPullTrigger = 0;
+			soundEdge[] = {0.0099999998};
+			soundOverride = "binoc_to_handgun";
 			ConnectTo[]=
 			{
 				"AwopPercMstpSoptWbinDnon_AmovPercMstpSrasWpstDnon_end",
@@ -6515,28 +6515,28 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AwopPercMstpSoptWbinDnon_AmovPercMstpSrasWpstDnon_end: AmovPercMstpSrasWpstDnon
 		{
-			static=1;
-			variantsPlayer[]={};
-			variantsAI[]={};
-			canBlendStep=0;
-			looped=0;
-			file="\A3\anims_f\Data\Anim\Sdr\wop\erc\stp\opt\bin\AwopPercMstpSoptWbinDnon_AmovPercMstpSrasWpstDnon_end";
-			speed=1.15385;
+			static = 1;
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			canBlendStep = 0;
+			looped = 0;
+			file = "\A3\anims_f\Data\Anim\Sdr\wop\erc\stp\opt\bin\AwopPercMstpSoptWbinDnon_AmovPercMstpSrasWpstDnon_end";
+			speed = 1.15385;
 		};
 		class AwopPknlMstpSoptWbinDnon_AmovPknlMstpSrasWpstDnon: TransAnimBase
 		{
-			visibleSize=0.35012501;
-			actions="PistolKneelActions";
-			file="\A3\anims_f\Data\Anim\Sdr\wop\knl\stp\opt\bin\AwopPknlMstpSoptWbinDnon_AmovPknlMstpSrasWpstDnon";
-			speed=1.66667;
-			showItemInHand=1;
-			disableWeapons=1;
-			aiming="aimingPistol";
-			aimingBody="aimingUpPistol";
-			interpolationRestart=2;
-			canPullTrigger=0;
-			soundEdge[]={0.0099999998};
-			soundOverride="binoc_to_handgun";
+			visibleSize = 0.35012501;
+			actions = "PistolKneelActions";
+			file = "\A3\anims_f\Data\Anim\Sdr\wop\knl\stp\opt\bin\AwopPknlMstpSoptWbinDnon_AmovPknlMstpSrasWpstDnon";
+			speed = 1.66667;
+			showItemInHand = 1;
+			disableWeapons = 1;
+			aiming = "aimingPistol";
+			aimingBody = "aimingUpPistol";
+			interpolationRestart = 2;
+			canPullTrigger = 0;
+			soundEdge[] = {0.0099999998};
+			soundOverride = "binoc_to_handgun";
 			ConnectTo[]=
 			{
 				"AwopPknlMstpSoptWbinDnon_AmovPknlMstpSrasWpstDnon_end",
@@ -6552,28 +6552,28 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AwopPknlMstpSoptWbinDnon_AmovPknlMstpSrasWpstDnon_end: AmovPknlMstpSrasWpstDnon
 		{
-			static=1;
-			variantsPlayer[]={};
-			variantsAI[]={};
-			canBlendStep=0;
-			looped=0;
-			file="\A3\anims_f\Data\Anim\Sdr\wop\knl\stp\opt\bin\AwopPknlMstpSoptWbinDnon_AmovPknlMstpSrasWpstDnon_end";
-			speed=1.15385;
-			showItemInHand=0;
+			static = 1;
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			canBlendStep = 0;
+			looped = 0;
+			file = "\A3\anims_f\Data\Anim\Sdr\wop\knl\stp\opt\bin\AwopPknlMstpSoptWbinDnon_AmovPknlMstpSrasWpstDnon_end";
+			speed = 1.15385;
+			showItemInHand = 0;
 		};
 		class AmovPercMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon: TransAnimBase
 		{
-			actions="PistolStandActions";
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\erc\stp\non\non\AmovPercMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon";
-			speed=1.7647099;
-			disableWeapons=1;
-			aiming="aimingPistol";
-			aimingBody="aimingUpPistol";
-			interpolationRestart=2;
-			InterpolationSpeed=2.5;
-			canPullTrigger=0;
-			enableOptics=2;
-			soundOverride="unarmed_to_handgun";
+			actions = "PistolStandActions";
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\erc\stp\non\non\AmovPercMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon";
+			speed = 1.7647099;
+			disableWeapons = 1;
+			aiming = "aimingPistol";
+			aimingBody = "aimingUpPistol";
+			interpolationRestart = 2;
+			InterpolationSpeed = 2.5;
+			canPullTrigger = 0;
+			enableOptics = 2;
+			soundOverride = "unarmed_to_handgun";
 			ConnectTo[]=
 			{
 				"AmovPercMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon_end",
@@ -6589,9 +6589,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon_end: AmovPercMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\Mov\erc\stp\non\non\AmovPercMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon_end";
-			speed=1.07143;
-			showHandGun=1;
+			file = "\A3\anims_f\Data\Anim\Sdr\Mov\erc\stp\non\non\AmovPercMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon_end";
+			speed = 1.07143;
+			showHandGun = 1;
 			ConnectTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -6607,18 +6607,18 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMevaSrasWpstDf: SprintCivilBaseDf
 		{
-			actions="PistolStandEvasiveActionsF";
-			limitGunMovement=0.1;
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Perc_Wrfl.p3d";
-			showHandGun=1;
-			duty=0.80000001;
-			visibleSize=1;
-			static=1;
-			enableOptics=0;
-			speed=1.666666;
+			actions = "PistolStandEvasiveActionsF";
+			limitGunMovement = 0.1;
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Perc_Wrfl.p3d";
+			showHandGun = 1;
+			duty = 0.80000001;
+			visibleSize = 1;
+			static = 1;
+			enableOptics = 0;
+			speed = 1.666666;
 			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\spr\non\non\AmovPercMsprSnonWnonDf";
-			weaponIK=2;
-			headBobStrength=0.233831;
+			weaponIK = 2;
+			headBobStrength = 0.233831;
 			ConnectTo[]=
 			{
 				"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon",
@@ -6643,18 +6643,18 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"Unconscious",
 				0.1
 			};
-			disableWeaponsLong=1;
+			disableWeaponsLong = 1;
 		};
 		class AmovPknlMevaSrasWpstDf: AmovPercMevaSrasWpstDf
 		{
-			aimPrecision=8;
-			duty=1;
-			relSpeedMin=0.5;
+			aimPrecision = 8;
+			duty = 1;
+			relSpeedMin = 0.5;
 			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\spr\non\non\AmovPknlMevaSnonWnonDf";
 			speed = 1.875;
-			actions="PistolKneelEvasiveActionsF";
-			headBobStrength=0.21393;
-			ConnectTo[]={};
+			actions = "PistolKneelEvasiveActionsF";
+			headBobStrength = 0.21393;
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AmovPknlMrunSlowWpstDf",
@@ -6674,11 +6674,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"Unconscious",
 				0.1
 			};
-			soundEdge[]={0,0.40000001,0.80000001};
+			soundEdge[] = {0,0.40000001,0.80000001};
 		};
 		class AmovPercMevaSlowWpstDf: AmovPercMevaSrasWpstDf
 		{
-			actions="PistolLowStandActions";
+			actions = "PistolLowStandActions";
 			InterpolateTo[]=
 			{
 				"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon",
@@ -6699,8 +6699,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMevaSrasWpstDfl: AmovPercMevaSrasWpstDf
 		{
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Perc_Wrfl.p3d";
-			actions="PistolStandEvasiveActionsFL";
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Perc_Wrfl.p3d";
+			actions = "PistolStandEvasiveActionsFL";
 			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\spr\non\non\AmovPercMsprSnonWnonDfl";
 			InterpolateTo[]=
 			{
@@ -6729,7 +6729,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPknlMevaSrasWpstDfl: AmovPknlMevaSrasWpstDf
 		{
 			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\spr\non\non\AmovPknlMevaSnonWnonDfl";
-			actions="PistolKneelEvasiveActionsFL";
+			actions = "PistolKneelEvasiveActionsFL";
 			InterpolateTo[]=
 			{
 				"AmovPknlMrunSlowWpstDfl",
@@ -6754,7 +6754,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMevaSlowWpstDfl: AmovPercMevaSrasWpstDfl
 		{
-			actions="PistolLowStandActions";
+			actions = "PistolLowStandActions";
 			InterpolateTo[]=
 			{
 				"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon",
@@ -6775,8 +6775,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMevaSrasWpstDfr: AmovPercMevaSrasWpstDf
 		{
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Perc_Wrfl.p3d";
-			actions="PistolStandEvasiveActionsFR";
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Perc_Wrfl.p3d";
+			actions = "PistolStandEvasiveActionsFR";
 			file = "\A3\anims_f\Data\Anim\Sdr\Mov\Erc\spr\non\non\AmovPercMsprSnonWnonDfr";
 			InterpolateTo[]=
 			{
@@ -6805,8 +6805,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPknlMevaSrasWpstDfr: AmovPknlMevaSrasWpstDf
 		{
 			file = "\A3\anims_f\Data\Anim\Sdr\Mov\knl\spr\non\non\AmovPknlMevaSnonWnonDfr";
-			actions="PistolKneelEvasiveActionsFR";
-			headBobStrength=0.20398;
+			actions = "PistolKneelEvasiveActionsFR";
+			headBobStrength = 0.20398;
 			InterpolateTo[]=
 			{
 				"AmovPknlMrunSlowWpstDfr",
@@ -6829,7 +6829,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMevaSlowWpstDfr: AmovPercMevaSrasWpstDfr
 		{
-			actions="PistolLowStandActions";
+			actions = "PistolLowStandActions";
 			InterpolateTo[]=
 			{
 				"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon",
@@ -6850,7 +6850,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMevaSrasWpstDr: AmovPercMrunSrasWpstDr
 		{
-			actions="PistolStandEvasiveActionsR";
+			actions = "PistolStandEvasiveActionsR";
 			InterpolateTo[]=
 			{
 				"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon",
@@ -6877,7 +6877,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMevaSrasWpstDl: AmovPercMrunSrasWpstDl
 		{
-			actions="PistolStandEvasiveActionsL";
+			actions = "PistolStandEvasiveActionsL";
 			InterpolateTo[]=
 			{
 				"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon",
@@ -6904,7 +6904,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMevaSrasWpstDr: AmovPknlMrunSrasWpstDr
 		{
-			actions="PistolKneelEvasiveActionsR";
+			actions = "PistolKneelEvasiveActionsR";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -6931,7 +6931,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMevaSrasWpstDl: AmovPknlMrunSrasWpstDl
 		{
-			actions="PistolKneelEvasiveActionsL";
+			actions = "PistolKneelEvasiveActionsL";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -6956,7 +6956,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPsitMstpSnonWpstDnon_ground: AmovPercMstpSnonWpstDnon_AmovPsitMstpSnonWpstDnon_ground
 		{
-			variantAfter[]={10,15,25};
+			variantAfter[] = {10,15,25};
 			variantsPlayer[]=
 			{
 				"AmovPsitMstpSnonWpstDnon_ground",
@@ -6964,10 +6964,10 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AmovPsitMstpSnonWpstDnon_smoking",
 				0.25
 			};
-			file="\A3\anims_f\Data\Anim\Sdr\mov\sit\stp\non\non\AmovPsitMstpSnonWnonDnon_ground";
-			speed=1e+010;
-			looped=1;
-			equivalentTo="AmovPsitMstpSnonWpstDnon_ground";
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\sit\stp\non\non\AmovPsitMstpSnonWnonDnon_ground";
+			speed = 1e+010;
+			looped = 1;
+			equivalentTo = "AmovPsitMstpSnonWpstDnon_ground";
 			ConnectTo[]=
 			{
 				"AmovPsitMstpSnonWpstDnon_smoking",
@@ -6985,8 +6985,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPsitMstpSnonWpstDnon_smoking: AmovPsitMstpSnonWpstDnon_ground
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\mov\sit\stp\low\rfl\AmovPsitMstpSlowWrflDnon_Smoking";
-			speed=0.039999999;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\sit\stp\low\rfl\AmovPsitMstpSlowWrflDnon_Smoking";
+			speed = 0.039999999;
 			ConnectTo[]=
 			{
 				"AmovPsitMstpSnonWpstDnon_ground",
@@ -7000,9 +7000,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPsitMstpSnonWpstDnon_AmovPercMstpSnonWpstDnon_ground: AmovPercMstpSnonWpstDnon_AmovPsitMstpSnonWpstDnon_ground
 		{
-			actions="PistolStandActions";
-			canBlendStep=0;
-			file="\A3\anims_f\Data\Anim\Sdr\mov\sit\stp\non\non\AmovPsitMstpSnonWnonDnon_AmovPercMstpSnonWnonDnon_ground";
+			actions = "PistolStandActions";
+			canBlendStep = 0;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\sit\stp\non\non\AmovPsitMstpSnonWnonDnon_AmovPercMstpSnonWnonDnon_ground";
 			ConnectTo[]=
 			{
 				"AmovPercMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon",
@@ -7018,15 +7018,15 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AwopPercMstpSgthWpstDnon_Part1: Default
 		{
-			actions="PistolStandActions";
-			file="\A3\anims_f\Data\Anim\Sdr\wop\erc\stp\gth\pst\AwopPercMstpSgthWpstDnon_part1";
-			speed=1.875;
-			looped=0;
-			showHandGun=1;
-			soundEnabled=0;
-			duty=0.60000002;
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Perc_Wrfl.p3d";
-			headBobMode=2;
+			actions = "PistolStandActions";
+			file = "\A3\anims_f\Data\Anim\Sdr\wop\erc\stp\gth\pst\AwopPercMstpSgthWpstDnon_part1";
+			speed = 1.875;
+			looped = 0;
+			showHandGun = 1;
+			soundEnabled = 0;
+			duty = 0.60000002;
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Perc_Wrfl.p3d";
+			headBobMode = 2;
 			ConnectTo[]=
 			{
 				"AwopPercMstpSgthWpstDnon_Part2",
@@ -7040,9 +7040,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AwopPercMstpSgthWpstDnon_Part2: AwopPercMstpSgthWpstDnon_Part1
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\wop\erc\stp\gth\pst\AwopPercMstpSgthWpstDnon_part2";
-			speed=0.58499998;
-			showHandGun=0;
+			file = "\A3\anims_f\Data\Anim\Sdr\wop\erc\stp\gth\pst\AwopPercMstpSgthWpstDnon_part2";
+			speed = 0.58499998;
+			showHandGun = 0;
 			ConnectTo[]=
 			{
 				"AwopPercMstpSgthWpstDnon_Part3",
@@ -7051,8 +7051,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AwopPercMstpSgthWpstDnon_Part3: AwopPercMstpSgthWpstDnon_Part2
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\wop\erc\stp\gth\pst\AwopPercMstpSgthWpstDnon_part3";
-			speed=1.98;
+			file = "\A3\anims_f\Data\Anim\Sdr\wop\erc\stp\gth\pst\AwopPercMstpSgthWpstDnon_part3";
+			speed = 1.98;
 			ConnectTo[]=
 			{
 				"AwopPercMstpSgthWpstDnon_Part4",
@@ -7061,8 +7061,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AwopPercMstpSgthWpstDnon_Part4: AwopPercMstpSgthWpstDnon_Part3
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\wop\erc\stp\gth\pst\AwopPercMstpSgthWpstDnon_part4";
-			speed=0.64499998;
+			file = "\A3\anims_f\Data\Anim\Sdr\wop\erc\stp\gth\pst\AwopPercMstpSgthWpstDnon_part4";
+			speed = 0.64499998;
 			ConnectTo[]=
 			{
 				"AwopPercMstpSgthWpstDnon_Part5",
@@ -7071,9 +7071,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AwopPercMstpSgthWpstDnon_Part5: AwopPercMstpSgthWpstDnon_Part4
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\wop\erc\stp\gth\pst\AwopPercMstpSgthWpstDnon_part5";
-			speed=2.1900001;
-			showHandGun=1;
+			file = "\A3\anims_f\Data\Anim\Sdr\wop\erc\stp\gth\pst\AwopPercMstpSgthWpstDnon_part5";
+			speed = 2.1900001;
+			showHandGun = 1;
 			ConnectTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -7082,16 +7082,16 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMrunSlowWpstDf_AmovPercMstpSrasWpstDnon_gthStart: Default
 		{
-			actions="CivilStandActions";
-			file="\A3\anims_f\Data\Anim\Sdr\mov\erc\run\low\pst\AmovPercMrunSlowWpstDf_AmovPercMstpSrasWpstDnon_gthStart";
-			speed=1.6900001;
-			soundOverride="run";
-			looped=0;
-			duty=0.60000002;
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Perc_Wnon.p3d";
-			canPullTrigger=0;
-			headBobMode=2;
-			weaponIK=2;
+			actions = "CivilStandActions";
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\erc\run\low\pst\AmovPercMrunSlowWpstDf_AmovPercMstpSrasWpstDnon_gthStart";
+			speed = 1.6900001;
+			soundOverride = "run";
+			looped = 0;
+			duty = 0.60000002;
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Perc_Wnon.p3d";
+			canPullTrigger = 0;
+			headBobMode = 2;
+			weaponIK = 2;
 			ConnectTo[]=
 			{
 				"AmovPercMrunSlowWpstDf_AmovPercMstpSrasWpstDnon_gthThrow",
@@ -7105,8 +7105,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMrunSlowWpstDf_AmovPercMstpSrasWpstDnon_gthThrow: AmovPercMrunSlowWpstDf_AmovPercMstpSrasWpstDnon_gthStart
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\mov\erc\run\low\pst\AmovPercMrunSlowWpstDf_AmovPercMstpSrasWpstDnon_gthThrow";
-			speed=0.73000002;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\erc\run\low\pst\AmovPercMrunSlowWpstDf_AmovPercMstpSrasWpstDnon_gthThrow";
+			speed = 0.73000002;
 			ConnectTo[]=
 			{
 				"AmovPercMrunSlowWpstDf_AmovPercMstpSrasWpstDnon_gthArm",
@@ -7115,8 +7115,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMrunSlowWpstDf_AmovPercMstpSrasWpstDnon_gthArm: AmovPercMrunSlowWpstDf_AmovPercMstpSrasWpstDnon_gthThrow
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\mov\erc\run\low\pst\AmovPercMrunSlowWpstDf_AmovPercMstpSrasWpstDnon_gthArm";
-			speed=1.1799999;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\erc\run\low\pst\AmovPercMrunSlowWpstDf_AmovPercMstpSrasWpstDnon_gthArm";
+			speed = 1.1799999;
 			ConnectTo[]=
 			{
 				"AmovPercMrunSlowWpstDf_AmovPercMstpSrasWpstDnon_gthEnd",
@@ -7125,9 +7125,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMrunSlowWpstDf_AmovPercMstpSrasWpstDnon_gthEnd: AmovPercMrunSlowWpstDf_AmovPercMstpSrasWpstDnon_gthArm
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\mov\erc\run\low\pst\AmovPercMrunSlowWpstDf_AmovPercMstpSrasWpstDnon_gthEnd";
-			speed=1.35;
-			showHandGun=1;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\erc\run\low\pst\AmovPercMrunSlowWpstDf_AmovPercMstpSrasWpstDnon_gthEnd";
+			speed = 1.35;
+			showHandGun = 1;
 			ConnectTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -7136,15 +7136,15 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMwlkSrasWpstDf_AwopPercMrunSgthWnonDf_1: Default
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\mov\erc\wlk\ras\pst\AmovPercMwlkSrasWpstDf_AwopPercMrunSgthWnonDf_1";
-			speed=1.85;
-			soundOverride="Walk";
-			looped=0;
-			showHandGun=1;
-			soundEnabled=0;
-			duty=0.60000002;
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Perc_Wrfl.p3d";
-			headBobMode=2;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\erc\wlk\ras\pst\AmovPercMwlkSrasWpstDf_AwopPercMrunSgthWnonDf_1";
+			speed = 1.85;
+			soundOverride = "Walk";
+			looped = 0;
+			showHandGun = 1;
+			soundEnabled = 0;
+			duty = 0.60000002;
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Perc_Wrfl.p3d";
+			headBobMode = 2;
 			ConnectTo[]=
 			{
 				"AmovPercMwlkSrasWpstDf_AmovPercMstpSrasWpstDnon_gthStart",
@@ -7158,14 +7158,14 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMwlkSrasWpstDf_AmovPercMstpSrasWpstDnon_gthStart: Default
 		{
-			actions="CivilStandActions";
-			file="\A3\anims_f\Data\Anim\Sdr\mov\erc\wlk\ras\pst\AmovPercMwlkSrasWpstDf_AmovPercMstpSrasWpstDnon_gthStart";
-			speed=1.33;
-			looped=0;
-			duty=0.60000002;
-			soundOverride="wlk";
-			headBobMode=2;
-			weaponIK=2;
+			actions = "CivilStandActions";
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\erc\wlk\ras\pst\AmovPercMwlkSrasWpstDf_AmovPercMstpSrasWpstDnon_gthStart";
+			speed = 1.33;
+			looped = 0;
+			duty = 0.60000002;
+			soundOverride = "wlk";
+			headBobMode = 2;
+			weaponIK = 2;
 			ConnectTo[]=
 			{
 				"AmovPercMwlkSrasWpstDf_AmovPercMstpSrasWpstDnon_gthThrow",
@@ -7179,8 +7179,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMwlkSrasWpstDf_AmovPercMstpSrasWpstDnon_gthThrow: AmovPercMwlkSrasWpstDf_AmovPercMstpSrasWpstDnon_gthStart
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\mov\erc\wlk\ras\pst\AmovPercMwlkSrasWpstDf_AmovPercMstpSrasWpstDnon_gthThrow";
-			speed=0.68000001;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\erc\wlk\ras\pst\AmovPercMwlkSrasWpstDf_AmovPercMstpSrasWpstDnon_gthThrow";
+			speed = 0.68000001;
 			ConnectTo[]=
 			{
 				"AmovPercMwlkSrasWpstDf_AmovPercMstpSrasWpstDnon_gthArm",
@@ -7189,8 +7189,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMwlkSrasWpstDf_AmovPercMstpSrasWpstDnon_gthArm: AmovPercMwlkSrasWpstDf_AmovPercMstpSrasWpstDnon_gthThrow
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\mov\erc\wlk\ras\pst\AmovPercMwlkSrasWpstDf_AmovPercMstpSrasWpstDnon_gthArm";
-			speed=1.17;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\erc\wlk\ras\pst\AmovPercMwlkSrasWpstDf_AmovPercMstpSrasWpstDnon_gthArm";
+			speed = 1.17;
 			ConnectTo[]=
 			{
 				"AmovPercMwlkSrasWpstDf_AmovPercMstpSrasWpstDnon_gthEnd",
@@ -7199,10 +7199,10 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMwlkSrasWpstDf_AmovPercMstpSrasWpstDnon_gthEnd: AmovPercMwlkSrasWpstDf_AmovPercMstpSrasWpstDnon_gthArm
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\mov\erc\wlk\ras\pst\AmovPercMwlkSrasWpstDf_AmovPercMstpSrasWpstDnon_gthEnd";
-			speed=1.35;
-			showHandGun=1;
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Perc_Wrfl.p3d";
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\erc\wlk\ras\pst\AmovPercMwlkSrasWpstDf_AmovPercMstpSrasWpstDnon_gthEnd";
+			speed = 1.35;
+			showHandGun = 1;
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Perc_Wrfl.p3d";
 			ConnectTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -7211,15 +7211,15 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AwopPknlMstpSgthWpstDnon_Part1: Default
 		{
-			actions="PistolKneelActions";
-			file="\A3\anims_f\Data\Anim\Sdr\wop\knl\stp\gth\pst\AwopPknlMstpSgthWpstDnon_part1";
-			speed=1.875;
-			looped=0;
-			showHandGun=1;
-			soundEnabled=0;
-			duty=0.60000002;
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Pknl_Wpst.p3d";
-			headBobMode=2;
+			actions = "PistolKneelActions";
+			file = "\A3\anims_f\Data\Anim\Sdr\wop\knl\stp\gth\pst\AwopPknlMstpSgthWpstDnon_part1";
+			speed = 1.875;
+			looped = 0;
+			showHandGun = 1;
+			soundEnabled = 0;
+			duty = 0.60000002;
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Pknl_Wpst.p3d";
+			headBobMode = 2;
 			ConnectTo[]=
 			{
 				"AwopPknlMstpSgthWpstDnon_Part2",
@@ -7233,9 +7233,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AwopPknlMstpSgthWpstDnon_Part2: AwopPknlMstpSgthWpstDnon_Part1
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\wop\knl\stp\gth\pst\AwopPknlMstpSgthWpstDnon_part2";
-			speed=0.58499998;
-			showHandGun=0;
+			file = "\A3\anims_f\Data\Anim\Sdr\wop\knl\stp\gth\pst\AwopPknlMstpSgthWpstDnon_part2";
+			speed = 0.58499998;
+			showHandGun = 0;
 			ConnectTo[]=
 			{
 				"AwopPknlMstpSgthWpstDnon_Part3",
@@ -7244,8 +7244,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AwopPknlMstpSgthWpstDnon_Part3: AwopPknlMstpSgthWpstDnon_Part2
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\wop\knl\stp\gth\pst\AwopPknlMstpSgthWpstDnon_part3";
-			speed=1.98;
+			file = "\A3\anims_f\Data\Anim\Sdr\wop\knl\stp\gth\pst\AwopPknlMstpSgthWpstDnon_part3";
+			speed = 1.98;
 			ConnectTo[]=
 			{
 				"AwopPknlMstpSgthWpstDnon_Part4",
@@ -7254,8 +7254,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AwopPknlMstpSgthWpstDnon_Part4: AwopPknlMstpSgthWpstDnon_Part3
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\wop\knl\stp\gth\pst\AwopPknlMstpSgthWpstDnon_part4";
-			speed=0.64499998;
+			file = "\A3\anims_f\Data\Anim\Sdr\wop\knl\stp\gth\pst\AwopPknlMstpSgthWpstDnon_part4";
+			speed = 0.64499998;
 			ConnectTo[]=
 			{
 				"AwopPknlMstpSgthWpstDnon_Part5",
@@ -7264,9 +7264,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AwopPknlMstpSgthWpstDnon_Part5: AwopPknlMstpSgthWpstDnon_Part4
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\wop\knl\stp\gth\pst\AwopPknlMstpSgthWpstDnon_part5";
-			speed=2.1900001;
-			showHandGun=1;
+			file = "\A3\anims_f\Data\Anim\Sdr\wop\knl\stp\gth\pst\AwopPknlMstpSgthWpstDnon_part5";
+			speed = 2.1900001;
+			showHandGun = 1;
 			ConnectTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -7275,18 +7275,18 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSrasWpstDnon_AwopPercMstpSoptWbinDnon: TransAnimBase_noIK
 		{
-			actions="BinocStandActions";
-			file="\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AwopPercMstpSoptWbinDnon";
-			speed=1.03448;
-			disableWeapons=1;
-			aiming="aimingPistol";
-			aimingBody="aimingUpPistol";
-			interpolationRestart=2;
-			weaponIK=0;
-			showHandGun=1;
-			canPullTrigger=0;
-			soundEdge[]={0.0099999998};
-			soundOverride="handgun_to_binoc";
+			actions = "BinocStandActions";
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AwopPercMstpSoptWbinDnon";
+			speed = 1.03448;
+			disableWeapons = 1;
+			aiming = "aimingPistol";
+			aimingBody = "aimingUpPistol";
+			interpolationRestart = 2;
+			weaponIK = 0;
+			showHandGun = 1;
+			canPullTrigger = 0;
+			soundEdge[] = {0.0099999998};
+			soundOverride = "handgun_to_binoc";
 			ConnectTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon_AwopPercMstpSoptWbinDnon_end",
@@ -7302,34 +7302,34 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSrasWpstDnon_AwopPercMstpSoptWbinDnon_end: AmovPercMstpSoptWbinDnon
 		{
-			static=1;
-			variantsPlayer[]={};
-			variantsAI[]={};
-			canBlendStep=0;
-			looped=0;
-			file="\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AwopPercMstpSoptWbinDnon_end";
-			speed=1.25;
-			showItemInHand=1;
-			rightHandIKCurve[]={0};
-			leftHandIKCurve[]={0};
-			aiming="aimingPistol";
-			aimingBody="aimingUpPistol";
+			static = 1;
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			canBlendStep = 0;
+			looped = 0;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AwopPercMstpSoptWbinDnon_end";
+			speed = 1.25;
+			showItemInHand = 1;
+			rightHandIKCurve[] = {0};
+			leftHandIKCurve[] = {0};
+			aiming = "aimingPistol";
+			aimingBody = "aimingUpPistol";
 		};
 		class AmovPknlMstpSrasWpstDnon_AwopPknlMstpSoptWbinDnon: TransAnimBase
 		{
-			visibleSize=0.35012501;
-			actions="BinocKneelActions";
-			file="\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AwopPknlMstpSoptWbinDnon";
-			speed=1.03448;
-			disableWeapons=1;
-			aiming="aimingPistol";
-			aimingBody="aimingUpPistol";
-			interpolationRestart=2;
-			showHandGun=1;
-			canPullTrigger=0;
-			soundEnabled=1;
-			soundOverride="handgun_to_binoc";
-			soundEdge[]={0.0099999998};
+			visibleSize = 0.35012501;
+			actions = "BinocKneelActions";
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AwopPknlMstpSoptWbinDnon";
+			speed = 1.03448;
+			disableWeapons = 1;
+			aiming = "aimingPistol";
+			aimingBody = "aimingUpPistol";
+			interpolationRestart = 2;
+			showHandGun = 1;
+			canPullTrigger = 0;
+			soundEnabled = 1;
+			soundOverride = "handgun_to_binoc";
+			soundEdge[] = {0.0099999998};
 			ConnectTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon_AwopPknlMstpSoptWbinDnon_end",
@@ -7345,42 +7345,42 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMstpSrasWpstDnon_AwopPknlMstpSoptWbinDnon_end: AmovPknlMstpSoptWbinDnon
 		{
-			static=1;
-			variantsPlayer[]={};
-			variantsAI[]={};
-			canBlendStep=0;
-			looped=0;
-			soundOverride=0;
-			file="\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AwopPknlMstpSoptWbinDnon_end";
-			speed=1.25;
-			showItemInHand=1;
-			aiming="aimingPistol";
-			aimingBody="aimingUpPistol";
-			leftHandIKCurve[]={};
-			rightHandIKCurve[]={};
+			static = 1;
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			canBlendStep = 0;
+			looped = 0;
+			soundOverride = 0;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AwopPknlMstpSoptWbinDnon_end";
+			speed = 1.25;
+			showItemInHand = 1;
+			aiming = "aimingPistol";
+			aimingBody = "aimingUpPistol";
+			leftHandIKCurve[] = {};
+			rightHandIKCurve[] = {};
 		};
 		class AinvPknlMstpSlayWpstDnon_medic: AmovPknlMstpSrasWpstDnon
 		{
-			actions="HealSelfPistolActionBase";
-			interpolationRestart=1;
-			aiming="empty";
-			aimingBody="empty";
-			file="\A3\anims_f\Data\Anim\Sdr\inv\knl\stp\lay\pst\AinvPknlMstpSlayWpstDnon_medic";
-			speed=-6;
-			limitGunMovement=0;
-			disableWeapons=1;
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Pknl_Wnon.p3d";
-			variantsAI[]={};
-			variantsPlayer[]={};
-			weaponsIK=0;
-			soundOverride="healselfpistolkneel";
-			soundEnabled=1;
-			canReload=0;
-			soundEdge[]={0.0099999998};
-			rightHandIKCurve[]={0};
-			leftHandIKCurve[]={0};
-			looped=0;
-			canBlendStep=0;
+			actions = "HealSelfPistolActionBase";
+			interpolationRestart = 1;
+			aiming = "empty";
+			aimingBody = "empty";
+			file = "\A3\anims_f\Data\Anim\Sdr\inv\knl\stp\lay\pst\AinvPknlMstpSlayWpstDnon_medic";
+			speed = -6;
+			limitGunMovement = 0;
+			disableWeapons = 1;
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Pknl_Wnon.p3d";
+			variantsAI[] = {};
+			variantsPlayer[] = {};
+			weaponsIK = 0;
+			soundOverride = "healselfpistolkneel";
+			soundEnabled = 1;
+			canReload = 0;
+			soundEdge[] = {0.0099999998};
+			rightHandIKCurve[] = {0};
+			leftHandIKCurve[] = {0};
+			looped = 0;
+			canBlendStep = 0;
 			ConnectTo[]=
 			{
 				"AinvPknlMstpSlayWpstDnon_medicOut",
@@ -7391,14 +7391,14 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"Unconscious",
 				0.0099999998
 			};
-			relSpeedMin=0.99667197;
-			relSpeedMax=0.99667197;
+			relSpeedMin = 0.99667197;
+			relSpeedMax = 0.99667197;
 		};
 		class AinvPknlMstpSlayWpstDnon_medicIn: AinvPknlMstpSlayWpstDnon_medic
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\inv\knl\stp\lay\pst\AinvPknlMstpSlayWpstDnon_medic_in";
-			speed=-0.5;
-			soundOverride="healselfpistolkneelin";
+			file = "\A3\anims_f\Data\Anim\Sdr\inv\knl\stp\lay\pst\AinvPknlMstpSlayWpstDnon_medic_in";
+			speed = -0.5;
+			soundOverride = "healselfpistolkneelin";
 			ConnectTo[]=
 			{
 				"AinvPknlMstpSlayWpstDnon_medic",
@@ -7407,36 +7407,36 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AinvPknlMstpSlayWpstDnon_medicOut: AmovPknlMstpSrasWpstDnon
 		{
-			variantsAI[]={};
-			variantsPlayer[]={};
-			looped=0;
-			canBlendStep=0;
-			minPlayTime=0.80000001;
-			file="\A3\anims_f\Data\Anim\Sdr\inv\knl\stp\lay\pst\AinvPknlMstpSlayWpstDnon_medic_out";
-			speed=-0.5;
-			soundOverride="healselfpistolkneelout";
+			variantsAI[] = {};
+			variantsPlayer[] = {};
+			looped = 0;
+			canBlendStep = 0;
+			minPlayTime = 0.80000001;
+			file = "\A3\anims_f\Data\Anim\Sdr\inv\knl\stp\lay\pst\AinvPknlMstpSlayWpstDnon_medic_out";
+			speed = -0.5;
+			soundOverride = "healselfpistolkneelout";
 		};
 		class AinvPknlMstpSlayWpstDnon_medicOther: AmovPknlMstpSrasWpstDnon
 		{
-			actions="HealSelfPistolActionBase";
-			interpolationRestart=1;
-			aiming="empty";
-			aimingBody="empty";
-			file="\A3\anims_f\Data\Anim\Sdr\inv\knl\stp\lay\pst\AinvPknlMstpSlayWpstDnon_medicOther_mid";
-			speed=0.15385;
-			limitGunMovement=0;
-			disableWeapons=1;
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Pknl_Wnon.p3d";
-			variantsAI[]={};
-			variantsPlayer[]={};
-			weaponsIK=0;
-			showHandGun=0;
-			canReload=0;
-			soundOverride="healselfpistolkneel";
-			soundEnabled=1;
-			soundEdge[]={0.0099999998};
-			looped=0;
-			canBlendStep=0;
+			actions = "HealSelfPistolActionBase";
+			interpolationRestart = 1;
+			aiming = "empty";
+			aimingBody = "empty";
+			file = "\A3\anims_f\Data\Anim\Sdr\inv\knl\stp\lay\pst\AinvPknlMstpSlayWpstDnon_medicOther_mid";
+			speed = 0.15385;
+			limitGunMovement = 0;
+			disableWeapons = 1;
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Pknl_Wnon.p3d";
+			variantsAI[] = {};
+			variantsPlayer[] = {};
+			weaponsIK = 0;
+			showHandGun = 0;
+			canReload = 0;
+			soundOverride = "healselfpistolkneel";
+			soundEnabled = 1;
+			soundEdge[] = {0.0099999998};
+			looped = 0;
+			canBlendStep = 0;
 			ConnectTo[]=
 			{
 				"AinvPknlMstpSlayWpstDnon_medicOtherOut",
@@ -7450,9 +7450,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AinvPknlMstpSlayWpstDnon_medicOtherIn: AinvPknlMstpSlayWpstDnon_medic
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\inv\knl\stp\lay\pst\AinvPknlMstpSlayWpstDnon_medicOther";
-			speed=2;
-			soundOverride="healselfpistolkneelin";
+			file = "\A3\anims_f\Data\Anim\Sdr\inv\knl\stp\lay\pst\AinvPknlMstpSlayWpstDnon_medicOther";
+			speed = 2;
+			soundOverride = "healselfpistolkneelin";
 			ConnectTo[]=
 			{
 				"AinvPknlMstpSlayWpstDnon_medicOther",
@@ -7461,19 +7461,19 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AinvPknlMstpSlayWpstDnon_medicOtherOut: AmovPknlMstpSrasWpstDnon
 		{
-			variantsAI[]={};
-			variantsPlayer[]={};
-			looped=0;
-			canBlendStep=0;
-			minPlayTime=0.80000001;
-			file="\A3\anims_f\Data\Anim\Sdr\inv\knl\stp\lay\pst\AinvPknlMstpSlayWpstDnon_medicOther_end";
-			speed=1.875;
-			soundOverride="healselfpistolkneelout";
+			variantsAI[] = {};
+			variantsPlayer[] = {};
+			looped = 0;
+			canBlendStep = 0;
+			minPlayTime = 0.80000001;
+			file = "\A3\anims_f\Data\Anim\Sdr\inv\knl\stp\lay\pst\AinvPknlMstpSlayWpstDnon_medicOther_end";
+			speed = 1.875;
+			soundOverride = "healselfpistolkneelout";
 		};
 		class AadjPercMwlkSrasWpstDf_left: AmovPercMwlkSrasWpstDf
 		{
-			actions="PistolAdjustLStandActionsWlkF";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\erc\wlk\ras\pst\AadjPercMwlkSrasWpstDf_left";
+			actions = "PistolAdjustLStandActionsWlkF";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\erc\wlk\ras\pst\AadjPercMwlkSrasWpstDf_left";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDleft",
@@ -7500,8 +7500,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMwlkSrasWpstDfl_left: AmovPercMwlkSrasWpstDfl
 		{
-			actions="PistolAdjustLStandActionsWlkFl";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\erc\wlk\ras\pst\AadjPercMwlkSrasWpstDfl_left";
+			actions = "PistolAdjustLStandActionsWlkFl";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\erc\wlk\ras\pst\AadjPercMwlkSrasWpstDfl_left";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDleft",
@@ -7528,8 +7528,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMwlkSrasWpstDl_left: AmovPercMwlkSrasWpstDl
 		{
-			actions="PistolAdjustLStandActionsWlkL";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\erc\wlk\ras\pst\AadjPercMwlkSrasWpstDl_left";
+			actions = "PistolAdjustLStandActionsWlkL";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\erc\wlk\ras\pst\AadjPercMwlkSrasWpstDl_left";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDleft",
@@ -7554,8 +7554,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMwlkSrasWpstDbl_left: AmovPercMwlkSrasWpstDbl
 		{
-			actions="PistolAdjustLStandActionsWlkBL";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\erc\wlk\ras\pst\AadjPercMwlkSrasWpstDbl_left";
+			actions = "PistolAdjustLStandActionsWlkBL";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\erc\wlk\ras\pst\AadjPercMwlkSrasWpstDbl_left";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDleft",
@@ -7580,8 +7580,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMwlkSrasWpstDb_left: AmovPercMwlkSrasWpstDb
 		{
-			actions="PistolAdjustLStandActionsWlkB";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\erc\wlk\ras\pst\AadjPercMwlkSrasWpstDb_left";
+			actions = "PistolAdjustLStandActionsWlkB";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\erc\wlk\ras\pst\AadjPercMwlkSrasWpstDb_left";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDleft",
@@ -7606,8 +7606,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMwlkSrasWpstDbr_left: AmovPercMwlkSrasWpstDbr
 		{
-			actions="PistolAdjustLStandActionsWlkBr";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\erc\wlk\ras\pst\AadjPercMwlkSrasWpstDbr_left";
+			actions = "PistolAdjustLStandActionsWlkBr";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\erc\wlk\ras\pst\AadjPercMwlkSrasWpstDbr_left";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDleft",
@@ -7632,8 +7632,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMwlkSrasWpstDr_left: AmovPercMwlkSrasWpstDr
 		{
-			actions="PistolAdjustLStandActionsWlkR";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\erc\wlk\ras\pst\AadjPercMwlkSrasWpstDr_left";
+			actions = "PistolAdjustLStandActionsWlkR";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\erc\wlk\ras\pst\AadjPercMwlkSrasWpstDr_left";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDleft",
@@ -7658,8 +7658,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMwlkSrasWpstDfr_left: AmovPercMwlkSrasWpstDfr
 		{
-			actions="PistolAdjustLStandActionsWlkFr";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\erc\wlk\ras\pst\AadjPercMwlkSrasWpstDfr_left";
+			actions = "PistolAdjustLStandActionsWlkFr";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\erc\wlk\ras\pst\AadjPercMwlkSrasWpstDfr_left";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDleft",
@@ -7686,8 +7686,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMtacSrasWpstDf_left: AmovPercMtacSrasWpstDf
 		{
-			actions="PistolAdjustLStandActionsTacF";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\erc\tac\ras\pst\AadjPercMtacSrasWpstDf_left";
+			actions = "PistolAdjustLStandActionsTacF";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\erc\tac\ras\pst\AadjPercMtacSrasWpstDf_left";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDleft",
@@ -7714,8 +7714,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMtacSrasWpstDfl_left: AmovPercMtacSrasWpstDfl
 		{
-			actions="PistolAdjustLStandActionsTacFl";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\erc\tac\ras\pst\AadjPercMtacSrasWpstDfl_left";
+			actions = "PistolAdjustLStandActionsTacFl";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\erc\tac\ras\pst\AadjPercMtacSrasWpstDfl_left";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDleft",
@@ -7742,8 +7742,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMtacSrasWpstDl_left: AadjPercMtacSrasWpstDfl_left
 		{
-			actions="PistolAdjustLStandActionsTacL";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\erc\tac\ras\pst\AadjPercMtacSrasWpstDl_left";
+			actions = "PistolAdjustLStandActionsTacL";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\erc\tac\ras\pst\AadjPercMtacSrasWpstDl_left";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDleft",
@@ -7768,8 +7768,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMtacSrasWpstDbl_left: AmovPercMtacSrasWpstDbl
 		{
-			actions="PistolAdjustLStandActionsTacBL";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\erc\tac\ras\pst\AadjPercMtacSrasWpstDbl_left";
+			actions = "PistolAdjustLStandActionsTacBL";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\erc\tac\ras\pst\AadjPercMtacSrasWpstDbl_left";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDleft",
@@ -7794,8 +7794,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMtacSrasWpstDb_left: AmovPercMtacSrasWpstDb
 		{
-			actions="PistolAdjustLStandActionsTacB";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\erc\tac\ras\pst\AadjPercMtacSrasWpstDb_left";
+			actions = "PistolAdjustLStandActionsTacB";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\erc\tac\ras\pst\AadjPercMtacSrasWpstDb_left";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDleft",
@@ -7820,8 +7820,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMtacSrasWpstDbr_left: AmovPercMtacSrasWpstDbr
 		{
-			actions="PistolAdjustLStandActionsTacBr";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\erc\tac\ras\pst\AadjPercMtacSrasWpstDbr_left";
+			actions = "PistolAdjustLStandActionsTacBr";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\erc\tac\ras\pst\AadjPercMtacSrasWpstDbr_left";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDleft",
@@ -7846,8 +7846,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMtacSrasWpstDr_left: AmovPercMtacSrasWpstDr
 		{
-			actions="PistolAdjustLStandActionsTacR";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\erc\tac\ras\pst\AadjPercMtacSrasWpstDr_left";
+			actions = "PistolAdjustLStandActionsTacR";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\erc\tac\ras\pst\AadjPercMtacSrasWpstDr_left";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDleft",
@@ -7872,8 +7872,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMtacSrasWpstDfr_left: AmovPercMtacSrasWpstDfr
 		{
-			actions="PistolAdjustLStandActionsTacFr";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\erc\tac\ras\pst\AadjPercMtacSrasWpstDfr_left";
+			actions = "PistolAdjustLStandActionsTacFr";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\erc\tac\ras\pst\AadjPercMtacSrasWpstDfr_left";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDleft",
@@ -7900,8 +7900,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMrunSrasWpstDf_left: AmovPercMrunSrasWpstDf
 		{
-			actions="PistolAdjustLStandActionsRunF";
-			ConnectTo[]={};
+			actions = "PistolAdjustLStandActionsRunF";
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDleft",
@@ -7924,8 +7924,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMrunSrasWpstDfl_left: AmovPercMrunSrasWpstDfl
 		{
-			actions="PistolAdjustLStandActionsRunFl";
-			ConnectTo[]={};
+			actions = "PistolAdjustLStandActionsRunFl";
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDleft",
@@ -7948,7 +7948,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMrunSrasWpstDl_left: AmovPercMrunSrasWpstDl
 		{
-			actions="PistolAdjustLStandActionsRunL";
+			actions = "PistolAdjustLStandActionsRunL";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDleft",
@@ -7973,7 +7973,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMrunSrasWpstDbl_left: AmovPercMrunSrasWpstDbl
 		{
-			actions="PistolAdjustLStandActionsRunBL";
+			actions = "PistolAdjustLStandActionsRunBL";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDleft",
@@ -7998,7 +7998,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMrunSrasWpstDb_left: AmovPercMrunSrasWpstDb
 		{
-			actions="PistolAdjustLStandActionsRunB";
+			actions = "PistolAdjustLStandActionsRunB";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDleft",
@@ -8023,7 +8023,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMrunSrasWpstDbr_left: AmovPercMrunSrasWpstDbr
 		{
-			actions="PistolAdjustLStandActionsRunBr";
+			actions = "PistolAdjustLStandActionsRunBr";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDleft",
@@ -8048,7 +8048,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMrunSrasWpstDr_left: AmovPercMrunSrasWpstDr
 		{
-			actions="PistolAdjustLStandActionsRunR";
+			actions = "PistolAdjustLStandActionsRunR";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDleft",
@@ -8073,8 +8073,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMrunSrasWpstDfr_left: AmovPercMrunSrasWpstDfr
 		{
-			actions="PistolAdjustLStandActionsRunFr";
-			ConnectTo[]={};
+			actions = "PistolAdjustLStandActionsRunFr";
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDleft",
@@ -8097,8 +8097,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMevaSrasWpstDf_left: AmovPercMevaSrasWpstDf
 		{
-			actions="PistolAdjustLStandEvasiveActionsf";
-			ConnectTo[]={};
+			actions = "PistolAdjustLStandEvasiveActionsf";
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDleft",
@@ -8125,8 +8125,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMevaSrasWpstDfl_left: AmovPercMevaSrasWpstDfl
 		{
-			actions="PistolAdjustLStandEvasiveActionsfl";
-			ConnectTo[]={};
+			actions = "PistolAdjustLStandEvasiveActionsfl";
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDleft",
@@ -8151,8 +8151,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMevaSrasWpstDfr_left: AmovPercMevaSrasWpstDfr
 		{
-			actions="PistolAdjustLStandEvasiveActionsfr";
-			ConnectTo[]={};
+			actions = "PistolAdjustLStandEvasiveActionsfr";
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDleft",
@@ -8177,7 +8177,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMwlkSrasWpstDf_right: AmovPercMwlkSrasWpstDf
 		{
-			actions="PistolAdjustRStandActionsWlkF";
+			actions = "PistolAdjustRStandActionsWlkF";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDright",
@@ -8204,7 +8204,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMwlkSrasWpstDfl_right: AmovPercMwlkSrasWpstDfl
 		{
-			actions="PistolAdjustRStandActionsWlkFl";
+			actions = "PistolAdjustRStandActionsWlkFl";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDright",
@@ -8231,7 +8231,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMwlkSrasWpstDl_right: AmovPercMwlkSrasWpstDl
 		{
-			actions="PistolAdjustRStandActionsWlkL";
+			actions = "PistolAdjustRStandActionsWlkL";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDright",
@@ -8256,7 +8256,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMwlkSrasWpstDbl_right: AmovPercMwlkSrasWpstDbl
 		{
-			actions="PistolAdjustRStandActionsWlkBL";
+			actions = "PistolAdjustRStandActionsWlkBL";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDright",
@@ -8281,7 +8281,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMwlkSrasWpstDb_right: AmovPercMwlkSrasWpstDb
 		{
-			actions="PistolAdjustRStandActionsWlkB";
+			actions = "PistolAdjustRStandActionsWlkB";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDright",
@@ -8306,7 +8306,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMwlkSrasWpstDbr_right: AmovPercMwlkSrasWpstDbr
 		{
-			actions="PistolAdjustRStandActionsWlkBr";
+			actions = "PistolAdjustRStandActionsWlkBr";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDright",
@@ -8331,7 +8331,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMwlkSrasWpstDr_right: AmovPercMwlkSrasWpstDr
 		{
-			actions="PistolAdjustRStandActionsWlkR";
+			actions = "PistolAdjustRStandActionsWlkR";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDright",
@@ -8356,7 +8356,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMwlkSrasWpstDfr_right: AmovPercMwlkSrasWpstDfr
 		{
-			actions="PistolAdjustRStandActionsWlkFr";
+			actions = "PistolAdjustRStandActionsWlkFr";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDright",
@@ -8383,7 +8383,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMtacSrasWpstDf_right: AmovPercMtacSrasWpstDf
 		{
-			actions="PistolAdjustRStandActionsTacF";
+			actions = "PistolAdjustRStandActionsTacF";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDright",
@@ -8410,7 +8410,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMtacSrasWpstDfl_right: AmovPercMtacSrasWpstDfl
 		{
-			actions="PistolAdjustRStandActionsTacFl";
+			actions = "PistolAdjustRStandActionsTacFl";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDright",
@@ -8437,7 +8437,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMtacSrasWpstDl_right: AmovPercMtacSrasWpstDl
 		{
-			actions="PistolAdjustRStandActionsTacL";
+			actions = "PistolAdjustRStandActionsTacL";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDright",
@@ -8462,7 +8462,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMtacSrasWpstDbl_right: AmovPercMtacSrasWpstDbl
 		{
-			actions="PistolAdjustRStandActionsTacBL";
+			actions = "PistolAdjustRStandActionsTacBL";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDright",
@@ -8487,7 +8487,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMtacSrasWpstDb_right: AmovPercMtacSrasWpstDb
 		{
-			actions="PistolAdjustRStandActionsTacB";
+			actions = "PistolAdjustRStandActionsTacB";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDright",
@@ -8512,7 +8512,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMtacSrasWpstDbr_right: AmovPercMtacSrasWpstDbr
 		{
-			actions="PistolAdjustRStandActionsTacBr";
+			actions = "PistolAdjustRStandActionsTacBr";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDright",
@@ -8537,7 +8537,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMtacSrasWpstDr_right: AmovPercMtacSrasWpstDr
 		{
-			actions="PistolAdjustRStandActionsTacR";
+			actions = "PistolAdjustRStandActionsTacR";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDright",
@@ -8562,7 +8562,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMtacSrasWpstDfr_right: AmovPercMtacSrasWpstDfr
 		{
-			actions="PistolAdjustRStandActionsTacFr";
+			actions = "PistolAdjustRStandActionsTacFr";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDright",
@@ -8589,8 +8589,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMrunSrasWpstDf_right: AmovPercMrunSrasWpstDf
 		{
-			actions="PistolAdjustRStandActionsRunF";
-			ConnectTo[]={};
+			actions = "PistolAdjustRStandActionsRunF";
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDright",
@@ -8613,8 +8613,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMrunSrasWpstDfl_right: AmovPercMrunSrasWpstDfl
 		{
-			actions="PistolAdjustRStandActionsRunFl";
-			ConnectTo[]={};
+			actions = "PistolAdjustRStandActionsRunFl";
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDright",
@@ -8637,7 +8637,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMrunSrasWpstDl_right: AmovPercMrunSrasWpstDl
 		{
-			actions="PistolAdjustRStandActionsRunL";
+			actions = "PistolAdjustRStandActionsRunL";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDright",
@@ -8662,7 +8662,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMrunSrasWpstDbl_right: AmovPercMrunSrasWpstDbl
 		{
-			actions="PistolAdjustRStandActionsRunBL";
+			actions = "PistolAdjustRStandActionsRunBL";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDright",
@@ -8687,7 +8687,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMrunSrasWpstDb_right: AmovPercMrunSrasWpstDb
 		{
-			actions="PistolAdjustRStandActionsRunB";
+			actions = "PistolAdjustRStandActionsRunB";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDright",
@@ -8712,7 +8712,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMrunSrasWpstDbr_right: AmovPercMrunSrasWpstDbr
 		{
-			actions="PistolAdjustRStandActionsRunBr";
+			actions = "PistolAdjustRStandActionsRunBr";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDright",
@@ -8737,7 +8737,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMrunSrasWpstDr_right: AmovPercMrunSrasWpstDr
 		{
-			actions="PistolAdjustRStandActionsRunR";
+			actions = "PistolAdjustRStandActionsRunR";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDright",
@@ -8762,8 +8762,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMrunSrasWpstDfr_right: AmovPercMrunSrasWpstDfr
 		{
-			actions="PistolAdjustRStandActionsRunFr";
-			ConnectTo[]={};
+			actions = "PistolAdjustRStandActionsRunFr";
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDright",
@@ -8786,8 +8786,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMevaSrasWpstDf_right: AmovPercMevaSrasWpstDf
 		{
-			actions="PistolAdjustRStandEvasiveActionsf";
-			ConnectTo[]={};
+			actions = "PistolAdjustRStandEvasiveActionsf";
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDright",
@@ -8814,8 +8814,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMevaSrasWpstDfl_right: AmovPercMevaSrasWpstDfl
 		{
-			actions="PistolAdjustRStandEvasiveActionsfl";
-			ConnectTo[]={};
+			actions = "PistolAdjustRStandEvasiveActionsfl";
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDright",
@@ -8840,8 +8840,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMevaSrasWpstDfr_right: AmovPercMevaSrasWpstDfr
 		{
-			actions="PistolAdjustRStandEvasiveActionsfr";
-			ConnectTo[]={};
+			actions = "PistolAdjustRStandEvasiveActionsfr";
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDright",
@@ -8866,7 +8866,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMwlkSrasWpstDf_down: AmovPercMwlkSrasWpstDf
 		{
-			actions="PistolAdjustBStandActionsWlkF";
+			actions = "PistolAdjustBStandActionsWlkF";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDdown",
@@ -8893,7 +8893,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMwlkSrasWpstDfl_down: AmovPercMwlkSrasWpstDfl
 		{
-			actions="PistolAdjustBStandActionsWlkFl";
+			actions = "PistolAdjustBStandActionsWlkFl";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDdown",
@@ -8920,7 +8920,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMwlkSrasWpstDl_down: AmovPercMwlkSrasWpstDl
 		{
-			actions="PistolAdjustBStandActionsWlkL";
+			actions = "PistolAdjustBStandActionsWlkL";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDdown",
@@ -8945,7 +8945,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMwlkSrasWpstDbl_down: AmovPercMwlkSrasWpstDbl
 		{
-			actions="PistolAdjustBStandActionsWlkBL";
+			actions = "PistolAdjustBStandActionsWlkBL";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDdown",
@@ -8970,7 +8970,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMwlkSrasWpstDb_down: AmovPercMwlkSrasWpstDb
 		{
-			actions="PistolAdjustBStandActionsWlkB";
+			actions = "PistolAdjustBStandActionsWlkB";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDdown",
@@ -8995,7 +8995,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMwlkSrasWpstDbr_down: AmovPercMwlkSrasWpstDbr
 		{
-			actions="PistolAdjustBStandActionsWlkBr";
+			actions = "PistolAdjustBStandActionsWlkBr";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDdown",
@@ -9020,7 +9020,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMwlkSrasWpstDr_down: AmovPercMwlkSrasWpstDr
 		{
-			actions="PistolAdjustBStandActionsWlkR";
+			actions = "PistolAdjustBStandActionsWlkR";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDdown",
@@ -9045,7 +9045,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMwlkSrasWpstDfr_down: AmovPercMwlkSrasWpstDfr
 		{
-			actions="PistolAdjustBStandActionsWlkFr";
+			actions = "PistolAdjustBStandActionsWlkFr";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDdown",
@@ -9072,7 +9072,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMtacSrasWpstDf_down: AmovPercMtacSrasWpstDf
 		{
-			actions="PistolAdjustBStandActionsTacF";
+			actions = "PistolAdjustBStandActionsTacF";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDdown",
@@ -9099,7 +9099,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMtacSrasWpstDfl_down: AmovPercMtacSrasWpstDfl
 		{
-			actions="PistolAdjustBStandActionsTacFl";
+			actions = "PistolAdjustBStandActionsTacFl";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDdown",
@@ -9126,7 +9126,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMtacSrasWpstDl_down: AmovPercMtacSrasWpstDl
 		{
-			actions="PistolAdjustBStandActionsTacL";
+			actions = "PistolAdjustBStandActionsTacL";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDdown",
@@ -9151,7 +9151,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMtacSrasWpstDbl_down: AmovPercMtacSrasWpstDbl
 		{
-			actions="PistolAdjustBStandActionsTacBL";
+			actions = "PistolAdjustBStandActionsTacBL";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDdown",
@@ -9176,7 +9176,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMtacSrasWpstDb_down: AmovPercMtacSrasWpstDb
 		{
-			actions="PistolAdjustBStandActionsTacB";
+			actions = "PistolAdjustBStandActionsTacB";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDdown",
@@ -9201,7 +9201,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMtacSrasWpstDbr_down: AmovPercMtacSrasWpstDbr
 		{
-			actions="PistolAdjustBStandActionsTacBr";
+			actions = "PistolAdjustBStandActionsTacBr";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDdown",
@@ -9226,7 +9226,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMtacSrasWpstDr_down: AmovPercMtacSrasWpstDr
 		{
-			actions="PistolAdjustBStandActionsTacR";
+			actions = "PistolAdjustBStandActionsTacR";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDdown",
@@ -9251,7 +9251,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMtacSrasWpstDfr_down: AmovPercMtacSrasWpstDfr
 		{
-			actions="PistolAdjustBStandActionsTacFr";
+			actions = "PistolAdjustBStandActionsTacFr";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDdown",
@@ -9278,8 +9278,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMrunSrasWpstDf_down: AmovPercMrunSrasWpstDf
 		{
-			actions="PistolAdjustBStandActionsRunF";
-			ConnectTo[]={};
+			actions = "PistolAdjustBStandActionsRunF";
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDdown",
@@ -9302,8 +9302,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMrunSrasWpstDfl_down: AmovPercMrunSrasWpstDfl
 		{
-			actions="PistolAdjustBStandActionsRunFl";
-			ConnectTo[]={};
+			actions = "PistolAdjustBStandActionsRunFl";
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDdown",
@@ -9326,7 +9326,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMrunSrasWpstDl_down: AmovPercMrunSrasWpstDl
 		{
-			actions="PistolAdjustBStandActionsRunL";
+			actions = "PistolAdjustBStandActionsRunL";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDdown",
@@ -9351,7 +9351,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMrunSrasWpstDbl_down: AmovPercMrunSrasWpstDbl
 		{
-			actions="PistolAdjustBStandActionsRunBL";
+			actions = "PistolAdjustBStandActionsRunBL";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDdown",
@@ -9376,7 +9376,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMrunSrasWpstDb_down: AmovPercMrunSrasWpstDb
 		{
-			actions="PistolAdjustBStandActionsRunB";
+			actions = "PistolAdjustBStandActionsRunB";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDdown",
@@ -9401,7 +9401,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMrunSrasWpstDbr_down: AmovPercMrunSrasWpstDbr
 		{
-			actions="PistolAdjustBStandActionsRunBr";
+			actions = "PistolAdjustBStandActionsRunBr";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDdown",
@@ -9426,7 +9426,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMrunSrasWpstDr_down: AmovPercMrunSrasWpstDr
 		{
-			actions="PistolAdjustBStandActionsRunR";
+			actions = "PistolAdjustBStandActionsRunR";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDdown",
@@ -9451,8 +9451,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMrunSrasWpstDfr_down: AmovPercMrunSrasWpstDfr
 		{
-			actions="PistolAdjustBStandActionsRunFr";
-			ConnectTo[]={};
+			actions = "PistolAdjustBStandActionsRunFr";
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDdown",
@@ -9475,8 +9475,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMevaSrasWpstDf_down: AmovPercMevaSrasWpstDf
 		{
-			actions="PistolAdjustBStandEvasiveActionsf";
-			ConnectTo[]={};
+			actions = "PistolAdjustBStandEvasiveActionsf";
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDdown",
@@ -9503,8 +9503,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMevaSrasWpstDfl_down: AmovPercMevaSrasWpstDfl
 		{
-			actions="PistolAdjustBStandEvasiveActionsfl";
-			ConnectTo[]={};
+			actions = "PistolAdjustBStandEvasiveActionsfl";
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDdown",
@@ -9529,8 +9529,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMevaSrasWpstDfr_down: AmovPercMevaSrasWpstDfr
 		{
-			actions="PistolAdjustBStandEvasiveActionsfr";
-			ConnectTo[]={};
+			actions = "PistolAdjustBStandEvasiveActionsfr";
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDdown",
@@ -9555,7 +9555,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMwlkSrasWpstDf_up: AmovPercMwlkSrasWpstDf
 		{
-			actions="PistolAdjustFStandActionsWlkF";
+			actions = "PistolAdjustFStandActionsWlkF";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDup",
@@ -9582,7 +9582,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMwlkSrasWpstDfl_up: AmovPercMwlkSrasWpstDfl
 		{
-			actions="PistolAdjustFStandActionsWlkFl";
+			actions = "PistolAdjustFStandActionsWlkFl";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDup",
@@ -9609,7 +9609,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMwlkSrasWpstDl_up: AmovPercMwlkSrasWpstDl
 		{
-			actions="PistolAdjustFStandActionsWlkL";
+			actions = "PistolAdjustFStandActionsWlkL";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDup",
@@ -9634,7 +9634,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMwlkSrasWpstDbl_up: AmovPercMwlkSrasWpstDbl
 		{
-			actions="PistolAdjustFStandActionsWlkBL";
+			actions = "PistolAdjustFStandActionsWlkBL";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDup",
@@ -9659,7 +9659,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMwlkSrasWpstDb_up: AmovPercMwlkSrasWpstDb
 		{
-			actions="PistolAdjustFStandActionsWlkB";
+			actions = "PistolAdjustFStandActionsWlkB";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDup",
@@ -9684,7 +9684,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMwlkSrasWpstDbr_up: AmovPercMwlkSrasWpstDbr
 		{
-			actions="PistolAdjustFStandActionsWlkBr";
+			actions = "PistolAdjustFStandActionsWlkBr";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDup",
@@ -9709,7 +9709,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMwlkSrasWpstDr_up: AmovPercMwlkSrasWpstDr
 		{
-			actions="PistolAdjustFStandActionsWlkR";
+			actions = "PistolAdjustFStandActionsWlkR";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDup",
@@ -9734,7 +9734,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMwlkSrasWpstDfr_up: AmovPercMwlkSrasWpstDfr
 		{
-			actions="PistolAdjustFStandActionsWlkFr";
+			actions = "PistolAdjustFStandActionsWlkFr";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDup",
@@ -9761,7 +9761,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMtacSrasWpstDf_up: AmovPercMtacSrasWpstDf
 		{
-			actions="PistolAdjustFStandActionsTacF";
+			actions = "PistolAdjustFStandActionsTacF";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDup",
@@ -9788,7 +9788,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMtacSrasWpstDfl_up: AmovPercMtacSrasWpstDfl
 		{
-			actions="PistolAdjustFStandActionsTacFl";
+			actions = "PistolAdjustFStandActionsTacFl";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDup",
@@ -9815,7 +9815,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMtacSrasWpstDl_up: AmovPercMtacSrasWpstDl
 		{
-			actions="PistolAdjustFStandActionsTacL";
+			actions = "PistolAdjustFStandActionsTacL";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDup",
@@ -9840,7 +9840,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMtacSrasWpstDbl_up: AmovPercMtacSrasWpstDbl
 		{
-			actions="PistolAdjustFStandActionsTacBL";
+			actions = "PistolAdjustFStandActionsTacBL";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDup",
@@ -9865,7 +9865,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMtacSrasWpstDb_up: AmovPercMtacSrasWpstDb
 		{
-			actions="PistolAdjustFStandActionsTacB";
+			actions = "PistolAdjustFStandActionsTacB";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDup",
@@ -9890,7 +9890,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMtacSrasWpstDbr_up: AmovPercMtacSrasWpstDbr
 		{
-			actions="PistolAdjustFStandActionsTacBr";
+			actions = "PistolAdjustFStandActionsTacBr";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDup",
@@ -9915,7 +9915,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMtacSrasWpstDr_up: AmovPercMtacSrasWpstDr
 		{
-			actions="PistolAdjustFStandActionsTacR";
+			actions = "PistolAdjustFStandActionsTacR";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDup",
@@ -9940,7 +9940,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMtacSrasWpstDfr_up: AmovPercMtacSrasWpstDfr
 		{
-			actions="PistolAdjustFStandActionsTacFr";
+			actions = "PistolAdjustFStandActionsTacFr";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDup",
@@ -9967,8 +9967,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMrunSrasWpstDf_up: AmovPercMrunSrasWpstDf
 		{
-			actions="PistolAdjustFStandActionsRunF";
-			ConnectTo[]={};
+			actions = "PistolAdjustFStandActionsRunF";
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDup",
@@ -9991,8 +9991,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMrunSrasWpstDfl_up: AmovPercMrunSrasWpstDfl
 		{
-			actions="PistolAdjustFStandActionsRunFl";
-			ConnectTo[]={};
+			actions = "PistolAdjustFStandActionsRunFl";
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDup",
@@ -10015,7 +10015,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMrunSrasWpstDl_up: AmovPercMrunSrasWpstDl
 		{
-			actions="PistolAdjustFStandActionsRunL";
+			actions = "PistolAdjustFStandActionsRunL";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDup",
@@ -10040,7 +10040,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMrunSrasWpstDbl_up: AmovPercMrunSrasWpstDbl
 		{
-			actions="PistolAdjustFStandActionsRunBL";
+			actions = "PistolAdjustFStandActionsRunBL";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDup",
@@ -10065,7 +10065,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMrunSrasWpstDb_up: AmovPercMrunSrasWpstDb
 		{
-			actions="PistolAdjustFStandActionsRunB";
+			actions = "PistolAdjustFStandActionsRunB";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDup",
@@ -10090,7 +10090,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMrunSrasWpstDbr_up: AmovPercMrunSrasWpstDbr
 		{
-			actions="PistolAdjustFStandActionsRunBr";
+			actions = "PistolAdjustFStandActionsRunBr";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDup",
@@ -10115,7 +10115,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMrunSrasWpstDr_up: AmovPercMrunSrasWpstDr
 		{
-			actions="PistolAdjustFStandActionsRunR";
+			actions = "PistolAdjustFStandActionsRunR";
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDup",
@@ -10140,8 +10140,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMrunSrasWpstDfr_up: AmovPercMrunSrasWpstDfr
 		{
-			actions="PistolAdjustFStandActionsRunFr";
-			ConnectTo[]={};
+			actions = "PistolAdjustFStandActionsRunFr";
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDup",
@@ -10164,8 +10164,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMevaSrasWpstDf_up: AmovPercMevaSrasWpstDf
 		{
-			actions="PistolAdjustFStandEvasiveActionsf";
-			ConnectTo[]={};
+			actions = "PistolAdjustFStandEvasiveActionsf";
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDup",
@@ -10192,8 +10192,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMevaSrasWpstDfl_up: AmovPercMevaSrasWpstDfl
 		{
-			actions="PistolAdjustFStandEvasiveActionsfl";
-			ConnectTo[]={};
+			actions = "PistolAdjustFStandEvasiveActionsfl";
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDup",
@@ -10218,8 +10218,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMevaSrasWpstDfr_up: AmovPercMevaSrasWpstDfr
 		{
-			actions="PistolAdjustFStandEvasiveActionsfr";
-			ConnectTo[]={};
+			actions = "PistolAdjustFStandEvasiveActionsfr";
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AadjPercMstpSrasWpstDup",
@@ -10244,8 +10244,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMwlkSrasWpstDf_left: AmovPknlMwlkSrasWpstDf
 		{
-			actions="PistolAdjustLKneelActionsWlkF";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\knl\wlk\ras\pst\AadjPknlMwlkSrasWpstDf_left";
+			actions = "PistolAdjustLKneelActionsWlkF";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\knl\wlk\ras\pst\AadjPknlMwlkSrasWpstDf_left";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDleft",
@@ -10272,8 +10272,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMwlkSrasWpstDfl_left: AmovPknlMwlkSrasWpstDfl
 		{
-			actions="PistolAdjustLKneelActionsWlkFl";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\knl\wlk\ras\pst\AadjPknlMwlkSrasWpstDfl_left";
+			actions = "PistolAdjustLKneelActionsWlkFl";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\knl\wlk\ras\pst\AadjPknlMwlkSrasWpstDfl_left";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDleft",
@@ -10300,8 +10300,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMwlkSrasWpstDl_left: AmovPknlMwlkSrasWpstDl
 		{
-			actions="PistolAdjustLKneelActionsWlkL";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\knl\wlk\ras\pst\AadjPknlMwlkSrasWpstDl_left";
+			actions = "PistolAdjustLKneelActionsWlkL";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\knl\wlk\ras\pst\AadjPknlMwlkSrasWpstDl_left";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDleft",
@@ -10326,8 +10326,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMwlkSrasWpstDbl_left: AmovPknlMwlkSrasWpstDbl
 		{
-			actions="PistolAdjustLKneelActionsWlkBL";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\knl\wlk\ras\pst\AadjPknlMwlkSrasWpstDbl_left";
+			actions = "PistolAdjustLKneelActionsWlkBL";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\knl\wlk\ras\pst\AadjPknlMwlkSrasWpstDbl_left";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDleft",
@@ -10352,8 +10352,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMwlkSrasWpstDb_left: AmovPknlMwlkSrasWpstDb
 		{
-			actions="PistolAdjustLKneelActionsWlkB";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\knl\wlk\ras\pst\AadjPknlMwlkSrasWpstDb_left";
+			actions = "PistolAdjustLKneelActionsWlkB";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\knl\wlk\ras\pst\AadjPknlMwlkSrasWpstDb_left";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDleft",
@@ -10378,8 +10378,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMwlkSrasWpstDbr_left: AmovPknlMwlkSrasWpstDbr
 		{
-			actions="PistolAdjustLKneelActionsWlkBr";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\knl\wlk\ras\pst\AadjPknlMwlkSrasWpstDbr_left";
+			actions = "PistolAdjustLKneelActionsWlkBr";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\knl\wlk\ras\pst\AadjPknlMwlkSrasWpstDbr_left";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDleft",
@@ -10404,8 +10404,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMwlkSrasWpstDr_left: AmovPknlMwlkSrasWpstDr
 		{
-			actions="PistolAdjustLKneelActionsWlkR";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\knl\wlk\ras\pst\AadjPknlMwlkSrasWpstDr_left";
+			actions = "PistolAdjustLKneelActionsWlkR";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\knl\wlk\ras\pst\AadjPknlMwlkSrasWpstDr_left";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDleft",
@@ -10430,8 +10430,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMwlkSrasWpstDfr_left: AmovPknlMwlkSrasWpstDfr
 		{
-			actions="PistolAdjustLKneelActionsWlkFr";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\knl\wlk\ras\pst\AadjPknlMwlkSrasWpstDfr_left";
+			actions = "PistolAdjustLKneelActionsWlkFr";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\knl\wlk\ras\pst\AadjPknlMwlkSrasWpstDfr_left";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDleft",
@@ -10458,8 +10458,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMtacSrasWpstDf_left: AmovPknlMtacSrasWpstDf
 		{
-			actions="PistolAdjustLKneelActionsTacF";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\knl\tac\ras\pst\AadjPknlMtacSrasWpstDf_left";
+			actions = "PistolAdjustLKneelActionsTacF";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\knl\tac\ras\pst\AadjPknlMtacSrasWpstDf_left";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDleft",
@@ -10486,8 +10486,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMtacSrasWpstDfl_left: AmovPknlMtacSrasWpstDfl
 		{
-			actions="PistolAdjustLKneelActionsTacFl";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\knl\tac\ras\pst\AadjPknlMtacSrasWpstDfl_left";
+			actions = "PistolAdjustLKneelActionsTacFl";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\knl\tac\ras\pst\AadjPknlMtacSrasWpstDfl_left";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDleft",
@@ -10514,8 +10514,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMtacSrasWpstDl_left: AmovPknlMtacSrasWpstDl
 		{
-			actions="PistolAdjustLKneelActionsTacL";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\knl\tac\ras\pst\AadjPknlMtacSrasWpstDl_left";
+			actions = "PistolAdjustLKneelActionsTacL";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\knl\tac\ras\pst\AadjPknlMtacSrasWpstDl_left";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDleft",
@@ -10540,8 +10540,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMtacSrasWpstDbl_left: AmovPknlMtacSrasWpstDbl
 		{
-			actions="PistolAdjustLKneelActionsTacBL";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\knl\tac\ras\pst\AadjPknlMtacSrasWpstDbl_left";
+			actions = "PistolAdjustLKneelActionsTacBL";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\knl\tac\ras\pst\AadjPknlMtacSrasWpstDbl_left";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDleft",
@@ -10566,8 +10566,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMtacSrasWpstDb_left: AmovPknlMtacSrasWpstDb
 		{
-			actions="PistolAdjustLKneelActionsTacB";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\knl\tac\ras\pst\AadjPknlMtacSrasWpstDb_left";
+			actions = "PistolAdjustLKneelActionsTacB";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\knl\tac\ras\pst\AadjPknlMtacSrasWpstDb_left";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDleft",
@@ -10592,8 +10592,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMtacSrasWpstDbr_left: AmovPknlMtacSrasWpstDbr
 		{
-			actions="PistolAdjustLKneelActionsTacBr";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\knl\tac\ras\pst\AadjPknlMtacSrasWpstDbr_left";
+			actions = "PistolAdjustLKneelActionsTacBr";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\knl\tac\ras\pst\AadjPknlMtacSrasWpstDbr_left";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDleft",
@@ -10618,8 +10618,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMtacSrasWpstDr_left: AmovPknlMtacSrasWpstDr
 		{
-			actions="PistolAdjustLKneelActionsTacR";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\knl\tac\ras\pst\AadjPknlMtacSrasWpstDr_left";
+			actions = "PistolAdjustLKneelActionsTacR";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\knl\tac\ras\pst\AadjPknlMtacSrasWpstDr_left";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDleft",
@@ -10644,8 +10644,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMtacSrasWpstDfr_left: AmovPknlMtacSrasWpstDfr
 		{
-			actions="PistolAdjustLKneelActionsTacFr";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\knl\tac\ras\pst\AadjPknlMtacSrasWpstDfr_left";
+			actions = "PistolAdjustLKneelActionsTacFr";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\knl\tac\ras\pst\AadjPknlMtacSrasWpstDfr_left";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDleft",
@@ -10672,7 +10672,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMrunSrasWpstDf_left: AmovPknlMrunSrasWpstDf
 		{
-			actions="PistolAdjustLKneelActionsRunF";
+			actions = "PistolAdjustLKneelActionsRunF";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDleft",
@@ -10695,7 +10695,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMrunSrasWpstDfl_left: AmovPknlMrunSrasWpstDfl
 		{
-			actions="PistolAdjustLKneelActionsRunFl";
+			actions = "PistolAdjustLKneelActionsRunFl";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDleft",
@@ -10718,7 +10718,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMrunSrasWpstDl_left: AmovPknlMrunSrasWpstDl
 		{
-			actions="PistolAdjustLKneelActionsRunL";
+			actions = "PistolAdjustLKneelActionsRunL";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDleft",
@@ -10743,7 +10743,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMrunSrasWpstDbl_left: AmovPknlMrunSrasWpstDbl
 		{
-			actions="PistolAdjustLKneelActionsRunBL";
+			actions = "PistolAdjustLKneelActionsRunBL";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDleft",
@@ -10768,7 +10768,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMrunSrasWpstDb_left: AmovPknlMrunSrasWpstDb
 		{
-			actions="PistolAdjustLKneelActionsRunB";
+			actions = "PistolAdjustLKneelActionsRunB";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDleft",
@@ -10793,7 +10793,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMrunSrasWpstDbr_left: AmovPknlMrunSrasWpstDbr
 		{
-			actions="PistolAdjustLKneelActionsRunBr";
+			actions = "PistolAdjustLKneelActionsRunBr";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDleft",
@@ -10818,7 +10818,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMrunSrasWpstDr_left: AmovPknlMrunSrasWpstDr
 		{
-			actions="PistolAdjustLKneelActionsRunR";
+			actions = "PistolAdjustLKneelActionsRunR";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDleft",
@@ -10843,7 +10843,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMrunSrasWpstDfr_left: AmovPknlMrunSrasWpstDfr
 		{
-			actions="PistolAdjustLKneelActionsRunFr";
+			actions = "PistolAdjustLKneelActionsRunFr";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDleft",
@@ -10866,7 +10866,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMevaSrasWpstDf_left: AmovPknlMevaSrasWpstDf
 		{
-			actions="PistolAdjustLKneelEvasiveActionsf";
+			actions = "PistolAdjustLKneelEvasiveActionsf";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDleft",
@@ -10893,7 +10893,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMevaSrasWpstDfl_left: AmovPknlMevaSrasWpstDfl
 		{
-			actions="PistolAdjustLKneelEvasiveActionsfl";
+			actions = "PistolAdjustLKneelEvasiveActionsfl";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDleft",
@@ -10918,7 +10918,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMevaSrasWpstDfr_left: AmovPknlMevaSrasWpstDfr
 		{
-			actions="PistolAdjustLKneelEvasiveActionsfr";
+			actions = "PistolAdjustLKneelEvasiveActionsfr";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDleft",
@@ -10943,7 +10943,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMwlkSrasWpstDf_right: AmovPknlMwlkSrasWpstDf
 		{
-			actions="PistolAdjustRKneelActionsWlkF";
+			actions = "PistolAdjustRKneelActionsWlkF";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDright",
@@ -10970,7 +10970,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMwlkSrasWpstDfl_right: AmovPknlMwlkSrasWpstDfl
 		{
-			actions="PistolAdjustRKneelActionsWlkFl";
+			actions = "PistolAdjustRKneelActionsWlkFl";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDright",
@@ -10997,7 +10997,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMwlkSrasWpstDl_right: AmovPknlMwlkSrasWpstDl
 		{
-			actions="PistolAdjustRKneelActionsWlkL";
+			actions = "PistolAdjustRKneelActionsWlkL";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDright",
@@ -11022,7 +11022,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMwlkSrasWpstDbl_right: AmovPknlMwlkSrasWpstDbl
 		{
-			actions="PistolAdjustRKneelActionsWlkBL";
+			actions = "PistolAdjustRKneelActionsWlkBL";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDright",
@@ -11047,7 +11047,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMwlkSrasWpstDb_right: AmovPknlMwlkSrasWpstDb
 		{
-			actions="PistolAdjustRKneelActionsWlkB";
+			actions = "PistolAdjustRKneelActionsWlkB";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDright",
@@ -11072,7 +11072,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMwlkSrasWpstDbr_right: AmovPknlMwlkSrasWpstDbr
 		{
-			actions="PistolAdjustRKneelActionsWlkBr";
+			actions = "PistolAdjustRKneelActionsWlkBr";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDright",
@@ -11097,7 +11097,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMwlkSrasWpstDr_right: AmovPknlMwlkSrasWpstDr
 		{
-			actions="PistolAdjustRKneelActionsWlkR";
+			actions = "PistolAdjustRKneelActionsWlkR";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDright",
@@ -11122,7 +11122,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMwlkSrasWpstDfr_right: AmovPknlMwlkSrasWpstDfr
 		{
-			actions="PistolAdjustRKneelActionsWlkFr";
+			actions = "PistolAdjustRKneelActionsWlkFr";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDright",
@@ -11149,7 +11149,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMtacSrasWpstDf_right: AmovPknlMtacSrasWpstDf
 		{
-			actions="PistolAdjustRKneelActionsTacF";
+			actions = "PistolAdjustRKneelActionsTacF";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDright",
@@ -11176,7 +11176,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMtacSrasWpstDfl_right: AmovPknlMtacSrasWpstDfl
 		{
-			actions="PistolAdjustRKneelActionsTacFl";
+			actions = "PistolAdjustRKneelActionsTacFl";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDright",
@@ -11203,7 +11203,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMtacSrasWpstDl_right: AmovPknlMtacSrasWpstDl
 		{
-			actions="PistolAdjustRKneelActionsTacL";
+			actions = "PistolAdjustRKneelActionsTacL";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDright",
@@ -11228,7 +11228,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMtacSrasWpstDbl_right: AmovPknlMtacSrasWpstDbl
 		{
-			actions="PistolAdjustRKneelActionsTacBL";
+			actions = "PistolAdjustRKneelActionsTacBL";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDright",
@@ -11253,7 +11253,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMtacSrasWpstDb_right: AmovPknlMtacSrasWpstDb
 		{
-			actions="PistolAdjustRKneelActionsTacB";
+			actions = "PistolAdjustRKneelActionsTacB";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDright",
@@ -11278,7 +11278,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMtacSrasWpstDbr_right: AmovPknlMtacSrasWpstDbr
 		{
-			actions="PistolAdjustRKneelActionsTacBr";
+			actions = "PistolAdjustRKneelActionsTacBr";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDright",
@@ -11303,7 +11303,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMtacSrasWpstDr_right: AmovPknlMtacSrasWpstDr
 		{
-			actions="PistolAdjustRKneelActionsTacR";
+			actions = "PistolAdjustRKneelActionsTacR";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDright",
@@ -11328,7 +11328,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMtacSrasWpstDfr_right: AmovPknlMtacSrasWpstDfr
 		{
-			actions="PistolAdjustRKneelActionsTacFr";
+			actions = "PistolAdjustRKneelActionsTacFr";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDright",
@@ -11355,7 +11355,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMrunSrasWpstDf_right: AmovPknlMrunSrasWpstDf
 		{
-			actions="PistolAdjustRKneelActionsRunF";
+			actions = "PistolAdjustRKneelActionsRunF";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDright",
@@ -11378,7 +11378,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMrunSrasWpstDfl_right: AmovPknlMrunSrasWpstDfl
 		{
-			actions="PistolAdjustRKneelActionsRunFl";
+			actions = "PistolAdjustRKneelActionsRunFl";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDright",
@@ -11401,7 +11401,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMrunSrasWpstDl_right: AmovPknlMrunSrasWpstDl
 		{
-			actions="PistolAdjustRKneelActionsRunL";
+			actions = "PistolAdjustRKneelActionsRunL";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDright",
@@ -11426,7 +11426,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMrunSrasWpstDbl_right: AmovPknlMrunSrasWpstDbl
 		{
-			actions="PistolAdjustRKneelActionsRunBL";
+			actions = "PistolAdjustRKneelActionsRunBL";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDright",
@@ -11451,7 +11451,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMrunSrasWpstDb_right: AmovPknlMrunSrasWpstDb
 		{
-			actions="PistolAdjustRKneelActionsRunB";
+			actions = "PistolAdjustRKneelActionsRunB";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDright",
@@ -11476,7 +11476,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMrunSrasWpstDbr_right: AmovPknlMrunSrasWpstDbr
 		{
-			actions="PistolAdjustRKneelActionsRunBr";
+			actions = "PistolAdjustRKneelActionsRunBr";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDright",
@@ -11501,7 +11501,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMrunSrasWpstDr_right: AmovPknlMrunSrasWpstDr
 		{
-			actions="PistolAdjustRKneelActionsRunR";
+			actions = "PistolAdjustRKneelActionsRunR";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDright",
@@ -11526,7 +11526,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMrunSrasWpstDfr_right: AmovPknlMrunSrasWpstDfr
 		{
-			actions="PistolAdjustRKneelActionsRunFr";
+			actions = "PistolAdjustRKneelActionsRunFr";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDright",
@@ -11549,7 +11549,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMevaSrasWpstDf_right: AmovPknlMevaSrasWpstDf
 		{
-			actions="PistolAdjustRKneelEvasiveActionsf";
+			actions = "PistolAdjustRKneelEvasiveActionsf";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDright",
@@ -11576,7 +11576,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMevaSrasWpstDfl_right: AmovPknlMevaSrasWpstDfl
 		{
-			actions="PistolAdjustRKneelEvasiveActionsfl";
+			actions = "PistolAdjustRKneelEvasiveActionsfl";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDright",
@@ -11601,7 +11601,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMevaSrasWpstDfr_right: AmovPknlMevaSrasWpstDfr
 		{
-			actions="PistolAdjustRKneelEvasiveActionsfr";
+			actions = "PistolAdjustRKneelEvasiveActionsfr";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDright",
@@ -11626,7 +11626,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMwlkSrasWpstDf_down: AmovPknlMwlkSrasWpstDf
 		{
-			actions="PistolAdjustBKneelActionsWlkF";
+			actions = "PistolAdjustBKneelActionsWlkF";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDdown",
@@ -11653,7 +11653,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMwlkSrasWpstDfl_down: AmovPknlMwlkSrasWpstDfl
 		{
-			actions="PistolAdjustBKneelActionsWlkFl";
+			actions = "PistolAdjustBKneelActionsWlkFl";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDdown",
@@ -11680,7 +11680,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMwlkSrasWpstDl_down: AmovPknlMwlkSrasWpstDl
 		{
-			actions="PistolAdjustBKneelActionsWlkL";
+			actions = "PistolAdjustBKneelActionsWlkL";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDdown",
@@ -11705,7 +11705,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMwlkSrasWpstDbl_down: AmovPknlMwlkSrasWpstDbl
 		{
-			actions="PistolAdjustBKneelActionsWlkBL";
+			actions = "PistolAdjustBKneelActionsWlkBL";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDdown",
@@ -11730,7 +11730,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMwlkSrasWpstDb_down: AmovPknlMwlkSrasWpstDb
 		{
-			actions="PistolAdjustBKneelActionsWlkB";
+			actions = "PistolAdjustBKneelActionsWlkB";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDdown",
@@ -11755,7 +11755,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMwlkSrasWpstDbr_down: AmovPknlMwlkSrasWpstDbr
 		{
-			actions="PistolAdjustBKneelActionsWlkBr";
+			actions = "PistolAdjustBKneelActionsWlkBr";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDdown",
@@ -11780,7 +11780,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMwlkSrasWpstDr_down: AmovPknlMwlkSrasWpstDr
 		{
-			actions="PistolAdjustBKneelActionsWlkR";
+			actions = "PistolAdjustBKneelActionsWlkR";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDdown",
@@ -11805,7 +11805,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMwlkSrasWpstDfr_down: AmovPknlMwlkSrasWpstDfr
 		{
-			actions="PistolAdjustBKneelActionsWlkFr";
+			actions = "PistolAdjustBKneelActionsWlkFr";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDdown",
@@ -11832,7 +11832,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMtacSrasWpstDf_down: AmovPknlMtacSrasWpstDf
 		{
-			actions="PistolAdjustBKneelActionsTacF";
+			actions = "PistolAdjustBKneelActionsTacF";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDdown",
@@ -11859,7 +11859,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMtacSrasWpstDfl_down: AmovPknlMtacSrasWpstDfl
 		{
-			actions="PistolAdjustBKneelActionsTacFl";
+			actions = "PistolAdjustBKneelActionsTacFl";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDdown",
@@ -11886,7 +11886,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMtacSrasWpstDl_down: AmovPknlMtacSrasWpstDl
 		{
-			actions="PistolAdjustBKneelActionsTacL";
+			actions = "PistolAdjustBKneelActionsTacL";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDdown",
@@ -11911,7 +11911,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMtacSrasWpstDbl_down: AmovPknlMtacSrasWpstDbl
 		{
-			actions="PistolAdjustBKneelActionsTacBL";
+			actions = "PistolAdjustBKneelActionsTacBL";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDdown",
@@ -11936,7 +11936,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMtacSrasWpstDb_down: AmovPknlMtacSrasWpstDb
 		{
-			actions="PistolAdjustBKneelActionsTacB";
+			actions = "PistolAdjustBKneelActionsTacB";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDdown",
@@ -11961,7 +11961,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMtacSrasWpstDbr_down: AmovPknlMtacSrasWpstDbr
 		{
-			actions="PistolAdjustBKneelActionsTacBr";
+			actions = "PistolAdjustBKneelActionsTacBr";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDdown",
@@ -11986,7 +11986,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMtacSrasWpstDr_down: AmovPknlMtacSrasWpstDr
 		{
-			actions="PistolAdjustBKneelActionsTacR";
+			actions = "PistolAdjustBKneelActionsTacR";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDdown",
@@ -12011,7 +12011,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMtacSrasWpstDfr_down: AmovPknlMtacSrasWpstDfr
 		{
-			actions="PistolAdjustBKneelActionsTacFr";
+			actions = "PistolAdjustBKneelActionsTacFr";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDdown",
@@ -12038,7 +12038,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMrunSrasWpstDf_down: AmovPknlMrunSrasWpstDf
 		{
-			actions="PistolAdjustBKneelActionsRunF";
+			actions = "PistolAdjustBKneelActionsRunF";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDdown",
@@ -12061,7 +12061,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMrunSrasWpstDfl_down: AmovPknlMrunSrasWpstDfl
 		{
-			actions="PistolAdjustBKneelActionsRunFl";
+			actions = "PistolAdjustBKneelActionsRunFl";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDdown",
@@ -12084,7 +12084,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMrunSrasWpstDl_down: AmovPknlMrunSrasWpstDl
 		{
-			actions="PistolAdjustBKneelActionsRunL";
+			actions = "PistolAdjustBKneelActionsRunL";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDdown",
@@ -12109,7 +12109,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMrunSrasWpstDbl_down: AmovPknlMrunSrasWpstDbl
 		{
-			actions="PistolAdjustBKneelActionsRunBL";
+			actions = "PistolAdjustBKneelActionsRunBL";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDdown",
@@ -12134,7 +12134,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMrunSrasWpstDb_down: AmovPknlMrunSrasWpstDb
 		{
-			actions="PistolAdjustBKneelActionsRunB";
+			actions = "PistolAdjustBKneelActionsRunB";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDdown",
@@ -12159,7 +12159,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMrunSrasWpstDbr_down: AmovPknlMrunSrasWpstDbr
 		{
-			actions="PistolAdjustBKneelActionsRunBr";
+			actions = "PistolAdjustBKneelActionsRunBr";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDdown",
@@ -12184,7 +12184,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMrunSrasWpstDr_down: AmovPknlMrunSrasWpstDr
 		{
-			actions="PistolAdjustBKneelActionsRunR";
+			actions = "PistolAdjustBKneelActionsRunR";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDdown",
@@ -12209,7 +12209,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMrunSrasWpstDfr_down: AmovPknlMrunSrasWpstDfr
 		{
-			actions="PistolAdjustBKneelActionsRunFr";
+			actions = "PistolAdjustBKneelActionsRunFr";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDdown",
@@ -12232,7 +12232,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMevaSrasWpstDf_down: AmovPknlMevaSrasWpstDf
 		{
-			actions="PistolAdjustBKneelEvasiveActionsf";
+			actions = "PistolAdjustBKneelEvasiveActionsf";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDdown",
@@ -12259,7 +12259,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMevaSrasWpstDfl_down: AmovPknlMevaSrasWpstDfl
 		{
-			actions="PistolAdjustBKneelEvasiveActionsfl";
+			actions = "PistolAdjustBKneelEvasiveActionsfl";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDdown",
@@ -12284,7 +12284,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMevaSrasWpstDfr_down: AmovPknlMevaSrasWpstDfr
 		{
-			actions="PistolAdjustBKneelEvasiveActionsfr";
+			actions = "PistolAdjustBKneelEvasiveActionsfr";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDdown",
@@ -12309,7 +12309,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMwlkSrasWpstDf_up: AmovPknlMwlkSrasWpstDf
 		{
-			actions="PistolAdjustFKneelActionsWlkF";
+			actions = "PistolAdjustFKneelActionsWlkF";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDup",
@@ -12336,7 +12336,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMwlkSrasWpstDfl_up: AmovPknlMwlkSrasWpstDfl
 		{
-			actions="PistolAdjustFKneelActionsWlkFl";
+			actions = "PistolAdjustFKneelActionsWlkFl";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDup",
@@ -12363,7 +12363,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMwlkSrasWpstDl_up: AmovPknlMwlkSrasWpstDl
 		{
-			actions="PistolAdjustFKneelActionsWlkL";
+			actions = "PistolAdjustFKneelActionsWlkL";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDup",
@@ -12388,7 +12388,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMwlkSrasWpstDbl_up: AmovPknlMwlkSrasWpstDbl
 		{
-			actions="PistolAdjustFKneelActionsWlkBL";
+			actions = "PistolAdjustFKneelActionsWlkBL";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDup",
@@ -12413,7 +12413,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMwlkSrasWpstDb_up: AmovPknlMwlkSrasWpstDb
 		{
-			actions="PistolAdjustFKneelActionsWlkB";
+			actions = "PistolAdjustFKneelActionsWlkB";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDup",
@@ -12438,7 +12438,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMwlkSrasWpstDbr_up: AmovPknlMwlkSrasWpstDbr
 		{
-			actions="PistolAdjustFKneelActionsWlkBr";
+			actions = "PistolAdjustFKneelActionsWlkBr";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDup",
@@ -12463,7 +12463,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMwlkSrasWpstDr_up: AmovPknlMwlkSrasWpstDr
 		{
-			actions="PistolAdjustFKneelActionsWlkR";
+			actions = "PistolAdjustFKneelActionsWlkR";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDup",
@@ -12488,7 +12488,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMwlkSrasWpstDfr_up: AmovPknlMwlkSrasWpstDfr
 		{
-			actions="PistolAdjustFKneelActionsWlkFr";
+			actions = "PistolAdjustFKneelActionsWlkFr";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDup",
@@ -12515,7 +12515,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMtacSrasWpstDf_up: AmovPknlMtacSrasWpstDf
 		{
-			actions="PistolAdjustFKneelActionsTacF";
+			actions = "PistolAdjustFKneelActionsTacF";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDup",
@@ -12542,7 +12542,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMtacSrasWpstDfl_up: AmovPknlMtacSrasWpstDfl
 		{
-			actions="PistolAdjustFKneelActionsTacFl";
+			actions = "PistolAdjustFKneelActionsTacFl";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDup",
@@ -12569,7 +12569,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMtacSrasWpstDl_up: AmovPknlMtacSrasWpstDl
 		{
-			actions="PistolAdjustFKneelActionsTacL";
+			actions = "PistolAdjustFKneelActionsTacL";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDup",
@@ -12594,7 +12594,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMtacSrasWpstDbl_up: AmovPknlMtacSrasWpstDbl
 		{
-			actions="PistolAdjustFKneelActionsTacBL";
+			actions = "PistolAdjustFKneelActionsTacBL";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDup",
@@ -12619,7 +12619,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMtacSrasWpstDb_up: AmovPknlMtacSrasWpstDb
 		{
-			actions="PistolAdjustFKneelActionsTacB";
+			actions = "PistolAdjustFKneelActionsTacB";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDup",
@@ -12644,7 +12644,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMtacSrasWpstDbr_up: AmovPknlMtacSrasWpstDbr
 		{
-			actions="PistolAdjustFKneelActionsTacBr";
+			actions = "PistolAdjustFKneelActionsTacBr";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDup",
@@ -12669,7 +12669,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMtacSrasWpstDr_up: AmovPknlMtacSrasWpstDr
 		{
-			actions="PistolAdjustFKneelActionsTacR";
+			actions = "PistolAdjustFKneelActionsTacR";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDup",
@@ -12694,7 +12694,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMtacSrasWpstDfr_up: AmovPknlMtacSrasWpstDfr
 		{
-			actions="PistolAdjustFKneelActionsTacFr";
+			actions = "PistolAdjustFKneelActionsTacFr";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDup",
@@ -12721,7 +12721,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMrunSrasWpstDf_up: AmovPknlMrunSrasWpstDf
 		{
-			actions="PistolAdjustFKneelActionsRunF";
+			actions = "PistolAdjustFKneelActionsRunF";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDup",
@@ -12744,7 +12744,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMrunSrasWpstDfl_up: AmovPknlMrunSrasWpstDfl
 		{
-			actions="PistolAdjustFKneelActionsRunFl";
+			actions = "PistolAdjustFKneelActionsRunFl";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDup",
@@ -12767,7 +12767,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMrunSrasWpstDl_up: AmovPknlMrunSrasWpstDl
 		{
-			actions="PistolAdjustFKneelActionsRunL";
+			actions = "PistolAdjustFKneelActionsRunL";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDup",
@@ -12792,7 +12792,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMrunSrasWpstDbl_up: AmovPknlMrunSrasWpstDbl
 		{
-			actions="PistolAdjustFKneelActionsRunBL";
+			actions = "PistolAdjustFKneelActionsRunBL";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDup",
@@ -12817,7 +12817,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMrunSrasWpstDb_up: AmovPknlMrunSrasWpstDb
 		{
-			actions="PistolAdjustFKneelActionsRunB";
+			actions = "PistolAdjustFKneelActionsRunB";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDup",
@@ -12842,7 +12842,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMrunSrasWpstDbr_up: AmovPknlMrunSrasWpstDbr
 		{
-			actions="PistolAdjustFKneelActionsRunBr";
+			actions = "PistolAdjustFKneelActionsRunBr";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDup",
@@ -12867,7 +12867,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMrunSrasWpstDr_up: AmovPknlMrunSrasWpstDr
 		{
-			actions="PistolAdjustFKneelActionsRunR";
+			actions = "PistolAdjustFKneelActionsRunR";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDup",
@@ -12892,7 +12892,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMrunSrasWpstDfr_up: AmovPknlMrunSrasWpstDfr
 		{
-			actions="PistolAdjustFKneelActionsRunFr";
+			actions = "PistolAdjustFKneelActionsRunFr";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDup",
@@ -12915,7 +12915,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMevaSrasWpstDf_up: AmovPknlMevaSrasWpstDf
 		{
-			actions="PistolAdjustFKneelEvasiveActionsf";
+			actions = "PistolAdjustFKneelEvasiveActionsf";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDup",
@@ -12942,7 +12942,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMevaSrasWpstDfl_up: AmovPknlMevaSrasWpstDfl
 		{
-			actions="PistolAdjustFKneelEvasiveActionsfl";
+			actions = "PistolAdjustFKneelEvasiveActionsfl";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDup",
@@ -12967,7 +12967,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPknlMevaSrasWpstDfr_up: AmovPknlMevaSrasWpstDfr
 		{
-			actions="PistolAdjustFKneelEvasiveActionsfr";
+			actions = "PistolAdjustFKneelEvasiveActionsfr";
 			InterpolateTo[]=
 			{
 				"AadjPknlMstpSrasWpstDup",
@@ -12992,12 +12992,12 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSrasWpstDnon_AinvPknlMstpSnonWnonDnon: AmovPercMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			actions="PistolStandTakeActions";
-			file="\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AinvPknlMstpSnonWnonDnon";
-			speed=1.8;
-			disableWeapons=1;
-			looped=0;
+			variantsPlayer[] = {};
+			actions = "PistolStandTakeActions";
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AinvPknlMstpSnonWnonDnon";
+			speed = 1.8;
+			disableWeapons = 1;
+			looped = 0;
 			ConnectTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon_AinvPknlMstpSnonWnonDnon_end",
@@ -13011,10 +13011,10 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSrasWpstDnon_AinvPknlMstpSnonWnonDnon_end: AmovPercMstpSrasWpstDnon_AinvPknlMstpSnonWnonDnon
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AinvPknlMstpSnonWnonDnon_end";
-			speed=1.15;
-			showHandGun=0;
-			limitGunMovement=0;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\ras\pst\AmovPercMstpSrasWpstDnon_AinvPknlMstpSnonWnonDnon_end";
+			speed = 1.15;
+			showHandGun = 0;
+			limitGunMovement = 0;
 			ConnectTo[]=
 			{
 				"AinvPknlMstpSnonWnonDnon_1",
@@ -13023,10 +13023,10 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AinvPknlMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon: AmovPercMstpSrasWpstDnon_AinvPknlMstpSnonWnonDnon_end
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\inv\knl\stp\non\non\AinvPknlMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon";
-			speed=1.04;
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Pknl_Wnon.p3d";
-			canPullTrigger=0;
+			file = "\A3\anims_f\Data\Anim\Sdr\inv\knl\stp\non\non\AinvPknlMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon";
+			speed = 1.04;
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Pknl_Wnon.p3d";
+			canPullTrigger = 0;
 			ConnectTo[]=
 			{
 				"AinvPknlMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon_end",
@@ -13035,12 +13035,12 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AinvPknlMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon_end: AmovPercMstpSrasWpstDnon_AinvPknlMstpSnonWnonDnon_end
 		{
-			actions="PistolStandActions";
-			file="\A3\anims_f\Data\Anim\Sdr\inv\knl\stp\non\non\AinvPknlMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon_end";
-			speed=1.97;
-			showHandgun=1;
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Perc_Wnon.p3d";
-			canPullTrigger=0;
+			actions = "PistolStandActions";
+			file = "\A3\anims_f\Data\Anim\Sdr\inv\knl\stp\non\non\AinvPknlMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon_end";
+			speed = 1.97;
+			showHandgun = 1;
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Perc_Wnon.p3d";
+			canPullTrigger = 0;
 			ConnectTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -13049,14 +13049,14 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMstpSrasWpstDnon_AinvPknlMstpSnonWnonDnon: AmovPknlMstpSrasWpstDnon
 		{
-			static=1;
-			variantsPlayer[]={};
-			actions="PistolKneelTakeActions";
-			file="\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AinvPknlMstpSnonWnonDnon";
-			speed=1.5700001;
-			disableWeapons=1;
-			enableOptics=0;
-			looped=0;
+			static = 1;
+			variantsPlayer[] = {};
+			actions = "PistolKneelTakeActions";
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AinvPknlMstpSnonWnonDnon";
+			speed = 1.5700001;
+			disableWeapons = 1;
+			enableOptics = 0;
+			looped = 0;
 			ConnectTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon_AinvPknlMstpSnonWnonDnon_end",
@@ -13070,10 +13070,10 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMstpSrasWpstDnon_AinvPknlMstpSnonWnonDnon_end: AmovPknlMstpSrasWpstDnon_AinvPknlMstpSnonWnonDnon
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AinvPknlMstpSnonWnonDnon_end";
-			speed=1.15;
-			showHandGun=0;
-			limitGunMovement=0;
+			file = "\A3\anims_f\Data\Anim\Sdr\mov\knl\stp\ras\pst\AmovPknlMstpSrasWpstDnon_AinvPknlMstpSnonWnonDnon_end";
+			speed = 1.15;
+			showHandGun = 0;
+			limitGunMovement = 0;
 			ConnectTo[]=
 			{
 				"AinvPknlMstpSnonWnonDnon_2",
@@ -13084,10 +13084,10 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AinvPknlMstpSnonWnonDnon_AmovPknlMstpSrasWpstDnon: AmovPknlMstpSrasWpstDnon_AinvPknlMstpSnonWnonDnon_end
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\inv\knl\stp\non\non\AinvPknlMstpSnonWnonDnon_AmovPknlMstpSrasWpstDnon";
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Pknl_Wnon.p3d";
-			canPullTrigger=0;
-			enableOptics=2;
+			file = "\A3\anims_f\Data\Anim\Sdr\inv\knl\stp\non\non\AinvPknlMstpSnonWnonDnon_AmovPknlMstpSrasWpstDnon";
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\Pknl_Wnon.p3d";
+			canPullTrigger = 0;
+			enableOptics = 2;
 			ConnectTo[]=
 			{
 				"AinvPknlMstpSnonWnonDnon_AmovPknlMstpSrasWpstDnon_end",
@@ -13096,11 +13096,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AinvPknlMstpSnonWnonDnon_AmovPknlMstpSrasWpstDnon_end: AmovPknlMstpSrasWpstDnon_AinvPknlMstpSnonWnonDnon_end
 		{
-			actions="PistolKneelActions";
-			file="\A3\anims_f\Data\Anim\Sdr\inv\knl\stp\non\non\AinvPknlMstpSnonWnonDnon_AmovPknlMstpSrasWpstDnon_end";
-			speed=1.97;
-			showHandgun=1;
-			canPullTrigger=0;
+			actions = "PistolKneelActions";
+			file = "\A3\anims_f\Data\Anim\Sdr\inv\knl\stp\non\non\AinvPknlMstpSnonWnonDnon_AmovPknlMstpSrasWpstDnon_end";
+			speed = 1.97;
+			showHandgun = 1;
+			canPullTrigger = 0;
 			ConnectTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -13109,21 +13109,21 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AcrgPknlMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon_getOutLow: AmovPercMstpSrasWpstDnon
 		{
-			variantsPlayer[]={};
-			file="\A3\anims_f\Data\Anim\Sdr\crg\knl\stp\non\non\AcrgPknlMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon_GetOutLow";
-			speed=1.9;
-			looped=0;
-			soundOverride="Walk";
-			disableWeapons=1;
-			enableOptics=0;
-			leaningFactorEnd=0;
-			canPullTrigger=0;
-			minPlayTime=0.94999999;
+			variantsPlayer[] = {};
+			file = "\A3\anims_f\Data\Anim\Sdr\crg\knl\stp\non\non\AcrgPknlMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon_GetOutLow";
+			speed = 1.9;
+			looped = 0;
+			soundOverride = "Walk";
+			disableWeapons = 1;
+			enableOptics = 0;
+			leaningFactorEnd = 0;
+			canPullTrigger = 0;
+			minPlayTime = 0.94999999;
 			ignoreMinPlayTime[]=
 			{
 				"Unconscious"
 			};
-			ConnectTo[]={};
+			ConnectTo[] = {};
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -13134,27 +13134,27 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AcrgPknlMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon_getOutMedium: AcrgPknlMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon_getOutLow
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\crg\knl\stp\non\non\AcrgPknlMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon_GetOutMedium";
-			speed=1.3329999;
+			file = "\A3\anims_f\Data\Anim\Sdr\crg\knl\stp\non\non\AcrgPknlMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon_GetOutMedium";
+			speed = 1.3329999;
 		};
 		class AcrgPknlMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon_getOutHigh: AcrgPknlMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon_getOutLow
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\crg\knl\stp\non\non\AcrgPknlMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon_GetOutHigh";
-			speed=0.91500002;
+			file = "\A3\anims_f\Data\Anim\Sdr\crg\knl\stp\non\non\AcrgPknlMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon_GetOutHigh";
+			speed = 0.91500002;
 		};
 		class AcrgPknlMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon_getOutHighZamak: AcrgPknlMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon_getOutLow
 		{
-			file="\A3\anims_f\Data\Anim\Sdr\crg\knl\stp\non\non\GetOutHighZamak";
-			speed=0.5;
+			file = "\A3\anims_f\Data\Anim\Sdr\crg\knl\stp\non\non\GetOutHighZamak";
+			speed = 0.5;
 		};
 		class AcrgPknlMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon_getOutHighHemtt: AcrgPknlMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon_getOutLow
 		{
-			file="\A3\Anims_F\data\Anim\sdr\crg\knl\stp\non\non\GetOutHighHemtt";
-			speed=0.5;
+			file = "\A3\Anims_F\data\Anim\sdr\crg\knl\stp\non\non\GetOutHighHemtt";
+			speed = 0.5;
 		};
 		class AmovPercMstpSrasWpstDnon_AcinPknlMwlkSnonWpstDb_1: AmovPercMstpSnonWnonDnon_AcinPknlMwlkSnonWnonDb_1
 		{
-			showHandGun=1;
+			showHandGun = 1;
 			ConnectTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon_AcinPknlMwlkSnonWpstDb_2",
@@ -13172,8 +13172,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSrasWpstDnon_AcinPknlMwlkSnonWpstDb_2: AmovPercMstpSnonWnonDnon_AcinPknlMwlkSnonWnonDb_2
 		{
-			actions="MoveWithInjuredManDraggerPst";
-			showHandGun=1;
+			actions = "MoveWithInjuredManDraggerPst";
+			showHandGun = 1;
 			ConnectTo[]=
 			{
 				"AcinPknlMstpSnonWpstDnon",
@@ -13193,8 +13193,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AcinPknlMstpSnonWpstDnon: AcinPknlMstpSrasWrflDnon
 		{
-			actions="MoveWithInjuredManDraggerPst";
-			showHandGun=1;
+			actions = "MoveWithInjuredManDraggerPst";
+			showHandGun = 1;
 			ConnectTo[]=
 			{
 				"AcinPknlMwlkSnonWpstDb_AmovPercMstpSrasWpstDnon",
@@ -13224,7 +13224,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AcinPknlMwlkSnonWpstDb_AmovPercMstpSrasWpstDnon: AcinPknlMwlkSnonWnonDb_AmovPercMstpSnonWnonDnon
 		{
-			showHandGun=1;
+			showHandGun = 1;
 			ConnectTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -13240,7 +13240,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AcinPknlMstpSnonWpstDnon_AmovPknlMstpSrasWpstDnon: AcinPknlMstpSnonWnonDnon_AmovPknlMstpSnonWnonDnon
 		{
-			showHandGun=1;
+			showHandGun = 1;
 			ConnectTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -13254,7 +13254,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AcinPknlMwlkSnonWpstDb_agony: AcinPknlMwlkSnonWnonDb_agony
 		{
-			showHandGun=1;
+			showHandGun = 1;
 			InterpolateTo[]=
 			{
 				"AmovPpneMstpSnonWpstDnon_injured",
@@ -13273,271 +13273,271 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AadjPercMstpSrasWpstDleft_AadjPknlMstpSrasWpstDleft: AadjPknlMstpSrasWpstDleft
 		{
-			variantsPlayer[]={};
-			variantsAI[]={};
-			canBlendStep=0;
-			looped=0;
-			minPlayTime=0.64999998;
-			reverse="AadjPknlMstpSrasWpstDleft_AadjPercMstpSrasWpstDleft";
-			visibleSize=0.400125;
-			file="\A3\anims_f\Data\Anim\Sdr\adj\erc\stp\ras\pst\AadjPercMstpSrasWpstDleft_AadjPknlMstpSrasWpstDleft";
-			speed=-0.44999999;
-			leaningFactorBeg=1;
-			leaningFactorEnd=1;
-			interpolationRestart=1;
-			enableOptics=1;
-			showHandGun=1;
-			aiming="aimingPistol";
-			aimingBody="aimingUpPistol";
-			headBobStrength=0.512438;
-			duty=0.30000001;
-			aimprecision=0.5;
-			adjstance="l";
-			soundOverride="adjust_stand_to_kneel";
-			soundEnabled=1;
-			soundEdge[]={0.0099999998};
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			canBlendStep = 0;
+			looped = 0;
+			minPlayTime = 0.64999998;
+			reverse = "AadjPknlMstpSrasWpstDleft_AadjPercMstpSrasWpstDleft";
+			visibleSize = 0.400125;
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\erc\stp\ras\pst\AadjPercMstpSrasWpstDleft_AadjPknlMstpSrasWpstDleft";
+			speed = -0.44999999;
+			leaningFactorBeg = 1;
+			leaningFactorEnd = 1;
+			interpolationRestart = 1;
+			enableOptics = 1;
+			showHandGun = 1;
+			aiming = "aimingPistol";
+			aimingBody = "aimingUpPistol";
+			headBobStrength = 0.512438;
+			duty = 0.30000001;
+			aimprecision = 0.5;
+			adjstance = "l";
+			soundOverride = "adjust_stand_to_kneel";
+			soundEnabled = 1;
+			soundEdge[] = {0.0099999998};
 		};
 		class AadjPknlMstpSrasWpstDleft_AadjPercMstpSrasWpstDleft: AadjPercMstpSrasWpstDleft
 		{
-			variantsPlayer[]={};
-			variantsAI[]={};
-			canBlendStep=0;
-			looped=0;
-			minPlayTime=0.64999998;
-			reverse="AadjPercMstpSrasWpstDleft_AadjPknlMstpSrasWpstDleft";
-			visibleSize=0.400125;
-			actions="PistolAdjustLStandActions";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\erc\stp\ras\pst\AadjPknlMstpSrasWpstDleft_AadjPercMstpSrasWpstDleft";
-			speed=-0.55000001;
-			leaningFactorBeg=1;
-			leaningFactorEnd=1;
-			interpolationRestart=1;
-			enableOptics=1;
-			showHandGun=1;
-			aiming="aimingPistol";
-			aimingBody="aimingUpPistol";
-			headBobStrength=0.512438;
-			duty=0.30000001;
-			adjstance="l";
-			soundOverride="adjust_kneel_to_stand";
-			soundEnabled=1;
-			soundEdge[]={0.0099999998};
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			canBlendStep = 0;
+			looped = 0;
+			minPlayTime = 0.64999998;
+			reverse = "AadjPercMstpSrasWpstDleft_AadjPknlMstpSrasWpstDleft";
+			visibleSize = 0.400125;
+			actions = "PistolAdjustLStandActions";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\erc\stp\ras\pst\AadjPknlMstpSrasWpstDleft_AadjPercMstpSrasWpstDleft";
+			speed = -0.55000001;
+			leaningFactorBeg = 1;
+			leaningFactorEnd = 1;
+			interpolationRestart = 1;
+			enableOptics = 1;
+			showHandGun = 1;
+			aiming = "aimingPistol";
+			aimingBody = "aimingUpPistol";
+			headBobStrength = 0.512438;
+			duty = 0.30000001;
+			adjstance = "l";
+			soundOverride = "adjust_kneel_to_stand";
+			soundEnabled = 1;
+			soundEdge[] = {0.0099999998};
 		};
 		class AadjPercMstpSrasWpstDright_AadjPknlMstpSrasWpstDright: AadjPknlMstpSrasWpstDright
 		{
-			variantsPlayer[]={};
-			variantsAI[]={};
-			canBlendStep=0;
-			looped=0;
-			minPlayTime=0.64999998;
-			reverse="AadjPknlMstpSrasWpstDright_AadjPercMstpSrasWpstDright";
-			visibleSize=0.400125;
-			actions="PistolAdjustRKneelActions";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\erc\stp\ras\pst\AadjPercMstpSrasWpstDright_AadjPknlMstpSrasWpstDright";
-			speed=-0.44999999;
-			leaningFactorBeg=1;
-			leaningFactorEnd=1;
-			interpolationRestart=1;
-			enableOptics=1;
-			showHandGun=1;
-			aiming="aimingPistol";
-			aimingBody="aimingUpPistol";
-			headBobStrength=0.512438;
-			duty=0.30000001;
-			aimprecision=0.5;
-			adjstance="r";
-			soundEnabled=1;
-			soundOverride="adjust_stand_to_kneel";
-			soundEdge[]={0.0099999998};
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			canBlendStep = 0;
+			looped = 0;
+			minPlayTime = 0.64999998;
+			reverse = "AadjPknlMstpSrasWpstDright_AadjPercMstpSrasWpstDright";
+			visibleSize = 0.400125;
+			actions = "PistolAdjustRKneelActions";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\erc\stp\ras\pst\AadjPercMstpSrasWpstDright_AadjPknlMstpSrasWpstDright";
+			speed = -0.44999999;
+			leaningFactorBeg = 1;
+			leaningFactorEnd = 1;
+			interpolationRestart = 1;
+			enableOptics = 1;
+			showHandGun = 1;
+			aiming = "aimingPistol";
+			aimingBody = "aimingUpPistol";
+			headBobStrength = 0.512438;
+			duty = 0.30000001;
+			aimprecision = 0.5;
+			adjstance = "r";
+			soundEnabled = 1;
+			soundOverride = "adjust_stand_to_kneel";
+			soundEdge[] = {0.0099999998};
 		};
 		class AadjPknlMstpSrasWpstDright_AadjPercMstpSrasWpstDright: AadjPercMstpSrasWpstDright
 		{
-			variantsPlayer[]={};
-			variantsAI[]={};
-			canBlendStep=0;
-			looped=0;
-			minPlayTime=0.64999998;
-			reverse="AadjPercMstpSrasWpstDright_AadjPknlMstpSrasWpstDright";
-			visibleSize=0.400125;
-			actions="PistolAdjustRStandActions";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\erc\stp\ras\pst\AadjPknlMstpSrasWpstDright_AadjPercMstpSrasWpstDright";
-			speed=-0.55000001;
-			leaningFactorBeg=1;
-			leaningFactorEnd=1;
-			interpolationRestart=1;
-			enableOptics=1;
-			showHandGun=1;
-			aiming="aimingPistol";
-			aimingBody="aimingUpPistol";
-			headBobStrength=0.512438;
-			duty=0.30000001;
-			adjstance="r";
-			soundOverride="adjust_kneel_to_stand";
-			soundEnabled=1;
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			canBlendStep = 0;
+			looped = 0;
+			minPlayTime = 0.64999998;
+			reverse = "AadjPercMstpSrasWpstDright_AadjPknlMstpSrasWpstDright";
+			visibleSize = 0.400125;
+			actions = "PistolAdjustRStandActions";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\erc\stp\ras\pst\AadjPknlMstpSrasWpstDright_AadjPercMstpSrasWpstDright";
+			speed = -0.55000001;
+			leaningFactorBeg = 1;
+			leaningFactorEnd = 1;
+			interpolationRestart = 1;
+			enableOptics = 1;
+			showHandGun = 1;
+			aiming = "aimingPistol";
+			aimingBody = "aimingUpPistol";
+			headBobStrength = 0.512438;
+			duty = 0.30000001;
+			adjstance = "r";
+			soundOverride = "adjust_kneel_to_stand";
+			soundEnabled = 1;
 		};
 		class AadjPercMstpSrasWpstDdown_AadjPknlMstpSrasWpstDdown: AadjPknlMstpSrasWpstDdown
 		{
-			variantsPlayer[]={};
-			variantsAI[]={};
-			canBlendStep=0;
-			looped=0;
-			minPlayTime=0.64999998;
-			reverse="AadjPknlMstpSrasWpstDdown_AadjPercMstpSrasWpstDdown";
-			visibleSize=0.400125;
-			actions="PistolAdjustBKneelActions";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\erc\stp\ras\pst\AadjPercMstpSrasWpstDdown_AadjPknlMstpSrasWpstDdown";
-			speed=-0.44999999;
-			leaningFactorBeg=1;
-			leaningFactorEnd=1;
-			interpolationRestart=1;
-			enableOptics=1;
-			soundOverride="adjust_stand_to_kneel";
-			soundEnabled=1;
-			showHandGun=1;
-			aiming="aimingPistol";
-			aimingBody="aimingUpPistol";
-			headBobStrength=0.512438;
-			duty=0.30000001;
-			aimprecision=0.5;
-			adjstance="d";
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			canBlendStep = 0;
+			looped = 0;
+			minPlayTime = 0.64999998;
+			reverse = "AadjPknlMstpSrasWpstDdown_AadjPercMstpSrasWpstDdown";
+			visibleSize = 0.400125;
+			actions = "PistolAdjustBKneelActions";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\erc\stp\ras\pst\AadjPercMstpSrasWpstDdown_AadjPknlMstpSrasWpstDdown";
+			speed = -0.44999999;
+			leaningFactorBeg = 1;
+			leaningFactorEnd = 1;
+			interpolationRestart = 1;
+			enableOptics = 1;
+			soundOverride = "adjust_stand_to_kneel";
+			soundEnabled = 1;
+			showHandGun = 1;
+			aiming = "aimingPistol";
+			aimingBody = "aimingUpPistol";
+			headBobStrength = 0.512438;
+			duty = 0.30000001;
+			aimprecision = 0.5;
+			adjstance = "d";
 		};
 		class AadjPercMstpSrasWpstDdown_AadjPknlMstpSrasWpstDup: AadjPknlMstpSrasWpstDup
 		{
-			variantsPlayer[]={};
-			variantsAI[]={};
-			canBlendStep=0;
-			looped=0;
-			minPlayTime=0.64999998;
-			reverse="AadjPknlMstpSrasWpstDup_AadjPercMstpSrasWpstDdown";
-			visibleSize=0.400125;
-			actions="PistolAdjustFKneelActions";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\erc\stp\ras\pst\AadjPercMstpSrasWpstDdown_AadjPknlMstpSrasWpstDup";
-			speed=-0.34999999;
-			leaningFactorBeg=1;
-			leaningFactorEnd=1;
-			interpolationRestart=1;
-			enableOptics=1;
-			soundEnabled=1;
-			soundOverride="adjust_standlow_to_kneelhigh";
-			soundEdge[]={0.0099999998};
-			showHandGun=1;
-			aiming="aimingPistol";
-			aimingBody="aimingUpPistol";
-			headBobStrength=0.512438;
-			duty=0.30000001;
-			aimprecision=0.5;
-			adjstance="u";
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			canBlendStep = 0;
+			looped = 0;
+			minPlayTime = 0.64999998;
+			reverse = "AadjPknlMstpSrasWpstDup_AadjPercMstpSrasWpstDdown";
+			visibleSize = 0.400125;
+			actions = "PistolAdjustFKneelActions";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\erc\stp\ras\pst\AadjPercMstpSrasWpstDdown_AadjPknlMstpSrasWpstDup";
+			speed = -0.34999999;
+			leaningFactorBeg = 1;
+			leaningFactorEnd = 1;
+			interpolationRestart = 1;
+			enableOptics = 1;
+			soundEnabled = 1;
+			soundOverride = "adjust_standlow_to_kneelhigh";
+			soundEdge[] = {0.0099999998};
+			showHandGun = 1;
+			aiming = "aimingPistol";
+			aimingBody = "aimingUpPistol";
+			headBobStrength = 0.512438;
+			duty = 0.30000001;
+			aimprecision = 0.5;
+			adjstance = "u";
 		};
 		class AadjPknlMstpSrasWpstDdown_AadjPercMstpSrasWpstDdown: AadjPercMstpSrasWpstDdown
 		{
-			variantsPlayer[]={};
-			variantsAI[]={};
-			canBlendStep=0;
-			looped=0;
-			minPlayTime=0.64999998;
-			reverse="AadjPercMstpSrasWpstDdown_AadjPknlMstpSrasWpstDdown";
-			visibleSize=0.400125;
-			actions="PistolAdjustFStandActions";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\erc\stp\ras\pst\AadjPknlMstpSrasWpstDdown_AadjPercMstpSrasWpstDdown";
-			speed=-0.55000001;
-			leaningFactorBeg=1;
-			leaningFactorEnd=1;
-			interpolationRestart=1;
-			enableOptics=1;
-			soundEnabled=1;
-			soundOverride="adjust_kneel_to_stand";
-			showHandGun=1;
-			aiming="aimingPistol";
-			aimingBody="aimingUpPistol";
-			headBobStrength=0.512438;
-			duty=0.30000001;
-			adjstance="d";
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			canBlendStep = 0;
+			looped = 0;
+			minPlayTime = 0.64999998;
+			reverse = "AadjPercMstpSrasWpstDdown_AadjPknlMstpSrasWpstDdown";
+			visibleSize = 0.400125;
+			actions = "PistolAdjustFStandActions";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\erc\stp\ras\pst\AadjPknlMstpSrasWpstDdown_AadjPercMstpSrasWpstDdown";
+			speed = -0.55000001;
+			leaningFactorBeg = 1;
+			leaningFactorEnd = 1;
+			interpolationRestart = 1;
+			enableOptics = 1;
+			soundEnabled = 1;
+			soundOverride = "adjust_kneel_to_stand";
+			showHandGun = 1;
+			aiming = "aimingPistol";
+			aimingBody = "aimingUpPistol";
+			headBobStrength = 0.512438;
+			duty = 0.30000001;
+			adjstance = "d";
 		};
 		class AadjPercMstpSrasWpstDup_AadjPknlMstpSrasWpstDup: AadjPknlMstpSrasWpstDup
 		{
-			variantsPlayer[]={};
-			variantsAI[]={};
-			canBlendStep=0;
-			looped=0;
-			minPlayTime=0.64999998;
-			reverse="AadjPknlMstpSrasWpstDup_AadjPercMstpSrasWpstDup";
-			visibleSize=0.400125;
-			actions="PistolAdjustFKneelActions";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\erc\stp\ras\pst\AadjPercMstpSrasWpstDup_AadjPknlMstpSrasWpstDup";
-			speed=-0.34999999;
-			leaningFactorBeg=1;
-			leaningFactorEnd=1;
-			interpolationRestart=1;
-			enableOptics=1;
-			soundEnabled=1;
-			soundOverride="adjust_stand_to_kneel";
-			showHandGun=1;
-			aiming="aimingPistol";
-			aimingBody="aimingUpPistol";
-			headBobStrength=0.512438;
-			duty=0.30000001;
-			aimprecision=0.5;
-			adjstance="u";
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			canBlendStep = 0;
+			looped = 0;
+			minPlayTime = 0.64999998;
+			reverse = "AadjPknlMstpSrasWpstDup_AadjPercMstpSrasWpstDup";
+			visibleSize = 0.400125;
+			actions = "PistolAdjustFKneelActions";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\erc\stp\ras\pst\AadjPercMstpSrasWpstDup_AadjPknlMstpSrasWpstDup";
+			speed = -0.34999999;
+			leaningFactorBeg = 1;
+			leaningFactorEnd = 1;
+			interpolationRestart = 1;
+			enableOptics = 1;
+			soundEnabled = 1;
+			soundOverride = "adjust_stand_to_kneel";
+			showHandGun = 1;
+			aiming = "aimingPistol";
+			aimingBody = "aimingUpPistol";
+			headBobStrength = 0.512438;
+			duty = 0.30000001;
+			aimprecision = 0.5;
+			adjstance = "u";
 		};
 		class AadjPknlMstpSrasWpstDup_AadjPercMstpSrasWpstDup: AadjPercMstpSrasWpstDup
 		{
-			variantsPlayer[]={};
-			variantsAI[]={};
-			canBlendStep=0;
-			looped=0;
-			minPlayTime=0.64999998;
-			reverse="AadjPercMstpSrasWpstDup_AadjPknlMstpSrasWpstDup";
-			visibleSize=0.400125;
-			actions="PistolAdjustFStandActions";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\erc\stp\ras\pst\AadjPknlMstpSrasWpstDup_AadjPercMstpSrasWpstDup";
-			speed=-0.55000001;
-			leaningFactorBeg=1;
-			leaningFactorEnd=1;
-			interpolationRestart=1;
-			enableOptics=1;
-			soundEnabled=1;
-			soundOverride="adjust_kneel_to_stand";
-			showHandGun=1;
-			aiming="aimingPistol";
-			aimingBody="aimingUpPistol";
-			headBobStrength=0.512438;
-			duty=0.30000001;
-			adjstance="u";
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			canBlendStep = 0;
+			looped = 0;
+			minPlayTime = 0.64999998;
+			reverse = "AadjPercMstpSrasWpstDup_AadjPknlMstpSrasWpstDup";
+			visibleSize = 0.400125;
+			actions = "PistolAdjustFStandActions";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\erc\stp\ras\pst\AadjPknlMstpSrasWpstDup_AadjPercMstpSrasWpstDup";
+			speed = -0.55000001;
+			leaningFactorBeg = 1;
+			leaningFactorEnd = 1;
+			interpolationRestart = 1;
+			enableOptics = 1;
+			soundEnabled = 1;
+			soundOverride = "adjust_kneel_to_stand";
+			showHandGun = 1;
+			aiming = "aimingPistol";
+			aimingBody = "aimingUpPistol";
+			headBobStrength = 0.512438;
+			duty = 0.30000001;
+			adjstance = "u";
 		};
 		class AadjPknlMstpSrasWpstDup_AadjPercMstpSrasWpstDdown: AadjPercMstpSrasWpstDdown
 		{
-			variantsPlayer[]={};
-			variantsAI[]={};
-			canBlendStep=0;
-			looped=0;
-			minPlayTime=0.64999998;
-			reverse="AadjPercMstpSrasWpstDdown_AadjPknlMstpSrasWpstDup";
-			visibleSize=0.400125;
-			actions="PistolAdjustBStandActions";
-			file="\A3\anims_f\Data\Anim\Sdr\adj\erc\stp\ras\pst\AadjPknlMstpSrasWpstDup_AadjPercMstpSrasWpstDdown";
-			speed=-0.30000001;
-			leaningFactorBeg=1;
-			leaningFactorEnd=1;
-			interpolationRestart=1;
-			enableOptics=1;
-			soundEnabled=1;
-			soundOverride="adjust_kneelhigh_to_standlow";
-			soundEdge[]={0.0099999998};
-			showHandGun=1;
-			aiming="aimingPistol";
-			aimingBody="aimingUpPistol";
-			headBobStrength=0.512438;
-			duty=0.30000001;
-			adjstance="d";
+			variantsPlayer[] = {};
+			variantsAI[] = {};
+			canBlendStep = 0;
+			looped = 0;
+			minPlayTime = 0.64999998;
+			reverse = "AadjPercMstpSrasWpstDdown_AadjPknlMstpSrasWpstDup";
+			visibleSize = 0.400125;
+			actions = "PistolAdjustBStandActions";
+			file = "\A3\anims_f\Data\Anim\Sdr\adj\erc\stp\ras\pst\AadjPknlMstpSrasWpstDup_AadjPercMstpSrasWpstDdown";
+			speed = -0.30000001;
+			leaningFactorBeg = 1;
+			leaningFactorEnd = 1;
+			interpolationRestart = 1;
+			enableOptics = 1;
+			soundEnabled = 1;
+			soundOverride = "adjust_kneelhigh_to_standlow";
+			soundEdge[] = {0.0099999998};
+			showHandGun = 1;
+			aiming = "aimingPistol";
+			aimingBody = "aimingUpPistol";
+			headBobStrength = 0.512438;
+			duty = 0.30000001;
+			adjstance = "d";
 		};
 		class AfalPercMstpSrasWpstDnon: AmovPercMstpSrasWpstDnon
 		{
-			file="\A3\anims_f\Data\Anim\sdr\fal\erc\stp\ras\pst\AfalPercMstpSrasWpstDnon";
-			speed=-1.5;
-			aimPrecision=7;
-			interpolationRestart=1;
-			variantsPlayer[]={};
-			variantsAI[]={};
+			file = "\A3\anims_f\Data\Anim\sdr\fal\erc\stp\ras\pst\AfalPercMstpSrasWpstDnon";
+			speed = -1.5;
+			aimPrecision = 7;
+			interpolationRestart = 1;
+			variantsPlayer[] = {};
+			variantsAI[] = {};
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon_turnL",
@@ -13626,12 +13626,12 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AfalPknlMstpSrasWpstDnon: AmovPknlMstpSrasWpstDnon
 		{
-			file="\A3\anims_f\Data\Anim\sdr\fal\knl\stp\ras\pst\AfalPknlMstpSrasWpstDnon";
-			speed=-1;
-			aimPrecision=7;
-			interpolationRestart=1;
-			variantsPlayer[]={};
-			variantsAI[]={};
+			file = "\A3\anims_f\Data\Anim\sdr\fal\knl\stp\ras\pst\AfalPknlMstpSrasWpstDnon";
+			speed = -1;
+			aimPrecision = 7;
+			interpolationRestart = 1;
+			variantsPlayer[] = {};
+			variantsAI[] = {};
 			InterpolateTo[]=
 			{
 				"AidlPknlMstpSrasWpstDnon_AI",
@@ -13715,7 +13715,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AfdsPercMstpSrasWpstDnon_AwopPercMstpSoptWbinDnon",
 				0.0099999998
 			};
-			actions="FiringDrillsPistolStandActions";
+			actions = "FiringDrillsPistolStandActions";
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSrasWpstDnon",
@@ -13730,7 +13730,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AfdsPercMstpSlowWpstDnon: AmovPercMstpSlowWpstDnon
 		{
-			actions="FiringDrillsPistolLowStandActions";
+			actions = "FiringDrillsPistolLowStandActions";
 			ConnectTo[]=
 			{
 				"AfdsPercMstpSlowWpstDnon_AfdsPercMstpSrasWpstDnon",
@@ -13788,7 +13788,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AfdsPknlMstpSrasWpstDnon_inv",
 				0.050000001
 			};
-			actions="FiringDrillsPistolKneelActions";
+			actions = "FiringDrillsPistolKneelActions";
 		};
 		class AfdsPknlMstpSlowWpstDnon: AmovPknlMstpSlowWpstDnon
 		{
@@ -13816,11 +13816,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AfdsPknlMstpSlowWpstDnon_AfdsPpneMstpSrasWpstDnon",
 				0.0099999998
 			};
-			actions="FiringDrillsPistolLowKneelActions";
+			actions = "FiringDrillsPistolLowKneelActions";
 		};
 		class AfdsPercMstpSrasWrflDnon_AfdsPercMstpSrasWpstDnon: AmovPercMstpSrasWrflDnon_AmovPercMstpSrasWpstDnon
 		{
-			actions="FiringDrillsPistolStandActions";
+			actions = "FiringDrillsPistolStandActions";
 			ConnectTo[]=
 			{
 				"AfdsPercMstpSrasWrflDnon_AfdsPercMstpSrasWpstDnon_end",
@@ -13829,7 +13829,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AfdsPercMstpSrasWrflDnon_AfdsPercMstpSrasWpstDnon_end: AmovPercMstpSrasWrflDnon_AmovPercMstpSrasWpstDnon_end
 		{
-			actions="FiringDrillsPistolStandActions";
+			actions = "FiringDrillsPistolStandActions";
 			ConnectTo[]=
 			{
 				"AfdsPercMstpSrasWpstDnon",
@@ -13843,11 +13843,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AfdsPercMstpSrasWpstDnon_AfdsPercMstpSrasWrflDnon_end",
 				0.0099999998
 			};
-			actions="FiringDrillsRifleStandActions";
+			actions = "FiringDrillsRifleStandActions";
 		};
 		class AfdsPknlMstpSrasWrflDnon_AfdsPknlMstpSrasWpstDnon: AmovPknlMstpSrasWrflDnon_AmovPknlMstpSrasWpstDnon
 		{
-			actions="FiringDrillsPistolKneelActions";
+			actions = "FiringDrillsPistolKneelActions";
 			ConnectTo[]=
 			{
 				"AfdsPknlMstpSrasWrflDnon_AfdsPknlMstpSrasWpstDnon_end",
@@ -13856,7 +13856,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AfdsPknlMstpSrasWrflDnon_AfdsPknlMstpSrasWpstDnon_end: AmovPknlMstpSrasWrflDnon_AmovPknlMstpSrasWpstDnon_end
 		{
-			actions="FiringDrillsPistolKneelActions";
+			actions = "FiringDrillsPistolKneelActions";
 			ConnectTo[]=
 			{
 				"AfdsPknlMstpSrasWpstDnon",
@@ -13865,7 +13865,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AfdsPknlMstpSrasWpstDnon_AfdsPknlMstpSrasWrflDnon_end: AmovPknlMstpSrasWpstDnon_AmovPknlMstpSrasWrflDnon_end
 		{
-			actions="FiringDrillsRifleKneelActions";
+			actions = "FiringDrillsRifleKneelActions";
 			ConnectTo[]=
 			{
 				"AfdsPknlMstpSrasWrflDnon",
@@ -13874,7 +13874,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AfdsPknlMstpSrasWpstDnon_AfdsPknlMstpSrasWrflDnon: AmovPknlMstpSrasWpstDnon_AmovPknlMstpSrasWrflDnon
 		{
-			actions="FiringDrillsRifleKneelActions";
+			actions = "FiringDrillsRifleKneelActions";
 			ConnectTo[]=
 			{
 				"AfdsPknlMstpSrasWpstDnon_AfdsPknlMstpSrasWrflDnon_end",
@@ -13888,11 +13888,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AfdsPercMstpSrasWrflDnon",
 				0.0099999998
 			};
-			actions="FiringDrillsRifleStandActions";
+			actions = "FiringDrillsRifleStandActions";
 		};
 		class AfdsPercMstpSrasWpstDnon_AfdsPercMstpSlowWpstDnon: AmovPercMstpSrasWpstDnon_AmovPercMstpSlowWpstDnon
 		{
-			actions="FiringDrillsPistolLowStandActions";
+			actions = "FiringDrillsPistolLowStandActions";
 			ConnectTo[]=
 			{
 				"AfdsPercMstpSlowWpstDnon",
@@ -13906,11 +13906,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AfdsPercMstpSrasWpstDnon",
 				0.0099999998
 			};
-			actions="FiringDrillsPistolStandActions";
+			actions = "FiringDrillsPistolStandActions";
 		};
 		class AfdsPercMstpSlowWpstDnon_AfdsPknlMstpSlowWpstDnon: AmovPercMstpSlowWpstDnon_AmovPknlMstpSlowWpstDnon
 		{
-			actions="FiringDrillsPistolLowKneelActions";
+			actions = "FiringDrillsPistolLowKneelActions";
 			ConnectTo[]=
 			{
 				"AfdsPknlMstpSlowWpstDnon",
@@ -13924,7 +13924,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AfdsPercMstpSlowWpstDnon",
 				0.0099999998
 			};
-			actions="FiringDrillsPistolLowStandActions";
+			actions = "FiringDrillsPistolLowStandActions";
 		};
 		class AfdsPknlMstpSrasWpstDnon_AfdsPercMstpSrasWpstDnon: AmovPknlMstpSrasWpstDnon_AmovPercMstpSrasWpstDnon
 		{
@@ -13933,7 +13933,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AfdsPercMstpSrasWpstDnon",
 				0.0099999998
 			};
-			actions="FiringDrillsPistolStandActions";
+			actions = "FiringDrillsPistolStandActions";
 		};
 		class AfdsPercMstpSrasWpstDnon_AfdsPknlMstpSrasWpstDnon: AmovPercMstpSrasWpstDnon_AmovPknlMstpSrasWpstDnon
 		{
@@ -13942,7 +13942,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AfdsPknlMstpSrasWpstDnon",
 				0.0099999998
 			};
-			actions="FiringDrillsPistolKneelActions";
+			actions = "FiringDrillsPistolKneelActions";
 		};
 		class AfdsPknlMstpSlowWpstDnon_AfdsPknlMstpSrasWpstDnon: AmovPknlMstpSlowWpstDnon_AmovPknlMstpSrasWpstDnon
 		{
@@ -13951,7 +13951,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AfdsPknlMstpSrasWpstDnon",
 				0.0099999998
 			};
-			actions="FiringDrillsPistolKneelActions";
+			actions = "FiringDrillsPistolKneelActions";
 		};
 		class AfdsPknlMstpSrasWpstDnon_AfdsPknlMstpSlowWpstDnon: AmovPknlMstpSrasWpstDnon_AmovPknlMstpSlowWpstDnon
 		{
@@ -13960,7 +13960,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AfdsPknlMstpSlowWpstDnon",
 				0.0099999998
 			};
-			actions="FiringDrillsPistolLowKneelActions";
+			actions = "FiringDrillsPistolLowKneelActions";
 		};
 		class AfdsPercMstpSrasWpstDnon_AfdsPercMstpSnonWnonDnon: AmovPercMstpSrasWpstDnon_AmovPercMstpSnonWnonDnon
 		{
@@ -13969,7 +13969,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AfdsPercMstpSrasWpstDnon_AfdsPercMstpSnonWnonDnon_end",
 				0.0099999998
 			};
-			actions="FiringDrillsCivilStandActions";
+			actions = "FiringDrillsCivilStandActions";
 		};
 		class AfdsPercMstpSrasWpstDnon_AfdsPercMstpSnonWnonDnon_end: AmovPercMstpSrasWpstDnon_AmovPercMstpSnonWnonDnon_end
 		{
@@ -13978,7 +13978,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AfdsPercMstpSnonWnonDnon",
 				0.0099999998
 			};
-			actions="FiringDrillsCivilStandActions";
+			actions = "FiringDrillsCivilStandActions";
 		};
 		class AfdsPercMstpSnonWnonDnon_AfdsPercMstpSrasWpstDnon: AmovPercMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon
 		{
@@ -13987,7 +13987,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AfdsPercMstpSnonWnonDnon_AfdsPercMstpSrasWpstDnon_end",
 				0.0099999998
 			};
-			actions="FiringDrillsPistolStandActions";
+			actions = "FiringDrillsPistolStandActions";
 		};
 		class AfdsPercMstpSnonWnonDnon_AfdsPercMstpSrasWpstDnon_end: AmovPercMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon_end
 		{
@@ -13996,7 +13996,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AfdsPercMstpSrasWpstDnon",
 				0.0099999998
 			};
-			actions="FiringDrillsPistolStandActions";
+			actions = "FiringDrillsPistolStandActions";
 		};
 		class AfdsPknlMstpSnonWnonDnon_AfdsPknlMstpSrasWpstDnon: AmovPknlMstpSnonWnonDnon_AmovPknlMstpSrasWpstDnon
 		{
@@ -14005,7 +14005,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AfdsPknlMstpSnonWnonDnon_AfdsPknlMstpSrasWpstDnon_end",
 				0.0099999998
 			};
-			actions="FiringDrillsPistolKneelActions";
+			actions = "FiringDrillsPistolKneelActions";
 		};
 		class AfdsPknlMstpSnonWnonDnon_AfdsPknlMstpSrasWpstDnon_end: AmovPknlMstpSnonWnonDnon_AmovPknlMstpSrasWpstDnon_end
 		{
@@ -14014,11 +14014,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AfdsPknlMstpSrasWpstDnon",
 				0.0099999998
 			};
-			actions="FiringDrillsPistolKneelActions";
+			actions = "FiringDrillsPistolKneelActions";
 		};
 		class AfdsPercMstpSrasWpstDnon_AwopPercMstpSoptWbinDnon: AmovPercMstpSrasWpstDnon_AwopPercMstpSoptWbinDnon
 		{
-			actions="FiringDrillsBinocStandActions";
+			actions = "FiringDrillsBinocStandActions";
 			ConnectTo[]=
 			{
 				"AfdsPercMstpSrasWpstDnon_AwopPercMstpSoptWbinDnon_end",
@@ -14027,7 +14027,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AfdsPercMstpSrasWpstDnon_AwopPercMstpSoptWbinDnon_end: AmovPercMstpSrasWpstDnon_AwopPercMstpSoptWbinDnon_end
 		{
-			actions="FiringDrillsBinocStandActions";
+			actions = "FiringDrillsBinocStandActions";
 			ConnectTo[]=
 			{
 				"AfdsPercMstpSoptWbinDnon",
@@ -14036,7 +14036,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AfdsPknlMstpSrasWpstDnon_AwopPknlMstpSoptWbinDnon: AmovPknlMstpSrasWpstDnon_AwopPknlMstpSoptWbinDnon
 		{
-			actions="FiringDrillsBinocKneelActions";
+			actions = "FiringDrillsBinocKneelActions";
 			ConnectTo[]=
 			{
 				"AfdsPknlMstpSrasWpstDnon_AwopPknlMstpSoptWbinDnon_end",
@@ -14045,7 +14045,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AfdsPknlMstpSrasWpstDnon_AwopPknlMstpSoptWbinDnon_end: AmovPknlMstpSrasWpstDnon_AwopPknlMstpSoptWbinDnon_end
 		{
-			actions="FiringDrillsBinocKneelActions";
+			actions = "FiringDrillsBinocKneelActions";
 			ConnectTo[]=
 			{
 				"AfdsPknlMstpSoptWbinDnon",
@@ -14054,7 +14054,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AwopPercMstpSoptWbinDnon_AfdsPercMstpSrasWpstDnon: AwopPercMstpSoptWbinDnon_AmovPercMstpSrasWpstDnon
 		{
-			actions="FiringDrillsPistolStandActions";
+			actions = "FiringDrillsPistolStandActions";
 			ConnectTo[]=
 			{
 				"AwopPercMstpSoptWbinDnon_AfdsPercMstpSrasWpstDnon_end",
@@ -14063,7 +14063,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AwopPercMstpSoptWbinDnon_AfdsPercMstpSrasWpstDnon_end: AwopPercMstpSoptWbinDnon_AmovPercMstpSrasWpstDnon_end
 		{
-			actions="FiringDrillsPistolStandActions";
+			actions = "FiringDrillsPistolStandActions";
 			ConnectTo[]=
 			{
 				"AfdsPercMstpSrasWpstDnon",
@@ -14072,7 +14072,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AwopPknlMstpSoptWbinDnon_AfdsPknlMstpSrasWpstDnon: AwopPknlMstpSoptWbinDnon_AmovPknlMstpSrasWpstDnon
 		{
-			actions="FiringDrillsPistolKneelActions";
+			actions = "FiringDrillsPistolKneelActions";
 			ConnectTo[]=
 			{
 				"AwopPknlMstpSoptWbinDnon_AfdsPknlMstpSrasWpstDnon_end",
@@ -14081,7 +14081,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AwopPknlMstpSoptWbinDnon_AfdsPknlMstpSrasWpstDnon_end: AwopPknlMstpSoptWbinDnon_AmovPknlMstpSrasWpstDnon_end
 		{
-			actions="FiringDrillsPistolKneelActions";
+			actions = "FiringDrillsPistolKneelActions";
 			ConnectTo[]=
 			{
 				"AfdsPknlMstpSrasWpstDnon",
@@ -14090,7 +14090,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AfdsPercMstpSrasWpstDnon_turnL: AmovPercMstpSrasWpstDnon_turnL
 		{
-			actions="FiringDrillsPistolStandActions";
+			actions = "FiringDrillsPistolStandActions";
 			InterpolateTo[]=
 			{
 				"AfdsPercMstpSrasWpstDnon",
@@ -14104,7 +14104,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AfdsPercMstpSrasWpstDnon_turnR: AmovPercMstpSrasWpstDnon_turnR
 		{
-			actions="FiringDrillsPistolStandActions";
+			actions = "FiringDrillsPistolStandActions";
 			InterpolateTo[]=
 			{
 				"AfdsPercMstpSrasWpstDnon",
@@ -14118,7 +14118,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AfdsPercMstpSlowWpstDnon_turnL: AmovPercMstpSlowWpstDnon_turnL
 		{
-			actions="FiringDrillsPistolLowStandActions";
+			actions = "FiringDrillsPistolLowStandActions";
 			InterpolateTo[]=
 			{
 				"AfdsPercMstpSlowWpstDnon",
@@ -14132,7 +14132,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AfdsPercMstpSlowWpstDnon_turnR: AmovPercMstpSlowWpstDnon_turnR
 		{
-			actions="FiringDrillsPistolLowStandActions";
+			actions = "FiringDrillsPistolLowStandActions";
 			InterpolateTo[]=
 			{
 				"AfdsPercMstpSlowWpstDnon",
@@ -14146,7 +14146,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AfdsPknlMstpSrasWpstDnon_turnL: AmovPknlMstpSrasWpstDnon_turnL
 		{
-			actions="FiringDrillsPistolKneelActions";
+			actions = "FiringDrillsPistolKneelActions";
 			InterpolateTo[]=
 			{
 				"AfdsPknlMstpSrasWpstDnon",
@@ -14160,7 +14160,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AfdsPknlMstpSrasWpstDnon_turnR: AmovPknlMstpSrasWpstDnon_turnR
 		{
-			actions="FiringDrillsPistolKneelActions";
+			actions = "FiringDrillsPistolKneelActions";
 			InterpolateTo[]=
 			{
 				"AfdsPknlMstpSrasWpstDnon",
@@ -14174,7 +14174,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AfdsPknlMstpSlowWpstDnon_turnL: AmovPknlMstpSlowWpstDnon_turnL
 		{
-			actions="FiringDrillsPistolLowKneelActions";
+			actions = "FiringDrillsPistolLowKneelActions";
 			InterpolateTo[]=
 			{
 				"AfdsPknlMstpSlowWpstDnon",
@@ -14188,7 +14188,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AfdsPknlMstpSlowWpstDnon_turnR: AmovPknlMstpSlowWpstDnon_turnR
 		{
-			actions="FiringDrillsPistolLowKneelActions";
+			actions = "FiringDrillsPistolLowKneelActions";
 			InterpolateTo[]=
 			{
 				"AfdsPknlMstpSlowWpstDnon",

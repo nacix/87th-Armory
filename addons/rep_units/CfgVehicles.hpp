@@ -232,7 +232,7 @@ class CfgVehicles {
 		respawnMagazines[] = { MAGAZINES };
 		class EventHandlers
 		{
-			init="[_this select 0, ""JLTS_GAR_medic""] call BIS_fnc_setUnitInsignia;";
+			init = "[_this select 0, ""JLTS_GAR_medic""] call BIS_fnc_setUnitInsignia;";
 		};
 	};
 	NEW_CLASS(Clone_EOD): JLTS_Clone_P2_eod 
@@ -251,7 +251,7 @@ class CfgVehicles {
 		respawnMagazines[] = { MAGAZINES };
 		class EventHandlers
 		{
-			init="[_this select 0, ""JLTS_GAR_EOD""] call BIS_fnc_setUnitInsignia;";
+			init = "[_this select 0, ""JLTS_GAR_EOD""] call BIS_fnc_setUnitInsignia;";
 		};
 	};
 	NEW_CLASS(Clone_RTO): JLTS_Clone_P2_RTO 
@@ -425,13 +425,13 @@ class CfgVehicles {
 	{
 		displayName = "Clone Medic";
 		attendant = 1;
-		icon="iconManMedic";
+		icon = "iconManMedic";
 		P1_IDENTITY(Clone_P1_Medic)
 		EQUIPMENT(TAG_CLASS(P1_Trooper_Helmet), TAG_CLASS(Medic_Vest), TAG_CLASS(Medic_Backpack), JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
 		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 0, 0)
 		class EventHandlers
 		{
-			init="[_this select 0, ""JLTS_GAR_medic""] call BIS_fnc_setUnitInsignia;";
+			init = "[_this select 0, ""JLTS_GAR_medic""] call BIS_fnc_setUnitInsignia;";
 		};
 	};
 	NEW_CLASS(Clone_P1_EOD): TAG_CLASS(Clone_P1_DC15S)
@@ -450,7 +450,7 @@ class CfgVehicles {
 		respawnMagazines[] = { MAGAZINES };
 		class EventHandlers
 		{
-			init="[_this select 0, ""JLTS_GAR_EOD""] call BIS_fnc_setUnitInsignia;";
+			init = "[_this select 0, ""JLTS_GAR_EOD""] call BIS_fnc_setUnitInsignia;";
 		};
 	};
 	NEW_CLASS(Clone_P1_RTO): TAG_CLASS(Clone_P1_DC15S)
@@ -534,7 +534,7 @@ class CfgVehicles {
 	{
 		displayName = "ARF Spotter";
 		ARF_IDENTITY(ARF_Spotter)
-		EQUIPMENT(TAG_CLASS(ARF_Helmet), TAG_CLASS(Recon_Accessories), TAG_CLASS(Belt_Bag), JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
+		EQUIPMENT(TAG_CLASS(ARF_Helmet), TAG_CLASS(Recon_NCO_Accessories), TAG_CLASS(Belt_Bag), JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
 	};
 	NEW_CLASS(ARF_JTAC): TAG_CLASS(Clone_RTO)
 	{
@@ -683,7 +683,7 @@ class CfgVehicles {
 	{
 		displayName = "BARC Spotter";
 		BARC_IDENTITY(BARC_Spotter)
-		EQUIPMENT(TAG_CLASS(BARC_Helmet), TAG_CLASS(Recon_Accessories), TAG_CLASS(Belt_Bag), JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
+		EQUIPMENT(TAG_CLASS(BARC_Helmet), TAG_CLASS(Recon_NCO_Accessories), TAG_CLASS(Belt_Bag), JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
 	};
 	NEW_CLASS(BARC_JTAC): TAG_CLASS(ARF_JTAC)
 	{
@@ -702,24 +702,32 @@ class CfgVehicles {
 		displayName = "BARC Sergeant";
 		BARC_IDENTITY(BARC_NCO)
 		EQUIPMENT(TAG_CLASS(BARC_Helmet), TAG_CLASS(Recon_Officer_Accessories), TAG_CLASS(Belt_Bag), TAG_CLASS(Rangefinder), JLTS_clone_comlink)
+		headgearList[] = {};
+		class EventHandlers {};
 	};
 	NEW_CLASS(BARC_Lieutenant): TAG_CLASS(ARF_Lieutenant)
 	{
 		displayName = "BARC Lieutenant";
 		BARC_IDENTITY(BARC_Lieutenant)
 		EQUIPMENT(TAG_CLASS(BARC_Helmet), TAG_CLASS(Lieutenant_Accessories), TAG_CLASS(Belt_Bag), TAG_CLASS(Rangefinder), JLTS_clone_comlink)
+		headgearList[] = {};
+		class EventHandlers {};
 	};
 	NEW_CLASS(BARC_Captain): TAG_CLASS(ARF_Captain)
 	{
 		displayName = "BARC Captain";
 		BARC_IDENTITY(BARC_Captain)
 		EQUIPMENT(TAG_CLASS(BARC_Helmet), TAG_CLASS(Officer_Accessories), TAG_CLASS(Belt_Bag), TAG_CLASS(Rangefinder), JLTS_clone_comlink)
+		headgearList[] = {};
+		class EventHandlers {};
 	};
 	NEW_CLASS(BARC_Major): TAG_CLASS(ARF_Major)
 	{
 		displayName = "BARC Major";
 		BARC_IDENTITY(BARC_Major)
 		EQUIPMENT(TAG_CLASS(BARC_Helmet), TAG_CLASS(Commander_Accessories), TAG_CLASS(Belt_Bag), TAG_CLASS(Rangefinder), JLTS_clone_comlink)
+		headgearList[] = {};
+		class EventHandlers {};
 	};
 
 	NEW_CLASS(AB_DC15C): TAG_CLASS(Clone_DC15S)
@@ -854,7 +862,7 @@ class CfgVehicles {
 		respawnMagazines[] = { MAGAZINES };
 		class EventHandlers
 		{
-			init="[_this select 0, ""JLTS_GAR""] call BIS_fnc_setUnitInsignia;";
+			init = "[_this select 0, ""JLTS_GAR""] call BIS_fnc_setUnitInsignia;";
 		};
 	};
 	NEW_CLASS(ARC_Westar): TAG_CLASS(ARC_DC15S)
@@ -937,7 +945,7 @@ class CfgVehicles {
 		respawnMagazines[] = { MAGAZINES };
 		class EventHandlers
 		{
-			init="[_this select 0, ""JLTS_GAR""] call BIS_fnc_setUnitInsignia;";
+			init = "[_this select 0, ""JLTS_GAR""] call BIS_fnc_setUnitInsignia;";
 		};
 	};
 	NEW_CLASS(ARC_Sniper): TAG_CLASS(ARF_Sniper)
@@ -953,7 +961,7 @@ class CfgVehicles {
 		respawnMagazines[] = { MAGAZINES };
 		class EventHandlers
 		{
-			init="[_this select 0, ""JLTS_GAR""] call BIS_fnc_setUnitInsignia;";
+			init = "[_this select 0, ""JLTS_GAR""] call BIS_fnc_setUnitInsignia;";
 		};
 	};
 	NEW_CLASS(ARC_Lieutenant): TAG_CLASS(ARF_Lieutenant)
@@ -969,7 +977,7 @@ class CfgVehicles {
 		respawnMagazines[] = { MAGAZINES };
 		class EventHandlers
 		{
-			init="[_this select 0, ""JLTS_GAR""] call BIS_fnc_setUnitInsignia;";
+			init = "[_this select 0, ""JLTS_GAR""] call BIS_fnc_setUnitInsignia;";
 		};
 	};
 

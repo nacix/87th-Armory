@@ -115,9 +115,9 @@ class CfgVehicles
 
 	NEW_CLASS(ATRT): 3AS_ATRT
 	{
-		author="Anorexican";
-		displayName=TAG_NAME(AT-RT);
-		genericNames=CLASS(Names_ATRT);
+		author = "Anorexican";
+		displayName = TAG_NAME(AT-RT);
+		genericNames = CLASS(Names_ATRT);
 		icon = "JLTS_iconManMarshalCMDR";
 		faction = CLASS(Legion);
 		editorSubcategory = CLASS(Vehicles);

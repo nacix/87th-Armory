@@ -57,7 +57,7 @@ class CfgWeapons
 			{ \
 				class CowsSlot: CowsSlot \
 				{ \
-					linkProxy="\A3\data_f\proxies\weapon_slots\TOP"; \
+					linkProxy = "\A3\data_f\proxies\weapon_slots\TOP"; \
 					compatibleItems[]= \
 					{ \
 						"3AS_Optic_LEScope_DC15A" \
@@ -125,8 +125,8 @@ class CfgWeapons
 	{
 		author = "Anorexican";
 		displayName = TAG_NAME(DC-Series Laser Module);
-		picture="\MRC\JLTS\optionals\Glocko\data\ui\Glocko_flash_ui_ca.paa";
-		model="\MRC\JLTS\optionals\Glocko\Glocko_flash.p3d";
+		picture = "\MRC\JLTS\optionals\Glocko\data\ui\Glocko_flash_ui_ca.paa";
+		model = "\MRC\JLTS\optionals\Glocko\Glocko_flash.p3d";
 
 		class ItemInfo
 		{
@@ -162,8 +162,8 @@ class CfgWeapons
 		author = "Anorexican";
 		scope = 1;
 		displayName = TAG_NAME(DC-Series Laser Module);
-		picture="\MRC\JLTS\optionals\Glocko\data\ui\Glocko_flash_ui_ca.paa";
-		model="\MRC\JLTS\optionals\Glocko\Glocko_flash.p3d";
+		picture = "\MRC\JLTS\optionals\Glocko\data\ui\Glocko_flash_ui_ca.paa";
+		model = "\MRC\JLTS\optionals\Glocko\Glocko_flash.p3d";
 
 		class ItemInfo
 		{
@@ -278,13 +278,13 @@ class CfgWeapons
 
 	NEW_CLASS(Muzzle_Stun): JLTS_stun_muzzle
 	{
-		aiDispersionCoefX=2;
-		aiDispersionCoefY=2;
-		autoFire=0;
-		ballisticsComputer=0;
-		discreteDistance[]={50};
-		discreteDistanceInitIndex=0;
-		displayName="$STR_JLTS_names_StunMode";
+		aiDispersionCoefX = 2;
+		aiDispersionCoefY = 2;
+		autoFire = 0;
+		ballisticsComputer = 0;
+		discreteDistance[] = {50};
+		discreteDistanceInitIndex = 0;
+		displayName = "$STR_JLTS_names_StunMode";
 		drySound[]=
 		{
 			"MRC\JLTS\weapons\Core\sounds\weapon_dry.wss",
@@ -292,14 +292,14 @@ class CfgWeapons
 			1,
 			10
 		};
-		fireSpreadAngle=0.94999999;
+		fireSpreadAngle = 0.94999999;
 		magazines[]=
 		{
 			CLASS(Stun_Mag_Long)
 		};
-		magazineWell[]={};
-		maxZeroing=50;
-		reloadAction="GestureReloadMX";
+		magazineWell[] = {};
+		maxZeroing = 50;
+		reloadAction = "GestureReloadMX";
 		reloadMagazineSound[]=
 		{
 			"A3\Sounds_F\arsenal\weapons\Rifles\Mx\Reload_Mx",
@@ -319,14 +319,14 @@ class CfgWeapons
 			};
 			class BaseSoundModeType
 			{
-				weaponSoundEffect="";
-				closure1[]={};
-				closure2[]={};
-				soundClosure[]={};
+				weaponSoundEffect = "";
+				closure1[] = {};
+				closure2[] = {};
+				soundClosure[] = {};
 			};
 			class StandardSound: BaseSoundModeType
 			{
-				weaponSoundEffect="";
+				weaponSoundEffect = "";
 				begin1[]=
 				{
 					"MRC\JLTS\weapons\Core\sounds\stun",
@@ -340,18 +340,18 @@ class CfgWeapons
 					1
 				};
 			};
-			recoil="recoil_pistol_light";
-			recoilProne="recoil_prone_pistol_light";
-			reloadTime=0.5;
-			dispersion=0.0029;
-			minRange=5;
-			minRangeProbab=0.30000001;
-			midRange=25;
-			midRangeProbab=0.60000002;
-			maxRange=50;
-			maxRangeProbab=0.1;
-			aiRateOfFire=2;
-			aiRateOfFireDistance=25;
+			recoil = "recoil_pistol_light";
+			recoilProne = "recoil_prone_pistol_light";
+			reloadTime = 0.5;
+			dispersion = 0.0029;
+			minRange = 5;
+			minRangeProbab = 0.30000001;
+			midRange = 25;
+			midRangeProbab = 0.60000002;
+			maxRange = 50;
+			maxRangeProbab = 0.1;
+			aiRateOfFire = 2;
+			aiRateOfFireDistance = 25;
 		};
 	};
 	NEW_CLASS(Muzzle_Stun_Super): TAG_CLASS(Muzzle_Stun)
@@ -364,12 +364,12 @@ class CfgWeapons
 
 	NEW_CLASS(ATRT_Weapon): 3AS_ATRT_Weapon_F
 	{
-		displayName=TAG_NAME(AT-RT Weapon);
+		displayName = TAG_NAME(AT-RT Weapon);
 		class WeaponSlotsInfo
 		{
 			class CowsSlot
 			{
-				linkProxy="\A3\data_f\proxies\weapon_slots\TOP";
+				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
 				compatibleItems[]=
 				{
 					CLASS(optic_ATRT)
@@ -406,7 +406,7 @@ class CfgWeapons
 		};
 		class Stun: TAG_CLASS(Muzzle_Stun)
 		{
-			reloadAction="GestureReloadPistol";
+			reloadAction = "GestureReloadPistol";
 			reloadMagazineSound[]=
 			{
 				"A3\Sounds_F\arsenal\weapons\Pistols\P07\reload_P07",
@@ -417,30 +417,30 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			reloadTime=0.12;
-			dispersion=0.0029;
-			minRange=5;
-			minRangeProbab=0.30000001;
-			midRange=25;
-			midRangeProbab=0.60000002;
-			maxRange=50;
-			maxRangeProbab=0.1;
-			aiRateOfFire=2;
-			aiRateOfFireDistance=25;
+			reloadTime = 0.12;
+			dispersion = 0.0029;
+			minRange = 5;
+			minRangeProbab = 0.30000001;
+			midRange = 25;
+			midRangeProbab = 0.60000002;
+			maxRange = 50;
+			maxRangeProbab = 0.1;
+			aiRateOfFire = 2;
+			aiRateOfFireDistance = 25;
 			sounds[]=
 			{
 				"StandardSound"
 			};
 			class BaseSoundModeType
 			{
-				weaponSoundEffect="";
-				closure1[]={};
-				closure2[]={};
-				soundClosure[]={};
+				weaponSoundEffect = "";
+				closure1[] = {};
+				closure2[] = {};
+				soundClosure[] = {};
 			};
 			class StandardSound: BaseSoundModeType
 			{
-				weaponSoundEffect="";
+				weaponSoundEffect = "";
 				begin1[]=
 				{
 					QPATHTOF(data\sounds\dc17sa.wss),
@@ -457,31 +457,31 @@ class CfgWeapons
 		};
 		class Burst: Mode_Burst
 		{
-			burst=3;
-			reloadTime=0.08;
-			dispersion=0.0029;
-			minRange=5;
-			minRangeProbab=0.30000001;
-			midRange=25;
-			midRangeProbab=0.60000002;
-			maxRange=50;
-			maxRangeProbab=0.1;
-			aiRateOfFire=2;
-			aiRateOfFireDistance=25;
+			burst = 3;
+			reloadTime = 0.08;
+			dispersion = 0.0029;
+			minRange = 5;
+			minRangeProbab = 0.30000001;
+			midRange = 25;
+			midRangeProbab = 0.60000002;
+			maxRange = 50;
+			maxRangeProbab = 0.1;
+			aiRateOfFire = 2;
+			aiRateOfFireDistance = 25;
 			sounds[]=
 			{
 				"StandardSound"
 			};
 			class BaseSoundModeType
 			{
-				weaponSoundEffect="";
-				closure1[]={};
-				closure2[]={};
-				soundClosure[]={};
+				weaponSoundEffect = "";
+				closure1[] = {};
+				closure2[] = {};
+				soundClosure[] = {};
 			};
 			class StandardSound: BaseSoundModeType
 			{
-				weaponSoundEffect="";
+				weaponSoundEffect = "";
 				begin1[]=
 				{
 					QPATHTOF(data\sounds\dc17sa.wss),
@@ -507,7 +507,7 @@ class CfgWeapons
 		{
 			class CowsSlot: CowsSlot
 			{
-				linkProxy="\A3\data_f\proxies\weapon_slots\TOP";
+				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
 				compatibleItems[] = { "3AS_optic_holo_DC15S" };
 			};
 			class PointerSlot: PointerSlot
@@ -534,16 +534,16 @@ class CfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			reloadTime=0.16;
-			dispersion=0.00106;
-			minRange=0;
-			minRangeProbab=0.89999998;
-			midRange=15;
-			midRangeProbab=0.69999999;
-			maxRange=30;
-			maxRangeProbab=0.1;
-			soundContinuous=0;
-			soundBurst=0;
+			reloadTime = 0.16;
+			dispersion = 0.00106;
+			minRange = 0;
+			minRangeProbab = 0.89999998;
+			midRange = 15;
+			midRangeProbab = 0.69999999;
+			maxRange = 30;
+			maxRangeProbab = 0.1;
+			soundContinuous = 0;
+			soundBurst = 0;
 			sounds[]=
 			{
 				"StandardSound"
@@ -551,7 +551,7 @@ class CfgWeapons
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType
 			{
-				weaponSoundEffect="";
+				weaponSoundEffect = "";
 				begin1[]=
 				{
 					QPATHTOF(data\sounds\dc15c.wss),
@@ -568,16 +568,16 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			reloadTime=0.14;
-			dispersion=0.00106;
-			minRange=2;
-			minRangeProbab=0.30000001;
-			midRange=150;
-			midRangeProbab=0.69999999;
-			maxRange=350;
-			maxRangeProbab=0.1;
-			soundContinuous=0;
-			soundBurst=0;
+			reloadTime = 0.14;
+			dispersion = 0.00106;
+			minRange = 2;
+			minRangeProbab = 0.30000001;
+			midRange = 150;
+			midRangeProbab = 0.69999999;
+			maxRange = 350;
+			maxRangeProbab = 0.1;
+			soundContinuous = 0;
+			soundBurst = 0;
 			sounds[]=
 			{
 				"StandardSound"
@@ -585,7 +585,7 @@ class CfgWeapons
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType
 			{
-				weaponSoundEffect="";
+				weaponSoundEffect = "";
 				begin1[]=
 				{
 					QPATHTOF(data\sounds\dc15c.wss),
@@ -600,12 +600,12 @@ class CfgWeapons
 				};
 			};
 		};
-		opticsZoomMin=0.2;
-		opticsZoomMax=1.25;
-		opticsZoomInit=0.5;
+		opticsZoomMin = 0.2;
+		opticsZoomMax = 1.25;
+		opticsZoomInit = 0.5;
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
-			mass=45;
+			mass = 45;
 		};
 	};
 
@@ -626,18 +626,18 @@ class CfgWeapons
 		recoilProne = "assaultRifleBase";
 		class Burst: Mode_Burst
 		{
-			burst=2;
-			reloadTime=0.135;
-			dispersion=0.001;
+			burst = 2;
+			reloadTime = 0.135;
+			dispersion = 0.001;
 			textureType = "dual";
-			minRange=0;
-			minRangeProbab=0.89999998;
-			midRange=15;
-			midRangeProbab=0.69999999;
-			maxRange=30;
-			maxRangeProbab=0.1;
-			soundContinuous=0;
-			soundBurst=0;
+			minRange = 0;
+			minRangeProbab = 0.89999998;
+			midRange = 15;
+			midRangeProbab = 0.69999999;
+			maxRange = 30;
+			maxRangeProbab = 0.1;
+			soundContinuous = 0;
+			soundBurst = 0;
 			sounds[]=
 			{
 				"StandardSound"
@@ -645,7 +645,7 @@ class CfgWeapons
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType
 			{
-				weaponSoundEffect="";
+				weaponSoundEffect = "";
 				begin1[]=
 				{
 					QPATHTOF(data\sounds\dc15a.wss),
@@ -662,16 +662,16 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			reloadTime=0.16;
-			dispersion=0.001;
-			minRange=2;
-			minRangeProbab=0.30000001;
-			midRange=150;
-			midRangeProbab=0.69999999;
-			maxRange=350;
-			maxRangeProbab=0.1;
-			soundContinuous=0;
-			soundBurst=0;
+			reloadTime = 0.16;
+			dispersion = 0.001;
+			minRange = 2;
+			minRangeProbab = 0.30000001;
+			midRange = 150;
+			midRangeProbab = 0.69999999;
+			maxRange = 350;
+			maxRangeProbab = 0.1;
+			soundContinuous = 0;
+			soundBurst = 0;
 			sounds[]=
 			{
 				"StandardSound"
@@ -679,7 +679,7 @@ class CfgWeapons
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType
 			{
-				weaponSoundEffect="";
+				weaponSoundEffect = "";
 				begin1[]=
 				{
 					QPATHTOF(data\sounds\dc15a.wss),
@@ -696,15 +696,15 @@ class CfgWeapons
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
-			mass=60;
+			mass = 60;
 		};
 	};
 	NEW_CLASS(DC15C_GL): TAG_CLASS(DC15C)
 	{
 		displayName = TAG_NAME(DC-15C Battle Rifle (UGL));
-		model="3AS\3AS_Weapons\DC15C\3AS_DC15C_GL.p3d";
-		weaponInfoType="RscWeaponZeroing";
-		modelOptics="3AS\3AS_Weapons\Data\A3_2d_optic.p3d";
+		model = "3AS\3AS_Weapons\DC15C\3AS_DC15C_GL.p3d";
+		weaponInfoType = "RscWeaponZeroing";
+		modelOptics = "3AS\3AS_Weapons\Data\A3_2d_optic.p3d";
 		muzzles[]=
 		{
 			"this",
@@ -719,52 +719,52 @@ class CfgWeapons
 		{
 			class Ironsights
 			{
-				opticsID=1;
-				useModelOptics=0;
-				opticsFlare="true";
+				opticsID = 1;
+				useModelOptics = 0;
+				opticsFlare = "true";
 				opticsPPEffects[]=
 				{
 					"OpticsCHAbera5",
 					"OpticsBlur5"
 				};
-				opticsDisablePeripherialVision=0.67000002;
-				opticsZoomMin=0.375;
-				opticsZoomMax=1.1;
-				opticsZoomInit=0.75;
-				memoryPointCamera="eye";
-				visionMode[]={};
-				distanceZoomMin=100;
-				distanceZoomMax=100;
+				opticsDisablePeripherialVision = 0.67000002;
+				opticsZoomMin = 0.375;
+				opticsZoomMax = 1.1;
+				opticsZoomInit = 0.75;
+				memoryPointCamera = "eye";
+				visionMode[] = {};
+				distanceZoomMin = 100;
+				distanceZoomMax = 100;
 			};
 			class Scope: Ironsights
 			{
-				opticsID=2;
-				useModelOptics=1;
+				opticsID = 2;
+				useModelOptics = 1;
 				opticsPPEffects[]=
 				{
 					"OpticsCHAbera5",
 					"OpticsBlur5"
 				};
-				opticsDisablePeripherialVision=0.67000002;
-				opticsZoomMin=0.122173;
-				opticsZoomMax=0.122173;
-				opticsZoomInit=0.122173;
-				memoryPointCamera="opticView";
+				opticsDisablePeripherialVision = 0.67000002;
+				opticsZoomMin = 0.122173;
+				opticsZoomMax = 0.122173;
+				opticsZoomInit = 0.122173;
+				memoryPointCamera = "opticView";
 				visionMode[]=
 				{
 					"Normal",
 					"NVG",
 					"TI"
 				};
-				opticsFlare="true";
-				distanceZoomMin=100;
-				distanceZoomMax=100;
-				cameraDir="";
+				opticsFlare = "true";
+				distanceZoomMin = 100;
+				distanceZoomMax = 100;
+				cameraDir = "";
 			};
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
-			mass=75;
+			mass = 75;
 			class CowsSlot: CowsSlot
 			{
 				compatibleItems[]=
@@ -790,16 +790,16 @@ class CfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			reloadTime=0.14;
-			dispersion=0.001;
-			minRange=0;
-			minRangeProbab=0.89999998;
-			midRange=15;
-			midRangeProbab=0.69999999;
-			maxRange=30;
-			maxRangeProbab=0.1;
-			soundContinuous=0;
-			soundBurst=0;
+			reloadTime = 0.14;
+			dispersion = 0.001;
+			minRange = 0;
+			minRangeProbab = 0.89999998;
+			midRange = 15;
+			midRangeProbab = 0.69999999;
+			maxRange = 30;
+			maxRangeProbab = 0.1;
+			soundContinuous = 0;
+			soundBurst = 0;
 			sounds[]=
 			{
 				"StandardSound"
@@ -807,7 +807,7 @@ class CfgWeapons
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType
 			{
-				weaponSoundEffect="";
+				weaponSoundEffect = "";
 				begin1[]=
 				{
 					QPATHTOF(data\sounds\dc15a.wss),
@@ -824,16 +824,16 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			reloadTime=0.12;
-			dispersion=0.001;
-			minRange=2;
-			minRangeProbab=0.5;
-			midRange=200;
-			midRangeProbab=0.69999999;
-			maxRange=400;
-			maxRangeProbab=0.30000001;
-			soundContinuous=0;
-			soundBurst=0;
+			reloadTime = 0.12;
+			dispersion = 0.001;
+			minRange = 2;
+			minRangeProbab = 0.5;
+			midRange = 200;
+			midRangeProbab = 0.69999999;
+			maxRange = 400;
+			maxRangeProbab = 0.30000001;
+			soundContinuous = 0;
+			soundBurst = 0;
 			sounds[]=
 			{
 				"StandardSound"
@@ -841,7 +841,7 @@ class CfgWeapons
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType
 			{
-				weaponSoundEffect="";
+				weaponSoundEffect = "";
 				begin1[]=
 				{
 					QPATHTOF(data\sounds\dc15a.wss),
@@ -858,20 +858,20 @@ class CfgWeapons
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
-			mass=95;
+			mass = 95;
 			class MuzzleSlot: MuzzleSlot
 			{
-				linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
+				linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
 				compatibleItems[]=
 				{
 					"3AS_Muzzle_LE_DC15A"
 				};
-				iconPosition[]={0,0.44999999};
-				iconScale=0.2;
+				iconPosition[] = {0,0.44999999};
+				iconScale = 0.2;
 			};
 			class CowsSlot: CowsSlot
 			{
-				linkProxy="\A3\data_f\proxies\weapon_slots\TOP";
+				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
 				compatibleItems[]=
 				{
 					"3AS_Optic_Red_DC15A"
@@ -879,7 +879,7 @@ class CfgWeapons
 			};
 			class PointerSlot: PointerSlot
 			{
-				linkProxy="\A3\data_f\proxies\weapon_slots\SIDE";
+				linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
 				compatibleItems[]=
 				{
 					"acc_flashlight",
@@ -888,17 +888,17 @@ class CfgWeapons
 			};
 			class UnderBarrelSlot: UnderBarrelSlot
 			{
-				linkProxy="\A3\data_f_mark\proxies\weapon_slots\UNDERBARREL";
-				compatibleItems[]={};
+				linkProxy = "\A3\data_f_mark\proxies\weapon_slots\UNDERBARREL";
+				compatibleItems[] = {};
 			};
 		};
 	};
 	NEW_CLASS(DC15A_GL): TAG_CLASS(DC15A)
 	{
 		displayName = TAG_NAME(DC-15A Assault Rifle (UGL));
-		model="3AS\3AS_Weapons\DC15A\3AS_DC15A_GL.p3d";
-		weaponInfoType="RscWeaponZeroing";
-		modelOptics="3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
+		model = "3AS\3AS_Weapons\DC15A\3AS_DC15A_GL.p3d";
+		weaponInfoType = "RscWeaponZeroing";
+		modelOptics = "3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
 		muzzles[]=
 		{
 			"this",
@@ -908,27 +908,27 @@ class CfgWeapons
 		{
 			class Ironsights
 			{
-				opticsID=1;
-				useModelOptics=0;
-				opticsFlare="true";
+				opticsID = 1;
+				useModelOptics = 0;
+				opticsFlare = "true";
 				opticsPPEffects[]=
 				{
 					"OpticsCHAbera5",
 					"OpticsBlur5"
 				};
-				opticsDisablePeripherialVision=0.67000002;
-				opticsZoomMin=0.25;
-				opticsZoomMax=1.1;
-				opticsZoomInit=0.75;
-				memoryPointCamera="eye";
-				visionMode[]={};
-				distanceZoomMin=100;
-				distanceZoomMax=100;
+				opticsDisablePeripherialVision = 0.67000002;
+				opticsZoomMin = 0.25;
+				opticsZoomMax = 1.1;
+				opticsZoomInit = 0.75;
+				memoryPointCamera = "eye";
+				visionMode[] = {};
+				distanceZoomMin = 100;
+				distanceZoomMax = 100;
 			};
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
-			mass=110;
+			mass = 110;
 		};
 	};
 
@@ -943,17 +943,17 @@ class CfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			reloadTime=0.1325;
+			reloadTime = 0.1325;
 			textureType = "fastAuto";
-			dispersion=0.00106;
-			minRange=0;
-			minRangeProbab=0.89999998;
-			midRange=15;
-			midRangeProbab=0.69999999;
-			maxRange=30;
-			maxRangeProbab=0.1;
-			soundContinuous=0;
-			soundBurst=0;
+			dispersion = 0.00106;
+			minRange = 0;
+			minRangeProbab = 0.89999998;
+			midRange = 15;
+			midRangeProbab = 0.69999999;
+			maxRange = 30;
+			maxRangeProbab = 0.1;
+			soundContinuous = 0;
+			soundBurst = 0;
 			sounds[]=
 			{
 				"StandardSound"
@@ -961,7 +961,7 @@ class CfgWeapons
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType
 			{
-				weaponSoundEffect="";
+				weaponSoundEffect = "";
 				begin1[]=
 				{
 					QPATHTOF(data\sounds\dc15l.wss),
@@ -978,15 +978,15 @@ class CfgWeapons
 		};
 		class FullAutoSlow: FullAuto
 		{
-			reloadTime=0.18;
+			reloadTime = 0.18;
 			textureType = "fullAuto";
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
-			mass=120;
+			mass = 120;
 			class CowsSlot: CowsSlot
 			{
-				linkProxy="\A3\data_f\proxies\weapon_slots\TOP";
+				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
 				compatibleItems[]=
 				{
 					CLASS(Optic_DC15L)
@@ -994,7 +994,7 @@ class CfgWeapons
 			};
 			class PointerSlot: PointerSlot
 			{
-				linkProxy="\A3\data_f\proxies\weapon_slots\SIDE";
+				linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
 				compatibleItems[]=
 				{
 					"acc_flashlight",
@@ -1003,7 +1003,7 @@ class CfgWeapons
 			};
 			class UnderBarrelSlot: UnderBarrelSlot
 			{
-				linkProxy="\A3\data_f_mark\proxies\weapon_slots\UNDERBARREL";
+				linkProxy = "\A3\data_f_mark\proxies\weapon_slots\UNDERBARREL";
 				compatibleItems[]=
 				{
 					"3AS_Bipod_DC15L_f"
@@ -1028,16 +1028,16 @@ class CfgWeapons
 				};
 				class IronOnTopOfMyOptics: TAG_CLASS(DC15L_Optic)
 				{
-					opticsID=2;
-					useModelOptics=0;
-					opticsFlare=0;
-					opticsDisablePeripherialVision=0;
-					opticsZoomMin=0.375;
-					opticsZoomMax=1.1;
-					opticsZoomInit=0.75;
-					memoryPointCamera="eye";
-					visionMode[]={};
-					discretefov[]={};
+					opticsID = 2;
+					useModelOptics = 0;
+					opticsFlare = 0;
+					opticsDisablePeripherialVision = 0;
+					opticsZoomMin = 0.375;
+					opticsZoomMax = 1.1;
+					opticsZoomInit = 0.75;
+					memoryPointCamera = "eye";
+					visionMode[] = {};
+					discretefov[] = {};
 				};
 			};
 		};
@@ -1052,17 +1052,17 @@ class CfgWeapons
 		recoilProne = "assaultRifleBase";
 		class FullAuto: Mode_FullAuto
 		{
-			reloadTime=0.145;
-			dispersion=0.001;
-			minRange=0;
-			minRangeProbab=0.89999998;
-			midRange=15;
-			midRangeProbab=0.69999999;
-			maxRange=30;
-			maxRangeProbab=0.1;
-			aiRateOfFire=1e-006;
-			recoil="recoil_auto_trg";
-			recoilProne="recoil_auto_prone_trg";
+			reloadTime = 0.145;
+			dispersion = 0.001;
+			minRange = 0;
+			minRangeProbab = 0.89999998;
+			midRange = 15;
+			midRangeProbab = 0.69999999;
+			maxRange = 30;
+			maxRangeProbab = 0.1;
+			aiRateOfFire = 1e-006;
+			recoil = "recoil_auto_trg";
+			recoilProne = "recoil_auto_prone_trg";
 			sounds[]=
 			{
 				"StandardSound"
@@ -1070,12 +1070,12 @@ class CfgWeapons
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType
 			{
-				soundContinuous=1;
+				soundContinuous = 1;
 				sounds[]=
 				{
 					"StandardSound"
 				};
-				weaponSoundEffect="";
+				weaponSoundEffect = "";
 				begin1[]=
 				{
 					QPATHTOF(data\sounds\westar_m5.wss),
@@ -1096,20 +1096,20 @@ class CfgWeapons
 			{
 				"StandardSound"
 			};
-			reloadTime=0.085;
-			dispersion=0.001;
-			minRange=0;
-			minRangeProbab=0.89999998;
-			midRange=15;
-			midRangeProbab=0.69999999;
-			maxRange=30;
-			maxRangeProbab=0.1;
-			soundContinuous=0;
-			soundBurst=0;
+			reloadTime = 0.085;
+			dispersion = 0.001;
+			minRange = 0;
+			minRangeProbab = 0.89999998;
+			midRange = 15;
+			midRangeProbab = 0.69999999;
+			maxRange = 30;
+			maxRangeProbab = 0.1;
+			soundContinuous = 0;
+			soundBurst = 0;
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType
 			{
-				weaponSoundEffect="";
+				weaponSoundEffect = "";
 				begin1[]=
 				{
 					QPATHTOF(data\sounds\westar_m5.wss),
@@ -1130,20 +1130,20 @@ class CfgWeapons
 			{
 				"StandardSound"
 			};
-			reloadTime=0.12;
-			dispersion=0.001;
-			minRange=2;
-			minRangeProbab=0.5;
-			midRange=200;
-			midRangeProbab=0.69999999;
-			maxRange=400;
-			maxRangeProbab=0.30000001;
-			soundContinuous=0;
-			soundBurst=0;
+			reloadTime = 0.12;
+			dispersion = 0.001;
+			minRange = 2;
+			minRangeProbab = 0.5;
+			midRange = 200;
+			midRangeProbab = 0.69999999;
+			maxRange = 400;
+			maxRangeProbab = 0.30000001;
+			soundContinuous = 0;
+			soundBurst = 0;
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType
 			{
-				weaponSoundEffect="";
+				weaponSoundEffect = "";
 				begin1[]=
 				{
 					QPATHTOF(data\sounds\westar_m5.wss),
@@ -1160,15 +1160,15 @@ class CfgWeapons
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
-			mass=75;
+			mass = 75;
 		};
 	};
 	NEW_CLASS(WestarM5_GL): TAG_CLASS(WestarM5)
 	{
-		displayName=TAG_NAME(Westar M-5 Assault Rifle (UGL));
-		model="3AS\3AS_Weapons\WestarM5\3AS_Westar_M5_GL.p3d";
-		weaponInfoType="RscWeaponZeroing";
-		modelOptics="3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
+		displayName = TAG_NAME(Westar M-5 Assault Rifle (UGL));
+		model = "3AS\3AS_Weapons\WestarM5\3AS_Westar_M5_GL.p3d";
+		weaponInfoType = "RscWeaponZeroing";
+		modelOptics = "3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
 		muzzles[]=
 		{
 			"this",
@@ -1178,47 +1178,47 @@ class CfgWeapons
 		{
 			class Ironsights
 			{
-				opticsID=1;
-				useModelOptics=0;
-				opticsFlare="true";
+				opticsID = 1;
+				useModelOptics = 0;
+				opticsFlare = "true";
 				opticsPPEffects[]=
 				{
 					"OpticsCHAbera5",
 					"OpticsBlur5"
 				};
-				opticsDisablePeripherialVision=0.67000002;
-				opticsZoomMin=0.375;
-				opticsZoomMax=1.1;
-				opticsZoomInit=0.75;
-				memoryPointCamera="eye";
-				visionMode[]={};
-				distanceZoomMin=100;
-				distanceZoomMax=100;
+				opticsDisablePeripherialVision = 0.67000002;
+				opticsZoomMin = 0.375;
+				opticsZoomMax = 1.1;
+				opticsZoomInit = 0.75;
+				memoryPointCamera = "eye";
+				visionMode[] = {};
+				distanceZoomMin = 100;
+				distanceZoomMax = 100;
 			};
 			class Scope: Ironsights
 			{
-				opticsID=2;
-				useModelOptics=1;
+				opticsID = 2;
+				useModelOptics = 1;
 				opticsPPEffects[]=
 				{
 					"OpticsCHAbera5",
 					"OpticsBlur5"
 				};
-				opticsDisablePeripherialVision=0.67000002;
-				opticsZoomMin=0.122173;
-				opticsZoomMax=0.122173;
-				opticsZoomInit=0.122173;
-				memoryPointCamera="opticView";
+				opticsDisablePeripherialVision = 0.67000002;
+				opticsZoomMin = 0.122173;
+				opticsZoomMax = 0.122173;
+				opticsZoomInit = 0.122173;
+				memoryPointCamera = "opticView";
 				visionMode[]=
 				{
 					"Normal",
 					"NVG",
 					"TI"
 				};
-				opticsFlare="true";
-				distanceZoomMin=100;
-				distanceZoomMax=100;
-				cameraDir="";
+				opticsFlare = "true";
+				distanceZoomMin = 100;
+				distanceZoomMax = 100;
+				cameraDir = "";
 			};
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
@@ -1230,7 +1230,7 @@ class CfgWeapons
 					""
 				};
 			};
-			mass=80;
+			mass = 80;
 		};
 	};
 
@@ -1258,14 +1258,14 @@ class CfgWeapons
 			};
 			class BaseSoundModeType
 			{
-				weaponSoundEffect="";
-				closure1[]={};
-				closure2[]={};
-				soundClosure[]={};
+				weaponSoundEffect = "";
+				closure1[] = {};
+				closure2[] = {};
+				soundClosure[] = {};
 			};
 			class StandardSound: BaseSoundModeType
 			{
-				weaponSoundEffect="";
+				weaponSoundEffect = "";
 				begin1[]=
 				{
 					QPATHTOF(data\sounds\dp23.wss),
@@ -1279,14 +1279,14 @@ class CfgWeapons
 					1
 				};
 			};
-			reloadTime=0.5;
-			dispersion=0.00073000003;
-			minRange=1;
-			minRangeProbab=0.5;
-			midRange=30;
-			midRangeProbab=0.69999999;
-			maxRange=60;
-			maxRangeProbab=0.30000001;
+			reloadTime = 0.5;
+			dispersion = 0.00073000003;
+			minRange = 1;
+			minRangeProbab = 0.5;
+			midRange = 30;
+			midRangeProbab = 0.69999999;
+			maxRange = 60;
+			maxRangeProbab = 0.30000001;
 		};
 		class Blaster: UGL_F
 		{
@@ -1294,29 +1294,29 @@ class CfgWeapons
 			{
 				CLASS(30Rnd_EC50_Mag)
 			};
-			displayName="Blaster Mode";
-			displayNameShort="Blaster";
-			muzzlePos="usti hlavne";
-			muzzleEnd="konec hlavne";
-			cursor="";
-			useModelOptics=0;
-			useExternalOptic=1;
-			magazineWell[]={};
-			cameraDir="eye";
-			memoryPointCamera="";
-			discreteDistance[]={100};
+			displayName = "Blaster Mode";
+			displayNameShort = "Blaster";
+			muzzlePos = "usti hlavne";
+			muzzleEnd = "konec hlavne";
+			cursor = "";
+			useModelOptics = 0;
+			useExternalOptic = 1;
+			magazineWell[] = {};
+			cameraDir = "eye";
+			memoryPointCamera = "";
+			discreteDistance[] = {100};
 			discreteDistanceCameraPoint[]=
 			{
 				"eye"
 			};
-			discreteDistanceInitIndex=0;
-			initSpeed=-1;
-			recoil="recoil_akm";
-			recoilProne="assaultRifleBase";
+			discreteDistanceInitIndex = 0;
+			initSpeed = -1;
+			recoil = "recoil_akm";
+			recoilProne = "assaultRifleBase";
 			class Single: Mode_SemiAuto
 			{
-				reloadTime=0.165;
-				dispersion=0.00106;
+				reloadTime = 0.165;
+				dispersion = 0.00106;
 				sounds[]=
 				{
 					"StandardSound"
@@ -1353,12 +1353,12 @@ class CfgWeapons
 				};
 				recoil = "recoil_single_primary_3outof10";
 				recoilProne = "recoil_single_primary_prone_3outof10";
-				minRange=30;
-				minRangeProbab=0.1;
-				midRange=200;
-				midRangeProbab=0.69999999;
-				maxRange=400;
-				maxRangeProbab=0.050000001;
+				minRange = 30;
+				minRangeProbab = 0.1;
+				midRange = 200;
+				midRangeProbab = 0.69999999;
+				maxRange = 400;
+				maxRangeProbab = 0.050000001;
 			};
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
@@ -1366,17 +1366,17 @@ class CfgWeapons
 			mass = 55;
 			class CowsSlot: CowsSlot
 			{
-				linkProxy="\A3\data_f\proxies\weapon_slots\TOP";
+				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
 				compatibleItems[] = { CLASS(Optic_Holo) };
 			};
 			class PointerSlot
 			{
-				displayName="Pointer Slot";
-				iconPicture="\a3\weapons_f\Data\ui\attachment_side";
-				iconPinpoint="Center";
-				iconPosition[]={0.34999999,0.5};
-				iconScale=0.25;
-				linkProxy="\a3\data_f_mark\Proxies\Weapon_Slots\UNDERBARREL";
+				displayName = "Pointer Slot";
+				iconPicture = "\a3\weapons_f\Data\ui\attachment_side";
+				iconPinpoint = "Center";
+				iconPosition[] = {0.34999999,0.5};
+				iconScale = 0.25;
+				linkProxy = "\a3\data_f_mark\Proxies\Weapon_Slots\UNDERBARREL";
 				compatibleItems[]=
 				{
 					CLASS(acc_pointer_Short_Purple),
@@ -1388,46 +1388,46 @@ class CfgWeapons
 
 	NEW_CLASS(Optic_VK38X): 3AS_Optic_VK38X
 	{
-		displayName=TAG_NAME(VK-38X Optic);
+		displayName = TAG_NAME(VK-38X Optic);
 		class ItemInfo: InventoryOpticsItem_Base_F
 		{
-			mass=7;
-			modelOptics="\kobra\442_weapons\weapons\773\773_retical.p3d";
+			mass = 7;
+			modelOptics = "\kobra\442_weapons\weapons\773\773_retical.p3d";
 			class OpticsModes
 			{
 				NEW_CLASS(VK38X_Optic)
 				{
-					opticsID=1;
-					useModelOptics=1;
+					opticsID = 1;
+					useModelOptics = 1;
 					opticsPPEffects[]=
 					{
 						"OpticsCHAbera1",
 						"OpticsBlur1"
 					};
-					opticsZoomMin=0.02;
-					opticsZoomMax=0.0625;
-					opticsZoomInit=0.0625;
-					discreteDistance[]={100,300,400,500,600,700,800,900,1000};
-					discreteDistanceInitIndex=1;
-					distanceZoomMin=100;
-					distanceZoomMax=1000;
-					discreteFov[]={0.0625,0.02};
-					discreteInitIndex=0;
+					opticsZoomMin = 0.02;
+					opticsZoomMax = 0.0625;
+					opticsZoomInit = 0.0625;
+					discreteDistance[] = {100,300,400,500,600,700,800,900,1000};
+					discreteDistanceInitIndex = 1;
+					distanceZoomMin = 100;
+					distanceZoomMax = 1000;
+					discreteFov[] = {0.0625,0.02};
+					discreteInitIndex = 0;
 					modelOptics[]=
 					{
 						"\kobra\442_weapons\weapons\773\773_retical.p3d"
 					};
-					memoryPointCamera="opticView";
+					memoryPointCamera = "opticView";
 					visionMode[]=
 					{
 						"Normal",
 						"NVG",
 						"Ti"
 					};
-					thermalMode[]={1,2};
-					opticsFlare=1;
-					opticsDisablePeripherialVision=1;
-					cameraDir="";
+					thermalMode[] = {1,2};
+					opticsFlare = 1;
+					opticsDisablePeripherialVision = 1;
+					cameraDir = "";
 				};
 			};
 		};
@@ -1436,15 +1436,15 @@ class CfgWeapons
 	{
 		author = "Anorexican";
 		displayName = TAG_NAME(Valken-38X Sniper Rifle);
-		reloadTime=0.6;
-		minRange=2;
-		minRangeProbab=0.5;
-		midRange=200;
-		midRangeProbab=0.69999999;
-		maxRange=400;
-		maxRangeProbab=0.30000001;
-		soundContinuous=0;
-		soundBurst=0;
+		reloadTime = 0.6;
+		minRange = 2;
+		minRangeProbab = 0.5;
+		midRange = 200;
+		midRangeProbab = 0.69999999;
+		maxRange = 400;
+		maxRangeProbab = 0.30000001;
+		soundContinuous = 0;
+		soundBurst = 0;
 		muzzles[]=
 		{
 			"this",
@@ -1453,16 +1453,16 @@ class CfgWeapons
 		class Stun: TAG_CLASS(Muzzle_Stun) {};
 		class Single: Mode_SemiAuto
 		{
-			reloadTime=0.6;
-			dispersion=0.00045;
-			minRange=2;
-			minRangeProbab=0.30000001;
-			midRange=150;
-			midRangeProbab=0.69999999;
-			maxRange=350;
-			maxRangeProbab=0.1;
-			soundContinuous=0;
-			soundBurst=0;
+			reloadTime = 0.6;
+			dispersion = 0.00045;
+			minRange = 2;
+			minRangeProbab = 0.30000001;
+			midRange = 150;
+			midRangeProbab = 0.69999999;
+			maxRange = 350;
+			maxRangeProbab = 0.1;
+			soundContinuous = 0;
+			soundBurst = 0;
 			sounds[]=
 			{
 				"StandardSound"
@@ -1470,7 +1470,7 @@ class CfgWeapons
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType
 			{
-				weaponSoundEffect="";
+				weaponSoundEffect = "";
 				begin1[]=
 				{
 					QPATHTOF(data\sounds\valken_38x.wss),
@@ -1490,7 +1490,7 @@ class CfgWeapons
 			mass = 65;
 			class CowsSlot: CowsSlot
 			{
-				linkProxy="\A3\data_f\proxies\weapon_slots\TOP";
+				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
 				compatibleItems[]=
 				{
 					CLASS(Optic_VK38X)
@@ -1498,7 +1498,7 @@ class CfgWeapons
 			};
 			class PointerSlot: PointerSlot
 			{
-				linkProxy="\A3\data_f\proxies\weapon_slots\SIDE";
+				linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
 				compatibleItems[]=
 				{
 					"acc_flashlight",
@@ -1507,7 +1507,7 @@ class CfgWeapons
 			};
 			class UnderBarrelSlot: UnderBarrelSlot
 			{
-				linkProxy="\A3\data_f_mark\proxies\weapon_slots\UNDERBARREL";
+				linkProxy = "\A3\data_f_mark\proxies\weapon_slots\UNDERBARREL";
 				compatibleItems[]=
 				{
 					"3AS_Bipod_VK38X_f"
@@ -1552,14 +1552,14 @@ class CfgWeapons
 			};
 			class BaseSoundModeType
 			{
-				weaponSoundEffect="";
-				closure1[]={};
-				closure2[]={};
-				soundClosure[]={};
+				weaponSoundEffect = "";
+				closure1[] = {};
+				closure2[] = {};
+				soundClosure[] = {};
 			};
 			class StandardSound: BaseSoundModeType
 			{
-				weaponSoundEffect="";
+				weaponSoundEffect = "";
 				begin1[]=
 				{
 					QPATHTOF(data\sounds\firepuncher.wss),
@@ -1575,7 +1575,7 @@ class CfgWeapons
 			};
 			class SilencedSound: BaseSoundModeType
 			{
-				weaponSoundEffect="";
+				weaponSoundEffect = "";
 				begin1[]=
 				{
 					QPATHTOF(data\sounds\firepuncher_spr.wss),
@@ -1589,52 +1589,52 @@ class CfgWeapons
 					1
 				};
 			};
-			reloadTime=0.5;
-			recoil="recoil_single_mx";
-			recoilProne="recoil_single_prone_mx";
-			dispersion=0.00035;
-			minRange=2;
-			minRangeProbab=0.5;
-			midRange=200;
-			midRangeProbab=0.69999999;
-			maxRange=400;
-			maxRangeProbab=0.30000001;
+			reloadTime = 0.5;
+			recoil = "recoil_single_mx";
+			recoilProne = "recoil_single_prone_mx";
+			dispersion = 0.00035;
+			minRange = 2;
+			minRangeProbab = 0.5;
+			midRange = 200;
+			midRangeProbab = 0.69999999;
+			maxRange = 400;
+			maxRangeProbab = 0.30000001;
 		};
 		class single_close_optics1: single
 		{
-			requiredOpticType=1;
-			showToPlayer=0;
-			minRange=2;
-			minRangeProbab=0.050000001;
-			midRange=300;
-			midRangeProbab=0.80000001;
-			maxRange=500;
-			maxRangeProbab=0.0099999998;
-			aiRateOfFire=2;
-			aiRateOfFireDistance=300;
+			requiredOpticType = 1;
+			showToPlayer = 0;
+			minRange = 2;
+			minRangeProbab = 0.050000001;
+			midRange = 300;
+			midRangeProbab = 0.80000001;
+			maxRange = 500;
+			maxRangeProbab = 0.0099999998;
+			aiRateOfFire = 2;
+			aiRateOfFireDistance = 300;
 		};
 		class single_medium_optics1: single_close_optics1
 		{
-			minRange=300;
-			minRangeProbab=0.050000001;
-			midRange=500;
-			midRangeProbab=0.69999999;
-			maxRange=700;
-			maxRangeProbab=0.050000001;
-			aiRateOfFire=2;
-			aiRateOfFireDistance=500;
+			minRange = 300;
+			minRangeProbab = 0.050000001;
+			midRange = 500;
+			midRangeProbab = 0.69999999;
+			maxRange = 700;
+			maxRangeProbab = 0.050000001;
+			aiRateOfFire = 2;
+			aiRateOfFireDistance = 500;
 		};
 		class single_far_optics1: single_medium_optics1
 		{
-			requiredOpticType=2;
-			minRange=300;
-			minRangeProbab=0.050000001;
-			midRange=700;
-			midRangeProbab=0.5;
-			maxRange=1000;
-			maxRangeProbab=0.050000001;
-			aiRateOfFire=4;
-			aiRateOfFireDistance=600;
+			requiredOpticType = 2;
+			minRange = 300;
+			minRangeProbab = 0.050000001;
+			midRange = 700;
+			midRangeProbab = 0.5;
+			maxRange = 1000;
+			maxRangeProbab = 0.050000001;
+			aiRateOfFire = 4;
+			aiRateOfFireDistance = 600;
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo 
 		{
@@ -1660,45 +1660,45 @@ class CfgWeapons
 	NEW_CLASS(Optic_FP_Flip): k_773_scope1 
 	{
 		displayName = TAG_NAME(Firepuncher Scope (2-4x));
-		MRT_SwitchItemNextClass=CLASS(Optic_FP);
-		MRT_SwitchItemPrevClass=CLASS(Optic_FP);
-		MRT_SwitchItemHintText="Magnifier [OFF]";
+		MRT_SwitchItemNextClass = CLASS(Optic_FP);
+		MRT_SwitchItemPrevClass = CLASS(Optic_FP);
+		MRT_SwitchItemHintText = "Magnifier [OFF]";
 
 		class ItemInfo: InventoryOpticsItem_Base_F
 		{
-			mass=10;
-			optics=1;
-			modelOptics="\kobra\442_weapons\weapons\773\773_retical.p3d";
-			allowedSlots[]={801,701,901};
+			mass = 10;
+			optics = 1;
+			modelOptics = "\kobra\442_weapons\weapons\773\773_retical.p3d";
+			allowedSlots[] = {801,701,901};
 			class OpticsModes
 			{
 				class 773scope
 				{
-					opticsID=1;
-					useModelOptics=1;
-					distanceZoomMin=300;
-					distanceZoomMax=1200;
+					opticsID = 1;
+					useModelOptics = 1;
+					distanceZoomMin = 300;
+					distanceZoomMax = 1200;
 					opticsPPEffects[]=
 					{
 						"OpticsCHAbera2",
 						"OpticsBlur3"
 					};
-					opticsFlare=1;
+					opticsFlare = 1;
 					modelOptics[]=
 					{
 						"\kobra\442_weapons\weapons\773\773_retical.p3d"
 					};
-					opticsDisablePeripherialVision=1;
+					opticsDisablePeripherialVision = 1;
 					visionMode[]=
 					{
 						"Normal",
 						"NVG",
 						"TI"
 					};
-					opticsZoomMin=0.0625;
-					opticsZoomMax=0.125;
-					opticsZoomInit=0.0625;
-					memoryPointCamera="opticView";
+					opticsZoomMin = 0.0625;
+					opticsZoomMax = 0.125;
+					opticsZoomInit = 0.0625;
+					memoryPointCamera = "opticView";
 				};
 			};
 		};
@@ -1706,24 +1706,24 @@ class CfgWeapons
 	NEW_CLASS(Optic_FP): k_773_scope2 
 	{
 		displayName = TAG_NAME(Firepuncher Scope (8-20x));
-		MRT_SwitchItemNextClass=CLASS(Optic_FP_Flip);
-		MRT_SwitchItemPrevClass=CLASS(Optic_FP_Flip);
-		MRT_switchItemHintText="Magnifier [ON]";
+		MRT_SwitchItemNextClass = CLASS(Optic_FP_Flip);
+		MRT_SwitchItemPrevClass = CLASS(Optic_FP_Flip);
+		MRT_switchItemHintText = "Magnifier [ON]";
 		
 		class ItemInfo: InventoryOpticsItem_Base_F
 		{
-			mass=10;
-			optics=1;
-			modelOptics="\kobra\442_weapons\weapons\773\773_retical.p3d";
-			allowedSlots[]={801,701,901};
+			mass = 10;
+			optics = 1;
+			modelOptics = "\kobra\442_weapons\weapons\773\773_retical.p3d";
+			allowedSlots[] = {801,701,901};
 			class OpticsModes
 			{
 				class 773scope
 				{
-					opticsID=1;
-					useModelOptics=1;
-					distanceZoomMin=300;
-					distanceZoomMax=1200;
+					opticsID = 1;
+					useModelOptics = 1;
+					distanceZoomMin = 300;
+					distanceZoomMax = 1200;
 					discretefov[]=
 					{
 						"0.25/8",
@@ -1731,29 +1731,29 @@ class CfgWeapons
 						"0.25/16",
 						"0.25/20"
 					};
-					discreteDistanceInitIndex=1;
+					discreteDistanceInitIndex = 1;
 					discreteInitIndex = 0;
 					opticsPPEffects[]=
 					{
 						"OpticsCHAbera2",
 						"OpticsBlur3"
 					};
-					opticsFlare=1;
+					opticsFlare = 1;
 					modelOptics[]=
 					{
 						"\kobra\442_weapons\weapons\773\773_retical.p3d"
 					};
-					opticsDisablePeripherialVision=1;
+					opticsDisablePeripherialVision = 1;
 					visionMode[]=
 					{
 						"Normal",
 						"NVG",
 						"TI"
 					};
-					opticsZoomMin=0.125;
-					opticsZoomMax=0.125;
-					opticsZoomInit=0.125;
-					memoryPointCamera="opticView";
+					opticsZoomMin = 0.125;
+					opticsZoomMax = 0.125;
+					opticsZoomInit = 0.125;
+					memoryPointCamera = "opticView";
 				};
 			};
 		};
@@ -1763,8 +1763,8 @@ class CfgWeapons
 	{
 		author = "Anorexican";
 		displayName = TAG_NAME(DW-32S Marksman Rifle);
-		recoil="recoil_mx";
-		recoilProne="assaultRifleBase";
+		recoil = "recoil_mx";
+		recoilProne = "assaultRifleBase";
 		magazines[] = { CLASS(20Rnd_EC60_Mag) };
 		reloadMagazineSound[]=
 		{
@@ -1781,14 +1781,14 @@ class CfgWeapons
 			};
 			class BaseSoundModeType
 			{
-				weaponSoundEffect="";
-				closure1[]={};
-				closure2[]={};
-				soundClosure[]={};
+				weaponSoundEffect = "";
+				closure1[] = {};
+				closure2[] = {};
+				soundClosure[] = {};
 			};
 			class StandardSound: BaseSoundModeType
 			{
-				weaponSoundEffect="";
+				weaponSoundEffect = "";
 				begin1[]=
 				{
 					QPATHTOF(data\sounds\DW32S.wss),
@@ -1802,17 +1802,17 @@ class CfgWeapons
 					1
 				};
 			};
-			reloadTime=0.26;
-			dispersion=0.00086999999;
-			minRange=2;
-			minRangeProbab=0.5;
-			midRange=200;
-			midRangeProbab=0.69999999;
-			maxRange=400;
-			maxRangeProbab=0.30000001;
+			reloadTime = 0.26;
+			dispersion = 0.00086999999;
+			minRange = 2;
+			minRangeProbab = 0.5;
+			midRange = 200;
+			midRangeProbab = 0.69999999;
+			maxRange = 400;
+			maxRangeProbab = 0.30000001;
 		};
-		weaponInfoType="RscWeaponZeroing";
-		modelOptics="\A3\Weapons_f\acc\reticle_nvs_F";
+		weaponInfoType = "RscWeaponZeroing";
+		modelOptics = "\A3\Weapons_f\acc\reticle_nvs_F";
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 65;
@@ -1823,7 +1823,7 @@ class CfgWeapons
 	{
 		author = "Anorexican";
 		displayName = TAG_NAME(DC-15X Benchrest Rifle);
-		recoil="3AS_recoil_DC15C";
+		recoil = "3AS_recoil_DC15C";
 		magazines[] = { "3AS_10Rnd_EC80_Mag" };
 		reloadMagazineSound[]=
 		{
@@ -1840,14 +1840,14 @@ class CfgWeapons
 			};
 			class BaseSoundModeType
 			{
-				weaponSoundEffect="";
-				closure1[]={};
-				closure2[]={};
-				soundClosure[]={};
+				weaponSoundEffect = "";
+				closure1[] = {};
+				closure2[] = {};
+				soundClosure[] = {};
 			};
 			class StandardSound: BaseSoundModeType
 			{
-				weaponSoundEffect="";
+				weaponSoundEffect = "";
 				begin1[]=
 				{
 					QPATHTOF(data\sounds\dc15x.wss),
@@ -1861,62 +1861,62 @@ class CfgWeapons
 					0.33000001
 				};
 			};
-			reloadTime=1.35;
-			dispersion=0.00015;
-			minRange=5;
-			minRangeProbab=0.30000001;
-			midRange=25;
-			midRangeProbab=0.60000002;
-			maxRange=50;
-			maxRangeProbab=0.1;
-			aiRateOfFire=2;
-			aiRateOfFireDistance=25;
+			reloadTime = 1.35;
+			dispersion = 0.00015;
+			minRange = 5;
+			minRangeProbab = 0.30000001;
+			midRange = 25;
+			midRangeProbab = 0.60000002;
+			maxRange = 50;
+			maxRangeProbab = 0.1;
+			aiRateOfFire = 2;
+			aiRateOfFireDistance = 25;
 		};
 		class close: Single
 		{
-			showToPlayer=0;
-			aiRateOfFire=0.25;
-			aiRateOfFireDistance=400;
-			minRange=0;
-			minRangeProbab=0.050000001;
-			midRange=200;
-			midRangeProbab=0.69999999;
-			maxRange=400;
-			maxRangeProbab=0.2;
+			showToPlayer = 0;
+			aiRateOfFire = 0.25;
+			aiRateOfFireDistance = 400;
+			minRange = 0;
+			minRangeProbab = 0.050000001;
+			midRange = 200;
+			midRangeProbab = 0.69999999;
+			maxRange = 400;
+			maxRangeProbab = 0.2;
 		};
 		class short: close
 		{
-			aiRateOfFire=0.5;
-			aiRateOfFireDistance=500;
-			minRange=300;
-			minRangeProbab=0.2;
-			midRange=400;
-			midRangeProbab=0.69999999;
-			maxRange=500;
-			maxRangeProbab=0.2;
+			aiRateOfFire = 0.5;
+			aiRateOfFireDistance = 500;
+			minRange = 300;
+			minRangeProbab = 0.2;
+			midRange = 400;
+			midRangeProbab = 0.69999999;
+			maxRange = 500;
+			maxRangeProbab = 0.2;
 		};
 		class medium: close
 		{
-			aiRateOfFire=1;
-			aiRateOfFireDistance=900;
-			minRange=400;
-			minRangeProbab=0.2;
-			midRange=700;
-			midRangeProbab=0.69999999;
-			maxRange=900;
-			maxRangeProbab=0.2;
+			aiRateOfFire = 1;
+			aiRateOfFireDistance = 900;
+			minRange = 400;
+			minRangeProbab = 0.2;
+			midRange = 700;
+			midRangeProbab = 0.69999999;
+			maxRange = 900;
+			maxRangeProbab = 0.2;
 		};
 		class WeaponSlotsInfo
 		{
 			mass = 125;
 			class PointerSlot: PointerSlot
 			{
-				displayName="Pointer Slot";
-				iconPicture="\a3\weapons_f\Data\ui\attachment_side";
-				iconPinpoint="Center";
-				iconPosition[]={0.34999999,0.5};
-				iconScale=0.25;
-				linkProxy="\a3\data_f\proxies\weapon_slots\MUZZLE";
+				displayName = "Pointer Slot";
+				iconPicture = "\a3\weapons_f\Data\ui\attachment_side";
+				iconPinpoint = "Center";
+				iconPosition[] = {0.34999999,0.5};
+				iconScale = 0.25;
+				linkProxy = "\a3\data_f\proxies\weapon_slots\MUZZLE";
 				compatibleItems[]=
 				{
 					"acc_flashlight",
@@ -1931,7 +1931,7 @@ class CfgWeapons
 				};
 			};
 		};
-		modelOptics="\kobra\442_weapons\weapons\773\773_retical.p3d";
+		modelOptics = "\kobra\442_weapons\weapons\773\773_retical.p3d";
 	};
 
 	NEW_CLASS(RPS6X): Launcher_Base_F
@@ -2064,8 +2064,8 @@ class CfgWeapons
 		inertia = 0.89999998;
 		aimTransitionSpeed = 0.5;
 		dexterity = 1.1;
-		descriptionShort="Hybrid Launcher";
-		class WeaponSlotsInfo: WeaponSlotsInfo {mass=100;};
+		descriptionShort = "Hybrid Launcher";
+		class WeaponSlotsInfo: WeaponSlotsInfo {mass = 100;};
 		class Library {libTextDesc = "";};
 		ace_overpressure_angle = 30;
 		ace_overpressure_damage = 0.69999999;

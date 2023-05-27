@@ -306,8 +306,8 @@ class CfgWeapons {
 
 	class TAG##_Engineer_Helmet: 3as_Engineer_Helmet
 	{
-		author="Stim";
-		displayName=TAG_NAME(Engineer Helmet);
+		author = "Stim";
+		displayName = TAG_NAME(Engineer Helmet);
 		hiddenSelectionsTextures[]=
 		{
 			QPATHTOF(data\helmets\engi\TAG_CLASS(Engineer_Helmet)_ca.paa)
@@ -318,9 +318,9 @@ class CfgWeapons {
 		};
 		class ItemInfo: HeadgearItem
 		{
-			mass=30;
-			uniformModel="\3AS\3AS_Characters\Clones\Headgear\3AS_Clone_Engineer.p3d";
-			modelSides[]={3,1};
+			mass = 30;
+			uniformModel = "\3AS\3AS_Characters\Clones\Headgear\3AS_Clone_Engineer.p3d";
+			modelSides[] = {3,1};
 			hiddenSelections[]=
 			{
 				"camo"
@@ -349,7 +349,7 @@ class CfgWeapons {
 	{
 		author = "Stim & Anorexican";
 		displayName = TAG_NAME(ARF Helmet);
-		picture="3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
+		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
 		hiddenSelectionsTextures[]=
 		{
 			QPATHTOF(data\helmets\arf\trooper\TAG_CLASS(ARF_Helmet)_co.paa),
@@ -369,7 +369,7 @@ class CfgWeapons {
 	{
 		author = "Stim & Anorexican";
 		displayName = TAG_NAME(ARF Helmet (P2));
-		picture="3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
+		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
 		hiddenSelectionsTextures[]=
 		{
 			QPATHTOF(data\helmets\arf\trooper\TAG_CLASS(ARF_Helmet)_co.paa),
