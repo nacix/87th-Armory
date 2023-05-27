@@ -1,38 +1,38 @@
 class CfgEditorSubcategories 
 {
-	class 87th_AB
+	NEW_CLASS(AB)
 	{
 		displayName = "Airborne Troopers";
 	};
-	class 87th_ARC
+	NEW_CLASS(ARC)
 	{
 		displayName = "ARC Troopers";
 	};
-	class 87th_ARF
+	NEW_CLASS(ARF)
 	{ 
 		displayName = "ARF Troopers";
 	};
-	class 87th_BARC
+	NEW_CLASS(BARC)
 	{ 
 		displayName = "BARC Troopers";
 	};
-	class 87th_RC
+	NEW_CLASS(RC)
 	{
 		displayName = "Clone Commandos";
 	};
-	class 87th_Troopers
+	NEW_CLASS(Troopers)
 	{ 
 		displayName = "Clone Troopers";
 	};
-	class 87th_P1_Troopers
+	NEW_CLASS(P1_Troopers)
 	{
 		displayName = "Clone Troopers (P1)";
 	};
-	class 87th_Vehicles
+	NEW_CLASS(Vehicles)
 	{
 		displayName = "Vehicles";
 	};
-	class 87th_P1_Vehicles
+	NEW_CLASS(P1_Vehicles)
 	{
 		displayName = "Vehicles (P1)";
 	};

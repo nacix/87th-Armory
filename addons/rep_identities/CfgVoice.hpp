@@ -4,6 +4,6 @@ class CfgVoice
 	class ENG;
 	class CloneTrooperENG: ENG
 	{
-		identityTypes[] = {"87th_Clone"};
+		identityTypes[] = {CLASS(Clone)};
 	};
 };

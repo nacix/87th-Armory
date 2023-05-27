@@ -2,7 +2,7 @@ class CfgWorlds
 {
 	class GenericNames
 	{
-		class 87th_Names_ATRT
+		NEW_CLASS(Names_ATRT)
 		{
 			class FirstNames
 			{

@@ -50,10 +50,13 @@
 
 #define PREP_MODULE(folder) [] call compile preprocessFileLineNumbers QPATHTOF(folder\__PREP__.sqf)
 
-#define NAME_PRETTY(name_raw) QUOTE(TAG_BR ##name_raw##)
+#define TAG_NAME(rawName) QUOTE(TAG_BR rawName)
 
-#define AUXCLASS(classname) TAG##_##classname
-#define CLASS(classname) QUOTE(AUXCLASS(classname))
+#define NEW_CLASS(className) class TAG_CLASS(className)
+#define TAG_CLASS(className) TAG##_##className
+#define CLASS(className) QUOTE(TAG_CLASS(className))
+
+#define CATEGORY(categoryName) QUOTE(TITLE - categoryName)
 
 #define SKILLTYPES ["aimingAccuracy", "aimingShake", "spotDistance", "spotTime", "courage", "commanding", "aimingSpeed", "general", "endurance", "reloadSpeed"]
 
@@ -106,12 +109,12 @@
     }; \
     backpack = QUOTE(back);
 
-#define PREVIEW(className) editorPreview = QPATHTOF(data\ui\editorPreviews\##className##.jpg);
+#define PREVIEW(className) editorPreview = QPATHTOF(data\ui\editorPreviews\TAG_CLASS(className).jpg);
 
 #define IDENTITY(factionID,category,uniform,className) \
     PREVIEW(className) \
-    faction = QUOTE(factionID); \
-    editorSubcategory = QUOTE(category); \
+    faction = CLASS(factionID); \
+    editorSubcategory = CLASS(category); \
     uniformClass = QUOTE(uniform);
 
 #define MAG_1(mag) \

@@ -4,13 +4,13 @@ class CfgFaces
 	class Man_A3: Default
 	{
 		class lsd_gar_cloneA_head;
-		class 87th_face_clone: lsd_gar_cloneA_head
+		NEW_CLASS(face_clone): lsd_gar_cloneA_head
 		{
-			name="[87th] Clone Trooper";
-			displayName="[87th] Clone Trooper";
+			name=TAG_NAME(Clone Trooper);
+			displayName=TAG_NAME(Clone Trooper);
 			identityTypes[]=
 			{
-				"87th_Clone"
+				CLASS(Clone)
 			};
 		};
     };

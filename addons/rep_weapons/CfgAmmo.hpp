@@ -9,20 +9,20 @@ class CfgAmmo
 		class Components;
 	};
 
-	class 87th_ammo_stun: JLTS_bullet_stun
+	NEW_CLASS(ammo_stun): JLTS_bullet_stun
 	{
 		JLTS_isStunAmmo=1;
 		typicalSpeed=120;
 		timetolive=8;
 		aiAmmoUsageFlags=0;
 	};
-	class 87th_ammo_stun_super: 87th_ammo_stun
+	NEW_CLASS(ammo_stun_super): TAG_CLASS(ammo_stun)
 	{
 		typicalSpeed=500;
 		timetolive=8;
 	};
 	
-	class 87th_ammo_Penetrator: ammo_Penetrator_Base 
+	NEW_CLASS(ammo_Penetrator): ammo_Penetrator_Base 
 	{
 		model = "\A3\weapons_f\empty";
 		caliber = 43.333302;
@@ -71,14 +71,14 @@ class CfgAmmo
 		whistleOnFire = 1;
 		whistleDist = 14;
 	};
-	class 87th_M_MK40X_AT: MissileBase 
+	NEW_CLASS(M_MK40X_AT): MissileBase 
 	{
 		model = "\A3\Weapons_F_Tank\Launchers\Vorona\Vorona_missile_heat_fly";
 		hit = 180;
 		indirectHit = 28;
 		indirectHitRange = 3;
 		warheadName = "TandemHEAT";
-		submunitionAmmo = "87th_ammo_Penetrator";
+		submunitionAmmo = CLASS(ammo_Penetrator);
 		submunitionDirectionType = "SubmunitionModelDirection";
 		submunitionInitSpeed = 1000;
 		submunitionParentSpeedCoef = 0;
@@ -139,7 +139,7 @@ class CfgAmmo
 			distance = 1;
 		};
 	};
-	class 87th_M_MK42X_HE: 87th_M_MK40X_AT 
+	NEW_CLASS(M_MK42X_HE): TAG_CLASS(M_MK40X_AT)
 	{
 		model = "\A3\Weapons_F_Tank\Launchers\Vorona\Vorona_missile_he_fly";
 		hit = 100;
@@ -173,17 +173,17 @@ class CfgAmmo
 			distance = 1;
 		};
 	};
-	class 87th_SmokeShellPurple_ammo: SmokeShell
+	NEW_CLASS(SmokeShellPurple_ammo): SmokeShell
 	{
 		explosionTime = -1;
 		model = "kobra\442_weapons\explosive\basic_smoke.p3d";
 		smokeColor[] = {0.29, 0.00, 0.51, 1.00};
 	};
-	class 87th_SmokeShellViolet_ammo: 87th_SmokeShellPurple_ammo
+	NEW_CLASS(SmokeShellViolet_ammo): TAG_CLASS(SmokeShellPurple_ammo)
 	{
 		smokeColor[] = {0.62, 0.35, 0.98, 1.00};
 	};
-	class 87th_SmokeShellMidnight_ammo: 87th_SmokeShellPurple_ammo
+	NEW_CLASS(SmokeShellMidnight_ammo): TAG_CLASS(SmokeShellPurple_ammo)
 	{
 		smokeColor[] = {0.10, 0.00, 0.17, 1.00};
 	};

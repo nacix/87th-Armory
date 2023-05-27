@@ -19,7 +19,7 @@
 
 params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
 
-if (!(isServer) || _weapon isNotEqualTo "Throw" || !("87th" in _muzzle)) exitWith {};
+if (!(isServer) || _weapon isNotEqualTo "Throw" || !(QUOTE(TAG) in _muzzle)) exitWith {};
 
 TRACE_8("adjustGrenadePhysics",_unit,_weapon,_muzzle,_mode,_ammo,_magazine,_projectile,_gunner);
 

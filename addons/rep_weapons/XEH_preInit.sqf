@@ -12,7 +12,7 @@ ADDON = true;
 	QGVAR(enabled),
 	"CHECKBOX",
 	["Enable", "Toggles whether or not one-handing should be possible"],
-	["87th Legion - Sidearms", "[1] - Global Settings"],
+	[CATEGORY(Sidearms), "[1] - Global Settings"],
 	false,
 	0,
 	{
@@ -41,7 +41,7 @@ ADDON = true;
 	QGVAR(allowOneHandWalking),
 	"CHECKBOX",
 	["Allow Walking", "Toggles whether or not one-handing should be possible while walking"],
-	["87th Legion - Sidearms", "[2] - Client Settings"],
+	[CATEGORY(Sidearms), "[2] - Client Settings"],
 	false,
 	0,
 	{
@@ -67,7 +67,7 @@ ADDON = true;
 	QGVAR(useTagWhitelist),
 	"CHECKBOX",
 	["Whitelist Mode", "Replaces default mode (blacklist) with a whitelist system. This means any tag NOT listed below will not support one-handing."],
-	["87th Legion - Sidearms", "[3] - Tag Settings"],
+	[CATEGORY(Sidearms), "[3] - Tag Settings"],
 	true,
 	0,
 	{
@@ -96,7 +96,7 @@ ADDON = true;
 	QGVAR(tagList),
 	"EDITBOX",
 	["Target Tags", "Tags that should be white/blacklisted for one-handing. Separate entries with a comma. Tags can be found at the start of any weapon's ID in the arsenal. Ex: ""rhs"", ""cup"", ""wbk"")"],
-	["87th Legion - Sidearms", "[3] - Tag Settings"],
+	[CATEGORY(Sidearms), "[3] - Tag Settings"],
 	"wbk",
 	0,
 	{
@@ -114,7 +114,7 @@ ADDON = true;
 	QGVAR(useWeaponWhitelist),
 	"CHECKBOX",
 	["Whitelist Mode", "Replaces default mode (blacklist) with a whitelist system. This means any weapon NOT listed below will not support one-handing."],
-	["87th Legion - Sidearms", "[4] - Weapon Settings"],
+	[CATEGORY(Sidearms), "[4] - Weapon Settings"],
 	true,
 	0,
 	{
@@ -142,7 +142,7 @@ ADDON = true;
 	QGVAR(weaponList),
 	"EDITBOX",
 	["Target Weapons", "Weapons that should be white/blacklisted for one-handing. Separate entries with a comma. A weapon's ID is shown when hovering over it in the arsenal. Ex: ""arifle_MX_F"", ""arifle_MXM_F"""],
-	["87th Legion - Sidearms", "[4] - Weapon Settings"],
+	[CATEGORY(Sidearms), "[4] - Weapon Settings"],
 	"",
 	0,
 	{
