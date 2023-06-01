@@ -38,6 +38,9 @@
 #define GETGVAR(var1,var2) GETMVAR(GVAR(var1),var2)
 #define GETEGVAR(var1,var2,var3) GETMVAR(EGVAR(var1,var2),var3)
 
+#define SET_OBJVAR(owner,variable,value) GETVAR(owner,GVAR(variable),value)
+#define GET_OBJVAR(owner,variable,default) GETVAR(owner,GVAR(variable),default)
+
 #define ARR_SELECT(ARRAY,INDEX,DEFAULT) (if (count ARRAY > INDEX) then {ARRAY select INDEX} else {DEFAULT})
 
 #ifdef DISABLE_COMPILE_CACHE

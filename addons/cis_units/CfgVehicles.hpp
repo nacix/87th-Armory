@@ -1,6 +1,7 @@
 class CfgVehicles
 {
     class JLTS_Droid_B1_E5;
+    class lsd_cis_b2_standard;
 
     NEW_CLASS(Droid_B1_E5): JLTS_Droid_B1_E5
     {
@@ -50,6 +51,76 @@ class CfgVehicles
              {"Tactical", {"\WebKnightsRobotics\sounds\dirt2.wav", 2, 1, 15}},
              {"Tactical", {"\WebKnightsRobotics\sounds\dirt3.wav", 2, 1, 15}},
 			 {"Tactical", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 15}}
+            };
+		};
+		class SoundBreath
+		{
+			breath[] = {};
+		};
+		class SoundDrown
+		{
+			breath[] = {};
+		};
+		class SoundInjured
+		{
+			breath[] = {};
+		};
+		class SoundBleeding
+		{
+			breath[] = {};
+		};
+		class SoundBurning
+		{
+			breath[] = {};
+		};
+		class SoundChoke
+		{
+			breath[] = {};
+		};
+		class SoundRecovered
+		{
+			breath[] = {};
+		};
+    };
+    NEW_CLASS(Droid_B2): lsd_cis_b2_standard
+    {
+        displayName = TAG_NAME(B2 Super Battle Droid);
+        uniformClass = "lsd_cis_b2Droid_uniform";
+        backpack = "";
+        weapons[] = {"WBK_B2_NormalMod","Throw","Put"};
+        magazines[] = {"SWLW_ZH73_Mag","SWLW_ZH73_Mag","SWLW_ZH73_Mag","SWLW_ZH73_Mag","SWLW_ZH73_Mag","SWLW_ZH73_Mag","SWLW_ZH73_Mag","SWLW_ZH73_Mag","SWLW_ZH73_Mag","SWLW_ZH73_Mag","SWLW_ZH73_Mag","SWLW_ZH73_Mag","SWLW_ZH73_Mag"};
+        items[] = {};
+        linkedItems[] = {"ls_cis_bxCommando_vest","ItemMap","ItemCompass","ItemWatch","SWLB_comlink_droid"};
+		faction = "WBK_AI_StarWars_Droids";
+		_generalMacro = "WBK_AI_StarWars_Droids";
+		displayName = "B2 Super Battle Droid (Normal Mod.)";	
+		impactEffectsBlood = "ImpactMetal";
+		impactEffectsNoBlood = "ImpactPlastic";
+		canBleed = 0;
+		class SoundEnvironExt {		
+			generic[] = {
+             {"walk", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, 
+             {"walk", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}},
+             {"walk", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}},
+			 {"run", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, 
+             {"run", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}},
+             {"run", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}},
+			 {"sprint", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, 
+             {"sprint", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}},
+             {"sprint", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}}
+			};
+		};
+		class SoundEquipment {	
+		    soldier[] = {
+             {"walk", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, 
+             {"walk", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}},
+             {"walk", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}},
+			 {"run", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, 
+             {"run", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}},
+             {"run", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}},
+			 {"sprint", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, 
+             {"sprint", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}},
+             {"sprint", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}}
             };
 		};
 		class SoundBreath

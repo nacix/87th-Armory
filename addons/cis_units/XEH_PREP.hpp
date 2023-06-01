@@ -1,7 +1,11 @@
-PREP(handleB1);
-PREP(fireB1);
-PREP(handleDamageB1);
-PREP(meleeB1);
 PREP(doExecutionB1);
+PREP(doExecutionB2);
+
+PREP(droidFire);
 PREP(handleAnimB1);
-PREP(onDeathB1);
+PREP(handleDroidDamage);
+PREP(handleDroidDeath);
+PREP(handleDroidMelee);
+
+PREP(initDroid);
+PREP(moveB2);

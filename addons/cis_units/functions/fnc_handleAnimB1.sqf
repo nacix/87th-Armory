@@ -25,20 +25,26 @@
 params ["_droid"];
 TRACE_1("handleAnimB1", _droid);
 
-// Sets our droid's ammo
-LOG_1("(handleAnimB1) [%1]: Setting ammo...", _droid);
-_droid setAmmo [currentWeapon _droid, 10];
+private _animHandlerPFH = [{
+    params ["_droid"];
 
-// If our droid still has grenades available, play a random grenade callout sound
-private _grenadeCount = count (_droid nearObjects ["GrenadeHand", 4]);
-if (_grenadeCount >= 1) then {
-    LOG_1("(handleAnimB1) [%1]: Playing random grenade callout...", _droid);
-    [_droid, selectRandom ["B1_incGrenade_1", "B1_incGrenade_2", "B1_incGrenade_3", "B1_incGrenade_4"], 60] call CBA_fnc_globalSay3d;
-};
+    // Sets our droid's ammo
+    LOG_1("(handleAnimB1) [%1]: Setting ammo...", _droid);
+    _droid setAmmo [currentWeapon _droid, 10];
 
-// If our droid decides it doesn't wanna be injured anymore, we reset its animation state. Otherwise, we reset its action/gesture state.
-if ((_droid getVariable "canMakeAttack" == 0) and (alive _droid) and (lifeState _droid isNotEqualTo "INCAPACITATED") and (animationState _droid isNotEqualTo "B1_Droid_hit_1") and (animationState _droid isNotEqualTo "B1_Droid_hit_2") and (animationState _droid isNotEqualTo "B1_Droid_execution_main")) then {
-    _droid playActionNow "B1_GunHolding";
-} else {
-    _droid playActionNow "Disable_Gesture";
-};
+    // If our droid still has grenades available, play a random grenade callout sound
+    private _grenadeCount = count (_droid nearObjects ["GrenadeHand", 4]);
+    if (_grenadeCount >= 1) then {
+        LOG_1("(handleAnimB1) [%1]: Playing random grenade callout...", _droid);
+        [_droid, selectRandom ["B1_incGrenade_1", "B1_incGrenade_2", "B1_incGrenade_3", "B1_incGrenade_4"], 60] call CBA_fnc_globalSay3d;
+    };
+
+    // If our droid decides it doesn't wanna be injured anymore, we reset its animation state. Otherwise, we reset its action/gesture state.
+    if ((_droid getVariable "canMakeAttack" == 0) and (alive _droid) and (lifeState _droid isNotEqualTo "INCAPACITATED") and (animationState _droid isNotEqualTo "B1_Droid_hit_1") and (animationState _droid isNotEqualTo "B1_Droid_hit_2") and (animationState _droid isNotEqualTo "B1_Droid_execution_main")) then {
+        _droid playActionNow "B1_GunHolding";
+    } else {
+        _droid playActionNow "Disable_Gesture";
+    };
+}, 2, _droid] call CBA_fnc_addPerFrameHandler;
+
+SETVAR(_droid, GVAR(droidAnimPFH), _animHandlerPFH);

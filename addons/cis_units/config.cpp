@@ -8,7 +8,8 @@ class CfgPatches
 		requiredVersion = REQUIRED_VERSION;
         units[]=
         {
-            CLASS(87th_Droid_B1_E5)
+            CLASS(Droid_B1_E5),
+            CLASS(Droid_B2)
         };
         weapons[] = {};
         requiredAddons[] = {"cba_main", "WBK_DifferentRobotics_1"};
