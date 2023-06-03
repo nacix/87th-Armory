@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-params ["_droid"];
+params ["_droid", "_skill"];
 TRACE_1("initDroid", _droid);
 
 switch (true) do {
@@ -30,16 +30,16 @@ SETVAR(_droid, GVAR(droidDamage), 0);
 LOG_1("(initDroid) [%1]: Setting up droid identity data...", _droid);
 _droid allowFleeing 0; // Prevents our droid from retreating
 _droid setSpeaker "NoVoice"; // Disables default ArmaMan voice(s)
-_droid setSkill 0.3;
-_droid setVariable ["disableUnitSFX", 1, true]; // Disables SFX on our droid
+_droid setSkill _skill;
+_droid setVariable ["disableUnitSFX", 1, true];
 _droid setUnitPos "UP"; // Forces our droid to stand (at least until it gets overridden from another AI mod)
 
 // Call damage handler script
 _droid call FUNC(handleDroidDamage);
 
 if (!(_droid isKindOf CLASS(Droid_BX))) then {
-// Call script to handle firing events
-_droid call FUNC(droidFire);
+    // Call script to handle firing events
+    _droid call FUNC(droidFire);
 
     // Add PFH to await melee opportunity
     _droid call FUNC(handleDroidMelee);
@@ -53,18 +53,10 @@ switch (true) do {
     };
     case (_droid isKindOf CLASS(Droid_B2)): {
         [_droid, "B2_SupperBattleDroid_idle"] remoteExec ["switchMove", 0];
-
-        // Make call to pathfinding script
         _droid call FUNC(moveB2);
     };
     default {
-        // Disable conflicting AI features
         ["MINEDETECTION", "SUPPRESSION", "COVER", "AIMINGERROR"] apply { _droid disableAI _x };
-
-        // Add PFH to await detonator suicide attempt (2s interval)
         _droid call FUNC(handleAnimB1);
     };
 };
-
-// Add PFH to await melee opportunity
-_droid call FUNC(handleDroidMelee);

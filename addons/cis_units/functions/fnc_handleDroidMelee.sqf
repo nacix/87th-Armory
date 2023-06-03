@@ -9,8 +9,8 @@ private _meleeOpportunityPFH = [{
     if ((lifeState _droid) isEqualto "INCAPACITATED") exitWith { _droid allowDamage true };
 
     {
-        private _isTargetVisible = lineIntersects [ getPosASL _droid, eyePos _x, _droid, _x];
-        if (!_isTargetVisible) then { _droid reveal [_x, 4] };
+        private _targetVisibility = lineIntersects [ getPosASL _droid, eyePos _x, _droid, _x];
+        if (!_targetVisibility) then { _droid reveal [_x, 4] };
     } forEach (_droid nearEntities ["Man", 15]);
 
     private _target = _droid findNearestEnemy _droid;
