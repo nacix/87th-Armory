@@ -25,8 +25,9 @@ private _damageEH = [_droid, "HandleDamage", {
         _droid doMove (getPos _shooter); // Move our droid towards its shooter if they have been spotted
     };
 
-    private _damageMultiplier = switch (typeOf _droid) do {
-        case CLASS(Droid_B2): { GVAR(damageMultiplierB2) };
+    private _damageMultiplier = switch (true) do {
+        case (_droid isKindOf CLASS(Droid_BX)): { GVAR(damageMultiplierBX) };
+        case (_droid isKindOf CLASS(Droid_B2)): { GVAR(damageMultiplierB2) };
         default { GVAR(damageMultiplierB1) };
     };
 
@@ -47,8 +48,9 @@ private _damageEH = [_droid, "HandleDamage", {
     SETVAR(_droid, GVAR(droidDamage), _totalDamage);
 
     if (_damageTaken > 0) then {
-        private _injurySounds = switch (typeOf _droid) do {
-            case CLASS(Droid_B2): { ["wbk_b2_incGrenade_1"] };
+        private _injurySounds = switch (true) do {
+            case (_droid isKindOf CLASS(Droid_BX)): { ["wbk_b2_incGrenade_1"] };
+            case (_droid isKindOf CLASS(Droid_B2)): { ["wbk_b2_incGrenade_1"] };
             default { ["B1_hit_1", "B1_hit_2", "B1_hit_3", "B1_hit_4", "B1_hit_5", "B1_hit_6"] };
         };
 

@@ -3,8 +3,11 @@
 params ["_droid"];
 TRACE_1("initDroid", _droid);
 
-switch (typeOf _droid) do {
-    case CLASS(Droid_B2): {
+switch (true) do {
+    case (_droid isKindOf CLASS(Droid_BX)): {
+        [["B2_SupperBattleDroid_die"], ["WBK_b2_dying"]]
+    };
+    case (_droid isKindOf CLASS(Droid_B2)): {
         [["B2_SupperBattleDroid_die"], ["WBK_b2_dying"]]
     };
     default {
@@ -34,12 +37,21 @@ _droid setUnitPos "UP"; // Forces our droid to stand (at least until it gets ove
 // Call damage handler script
 _droid call FUNC(handleDroidDamage);
 
+if (!(_droid isKindOf CLASS(Droid_BX))) then {
 // Call script to handle firing events
 _droid call FUNC(droidFire);
 
-switch (typeOf _droid) do {
-    case CLASS(Droid_B2): { 
-        // Set droid idle animation
+    // Add PFH to await melee opportunity
+    _droid call FUNC(handleDroidMelee);
+};
+
+switch (true) do {
+    case (_droid isKindOf CLASS(Droid_BX)): {
+        _droid call FUNC(bxMeleeHandler);
+        // _droid call FUNC(bxMeleeCombat);
+        // _droid call FUNC(bxMeleePathing);
+    };
+    case (_droid isKindOf CLASS(Droid_B2)): {
         [_droid, "B2_SupperBattleDroid_idle"] remoteExec ["switchMove", 0];
 
         // Make call to pathfinding script

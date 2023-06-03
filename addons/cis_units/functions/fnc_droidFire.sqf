@@ -18,8 +18,8 @@ private _firedEH = _droid addEventHandler ["Fired", {
 
     if (!isNil { GETVAR(_droid, GVAR(canDroidSpeak), nil) }) exitWith { LOG_1("(droidFire) [%1]: Terminated. Unit is already speaking!", _droid) };
 
-    switch (typeOf _droid) do {
-        case CLASS(Droid_B2): { [selectRandom ["WBK_b2_firing_1", "WBK_b2_firing_2", "WBK_b2_firing_3", "WBK_b2_firing_4", "WBK_b2_firing_5"], 7] };
+    switch (true) do {
+        case (_droid isKindOf CLASS(Droid_B2)): { [selectRandom ["WBK_b2_firing_1", "WBK_b2_firing_2", "WBK_b2_firing_3", "WBK_b2_firing_4", "WBK_b2_firing_5"], 7] };
         default { [selectRandom ["B1_shooting_1", "B1_shooting_2", "B1_shooting_3", "B1_shooting_4"], random 10] };
     } params ["_combatVoice", "_voiceDelay"];
 

@@ -14,8 +14,9 @@ private _meleeOpportunityPFH = [{
     private _target = _droid findNearestEnemy _droid;
     if ((currentWeapon _target isEqualTo "") && !(handGunWeapon _target in IMS_Melee_Weapons) && ((_droid worldToModel (_target modelToWorld [0, 0, 0])) select 1) > 0 && (_target distance _droid <= 2.25) && (_droid getVariable "canMakeAttack" == 0) && alive _droid && (lifeState _droid isNotEqualTo "INCAPACITATED") && ((animationState _droid isNotEqualTo "B1_Droid_execution_main") && (animationState _droid isNotEqualTo "B2_SupperBattleDroid_melee"))) then {
         LOG_2("(handleDroidMelee) [%1]: Valid melee target detected! Calling execution script against [%2]...", _droid, _target);
-        switch (typeOf _droid) do {
-            case CLASS(Droid_B2): { [_droid, _target] call FUNC(doExecutionB2) };
+        switch (true) do {
+            case (_droid isKindOf CLASS(Droid_BX)): { /*[_droid, _target] call FUNC(doExecutionBX)*/ };
+            case (_droid isKindOf CLASS(Droid_B2)): { [_droid, _target] call FUNC(doExecutionB2) };
             default { [_droid, _target] call FUNC(doExecutionB1) };
         };
     } else {
