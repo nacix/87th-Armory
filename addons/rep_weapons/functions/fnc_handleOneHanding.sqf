@@ -107,7 +107,7 @@ private _weaponEH = ["weapon", {
 		};
 	}, [_setOneHanded]] call CBA_fnc_addBISEventHandler;
 
-	SETVAR(_unit,gestureDoneEH,_gestureDoneEH);
+	SETVAR(_unit,GVAR(gestureDoneEH),_gestureDoneEH);
 	LOG_2("Initialized EventHandler 'gestureDone' for unit [%1] (ID: [%2])", _unit, _gestureDoneEH);
 }] call CBA_fnc_addPlayerEventHandler;
 
