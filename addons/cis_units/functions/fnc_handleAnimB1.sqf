@@ -36,7 +36,7 @@ private _animHandlerPFH = [{
     private _grenadeCount = count (_droid nearObjects ["GrenadeHand", 4]);
     if (_grenadeCount >= 1) then {
         LOG_1("(handleAnimB1) [%1]: Playing random grenade callout...", _droid);
-        [_droid, selectRandom ["B1_incGrenade_1", "B1_incGrenade_2", "B1_incGrenade_3", "B1_incGrenade_4"], 60] call CBA_fnc_globalSay3d;
+        [_droid, selectRandom ["B1_incGrenade_1", "B1_incGrenade_2", "B1_incGrenade_3", "B1_incGrenade_4"], 60, 3] call FUNC(sayPhrase);
     };
 
     // If our droid decides it doesn't wanna be injured anymore, we reset its animation state. Otherwise, we reset its action/gesture state.

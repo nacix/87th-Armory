@@ -55,17 +55,8 @@ private _damageEH = [_droid, "HandleDamage", {
         // Exit script if the droid is in an execution animation
         if (animationState _droid isEqualto "B1_Droid_execution_main" || animationState _droid isEqualTo "B2_SupperBattleDroid_melee") exitWith { LOG_1("(handleDroidDamage) [%1]: Terminated. Unit is doing an execution!", _droid) };
 
-        // True if the droid is not currently speaking
-        if (isNil { _droid getVariable "B1Speak" }) then {
-            LOG_1("(handleDroidDamage) [%1]: Playing damage callout...", _droid);
-
-            // Play a random B1 hurt sound
-            _droid setVariable ["B1Speak", 1];
-            [_droid, selectRandom _injurySounds, 90] call CBA_fnc_globalSay3d;
-
-            [{ _this setVariable ["B1Speak", nil] }, _droid, 10] call CBA_fnc_waitAndExecute;
-            LOG_1("(handleDroidDamage) [%1]: Ambient callout complete!", _droid);
-        }; 
+        // Queue-up an injury sound on our droid
+        [_droid, selectRandom _injurySounds, 90, 10] call FUNC(sayPhrase);
     };
 
     0; // Return 0 to prevent interference from other damage handlers

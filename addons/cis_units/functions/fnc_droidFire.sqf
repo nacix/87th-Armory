@@ -23,17 +23,7 @@ private _firedEH = _droid addEventHandler ["Fired", {
         default { [selectRandom ["B1_shooting_1", "B1_shooting_2", "B1_shooting_3", "B1_shooting_4"], random 10] };
     } params ["_combatVoice", "_voiceDelay"];
 
-    // TODO: Remove spawn call
-    // Play a random droid combat sound
-    LOG_1("(droidFire) [%1]: Playing combat callout...", _droid);
-    SETVAR(_droid, GVAR(canDroidSpeak), 1);
-    [_droid, _combatVoice, 60] call CBA_fnc_globalSay3d;
-
-    // Stop playing the sound when 
-    [{
-        LOG_1("(droidFire) [%1]: Combat callout complete!", _droid);
-        SETVAR(_droid, GVAR(canDroidSpeak), nil);
-    }, _droid, _voiceDelay] call CBA_fnc_waitAndExecute;
+    [_droid, _combatVoice, 60, _voiceDelay] call FUNC(sayPhrase);
 }];
 
 SETVAR(_droid, GVAR(droidFireEH), _firedEH);

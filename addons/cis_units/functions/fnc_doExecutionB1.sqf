@@ -44,17 +44,21 @@ _victim attachTo [_droid, [0, 1.4, 0]];
 [_victim, 180] remoteExec ["setDir", 0];
 
 [{
-	LOG_1("(doExecutionB1) [%1 - Victim]: Playing melee hit sound on...", _this);
+	params ["_victim"];
+
+	LOG_1("(doExecutionB1) [%1 - Victim]: Playing melee hit sound on...", _victim);
 
 	// Play a random melee swing sound
-	[_this, selectRandom ["melee_swing_equipment_1", "melee_swing_equipment_2"], 50, 3] execVM "\WebKnight_StarWars_Mechanic\createSoundGlobal.sqf";
+	[_victim, selectRandom ["melee_swing_equipment_1", "melee_swing_equipment_2"], 50, 3] execVM "\WebKnight_StarWars_Mechanic\createSoundGlobal.sqf";
 	
 	// Play a random melee hit sound
-	[{[_this, "dobi_bones", 50, 3] execVM "\WebKnight_StarWars_Mechanic\createSoundGlobal.sqf"}, _this, 0.1] call CBA_fnc_waitAndExecute;
-	LOG_1("(doExecutionB1) [%1] - Victim: Melee hit sound complete!", _this);
+	[{ [_this, "dobi_bones", 50, 3] execVM "\WebKnight_StarWars_Mechanic\createSoundGlobal.sqf" }, _victim, 0.1] call CBA_fnc_waitAndExecute;
+	LOG_1("(doExecutionB1) [%1] - Victim: Melee hit sound complete!", _victim);
 }, _victim, 0.1] call CBA_fnc_waitAndExecute;
 
 [{
+	params ["_droid"];
+
 	// Play a random execution sound
 	LOG_1("(doExecutionB1) [%1]: Selecting random finisher sound...", _droid);
 	if (random 100 <= 15) then {
@@ -74,20 +78,25 @@ _victim attachTo [_droid, [0, 1.4, 0]];
 }, [_droid, _victim], 1.9] call CBA_fnc_waitAndExecute;
 
 [{
+	params ["_droid"];
+
 	LOG_1("(doExecutionB1) [%1]: Playing killer taunt sound and resetting weapon action...", _droid);
 
-	[_this, selectRandom ["B1_EnemyKilled_1", "B1_EnemyKilled_2"], 60] call CBA_fnc_globalSay3d; // Play a random taunt sound
+	[_this, selectRandom ["B1_EnemyKilled_1", "B1_EnemyKilled_2"], 60, 0] call FUNC(sayPhrase); // Play a random taunt sound
+
 	_this playActionNow "B1_GunHolding"; // Attempt to reset our droid's action back to their normal weapon stance
 }, _droid, 2.4] call CBA_fnc_waitAndExecute;
 
 [{
+	params ["_droid"];
+
 	LOG_1("(doExecutionB1) [%1]: Re-enabling AI functionality and resetting state...", _droid);
 
 	// Re-enable our droid's AI once their animation has fully-completed
 	if (!(animationState _this isEqualTo "B1_Droid_execution_main")) exitWith { _this enableAI "ALL" };
 
-	// Perform extra calls for action and AI state resets in case of any unforeseen issues
 	_this playActionNow "B1_GunHolding";
 	[_this, "AmovPercMstpSrasWrflDnon"] remoteExec ["switchMove", 0];
+
 	_this enableAI "ALL";
 }, _droid, 2.6] call CBA_fnc_waitAndExecute;
