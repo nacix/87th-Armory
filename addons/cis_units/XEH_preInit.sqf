@@ -10,4 +10,4 @@ ADDON = true;
 
 GVAR(damageMultiplierB1) = 0.07;
 GVAR(damageMultiplierB2) = 0.006;
-GVAR(damageMultiplierBX) = 0.00675;
+GVAR(damageMultiplierBX) = 0.007;

@@ -17,10 +17,13 @@ class Extended_PostInit_EventHandlers {
 };
 
 class Extended_InitPost_EventHandlers {
-    class 87th_Droid_B1_E5 {
-        init = QUOTE([(_this select 0)] call FUNC(initDroid));
+    class TAG_CLASS(Droid_B1_E5) {
+        init = QUOTE([ARR_2(_this select 0, 0.4)] call FUNC(initDroid));
     };
-    class 87th_Droid_B2 {
-        init = QUOTE([_this select 0] call FUNC(initDroid));
+    class TAG_CLASS(Droid_B2) {
+        init = QUOTE([ARR_2(_this select 0, 0.6)] call FUNC(initDroid));
+    };
+    class TAG_CLASS(Droid_BX) {
+        init = QUOTE([ARR_2(_this select 0, 0.8)] call FUNC(initDroid));
     };
 };
