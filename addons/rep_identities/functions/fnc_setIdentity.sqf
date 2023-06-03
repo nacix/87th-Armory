@@ -40,7 +40,7 @@ switch (typeName _faceProfile) do {
 };
 
 // Sets the functional rank of our unit based on their provided clone rank.
-if (rank _unit == "PRIVATE") then {
+if ((rank _unit) isEqualTo "PRIVATE") then {
     switch (_designation) do {
         case "CP": {_rank = "CORPORAL"};
         case "CS";
