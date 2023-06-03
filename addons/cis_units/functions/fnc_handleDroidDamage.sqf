@@ -16,7 +16,10 @@ private _damageEH = [_droid, "HandleDamage", {
     };
 
     // Exit this call if the shooter was a friendly AI
-    if (side _shooter isEqualTo side _droid && !isPlayer _shooter) exitWith { LOG_2("(handleDroidDamage) [%1]: Termininating call with value 0. The shooter [%2] is a friendly AI!", _droid, _shooter) };
+    if (side _shooter isEqualTo side _droid && !isPlayer _shooter) exitWith {
+        LOG_2("(handleDroidDamage) [%1]: Termininating call with value 0. The shooter [%2] is a friendly AI!", _droid, _shooter);
+        0;
+    };
 
     LOG_2("(handleDroidDamage) [%1]: Increasing droid's combat awareness towards aggressor [%2]", _droid, _shooter);
     if (_droid knowsAbout _shooter < 1.5) then {
