@@ -40,7 +40,7 @@ private _animHandlerPFH = [{
     };
 
     // If our droid decides it doesn't wanna be injured anymore, we reset its animation state. Otherwise, we reset its action/gesture state.
-    if ((_droid getVariable "canMakeAttack" == 0) and (alive _droid) and (lifeState _droid isNotEqualTo "INCAPACITATED") and (animationState _droid isNotEqualTo "B1_Droid_hit_1") and (animationState _droid isNotEqualTo "B1_Droid_hit_2") and (animationState _droid isNotEqualTo "B1_Droid_execution_main")) then {
+    if ((GETVAR(_droid, GVAR(canAttack), 0) == 0) && (alive _droid) && (lifeState _droid isNotEqualTo "INCAPACITATED") && (animationState _droid isNotEqualTo "B1_Droid_hit_1") && (animationState _droid isNotEqualTo "B1_Droid_hit_2") && (animationState _droid isNotEqualTo "B1_Droid_execution_main")) then {
         _droid playActionNow "B1_GunHolding";
     } else {
         _droid playActionNow "Disable_Gesture";
