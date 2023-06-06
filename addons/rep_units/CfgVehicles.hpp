@@ -56,12 +56,12 @@ class CfgVehicles {
 		REP_IDENTITY(RC, TAG_CLASS(Katarn_Armor), preview)
 
 	#define MAGS_MISC \
-		MAG_3(TAG_CLASS(21Rnd_EC30_Mag)), \
-		MAG_2(SmokeShellGreen), \
-		MAG_2(Chemlight_green), \
-		MAG_2(JLTS_stun_mag_long), \
-		MAG_2(HandGrenade), \
-		MAG_1(SmokeShell)
+		LIST_3(TAG_CLASS(21Rnd_EC30_Mag)), \
+		LIST_2(SmokeShellGreen), \
+		LIST_2(Chemlight_green), \
+		LIST_2(JLTS_stun_mag_long), \
+		LIST_2(HandGrenade), \
+		LIST_1(SmokeShell)
 
 	JLTS_CLASS(JLTS_Clone_P2_DC15A, B_Soldier_F)
 	JLTS_CLASS(JLTS_Clone_P2_lieutenant, B_Officer_F)
@@ -76,10 +76,10 @@ class CfgVehicles {
 	{
 		displayName = "Clone Trooper (DC-15A)";
 		TR_IDENTITY(Clone_DC15A)
-		EQUIPMENT(TAG_CLASS(Trooper_Helmet), 0, 0, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15A), TAG_CLASS(DC17SA_Reflex), 0, 0)
+		EQUIPMENT(TAG_CLASS(Trooper_Helmet), 1, 1, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
+		WEAPONS(TAG_CLASS(DC15A), TAG_CLASS(DC17SA_Reflex), 1, 1)
 		#define MAGAZINES \
-			MAG_10(TAG_CLASS(45Rnd_EC40_Mag)), \
+			LIST_10(TAG_CLASS(45Rnd_EC40_Mag)), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -88,10 +88,10 @@ class CfgVehicles {
 	{
 		displayName = "Clone Trooper (DC-15S)";
 		TR_IDENTITY(Clone_DC15S)
-		EQUIPMENT(TAG_CLASS(Trooper_Helmet), 0, 0, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 0, 0)
+		EQUIPMENT(TAG_CLASS(Trooper_Helmet), 1, 1, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
+		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 1, 1)
 		#define MAGAZINES \
-			MAG_10(3AS_60Rnd_EC30_Mag), \
+			LIST_10(3AS_60Rnd_EC30_Mag), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -100,11 +100,11 @@ class CfgVehicles {
 	{
 		displayName = "Clone Grenadier (DC-15A)";
 		TR_IDENTITY(Clone_DC15AUGL)
-		EQUIPMENT(TAG_CLASS(Trooper_Helmet), JLTS_CloneVestHolster, 0, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15A_GL_Reflex), TAG_CLASS(DC17SA_Reflex), 0, 0)
+		EQUIPMENT(TAG_CLASS(Trooper_Helmet), JLTS_CloneVestHolster, 1, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
+		WEAPONS(TAG_CLASS(DC15A_GL_Reflex), TAG_CLASS(DC17SA_Reflex), 1, 1)
 		#define MAGAZINES \
-			MAG_10(TAG_CLASS(45Rnd_EC40_Mag)), \
-			MAG_4(3Rnd_HE_Grenade_shell), \
+			LIST_10(TAG_CLASS(45Rnd_EC40_Mag)), \
+			LIST_4(3Rnd_HE_Grenade_shell), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -113,10 +113,10 @@ class CfgVehicles {
 	{
 		displayName = "Clone Trooper (DP-23)";
 		TR_IDENTITY(Clone_DP23)
-		EQUIPMENT(TAG_CLASS(Trooper_Helmet), 0, 0, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
+		EQUIPMENT(TAG_CLASS(Trooper_Helmet), 1, 1, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
 		#define MAGAZINES \
-			MAG_10(TAG_CLASS(45Rnd_EC40_Mag)), \
-			MAG_4(3Rnd_HE_Grenade_shell), \
+			LIST_10(TAG_CLASS(45Rnd_EC40_Mag)), \
+			LIST_4(3Rnd_HE_Grenade_shell), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -128,8 +128,8 @@ class CfgVehicles {
 		EQUIPMENT(TAG_CLASS(Trooper_Helmet), JLTS_CloneVestAirborne, TAG_CLASS(Backpack), JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
 		WEAPONS(TAG_CLASS(DC15A), TAG_CLASS(DC17SA_Reflex), TAG_CLASS(RPS6X), SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(TAG_CLASS(45Rnd_EC40_Mag)), \
-			MAG_5(MK40X_AT_Guided), \
+			LIST_10(TAG_CLASS(45Rnd_EC40_Mag)), \
+			LIST_5(MK40X_AT_Guided), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -138,10 +138,10 @@ class CfgVehicles {
 	{
 		displayName = "Clone Captain";
 		TR_IDENTITY(Clone_Captain)
-		EQUIPMENT(TAG_CLASS(Officer_Helmet), TAG_CLASS(Officer_Accessories), 0, TAG_CLASS(Macrobinocular), JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		EQUIPMENT(TAG_CLASS(Officer_Helmet), TAG_CLASS(Officer_Accessories), 1, TAG_CLASS(Macrobinocular), JLTS_clone_comlink)
+		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(3AS_60Rnd_EC30_mag), \
+			LIST_10(3AS_60Rnd_EC30_mag), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -151,9 +151,9 @@ class CfgVehicles {
 		displayName = "Clone Commander";
 		TR_IDENTITY(Clone_Commander)
 		EQUIPMENT(TAG_CLASS(Stim_Helmet), TAG_CLASS(Commander_Accessories), JLTS_Clone_jumppack_mc, JLTS_CloneNVGMC, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(3AS_60Rnd_EC30_mag), \
+			LIST_10(3AS_60Rnd_EC30_mag), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -162,11 +162,11 @@ class CfgVehicles {
 	{
 		displayName = "Clone Corporal";
 		TR_IDENTITY(Clone_Corporal)
-		EQUIPMENT(TAG_CLASS(Trooper_Helmet), JLTS_CloneVestHolster, 0, TAG_CLASS(Macrobinocular), JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15C_GL_Reflex), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		EQUIPMENT(TAG_CLASS(Trooper_Helmet), JLTS_CloneVestHolster, 1, TAG_CLASS(Macrobinocular), JLTS_clone_comlink)
+		WEAPONS(TAG_CLASS(DC15C_GL_Reflex), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(TAG_CLASS(36Rnd_EC50_Mag)), \
-			MAG_8(1Rnd_HE_Grenade_shell), \
+			LIST_10(TAG_CLASS(36Rnd_EC50_Mag)), \
+			LIST_8(1Rnd_HE_Grenade_shell), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -176,9 +176,9 @@ class CfgVehicles {
 		displayName = "Clone Jet Trooper";
 		TR_IDENTITY(Clone_Jumper)
 		EQUIPMENT(TAG_CLASS(Jet_Trooper_Helmet), JLTS_CloneVestHolster, JLTS_Clone_jumppack_JT12, TAG_CLASS(Macrobinocular), JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(3AS_60Rnd_EC30_mag), \
+			LIST_10(3AS_60Rnd_EC30_mag), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -187,10 +187,10 @@ class CfgVehicles {
 	{
 		displayName = "Clone Lieutenant";
 		TR_IDENTITY(Clone_Lieutenant)
-		EQUIPMENT(TAG_CLASS(Trooper_Helmet), TAG_CLASS(Lieutenant_Accessories), 0, TAG_CLASS(Macrobinocular), JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		EQUIPMENT(TAG_CLASS(Trooper_Helmet), TAG_CLASS(Lieutenant_Accessories), 1, TAG_CLASS(Macrobinocular), JLTS_clone_comlink)
+		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(3AS_60Rnd_EC30_mag), \
+			LIST_10(3AS_60Rnd_EC30_mag), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -199,10 +199,10 @@ class CfgVehicles {
 	{
 		displayName = "Clone Major";
 		TR_IDENTITY(Clone_Major)
-		EQUIPMENT(TAG_CLASS(Raven_Helmet), TAG_CLASS(Officer_Accessories), 0, JLTS_CloneNVGCC, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		EQUIPMENT(TAG_CLASS(Raven_Helmet), TAG_CLASS(Officer_Accessories), 1, JLTS_CloneNVGCC, JLTS_clone_comlink)
+		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(3AS_60Rnd_EC30_mag), \
+			LIST_10(3AS_60Rnd_EC30_mag), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -211,10 +211,10 @@ class CfgVehicles {
 	{
 		displayName = "Clone Marksman";
 		TR_IDENTITY(Clone_Marksman)
-		EQUIPMENT(TAG_CLASS(Trooper_Helmet), TAG_CLASS(Recon_Accessories), 0, TAG_CLASS(Macrobinocular), JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DW32S), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		EQUIPMENT(TAG_CLASS(Trooper_Helmet), TAG_CLASS(Recon_Accessories), 1, TAG_CLASS(Macrobinocular), JLTS_clone_comlink)
+		WEAPONS(TAG_CLASS(DW32S), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(TAG_CLASS(20Rnd_EC60_Mag)), \
+			LIST_10(TAG_CLASS(20Rnd_EC60_Mag)), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -224,9 +224,9 @@ class CfgVehicles {
 		displayName = "Clone Medic";
 		TR_IDENTITY(Clone_Medic)
 		EQUIPMENT(TAG_CLASS(Trooper_Helmet), TAG_CLASS(Medic_Vest), TAG_CLASS(Medic_Backpack), JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 0, 0)
+		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 1, 1)
 		#define MAGAZINES \
-			MAG_10(3AS_60Rnd_EC30_mag), \
+			LIST_10(3AS_60Rnd_EC30_mag), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -241,11 +241,11 @@ class CfgVehicles {
 		Engineer = 2;
 		canDeactivateMines = 1;
 		TR_IDENTITY(Clone_EOD)
-		EQUIPMENT(TAG_CLASS(Engineer_Helmet), JLTS_CloneVestSuspender, TAG_CLASS(EOD_Backpack), 0, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DP23_Lased), TAG_CLASS(DC17SA_Reflex), 0, 0)
+		EQUIPMENT(TAG_CLASS(Engineer_Helmet), JLTS_CloneVestSuspender, TAG_CLASS(EOD_Backpack), 1, JLTS_clone_comlink)
+		WEAPONS(TAG_CLASS(DP23_Lased), TAG_CLASS(DC17SA_Reflex), 1, 1)
 		#define MAGAZINES \
-			MAG_8(JLTS_DP23_Mag), \
-			MAG_8(TAG_CLASS(30Rnd_EC50_Mag)), \
+			LIST_8(JLTS_DP23_Mag), \
+			LIST_8(TAG_CLASS(30Rnd_EC50_Mag)), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -258,10 +258,10 @@ class CfgVehicles {
 	{
 		displayName = "Clone RTO";
 		TR_IDENTITY(Clone_RTO)
-		EQUIPMENT(TAG_CLASS(RTO_Helmet), JLTS_CloneVestSuspender, TAG_CLASS(RTO_Backpack), 0, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		EQUIPMENT(TAG_CLASS(RTO_Helmet), JLTS_CloneVestSuspender, TAG_CLASS(RTO_Backpack), 1, JLTS_clone_comlink)
+		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(3AS_60Rnd_EC30_mag), \
+			LIST_10(3AS_60Rnd_EC30_mag), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -270,10 +270,10 @@ class CfgVehicles {
 	{
 		displayName = "Clone Sergeant";
 		TR_IDENTITY(Clone_Sergeant)
-		EQUIPMENT(TAG_CLASS(Trooper_Helmet), TAG_CLASS(Kama), 0, TAG_CLASS(Macrobinocular), JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		EQUIPMENT(TAG_CLASS(Trooper_Helmet), TAG_CLASS(Kama), 1, TAG_CLASS(Macrobinocular), JLTS_clone_comlink)
+		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(3AS_60Rnd_EC30_mag), \
+			LIST_10(3AS_60Rnd_EC30_mag), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -282,10 +282,10 @@ class CfgVehicles {
 	{
 		displayName = "Clone Sergeant-Major";
 		TR_IDENTITY(Clone_SergeantMajor)
-		EQUIPMENT(TAG_CLASS(Trooper_Helmet), TAG_CLASS(Recon_Officer_Accessories), 0, TAG_CLASS(Rangefinder), JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		EQUIPMENT(TAG_CLASS(Trooper_Helmet), TAG_CLASS(Recon_Officer_Accessories), 1, TAG_CLASS(Rangefinder), JLTS_clone_comlink)
+		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(3AS_60Rnd_EC30_mag), \
+			LIST_10(3AS_60Rnd_EC30_mag), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -295,9 +295,9 @@ class CfgVehicles {
 		displayName = "Clone Heavy Trooper";
 		TR_IDENTITY(Clone_AR)
 		EQUIPMENT(TAG_CLASS(Trooper_Helmet), JLTS_CloneVestAirborneNCO, TAG_CLASS(Backpack), JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15L_AR), TAG_CLASS(DC17SA_Reflex), 0, 0)
+		WEAPONS(TAG_CLASS(DC15L_AR), TAG_CLASS(DC17SA_Reflex), 1, 1)
 		#define MAGAZINES \
-			MAG_8(3AS_200Rnd_EC40_Mag), \
+			LIST_8(3AS_200Rnd_EC40_Mag), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -307,10 +307,10 @@ class CfgVehicles {
 		displayName = "Clone Sharpshooter";
 		TR_IDENTITY(Clone_Sharpshooter)
 		EQUIPMENT(TAG_CLASS(Trooper_Helmet), TAG_CLASS(Recon_Accessories), TAG_CLASS(Belt_Bag), TAG_CLASS(Macrobinocular_Low), JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(Valken38X_Scoped), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		WEAPONS(TAG_CLASS(Valken38X_Scoped), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(3AS_10Rnd_EC80_Mag), \
-			MAG_6(3AS_10Rnd_EC80_Mag), \
+			LIST_10(3AS_10Rnd_EC80_Mag), \
+			LIST_6(3AS_10Rnd_EC80_Mag), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -320,10 +320,10 @@ class CfgVehicles {
 	{
 		displayName = "Clone Trooper (DC-15A)";
 		P1_IDENTITY(Clone_P1_DC15A)
-		EQUIPMENT(TAG_CLASS(P1_Trooper_Helmet), 0, 0, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15A), TAG_CLASS(DC17SA_Reflex), 0, 0)
+		EQUIPMENT(TAG_CLASS(P1_Trooper_Helmet), 1, 1, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
+		WEAPONS(TAG_CLASS(DC15A), TAG_CLASS(DC17SA_Reflex), 1, 1)
 		#define MAGAZINES \
-			MAG_10(TAG_CLASS(45Rnd_EC40_Mag)), \
+			LIST_10(TAG_CLASS(45Rnd_EC40_Mag)), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -332,10 +332,10 @@ class CfgVehicles {
 	{
 		displayName = "Clone Trooper (DC-15S)";
 		P1_IDENTITY(Clone_P1_DC15S)
-		EQUIPMENT(TAG_CLASS(P1_Trooper_Helmet), 0, 0, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 0, 0)
+		EQUIPMENT(TAG_CLASS(P1_Trooper_Helmet), 1, 1, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
+		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 1, 1)
 		#define MAGAZINES \
-			MAG_10(3AS_60Rnd_EC30_Mag), \
+			LIST_10(3AS_60Rnd_EC30_Mag), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -345,11 +345,11 @@ class CfgVehicles {
 		displayName = "Clone Grenadier (DC-15A)";
 		icon = "JLTS_iconManHeavy";
 		P1_IDENTITY(Clone_P1_DC15AUGL)
-		EQUIPMENT(TAG_CLASS(P1_Trooper_Helmet), JLTS_CloneVestHolster, 0, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15A_GL), TAG_CLASS(DC17SA_Reflex), 0, 0)
+		EQUIPMENT(TAG_CLASS(P1_Trooper_Helmet), JLTS_CloneVestHolster, 1, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
+		WEAPONS(TAG_CLASS(DC15A_GL), TAG_CLASS(DC17SA_Reflex), 1, 1)
 		#define MAGAZINES \
-			MAG_10(TAG_CLASS(45Rnd_EC40_Mag)), \
-			MAG_4(3Rnd_HE_Grenade_shell), \
+			LIST_10(TAG_CLASS(45Rnd_EC40_Mag)), \
+			LIST_4(3Rnd_HE_Grenade_shell), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -362,8 +362,8 @@ class CfgVehicles {
 		EQUIPMENT(TAG_CLASS(P1_Trooper_Helmet), JLTS_CloneVestAirborne, TAG_CLASS(Backpack), JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
 		WEAPONS(TAG_CLASS(DC15A), TAG_CLASS(DC17SA_Reflex), TAG_CLASS(RPS6X), SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(TAG_CLASS(45Rnd_EC40_Mag)), \
-			MAG_5(MK40X_AT_Guided), \
+			LIST_10(TAG_CLASS(45Rnd_EC40_Mag)), \
+			LIST_5(MK40X_AT_Guided), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -373,10 +373,10 @@ class CfgVehicles {
 		displayName = "Clone Captain";
 		icon = "iconManOfficer";
 		P1_IDENTITY(Clone_P1_Captain)
-		EQUIPMENT(TAG_CLASS(P1_Trooper_Helmet), TAG_CLASS(Officer_Accessories), 0, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15A), TAG_CLASS(DC17SA_Reflex), 0, 0)
+		EQUIPMENT(TAG_CLASS(P1_Trooper_Helmet), TAG_CLASS(Officer_Accessories), 1, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
+		WEAPONS(TAG_CLASS(DC15A), TAG_CLASS(DC17SA_Reflex), 1, 1)
 		#define MAGAZINES \
-			MAG_10(TAG_CLASS(45Rnd_EC40_Mag)), \
+			LIST_10(TAG_CLASS(45Rnd_EC40_Mag)), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -386,10 +386,10 @@ class CfgVehicles {
 		displayName = "Clone Commander";
 		icon = "iconManOfficer";
 		P1_IDENTITY(Clone_P1_Commander)
-		EQUIPMENT(TAG_CLASS(P1_Trooper_Helmet), TAG_CLASS(Commander_Accessories), 0, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15A), TAG_CLASS(DC17SA_Reflex), 0, 0)
+		EQUIPMENT(TAG_CLASS(P1_Trooper_Helmet), TAG_CLASS(Commander_Accessories), 1, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
+		WEAPONS(TAG_CLASS(DC15A), TAG_CLASS(DC17SA_Reflex), 1, 1)
 		#define MAGAZINES \
-			MAG_10(TAG_CLASS(45Rnd_EC40_Mag)), \
+			LIST_10(TAG_CLASS(45Rnd_EC40_Mag)), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -399,11 +399,11 @@ class CfgVehicles {
 		displayName = "Clone Corporal";
 		icon = "iconManLeader";
 		P1_IDENTITY(Clone_P1_Corporal)
-		EQUIPMENT(TAG_CLASS(P1_Trooper_Helmet), 0, 0, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15A_GL_Reflex), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		EQUIPMENT(TAG_CLASS(P1_Trooper_Helmet), 1, 1, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
+		WEAPONS(TAG_CLASS(DC15A_GL_Reflex), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(TAG_CLASS(45Rnd_EC40_Mag)), \
-			MAG_8(1Rnd_HE_Grenade_shell), \
+			LIST_10(TAG_CLASS(45Rnd_EC40_Mag)), \
+			LIST_8(1Rnd_HE_Grenade_shell), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -413,10 +413,10 @@ class CfgVehicles {
 		displayName = "Clone Lieutenant";
 		icon = "iconManOfficer";
 		P1_IDENTITY(Clone_P1_Lieutenant)
-		EQUIPMENT(TAG_CLASS(P1_Trooper_Helmet), TAG_CLASS(Lieutenant_Accessories), 0, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15A), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		EQUIPMENT(TAG_CLASS(P1_Trooper_Helmet), TAG_CLASS(Lieutenant_Accessories), 1, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
+		WEAPONS(TAG_CLASS(DC15A), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(TAG_CLASS(45Rnd_EC40_Mag)), \
+			LIST_10(TAG_CLASS(45Rnd_EC40_Mag)), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -428,7 +428,7 @@ class CfgVehicles {
 		icon = "iconManMedic";
 		P1_IDENTITY(Clone_P1_Medic)
 		EQUIPMENT(TAG_CLASS(P1_Trooper_Helmet), TAG_CLASS(Medic_Vest), TAG_CLASS(Medic_Backpack), JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 0, 0)
+		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 1, 1)
 		class EventHandlers
 		{
 			init = "[_this select 0, ""JLTS_GAR_medic""] call BIS_fnc_setUnitInsignia;";
@@ -442,9 +442,9 @@ class CfgVehicles {
 		icon = "iconManExplosive";
 		P1_IDENTITY(Clone_P1_EOD)
 		EQUIPMENT(TAG_CLASS(P1_Trooper_Helmet), JLTS_CloneVestSuspender, TAG_CLASS(EOD_Backpack), JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 0, 0)
+		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 1, 1)
 		#define MAGAZINES \
-			MAG_10(3AS_60Rnd_EC30_Mag), \
+			LIST_10(3AS_60Rnd_EC30_Mag), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -458,9 +458,9 @@ class CfgVehicles {
 		displayName = "Clone RTO";
 		P1_IDENTITY(Clone_P1_RTO)
 		EQUIPMENT(TAG_CLASS(P1_Trooper_Helmet), JLTS_CloneVestSuspender, TAG_CLASS(RTO_Backpack), JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15A), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		WEAPONS(TAG_CLASS(DC15A), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(3AS_60Rnd_EC30_Mag), \
+			LIST_10(3AS_60Rnd_EC30_Mag), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -470,10 +470,10 @@ class CfgVehicles {
 		displayName = "Clone Sergeant";
 		icon = "iconManLeader";
 		P1_IDENTITY(Clone_P1_Sergeant)
-		EQUIPMENT(TAG_CLASS(P1_Trooper_Helmet), TAG_CLASS(Kama), 0, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15A), TAG_CLASS(DC17SA_Reflex), 0, 0)
+		EQUIPMENT(TAG_CLASS(P1_Trooper_Helmet), TAG_CLASS(Kama), 1, JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
+		WEAPONS(TAG_CLASS(DC15A), TAG_CLASS(DC17SA_Reflex), 1, 1)
 		#define MAGAZINES \
-			MAG_10(TAG_CLASS(45Rnd_EC40_Mag)), \
+			LIST_10(TAG_CLASS(45Rnd_EC40_Mag)), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -484,9 +484,9 @@ class CfgVehicles {
 		icon = "JLTS_iconManSupportGunner";
 		P1_IDENTITY(Clone_P1_AR)
 		EQUIPMENT(TAG_CLASS(P1_Trooper_Helmet), JLTS_CloneVestAirborneNCO, TAG_CLASS(Backpack), JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15L_AR), TAG_CLASS(DC17SA_Reflex), 0, 0)
+		WEAPONS(TAG_CLASS(DC15L_AR), TAG_CLASS(DC17SA_Reflex), 1, 1)
 		#define MAGAZINES \
-			MAG_8(3AS_200Rnd_EC40_Mag), \
+			LIST_8(3AS_200Rnd_EC40_Mag), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -497,10 +497,10 @@ class CfgVehicles {
 		icon = "JLTS_iconManSniper";
 		P1_IDENTITY(Clone_P1_Sharpshooter)
 		EQUIPMENT(TAG_CLASS(P1_Trooper_Helmet), TAG_CLASS(Recon_NCO_Accessories), TAG_CLASS(Belt_Bag), TAG_CLASS(Macrobinocular_Low), JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(Valken38X_Scoped), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		WEAPONS(TAG_CLASS(Valken38X_Scoped), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(3AS_10Rnd_EC80_Mag), \
-			MAG_6(3AS_10Rnd_EC80_Mag), \
+			LIST_10(3AS_10Rnd_EC80_Mag), \
+			LIST_6(3AS_10Rnd_EC80_Mag), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -512,9 +512,9 @@ class CfgVehicles {
 		icon = "JLTS_iconManRecon";
 		ARF_IDENTITY(ARF_DC15S)
 		EQUIPMENT(TAG_CLASS(ARF_Helmet), TAG_CLASS(Recon_Accessories), TAG_CLASS(Belt_Bag), JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(3AS_60Rnd_EC30_Mag), \
+			LIST_10(3AS_60Rnd_EC30_Mag), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -524,10 +524,10 @@ class CfgVehicles {
 		displayName = "ARF Sniper";
 		ARF_IDENTITY(ARF_Sniper)
 		EQUIPMENT(TAG_CLASS(ARF_Helmet), TAG_CLASS(Recon_Accessories), TAG_CLASS(Belt_Bag), JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15X), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		WEAPONS(TAG_CLASS(DC15X), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(3AS_10Rnd_EC80_Mag), \
-			MAG_6(3AS_10Rnd_EC80_Mag), \
+			LIST_10(3AS_10Rnd_EC80_Mag), \
+			LIST_6(3AS_10Rnd_EC80_Mag), \
 			MAGS_MISC
 	};
 	NEW_CLASS(ARF_Spotter): TAG_CLASS(Clone_Marksman)
@@ -542,9 +542,9 @@ class CfgVehicles {
 		icon = "JLTS_iconManRecon";
 		ARF_IDENTITY(ARF_JTAC)
 		EQUIPMENT(TAG_CLASS(ARF_Helmet), TAG_CLASS(Recon_Accessories), TAG_CLASS(RTO_Backpack_Recon), JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(3AS_60Rnd_EC30_Mag), \
+			LIST_10(3AS_60Rnd_EC30_Mag), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 	};
@@ -555,18 +555,18 @@ class CfgVehicles {
 		EQUIPMENT(TAG_CLASS(ARF_Helmet), TAG_CLASS(Recon_Accessories), TAG_CLASS(Belt_Bag), JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
 		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), TAG_CLASS(RPS6X), SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(3AS_60Rnd_EC30_Mag), \
-			MAG_3(MK40X_AT_Guided), \
+			LIST_10(3AS_60Rnd_EC30_Mag), \
+			LIST_3(MK40X_AT_Guided), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		headgearList[]=
 		{
-			CLASS(ARF_Helmet), 0.6,
-			CLASS(ARF_Helmet_P2), 0.4
+			CLASS(ARF_Helmet), 1.6,
+			CLASS(ARF_Helmet_P2), 1.4
 		};
 		class EventHandlers
 		{
-			init = "if (local (_this select 0)) then {[(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+			init = "if (local (_this select 1)) then {[(_this select 1), [], []] call BIS_fnc_unitHeadgear;};";
 		};
 	};
 	NEW_CLASS(ARF_EOD): TAG_CLASS(Clone_EOD)
@@ -574,19 +574,19 @@ class CfgVehicles {
 		displayName = "ARF Engineer";
 		ARF_IDENTITY(ARF_EOD)
 		EQUIPMENT(TAG_CLASS(ARF_Helmet), TAG_CLASS(Recon_Accessories), TAG_CLASS(Belt_Bag), JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DP23_Lased), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		WEAPONS(TAG_CLASS(DP23_Lased), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_8(JLTS_DP23_Mag), \
-			MAG_8(TAG_CLASS(30Rnd_EC50_Mag)), \
+			LIST_8(JLTS_DP23_Mag), \
+			LIST_8(TAG_CLASS(30Rnd_EC50_Mag)), \
 			MAGS_MISC
 		headgearList[]=
 		{
-			CLASS(ARF_Helmet), 0.3,
-			CLASS(ARF_Helmet_P2), 0.7
+			CLASS(ARF_Helmet), 1.3,
+			CLASS(ARF_Helmet_P2), 1.7
 		};
 		class EventHandlers
 		{
-			init = "if (local (_this select 0)) then {[(_this select 0), [], []] call BIS_fnc_unitHeadgear}; [_this select 0, ""JLTS_GAR_EOD""] call BIS_fnc_setUnitInsignia;";
+			init = "if (local (_this select 1)) then {[(_this select 1), [], []] call BIS_fnc_unitHeadgear}; [_this select 1, ""JLTS_GAR_EOD""] call BIS_fnc_setUnitInsignia;";
 		};
 	};
 	NEW_CLASS(ARF_CLS): TAG_CLASS(Clone_Medic)
@@ -594,9 +594,9 @@ class CfgVehicles {
 		displayName = "ARF Medic";
 		ARF_IDENTITY(ARF_CLS)
 		EQUIPMENT(TAG_CLASS(ARF_Helmet), TAG_CLASS(Medic_Vest), TAG_CLASS(Belt_Bag_Medic), JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(3AS_60Rnd_EC30_Mag), \
+			LIST_10(3AS_60Rnd_EC30_Mag), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -608,12 +608,12 @@ class CfgVehicles {
 		EQUIPMENT(TAG_CLASS(ARF_Helmet), TAG_CLASS(Recon_Officer_Accessories), TAG_CLASS(Belt_Bag), JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
 		headgearList[]=
 		{
-			CLASS(ARF_Helmet), 0.7,
-			CLASS(ARF_Helmet_P2), 0.3
+			CLASS(ARF_Helmet), 1.7,
+			CLASS(ARF_Helmet_P2), 1.3
 		};
 		class EventHandlers
 		{
-			init = "if (local (_this select 0)) then {[(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+			init = "if (local (_this select 1)) then {[(_this select 1), [], []] call BIS_fnc_unitHeadgear;};";
 		};
 	};
 	NEW_CLASS(ARF_Lieutenant): TAG_CLASS(Clone_Lieutenant)
@@ -623,12 +623,12 @@ class CfgVehicles {
 		EQUIPMENT(TAG_CLASS(ARF_Helmet), TAG_CLASS(Lieutenant_Accessories), TAG_CLASS(Belt_Bag), JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
 		headgearList[]=
 		{
-			CLASS(ARF_Helmet), 0.7,
-			CLASS(ARF_Helmet_P2), 0.3
+			CLASS(ARF_Helmet), 1.7,
+			CLASS(ARF_Helmet_P2), 1.3
 		};
 		class EventHandlers
 		{
-			init = "if (local (_this select 0)) then {[(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+			init = "if (local (_this select 1)) then {[(_this select 1), [], []] call BIS_fnc_unitHeadgear;};";
 		};
 	};
 	NEW_CLASS(ARF_Captain): TAG_CLASS(Clone_Captain)
@@ -638,12 +638,12 @@ class CfgVehicles {
 		EQUIPMENT(TAG_CLASS(ARF_Helmet), TAG_CLASS(Officer_Accessories), TAG_CLASS(Belt_Bag), JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
 		headgearList[]=
 		{
-			CLASS(ARF_Helmet), 0.6,
-			CLASS(ARF_Helmet_P2), 0.4
+			CLASS(ARF_Helmet), 1.6,
+			CLASS(ARF_Helmet_P2), 1.4
 		};
 		class EventHandlers
 		{
-			init = "if (local (_this select 0)) then {[(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+			init = "if (local (_this select 1)) then {[(_this select 1), [], []] call BIS_fnc_unitHeadgear;};";
 		};
 	};
 	NEW_CLASS(ARF_Major): TAG_CLASS(Clone_Commander)
@@ -653,12 +653,12 @@ class CfgVehicles {
 		EQUIPMENT(TAG_CLASS(ARF_Helmet), TAG_CLASS(Commander_Accessories), TAG_CLASS(Belt_Bag), JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
 		headgearList[]=
 		{
-			CLASS(ARF_Helmet), 0.6,
-			CLASS(ARF_Helmet_P2), 0.4
+			CLASS(ARF_Helmet), 1.6,
+			CLASS(ARF_Helmet_P2), 1.4
 		};
 		class EventHandlers
 		{
-			init = "if (local (_this select 0)) then {[(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+			init = "if (local (_this select 1)) then {[(_this select 1), [], []] call BIS_fnc_unitHeadgear;};";
 		};
 	};
 
@@ -673,10 +673,10 @@ class CfgVehicles {
 		displayName = "BARC Sniper";
 		BARC_IDENTITY(BARC_Sniper)
 		EQUIPMENT(TAG_CLASS(BARC_Helmet), TAG_CLASS(Recon_Accessories), TAG_CLASS(Belt_Bag), JLTS_NVG_droid_chip_2, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15X), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		WEAPONS(TAG_CLASS(DC15X), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(3AS_10Rnd_EC80_Mag), \
-			MAG_6(3AS_10Rnd_EC80_Mag), \
+			LIST_10(3AS_10Rnd_EC80_Mag), \
+			LIST_6(3AS_10Rnd_EC80_Mag), \
 			MAGS_MISC
 	};
 	NEW_CLASS(BARC_Spotter): TAG_CLASS(ARF_Spotter)
@@ -734,10 +734,10 @@ class CfgVehicles {
 	{
 		displayName = "Airborne Trooper (DC-15C)";
 		AB_IDENTITY(AB_DC15C)
-		EQUIPMENT(TAG_CLASS(Airborne_Helmet), JLTS_CloneVestAirborne, TAG_CLASS(Belt_Bag), 0, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15C_Scoped), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		EQUIPMENT(TAG_CLASS(Airborne_Helmet), JLTS_CloneVestAirborne, TAG_CLASS(Belt_Bag), 1, JLTS_clone_comlink)
+		WEAPONS(TAG_CLASS(DC15C_Scoped), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(TAG_CLASS(36Rnd_EC50_Mag)), \
+			LIST_10(TAG_CLASS(36Rnd_EC50_Mag)), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -746,10 +746,10 @@ class CfgVehicles {
 	{
 		displayName = "Airborne Trooper (DC-15LE)";
 		AB_IDENTITY(AB_DC15LE)
-		EQUIPMENT(TAG_CLASS(Airborne_Helmet), JLTS_CloneVestAirborne, TAG_CLASS(Belt_Bag), 0, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15LE), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		EQUIPMENT(TAG_CLASS(Airborne_Helmet), JLTS_CloneVestAirborne, TAG_CLASS(Belt_Bag), 1, JLTS_clone_comlink)
+		WEAPONS(TAG_CLASS(DC15LE), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(TAG_CLASS(45Rnd_EC40_Mag)), \
+			LIST_10(TAG_CLASS(45Rnd_EC40_Mag)), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -758,11 +758,11 @@ class CfgVehicles {
 	{
 		displayName = "Airborne Grenadier (DC-15LE)";
 		AB_IDENTITY(AB_DC15LE)
-		EQUIPMENT(TAG_CLASS(Airborne_Helmet), JLTS_CloneVestAirborne, TAG_CLASS(Belt_Bag), 0, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15LE_GL), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		EQUIPMENT(TAG_CLASS(Airborne_Helmet), JLTS_CloneVestAirborne, TAG_CLASS(Belt_Bag), 1, JLTS_clone_comlink)
+		WEAPONS(TAG_CLASS(DC15LE_GL), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(TAG_CLASS(45Rnd_EC40_Mag)), \
-			MAG_5(3Rnd_HE_Grenade_shell), \
+			LIST_10(TAG_CLASS(45Rnd_EC40_Mag)), \
+			LIST_5(3Rnd_HE_Grenade_shell), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -771,11 +771,11 @@ class CfgVehicles {
 	{
 		displayName = "Airborne AT Trooper";
 		AB_IDENTITY(AB_AT)
-		EQUIPMENT(TAG_CLASS(Airborne_Helmet), JLTS_CloneVestAirborne, TAG_CLASS(Belt_Bag), 0, JLTS_clone_comlink)
+		EQUIPMENT(TAG_CLASS(Airborne_Helmet), JLTS_CloneVestAirborne, TAG_CLASS(Belt_Bag), 1, JLTS_clone_comlink)
 		WEAPONS(TAG_CLASS(DC15LE), TAG_CLASS(DC17SA_Reflex), TAG_CLASS(RPS6X), SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(TAG_CLASS(45Rnd_EC40_Mag)), \
-			MAG_5(MK40X_AT_Guided), \
+			LIST_10(TAG_CLASS(45Rnd_EC40_Mag)), \
+			LIST_5(MK40X_AT_Guided), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -784,11 +784,11 @@ class CfgVehicles {
 	{
 		displayName = "Airborne Engineer";
 		AB_IDENTITY(AB_EOD)
-		EQUIPMENT(TAG_CLASS(Airborne_Helmet), JLTS_CloneVestAirborne, TAG_CLASS(Belt_Bag), 0, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DP23_Lased), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		EQUIPMENT(TAG_CLASS(Airborne_Helmet), JLTS_CloneVestAirborne, TAG_CLASS(Belt_Bag), 1, JLTS_clone_comlink)
+		WEAPONS(TAG_CLASS(DP23_Lased), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_8(JLTS_DP23_Mag), \
-			MAG_8(TAG_CLASS(30Rnd_EC50_Mag)), \
+			LIST_8(JLTS_DP23_Mag), \
+			LIST_8(TAG_CLASS(30Rnd_EC50_Mag)), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -797,10 +797,10 @@ class CfgVehicles {
 	{
 		displayName = "Airborne Heavy Trooper";
 		AB_IDENTITY(AB_AR)
-		EQUIPMENT(TAG_CLASS(Airborne_Helmet), JLTS_CloneVestAirborne, TAG_CLASS(Belt_Bag), 0, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15L_AR), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		EQUIPMENT(TAG_CLASS(Airborne_Helmet), JLTS_CloneVestAirborne, TAG_CLASS(Belt_Bag), 1, JLTS_clone_comlink)
+		WEAPONS(TAG_CLASS(DC15L_AR), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_8(3AS_200Rnd_EC40_Mag), \
+			LIST_8(3AS_200Rnd_EC40_Mag), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -809,10 +809,10 @@ class CfgVehicles {
 	{
 		displayName = "Airborne Medic";
 		AB_IDENTITY(AB_CLS)
-		EQUIPMENT(TAG_CLASS(Airborne_Helmet), TAG_CLASS(Medic_Vest), TAG_CLASS(Belt_Bag), 0, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15C_Scoped), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		EQUIPMENT(TAG_CLASS(Airborne_Helmet), TAG_CLASS(Medic_Vest), TAG_CLASS(Belt_Bag), 1, JLTS_clone_comlink)
+		WEAPONS(TAG_CLASS(DC15C_Scoped), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(TAG_CLASS(36Rnd_EC50_Mag)), \
+			LIST_10(TAG_CLASS(36Rnd_EC50_Mag)), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -821,11 +821,11 @@ class CfgVehicles {
 	{
 		displayName = "Airborne NCO";
 		AB_IDENTITY(AB_NCO)
-		EQUIPMENT(TAG_CLASS(Airborne_Helmet), JLTS_CloneVestAirborneNCO, TAG_CLASS(Belt_Bag), 0, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15C_GL_Reflex), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		EQUIPMENT(TAG_CLASS(Airborne_Helmet), JLTS_CloneVestAirborneNCO, TAG_CLASS(Belt_Bag), 1, JLTS_clone_comlink)
+		WEAPONS(TAG_CLASS(DC15C_GL_Reflex), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(TAG_CLASS(36Rnd_EC50_Mag)), \
-			MAG_8(1Rnd_HE_Grenade_shell), \
+			LIST_10(TAG_CLASS(36Rnd_EC50_Mag)), \
+			LIST_8(1Rnd_HE_Grenade_shell), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -834,10 +834,10 @@ class CfgVehicles {
 	{
 		displayName = "Airborne Officer";
 		AB_IDENTITY(AB_Officer)
-		EQUIPMENT(TAG_CLASS(Airborne_Helmet), TAG_CLASS(Officer_Accessories), TAG_CLASS(Belt_Bag), 0, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15C_Scoped), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		EQUIPMENT(TAG_CLASS(Airborne_Helmet), TAG_CLASS(Officer_Accessories), TAG_CLASS(Belt_Bag), 1, JLTS_clone_comlink)
+		WEAPONS(TAG_CLASS(DC15C_Scoped), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(TAG_CLASS(36Rnd_EC50_Mag)), \
+			LIST_10(TAG_CLASS(36Rnd_EC50_Mag)), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -854,9 +854,9 @@ class CfgVehicles {
 		icon = "JLTS_iconManReconAdvanced";
 		ARC_IDENTITY(ARC_DC15S)
 		EQUIPMENT(TAG_CLASS(ARC_Helmet), TAG_CLASS(ARC_Vest), TAG_CLASS(Backpack), TAG_CLASS(Rangefinder), JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(3AS_60Rnd_EC30_Mag), \
+			LIST_10(3AS_60Rnd_EC30_Mag), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -871,9 +871,9 @@ class CfgVehicles {
 		icon = "JLTS_iconManReconAdvanced";
 		ARC_IDENTITY(ARC_Westar)
 		EQUIPMENT(TAG_CLASS(ARC_Helmet), TAG_CLASS(ARC_Vest), TAG_CLASS(Backpack), TAG_CLASS(Rangefinder), JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(WestarM5_Scoped), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		WEAPONS(TAG_CLASS(WestarM5_Scoped), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(TAG_CLASS(60Rnd_EC40_Mag)), \
+			LIST_10(TAG_CLASS(60Rnd_EC40_Mag)), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -884,10 +884,10 @@ class CfgVehicles {
 		icon = "JLTS_iconManHeavy";
 		ARC_IDENTITY(ARC_GL)
 		EQUIPMENT(TAG_CLASS(ARC_Helmet), TAG_CLASS(ARC_Vest), TAG_CLASS(Backpack), TAG_CLASS(Rangefinder), JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(WestarM5_GL), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		WEAPONS(TAG_CLASS(WestarM5_GL), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(3AS_60Rnd_EC30_Mag), \
-			MAG_5(3Rnd_HE_Grenade_shell), \
+			LIST_10(3AS_60Rnd_EC30_Mag), \
+			LIST_5(3Rnd_HE_Grenade_shell), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -900,8 +900,8 @@ class CfgVehicles {
 		EQUIPMENT(TAG_CLASS(ARC_Helmet), TAG_CLASS(ARC_Vest), TAG_CLASS(Backpack), TAG_CLASS(Macrobinocular), JLTS_clone_comlink)
 		WEAPONS(TAG_CLASS(WestarM5_Scoped), TAG_CLASS(DC17SA_Reflex), TAG_CLASS(RPS6X), SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(TAG_CLASS(60Rnd_EC40_Mag)), \
-			MAG_3(MK40X_AT_Guided), \
+			LIST_10(TAG_CLASS(60Rnd_EC40_Mag)), \
+			LIST_3(MK40X_AT_Guided), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -911,10 +911,10 @@ class CfgVehicles {
 		displayName = "ARC Engineer";
 		ARC_IDENTITY(ARC_EOD)
 		EQUIPMENT(TAG_CLASS(ARC_Helmet), TAG_CLASS(ARC_Vest), TAG_CLASS(EOD_Backpack), TAG_CLASS(Rangefinder), JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DP23_Lased), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		WEAPONS(TAG_CLASS(DP23_Lased), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_8(JLTS_DP23_Mag), \
-			MAG_8(TAG_CLASS(30Rnd_EC50_Mag)), \
+			LIST_8(JLTS_DP23_Mag), \
+			LIST_8(TAG_CLASS(30Rnd_EC50_Mag)), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -924,9 +924,9 @@ class CfgVehicles {
 		displayName = "ARC Medic";
 		ARC_IDENTITY(ARC_Medic)
 		EQUIPMENT(TAG_CLASS(ARC_Helmet), TAG_CLASS(ARC_Vest), TAG_CLASS(Medic_Backpack), TAG_CLASS(Rangefinder), JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(WestarM5_Scoped), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		WEAPONS(TAG_CLASS(WestarM5_Scoped), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(TAG_CLASS(60Rnd_EC40_Mag)), \
+			LIST_10(TAG_CLASS(60Rnd_EC40_Mag)), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -937,9 +937,9 @@ class CfgVehicles {
 		icon = "JLTS_iconManReconAdvanced";
 		ARC_IDENTITY(ARC_JTAC)
 		EQUIPMENT(TAG_CLASS(ARC_Helmet), TAG_CLASS(ARC_Vest), TAG_CLASS(RTO_Backpack), TAG_CLASS(Rangefinder), JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(WestarM5_Scoped), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		WEAPONS(TAG_CLASS(WestarM5_Scoped), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(TAG_CLASS(60Rnd_EC40_Mag)), \
+			LIST_10(TAG_CLASS(60Rnd_EC40_Mag)), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -953,9 +953,9 @@ class CfgVehicles {
 		displayName = "ARC Sniper";
 		ARC_IDENTITY(ARC_Sniper)
 		EQUIPMENT(TAG_CLASS(ARC_Helmet), TAG_CLASS(ARC_Vest), TAG_CLASS(Belt_Bag), TAG_CLASS(Macrobinocular_Low), JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(Firepuncher_Scoped), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		WEAPONS(TAG_CLASS(Firepuncher_Scoped), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(3AS_10Rnd_EC80_Mag), \
+			LIST_10(3AS_10Rnd_EC80_Mag), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -969,9 +969,9 @@ class CfgVehicles {
 		displayName = "ARC Lieutenant";
 		ARC_IDENTITY(ARC_Lieutenant)
 		EQUIPMENT(TAG_CLASS(ARC_Helmet), TAG_CLASS(ARC_Vest), TAG_CLASS(Backpack), TAG_CLASS(Macrobinocular), JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(WestarM5_Scoped), TAG_CLASS(DC17SA_Reflex), 0, SWLB_clone_binocular)
+		WEAPONS(TAG_CLASS(WestarM5_Scoped), TAG_CLASS(DC17SA_Reflex), 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(TAG_CLASS(60Rnd_EC40_Mag)), \
+			LIST_10(TAG_CLASS(60Rnd_EC40_Mag)), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -986,10 +986,10 @@ class CfgVehicles {
 		displayName = "Clone Commando (DC-17M)";
 		icon = "JLTS_iconManReconAdvanced";
 		RC_IDENTITY(RC_DC17M)
-		EQUIPMENT(TAG_CLASS(Katarn_Helmet), 0, TAG_CLASS(Katarn_Backpack), 0, JLTS_clone_comlink)
-		WEAPONS(3AS_DC17M_F, 0, 0, SWLB_clone_binocular)
+		EQUIPMENT(TAG_CLASS(Katarn_Helmet), 1, TAG_CLASS(Katarn_Backpack),1, JLTS_clone_comlink)
+		WEAPONS(3AS_DC17M_F, 1, 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(3AS_100Rnd_EC40_mag), \
+			LIST_10(3AS_100Rnd_EC40_mag), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -998,10 +998,10 @@ class CfgVehicles {
 	{
 		displayName = "Clone Commando (NCO)";
 		RC_IDENTITY(RC_NCO)
-		EQUIPMENT(TAG_CLASS(Katarn_Helmet), 3AS_Katarn_Vest_Team_Leader, TAG_CLASS(Katarn_Backpack), 0, JLTS_clone_comlink)
-		WEAPONS(3AS_DC17M_F, 0, 0, SWLB_clone_binocular)
+		EQUIPMENT(TAG_CLASS(Katarn_Helmet), 3AS_Katarn_Vest_Team_Leader, TAG_CLASS(Katarn_Backpack), 1, JLTS_clone_comlink)
+		WEAPONS(3AS_DC17M_F, 1, 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(3AS_100Rnd_EC40_mag), \
+			LIST_10(3AS_100Rnd_EC40_mag), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -1011,10 +1011,10 @@ class CfgVehicles {
 		displayName = "Clone Commando (Tech)";
 		canDeactivateMines = 1;
 		RC_IDENTITY(RC_Tech)
-		EQUIPMENT(TAG_CLASS(Katarn_Helmet), TAG_CLASS(Katarn_Vest_Tech), TAG_CLASS(Katarn_Backpack), 0, JLTS_clone_comlink)
-		WEAPONS(3AS_DC17M_F, 0, 0, SWLB_clone_binocular)
+		EQUIPMENT(TAG_CLASS(Katarn_Helmet), TAG_CLASS(Katarn_Vest_Tech), TAG_CLASS(Katarn_Backpack), 1, JLTS_clone_comlink)
+		WEAPONS(3AS_DC17M_F, 1, 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(3AS_100Rnd_EC40_mag), \
+			LIST_10(3AS_100Rnd_EC40_mag), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -1023,11 +1023,11 @@ class CfgVehicles {
 	{
 		displayName = "Clone Commando (Demo)";
 		RC_IDENTITY(RC_Demo)
-		EQUIPMENT(TAG_CLASS(Katarn_Helmet), TAG_CLASS(Katarn_Vest_Demo), TAG_CLASS(Katarn_Backpack), 0, JLTS_clone_comlink)
-		WEAPONS(3AS_DC17M_F, 0, 0, SWLB_clone_binocular)
+		EQUIPMENT(TAG_CLASS(Katarn_Helmet), TAG_CLASS(Katarn_Vest_Demo), TAG_CLASS(Katarn_Backpack), 1, JLTS_clone_comlink)
+		WEAPONS(3AS_DC17M_F, 1, 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(3AS_100Rnd_EC40_mag), \
-			MAG_5(3AS_AntiArmour_mag), \
+			LIST_10(3AS_100Rnd_EC40_mag), \
+			LIST_5(3AS_AntiArmour_mag), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -1036,11 +1036,11 @@ class CfgVehicles {
 	{
 		displayName = "Clone Commando (Sniper)";
 		RC_IDENTITY(RC_Sniper)
-		EQUIPMENT(TAG_CLASS(Katarn_Helmet), 3AS_Katarn_Vest_Sniper, TAG_CLASS(Katarn_Backpack), 0, JLTS_clone_comlink)
-		WEAPONS(3AS_DC17M_F, 0, 0, SWLB_clone_binocular)
+		EQUIPMENT(TAG_CLASS(Katarn_Helmet), 3AS_Katarn_Vest_Sniper, TAG_CLASS(Katarn_Backpack), 1, JLTS_clone_comlink)
+		WEAPONS(3AS_DC17M_F, 1, 1, SWLB_clone_binocular)
 		#define MAGAZINES \
-			MAG_10(3AS_5Rnd_EC80_mag), \
-			MAG_5(3AS_5Rnd_EC80_mag), \
+			LIST_10(3AS_5Rnd_EC80_mag), \
+			LIST_5(3AS_5Rnd_EC80_mag), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
@@ -1052,8 +1052,8 @@ class CfgVehicles {
 		Engineer = 1;
 		canDeactivateMines = 0;
 		TR_IDENTITY(Clone_Pilot)
-		EQUIPMENT(TAG_CLASS(P2_Pilot_Helmet), JLTS_CloneVestHolster, TAG_CLASS(RTO_Backpack_Mini), 0, JLTS_clone_comlink)
-		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 0, 0)
+		EQUIPMENT(TAG_CLASS(P2_Pilot_Helmet), JLTS_CloneVestHolster, TAG_CLASS(RTO_Backpack_Mini), 1, JLTS_clone_comlink)
+		WEAPONS(TAG_CLASS(DC15S_Reflex), TAG_CLASS(DC17SA_Reflex), 1, 1)
 		items[]=
 		{
 			"FirstAidKit",
