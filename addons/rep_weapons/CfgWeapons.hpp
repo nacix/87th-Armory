@@ -26,26 +26,38 @@ class CfgWeapons
 			scope = 1; \
 			class LinkedItems \
 			{ \
-				class LinkedItemsOptic \
-				{ \
-					slot = "CowsSlot"; \
-					item = QUOTE(opticName); \
-				}; \
-				class LinkedItemsMuzzle \
-				{ \
-					slot = "MuzzleSlot"; \
-					item = QUOTE(muzzleName); \
-				}; \
-				class LinkedItemsAcc \
-				{ \
-					slot = "PointerSlot"; \
-					item = QUOTE(accessoryName); \
-				}; \
-				class LinkedItemsUnder \
-				{ \
-					slot = "UnderBarrelSlot"; \
-					item = QUOTE(underName); \
-				}; \
+				#if opticName \
+				#else \
+					class LinkedItemsOptic \
+					{ \
+						slot = "CowsSlot"; \
+						item = QUOTE(opticName); \
+					}; \
+				#endif \
+				#if muzzleName \
+				#else \
+					class LinkedItemsMuzzle \
+					{ \
+						slot = "MuzzleSlot"; \
+						item = QUOTE(muzzleName); \
+					}; \
+				#endif \
+				#if accessoryName \
+				#else \
+					class LinkedItemsAcc \
+					{ \
+						slot = "PointerSlot"; \
+						item = QUOTE(accessoryName); \
+					}; \
+				#endif \
+				#if underName \
+				#else \
+					class LinkedItemsUnder \
+					{ \
+						slot = "UnderBarrelSlot"; \
+						item = QUOTE(underName); \
+					}; \
+				#endif \
 			}; \
 		};
 
