@@ -94,7 +94,7 @@ class CfgVehicles
 		EQUIPMENT(1, 1, JLTS_B1_backpack, 1, SWLB_comlink_droid)
 		WEAPONS(JLTS_E5, 1, 1, 1)
 		#define MAGAZINES \
-			LIST_10(JLTS_SBB3_mag), \
+			LIST_10(JLTS_E5_mag), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
