@@ -85,7 +85,7 @@
             QUOTE(launcherWeapon), \
         #endif \
         #if binocularWeapon \
-        #else\
+        #else \
             QUOTE(binocularWeapon), \
         #endif \
         "Throw", \
@@ -106,7 +106,7 @@
             QUOTE(launcherWeapon), \
         #endif \
         #if binocularWeapon \
-        #else \
+        # \
             QUOTE(binocularWeapon), \
         #endif \
         "Throw", \
