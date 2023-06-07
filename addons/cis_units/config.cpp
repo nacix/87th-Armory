@@ -9,11 +9,12 @@ class CfgPatches
         units[]=
         {
             CLASS(Droid_B1_E5),
+            CLASS(Droid_B1_E5C),
             CLASS(Droid_B1_Commander),
             CLASS(Droid_B1_Crew),
             CLASS(Droid_B1_Geo_E5),
             CLASS(Droid_B1_Geo_Commander),
-            CLASS(Droid_B1_Marine),
+            CLASS(Droid_B1_NCO),
             CLASS(Droid_B1_Pilot),
 
             CLASS(Droid_X1_E5C),
