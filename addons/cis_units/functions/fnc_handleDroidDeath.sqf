@@ -16,6 +16,7 @@ TRACE_1("handleDroidDeath", _droid);
     private _anim = selectRandom _deathAnims;
 
     // Reset the move and action states of our droid
+    /*
     LOG_1("(handleDroidDeath) [%1]: Resetting move state...", _droid);
     [_droid, _anim] remoteExec ["switchMove", 0];
     _droid playActionNow "Disable_Gesture";
@@ -25,6 +26,7 @@ TRACE_1("handleDroidDeath", _droid);
         case "B1_Droid_die_2": { [_droid, 0.8] remoteExec ["setAnimSpeedCoef", 0] };
         case "B1_Droid_die_3": { [_droid, 0.5] remoteExec ["setAnimSpeedCoef", 0] };
     };
+    */
 
     [_droid, {
         private _particlesSpark = "#particlesource" createVehicleLocal (getposATL _this);
