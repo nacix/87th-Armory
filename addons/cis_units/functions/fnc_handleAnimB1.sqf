@@ -38,7 +38,7 @@ private _animHandlerPFH = [{
         [_droid, selectRandom ["B1_incGrenade_1", "B1_incGrenade_2", "B1_incGrenade_3", "B1_incGrenade_4"], 60, 3] call FUNC(sayPhrase);
     };
 
-    if ((GETVAR(_droid, GVAR(canAttack), 0) == 0) && (alive _droid) && (lifeState _droid isNotEqualTo "INCAPACITATED") && (animationState _droid isNotEqualTo "B1_Droid_hit_1") && (animationState _droid isNotEqualTo "B1_Droid_hit_2") && (animationState _droid isNotEqualTo "B1_Droid_execution_main")) then {
+    if ((GETVAR(_droid, GVAR(canAttack), 0) == 0) && (alive _droid)) then {
         private _launcher = secondaryWeapon _droid;
 
         if (_launcher isNotEqualTo "" && (_droid ammo _launcher > 0 || { (magazinesAmmoFull _droid findIf { (_x select 0) in compatibleMagazines _launcher }) > 0 })) then {
@@ -56,6 +56,7 @@ private _animHandlerPFH = [{
             LOG_4("(handleAnimB1) [%1]: This droid is using a launcher [%2] with ammo [%3] and target priority [%4]! Checking for valid targets...", _droid, _launcher, _ammoType, _ammoTarget);
 
             private _targetIndex = -1;
+            private _isTargetVehicle = true;
 
             if ("512" in _ammoTarget || "128" in _ammoTarget || _ammoTarget in [128, 512] ) then {
                 _targetIndex = _potentialTargets findIf {
@@ -70,25 +71,30 @@ private _animHandlerPFH = [{
 
                         (_vehicle != _x && (_vehicle isKindOf "Helicopter" || _vehicle isKindOf "Plane"))
                     };
+                } else {
+                    if ("64" in _ammoTarget || _ammoTarget isEqualTo 64) then {
+                       _targetIndex = _potentialTargets findIf { _x isKindOf "Man" };
+                       _isTargetVehicle = false;
+                    };
                 };
             };
 
             private _activeTarget = assignedTarget _droid;
 
-            if (_targetIndex >= 0) then {
-                if (_droid ammo _launcher > 0) then {
-                    if (isNull _activeTarget || { _activeTarget isKindOf "Man" }) then {
-                        private _targetVehicle = vehicle (_potentialTargets select _targetIndex);
+            if (_targetIndex >= 0 && _droid ammo _launcher > 0 && (isNull _activeTarget || { _activeTarget isKindOf "Man" })) then {
+                private _targetVehicle = vehicle (_potentialTargets select _targetIndex);
 
-                        _droid playActionNow "";
-                        _droid selectWeapon "Single";
-                        _droid doTarget _targetVehicle;
-
-                        LOG_6("(handleAnimB1) [%1 | %2]: New target found [%3 | %4]! Old target: [%5 | %6]", name _droid, _droid, name _targetVehicle, _targetVehicle, name _activeTarget, _activeTarget);
-                    };
+                if (_isTargetVehicle) then {
+                    _droid selectWeapon "Single";
+                } else {
+                    _droid selectWeapon "FullAuto";
                 };
+
+                if ((_isTargetVehicle && (typeOf _activeTarget) isEqualto "Man") || (!_isTargetVehicle && (typeOf _activeTarget) isNotEqualTo "Man")) then { _droid doTarget _targetVehicle };
+
+                LOG_6("(handleAnimB1) [%1 | %2]: New target found [%3 | %4]! Old target: [%5 | %6]", name _droid, _droid, name _targetVehicle, _targetVehicle, name _activeTarget, _activeTarget);
             };
-        } else { _droid playActionNow "B1_GunHolding" };
+        };
     } else { _droid playActionNow "Disable_Gesture" };
 }, 2, _droid] call CBA_fnc_addPerFrameHandler;
 
