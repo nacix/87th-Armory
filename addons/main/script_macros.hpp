@@ -85,6 +85,7 @@
             QUOTE(launcherWeapon), \
         #endif \
         #if binocularWeapon \
+        #else\
             QUOTE(binocularWeapon), \
         #endif \
         "Throw", \
@@ -157,7 +158,10 @@
         "ItemCompass", \
         "ItemWatch" \
     }; \
-    backpack = QUOTE(back);
+    #if back \
+    #else \
+        backpack = QUOTE(back);
+    #endif
 
 #define PREVIEW(className) editorPreview = QPATHTOF(data\ui\editorPreviews\TAG_CLASS(className).jpg);
 
