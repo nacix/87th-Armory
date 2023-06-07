@@ -213,9 +213,9 @@ class CfgVehicles
 	{
 		displayName = "X1 Chaingunner (Z-7)";
 		X1_IDENTITY(Droid_X1_Z7)
-		WEAPONS(1, UNSC_Knife, SWLW_Z7, JLTS_CloneBinocular_Black)
+		WEAPONS(1, UNSC_Knife, TAG_CLASS(Z7), JLTS_CloneBinocular_Black)
 		#define MAGAZINES \
-			LIST_3(SWLW_E7_mag), \
+			LIST_3(TAG_CLASS(Z7_Mag)), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
