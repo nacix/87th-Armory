@@ -101,6 +101,18 @@ class CfgVehicles
 		DEFINE_STEPS_GENERIC
 		DISABLE_BREATH_SOUNDS
     };
+	NEW_CLASS(Droid_B1_E5C): TAG_CLASS(Droid_B1_E5)
+	{
+		displayName = "B1 Support Gunner (E-5C)";
+		B1_IDENTITY(JLTS_DroidB1, Droid_B1_E5C)
+		EQUIPMENT(1, 1, JLTS_B1_backpack, 1, SWLB_comlink_droid)
+		WEAPONS(JLTS_E5C, 1, 1, 1)
+		#define MAGAZINES \
+			LIST_6(JLTS_E5C_mag), \
+			MAGS_MISC
+		magazines[] = { MAGAZINES };
+		respawnMagazines[] = { MAGAZINES };
+	};
 	NEW_CLASS(Droid_B1_Commander): TAG_CLASS(Droid_B1_E5)
 	{
 		displayName = "B1 Commander (E-5)";
@@ -139,10 +151,10 @@ class CfgVehicles
 		B1_IDENTITY(JLTS_DroidB1_Geonosis_commander, Droid_B1_Geo_Commander)
 		EQUIPMENT(1, 1, JLTS_B1_antenna_Geonosis, 1, SWLB_comlink_droid)
 	};
-	NEW_CLASS(Droid_B1_Marine): TAG_CLASS(Droid_B1_E5)
+	NEW_CLASS(Droid_B1_NCO): TAG_CLASS(Droid_B1_E5)
 	{
-		displayName = "B1 Marine";
-		B1_IDENTITY(JLTS_DroidB1_Marine, Droid_B1_Marine)
+		displayName = "B1 Sergeant";
+		B1_IDENTITY(JLTS_DroidB1_Marine, Droid_B1_NCO)
 		WEAPONS(JLTS_E5C, JLTS_RG4D, 1, 1)
 		#define MAGAZINES \
 			LIST_10(JLTS_E5C_mag), \
@@ -161,6 +173,51 @@ class CfgVehicles
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
+	};
+	NEW_CLASS(Droid_B1_AA): TAG_CLASS(Droid_B1_E5)
+	{
+		displayName = "B1 Anti-Air (E-60R)";
+		B1_IDENTITY(JLTS_DroidB1, Droid_B1_AA)
+		EQUIPMENT(1, 1, JLTS_B1_backpack, 1, SWLB_comlink_droid)
+		WEAPONS(JLTS_E5, 1, SWLW_E60R_AA, JLTS_CloneBinocular_Black)
+		#define MAGAZINES \
+			LIST_10(JLTS_E5_mag), \
+			LIST_3(SWLW_e60r_aa_mag), \
+			MAGS_MISC
+		magazines[] = { MAGAZINES };
+		respawnMagazines[] = { MAGAZINES };
+	};
+	NEW_CLASS(Droid_B1_AT): TAG_CLASS(Droid_B1_AA)
+	{
+		displayName = "B1 Anti-Tank (E-60R)";
+		B1_IDENTITY(JLTS_DroidB1, Droid_B1_AT)
+		EQUIPMENT(1, 1, JLTS_B1_backpack, 1, SWLB_comlink_droid)
+		WEAPONS(JLTS_E5, 1, SWLW_E60R, JLTS_CloneBinocular_Black)
+		#define MAGAZINES \
+			LIST_10(JLTS_E5_mag), \
+			LIST_3(SWLW_e60r_at_mag), \
+			MAGS_MISC
+		magazines[] = { MAGAZINES };
+		respawnMagazines[] = { MAGAZINES };
+	};
+	NEW_CLASS(Droid_B1_E5S): TAG_CLASS(Droid_B1_E5)
+	{
+		displayName = "B1 Sniper (E-5S)";
+		B1_IDENTITY(JLTS_DroidB1_Security, Droid_B1_E5S)
+		EQUIPMENT(1, 1, JLTS_B1_backpack, 1, SWLB_comlink_droid)
+		WEAPONS(JLTS_E5S, JLTS_RG4D, 1, JLTS_DroidBinocular)
+		#define MAGAZINES \
+			LIST_10(JLTS_E5S_mag), \
+			LIST_3(JLTS_RG4D_mag), \
+			MAGS_MISC
+		magazines[] = { MAGAZINES };
+		respawnMagazines[] = { MAGAZINES };
+	};
+	NEW_CLASS(Droid_B1_Training): TAG_CLASS(Droid_B1_E5)
+	{
+		displayName = "B1 Training Droid (E-5)";
+		B1_IDENTITY(JLTS_DroidB1_Training, Droid_B1_E5)
+		EQUIPMENT(1, 1, JLTS_B1_antenna_training, 1, SWLB_comlink_droid)
 	};
 
 	NEW_CLASS(Droid_X1_E5C): TAG_CLASS(Droid_B1_E5)
@@ -219,54 +276,6 @@ class CfgVehicles
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
-	};
-
-	NEW_CLASS(Droid_B1_AA): TAG_CLASS(Droid_B1_E5)
-	{
-		displayName = "B1 Anti-Air (E-60R)";
-		B1_IDENTITY(JLTS_DroidB1_Rocket, Droid_B1_AA)
-		EQUIPMENT(1, 1, JLTS_B1_backpack_prototype, 1, SWLB_comlink_droid)
-		WEAPONS(JLTS_E5, 1, SWLW_E60R_AA, JLTS_CloneBinocular_Black)
-		#define MAGAZINES \
-			LIST_10(JLTS_E5_mag), \
-			LIST_3(SWLW_e60r_aa_mag), \
-			MAGS_MISC
-		magazines[] = { MAGAZINES };
-		respawnMagazines[] = { MAGAZINES };
-	};
-	NEW_CLASS(Droid_B1_AT): TAG_CLASS(Droid_B1_AA)
-	{
-		displayName = "B1 Anti-Tank (E-60R)";
-		B1_IDENTITY(JLTS_DroidB1_Rocket, Droid_B1_AT)
-		EQUIPMENT(1, 1, JLTS_B1_backpack_prototype, 1, SWLB_comlink_droid)
-		WEAPONS(JLTS_E5, 1, SWLW_E60R, JLTS_CloneBinocular_Black)
-		#define MAGAZINES \
-			LIST_10(JLTS_E5_mag), \
-			LIST_3(SWLW_e60r_at_mag), \
-			MAGS_MISC
-		magazines[] = { MAGAZINES };
-		respawnMagazines[] = { MAGAZINES };
-	};
-
-	NEW_CLASS(Droid_B1_E5S): TAG_CLASS(Droid_B1_E5)
-	{
-		displayName = "B1 Sniper (E-5S)";
-		B1_IDENTITY(JLTS_DroidB1_Security, Droid_B1_E5S)
-		EQUIPMENT(1, 1, JLTS_B1_backpack, 1, SWLB_comlink_droid)
-		WEAPONS(JLTS_E5S, JLTS_RG4D, 1, JLTS_DroidBinocular)
-		#define MAGAZINES \
-			LIST_10(JLTS_E5S_mag), \
-			LIST_3(JLTS_RG4D_mag), \
-			MAGS_MISC
-		magazines[] = { MAGAZINES };
-		respawnMagazines[] = { MAGAZINES };
-	};
-
-	NEW_CLASS(Droid_B1_Training): TAG_CLASS(Droid_B1_E5)
-	{
-		displayName = "B1 Training Droid (E-5)";
-		B1_IDENTITY(JLTS_DroidB1_Training, Droid_B1_E5)
-		EQUIPMENT(1, 1, JLTS_B1_antenna_training, 1, SWLB_comlink_droid)
 	};
 
     NEW_CLASS(Droid_B2): lsd_cis_b2_standard
