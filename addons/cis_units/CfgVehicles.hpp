@@ -117,7 +117,7 @@ class CfgVehicles
     };
 	NEW_CLASS(Droid_B1_E5C): TAG_CLASS(Droid_B1_E5)
 	{
-		displayName = "B1 Support Gunner (E-5C)";
+		displayName = "B1 Support (E-5C)";
 		B1_IDENTITY(JLTS_DroidB1, Droid_B1_E5C)
 		EQUIPMENT(1, 1, JLTS_B1_backpack, 1, SWLB_comlink_droid)
 		WEAPONS(JLTS_E5C, 1, 1, 1)
@@ -142,7 +142,7 @@ class CfgVehicles
 	};
 	NEW_CLASS(Droid_B1_Crew): TAG_CLASS(Droid_B1_E5)
 	{
-		displayName = "B1 Mechanic";
+		displayName = "B1 Mechanic (SB-B3)";
 		B1_IDENTITY(JLTS_DroidB1_Crew, Droid_B1_Crew)
 		EQUIPMENT(1, 1, JLTS_B1_antenna, 1, SWLB_comlink_droid)
 		WEAPONS(JLTS_SBB3, JLTS_RG4D, 1, JLTS_DroidBinocular)
@@ -153,21 +153,9 @@ class CfgVehicles
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
 	};
-	NEW_CLASS(Droid_B1_Geo_E5): TAG_CLASS(Droid_B1_E5)
-	{
-		displayName = "Geonosis B1 Droid (E-5)";
-		B1_IDENTITY(JLTS_DroidB1_Geonosis, Droid_B1_Geo_E5)
-		EQUIPMENT(1, 1, JLTS_B1_antenna_Geonosis, 1, SWLB_comlink_droid)
-	};
-	NEW_CLASS(Droid_B1_Geo_Commander): TAG_CLASS(Droid_B1_Commander)
-	{
-		displayName = "Geonosis B1 Commander";
-		B1_IDENTITY(JLTS_DroidB1_Geonosis_commander, Droid_B1_Geo_Commander)
-		EQUIPMENT(1, 1, JLTS_B1_antenna_Geonosis, 1, SWLB_comlink_droid)
-	};
 	NEW_CLASS(Droid_B1_NCO): TAG_CLASS(Droid_B1_E5)
 	{
-		displayName = "B1 Sergeant";
+		displayName = "B1 Sergeant (E-5C)";
 		B1_IDENTITY(JLTS_DroidB1_Marine, Droid_B1_NCO)
 		WEAPONS(JLTS_E5C, JLTS_RG4D, 1, 1)
 		#define MAGAZINES \
@@ -179,7 +167,7 @@ class CfgVehicles
 	};
 	NEW_CLASS(Droid_B1_Pilot): TAG_CLASS(Droid_B1_E5)
 	{
-		displayName = "B1 Pilot";
+		displayName = "B1 Pilot (RG-4D)";
 		B1_IDENTITY(JLTS_DroidB1_Pilot, Droid_B1_Pilot)
 		WEAPONS(1, JLTS_RG4D, 1, 1)
 		#define MAGAZINES \
@@ -227,11 +215,17 @@ class CfgVehicles
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
 	};
-	NEW_CLASS(Droid_B1_Training): TAG_CLASS(Droid_B1_E5)
+	NEW_CLASS(Droid_B1_RD4): TAG_CLASS(Droid_B1_E5)
 	{
-		displayName = "B1 Training Droid (E-5)";
-		B1_IDENTITY(JLTS_DroidB1_Training, Droid_B1_E5)
-		EQUIPMENT(1, 1, JLTS_B1_antenna_training, 1, SWLB_comlink_droid)
+		displayName = "B1 Grenadier (RD-4)";
+		B1_IDENTITY(JLTS_DroidB1, Droid_B1_RD4)
+		WEAPONS(SWLW_GL, JLTS_RG4D, 1, 1)
+		#define MAGAZINES \
+			LIST_4(SWLW_mag_40mm_1rnd), \
+			LIST_8(JLTS_RG4D_mag), \
+			MAGS_MISC
+		magazines[] = { MAGAZINES };
+		respawnMagazines[] = { MAGAZINES };
 	};
 
 	DROID_GEO(Droid_B1_Commander, JLTS_DroidB1_Geonosis_commander)
@@ -256,10 +250,22 @@ class CfgVehicles
 	DROID_SIM(Droid_B1_E5S)
 	DROID_SIM(Droid_B1_RD4)
 
+	NEW_CLASS(Droid_X1_E5): TAG_CLASS(Droid_B1_E5)
+	{
+		displayName = "X1 Droid (E-5)";
+		X1_IDENTITY(Droid_X1_E5)
+		EQUIPMENT(1, ls_cis_bxCommando_vest, JLTS_B1_backpack_prototype, 1, SWLB_comlink_droid)
+		WEAPONS(JLTS_E5, UNSC_Knife, 1, JLTS_CloneBinocular_Black)
+		#define MAGAZINES \
+			LIST_10(JLTS_E5_mag), \
+			MAGS_MISC
+		magazines[] = { MAGAZINES };
+		respawnMagazines[] = { MAGAZINES };
+	};
+	NEW_CLASS(Droid_X1_E5C): TAG_CLASS(Droid_X1_E5)
 	{
 		displayName = "X1 Droid (E-5C)";
 		X1_IDENTITY(Droid_X1_E5C)
-		EQUIPMENT(1, ls_cis_bxCommando_vest, JLTS_B1_backpack_prototype, 1, SWLB_comlink_droid)
 		WEAPONS(JLTS_E5C, UNSC_Knife, 1, JLTS_CloneBinocular_Black)
 		#define MAGAZINES \
 			LIST_10(JLTS_E5C_mag), \
@@ -278,13 +284,13 @@ class CfgVehicles
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
 	};
-	NEW_CLASS(Droid_X1_EPL2): TAG_CLASS(Droid_X1_E5C)
+	NEW_CLASS(Droid_X1_RD4): TAG_CLASS(Droid_X1_E5C)
 	{
-		displayName = "X1 Grenadier (EPL-2)";
-		X1_IDENTITY(Droid_X1_EPL2)
-		WEAPONS(JLTS_EPL2, JLTS_RG4D, 1, JLTS_CloneBinocular_Black)
+		displayName = "X1 Grenadier (RD-4)";
+		X1_IDENTITY(Droid_X1_RD4)
+		WEAPONS(SWLW_GL, JLTS_RG4D, 1, JLTS_CloneBinocular_Black)
 		#define MAGAZINES \
-			LIST_10(JLTS_EPL2_mag), \
+			LIST_4(SWLW_mag_40mm_1rnd), \
 			LIST_8(JLTS_RG4D_mag), \
 			MAGS_MISC
 		magazines[] = { MAGAZINES };
@@ -292,7 +298,7 @@ class CfgVehicles
 	};
 	NEW_CLASS(Droid_X1_SBB3): TAG_CLASS(Droid_X1_E5C)
 	{
-		displayName = "X1 Breacher (SBB-3)";
+		displayName = "X1 Breacher (SB-B3)";
 		X1_IDENTITY(Droid_X1_SBB3)
 		WEAPONS(JLTS_SBB3, UNSC_Knife, 1, JLTS_CloneBinocular_Black)
 		#define MAGAZINES \
@@ -428,9 +434,9 @@ class CfgVehicles
 		displayName = "BX Mercenary (E-5)";
 		BX_IDENTITY(lsd_cis_bxSecurityDroid_uniform, Droid_BX_Merc)
 	};
-	NEW_CLASS(Droid_BX_Training): TAG_CLASS(Droid_BX)
+	NEW_CLASS(Droid_BX_Sim): TAG_CLASS(Droid_BX)
 	{
-		displayName = "BX Training Droid (E-5)";
-		BX_IDENTITY(lsd_cis_bxTraining_uniform, Droid_BX_Training)
+		displayName = "BX Commando (E-5)";
+		BD_IDENTITY(Droid_Sim, lsd_cis_bxTraining_uniform, Droid_BX_Sim)
 	};
 };
