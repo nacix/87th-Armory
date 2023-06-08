@@ -3,6 +3,10 @@ class CfgEditorSubcategories {
     {
         displayName = "B1 Battle Droids";
     };
+    NEW_CLASS(B1_Geo)
+    {
+        displayName = "B1 Battle Droids (Geo)";
+    };
     NEW_CLASS(B2)
     {
         displayName = "B2 Super Battle Droids";

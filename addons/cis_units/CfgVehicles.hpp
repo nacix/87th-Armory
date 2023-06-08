@@ -78,6 +78,13 @@ class CfgVehicles
 	#define X1_IDENTITY(preview) \
 		BD_IDENTITY(X1, JLTS_DroidB1_Prototype, preview)
 
+	#define DROID_GEO(parentClass, uniform) \
+		NEW_CLASS(parentClass##_Geo)##: TAG_CLASS(parentClass) \
+		{ \
+			BD_IDENTITY(B1_Geo, uniform, parentClass##_Geo) \
+			EQUIPMENT(1, 1, JLTS_B1_antenna_Geonosis, 1, SWLB_comlink_droid) \
+		};
+
 	#define MAGS_MISC \
 		LIST_2(HandGrenade), \
 		LIST_2(SmokeShell)
@@ -220,7 +227,17 @@ class CfgVehicles
 		EQUIPMENT(1, 1, JLTS_B1_antenna_training, 1, SWLB_comlink_droid)
 	};
 
-	NEW_CLASS(Droid_X1_E5C): TAG_CLASS(Droid_B1_E5)
+	DROID_GEO(Droid_B1_Commander, JLTS_DroidB1_Geonosis_commander)
+	DROID_GEO(Droid_B1_E5, JLTS_DroidB1_Geonosis)
+	DROID_GEO(Droid_B1_E5C, JLTS_DroidB1_Geonosis)
+	DROID_GEO(Droid_B1_Crew, JLTS_DroidB1_Geonosis)
+	DROID_GEO(Droid_B1_NCO, JLTS_DroidB1_Geonosis)
+	DROID_GEO(Droid_B1_Pilot, JLTS_DroidB1_Geonosis)
+	DROID_GEO(Droid_B1_AA, JLTS_DroidB1_Geonosis)
+	DROID_GEO(Droid_B1_AT, JLTS_DroidB1_Geonosis)
+	DROID_GEO(Droid_B1_E5S, JLTS_DroidB1_Geonosis)
+	DROID_GEO(Droid_B1_RD4, JLTS_DroidB1_Geonosis)
+
 	{
 		displayName = "X1 Droid (E-5C)";
 		X1_IDENTITY(Droid_X1_E5C)
