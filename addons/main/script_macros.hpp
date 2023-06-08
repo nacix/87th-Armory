@@ -171,6 +171,12 @@
     editorSubcategory = CLASS(category); \
     uniformClass = QUOTE(uniform);
 
+#define DEF_MAGS \
+    #ifdef MAGAZINES \
+        magazines[] = { MAGAZINES }; \
+		respawnMagazines[] = { MAGAZINES }; \
+    #endif
+
 #define LIST_1(item) \
     QUOTE(item)
 #define LIST_2(item) \
