@@ -38,6 +38,9 @@
 #define GETGVAR(var1,var2) GETMVAR(GVAR(var1),var2)
 #define GETEGVAR(var1,var2,var3) GETMVAR(EGVAR(var1,var2),var3)
 
+#define SET_OBJVAR(owner,variable,value) GETVAR(owner,GVAR(variable),value)
+#define GET_OBJVAR(owner,variable,default) GETVAR(owner,GVAR(variable),default)
+
 #define ARR_SELECT(ARRAY,INDEX,DEFAULT) (if (count ARRAY > INDEX) then {ARRAY select INDEX} else {DEFAULT})
 
 #ifdef DISABLE_COMPILE_CACHE
@@ -69,19 +72,43 @@
 #define WEAPONS(primaryWeapon,secondaryWeapon,launcherWeapon,binocularWeapon) \
     weapons[]= \
     { \
-        QUOTE(primaryWeapon), \
-        QUOTE(secondaryWeapon), \
-        QUOTE(launcherWeapon), \
-        QUOTE(binocularWeapon), \
+        #if primaryWeapon \
+        #else \
+            QUOTE(primaryWeapon), \
+        #endif \
+        #if secondaryWeapon \
+        #else \
+            QUOTE(secondaryWeapon), \
+        #endif \
+        #if launcherWeapon \
+        #else \
+            QUOTE(launcherWeapon), \
+        #endif \
+        #if binocularWeapon \
+        #else \
+            QUOTE(binocularWeapon), \
+        #endif \
         "Throw", \
         "Put" \
     }; \
     respawnWeapons[]= \
     { \
-        QUOTE(primaryWeapon), \
-        QUOTE(secondaryWeapon), \
-        QUOTE(launcherWeapon), \
-        QUOTE(binocularWeapon), \
+        #if primaryWeapon \
+        #else \
+            QUOTE(primaryWeapon), \
+        #endif \
+        #if secondaryWeapon \
+        #else \
+            QUOTE(secondaryWeapon), \
+        #endif \
+        #if launcherWeapon \
+        #else \
+            QUOTE(launcherWeapon), \
+        #endif \
+        #if binocularWeapon \
+        # \
+            QUOTE(binocularWeapon), \
+        #endif \
         "Throw", \
         "Put" \
     };
@@ -89,25 +116,52 @@
 #define EQUIPMENT(helmet,vest,back,nvg,comms) \
     linkedItems[]= \
 	{ \
-        QUOTE(helmet), \
-        QUOTE(vest), \
-        QUOTE(nvg), \
-        QUOTE(comms), \
+        #if helmet \
+        #else \
+            QUOTE(helmet), \
+        #endif \
+        #if vest \
+        #else \
+            QUOTE(vest), \
+        #endif \
+        #if nvg \
+        #else \
+            QUOTE(nvg), \
+        #endif \
+        #if comms  \
+        #else \
+            QUOTE(comms), \
+        #endif \
         "ItemMap", \
         "ItemCompass", \
         "ItemWatch" \
     }; \
     respawnLinkedItems[]= \
     { \
-        QUOTE(helmet), \
-        QUOTE(vest), \
-        QUOTE(nvg), \
-        QUOTE(comms), \
+        #if helmet \
+        #else \
+            QUOTE(helmet), \
+        #endif \
+        #if vest \
+        #else \
+            QUOTE(vest), \
+        #endif \
+        #if nvg \
+        #else \
+            QUOTE(nvg), \
+        #endif \
+        #if comms  \
+        #else \
+            QUOTE(comms), \
+        #endif \
         "ItemMap", \
         "ItemCompass", \
         "ItemWatch" \
     }; \
-    backpack = QUOTE(back);
+    #if back \
+    #else \
+        backpack = QUOTE(back);
+    #endif
 
 #define PREVIEW(className) editorPreview = QPATHTOF(data\ui\editorPreviews\TAG_CLASS(className).jpg);
 
@@ -117,184 +171,99 @@
     editorSubcategory = CLASS(category); \
     uniformClass = QUOTE(uniform);
 
-#define MAG_1(mag) \
-    QUOTE(mag)
-#define MAG_2(mag) \
-    QUOTE(mag), \
-    QUOTE(mag)
-#define MAG_3(mag) \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag)
-#define MAG_4(mag) \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag)
-#define MAG_5(mag) \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag)
-#define MAG_6(mag) \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag)
-#define MAG_7(mag) \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag)
-#define MAG_8(mag) \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag)
-#define MAG_9(mag) \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag)
-#define MAG_10(mag) \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag)
-#define MAG_11(mag) \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag)
-#define MAG_12(mag) \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag), \
-    QUOTE(mag)
+#define DEF_MAGS \
+    #ifdef MAGAZINES \
+        magazines[] = { MAGAZINES }; \
+		respawnMagazines[] = { MAGAZINES }; \
+    #endif
 
-#define CREW_1(crewClass) \
-    QUOTE(crewClass)
-#define CREW_2(crewClass) \
-    QUOTE(crewClass), \
-    QUOTE(crewClass)
-#define CREW_3(crewClass) \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass)
-#define CREW_4(crewClass) \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass)
-#define CREW_5(crewClass) \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass)
-#define CREW_6(crewClass) \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass)
-#define CREW_7(crewClass) \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass)
-#define CREW_8(crewClass) \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass)
-#define CREW_9(crewClass) \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass)
-#define CREW_10(crewClass) \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass)
-#define CREW_11(crewClass) \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass)
-#define CREW_12(crewClass) \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass), \
-    QUOTE(crewClass)
+#define LIST_1(item) \
+    QUOTE(item)
+#define LIST_2(item) \
+    QUOTE(item), \
+    QUOTE(item)
+#define LIST_3(item) \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item)
+#define LIST_4(item) \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item)
+#define LIST_5(item) \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item)
+#define LIST_6(item) \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item)
+#define LIST_7(item) \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item)
+#define LIST_8(item) \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item)
+#define LIST_9(item) \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item)
+#define LIST_10(item) \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item)
+#define LIST_11(item) \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item)
+#define LIST_12(item) \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item), \
+    QUOTE(item)

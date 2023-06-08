@@ -62,7 +62,7 @@ class CfgVehicles
 		crew = CLASS(Clone_DC15S);
 		typicalCargo[]=
 		{
-			CREW_3(TAG_CLASS(Clone_DC15S))
+			LIST_3(TAG_CLASS(Clone_DC15S))
 		};
 		RTT_TEXTURE(RTT)
 	};
@@ -72,7 +72,7 @@ class CfgVehicles
 		crew = CLASS(Clone_P1_DC15S);
 		typicalCargo[]=
 		{
-			CREW_3(TAG_CLASS(Clone_P1_DC15S))
+			LIST_3(TAG_CLASS(Clone_P1_DC15S))
 		};
 	};
 
@@ -83,7 +83,7 @@ class CfgVehicles
 		crew = "JLTS_Clone_P2_DC15S";
 		typicalCargo[]=
 		{
-			CREW_3(JLTS_Clone_P2_DC15S)
+			LIST_3(JLTS_Clone_P2_DC15S)
 		};
 		RTT_TEXTURE(RTT_Rep)
 	};
@@ -93,7 +93,7 @@ class CfgVehicles
 		crew = "3AS_Clone_P1";
 		typicalCargo[]=
 		{
-			CREW_3(3AS_Clone_P1)
+			LIST_3(3AS_Clone_P1)
 		};
 	};
 

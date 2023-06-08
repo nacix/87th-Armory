@@ -31,7 +31,7 @@ switch (typeOf _unit) do {
 };
 
 // Grabs our unit's skills from the skillTable (if available)
-_unitSkills = (GVAR(skillTable)) getOrDefault [typeOf _unit, []];
+private _unitSkills = (GVAR(skillTable)) getOrDefault [typeOf _unit, []];
 
 // Call scripts to set our unit's identity and skillset
 [_unit, _faceProfile, _designation] call EFUNC(rep_identities,setIdentity);

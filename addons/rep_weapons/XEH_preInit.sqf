@@ -16,7 +16,7 @@ ADDON = true;
 	false,
 	0,
 	{
-		LOG_2("Setting '[%1]' set to [%2] on client [%3]",QGVAR(enabled),_this,player);
+		LOG_3("Setting '[%1]' set to [%2] on client [%3]",QGVAR(enabled),_this,player);
 
 		if (_this) then {
 			// Make initial calls to one-handing scripts
@@ -45,7 +45,7 @@ ADDON = true;
 	false,
 	0,
 	{
-		LOG_2("Setting '[%1]' set to [%2] on client [%3]",QGVAR(allowOneHandWalking),_this,player);
+		LOG_3("Setting '[%1]' set to [%2] on client [%3]",QGVAR(allowOneHandWalking),_this,player);
 
 		// Exit function if the player isn't currently one-handing
 		if ((!GETGVAR(enabled,true) && !GETVAR(player,GVAR(usingOneHand),true)) || vehicle player isNotEqualTo player) exitWith {};
@@ -71,7 +71,7 @@ ADDON = true;
 	true,
 	0,
 	{
-		LOG_2("Setting '[%1]' set to [%2] on client [%3]",QGVAR(useTagWhitelist),_this,player);
+		LOG_3("Setting '[%1]' set to [%2] on client [%3]",QGVAR(useTagWhitelist),_this,player);
 
 		private _weapon = currentWeapon player;
 		private _wepAddonTag = toLower (_weapon select [0, _weapon find "_"]);
@@ -101,7 +101,7 @@ ADDON = true;
 	"wbk",
 	0,
 	{
-		LOG_2("Setting '[%1]' set to [%2] on client [%3]",QGVAR(tagList),_this,player);
+		LOG_3("Setting '[%1]' set to [%2] on client [%3]",QGVAR(tagList),_this,player);
 
 		if ((trim _this) isEqualTo "") exitWith { GVAR(tagList) = [""] }; // Exit function if tag array is empty
 
@@ -120,7 +120,7 @@ ADDON = true;
 	true,
 	0,
 	{
-		LOG_2("Setting '[%1]' set to [%2] on client [%3]",QGVAR(useWeaponWhitelist),_this,player);
+		LOG_3("Setting '[%1]' set to [%2] on client [%3]",QGVAR(useWeaponWhitelist),_this,player);
 
 		private _weapon = currentWeapon player;
 		/*
@@ -149,7 +149,7 @@ ADDON = true;
 	"",
 	0,
 	{
-		LOG_2("Setting '[%1]' set to [%2] on client [%3]",QGVAR(weaponList),_this,player);
+		LOG_3("Setting '[%1]' set to [%2] on client [%3]",QGVAR(weaponList),_this,player);
 		
 		if ((trim _this) isEqualTo "") exitWith { GVAR(weaponList) = [""] }; // Exit function if weapon array is empty
 

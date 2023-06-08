@@ -26,26 +26,38 @@ class CfgWeapons
 			scope = 1; \
 			class LinkedItems \
 			{ \
-				class LinkedItemsOptic \
-				{ \
-					slot = "CowsSlot"; \
-					item = QUOTE(opticName); \
-				}; \
-				class LinkedItemsMuzzle \
-				{ \
-					slot = "MuzzleSlot"; \
-					item = QUOTE(muzzleName); \
-				}; \
-				class LinkedItemsAcc \
-				{ \
-					slot = "PointerSlot"; \
-					item = QUOTE(accessoryName); \
-				}; \
-				class LinkedItemsUnder \
-				{ \
-					slot = "UnderBarrelSlot"; \
-					item = QUOTE(underName); \
-				}; \
+				#if opticName \
+				#else \
+					class LinkedItemsOptic \
+					{ \
+						slot = "CowsSlot"; \
+						item = QUOTE(opticName); \
+					}; \
+				#endif \
+				#if muzzleName \
+				#else \
+					class LinkedItemsMuzzle \
+					{ \
+						slot = "MuzzleSlot"; \
+						item = QUOTE(muzzleName); \
+					}; \
+				#endif \
+				#if accessoryName \
+				#else \
+					class LinkedItemsAcc \
+					{ \
+						slot = "PointerSlot"; \
+						item = QUOTE(accessoryName); \
+					}; \
+				#endif \
+				#if underName \
+				#else \
+					class LinkedItemsUnder \
+					{ \
+						slot = "UnderBarrelSlot"; \
+						item = QUOTE(underName); \
+					}; \
+				#endif \
 			}; \
 		};
 
@@ -2090,15 +2102,15 @@ class CfgWeapons
 	DC15LE_PREFAB(DC15LE_GL, DC15A_GL)
 
 	// WEAPON_PREFAB(className, parentName, opticName, muzzleName, accessoryName, underName)
-	WEAPON_PREFAB(DC15S_Reflex, DC15S, 3AS_Optic_Holo_DC15S, 0, 0, 0)
-	WEAPON_PREFAB(DC15A_GL_Reflex, DC15A_GL, 3AS_Optic_Red_DC15A, 0, 0, 0)
-	WEAPON_PREFAB(DC15C_GL_Reflex, DC15C_GL, 3AS_Optic_Reflex_DC15C, 0, 0, 0)
-	WEAPON_PREFAB(DC15C_Scoped, DC15C, 3AS_Optic_ACOG_DC15C, 0, 0, 0)
-	WEAPON_PREFAB(DC15L_AR, DC15L, TAG_CLASS(Optic_DC15L), 0, 0, 3AS_Bipod_DC15L_F)
-	WEAPON_PREFAB(WestarM5_Scoped, WestarM5, 3AS_Optic_Scope_WestarM5, 0, 0, 0)
-	WEAPON_PREFAB(Firepuncher_Scoped, Firepuncher, TAG_CLASS(Optic_FP), 0, TAG_CLASS(acc_pointer_Long_Purple), 0)
-	WEAPON_PREFAB(DC15X_Lased, DC15X, 0, 0, TAG_CLASS(acc_pointer_Long_Purple), 0)
-	WEAPON_PREFAB(Valken38X_Scoped, Valken38X, TAG_CLASS(Optic_VK38X), 0, 0, 0)
-	WEAPON_PREFAB(DC17SA_Reflex, DC17SA, 3AS_optic_holo_DC15S, 0, TAG_CLASS(acc_pointer_Long_Purple), 0)
-	WEAPON_PREFAB(DP23_Lased, DP23, 3AS_optic_holo_dc15S, 0, TAG_CLASS(acc_pointer_Short_Purple), 0)
+	WEAPON_PREFAB(DC15S_Reflex, DC15S, 3AS_Optic_Holo_DC15S, 1, 1, 1)
+	WEAPON_PREFAB(DC15A_GL_Reflex, DC15A_GL, 3AS_Optic_Red_DC15A, 1, 1, 1)
+	WEAPON_PREFAB(DC15C_GL_Reflex, DC15C_GL, 3AS_Optic_Reflex_DC15C, 1, 1, 1)
+	WEAPON_PREFAB(DC15C_Scoped, DC15C, 3AS_Optic_ACOG_DC15C, 1, 1, 1)
+	WEAPON_PREFAB(DC15L_AR, DC15L, TAG_CLASS(Optic_DC15L), 1, 1, 3AS_Bipod_DC15L_F)
+	WEAPON_PREFAB(WestarM5_Scoped, WestarM5, 3AS_Optic_Scope_WestarM5, 1, 1, 1)
+	WEAPON_PREFAB(Firepuncher_Scoped, Firepuncher, TAG_CLASS(Optic_FP), 1, TAG_CLASS(acc_pointer_Long_Purple), 1)
+	WEAPON_PREFAB(DC15X_Lased, DC15X, 1, 1, TAG_CLASS(acc_pointer_Long_Purple), 1)
+	WEAPON_PREFAB(Valken38X_Scoped, Valken38X, TAG_CLASS(Optic_VK38X), 1, 1, 1)
+	WEAPON_PREFAB(DC17SA_Reflex, DC17SA, 3AS_optic_holo_DC15S, 1, TAG_CLASS(acc_pointer_Long_Purple), 1)
+	WEAPON_PREFAB(DP23_Lased, DP23, 3AS_optic_holo_dc15S, 1, TAG_CLASS(acc_pointer_Short_Purple), 1)
 };
