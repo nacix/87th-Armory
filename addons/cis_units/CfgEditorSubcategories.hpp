@@ -7,6 +7,10 @@ class CfgEditorSubcategories {
     {
         displayName = "B1 Battle Droids (Geo)";
     };
+    NEW_CLASS(Droid_Sim)
+    {
+        displayName = "Training Droids";
+    };
     NEW_CLASS(B2)
     {
         displayName = "B2 Super Battle Droids";

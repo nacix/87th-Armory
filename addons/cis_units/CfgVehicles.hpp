@@ -85,6 +85,13 @@ class CfgVehicles
 			EQUIPMENT(1, 1, JLTS_B1_antenna_Geonosis, 1, SWLB_comlink_droid) \
 		};
 
+	#define DROID_SIM(parentClass) \
+		NEW_CLASS(parentClass##_Sim)##: TAG_CLASS(parentClass) \
+		{ \
+			BD_IDENTITY(Droid_Sim, JLTS_DroidB1_Training, parentClass##_Sim) \
+			EQUIPMENT(1, 1, JLTS_B1_antenna_training, 1, SWLB_comlink_droid) \
+		};
+
 	#define MAGS_MISC \
 		LIST_2(HandGrenade), \
 		LIST_2(SmokeShell)
@@ -237,6 +244,17 @@ class CfgVehicles
 	DROID_GEO(Droid_B1_AT, JLTS_DroidB1_Geonosis)
 	DROID_GEO(Droid_B1_E5S, JLTS_DroidB1_Geonosis)
 	DROID_GEO(Droid_B1_RD4, JLTS_DroidB1_Geonosis)
+
+	DROID_SIM(Droid_B1_E5)
+	DROID_SIM(Droid_B1_E5C)
+	DROID_SIM(Droid_B1_Commander)
+	DROID_SIM(Droid_B1_Crew)
+	DROID_SIM(Droid_B1_NCO)
+	DROID_SIM(Droid_B1_Pilot)
+	DROID_SIM(Droid_B1_AA)
+	DROID_SIM(Droid_B1_AT)
+	DROID_SIM(Droid_B1_E5S)
+	DROID_SIM(Droid_B1_RD4)
 
 	{
 		displayName = "X1 Droid (E-5C)";
