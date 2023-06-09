@@ -415,7 +415,7 @@ class CfgVehicles
 		displayName = "BX Captain (E-5C)";
 		BX_IDENTITY(lsd_cis_bxDroid_uniform, Droid_BX_SL)
 		EQUIPMENT(1, 3AS_CIS_Officer_Vest, JLTS_B1_antenna_training, JLTS_NVG_droid_chip_2, SWLB_comlink_droid)
-		WEAPONS(JLTS_E5C, WBK_Dutch_Vibro, 1, 1)
+		WEAPONS(JLTS_E5C, TAG_CLASS(Vibroblade), 1, 1)
 		#define MAGAZINES \
 			LIST_6(JLTS_E5C_mag), \
 			LIST_3(ACE_CTS9), \
