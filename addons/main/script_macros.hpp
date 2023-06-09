@@ -267,3 +267,140 @@
     QUOTE(item), \
     QUOTE(item), \
     QUOTE(item)
+
+#define UNIT_NEW(unit, index, rank, pos, sideID) \
+		class Unit##index \
+		{ \
+			position[] = {pos}; \
+			rank = QUOTE(rank); \
+			side = sideID; \
+			vehicle = CLASS(unit); \
+		};
+
+	#define UNIT_1(unit, sideID) UNIT_NEW(unit, 0, SERGEANT, ARR_3(0, 0, 0), sideID)
+	#define UNIT_2(unit, sideID) UNIT_NEW(unit, 1, CORPORAL, ARR_3(5, -5, 0), sideID)
+	#define UNIT_3(unit, sideID) UNIT_NEW(unit, 2, PRIVATE, ARR_3(-5, -5, 0), sideID)
+	#define UNIT_4(unit, sideID) UNIT_NEW(unit, 3, PRIVATE, ARR_3(10, -10, 0), sideID)
+	#define UNIT_5(unit, sideID) UNIT_NEW(unit, 4, PRIVATE, ARR_3(-10, -10, 0), sideID)
+	#define UNIT_6(unit, sideID) UNIT_NEW(unit, 5, PRIVATE, ARR_3(15, -15, 0), sideID)
+	#define UNIT_7(unit, sideID) UNIT_NEW(unit, 6, PRIVATE, ARR_3(-15, -15, 0), sideID)
+	#define UNIT_8(unit, sideID) UNIT_NEW(unit, 7, PRIVATE, ARR_3(20, -20, 0), sideID)
+	#define UNIT_9(unit, sideID) UNIT_NEW(unit, 8, PRIVATE, ARR_3(-20, -20, 0), sideID)
+	#define UNIT_10(unit, sideID) UNIT_NEW(unit, 9, PRIVATE, ARR_3(25, -25, 0), sideID)
+	#define UNIT_11(unit, sideID) UNIT_NEW(unit, 10, PRIVATE, ARR_3(-25, -25, 0), sideID)
+	#define UNIT_12(unit, sideID) UNIT_NEW(unit, 11, PRIVATE, ARR_3(30, -30, 0), sideID)
+	#define UNIT_13(unit, sideID) UNIT_NEW(unit, 12, PRIVATE, ARR_3(-30, -30, 0), sideID)
+
+	#define SQUAD_2(unit1, unit2, side) \
+		UNIT_1(unit1, side) \
+		UNIT_2(unit2, side)
+	
+	#define SQUAD_3(unit1, unit2, unit3, side) \
+		UNIT_1(unit1, side) \
+		UNIT_2(unit2, side) \
+		UNIT_3(unit3, side)
+
+	#define SQUAD_4(unit1, unit2, unit3, unit4, side) \
+		UNIT_1(unit1, side) \
+		UNIT_2(unit2, side) \
+		UNIT_3(unit3, side) \
+		UNIT_4(unit4, side)
+	
+	#define SQUAD_5(unit1, unit2, unit3, unit4, unit5, side) \
+		UNIT_1(unit1, side) \
+		UNIT_2(unit2, side) \
+		UNIT_3(unit3, side) \
+		UNIT_4(unit4, side) \
+		UNIT_5(unit5, side)
+
+	#define SQUAD_6(unit1, unit2, unit3, unit4, unit5, unit6, side) \
+		UNIT_1(unit1, side) \
+		UNIT_2(unit2, side) \
+		UNIT_3(unit3, side) \
+		UNIT_4(unit4, side) \
+		UNIT_5(unit5, side) \
+		UNIT_6(unit6, side)
+
+	#define SQUAD_7(unit1, unit2, unit3, unit4, unit5, unit6, unit7, side) \
+		UNIT_1(unit1, side) \
+		UNIT_2(unit2, side) \
+		UNIT_3(unit3, side) \
+		UNIT_4(unit4, side) \
+		UNIT_5(unit5, side) \
+		UNIT_6(unit6, side) \
+		UNIT_7(unit7, side)
+	
+	#define SQUAD_8(unit1, unit2, unit3, unit4, unit5, unit6, unit7, unit8, side) \
+		UNIT_1(unit1, side) \
+		UNIT_2(unit2, side) \
+		UNIT_3(unit3, side) \
+		UNIT_4(unit4, side) \
+		UNIT_5(unit5, side) \
+		UNIT_6(unit6, side) \
+		UNIT_7(unit7, side) \
+		UNIT_8(unit8, side)
+
+	#define SQUAD_9(unit1, unit2, unit3, unit4, unit5, unit6, unit7, unit8, unit9, side) \
+		UNIT_1(unit1, side) \
+		UNIT_2(unit2, side) \
+		UNIT_3(unit3, side) \
+		UNIT_4(unit4, side) \
+		UNIT_5(unit5, side) \
+		UNIT_6(unit6, side) \
+		UNIT_7(unit7, side) \
+		UNIT_8(unit8, side) \
+		UNIT_9(unit9, side)
+
+	#define SQUAD_10(unit1, unit2, unit3, unit4, unit5, unit6, unit7, unit8, unit9, unit10, side) \
+		UNIT_1(unit1, side) \
+		UNIT_2(unit2, side) \
+		UNIT_3(unit3, side) \
+		UNIT_4(unit4, side) \
+		UNIT_5(unit5, side) \
+		UNIT_6(unit6, side) \
+		UNIT_7(unit7, side) \
+		UNIT_8(unit8, side) \
+		UNIT_9(unit9, side) \
+		UNIT_10(unit10, side)
+
+	#define SQUAD_11(unit1, unit2, unit3, unit4, unit5, unit6, unit7, unit8, unit9, unit10, unit11, side) \
+		UNIT_1(unit1, side) \
+		UNIT_2(unit2, side) \
+		UNIT_3(unit3, side) \
+		UNIT_4(unit4, side) \
+		UNIT_5(unit5, side) \
+		UNIT_6(unit6, side) \
+		UNIT_7(unit7, side) \
+		UNIT_8(unit8, side) \
+		UNIT_9(unit9, side) \
+		UNIT_10(unit10, side) \
+		UNIT_11(unit11, side)
+
+	#define SQUAD_12(unit1, unit2, unit3, unit4, unit5, unit6, unit7, unit8, unit9, unit10, unit11, unit12, side) \
+		UNIT_1(unit1, side) \
+		UNIT_2(unit2, side) \
+		UNIT_3(unit3, side) \
+		UNIT_4(unit4, side) \
+		UNIT_5(unit5, side) \
+		UNIT_6(unit6, side) \
+		UNIT_7(unit7, side) \
+		UNIT_8(unit8, side) \
+		UNIT_9(unit9, side) \
+		UNIT_10(unit10, side) \
+		UNIT_11(unit11, side) \
+		UNIT_12(unit12, side)
+
+	#define SQUAD_13(unit1, unit2, unit3, unit4, unit5, unit6, unit7, unit8, unit9, unit10, unit11, unit12, unit13, side) \
+		UNIT_1(unit1, side) \
+		UNIT_2(unit2, side) \
+		UNIT_3(unit3, side) \
+		UNIT_4(unit4, side) \
+		UNIT_5(unit5, side) \
+		UNIT_6(unit6, side) \
+		UNIT_7(unit7, side) \
+		UNIT_8(unit8, side) \
+		UNIT_9(unit9, side) \
+		UNIT_10(unit10, side) \
+		UNIT_11(unit11, side) \
+		UNIT_12(unit12, side) \
+		UNIT_13(unit13, side)
