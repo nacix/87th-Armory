@@ -2,7 +2,7 @@
 <Project name="87th Legion Armory">
     <Package name="Common">
         <Key ID="STR_AX87_Common_AuxTeam">
-            <English>87th Aux Team</English>
+            <English>Stim &amp; Anorexican</English>
         </Key>
     </Package>
 </Project>

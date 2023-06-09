@@ -1,10 +1,10 @@
 class CfgUnitInsignia
 {
-	class 87th_insignia_logo
+	NEW_CLASS(insignia_logo)
 	{
-		displayName = "[87th] Legion Insignia";
+		displayName = TAG_NAME(Legion Insignia);
 		author = "Stim & Deadeye";
-		texture = QPATHTOF(data\insignias\87th_insignia.paa);
+		texture = QPATHTOF(data\insignias\TAG_CLASS(insignia).paa);
 		textureVehicle = "";
 	};
 };

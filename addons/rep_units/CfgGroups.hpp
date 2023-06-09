@@ -4,1624 +4,325 @@ class CfgGroups
 	{
 		name = "$STR_A3_CfgGroups_West0";
 		side = 1;
-		class 87th_Legion
+
+		NEW_CLASS(Legion)
 		{
-			name = "[87th] Republic Forces";
-			class 87th_Clones
+			name = TAG_NAME(Republic Forces);
+			NEW_CLASS(Clones)
 			{
 				name = "Infantry Detachments";
-				class 87th_CT_InfSquad
+				
+				NEW_CLASS(CT_InfSquad)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_inf.paa";
 					name = "Infantry Squad";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "SERGEANT";
-						side = 1;
-						vehicle = "87th_Clone_SergeantMajor";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "SERGEANT";
-						side = 1;
-						vehicle = "87th_Clone_Sergeant";
-					};
-					class Unit2
-					{
-						position[] = {-5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_AT";
-					};
-					class Unit3
-					{
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_RTO";
-					};
-					class Unit4
-					{
-						position[] = {-10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_AR";
-					};
-					class Unit5
-					{
-						position[] = {15,-15,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_Medic";
-					};
-					class Unit6
-					{
-						position[] = {-15,-15,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_DC15AUGL";
-					};
-					class Unit7
-					{
-						position[] = {20,-20,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_DC15S";
-					};
-					class Unit8
-					{
-						position[] = {-20,-20,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_DC15S";
-					};
+					SQUAD_9(Clone_SergeantMajor, Clone_Sergeant, Clone_AT, Clone_RTO, Clone_AR, Clone_Medic, Clone_DC15AUGL, Clone_DC15S, Clone_DC15S, 1)
 				};
-				class 87th_CT_WepSquad
+				NEW_CLASS(CT_WepSquad)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_inf.paa";
 					name = "Weapons Squad";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "SERGEANT";
-						side = 1;
-						vehicle = "87th_Clone_Sergeant";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "CORPORAL";
-						side = 1;
-						vehicle = "87th_Clone_Corporal";
-					};
-					class Unit2
-					{
-						position[] = {-5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_AR";
-					};
-					class Unit3
-					{
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_AT";
-					};
-					class Unit4
-					{
-						position[] = {-10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_Marksman";
-					};
-					class Unit5
-					{
-						position[] = {15,-15,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_DC15S";
-					};
-					class Unit6
-					{
-						position[] = {-15,-15,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_DC15S";
-					};
-					class Unit7
-					{
-						position[] = {20,-20,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_DC15A";
-					};
-					class Unit8
-					{
-						position[] = {-20,-20,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_Medic";
-					};
+					SQUAD_9(Clone_Sergeant, Clone_Corporal, Clone_AR, Clone_AT, Clone_Marksman, Clone_DC15S, Clone_DC15S, Clone_DC15A, Clone_Medic, 1)
 				};
-				class 87th_CT_ATTeam
+				NEW_CLASS(CT_ATTeam)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_inf.paa";
 					name = "Anti-Tank Team";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "CORPORAL";
-						side = 1;
-						vehicle = "87th_Clone_Corporal";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_EOD";
-					};
-					class Unit2
-					{
-						position[] = {-5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_AT";
-					};
-					class Unit3
-					{
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_AT";
-					};
+					SQUAD_4(Clone_Corporal, Clone_EOD, Clone_AT, Clone_AT, 1)
 				};
-				class 87th_CT_MedTeam
+				NEW_CLASS(CT_MedTeam)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_med.paa";
 					name = "Medical Team";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "CORPORAL";
-						side = 1;
-						vehicle = "87th_Clone_Corporal";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_Medic";
-					};
-					class Unit2
-					{
-						position[] = {-5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_Medic";
-					};
-					class Unit3
-					{
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_Medic";
-					};
+					SQUAD_4(Clone_Corporal, Clone_Medic, Clone_Medic, Clone_Medic, 1)
 				};
-				class 87th_CT_WepTeam
+				NEW_CLASS(CT_WepTeam)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_inf.paa";
 					name = "Weapons Team";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "CORPORAL";
-						side = 1;
-						vehicle = "87th_Clone_Corporal";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_AT";
-					};
-					class Unit2
-					{
-						position[] = {-5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_AR";
-					};
-					class Unit3
-					{
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_DC15AUGL";
-					};
+					SQUAD_4(Clone_Corporal, Clone_AT, Clone_AR, Clone_DC15AUGL, 1)
 				};
-				class 87th_CT_SupTeam
+				NEW_CLASS(CT_SupTeam)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_service.paa";
 					name = "Support Team";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "CORPORAL";
-						side = 1;
-						vehicle = "87th_Clone_Corporal";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_Medic";
-					};
-					class Unit2
-					{
-						position[] = {-5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_RTO";
-					};
-					class Unit3
-					{
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_Marksman";
-					};
+					SQUAD_4(Clone_Corporal, Clone_RTO, Clone_Marksman, Clone_Medic, 1)
 				};
-				class 87th_CT_EODTeam
+				NEW_CLASS(CT_EODTeam)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_ordnance.paa";
 					name = "Ordnance Team";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "CORPORAL";
-						side = 1;
-						vehicle = "87th_Clone_Corporal";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_EOD";
-					};
-					class Unit2
-					{
-						position[] = {-5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_EOD";
-					};
-					class Unit3
-					{
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_EOD";
-					};
+					SQUAD_4(Clone_Corporal, Clone_EOD, Clone_EOD, Clone_EOD, 1)
 				};
-				class 87th_CT_BasTeam
+				NEW_CLASS(CT_BasTeam)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_inf.paa";
 					name = "Basic Team";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "SERGEANT";
-						side = 1;
-						vehicle = "87th_Clone_Sergeant";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "CORPORAL";
-						side = 1;
-						vehicle = "87th_Clone_Corporal";
-					};
-					class Unit2
-					{
-						position[] = {-5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_DC15S";
-					};
-					class Unit3
-					{
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_DC15S";
-					};
-					class Unit4
-					{
-						position[] = {-10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_DC15A";
-					};
+					SQUAD_5(Clone_Sergeant, Clone_Corporal, Clone_DC15S, Clone_DC15S, Clone_DC15A, 1)
 				};
-				class 87th_CT_SSTeam
+				NEW_CLASS(CT_SSTeam)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_recon.paa";
 					name = "Sniper Team";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "CORPORAL";
-						side = 1;
-						vehicle = "87th_Clone_Marksman";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_Sharpshooter";
-					};
+					SQUAD_2(Clone_Marksman, Clone_Sharpshooter, 1)
 				};
-				class 87th_CT_CQCTeam
+				NEW_CLASS(CT_CQCTeam)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_inf.paa";
 					name = "CQC Team";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "SERGEANT";
-						side = 1;
-						vehicle = "87th_Clone_Sergeant";
-					};
-					class Unit1
-					{
-						position[] = {1,-1,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_DP23";
-					};
-					class Unit2
-					{
-						position[] = {-1,-1,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_DP23";
-					};
-					class Unit3
-					{
-						position[] = {2,-2,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_Corporal";
-					};
-					class Unit4
-					{
-						position[] = {-2,-2,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_AR";
-					};
+					SQUAD_5(Clone_Sergeant, Clone_DP23, Clone_DP23, Clone_Corporal, Clone_AR, 1)
 				};
 			};
-			class 87th_AB
+			NEW_CLASS(AB)
 			{
 				name = "Airborne Detachments";
-				class 87th_AB_WepSquad
+				NEW_CLASS(AB_WepSquad)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_inf.paa";
 					name = "Air Assault Squad";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "CAPTAIN";
-						side = 1;
-						vehicle = "87th_AB_Officer";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "SERGEANT";
-						side = 1;
-						vehicle = "87th_AB_NCO";
-					};
-					class Unit2
-					{
-						position[] = {-5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_AR";
-					};
-					class Unit3
-					{
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_AT";
-					};
-					class Unit4
-					{
-						position[] = {-10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_AT";
-					};
-					class Unit5
-					{
-						position[] = {15,-15,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_DC15LE";
-					};
-					class Unit6
-					{
-						position[] = {-15,-15,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_DC15LE";
-					};
-					class Unit7
-					{
-						position[] = {20,-20,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_DC15LE_UGL";
-					};
-					class Unit8
-					{
-						position[] = {-20,-20,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_CLS";
-					};
+					SQUAD_9(AB_Officer, AB_NCO, AB_AR, AB_AT, AB_AT, AB_DC15LE, AB_DC15LE, AB_DC15LE_UGL, AB_CLS, 1)
 				};
-				class 87th_AB_Fireteam
+				NEW_CLASS(AB_Fireteam)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_inf.paa";
 					name = "Air Assault Team";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "SERGEANT";
-						side = 1;
-						vehicle = "87th_AB_NCO";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_AT";
-					};
-					class Unit2
-					{
-						position[] = {-5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_CLS";
-					};
-					class Unit3
-					{
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_AR";
-					};
-					class Unit4
-					{
-						position[] = {-10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_DC15LE_UGL";
-					};
+					SQUAD_5(AB_NCO, AB_AT, AB_AR, AB_DC15LE_UGL, AB_CLS, 1)
 				};
-				class 87th_AB_WepSquad_A
+				NEW_CLASS(AB_WepSquad_A)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_inf.paa";
 					name = "Para Squad A (250m)";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "CAPTAIN";
-						side = 1;
-						vehicle = "87th_AB_Officer";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "SERGEANT";
-						side = 1;
-						vehicle = "87th_AB_NCO_A";
-					};
-					class Unit2
-					{
-						position[] = {-5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_AR";
-					};
-					class Unit3
-					{
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_AT";
-					};
-					class Unit4
-					{
-						position[] = {-10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_AT";
-					};
-					class Unit5
-					{
-						position[] = {15,-15,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_DC15LE";
-					};
-					class Unit6
-					{
-						position[] = {-15,-15,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_DC15LE";
-					};
-					class Unit7
-					{
-						position[] = {20,-20,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_DC15LE_UGL";
-					};
-					class Unit8
-					{
-						position[] = {-20,-20,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_CLS";
-					};
+					SQUAD_9(AB_Officer, AB_NCO_A, AB_AR, AB_AT, AB_AT, AB_DC15LE, AB_DC15LE, AB_DC15LE_UGL, AB_CLS, 1)
 				};
-				class 87th_AB_Fireteam_A
+				NEW_CLASS(AB_Fireteam_A)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_inf.paa";
 					name = "Para Team A (250m)";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "SERGEANT";
-						side = 1;
-						vehicle = "87th_AB_NCO_A";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_AT";
-					};
-					class Unit2
-					{
-						position[] = {-5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_CLS";
-					};
-					class Unit3
-					{
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_AR";
-					};
-					class Unit4
-					{
-						position[] = {-10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_DC15LE_UGL";
-					};
+					SQUAD_5(AB_NCO_A, AB_AT, AB_CLS, AB_AR, AB_DC15LE_UGL, 1)
 				};
-				class 87th_AB_WepSquad_B
+				NEW_CLASS(AB_WepSquad_B)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_inf.paa";
 					name = "Para Squad B (500m)";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "CAPTAIN";
-						side = 1;
-						vehicle = "87th_AB_Officer";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "SERGEANT";
-						side = 1;
-						vehicle = "87th_AB_NCO_B";
-					};
-					class Unit2
-					{
-						position[] = {-5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_AR";
-					};
-					class Unit3
-					{
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_AT";
-					};
-					class Unit4
-					{
-						position[] = {-10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_AT";
-					};
-					class Unit5
-					{
-						position[] = {15,-15,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_DC15LE";
-					};
-					class Unit6
-					{
-						position[] = {-15,-15,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_DC15LE";
-					};
-					class Unit7
-					{
-						position[] = {20,-20,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_DC15LE_UGL";
-					};
-					class Unit8
-					{
-						position[] = {-20,-20,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_CLS";
-					};
+					SQUAD_9(AB_Officer, AB_NCO_B, AB_AR, AB_AT, AB_AT, AB_DC15LE, AB_DC15LE, AB_DC15LE_UGL, AB_CLS, 1)
 				};
-				class 87th_AB_Fireteam_B
+				NEW_CLASS(AB_Fireteam_B)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_inf.paa";
 					name = "Para Team B (500m)";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "SERGEANT";
-						side = 1;
-						vehicle = "87th_AB_NCO_B";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_AT";
-					};
-					class Unit2
-					{
-						position[] = {-5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_CLS";
-					};
-					class Unit3
-					{
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_AR";
-					};
-					class Unit4
-					{
-						position[] = {-10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_DC15LE_UGL";
-					};
+					SQUAD_5(AB_NCO_B, AB_AT, AB_CLS, AB_AR, AB_DC15LE_UGL, 1)
 				};
-				class 87th_AB_WepSquad_C
+				NEW_CLASS(AB_WepSquad_C)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_inf.paa";
 					name = "Para Squad C (750m)";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "CAPTAIN";
-						side = 1;
-						vehicle = "87th_AB_Officer";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "SERGEANT";
-						side = 1;
-						vehicle = "87th_AB_NCO_C";
-					};
-					class Unit2
-					{
-						position[] = {-5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_AR";
-					};
-					class Unit3
-					{
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_AT";
-					};
-					class Unit4
-					{
-						position[] = {-10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_AT";
-					};
-					class Unit5
-					{
-						position[] = {15,-15,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_DC15LE";
-					};
-					class Unit6
-					{
-						position[] = {-15,-15,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_DC15LE";
-					};
-					class Unit7
-					{
-						position[] = {20,-20,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_DC15LE_UGL";
-					};
-					class Unit8
-					{
-						position[] = {-20,-20,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_CLS";
-					};
+					SQUAD_9(AB_Officer, AB_NCO_C, AB_AR, AB_AT, AB_AT, AB_DC15LE, AB_DC15LE, AB_DC15LE_UGL, AB_CLS, 1)
 				};
-				class 87th_AB_Fireteam_C
+				NEW_CLASS(AB_Fireteam_C)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_inf.paa";
 					name = "Para Team C (750m)";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "SERGEANT";
-						side = 1;
-						vehicle = "87th_AB_NCO_C";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_AT";
-					};
-					class Unit2
-					{
-						position[] = {-5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_CLS";
-					};
-					class Unit3
-					{
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_AR";
-					};
-					class Unit4
-					{
-						position[] = {-10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_DC15LE_UGL";
-					};
+					SQUAD_5(AB_NCO_C, AB_AT, AB_CLS, AB_AR, AB_DC15LE_UGL, 1)
 				};
-				class 87th_AB_WepSquad_D
+				NEW_CLASS(AB_WepSquad_D)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_inf.paa";
 					name = "Para Squad D (1000m)";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "CAPTAIN";
-						side = 1;
-						vehicle = "87th_AB_Officer";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "SERGEANT";
-						side = 1;
-						vehicle = "87th_AB_NCO_D";
-					};
-					class Unit2
-					{
-						position[] = {-5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_AR";
-					};
-					class Unit3
-					{
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_AT";
-					};
-					class Unit4
-					{
-						position[] = {-10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_AT";
-					};
-					class Unit5
-					{
-						position[] = {15,-15,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_DC15LE";
-					};
-					class Unit6
-					{
-						position[] = {-15,-15,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_DC15LE";
-					};
-					class Unit7
-					{
-						position[] = {20,-20,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_DC15LE_UGL";
-					};
-					class Unit8
-					{
-						position[] = {-20,-20,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_CLS";
-					};
+					SQUAD_9(AB_Officer, AB_NCO_D, AB_AR, AB_AT, AB_AT, AB_DC15LE, AB_DC15LE, AB_DC15LE_UGL, AB_CLS, 1)
 				};
-				class 87th_AB_Fireteam_D
+				NEW_CLASS(AB_Fireteam_D)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_inf.paa";
 					name = "Para Team D (1000m)";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "SERGEANT";
-						side = 1;
-						vehicle = "87th_AB_NCO_D";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_AT";
-					};
-					class Unit2
-					{
-						position[] = {-5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_CLS";
-					};
-					class Unit3
-					{
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_AR";
-					};
-					class Unit4
-					{
-						position[] = {-10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_AB_DC15LE_UGL";
-					};
+					SQUAD_5(AB_NCO_D, AB_AT, AB_CLS, AB_AR, AB_DC15LE_UGL, 1)
 				};
 			};
-			class 87th_ARC
+			NEW_CLASS(ARC)
 			{
 				name = "ARC Detachments";
-				class 87th_ARC_WepTeam
+				NEW_CLASS(ARC_WepTeam)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_recon.paa";
 					name = "Weapons Team";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "LIEUTENANT";
-						side = 1;
-						vehicle = "87th_ARC_Lieutenant";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "SERGEANT";
-						side = 1;
-						vehicle = "87th_ARC_JTAC";
-					};
-					class Unit2
-					{
-						position[] = {-5,-5,0};
-						rank = "SERGEANT";
-						side = 1;
-						vehicle = "87th_ARC_AT";
-					};
-					class Unit3
-					{
-						position[] = {10,-10,0};
-						rank = "SERGEANT";
-						side = 1;
-						vehicle = "87th_ARC_EOD";
-					};
-					class Unit4
-					{
-						position[] = {-10,-10,0};
-						rank = "SERGEANT";
-						side = 1;
-						vehicle = "87th_ARC_Medic";
-					};
+					SQUAD_5(ARC_Lieutenant, ARC_JTAC, ARC_AT, ARC_EOD, ARC_Medic, 1)
 				};
-				class 87th_ARC_SSTeam
+				NEW_CLASS(ARC_SSTeam)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_recon.paa";
 					name = "Support Team";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "SERGEANT";
-						side = 1;
-						vehicle = "87th_ARC_JTAC";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "SERGEANT";
-						side = 1;
-						vehicle = "87th_ARC_AT";
-					};
-					class Unit2
-					{
-						position[] = {-5,-5,0};
-						rank = "SERGEANT";
-						side = 1;
-						vehicle = "87th_ARC_Sniper";
-					};
+					SQUAD_3(ARC_JTAC, ARC_AT, ARC_Sniper, 1)
 				};
 			};
-			class 87th_ARF
+			NEW_CLASS(ARF)
 			{
 				name = "ARF Detachments";
-				class 87th_ARF_RecTeam
+				NEW_CLASS(ARF_RecTeam)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_recon.paa";
 					name = "Recon Team";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "SERGEANT";
-						side = 1;
-						vehicle = "87th_ARF_NCO";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "CORPORAL";
-						side = 1;
-						vehicle = "87th_ARF_Spotter";
-					};
-					class Unit2
-					{
-						position[] = {-5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_ARF_AT";
-					};
-					class Unit3
-					{
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_ARF_Sniper";
-					};
-					class Unit4
-					{
-						position[] = {-10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_ARF_CLS";
-					};
+					SQUAD_5(ARF_NCO, ARF_Spotter, ARF_AT, ARF_Sniper, ARF_CLS, 1)
 				};
-				class 87th_ARF_SSTeam
+				NEW_CLASS(ARF_SSTeam)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_recon.paa";
 					name = "Sniper Team";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "CORPORAL";
-						side = 1;
-						vehicle = "87th_ARF_Spotter";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_ARF_Sniper";
-					};
+					SQUAD_2(ARF_Spotter, ARF_Sniper, 1)
 				};
 			};
-			class 87th_BARC
+			NEW_CLASS(BARC)
 			{
 				name = "BARC Detachments";
-				class 87th_BARC_RecTeam
+				NEW_CLASS(BARC_RecTeam)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_recon.paa";
 					name = "Recon Team";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "SERGEANT";
-						side = 1;
-						vehicle = "87th_BARC_NCO";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "CORPORAL";
-						side = 1;
-						vehicle = "87th_BARC_Spotter";
-					};
-					class Unit2
-					{
-						position[] = {-5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_BARC_JTAC";
-					};
-					class Unit3
-					{
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_BARC_Sniper";
-					};
-					class Unit4
-					{
-						position[] = {-10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_BARC_CLS";
-					};
+					SQUAD_5(BARC_NCO, BARC_Spotter, BARC_JTAC, BARC_Sniper, BARC_CLS, 1)
 				};
-				class 87th_BARC_SSTeam
+				NEW_CLASS(BARC_SSTeam)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_recon.paa";
 					name = "Sniper Team";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "CORPORAL";
-						side = 1;
-						vehicle = "87th_BARC_Spotter";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_BARC_Sniper";
-					};
+					SQUAD_2(BARC_Spotter, BARC_Sniper, 1)
 				};
 			};
-			class 87th_RC
+			NEW_CLASS(RC)
 			{
 				name = "Commando Detachments";
-				class 87th_RC_Fireteam
+				NEW_CLASS(RC_Fireteam)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_inf.paa";
 					name = "Strike Team";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "SERGEANT";
-						side = 1;
-						vehicle = "87th_RC_NCO";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "CORPORAL";
-						side = 1;
-						vehicle = "87th_RC_Tech";
-					};
-					class Unit2
-					{
-						position[] = {-5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_RC_Demo";
-					};
-					class Unit3
-					{
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_RC_Sniper";
-					};
+					SQUAD_4(RC_NCO, RC_Tech, RC_Demo, RC_Sniper, 1)
 				};
 			};
-			class 87th_Clones_P1
+			NEW_CLASS(Clones_P1)
 			{
 				name = "Infantry Detachments (P1)";
-				class 87th_CT_InfSquad
+				NEW_CLASS(CT_InfSquad)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_inf.paa";
 					name = "Infantry Squad";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "LIEUTENANT";
-						side = 1;
-						vehicle = "87th_Clone_P1_Lieutenant";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "SERGEANT";
-						side = 1;
-						vehicle = "87th_Clone_P1_Sergeant";
-					};
-					class Unit2
-					{
-						position[] = {-5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_P1_AT";
-					};
-					class Unit3
-					{
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_P1_RTO";
-					};
-					class Unit4
-					{
-						position[] = {-10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_P1_AR";
-					};
-					class Unit5
-					{
-						position[] = {15,-15,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_P1_Medic";
-					};
-					class Unit6
-					{
-						position[] = {-15,-15,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_P1_DC15AUGL";
-					};
-					class Unit7
-					{
-						position[] = {20,-20,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_P1_DC15A";
-					};
-					class Unit8
-					{
-						position[] = {-20,-20,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_P1_DC15A";
-					};
+					SQUAD_9(Clone_P1_Lieutenant, Clone_P1_Sergeant, Clone_P1_AT, Clone_P1_RTO, Clone_P1_AR, Clone_P1_Medic, Clone_P1_DC15AUGL, Clone_P1_DC15A, Clone_P1_DC15A, 1)
 				};
-				class 87th_CT_WepSquad
+				NEW_CLASS(CT_WepSquad)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_inf.paa";
 					name = "Weapons Squad";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "LIEUTENANT";
-						side = 1;
-						vehicle = "87th_Clone_P1_Lieutenant";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "SERGEANT";
-						side = 1;
-						vehicle = "87th_Clone_P1_Sergeant";
-					};
-					class Unit2
-					{
-						position[] = {-5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_P1_AR";
-					};
-					class Unit3
-					{
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_P1_AT";
-					};
-					class Unit4
-					{
-						position[] = {-10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_P1_Marksman";
-					};
-					class Unit5
-					{
-						position[] = {15,-15,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_P1_DC15A";
-					};
-					class Unit6
-					{
-						position[] = {-15,-15,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_P1_DC15A";
-					};
-					class Unit7
-					{
-						position[] = {20,-20,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_P1_DC15AUGL";
-					};
-					class Unit8
-					{
-						position[] = {-20,-20,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_Medic";
-					};
+					SQUAD_9(Clone_P1_Lieutenant, Clone_P1_Sergeant, Clone_P1_AR, Clone_P1_AT, Clone_P1_Sharpshooter, Clone_P1_DC15A, Clone_P1_DC15A, Clone_P1_DC15A, Clone_P1_Medic, 1)
 				};
-				class 87th_CT_ATTeam
+				NEW_CLASS(CT_ATTeam)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_inf.paa";
 					name = "Anti-Tank Team";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "CORPORAL";
-						side = 1;
-						vehicle = "87th_Clone_P1_Corporal";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_P1_EOD";
-					};
-					class Unit2
-					{
-						position[] = {-5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_P1_AT";
-					};
-					class Unit3
-					{
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_P1_AT";
-					};
+					SQUAD_4(Clone_P1_Corporal, Clone_P1_EOD, Clone_P1_AT, Clone_P1_AT, 1)
 				};
-				class 87th_CT_MedTeam
+				NEW_CLASS(CT_MedTeam)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_med.paa";
 					name = "Medical Team";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "CORPORAL";
-						side = 1;
-						vehicle = "87th_Clone_P1_Corporal";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_P1_Medic";
-					};
-					class Unit2
-					{
-						position[] = {-5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_P1_Medic";
-					};
-					class Unit3
-					{
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_P1_Medic";
-					};
+					SQUAD_4(Clone_P1_Corporal, Clone_P1_Medic, Clone_P1_Medic, Clone_P1_Medic, 1)
 				};
-				class 87th_CT_WepTeam
+				NEW_CLASS(CT_WepTeam)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_inf.paa";
 					name = "Weapons Team";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "CORPORAL";
-						side = 1;
-						vehicle = "87th_Clone_P1_Corporal";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_P1_AT";
-					};
-					class Unit2
-					{
-						position[] = {-5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_P1_AR";
-					};
-					class Unit3
-					{
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_P1_DC15AUGL";
-					};
+					SQUAD_4(Clone_P1_Corporal, Clone_P1_AT, Clone_P1_AR, Clone_P1_DC15AUGL, 1)
 				};
-				class 87th_CT_SupTeam
+				NEW_CLASS(CT_SupTeam)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_service.paa";
 					name = "Support Team";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "CORPORAL";
-						side = 1;
-						vehicle = "87th_Clone_P1_Corporal";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_P1_Medic";
-					};
-					class Unit2
-					{
-						position[] = {-5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_P1_RTO";
-					};
-					class Unit3
-					{
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_P1_Marksman";
-					};
+					SQUAD_4(Clone_P1_Corporal, Clone_P1_RTO, Clone_P1_Sharpshooter, Clone_P1_Medic, 1)
 				};
-				class 87th_CT_EODTeam
+				NEW_CLASS(CT_EODTeam)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_ordnance.paa";
 					name = "Ordnance Team";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "CORPORAL";
-						side = 1;
-						vehicle = "87th_Clone_P1_Corporal";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_P1_EOD";
-					};
-					class Unit2
-					{
-						position[] = {-5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_P1_EOD";
-					};
-					class Unit3
-					{
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_P1_EOD";
-					};
+					SQUAD_4(Clone_P1_Corporal, Clone_P1_EOD, Clone_P1_EOD, Clone_P1_EOD, 1)
 				};
-				class 87th_CT_BasTeam
+				NEW_CLASS(CT_BasTeam)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_inf.paa";
 					name = "Basic Team";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "SERGEANT";
-						side = 1;
-						vehicle = "87th_Clone_P1_Sergeant";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "CORPORAL";
-						side = 1;
-						vehicle = "87th_Clone_P1_Corporal";
-					};
-					class Unit2
-					{
-						position[] = {-5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_P1_DC15A";
-					};
-					class Unit3
-					{
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_P1_DC15A";
-					};
-					class Unit4
-					{
-						position[] = {-10,-10,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_P1_DC15A";
-					};
+					SQUAD_5(Clone_P1_Sergeant, Clone_P1_Corporal, Clone_P1_DC15A, Clone_P1_DC15A, Clone_P1_DC15A, 1)
 				};
-				class 87th_CT_SSTeam
+				NEW_CLASS(CT_SSTeam)
 				{
-					faction = "87th_Legion";
+					faction = CLASS(Legion);
 					icon = "\MRC\JLTS\Core_mod\data\markers\gar_recon.paa";
 					name = "Sniper Team";
 					side = 1;
-					class Unit0
-					{
-						position[] = {0,0,0};
-						rank = "CORPORAL";
-						side = 1;
-						vehicle = "87th_Clone_P1_DC15S";
-					};
-					class Unit1
-					{
-						position[] = {5,-5,0};
-						rank = "PRIVATE";
-						side = 1;
-						vehicle = "87th_Clone_P1_Sharpshooter";
-					};
+					SQUAD_2(Clone_P1_Sharpshooter, Clone_P1_DC15A, 1)
 				};
 			};
 		};

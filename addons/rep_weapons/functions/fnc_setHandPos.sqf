@@ -40,11 +40,11 @@ if (_tryOneHand) then {
 			// Reset the unit's animation state and set their action to the one-handing animation
 			_unit switchAction "ax87_switch_pistol";
 			[{player playActionNow "ax87_pistol"}, [], 0.625] call CBA_fnc_waitAndExecute;
-			LOG_1("Unit [%1] is now one-handing (reset=true)",_unit);
+			LOG_1("Unit [%1] is now one-handing (reset = true)",_unit);
 		} else {
 			// Set the unit's action to the one-handing animation
 			_unit playActionNow "ax87_pistol";
-			LOG_1("Unit [%1] is now one-handing (reset=false)",_unit);
+			LOG_1("Unit [%1] is now one-handing (reset = false)",_unit);
 		};
 	};
 } else {

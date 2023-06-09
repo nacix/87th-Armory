@@ -1,8 +1,8 @@
 class CfgIdentities
 {
-	class 87th_Clone
+	NEW_CLASS(Clone)
 	{
-		face = "87th_face_clone";
+		face = CLASS(face_clone);
 		glasses = "JLTS_Clone_P2";
 		name = "Trooper";
 		nameSound = "None";

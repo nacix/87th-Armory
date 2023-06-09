@@ -400,9 +400,9 @@ Parameters:
 Example:
     (begin example)
         // _var is undefined
-        hintSilent format ["_var=%1", RETDEF(_var,5)]; // "_var=5"
+        hintSilent format ["_var = %1", RETDEF(_var,5)]; // "_var=5"
         _var = 7;
-        hintSilent format ["_var=%1", RETDEF(_var,5)]; // "_var=7"
+        hintSilent format ["_var = %1", RETDEF(_var,5)]; // "_var=7"
     (end example)
 Author:
     654wak654
@@ -420,7 +420,7 @@ Parameters:
 Example:
     (begin example)
         // _var is undefined
-        hintSilent format ["_var=%1", RETNIL(_var)]; // "_var=any"
+        hintSilent format ["_var = %1", RETNIL(_var)]; // "_var=any"
     (end example)
 
 Author:
@@ -1038,7 +1038,7 @@ Author:
     { \
         class ADDON \
         { \
-            list[]={ QUOTE(ADDON) }; \
+            list[] = { QUOTE(ADDON) }; \
         }; \
     }; \
 }

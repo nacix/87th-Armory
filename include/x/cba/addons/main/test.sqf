@@ -11,7 +11,7 @@ SCRIPT(test);
 
 // ----------------------------------------------------------------------------
 
-LOG("===--- Testing ---===");
+LOG(" =  =  = --- Testing --- =  =  = ");
 
 {
     private _test = execVM format ["\x\cba\addons\%1\test.sqf", _x];

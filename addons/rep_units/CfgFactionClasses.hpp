@@ -1,8 +1,8 @@
 class CfgFactionClasses
 {
-	class 87th_Legion
+	NEW_CLASS(Legion)
 	{
-		displayName="[87th] Republic Forces";
-		icon = QPATHTOF(data\ui\87th_logo_faction.paa);
+		displayName = TAG_NAME(Republic Forces);
+		icon = QPATHTOF(data\ui\TAG_CLASS(logo_faction).paa);
 	};
 };

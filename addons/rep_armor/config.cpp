@@ -26,16 +26,16 @@ class CfgPatches
         };
         units[]=
 		{
-           "87th_Clone_Base",
-		   "87th_Clone_P1_Base",
-		   "87th_Medic_Base",
-		   "87th_Commando_Base",
-		   "87th_ARF_Base",
-		   "87th_ARF_Base_Desert",
-		   "87th_ARF_Base_Sarid",
-		   "87th_ARF_Base_Woodland",
-		   "87th_ARF_Base_Winter",
-		   "87th_ARF_Base_Urban"
+           CLASS(Clone_Base),
+		   CLASS(Clone_P1_Base),
+		   CLASS(Medic_Base),
+		   CLASS(Commando_Base),
+		   CLASS(ARF_Base),
+		   CLASS(ARF_Base_Desert),
+		   CLASS(ARF_Base_Sarid),
+		   CLASS(ARF_Base_Woodland),
+		   CLASS(ARF_Base_Winter),
+		   CLASS(ARF_Base_Urban)
 		};
 		weapons[] = {};
     };

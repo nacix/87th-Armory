@@ -1,10 +1,10 @@
 class CfgVehicles 
 {
 	#define LAAT_NEW(rawName,className,inheritance) \
-		class AUXCLASS(className)##: inheritance \
+		NEW_CLASS(className): inheritance \
 		{ \
 			author = "Anorexican"; \
-			displayName = NAME_PRETTY(LAAT/I ##rawName); \
+			displayName = TAG_NAME(LAAT/I ##rawName); \
 			faction = FACTION_REP; \
 			editorPreview = QPATHTOF(data\ui\editorPreviews\##TAG##_##className##.jpg); \
 			editorSubcategory = QUOTE(TAG##_Vehicles); \
@@ -19,7 +19,7 @@ class CfgVehicles
 			crew = QUOTE(TAG##_Clone_Pilot); \
 			typicalCargo[] = {QUOTE(TAG##_Clone_Pilot)}; \
 		}; \
-		class TAG##_P1_##className##: TAG##_##className \
+		NEW_CLASS(P1_##className): TAG_CLASS(className) \
 		{ \
 			editorSubcategory = QUOTE(TAG##_P1_Vehicles); \
 			crew = QUOTE(TAG##_Clone_P1_Pilot); \
@@ -52,89 +52,88 @@ class CfgVehicles
 	LAAT_NEW(Mk.1, LAAT_Mk1, 3as_LAAT_Mk1)
 	LAAT_NEW(Mk.1 (Lights), LAAT_Mk1_Lights, 3as_LAAT_Mk1Lights)
 
-	class 87th_RTT: 3AS_ITT
+	NEW_CLASS(RTT): 3AS_ITT
 	{
 		author = "Stim";
-		displayName = "[87th] RTT";
-		faction = "87th_Legion";
-		editorSubcategory = "87th_Vehicles";
-		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_RTT.jpg);
-		crew = "87th_Clone_DC15S";
+		displayName = TAG_NAME(RTT);
+		faction = CLASS(Legion);
+		editorSubcategory = CLASS(Vehicles);
+		editorPreview = QPATHTOF(data\ui\editorPreviews\TAG_CLASS(RTT).jpg);
+		crew = CLASS(Clone_DC15S);
 		typicalCargo[]=
 		{
-			CREW_3(87th_Clone_DC15S)
+			LIST_3(TAG_CLASS(Clone_DC15S))
 		};
 		RTT_TEXTURE(RTT)
 	};
-	class 87th_P1_RTT: 87th_RTT
+	NEW_CLASS(P1_RTT): TAG_CLASS(RTT)
 	{
-		editorSubcategory = "87th_P1_Vehicles";
-		crew = "87th_Clone_P1_DC15S";
+		editorSubcategory = CLASS(P1_Vehicles);
+		crew = CLASS(Clone_P1_DC15S);
 		typicalCargo[]=
 		{
-			CREW_3(87th_Clone_P1_DC15S)
+			LIST_3(TAG_CLASS(Clone_P1_DC15S))
 		};
 	};
 
-	class 87th_RTT_Rep: 87th_RTT
+	NEW_CLASS(RTT_Rep): TAG_CLASS(RTT)
 	{
-		displayName = "[87th] RTT (GAR)";
-		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_RTT_Rep.jpg);
+		displayName = TAG_NAME(RTT (GAR));
+		editorPreview = QPATHTOF(data\ui\editorPreviews\TAG_CLASS(RTT_Rep).jpg);
 		crew = "JLTS_Clone_P2_DC15S";
 		typicalCargo[]=
 		{
-			CREW_1(JLTS_Clone_P2_DC15S)
+			LIST_3(JLTS_Clone_P2_DC15S)
 		};
 		RTT_TEXTURE(RTT_Rep)
 	};
-	class 87th_P1_RTT_Rep: 87th_RTT_Rep
+	NEW_CLASS(P1_RTT_Rep): TAG_CLASS(RTT_Rep)
 	{
-		editorSubcategory = "87th_P1_Vehicles";
+		editorSubcategory = CLASS(P1_Vehicles);
 		crew = "3AS_Clone_P1";
 		typicalCargo[]=
 		{
-			CREW_3(3AS_Clone_P1)
+			LIST_3(3AS_Clone_P1)
 		};
 	};
 
-	class 87th_BARC: ls_ground_barc
+	NEW_CLASS(BARC): ls_ground_barc
 	{
 		author = "Anorexican & Stim";
-		displayName = "[87th] BARC Speeder";
-		editorPreview = QPATHTOF(data\ui\editorPreviews\87th_BARC.jpg);
-		editorSubcategory = "87th_Vehicles";
-		faction = "87th_Legion";
-		crew = "87th_BARC_DC15S";
+		displayName = TAG_NAME(BARC Speeder);
+		editorPreview = QPATHTOF(data\ui\editorPreviews\TAG_CLASS(BARC).jpg);
+		editorSubcategory = CLASS(Vehicles);
+		faction = CLASS(Legion);
+		crew = CLASS(BARC_DC15S);
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\barc\87th_BARC_Body_co.paa),
-			QPATHTOF(data\barc\87th_BARC_Weapons_co.paa),
-			QPATHTOF(data\barc\87th_BARC_Screen_co.paa)
+			QPATHTOF(data\barc\TAG_CLASS(BARC_Body)_co.paa),
+			QPATHTOF(data\barc\TAG_CLASS(BARC_Weapons)_co.paa),
+			QPATHTOF(data\barc\TAG_CLASS(BARC_Screen)_co.paa)
 		};
 	};
 
-	class 87th_ATRT: 3AS_ATRT
+	NEW_CLASS(ATRT): 3AS_ATRT
 	{
-		author="Anorexican";
-		displayName="[87th] AT-RT";
-		genericNames="87th_Names_ATRT";
+		author = "Anorexican";
+		displayName = TAG_NAME(AT-RT);
+		genericNames = CLASS(Names_ATRT);
 		icon = "JLTS_iconManMarshalCMDR";
-		// editorPreview = QPATHTOF(data\ui\editorPreviews\87th_ATRT.jpg);
-		faction = "87th_Legion";
-		editorSubcategory = "87th_Vehicles";
-		uniformClass="87th_ATRT_Uniform";
-		nakedUniform="87th_ATRT_Uniform";
+		faction = CLASS(Legion);
+		editorSubcategory = CLASS(Vehicles);
+		uniformClass = CLASS(ATRT_Uniform);
+		nakedUniform = CLASS(ATRT_Uniform);
 		hiddenSelections[]=
 		{
 			"camo"
 		};
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\atrt\87th_ATRT_co.paa)
+			QPATHTOF(data\atrt\TAG_CLASS(ATRT)_co.paa)
 		};
 		weapons[]=
 		{
-			"87th_ATRT_Weapon"
+			CLASS(ATRT_Weapon)
 		};
 		magazines[]=
 		{

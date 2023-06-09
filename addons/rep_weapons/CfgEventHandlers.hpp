@@ -18,6 +18,6 @@ class Extended_PostInit_EventHandlers {
 
 class Extended_FiredBIS_EventHandlers {
 	class All {
-		server_87th_fired_eh = QUOTE(_this call FUNC(adjustGrenadePhysics));
+		server_fired_eh = QUOTE(_this call FUNC(adjustGrenadePhysics));
 	};
 };
