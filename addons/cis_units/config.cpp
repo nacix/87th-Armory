@@ -44,6 +44,9 @@ class CfgPatches
 
             CLASS(Droid_X1_E5),
             CLASS(Droid_X1_E5C),
+            CLASS(Droid_X1_NCO),
+            CLASS(Droid_X1_AA),
+            CLASS(Droid_X1_AT),
             CLASS(Droid_X1_E5S),
             CLASS(Droid_X1_RD4),
             CLASS(Droid_X1_SBB3),

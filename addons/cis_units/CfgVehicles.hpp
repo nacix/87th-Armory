@@ -273,6 +273,35 @@ class CfgVehicles
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
 	};
+	NEW_CLASS(Droid_X1_NCO): TAG_CLASS(Droid_X1_E5C)
+	{
+		displayName = "X1 NCO (E-5C)";
+		X1_IDENTITY(Droid_X1_NCO)
+	};
+	NEW_CLASS(Droid_X1_AA): TAG_CLASS(Droid_X1_E5)
+	{
+		displayName = "X1 Anti-Air Droid (E-60R)";
+		X1_IDENTITY(Droid_X1_AA)
+		WEAPONS(JLTS_E5, UNSC_Knife, SWLW_E60R_AA, JLTS_CloneBinocular_Black)
+		#define MAGAZINES \
+			LIST_10(JLTS_E5_mag), \
+			LIST_3(SWLW_e60r_aa_mag), \
+			MAGS_MISC
+		magazines[] = { MAGAZINES };
+		respawnMagazines[] = { MAGAZINES };
+	};
+	NEW_CLASS(Droid_X1_AT): TAG_CLASS(Droid_X1_E5)
+	{
+		displayName = "X1 Anti-Tank Droid (E-60R)";
+		X1_IDENTITY(Droid_X1_AT)
+		WEAPONS(JLTS_E5, UNSC_Knife, SWLW_E60R, JLTS_CloneBinocular_Black)
+		#define MAGAZINES \
+			LIST_10(JLTS_E5_mag), \
+			LIST_3(SWLW_e60r_at_mag), \
+			MAGS_MISC
+		magazines[] = { MAGAZINES };
+		respawnMagazines[] = { MAGAZINES };
+	};
 	NEW_CLASS(Droid_X1_E5S): TAG_CLASS(Droid_X1_E5C)
 	{
 		displayName = "X1 Infiltrator (E-5S)";
