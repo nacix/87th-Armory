@@ -238,13 +238,6 @@ class CfgWeapons {
 				"" \
 			}; \
 		};
-	
-	// Defines inherited class with ItemInfo from given parent class
-	#define GET_INFO(className,parentClass) \
-		class className##: parentClass \
-		{ \
-			class ItemInfo; \
-		};
 		
 	// Defines inherited class with ItemInfo - always inherits from A3 Viper SP Helmet
 	#define GET_INFO_VSP(className) GET_INFO(className, H_HelmetO_ViperSP_hex_F)
