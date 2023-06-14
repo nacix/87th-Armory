@@ -195,6 +195,68 @@ class CfgGroups
                 };
             };
 
+            NEW_CLASS(X1)
+            {
+                name = "X1 Proto-Droids";
+
+                NEW_CLASS(X1_Squad_Basic)
+                {
+                    faction = CLASS(CIS);
+                    icon = "\MRC\JLTS\Core_mod_droids\data\markers\cis_inf.paa";
+                    name = "Basic Squad";
+                    side = 0;
+                    SQUAD_9(Droid_X1_NCO, Droid_X1_E5C, Droid_X1_E5C, Droid_X1_SBB3, Droid_X1_E5, Droid_X1_E5, Droid_X1_E5, Droid_X1_E5, Droid_X1_E5, 0)
+                };
+                NEW_CLASS(X1_Squad_Weapons)
+                {
+                    faction = CLASS(CIS);
+                    icon = "\MRC\JLTS\Core_mod_droids\data\markers\cis_inf.paa";
+                    name = "Weapons Squad";
+                    side = 0;
+                    SQUAD_9(Droid_X1_NCO, Droid_X1_E5C, Droid_X1_E5C, Droid_X1_SBB3, Droid_X1_AT, Droid_X1_Z7, Droid_X1_Grenadier, Droid_X1_E5, Droid_X1_E5, 0)
+                };
+                NEW_CLASS(X1_Team_Basic)
+                {
+                    faction = CLASS(CIS);
+                    icon = "\MRC\JLTS\Core_mod_droids\data\markers\cis_inf.paa";
+                    name = "Basic Team";
+                    side = 0;
+                    SQUAD_5(Droid_X1_NCO, Droid_X1_E5C, Droid_X1_E5C, Droid_X1_E5, Droid_X1_E5, 0)
+                };
+                NEW_CLASS(X1_Team_Weapons)
+                {
+                    faction = CLASS(CIS);
+                    icon = "\MRC\JLTS\Core_mod_droids\data\markers\cis_inf.paa";
+                    name = "Weapons Team";
+                    side = 0;
+                    SQUAD_4(Droid_X1_NCO, Droid_X1_E5C, Droid_X1_SBB3, Droid_X1_E5, 0)
+                };
+                NEW_CLASS(X1_Team_AA)
+                {
+                    faction = CLASS(CIS);
+                    icon = "\MRC\JLTS\Core_mod_droids\data\markers\cis_antiair.paa";
+                    name = "Anti-Air Team";
+                    side = 0;
+                    SQUAD_3(Droid_X1_NCO, Droid_X1_AA, Droid_X1_AA, 0)
+                };
+                NEW_CLASS(X1_Team_AT)
+                {
+                    faction = CLASS(CIS);
+                    icon = "\MRC\JLTS\Core_mod_droids\data\markers\cis_ordnance.paa";
+                    name = "Anti-Tank Team";
+                    side = 0;
+                    SQUAD_3(Droid_X1_NCO, Droid_X1_AT, Droid_X1_AT, 0)
+                };
+                NEW_CLASS(X1_Team_Sniper)
+                {
+                    faction = CLASS(CIS);
+                    icon = "\MRC\JLTS\Core_mod_droids\data\markers\cis_recon.paa";
+                    name = "Sniper Team";
+                    side = 0;
+                    SQUAD_2(Droid_X1_NCO, Droid_X1_E5S, 0)
+                };
+            };
+
             NEW_CLASS(BX)
             {
                 name = "BX Commando Droids";
