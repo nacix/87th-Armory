@@ -44,6 +44,9 @@ class CfgPatches
 
             CLASS(Droid_X1_E5),
             CLASS(Droid_X1_E5C),
+            CLASS(Droid_X1_NCO),
+            CLASS(Droid_X1_AA),
+            CLASS(Droid_X1_AT),
             CLASS(Droid_X1_E5S),
             CLASS(Droid_X1_RD4),
             CLASS(Droid_X1_SBB3),
@@ -57,7 +60,9 @@ class CfgPatches
             CLASS(Droid_BX),
             CLASS(Droid_BX_SL),
             CLASS(Droid_BX_Diplomat),
-            CLASS(Droid_BX_Merc)
+            CLASS(Droid_BX_Diplomat_SL),
+            CLASS(Droid_BX_Merc),
+            CLASS(Droid_BX_Merc_SL)
         };
         weapons[] = {};
         requiredAddons[] = {"cba_main", "WBK_DifferentRobotics_1"};

@@ -217,7 +217,7 @@ class CfgVehicles {
 		tf_range = 25000;
 		tf_subtype = "digital_lr";
 	};
-	NEW_CLASS(RTO_Backpack_Recon): TAG_CLASS(Backpack)
+	NEW_CLASS(RTO_Backpack_Recon): TAG_CLASS(Belt_Bag)
 	{
 		displayName = TAG_NAME(Recon RTO Pack);
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_RTO_pack_ui_ca.paa";

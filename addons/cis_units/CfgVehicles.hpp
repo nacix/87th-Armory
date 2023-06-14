@@ -273,6 +273,35 @@ class CfgVehicles
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
 	};
+	NEW_CLASS(Droid_X1_NCO): TAG_CLASS(Droid_X1_E5C)
+	{
+		displayName = "X1 NCO (E-5C)";
+		X1_IDENTITY(Droid_X1_NCO)
+	};
+	NEW_CLASS(Droid_X1_AA): TAG_CLASS(Droid_X1_E5)
+	{
+		displayName = "X1 Anti-Air Droid (E-60R)";
+		X1_IDENTITY(Droid_X1_AA)
+		WEAPONS(JLTS_E5, UNSC_Knife, SWLW_E60R_AA, JLTS_CloneBinocular_Black)
+		#define MAGAZINES \
+			LIST_10(JLTS_E5_mag), \
+			LIST_3(SWLW_e60r_aa_mag), \
+			MAGS_MISC
+		magazines[] = { MAGAZINES };
+		respawnMagazines[] = { MAGAZINES };
+	};
+	NEW_CLASS(Droid_X1_AT): TAG_CLASS(Droid_X1_E5)
+	{
+		displayName = "X1 Anti-Tank Droid (E-60R)";
+		X1_IDENTITY(Droid_X1_AT)
+		WEAPONS(JLTS_E5, UNSC_Knife, SWLW_E60R, JLTS_CloneBinocular_Black)
+		#define MAGAZINES \
+			LIST_10(JLTS_E5_mag), \
+			LIST_3(SWLW_e60r_at_mag), \
+			MAGS_MISC
+		magazines[] = { MAGAZINES };
+		respawnMagazines[] = { MAGAZINES };
+	};
 	NEW_CLASS(Droid_X1_E5S): TAG_CLASS(Droid_X1_E5C)
 	{
 		displayName = "X1 Infiltrator (E-5S)";
@@ -413,8 +442,8 @@ class CfgVehicles
 	NEW_CLASS(Droid_BX_SL): TAG_CLASS(Droid_BX)
 	{
 		displayName = "BX Captain (E-5C)";
-		BX_IDENTITY(lsd_cis_bxDroid_uniform, Droid_BX_SL)
-		EQUIPMENT(1, 3AS_CIS_Officer_Vest, JLTS_B1_antenna_training, JLTS_NVG_droid_chip_2, SWLB_comlink_droid)
+		BX_IDENTITY(TAG_CLASS(BX_Uniform_Commando_Captain), Droid_BX_SL)
+		EQUIPMENT(1, 1, JLTS_B1_antenna_training, JLTS_NVG_droid_chip_2, SWLB_comlink_droid)
 		WEAPONS(JLTS_E5C, TAG_CLASS(Vibroblade), 1, 1)
 		#define MAGAZINES \
 			LIST_6(JLTS_E5C_mag), \
@@ -424,16 +453,29 @@ class CfgVehicles
 		magazines[] = { MAGAZINES };
 		respawnMagazines[] = { MAGAZINES };
 	};
+
 	NEW_CLASS(Droid_BX_Diplomat): TAG_CLASS(Droid_BX)
 	{
 		displayName = "BX Diplomat (E-5)";
-		BX_IDENTITY(lsd_cis_bxDiplomatDroid_uniform, Droid_BX_Diplomat)
+		BX_IDENTITY(TAG_CLASS(BX_Uniform_Diplomat), Droid_BX_Diplomat)
 	};
+	NEW_CLASS(Droid_BX_Diplomat_SL): TAG_CLASS(Droid_BX_Diplomat)
+	{
+		displayName = "BX Diplomat Captain (E-5C)";
+		BX_IDENTITY(TAG_CLASS(BX_Uniform_Diplomat_Captain), Droid_BX_Diplomat_SL)
+	};
+
 	NEW_CLASS(Droid_BX_Merc): TAG_CLASS(Droid_BX)
 	{
 		displayName = "BX Mercenary (E-5)";
-		BX_IDENTITY(lsd_cis_bxSecurityDroid_uniform, Droid_BX_Merc)
+		BX_IDENTITY(TAG_CLASS(BX_Uniform_Merc), Droid_BX_Merc)
 	};
+	NEW_CLASS(Droid_BX_Merc_SL): TAG_CLASS(Droid_BX_Merc)
+	{
+		displayName = "BX Mercenary Captain (E-5C)";
+		BX_IDENTITY(TAG_CLASS(BX_Uniform_Merc_Captain), Droid_BX_Merc_SL)
+	};
+
 	NEW_CLASS(Droid_BX_Sim): TAG_CLASS(Droid_BX)
 	{
 		displayName = "BX Commando (E-5)";

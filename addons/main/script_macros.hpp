@@ -69,6 +69,12 @@
 #define VISIBLE(pointer) ((configFile >> "CfgWeapons" >> pointer >> "ItemInfo" >> "Pointer" >> "isIR") call BIS_fnc_getCfgData isEqualTo 0)
 #define HASLASER(attachment) not isNil {(configFile >> "CfgWeapons" >> attachment >> "ItemInfo" >> "Pointer" >> "isIR") call BIS_fnc_getCfgData}
 
+#define GET_INFO(className,parentClass) \
+    class className##: parentClass \
+    { \
+        class ItemInfo; \
+    };
+
 #define WEAPONS(primaryWeapon,secondaryWeapon,launcherWeapon,binocularWeapon) \
     weapons[]= \
     { \
