@@ -203,7 +203,7 @@ class CfgGroups
                 {
                     faction = CLASS(CIS);
                     icon = "\MRC\JLTS\Core_mod_droids\data\markers\cis_recon.paa";
-                    name = "Strike Team";
+                    name = "Commando Team";
                     side = 0;
                     SQUAD_5(Droid_BX_SL, Droid_BX, Droid_BX, Droid_BX, Droid_BX, 0)
                 };
@@ -213,7 +213,7 @@ class CfgGroups
                     icon = "\MRC\JLTS\Core_mod_droids\data\markers\cis_recon.paa";
                     name = "Security Detail";
                     side = 0;
-                    SQUAD_4(Droid_BX_Diplomat, Droid_BX_Diplomat, Droid_BX_Diplomat, Droid_BX_Diplomat, 0)
+                    SQUAD_6(Droid_BX_Diplomat_SL, Droid_BX_Diplomat, Droid_BX_Diplomat, Droid_BX_Diplomat, Droid_BX_Diplomat, Droid_BX_Diplomat, 0)
                 };
                 NEW_CLASS(Merc_Team_Basic)
                 {
@@ -221,7 +221,7 @@ class CfgGroups
                     icon = "\MRC\JLTS\Core_mod_droids\data\markers\cis_recon.paa";
                     name = "Mercenary Team";
                     side = 0;
-                    SQUAD_4(Droid_BX_Merc, Droid_BX_Merc, Droid_BX_Merc, Droid_BX_Merc, 0)
+                    SQUAD_5(Droid_BX_Merc_SL, Droid_BX_Merc, Droid_BX_Merc, Droid_BX_Merc, Droid_BX_Merc, 0)
                 };
             };
         };
