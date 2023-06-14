@@ -57,7 +57,9 @@ class CfgPatches
             CLASS(Droid_BX),
             CLASS(Droid_BX_SL),
             CLASS(Droid_BX_Diplomat),
-            CLASS(Droid_BX_Merc)
+            CLASS(Droid_BX_Diplomat_SL),
+            CLASS(Droid_BX_Merc),
+            CLASS(Droid_BX_Merc_SL)
         };
         weapons[] = {};
         requiredAddons[] = {"cba_main", "WBK_DifferentRobotics_1"};
