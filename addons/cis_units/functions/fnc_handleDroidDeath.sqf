@@ -1,4 +1,22 @@
 #include "script_component.hpp"
+/*
+ * Authors: Anorexican & WebKnight
+ *
+ * Handles droid death animations, sounds, and effects. Called upon droid death.
+ *
+ * Arguments:
+ * 0: The droid <OBJECT>
+ * 1: The droid's possible death animations <ARRAY>
+ * 2: The droid's possible death sounds <ARRAY>
+ *
+ * Return Value:
+ * NONE
+ *
+ * Example:
+ * [cursorTarget, ["anim_1", "anim_2", "anim_3"], ["sound_1", "sound_2"]] call ax87_cis_units_fnc_handleDroidDeath;
+ *
+ * Public: No
+*/
 
 params ["_droid", "_deathAnims", "_deathSounds"];
 TRACE_1("handleDroidDeath", _droid);

@@ -1,4 +1,21 @@
 #include "script_component.hpp"
+/*
+ * Authors: Anorexican & WebKnight
+ *
+ * Handles initialization of droid units and calls other scripts to handle their behavior.
+ *
+ * Arguments:
+ * 0: The droid <OBJECT>
+ * 1: The droid's skill level <NUMBER>
+ *
+ * Return Value:
+ * NONE
+ *
+ * Example:
+ * [cursorTarget] call ax87_cis_units_fnc_initDroid;
+ *
+ * Public: No
+*/
 
 params ["_droid", "_skill"];
 TRACE_1("initDroid", _droid);

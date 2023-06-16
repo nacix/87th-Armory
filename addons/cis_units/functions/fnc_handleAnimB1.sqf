@@ -1,23 +1,17 @@
 #include "script_component.hpp"
 /*
- * Author: Anorexican
+ * Authors: Anorexican & WebKnight
  *
- * Selects a random clone face then assigns it to the provided unit. Also assigns a rank and designation.
+ * Handles B1 droid animation states and targeting logic.
  *
  * Arguments:
- * 0: The unit <OBJECT>
- * 1: Face selection preset or custom face list <STRING|ARRAY>
- *      1.1: Face ID <STRING>
- *      1.2: RNG Weight <NUMBER>
- * 2: Unit designation <STRING> (Optional | default="CT")
+ * 0: The droid <OBJECT>
  *
  * Return Value:
  * NONE
  *
- * Examples:
- * [player, "NCO"] call ax87_clones_fnc_setUnitIdentity; // Selects face from NCO profile with default voice
- * [player, ["WhiteHead_02", 0.5, "AsianHead_A3_02", 0.5]] call ax87_clones_fnc_setUnitIdentity; // Selects face from array with default designation
- * [player, "WhiteHead_02", "RC"] call ax87_clones_fnc_setUnitIdentity; // Applies face and sets designation to "RC"
+ * Example:
+ * [cursorTarget] call ax87_cis_units_fnc_handleAnimB1;
  *
  * Public: No
 */

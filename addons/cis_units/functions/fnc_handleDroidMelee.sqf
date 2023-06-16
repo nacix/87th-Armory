@@ -1,4 +1,20 @@
 #include "script_component.hpp"
+/*
+ * Authors: Anorexican & WebKnight
+ *
+ * Handles droid melee attack opportunities and calls the appropriate execution script.
+ *
+ * Arguments:
+ * 0: The droid <OBJECT>
+ *
+ * Return Value:
+ * NONE
+ *
+ * Example:
+ * [cursorTarget] call ax87_cis_units_fnc_handleDroidMelee;
+ *
+ * Public: No
+*/
 
 params ["_droid"];
 TRACE_1("handleDroidMelee", _droid);

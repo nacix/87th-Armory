@@ -1,4 +1,20 @@
 #include "script_component.hpp"
+/*
+ * Authors: Anorexican & WebKnight
+ *
+ * Handles BX droid pathfinding while it's in melee mode.
+ *
+ * Arguments:
+ * 0: The droid <OBJECT>
+ *
+ * Return Value:
+ * NONE
+ *
+ * Example:
+ * [cursorTarget] call ax87_cis_units_fnc_bxMeleePathing;
+ *
+ * Public: No
+*/
 
 params ["_droid"];
 

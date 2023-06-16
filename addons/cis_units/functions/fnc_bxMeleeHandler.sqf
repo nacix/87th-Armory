@@ -2,7 +2,7 @@
 /*
  * Authors: Anorexican & WebKnight
  *
- * Selects a random clone face then assigns it to the provided unit. Also assigns a rank and designation.
+ * Handles BX droid melee opportunities in tandem with the fnc_bxMeleeCombat. This script manages our droid's melee state and tells it when to cycle weapons
  *
  * Arguments:
  * 0: The droid <OBJECT>
@@ -10,8 +10,8 @@
  * Return Value:
  * NONE
  *
- * Examples:
- * [_droid] call ax87_cis_units_fnc_bxMeleeHandler;
+ * Example:
+ * [cursorTarget] call ax87_cis_units_fnc_bxMeleeHandler;
  *
  * Public: No
 */
