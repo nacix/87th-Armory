@@ -24,12 +24,17 @@ TRACE_1("bxMeleeHandler", _droid);
 LOG_1("(bxMeleeHandler) [%1]: Calling bxMeleeCombat...", _droid);
 
 [{
+	// This is the main loop of the melee handler. It checks for nearby enemies and switches our droid's weapon to melee if it finds any (runs the code below).
+
 	params ["_droid"];
 
 	private _foundValidTarget = false;
+	
+	// Loop through each nearby unit and check if they're a valid melee target
 	{
 		if (_foundValidTarget) exitWith {};
 
+		// Get the visibility level of the parsed target
 		private _targetVisibility = lineIntersectsSurfaces [
 			AGLToASL (_x modelToWorld [0, 0, 0.9]),
 			AGLToASL (_droid modelToWorld [0, 0, 0.9]),
@@ -47,6 +52,8 @@ LOG_1("(bxMeleeHandler) [%1]: Calling bxMeleeCombat...", _droid);
 	_foundValidTarget;
 },
 {
+	// This code is executed when the above loop finds a valid melee target. It switches our droid's weapon to melee and calls the melee combat script. It also makes a recursive call to this script to handle future events.
+
 	params ["_droid"];
 
 	LOG_1("(bxMeleeHandler) [%1]: Starting weapon switch event...", _droid);
@@ -143,6 +150,7 @@ LOG_1("(bxMeleeHandler) [%1]: Calling bxMeleeCombat...", _droid);
 			// Switch our droid to the sheathing animation
 			for _i from 0 to 2 do { [_droid, "ims_takeOut_TwoHanded_sheat"] remoteExec ["playActionNow", _droid] };
 
+			// List of melee animations our droid can perform
 			private _bxAnimList = [
 				"Human_Execution_GenericOnehanded_headSmash_1_main",
 				"Human_Execution_GenericTwoHanded_headSmash_main",
@@ -155,6 +163,7 @@ LOG_1("(bxMeleeHandler) [%1]: Calling bxMeleeCombat...", _droid);
 				"SM_Sword_Execution"
 			];
 
+			// Set the delay before our droid switches off of their melee weapon. Delay is shorter if the droid's current animation isn't melee-related.
 			private _weaponSwitchDelay = [0.7, 4.7] select (animationState _droid in _bxAnimList);
 
 			[{

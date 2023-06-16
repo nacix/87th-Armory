@@ -19,8 +19,10 @@
 
 params ["_droid", "_victim"];
 
+// Select a random finisher style
 private _finisherType = selectRandom ["SWORD", "CHOKE", "STOMP"];
 
+// Initialize the variables for our finisher animation
 switch (_finisherType) do {
     case "SWORD": {[
         "SM_Sword_Execution",
@@ -127,16 +129,20 @@ _victim setDamage 1;
         }, [_victim, _finisherType], 1.5] call CBA_fnc_waitAndExecute;
 
         if (_finisherType isEqualTo "STOMP") then {
+            // Play a random leg hit sound
             [_victim, selectRandom ["leg_hit1", "leg_hit2", "leg_hit3"], 100, 3] execVM "\WebKnight_StarWars_Mechanic\createSoundGlobal.sqf";
 
             [{
                 params ["_droid", "_victim"];
 
+                // Play a bone-cracking sound
                 [_victim, "dobi_bones", 100, 4] execVM "\WebKnight_StarWars_Mechanic\createSoundGlobal.sqf";
 
+                // Play a random death scream sound
                 [_droid, selectRandom ["loud_scream_1", "loud_scream_2"], 120, 3] execVM "\WebKnight_StarWars_Mechanic\createSoundGlobal.sqf";
             }, [_droid, _victim], 2.3] call CBA_fnc_waitAndExecute;
         } else {
+            // Play a random melee hit sound
             _meleeSound = selectRandom (parseSimpleArray getText (configFile >> "CfgWeapons" >> handgunWeapon _droid >> "IMS_Melee_Param_SoundsOnHit"));
             [_droid, _meleeSound, 50, 4] execVM "\WebKnight_StarWars_Mechanic\createSoundGlobal.sqf";
 

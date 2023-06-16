@@ -74,6 +74,10 @@ TRACE_1("handleDroidDeath", _droid);
         [{ deleteVehicle _this }, _particlesSpark, 0.1] call CBA_fnc_waitAndExecute;
     }] remoteExecCall ["call", [0, -2] select isDedicated, false];
 
+    /*
+        Remove all EH and PFH instances from our droid
+    */
+
     [GETVAR(_droid, GVAR(droidAnimPFH), -1)] call CBA_fnc_removePerFrameHandler;
     SETVAR(_droid, GVAR(droidAnimPFH), -1);
 

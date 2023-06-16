@@ -20,6 +20,7 @@
 params ["_droid", "_skill"];
 TRACE_1("initDroid", _droid);
 
+// Select a random death animation and sound for our droid
 switch (true) do {
     case (_droid isKindOf CLASS(Droid_BX)): {
         [["B2_SupperBattleDroid_die"], ["WBK_b2_dying"]]
