@@ -1,4 +1,20 @@
 #include "script_component.hpp"
+/*
+ * Authors: Anorexican & WebKnight
+ *
+ * Handles damage events for droid units and tweaks them depending on the type of droid provided.
+ *
+ * Arguments:
+ * 0: The droid <OBJECT>
+ *
+ * Return Value:
+ * NONE
+ *
+ * Example:
+ * [cursorTarget] call ax87_cis_units_fnc_handleDroidDamage;
+ *
+ * Public: No
+*/
 
 params ["_droid"];
 TRACE_1("handleDroidDamage", _droid);

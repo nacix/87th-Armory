@@ -1,23 +1,17 @@
 #include "script_component.hpp"
 /*
- * Author: Anorexican
+ * Authors: Anorexican & WebKnight
  *
- * Selects a random clone face then assigns it to the provided unit. Also assigns a rank and designation.
+ * Handles B1 droid animation states and targeting logic.
  *
  * Arguments:
- * 0: The unit <OBJECT>
- * 1: Face selection preset or custom face list <STRING|ARRAY>
- *      1.1: Face ID <STRING>
- *      1.2: RNG Weight <NUMBER>
- * 2: Unit designation <STRING> (Optional | default="CT")
+ * 0: The droid <OBJECT>
  *
  * Return Value:
  * NONE
  *
- * Examples:
- * [player, "NCO"] call ax87_clones_fnc_setUnitIdentity; // Selects face from NCO profile with default voice
- * [player, ["WhiteHead_02", 0.5, "AsianHead_A3_02", 0.5]] call ax87_clones_fnc_setUnitIdentity; // Selects face from array with default designation
- * [player, "WhiteHead_02", "RC"] call ax87_clones_fnc_setUnitIdentity; // Applies face and sets designation to "RC"
+ * Example:
+ * [cursorTarget] call ax87_cis_units_fnc_handleAnimB1;
  *
  * Public: No
 */
@@ -44,6 +38,7 @@ private _animHandlerPFH = [{
         if (_launcher isNotEqualTo "" && (_droid ammo _launcher > 0 || { (magazinesAmmoFull _droid findIf { (_x select 0) in compatibleMagazines _launcher }) > 0 })) then {
             private _potentialTargets = _droid targets [true];
             
+            // Get the classname of our droid's ammunition
             private _ammoType = secondaryWeaponMagazine _droid;
             if (count _ammoType <= 0) then {
                 _ammoType = magazines _droid select (magazinesAmmoFull _droid findIf { (_x select 0) in compatibleMagazines _launcher });
@@ -51,6 +46,7 @@ private _animHandlerPFH = [{
                 _ammoType = _ammoType select 0;
             };
 
+            // Get the target priority of our droid's current ammo
             private _ammoTarget = getText (configFile >> "CfgAmmo" >> _ammoType >> "aiAmmoUsageFlags");
 
             LOG_4("(handleAnimB1) [%1]: This droid is using a launcher [%2] with ammo [%3] and target priority [%4]! Checking for valid targets...", _droid, _launcher, _ammoType, _ammoTarget);
@@ -58,6 +54,7 @@ private _animHandlerPFH = [{
             private _targetIndex = -1;
             private _isTargetVehicle = true;
 
+            // Scan for an enemy unit that fits the target priority of our ammo
             if ("512" in _ammoTarget || "128" in _ammoTarget || _ammoTarget in [128, 512] ) then {
                 _targetIndex = _potentialTargets findIf {
                     private _vehicle = vehicle _x;
@@ -90,6 +87,7 @@ private _animHandlerPFH = [{
                     _droid selectWeapon "FullAuto";
                 };
 
+                // Order our droid to engage its target if it's valid
                 if ((_isTargetVehicle && (typeOf _activeTarget) isEqualto "Man") || (!_isTargetVehicle && (typeOf _activeTarget) isNotEqualTo "Man")) then { _droid doTarget _targetVehicle };
 
                 LOG_6("(handleAnimB1) [%1 | %2]: New target found [%3 | %4]! Old target: [%5 | %6]", name _droid, _droid, name _targetVehicle, _targetVehicle, name _activeTarget, _activeTarget);

@@ -1,4 +1,21 @@
 #include "script_component.hpp"
+/*
+ * Authors: Anorexican & WebKnight
+ *
+ * Handles B2 droid execution events.
+ *
+ * Arguments:
+ * 0: The droid <OBJECT>
+ * 1: The victim <OBJECT>
+ *
+ * Return Value:
+ * NONE
+ *
+ * Example:
+ * [cursorTarget, player] call ax87_cis_units_fnc_doExecutionB2;
+ *
+ * Public: No
+*/
 
 params ["_droid", "_target"];
 TRACE_1("doExecutionB2", _droid);
