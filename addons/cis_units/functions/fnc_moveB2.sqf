@@ -1,4 +1,21 @@
 #include "script_component.hpp"
+/*
+ * Authors: Anorexican & WebKnight
+ *
+ * Handles B2 pathfinding and walk animations.
+ *
+ * Arguments:
+ * 0: The droid <OBJECT>
+ * 1: The droid's move poses <ARRAY>
+ *
+ * Return Value:
+ * NONE
+ *
+ * Example:
+ * [cursorTarget, ["move_1", "move_2"]] call ax87_cis_units_fnc_moveB2;
+ *
+ * Public: No
+*/
 
 params ["_droid", "_movePoses"];
 TRACE_1("moveB2", _droid);
