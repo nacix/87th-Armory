@@ -34,7 +34,7 @@ class CfgPatches
 			CLASS(P1_LAAT_Mk1),
 			CLASS(P1_LAAT_Mk1_Lights),
 			CLASS(ATRT),
-			CLASS(BARC),
+			//CLASS(BARC),
 			CLASS(RTT),
 			CLASS(RTT_Rep),
 			CLASS(P1_RTT),
