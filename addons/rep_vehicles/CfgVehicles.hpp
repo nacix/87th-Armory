@@ -44,7 +44,7 @@ class CfgVehicles
 	class 3as_LAAT_Mk1Lights;
 	class 3as_LAAT_Mk2;
 	class 3as_LAAT_Mk2Lights;
-	class ls_ground_barc;
+	// class ls_ground_barc;
 
 	LAAT_NEW(Mk.2, LAAT, 3as_LAAT_Mk2)
 	LAAT_NEW(Mk.2 (Lights), LAAT_Lights, 3as_LAAT_Mk2Lights)
@@ -97,6 +97,7 @@ class CfgVehicles
 		};
 	};
 
+	/*
 	NEW_CLASS(BARC): ls_ground_barc
 	{
 		author = "Anorexican & Stim";
@@ -112,6 +113,7 @@ class CfgVehicles
 			QPATHTOF(data\barc\TAG_CLASS(BARC_Screen)_co.paa)
 		};
 	};
+	*/
 
 	NEW_CLASS(ATRT): 3AS_ATRT
 	{
